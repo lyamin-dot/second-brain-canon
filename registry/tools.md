@@ -6,7 +6,11 @@ TEST_GDOCS_APPLY: 1bMsJ3eSG5K4i_2cogRiSvirnH73K8031uv8-fZ-df4A, регресси
 
 git-read: webhook POST `{path, ref?}` → GitHub Contents API GET → `{text, sha, byteLength, encoding}`; SHA блоба — родная контрольная сумма, FNV-протез не нужен.
 git-write: webhook POST `{path, newText, expectedSha, message}` → сверка `expectedSha` с текущим SHA (несовпадение — отказ с явной причиной, класс Т-05 закрыт архитектурно) → PUT → `{newSha, commitSha}`. Верификация — независимый git-read по пути, сверка SHA.
-канал на Git Data API есть, воркфлоу 7OQh206m8xrZAzPF (git-commit), покрывает мультифайловый коммит и delete через sha:null в blob-записи.  Непокрытая операция — повод остановиться и назвать её, а не обходить канал прямым git: push из облачной песочницы сессии закрыт прокси (чтение разрешено, запись нет), и это граница платформы, а не поломка. До появления канала на Git Data API (blobs → tree с `sha:null` на удаление → commit → обновление refs/heads/main, `force:false`) удаление выполняет владелец вручную через веб-интерфейс GitHub.
+git-commit: воркфлоу 7OQh206m8xrZAzPF, webhook `{branch, message, expectedSha, files[], deletes[]}` -> Git Data API (blobs -> tree -> commit -> обновление refs/heads/main, force:false). Покрывает мультифайловый коммит и удаление путей через `deletes[]` (Р-43 журнала git-migration, 2026-09-06). Паспорт 1cw8g7TS84v6qggNU-Su_zIhvoKwJywG-Z1PJ-eGT_Jk.
+ДВА РАЗНЫХ КАНАЛА, НЕ ПУТАТЬ (правка 2026-09-07, разбор протокола «обслуживание»):
+— прямой `git push` из облачной песочницы сессии закрыт прокси: чтение репозитория открыто, запись нет. Это граница платформы, чинить нечего, обход искать не нужно;
+— канал записи — перечисленные здесь воркфлоу. Они вызываются по HTTP, PUT выполняет сервер n8n, а не песочница, поэтому канал работает из любой среды: Claude Project, Cowork, Claude Code. Формулировка «писать из этой среды нельзя» относится только к прямому push и никогда — к каналу.
+Непокрытая каналом операция — повод остановиться и назвать её, а не обходить прямым git (`second-brain-git` §6a).
 git-log: webhook POST `{path?, limit}` → список коммитов `{sha, date, message}`.
 git-diff — вторая очередь, не пилот: сравнение двух ref по файлу, для приёмки правок по diff строк.
 Git Append | M7u4VX4Y4KtYyoVV | дозапись в LOG.md, вход {path, text}, принят Н-05.09-03 exec 55695
