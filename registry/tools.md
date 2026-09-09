@@ -11,7 +11,7 @@ git-commit: воркфлоу 7OQh206m8xrZAzPF, webhook `{branch, message, expect
 — прямой `git push` из облачной песочницы сессии закрыт прокси: чтение репозитория открыто, запись нет. Это граница платформы, чинить нечего, обход искать не нужно;
 — канал записи — перечисленные здесь воркфлоу. Они вызываются по HTTP, PUT выполняет сервер n8n, а не песочница, поэтому канал работает из любой среды: Claude Project, Cowork, Claude Code. Формулировка «писать из этой среды нельзя» относится только к прямому push и никогда — к каналу.
 Непокрытая каналом операция — повод остановиться и назвать её, а не обходить прямым git (`second-brain-git` §6a).
-git-log: webhook POST `{path?, limit}` → список коммитов `{sha, date, message}`.
+git-log: воркфлоу `ZXTQwjUkd81wyRoI`, webhook POST `{path?, limit}` → `{success, count, commits:[{sha, message, author, date, url}]}`; узел результата `04_Build_Response`. Проверено прямым вызовом 2026-09-09 по пути `core/MANIFEST.md`.
 git-diff — вторая очередь, не пилот: сравнение двух ref по файлу, для приёмки правок по diff строк.
 Git Append | M7u4VX4Y4KtYyoVV | дозапись в LOG.md, вход {path, text}, принят Н-05.09-03 exec 55695
 Действующие ID (подтверждено этой сессией прямым вызовом 2026-09-03, get_workflow_details, оба `active:true`): git-read `72DWYjGbeAxEgYwj`, git-write `Omt9oDYf7NthOw5T`.
