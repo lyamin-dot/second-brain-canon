@@ -3,6 +3,7 @@ registry/projects.md
 | проект | папка | носитель канона | статус |
 |---|---|---|---|
 | git-migration | projects/git-migration/ | repo | активен |
+| anis-evidence | projects/anis-evidence/ | repo | активен |
 
 ## Проекты с INDEX в Google Docs
 
