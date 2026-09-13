@@ -3,4 +3,4 @@ projects/git-migration/LOG_ARCHIVE.md
 Архив LOG.md проекта git-migration. Записи выведены из живого журнала при превышении потолка 16384 Б (ротации 2026-09-04, 2026-09-05).
 Нумерация сквозная с LOG.md: номера здесь и там не пересекаются. Ссылка на запись отсюда пишется с именем файла.
 
-[[CHECKPOINT_PLACEHOLDER_DO_NOT_USE_LITERALLY]]
+[[LOADING_FULL_CONTENT_NEXT_CALL]]
