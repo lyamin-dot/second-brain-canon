@@ -1,9 +1,9 @@
 registry/projects.md
 
-| проект | папка | носитель канона | статус |
-|---|---|---|---|
-| git-migration | projects/git-migration/ | repo | активен |
-| anis-evidence | projects/anis-evidence/ | repo | активен |
+| проект | папка | носитель канона | статус | Claude Project |
+|---|---|---|---|---|
+| git-migration | projects/git-migration/ | repo | активен | |
+| anis-evidence | projects/anis-evidence/ | repo | активен | https://claude.ai/project/01a09a12-fef3-737b-8f00-75badd522e12 |
 
 ## Проекты с INDEX в Google Docs
 
@@ -36,6 +36,8 @@ SYS      вес 2   — мета-задача, инфраструктура си
 AUTOCHEM_BUNDLES вес 5   — комбинации товаров Автохимия для маркетплейсов (WB+Ozon)
 
 ANAST_QUICKREF вес 3   — quick-reference по стандарту анестезиологии (личный инструмент)
+
+ANIS_EVIDENCE вес 3   — доказательная справка по анестезиологии и интенсивной медицине (личный инструмент)
 
 <!-- T-004 | CORE байт 2461-5539 | Р.1 карточки 14 проектов (описание, статус, реквизиты, файл индекса, Claude Project) -->
 

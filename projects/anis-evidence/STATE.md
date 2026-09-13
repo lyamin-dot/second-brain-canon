@@ -2,7 +2,9 @@ projects/anis-evidence/STATE.md
 
 # Статус
 
-Проект заведён 2026-09-13. Папка создана, роли `STATE.md`, `PLAN.md`, `EVIDENZ.md` заведены, строка внесена в `registry/projects.md`.
+Проект заведён 2026-09-13. Папка создана, роли `STATE.md`, `PLAN.md`, `EVIDENZ.md`, `LOG.md` заведены, строка внесена в `registry/projects.md`.
+
+Claude-проект создан: https://claude.ai/project/01a09a12-fef3-737b-8f00-75badd522e12 — коннекторы n8n и Google Drive включены, видимость Skill `second-brain-git` из проекта проверена владельцем 2026-09-13. Вес проекта для `!priority` — 3.
 
 Фаза 1 — наполнение. Промпт вставлен в настройки Claude-проекта, клинический канон пуст: файлов `e-<тема>.md` нет, записей нет.
 
@@ -10,10 +12,11 @@ projects/anis-evidence/STATE.md
 
 Первая сессия клинических вопросов. Первая запись `E-01` создаётся по критерию PLAN §«Когда пишется вердикт» одним вызовом Git Commit Files вместе со строкой в `EVIDENZ.md`.
 
+Отдельно ждёт исполнения задание на справочник действующих AWMF-руководств DGAI для Project Knowledge: форма задания выдана владельцу 2026-09-13, исполнитель не назначен.
+
 # Открытые вопросы
 
-1. Вес проекта для команды `!priority` не назначен; строки в секции весов `registry/projects.md` нет. Решение за владельцем.
-2. Роли `EVIDENZ.md` и `e-<тема>.md` держатся строкой 4 `meta/PENDING_RULES.md` и в Skill `second-brain-git` не внесены.
+1. Роли `EVIDENZ.md` и `e-<тема>.md` держатся строкой 4 `meta/PENDING_RULES.md` и в Skill `second-brain-git` не внесены.
 
 # Блокеры
 
