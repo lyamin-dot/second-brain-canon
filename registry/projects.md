@@ -5,6 +5,12 @@ registry/projects.md
 | git-migration | projects/git-migration/ | repo | активен | |
 | anis-evidence | projects/anis-evidence/ | repo | активен | https://claude.ai/project/01a09a12-fef3-737b-8f00-75badd522e12 |
 
+## Лаборатории
+
+| лаборатория | папка | носитель | статус |
+|---|---|---|---|
+| sys | labs/sys/ | repo — Зона А SYS_INDEX (перенос 2026-09-14, ф4 git-migration); Зона Б осталась в Docs 12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8 | активна |
+
 ## Проекты с INDEX в Google Docs
 
 Проекты ниже ведут канон в Google Docs (INDEX); строка в таблице выше заводится для проекта при его переносе в репозиторий. Здесь же веса проектов для команды !priority; формула итогового приоритета — CORE Раздел 5 (`core/R-05.md`).
