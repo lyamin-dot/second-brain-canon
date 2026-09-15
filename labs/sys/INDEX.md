@@ -21,7 +21,7 @@ labs/sys/INDEX.md
 | `t-skills-snapshot.md` | снимок `n8n-workflow-registry` в Customize отстал от канона | РУТИНА | 2026-08-30 |
 | `t-n8n-registry-audit.md` | `n8n-workflow-registry` §1, §3, §4 устарели, нужна сплошная сверка | РУТИНА | — |
 | `t-readback-constant.md` | «read-back обязателен всегда» пометить закрытой константой в `n8n-engineering-manual` §1 | РУТИНА | — |
-| `t-get-execution-context.md` | `get_execution` не отсекает contextData: хвост в 3 000 символов вернул 138 КБ | РУТИНА | 2026-08-26 |
+| `t-get-execution-context.md` | `get_execution` не отсекает contextData: хвост в 3 000 символов вернул 138 КБ | — (маркер ЗАХВАЧЕНО, метки в источнике нет) | 2026-08-26 |
 | `t-maintenance-audit.md` | аудит протокола обслуживания П-01…П-20, четыре критических пункта без решений | РЫЧАГ | 2026-08-16 |
 | `t-p12-conflict.md` | регламент Р.12: п.3 и п.10 предписывают разный состав работы за сессию | РЫЧАГ | 2026-08-26 |
 | `t-maintenance-vs-naryad.md` | Р.12 п.10 дублирует и сужает `naryad` §3.1 — обслуживание вне ролевого протокола | РЫЧАГ | 2026-08-08 |
