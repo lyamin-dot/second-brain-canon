@@ -6,6 +6,6 @@ labs/sys/t-webhook-input-form.md
 
 Следующий шаг: внести строку в `registry/tools.md` — тело вызова Канала передаётся полем `inputs` с типом `webhook`; тип `form` и поле `data` не доезжают, отказ маскируется под ошибку параметров.
 
-Условие снятия: строка стоит в `registry/tools.md` либо в Skill `google-drive-docs`, и в ней названы оба симптома — «Missing fileId» и молчаливый `{"status":"started"}`.
+Условие снятия (дословно из источника): «Готово = строка внесена в google-drive-docs либо в registry/tools.md».
 
 Ссылки: исполнение 58023 (2026-09-08); `registry/tools.md`; источник — Зона А SYS_INDEX, строка 108.

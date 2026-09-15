@@ -6,6 +6,6 @@ labs/sys/t-git-migration.md
 
 Следующий шаг: смотреть `projects/git-migration/STATE.md`, раздел «Следующий шаг».
 
-Условие снятия: проект `git-migration` закрыт — статус в `registry/projects.md` сменён, все фазы закрыты. До этого момента строка остаётся, сколько бы ни длился перенос.
+Условие снятия (дословно из источника): «Закрытие: перевести в [x] только по отдельному наряду с приёмкой о переключении носителя (не раньше него)». До этого момента строка остаётся, сколько бы ни длился перенос.
 
-Ссылки: `projects/git-migration/STATE.md`, `PLAN.md`, `LOG.md`; инструменты Канала — `registry/tools.md`; источник — Зона А SYS_INDEX, строка 110 (там же были склеены две другие задачи: решение по ANALYSIS_contradiction-classes и план контура observability — обе сняты при переносе, адрес в `projects/git-migration/NOT_TAKEN.md`).
+Ссылки: план `184yBN_w3trhBUDP_7SdzVIM6zVvdPajo_bW_p6LSfro`, каталог триажа `1JVYhSs_2B-BMBqTJYCGIUbh2GBfB4bnbcTfYaQD6yPY`; `projects/git-migration/STATE.md`, `PLAN.md`, `LOG.md`; инструменты Канала — `registry/tools.md`; источник — Зона А SYS_INDEX, строка 110 (там же были склеены две другие задачи: решение по ANALYSIS_contradiction-classes и план контура observability — обе сняты при переносе, адрес в `projects/git-migration/NOT_TAKEN.md`).
