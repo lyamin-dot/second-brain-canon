@@ -1,3 +1,4 @@
 probe N-15.09-02 line one
 probe N-15.09-02 line TWO-replaced
 probe N-15.09-02 line three-final
+probe 2026-09-16 git-write positive test after append-only guard
