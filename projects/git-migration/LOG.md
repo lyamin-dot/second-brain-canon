@@ -37,3 +37,6 @@ projects/git-migration/LOG.md
   кто подтвердил: Андрей, в чате 2026-09-16: «Давай исправлять!», вставка кода узла 10 — «Вставил»
   обратимость: дёшево — код одного узла в каждом воркфлоу
   допущение: других путей записи целого файла в repo, кроме Git Write, Git Commit Files и push из Claude Code, нет; тестовый test/guard-probe/LOG.md каналом не удаляется — удалить скриптом при ближайшей работе из Claude Code
+
+Р-87 | В СИЛЕ | 2026-09-16 | строка ERROR-MEMORY внесена в Зону А N8N_INDEX
+  принято: проверка по объекту (gdocs-read mode full, exec 63200, fileId 1GktMsgl1UOIzuWj02gqDirMSYlSjiuLuDVDd9vevB5Q) показала 0 вхождений «ERROR-MEMORY» — строка не была внесена. Текст взят дословно из источника (SYS_INDEX, fileId 12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8, exec 63202, строка 216): «[ ] РЫЧАГ [ERROR-MEMORY]: Фаза 2 по PROTOCOL_error-memory (1AmkdP_s-jVbj9OjxJRku4j4RizbwRym-tKQQK7f0j9M) — Sonnet в проекте N8N, СТРОГО после JWT-миграции». Внесена gdocs-replace v2 (nvNYvvmuOqGyHXfL, exec 63206, anchorCount=1) по уникальному однострочному якорю — соседней строке «ВОПРОС: PROJECT_LOG…» — внутри секции ОТКРЫТЫЕ ЗАДАЧИ Зоны А, за 56 строк до SENTINEL Зоны А (строка 286 после записи); append не использован, попадание в Зону Б исключено. Верифицировано 
