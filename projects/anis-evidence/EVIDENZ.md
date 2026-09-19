@@ -18,4 +18,4 @@ A: 0001
 
 | файл | тема | E | F | ближайший срок |
 |---|---|---|---|---|
-| e-tca-blutungsmanagement.md | TCA, Volumen-/Transfusionssteuerung, TIK bei Polytrauma | 4 | 1 | — |
+| e-tca-blutungsmanagement.md | TCA, Volumen-/Transfusionssteuerung, TIK bei Polytrauma | 6 | 1 | — |
