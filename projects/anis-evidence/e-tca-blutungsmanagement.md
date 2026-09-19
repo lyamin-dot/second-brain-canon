@@ -39,3 +39,4 @@ E-0006 | GÜLTIG | 2026-09-19 | Zielblutdruck bei hypotonem Traumapatienten im S
   Grundlage: Rossaint R, Afshari A, Bouillon B, et al. The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Crit Care. 2023;27:80. Empfehlung 13, Grade 1B (permissive Hypotension) / Grade 1C (MAP ≥80 bei SHT)
   Gültig bis: —
 A-0001 | 2026-09-19 | E-0001 | schlecht
+A-0002 | 2026-09-19 | E-0002 | schlecht
