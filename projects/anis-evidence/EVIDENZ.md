@@ -8,8 +8,8 @@ projects/anis-evidence/EVIDENZ.md
 
 Номера сквозные по проекту (И-Е). Следующая запись берёт номер на единицу больше.
 
-E: 0000
-F: 0000
+E: 0004
+F: 0001
 A: 0000
 
 ## Темы
@@ -18,5 +18,4 @@ A: 0000
 
 | файл | тема | E | F | ближайший срок |
 |---|---|---|---|---|
-
-Тем пока нет.
+| e-tca-blutungsmanagement.md | TCA, Volumen-/Transfusionssteuerung, TIK bei Polytrauma | 4 | 1 | — |
