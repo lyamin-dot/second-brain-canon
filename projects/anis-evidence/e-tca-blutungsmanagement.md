@@ -36,3 +36,4 @@ E-0005 | GÜLTIG | 2026-09-19 | Zielblutdruck bei hypotonem Traumapatienten im S
   Verdikt: Restriktive Volumentherapie mit permissiver Hypotension — Ziel-SBP 80–90 mmHg (MAP 50–60 mmHg) bis Blutungskontrolle, sofern keine klinische Hirnverletzung. Bei schwerem SHT (GCS ≤8): MAP ≥80 mmHg halten.
   Grundlage: Rossaint R, Afshari A, Bouillon B, et al. The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Crit Care. 2023;27:80. Empfehlung 13, Grade 1B (permissive Hypotension) / Grade 1C (MAP ≥80 bei SHT)
   Gültig bis: —
+A-0001 | 2026-09-19 | E-0001 | schlecht
