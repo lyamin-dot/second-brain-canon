@@ -40,3 +40,5 @@ E-0006 | GÜLTIG | 2026-09-19 | Zielblutdruck bei hypotonem Traumapatienten im S
   Gültig bis: —
 A-0001 | 2026-09-19 | E-0001 | schlecht
 A-0002 | 2026-09-19 | E-0002 | schlecht
+A-0003 | 2026-09-19 | E-0003 | gut
+A-0004 | 2026-09-19 | E-0004 | gut
