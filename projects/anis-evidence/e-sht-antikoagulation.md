@@ -7,3 +7,5 @@ E-0008 | GÜLTIG | 2026-09-20 | Kontroll-CCT bei SHT unter oraler Antikoagulatio
   Grundlage: Wiegele M, Schöchl H, Haushofer A, et al. Diagnostic and therapeutic approach in adult patients with traumatic brain injury receiving oral anticoagulant therapy: an Austrian interdisciplinary consensus statement. Crit Care. 2019;23:62. Interdisziplinärer österreichischer Expertenkonsens (OEGARI/ÖGN/ÖGNC/ÖGU u.a.), kein GRADE-System verwendet (explizit wegen Evidenzmangels ausgesetzt).
   Gültig bis: — (kein Ablaufdatum genannt)
   Subgruppen ausserhalb der Evidenz: Keine aktuelle deutsche AWMF-Leitlinie zu diesem Thema verfügbar — AWMF 008-001 (S2e Schädel-Hirn-Trauma im Erwachsenenalter) ist seit 01.12.2020 abgelaufen, Neuanmeldung 2020 mit geplanter Fertigstellung 31.10.2025, keine Veröffentlichung einer aktualisierten Fassung auffindbar. Dieser Verdikt stützt sich daher auf internationalen Expertenkonsens statt auf eine deutsche S-klassifizierte Leitlinie; die Evidenzbasis ist laut Quelle selbst durch den Mangel an RCTs limitiert.
+
+A-0006 | 2026-09-20 | E-0008 | schlecht
