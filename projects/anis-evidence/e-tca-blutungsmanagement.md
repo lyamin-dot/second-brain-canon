@@ -47,3 +47,4 @@ E-0007 | GÜLTIG | 2026-09-20 | Eskalation bei sekundärer Verschlechterung unte
   Grundlage: AWMF 187-023, 3.3.7/3.3.9, Empfehlungsgrad B ⇑ (beide)
   Gültig bis: 2027-12 — Vorbehalt wie E-0001
   Subgruppen ausserhalb der Evidenz: Kein konkreter quantitativer Trigger (Hb-Delta, HF-Schwelle, Zeitfenster) für den Übergang Beobachtung→Intervention in der gelesenen Kurzfassung benannt — nur die qualitative Verschlechterung als Auslöser.
+A-0005 | 2026-09-20 | E-0007 | schlecht
