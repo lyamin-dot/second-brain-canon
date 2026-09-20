@@ -42,3 +42,8 @@ A-0001 | 2026-09-19 | E-0001 | schlecht
 A-0002 | 2026-09-19 | E-0002 | schlecht
 A-0003 | 2026-09-19 | E-0003 | gut
 A-0004 | 2026-09-19 | E-0004 | gut
+E-0007 | GÜLTIG | 2026-09-20 | Eskalation bei sekundärer Verschlechterung unter NOM der Milzverletzung
+  Verdikt: Nichtoperatives Management ist beim hämodynamisch stabilen Patienten mit isolierter stumpfer Milzverletzung die primäre Strategie. Bei interventionspflichtiger Milzverletzung soll beim kreislaufstabilisierbaren Patienten statt operativer Blutstillung eine selektive Angioembolisation erfolgen — sekundäre hämodynamische Verschlechterung unter laufendem NOM (RR↓, HF↑, Hb-Abfall im Verlauf) ist der Auslöser für aktive Ursachensuche und Intervention (Re-Bildgebung/Angiografie), nicht für reine engmaschige Beobachtung.
+  Grundlage: AWMF 187-023, 3.3.7/3.3.9, Empfehlungsgrad B ⇑ (beide)
+  Gültig bis: 2027-12 — Vorbehalt wie E-0001
+  Subgruppen ausserhalb der Evidenz: Kein konkreter quantitativer Trigger (Hb-Delta, HF-Schwelle, Zeitfenster) für den Übergang Beobachtung→Intervention in der gelesenen Kurzfassung benannt — nur die qualitative Verschlechterung als Auslöser.
