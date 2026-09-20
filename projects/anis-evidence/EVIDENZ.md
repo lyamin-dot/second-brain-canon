@@ -8,9 +8,9 @@ projects/anis-evidence/EVIDENZ.md
 
 Номера сквозные по проекту (И-Е). Следующая запись берёт номер на единицу больше.
 
-E: 0007
+E: 0008
 F: 0001
-A: 0005
+A: 0006
 
 ## Темы
 
@@ -19,3 +19,4 @@ A: 0005
 | файл | тема | E | F | ближайший срок |
 |---|---|---|---|---|
 | e-tca-blutungsmanagement.md | TCA, Volumen-/Transfusionssteuerung, TIK bei Polytrauma | 7 | 1 | — |
+| e-sht-antikoagulation.md | SHT unter oraler Antikoagulation — Diagnostik, Überwachung, Reversal | 1 | 0 | 2026-09-20 |
