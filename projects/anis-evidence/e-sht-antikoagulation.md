@@ -15,3 +15,4 @@ E-0009 | GÜLTIG | 2026-09-21 | PPSB-Dosierung bei VKA-assoziierter intrakraniel
   Grundlage: Wiegele M, Schöchl H, et al. Crit Care. 2019;23:62 (Konsensusempfehlung, Basisdosis „at least 25 IU/kg“); zitierte Vergleichsstudie: Huynh TK, Costello JL, Rebuck JA. Optimizing the dose of three-factor prothrombin complex concentrate in traumatic brain injury patients on warfarin therapy. Pharmacotherapy. 2014;34:260-4. [SEK für die Huynh-Zahlen, aus Wiegele et al. zitiert, Originalarbeit nicht separat gelesen]
   Gültig bis: — (kein Ablaufdatum genannt)
   Subgruppen ausserhalb der Evidenz: Huynh et al. verwendete 3-Faktor-PPSB, nicht 4-Faktor (in Deutschland Standard) — die Dosis-Wirkungs-Relation ist für 4-Faktor-Präparate nicht separat validiert.
+A-0007 | 2026-09-21 | E-0009 | schlecht
