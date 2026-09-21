@@ -19,4 +19,4 @@ A: 0007
 | файл | тема | E | F | ближайший срок |
 |---|---|---|---|---|
 | e-tca-blutungsmanagement.md | TCA, Volumen-/Transfusionssteuerung, TIK bei Polytrauma | 7 | 1 | — |
-| e-sht-antikoagulation.md | SHT unter oraler Antikoagulation — Diagnostik, Überwachung, Reversal | 1 | 0 | 2026-09-20 |
+| e-sht-antikoagulation.md | SHT unter oraler Antikoagulation — Diagnostik, Überwachung, Reversal | 2 | 0 | 2026-09-20 |
