@@ -414,3 +414,7 @@ Q-1 и Q-2 ЗАКРЫТЫ 2026-09-13 по Р-54, проверено чтение
 | V-5 | ДУБЛЬ ПОДТВЕРЖДЁН: second-brain-git §0 «Вызывать execute_workflow только в режиме manual» | Skill second-brain-git §0 | Р-107 git-migration | — | закрыто |
 | Y-1 | ВНЕСЕНО: n8n-engineering-manual §1.1 «`get_execution` требует ОБА параметра — `workflowId` и `executionId`» | Skill n8n-engineering-manual §1.1 | Р-107 git-migration | — | закрыто |
 | Y-2 | ВНЕСЕНО: n8n-engineering-manual §4.5 и R10 «MCP запускает только первый» из двух триггеров одного типа | Skill n8n-engineering-manual §4.5, R10 | Р-107 git-migration | — | закрыто |
+
+| № | Что внести | Куда | Источник | Дата смерти | Статус |
+|---|---|---|---|---|---|
+| B-1 | Ротация `projects/git-migration/LOG.md` по §5.2–5.3 second-brain-git: 21 582 Б при бюджете чтения 16 384 Б после записи Р-107 (коммит 1db9a4b). Сессия 2026-09-23 ротацию не начинала: `git push --dry-run` отбит («not in this session's authorized repository set»), маршрут §9.4(б) неисполним. Исполняет сессия, у которой `git push --dry-run` прошёл, скриптом одним коммитом | файлы repo | Р-107 git-migration | 2026-09-30 | открыто |
