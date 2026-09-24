@@ -123,3 +123,10 @@ projects/kontext-reduktion/LOG.md
   попутно: у gdocs-overwrite v2 (M5dqSv2yiklnDXoP) вебхук открыт — triggerInfo «No credentials required» (R12).
   кто подтвердил: Андрей, 2026-09-24, «Делай, а не пингуй».
   обратимость: дёшево — воркфлоу архивируется, папка удаляется.
+
+Р-17 | В СИЛЕ | 2026-09-24 | Git Append File принят в Канал
+  принято: воркфлоу Git Append File (Nzgy6Q1XwXQVxt1F) опубликован и становится путём дозаписи в append-only файл для текста, набранного сессией. Порядок: текст — файлом в папку _git_staging через create_file Google Drive (textContent, contentMimeType text/plain, disableConversionToGoogleType true, parentId 10JCxPrSucgOfMMRLV9xe87rvq-PtLowm); затем execute_workflow с телом {path, fileId}; проверка по 8.1 second-brain-git, как у Git Append; после проверки файл-источник — в корзину. Git Append остаётся запасным путём и для дозаписей в несколько строк.
+  почему: зонд exec 68351 после привязки credential владельцем: в test/probe-N-01.09-01.txt дописан файл 135 Б с кириллицей, кавычками-ёлочками, тире и эмодзи вне BMP; прирост файла 136 Б = 135 + 1, хвост совпал байт в байт (коммит 361bb92). Публикация: versionId равен activeVersionId, triggerInfo требует заголовок Authorization. Эта запись легла тем же путём; её цена в контексте — в строке Git Append File реестра registry/tools.md.
+  попутно: сохранение в редакторе убрало из узла 02B_Get_Text параметр outputPropertyName — его значение data совпадает с умолчанием; класс R17 n8n-engineering-manual, на работу не повлияло.
+  кто подтвердил: Андрей, 2026-09-24 — привязал credential («credentials sind eingestellt»); слово «Делай, а не пингуй».
+  обратимость: дёшево — снять воркфлоу с публикации.
