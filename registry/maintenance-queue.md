@@ -48,7 +48,7 @@ registry/maintenance-queue.md
 
 | № | Что внести | Куда | Источник | Дата смерти | Статус |
 |---|---|---|---|---|---|
-| F-1 | ВНЕСЕНО: `second-brain-engineer` § ‚Р19. Метод проектирования’, верифицировано прямым чтением живого Skill 2026-09-24 | Skill `second-brain-engineer` §Р19 | PROJECT_LOG_SYS Р-03, Р-11 | 2026-10-06 | закрыто |
+| F-1 | ВНЕСЕНО: `second-brain-engineer` §Р19 «Метод проектирования», верифицировано прямым чтением живого Skill 2026-09-24 | Skill `second-brain-engineer` §Р19 | PROJECT_LOG_SYS Р-03, Р-11 | 2026-10-06 | закрыто |
 | F-2 | ВНЕСЕНО: `second-brain-engineer` §Р20. Гигиена каталога Skill, верифицировано прямым чтением живого Skill 2026-09-24 | Skill `second-brain-engineer` §Р20 | PROJECT_LOG_SYS Р-10 | 2026-10-06 | закрыто |
 | F-3 | ВНЕСЕНО: та же §Р20 запретом на пороги 20/30, верифицировано прямым чтением живого Skill 2026-09-24 | Skill `second-brain-engineer` §Р20 | PROJECT_LOG_SYS Т-04 | 2026-10-06 | закрыто
 
