@@ -16,7 +16,8 @@ projects/kontext-reduktion/STATE.md
 2. Мастер-промпт SYS: три правки из `labs/sys/t-master-prompt-sys.md` плюс четвёртая после Р-3 — там же.
 3. ВЫПОЛНЕНО 2026-09-24: три Skill залиты, живые копии побайтово совпали с выданными; `core/R-06c.md` удалён со строкой Манифеста и правкой карты (Q-4 закрыта), AF-1 закрыта (Р-11). За владельцем осталось вычистить строки 7 и 8 `meta/PENDING_RULES.md` (И-6).
 4. Решить, что становится каноническим источником google-drive-docs после нарезки: нативный Google Doc не хранит несколько файлов (Р-12, «цена»).
-5. Привязать credential в воркфлоу Git Append File (Nzgy6Q1XwXQVxt1F): 01_Webhook — git-channel-webhook-auth, 02B_Get_Text — сервисный аккаунт Google n8n-liamin, 03_Get_Before, 05_Put_File, 06_Get_After — github-canon-token. После этого сессия гоняет зонд, публикует воркфлоу и вносит его в registry/tools.md (Р-16 LOG.md).
+5. ВЫПОЛНЕНО 2026-09-24: credential привязаны владельцем, Git Append File опубликован и внесён в registry/tools.md (Р-17 LOG.md).
+6. Внести в Skills правки позиций AG-3 (second-brain-git: путь Git Append File, пункт 8.2), AG-4 (google-drive-docs: исключение для create_file в _git_staging) и AG-5 (n8n-engineering-manual: вызов Канала не требует этого Skill) очереди registry/maintenance-queue.md. До внесения запись в append-only файл идёт по строке Git Append File реестра registry/tools.md.
 
 ## Следующий шаг
 
