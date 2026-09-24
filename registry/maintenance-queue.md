@@ -443,7 +443,7 @@ Q-1 и Q-2 ЗАКРЫТЫ 2026-09-13 по Р-54, проверено чтение
 
 | № | Что внести | Куда | Источник | Дата смерти | Статус |
 |---|---|---|---|---|---|
-| T-1 | METHOD_project-design_CANDIDATE_2026-08-30 п.2 «что остаётся сделать»: отметить в PROTOCOL_project-development, что метод проектирования перенесён в Skill second-brain-engineer (Р19), и оставить там журнал применений и провенанс | PROTOCOL_project-development (Docs 1yfWV_Xhdke9GG2gvlGygtxFtEBnHLwzj5X3lz-k6kvM) | METHOD_project-design_CANDIDATE_2026-08-30 (byteLength 10708, checkSum e21906c1), PROJECT_LOG_SYS Р-03, Р-11 | 2026-10-06 | ждёт |
+| T-1 | METHOD_project-design_CANDIDATE_2026-08-30 п.2 «что остаётся сделать»: отметить в PROTOCOL_project-development, что метод проектирования перенесён в Skill second-brain-engineer (Р19), и оставить там журнал применений и провенанс | PROTOCOL_project-development (Docs 1yfWV_Xhdke9GG2gvlGygtxFtEBnHLwzj5X3lz-k6kvM) | METHOD_project-design_CANDIDATE_2026-08-30 (byteLength 10708, checkSum e21906c1), PROJECT_LOG_SYS Р-03, Р-11 | 2026-10-06 | ВНЕСЕНО 2026-09-24: в §4 PROTOCOL_project-development добавлена строка «[SBE §Р19] ...» со ссылкой на second-brain-engineer §Р19, ЖУРНАЛ ПРИМЕНЕНИЙ оставлен на месте (§9); верифицировано независимым gdocs-read (byteLength 17455→17965) |
 
 
 ## Мастер-промпт проекта OZON_UE — добавлено 2026-09-24 (сессия OZON_UE, наряда не было; заведено по Р16 second-brain-engineer)
