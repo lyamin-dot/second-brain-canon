@@ -14,10 +14,9 @@ projects/kontext-reduktion/STATE.md
 
 1. Подтвердить или поправить финиш в PLAN.md.
 2. Мастер-промпт SYS: три правки из `labs/sys/t-master-prompt-sys.md` плюс четвёртая после Р-3 — там же.
-3. Skill google-drive-docs: залить текст с разделом §3.6; после подтверждения — удалить `core/R-06c.md`, его строку в Манифесте и абзац в `meta/MAP_core-sections.md` (позиция Q-4 очереди).
-4. Skills second-brain-git и second-brain-engineer: залить текст, выданный в чате 2026-09-24 (Р-3, Р-5).
+3. Залить zip-архивами через Customize → Skills три Skill, выданные в чате SYS 2026-09-24 в 12:10: second-brain-git и google-drive-docs нарезаны на SKILL.md и references/ (Р-12), second-brain-engineer — одним файлом (Р-3, Р-5). После заливки: удалить `core/R-06c.md`, его строку в Манифесте и абзац в `meta/MAP_core-sections.md` (Q-4); закрыть AF-1 (Р-11); вычистить строки 7 и 8 `meta/PENDING_RULES.md`.
+4. Решить, что становится каноническим источником google-drive-docs после нарезки: нативный Google Doc не хранит несколько файлов (Р-12, «цена»).
 
 ## Следующий шаг
 
-Рычаг к3 (PLAN.md): разделение `second-brain-git` на обязательную часть и справку — по слову владельца, не раньше.
-Рычаг к7: ротация `projects/git-migration/LOG.md` — в среде, где `git push --dry-run` проходит (позиция AF-1 очереди).
+Рычаг к3 (PLAN.md): нарезать second-brain-engineer, naryad и n8n-engineering-manual — сессией, которая прочитает их целиком; затем отдельным шагом с приёмкой Контролёра — сжать обязательные части до 15 КБ (финиш PLAN.md п.2; сейчас 23,9 и 18,0 КБ).
