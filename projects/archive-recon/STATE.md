@@ -2,34 +2,39 @@ projects/archive-recon/STATE.md
 
 ## Статус фаз
 
-Ф1 (обход тестовой папки Google Drive, сбор правил организации) — начата, не завершена.
+Ф1 (обход тестовой папки Google Drive, сбор правил организации) — завершён по всем тематическим подпапкам корня (25 штук: Sepsis из предыдущего прохода плюс 24 остальных).
 Ф2, Ф3 — не начаты.
 
 ## Сделано в Ф1
 
-- Прочитан корень тестовой папки (ID 100K6ANAOStQ19kQfT2RLt0Hw0wtn0o1r): около 24 тематических подпапки (Sepsis, ANTIBIOTIKA, Delir, Beatmung, SchockRaum, Sedierung, Kardiologie, Notarzt, Neurochirurgie, Thorax, TransfusuonsMedizin, Allgemeine Chirurgie, Leitender NA, Regionale A, «Facharzt Anästhesie ZUM LESEN», «2024 CME Artikel», «2025 CME Artikel», «00 SONO», «00 Ziele», «00 ZERTIFIKATE», Fortbildungen, «H3A Persoenlich», «Meine Vorträge», Medikamente, ÜberstundenKontrolle), плюс отдельные Google Docs и Sheets прямо в корне (несколько «gpt ...» — судя по названию, прошлые заметки с ChatGPT; несколько «CME Artikel_Liste...» — судя по названию, прошлые попытки каталогизации), плюс один PDF («Guyton Physiologie», 17 МБ) без всякой подпапки.
-- Прочитана папка Sepsis целиком: 2 подпапки («2024.08 OHNE MM Patophysiologie der Sepsis», «2024.05 Therapie der Sepsis») плюс 3 отдельных Google Docs.
-- Прочитаны обе подпапки: паттерн «дата-папка на статью», статус «OHNE MM» в имени = конспект не сделан; пара «‹Тема› MM.pdf» (экспорт конспекта) + «‹Тема›.mom» (исходник программы mind map) = статья переварена. Подтверждено на 2 подпапках из 2 просмотренных этого типа — недостаточно, чтобы считать паттерн общим для архива (И-1 PLAN.md).
-- Прочитана одна статья целиком (read_file_content): «Pathophysiologie der Sepsis» (Gregorius J., Brenner T., Thieme, Intensivmedizin up2date 2023;19(3):257–273, DOI 10.1055/a-2114-8333) — подтверждено, что инструмент возвращает качественный текст для несканированного PDF; заодно обнаружено, что у CME-статей Thieme есть встроенный блок Kernaussagen и вопросы CME. Стоимость попытки — см. Т-1 LOG.md.
+- Пройдены все 24 оставшиеся тематические подпапки корня: Kardiologie, Notarzt, ANTIBIOTIKA, Delir, Regionale A, Facharzt Anästhesie ZUM LESEN, 2025 CME Artikel, 00 ZERTIFIKATE, 00 Ziele, 00 SONO, 2024 CME Artikel, Fortbildungen, H3A Persoenlich, Beatmung, TransfusuonsMedizin, SchockRaum, Sedierung, Thorax, Allgemeine Chirurgie, Leitender NA, Neurochirurgie, Meine Vorträge, Medikamente, ÜberstundenKontrolle — по правилам из «Параметры обхода» PLAN.md: выборка до 5 элементов, глубина до 2 уровней, без read_file_content.
+- Обход выполнен 24 вызовами search_files (по одному на подпапку), без единого read_file_content — подтверждает вывод Т-1 LOG.md: обход структуры дешёвый, если не читать содержимое статей.
 
-## Следующий шаг
-
-Обойти оставшиеся подпапки верхнего уровня корня (без чтения содержимого статей — только структура: вложенность, маркеры, типы файлов), свести в таблицу правил ниже.
-
-## Таблица правил (заполняется по ходу Ф1)
+## Таблица правил (по итогам Ф1)
 
 | паттерн | где встречен | число подтверждений | пример пути |
 |---|---|---|---|
-| дата-папка на статью, статус OHNE MM, пара MM.pdf+.mom | Sepsis | 2 из 2 просмотренных подпапок Sepsis | Sepsis/2024.08 OHNE MM .../ |
+| дата-папка на статью, статус OHNE MM, пара MM.pdf+.mom при готовности | Sepsis, Delir, ANTIBIOTIKA, TransfusuonsMedizin, Neurochirurgie, SchockRaum, Beatmung, Notarzt, 2024 CME Artikel | 9 из 25 подпапок корня (частично или полностью) | Sepsis/2024.08 OHNE MM .../ |
+| плоские PDF прямо в тематической папке, без подпапок и без OHNE MM | Regionale A, 2025 CME Artikel, Thorax, Allgemeine Chirurgie, Leitender NA, Sedierung, Medikamente, TransfusuonsMedizin (частично) | 8 из 25 | 2025 CME Artikel/*.pdf |
+| нетематические (не по датам) под-папки второго уровня — категория/книга/курс | Facharzt Anästhesie ZUM LESEN, 00 SONO, Beatmung, Notarzt («Rea»), Meine Vorträge | 5 из 25 | 00 SONO/01 POCUS Buch/ |
+| одиночные Google Docs «gpt …» вперемешку с любым из паттернов выше — заметки/конспекты из сессий с ChatGPT, размер от нескольких КБ до >2 МБ | корень, Sepsis, Kardiologie, TransfusuonsMedizin, Sedierung, Thorax, Neurochirurgie, Medikamente, SchockRaum | 9 из 25 | TransfusuonsMedizin/gpt ROTEM |
+| папка целиком вне темы специальности (сертификаты, личные цели, конспекты выступлений, учёт рабочего времени, материалы курсов по месту/дате) | 00 ZERTIFIKATE, 00 Ziele, Fortbildungen, H3A Persoenlich, Meine Vorträge, ÜberstundenKontrolle | 6 из 25 подпапок корня целиком вне предмета | H3A Persoenlich/BettenPlan.pdf |
 
 ## Нераспознанные случаи
 
-(пока не встречались — корень ещё не обойдён полностью)
+- Файлы-ярлыки (.lnk и нативные ярлыки Google Диска) вместо самого документа — указывают на внешний Leitlinie-файл, не содержат текста сами. Встречены в Regionale A, Sedierung, 00 ZERTIFIKATE.
+- Дубликаты одного и того же файла в разных тематических папках (пример: «Nicht-traumatologisches Schockraummanagement…» лежит и в 2025 CME Artikel, и в SchockRaum, оба с суффиксом «- kopie»).
+- Файл с расширением .pdf, но mimeType text/plain и размером 102 байта («Pharmacologic treatment of agitation in traumatic brain injuries.pdf», Neurochirurgie) — расширение не соответствует содержимому, похоже на битый файл или заглушку, не на статью.
+- Отдельный служебный документ-трекер «CME Gelesen aber kein MindMap» (2024 CME Artikel) — вручную ведённый список статуса обработки на уровне папки, отдельно от маркера OHNE MM в имени файла.
+
+## Следующий шаг
+
+Ф1 закрыта по всем подпапкам корня. Следующий шаг — Ф2: проверка этих правил за пределами тестовой папки (ждёт доступа к фрагменту главного архива — И-6 PLAN.md запрещает считать тестовую папку представительной без проверки).
 
 ## Открытые вопросы владельцу
 
-Нет открытых. Оба вопроса предыдущей версии сняты 2026-09-25 (Р-2 LOG.md): тестовая папка не считается образцом для будущих архивов (И-6 PLAN.md); файлы в её корне не являются ни инструкцией, ни образцом схемы.
+Нет открытых.
 
 ## Блокеры
 
-Нет.
+Ф2 не может начаться без доступа к части главного архива (сейчас недоступен — см. Основание PLAN.md).
