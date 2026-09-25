@@ -8,7 +8,7 @@ projects/anis-evidence/EVIDENZ.md
 
 Номера сквозные по проекту (И-Е). Следующая запись берёт номер на единицу больше.
 
-E: 0009
+E: 0011
 F: 0001
 A: 0007
 
@@ -20,3 +20,5 @@ A: 0007
 |---|---|---|---|---|
 | e-tca-blutungsmanagement.md | TCA, Volumen-/Transfusionssteuerung, TIK bei Polytrauma | 7 | 1 | — |
 | e-sht-antikoagulation.md | SHT unter oraler Antikoagulation — Diagnostik, Überwachung, Reversal | 2 | 0 | 2026-09-20 |
+| e-schockraum-teamfuehrung.md | Teamleitung/Team-Organisation im Schockraum | 1 | 0 | — |
+| e-gcs-neuromonitoring.md | GCS und neurologisches Monitoring bei SHT | 1 | 0 | — |
