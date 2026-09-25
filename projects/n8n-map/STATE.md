@@ -24,7 +24,7 @@ projects/n8n-map/STATE.md
 
 ## Блокеры
 
-- Н-23.09-03 открыт и правит вызывающие узлы в тех же воркфлоу, что и Ф1, включая `gFFiBPm1OomOzJOj` (naryad, «Конкуренция»).
+Нет. Н-23.09-03 закрыт 2026-09-25; `gFFiBPm1OomOzJOj` после него правил наряд Н-25.09-01 (credential узла «Перезаписать N8N_REGISTRY»), versionId d73a09ea = activeVersionId.
 
 ## Найдено попутно (адрес — PLAN.md §6)
 
