@@ -4,6 +4,7 @@ registry/projects.md
 |---|---|---|---|---|
 | git-migration | projects/git-migration/ | repo | активен | |
 | anis-evidence | projects/anis-evidence/ | repo | активен | https://claude.ai/project/01a09a12-fef3-737b-8f00-75badd522e12 |
+| archive-recon | projects/archive-recon/ | repo | активен | |
 | n8n-map | projects/n8n-map/ | repo | активен | |
 | kontext-reduktion | projects/kontext-reduktion/ | repo | активен | |
 
