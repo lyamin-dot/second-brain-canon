@@ -7,7 +7,7 @@
 ### 4.0 Чтение Google Sheets — только gsheets-read (n8n `kRz5VVlxA1LiY7KG`)
 
 body `{fileId, mode: "meta"|"range", sheetName?, range?, render?, maxRows?}` → `{success, fileId, mode, spreadsheetTitle, sheets, sheetName, range, render, rows, rowCount, returnedRows, truncated, maxRows, reason}`.
-Вызов — `n8n:execute_workflow`, `executionMode: manual` (в production тело ответа не возвращается и execution не виден — R4). Вебхук закрыт Header Auth, в отличие от `gdocs-read`.
+Вызов — `n8n:execute_workflow`, `executionMode: manual` (в production тело ответа не возвращается и execution не виден — R4). Вебхук закрыт Header Auth — как и все вебхуки инстанса по снимку registry/n8n-map.md 2026-09-26, включая `gdocs-read`, который раньше был открыт.
 
 Порядок работы: СНАЧАЛА `mode:"meta"` — список листов с их размерами. Диапазон вслепую не запрашивать. Затем `mode:"range"` на конкретный лист.
 
