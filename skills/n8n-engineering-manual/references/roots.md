@@ -1,0 +1,1 @@
+# n8n-engineering-manual — корневые причины и lookup
