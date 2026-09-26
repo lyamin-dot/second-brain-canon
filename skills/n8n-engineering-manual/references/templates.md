@@ -1,0 +1,1 @@
+# n8n-engineering-manual — Golden Templates T1–T4
