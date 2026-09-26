@@ -1,0 +1,1 @@
+# n8n-engineering-manual — запись через MCP
