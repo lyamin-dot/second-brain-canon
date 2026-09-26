@@ -14,7 +14,6 @@ labs/sys/INDEX.md
 | `t-git-migration.md` | указатель на активный перенос канона в repo; состояние — в `projects/git-migration/STATE.md` | РЫЧАГ | 2026-09-03 |
 | `t-webhook-input-form.md` | `execute_workflow` требует тип входа webhook; форма даёт отказ, похожий на ошибку параметров | РУТИНА | 2026-09-08 |
 | `t-knowledge-loop.md` | Главная Задача: цикл знания, ни один корпус без читателя | РЫЧАГ | 2026-08-13 |
-| `t-ozon-sync-failure.md` | OZON RAW Konversion Sync падает каждую ночь, выручка по SKU не пишется | БЛОКЕР | 2026-08-07 |
 | `t-prompt-backup.md` | тексты мастер-промптов нигде не резервируются — единственный экземпляр в UI | РУТИНА | — |
 | `t-sbe-false-reference.md` | ложная ссылка-источник в Skill `second-brain-engineer` §5.8 | РЫЧАГ | — |
 | `t-skills-snapshot.md` | снимок `n8n-workflow-registry` в Customize отстал от канона | РУТИНА | 2026-08-30 |
