@@ -1,0 +1,1 @@
+# second-brain-git — новый проект и перенос из Docs
