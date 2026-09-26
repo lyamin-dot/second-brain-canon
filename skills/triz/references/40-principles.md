@@ -1,0 +1,1 @@
+# The 40 TRIZ Inventive Principles
