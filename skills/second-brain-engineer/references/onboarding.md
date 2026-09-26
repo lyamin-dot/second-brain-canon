@@ -1,0 +1,1 @@
+# second-brain-engineer — онбординг нового проекта
