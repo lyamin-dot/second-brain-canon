@@ -97,7 +97,7 @@ projects/n8n-map/PLAN.md
 Формат — одна строка на факт, поля через `|`. Поиск по любому полю — один grep клоном или один вызов Git Read Lines с pattern. Обратные указатели — тот же файл, поиск по другой колонке; отдельный индекс не нужен.
 
 ```
-W|<wf>|<name>|<state>|<draft>|<triggers>|<schedule>|<tz>|<passport|->|<project|?>|<errorWorkflow|->|<callerPolicy|->
+W|<wf>|<name>|<state>|<draft>|<triggers>|<schedule>|<tz>|<project|?>|<errorWorkflow|->|<callerPolicy|->
 D|<docId|dynamic>|<wf>|<node>|<nodeType>|<op>|<sheet|->
 X|<callerWf>|<calleeWf|dynamic>|<node>|<wait|nowait>
 H|<callerWf>|<node>|<calleeWf|DANGLING|dynamic>|<internal|public>
