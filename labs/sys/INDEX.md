@@ -16,7 +16,6 @@ labs/sys/INDEX.md
 | `t-knowledge-loop.md` | Главная Задача: цикл знания, ни один корпус без читателя | РЫЧАГ | 2026-08-13 |
 | `t-prompt-backup.md` | тексты мастер-промптов нигде не резервируются — единственный экземпляр в UI | РУТИНА | — |
 | `t-sbe-false-reference.md` | ложная ссылка-источник в Skill `second-brain-engineer` §5.8 | РЫЧАГ | — |
-| `t-skills-snapshot.md` | снимок `n8n-workflow-registry` в Customize отстал от канона | РУТИНА | 2026-08-30 |
 | `t-n8n-registry-audit.md` | `n8n-workflow-registry` §1, §3, §4 устарели, нужна сплошная сверка | РУТИНА | — |
 | `t-readback-constant.md` | «read-back обязателен всегда» пометить закрытой константой в `n8n-engineering-manual` §1 | РУТИНА | — |
 | `t-get-execution-context.md` | `get_execution` не отсекает contextData: хвост в 3 000 символов вернул 138 КБ | — (маркер ЗАХВАЧЕНО, метки в источнике нет) | 2026-08-26 |

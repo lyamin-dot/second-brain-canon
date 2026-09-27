@@ -61,7 +61,7 @@ SYS_PROTOCOL_REGISTRY: 1ftGIevprVglEytkI_qTobmMyL8ufP5c5pY__b2pbqHE — реес
 
 <!-- T-016 | CORE байт 12429-13377 | Р.2 документы и папки (SECOND_BRAIN_TZ, SKILL_SBE, USER_MANUAL, TECH_INDEX, N8N_TEMPLATES, N8N_INCIDENT_LOG, _SYSTEM, INDEX_FOLDER) -->
 SECOND_BRAIN_TZ:    1j9sqL43m3PvUjpqAvfj71gFDsWVjajz_sZKQCRxVdnc
-SKILL_SBE:          1gybzP1Gre3aJCkjRcHFoSe1m6YpcYYEd9w8qGHTzPWI
+SKILL_SBE:          1gybzP1Gre3aJCkjRcHFoSe1m6YpcYYEd9w8qGHTzPWI — ЗАМОРОЖЕН 2026-09-27 (текст на 2026-08-22; канон Skill — skills/second-brain-engineer/, Р-114 журнала projects/git-migration/LOG.md)
 USER_MANUAL:        1ZFUggkhZoip6ytesV0D-SlfIsCtpNZQ6TKQfYqnjiHo
 TECH_INDEX:         10fAtNieWynJL3hUUVn8KsPWhv66RwkiAihLApJDhOMM
 N8N_TEMPLATES:      1A5LrTDyThvox90jCHjM6UnVhQhfmPOv3K8gAylUnY4g — TEMPLATES.md (T1-T4), спутник SKILL n8n-engineering-manual. Существование подтверждено 2026-08-11 (был в Корзине, невидим владельцу; восстановлен Андреем). Корень Диска, не папка SKILLS.

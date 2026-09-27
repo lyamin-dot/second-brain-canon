@@ -36,6 +36,26 @@ body `{fileId, mode: "meta"|"range", sheetName?, range?, render?, maxRows?}` →
 
 Критерий выбора между путями: `gsheets-read` — когда нужно посмотреть (структура, диапазон, формула). Среда с bash и .xlsx на диске — когда нужно посчитать по всему массиву в десятки тысяч строк. Дамп Apps Script — когда нужно оформление.
 
+### 4.0а Дозапись строк в Google Sheets — gsheets-append (n8n `LNlWIEdH0tkzmqPB`)
+
+Воркфлоу «Claude → Google Sheets Append», заведён 2026-09-26 сессией через MCP, активен. Контракт снят чтением воркфлоу 2026-09-27 (get_workflow_details, версия 6db5d98c).
+
+body `{fileId, sheetName, rows}` → `{success, fileId, sheetName, rowsRequested, updatedRange, updatedRows, reason}`.
+- `fileId` — ID книги; `sheetName` — имя листа как есть, кавычки воркфлоу ставит сам; `rows` — непустой массив строк, каждая строка — массив значений ячеек (`[["2026-09-27", "WB", 1250]]`).
+- Пустое или неверное поле — воркфлоу падает на узле 02_Parse_Payload («Missing fileId», «Missing sheetName», «Missing or empty rows…», «Each row must be an array…») и ответа не отдаёт; в режиме manual причина видна в статусе исполнения.
+- Вызов — `n8n:execute_workflow`, `executionMode: "manual"`, форма тела — §3 основного файла (`inputs.type = "webhook"`, `webhookData.method = "POST"`, `webhookData.body`). Вебхук закрыт Header Auth, вызов из сессии через MCP проходит мимо него.
+
+Что делает: один запрос Sheets API v4 `values:append` к диапазону `'<лист>'!A1` с параметрами `valueInputOption=USER_ENTERED` и `insertDataOption=INSERT_ROWS`, под тем же сервисным аккаунтом (googleApi), что gsheets-read. Книга должна быть расшарена на сервисный аккаунт с правом редактора; иначе `success:false` и `reason` «permission denied…». `success:true` ставится только при наличии в ответе Google объекта `updates`; без него — `success:false` и `reason` «APPEND DID NOT HAPPEN…».
+
+Три ловушки, все следуют из параметров запроса:
+- `USER_ENTERED` — значения разбираются так, будто их набрали руками в интерфейсе. Строка, начинающаяся с `=`, становится живой формулой; число и дата разбираются по локали книги (у книг Андрея `ru_RU`: «1,5» — число, «1.5» — может стать датой или текстом); строка вида «+49…» может стать числом. Текст, который должен остаться текстом, передавать с ведущим апострофом (`"'=A1"`), как в apps-script-sheets §2.5.
+- Место дозаписи выбирает Google: он ищет «таблицу» от ячейки A1 листа и пишет после её последней строки. Если на листе есть пустая строка внутри данных, запись может лечь в середину листа, а не в конец. `INSERT_ROWS` вставляет новые строки, а не перезаписывает ниже лежащие — фактический адрес всегда смотреть в `updatedRange`.
+- Повтор при сбое. Узел запроса (03_HTTP_Append) стоит с `retryOnFail`, а `values:append` не идемпотентен: если первый запрос дошёл до Google, но ответ потерялся по таймауту, повтор допишет те же строки второй раз. Поэтому после любого `success:false` с причиной «request failed…» сначала читать лист, потом решать о повторе — не повторять вслепую (тот же класс, что E16).
+
+Проверка — не ответ воркфлоу, а чтение: gsheets-read `mode:"range"` по диапазону из `updatedRange`, сверка числа строк с `rowsRequested` и значений с отправленными. Узел запроса — `n8n-nodes-base.httpRequest`: ответ Google оседает в contextData, но он мал (объект `updates`), и утечка здесь дешёвая.
+
+Паспорта у воркфлоу нет, строки PASSPORT в description нет.
+
 ### 4.1 Создание таблиц — только через Apps Script
 
 Скрипт вставляется в script.google.com и запускается вручную (Run) — не создавать Sheets напрямую.
