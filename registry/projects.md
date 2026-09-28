@@ -7,7 +7,7 @@ registry/projects.md
 | archive-recon | projects/archive-recon/ | repo | активен | |
 | n8n-map | projects/n8n-map/ | repo | активен | |
 | kontext-reduktion | projects/kontext-reduktion/ | repo | активен | |
-| wb-ue | projects/wb-ue/ | repo | активен — перенос 2026-09-28, приёмка Контролёром закрыта (три круга, `projects/git-migration/LOG.md` Р-115…Р-118); источник не заморожен | |
+| wb-ue | projects/wb-ue/ | repo | активен — перенос 2026-09-28, приёмка Контролёром закрыта (три круга, `projects/git-migration/LOG.md` Р-115…Р-118); источник заморожен | |
 
 ## Лаборатории
 
@@ -70,7 +70,7 @@ ANIS_EVIDENCE вес 3   — доказательная справка по ан
           Основной источник прибыли, менее оцифрован
           Файл индекса: 1qY2bB8VZtepPQCp0uZQ6hzO4a2SsE-_ooHnghYHjuZY
 
-ПЕРЕНЕСЕНО 2026-09-28: канон проекта WB_UE — `projects/wb-ue/` (repo), строка в таблице выше. Карточка [WB_UE] и вес в блоке T-002 выше — провенанс-маркер, текст не правится (second-brain-git 2.3); источник (Файл индекса выше) не заморожен, решение владельца отложено — см. `projects/wb-ue/STATE.md`.
+ПЕРЕНЕСЕНО 2026-09-28: канон проекта WB_UE — `projects/wb-ue/` (repo), строка в таблице выше. Карточка [WB_UE] и вес в блоке T-002 выше — провенанс-маркер, текст не правится (second-brain-git 2.3); источник (Файл индекса выше) заморожен 2026-09-28 (маркер в шапке документа) — см. `projects/wb-ue/STATE.md`.
 
 [WB_CV]   WB конверсия и трафик
           СТАТУС: НЕ НАЧАТ (ждёт WB_UE)
