@@ -19,7 +19,7 @@ projects/wb-ue/PLAN.md
 
 **WB RAW Finance Sync V.3** — `IvgysDKrq3UISYEY`. Расписание: среда 10:00, еженедельно, окно — прошлая неделя понедельник–воскресенье (узел `01_Set_WOCHE_Range`). Error Workflow: `M5BLqclKBjGTpz33` (🚨 Error Notifier), задан.
 
-**WB RAW History Load V.3 CLEAN** — `Iis5dlRS1GWZqQXD`. Псевдо-ручной запуск (расписание раз в 100 месяцев), API v1, история залита полностью. Диапазон задаётся жёстко в узле `01_Set_History_Range`. Пауза между неделями — Code-узел `03_Wait_API_Limit`, 75 секунд внутри цикла. Пагинации нет. Узел `11_Write_RAW_To_Sheets` выключен — пишет только слой транзакций (`15_Write_Transactions`, appendOrUpdate по `tx_key`). Error Workflow не задан.
+**WB RAW History Load V.3 CLEAN** — `Iis5dlRS1GWZqQXD`. Псевдо-ручной запуск (расписание раз в 100 месяцев), API v1, история залита полностью. Диапазон задаётся жёстко в узле `01_Set_History_Range` (на 28.09: `2026-09-07…2026-09-07`). Пауза между неделями — Code-узел `03_Wait_API_Limit`, 75 секунд внутри цикла. Пагинации нет. Узел `11_Write_RAW_To_Sheets` выключен — пишет только слой транзакций (`15_Write_Transactions`, appendOrUpdate по `tx_key`). Error Workflow не задан.
 
 **WB Reports Official Sync** — `P7CZYJZWIqC5Me4c`. Среда 12:00 МСК, timezone задан, Error Workflow задан, активен. Тянет `sales-reports/list` за окно `WINDOW_DAYS = 400` в лист `wb_reports_official` (17 колонок, appendOrUpdate по `report_id`). Живость подтверждена: `synced_at` в `wb_reports_official` — `2026-09-16 12:00:13` и `2026-09-23 12:00:13`. Примечание: в комментарии кода и описании воркфлоу ещё указано окно «120 дней» — устарело, актуально `WINDOW_DAYS=400`. Шапка листа — контракт: переименование колонок молча ломает autoMapInputData.
 
