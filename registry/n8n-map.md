@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-09-27T19:29:58.923Z
+instance_last_change|2026-09-28T20:27:53.502Z
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|?|-|workflowsFromSameOwner
 W|0sVn3WwpIyaItpki|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,triggerAtDayOfMonth=1,triggerAtHour=3|instance|?|-|-
 W|16iuTMqNFMvh2uwb|TEMP Delete TEST_UNREACHABLE row (naryad Н-07.09-02)|archived|never|manualTrigger|-|instance|?|-|-
@@ -41,7 +41,7 @@ W|9flRXoFNEQzHgznB|WB API Structure Test|archived|never|manualTrigger|-|instance
 W|B5jkqW0bUScxmTi7|SYS Canary — ***|active|same|scheduleTrigger|triggerAtHour=6|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|B5tok1gRWl3gp7X6|KB Sync — Motor Oil Specs|active|same|manualTrigger,scheduleTrigger|field=months,monthsInterval=1000|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|BP2a4eIIYjghAVVt|Deklaration MotorOel|archived|never|scheduleTrigger|field=weeks,triggerAtHour=1|instance|?|-|-
-W|BPVFEmZF6QxXuTB6|OZON_UE Accrual → sales_raw_operations Adapter|active|same|executeWorkflowTrigger,manualTrigger,scheduleTrigger|triggerAtHour=2,triggerAtMinute=20|instance|?|-|-
+W|BPVFEmZF6QxXuTB6|OZON_UE Accrual → sales_raw_operations Adapter|active|same|executeWorkflowTrigger,manualTrigger,scheduleTrigger|triggerAtHour=2,triggerAtMinute=20|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|CELGBmo7vQFF1Ej7|Claude → Google Docs Append|archived|never|webhook|-|instance|?|-|-
 W|CVsLN6j9lxHibgKr|KB MO — Annotation Preprocessor|active|same|manualTrigger,scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|DM26WhTJyCV0DhkP|WB FBS Order Close v2 [Supply Summary]|active|same|scheduleTrigger|field=hours,triggerAtMinute=5|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -93,6 +93,7 @@ W|OYIhTm8h2ABMHQUW|Claude → Google Docs Overwrite|archived|never|webhook|-|ins
 W|Omt9oDYf7NthOw5T|Git Write|active|same|webhook|-|instance|?|-|-
 W|OnEludZYMusvFxTS|LM_DECL — Watch (мониторинг изменений)|active|same|manualTrigger,scheduleTrigger|expression=0 4 1 */3 *,field=cronExpression|instance|?|-|-
 W|P7CZYJZWIqC5Me4c|WB Reports Official Sync|active|same|scheduleTrigger|field=weeks,triggerAtDay=3,triggerAtHour=12|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|PWFVE0UbM3ajvVFc|Ozon IP SKU Staging (ИП)|inactive|never|manualTrigger|-|instance|?|-|-
 W|PmpbiKkwgjM9ph0L|TEST Ozon QA v2 question list|archived|never|manualTrigger|-|instance|?|-|-
 W|QmPIz9uhfU48FcWX|LM_DECL — Seed РОСС (заполнение РОСС деклараций)|active|same|manualTrigger,scheduleTrigger|expression=0 3 1 1 *,field=cronExpression|instance|?|-|-
 W|R8w94X0mT0Fa2Oil|OZON QA Response|active|same|scheduleTrigger|field=minutes,minutesInterval=30|instance|?|-|-
@@ -103,7 +104,7 @@ W|SoreXOUG4nhaWfQr|TMP Ozon Cleanup — delete poisoned 20.08 rows|inactive|neve
 W|TXNstdVL8xlIygBp|SYS Lint|active|same|scheduleTrigger|triggerAtHour=6|instance|?|-|-
 W|V43JMSOFHyf7wbiH|SYS INDEX Restore from Revision|active|same|webhook|-|instance|?|-|-
 W|VMPxWzXPefKT2R1B|LM_DECL_MASTER — Мониторинг деклараций V.2|inactive|never|manualTrigger,scheduleTrigger|field=months,monthsInterval=3,triggerAtHour=6|instance|?|-|-
-W|VWyXmCPJevCnbkZT|SKU Category Historical Backfill|active|same|scheduleTrigger|field=months,monthsInterval=100|instance|?|-|workflowsFromSameOwner
+W|VWyXmCPJevCnbkZT|SKU Category Historical Backfill|inactive|never|scheduleTrigger|field=months,monthsInterval=100|instance|?|-|workflowsFromSameOwner
 W|W1CRVcAN2gFHRY01|WB FBS Supply Close|archived|never|webhook|-|instance|?|-|-
 W|W2lw8WIAIrwoPDUT|Git Read Lines|active|same|webhook|-|instance|?|-|-
 W|W3KjaXVqWD2c02IK|DOSSIER Build CORPUS+REGISTRY|active|same|scheduleTrigger|field=months,monthsInterval=100,triggerAtHour=3|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -122,7 +123,7 @@ W|ZIvTVFHNw9m2gns3|OZON Reviews Response|archived|never|scheduleTrigger|field=mi
 W|ZXTQwjUkd81wyRoI|Git Log|active|same|webhook|-|instance|?|-|-
 W|Zh7hLysw3MPg1i1q|TEST Zone Sync ПРАВКА B — канарейка 2026-08-04|archived|never|manualTrigger|-|instance|?|-|-
 W|ZyaOSSDvGsf0eq7L|LM_DECL — Worker (ядро парсинга)|active|same|executeWorkflowTrigger|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
-W|aVpgEnYBAgIIss4k|Ozon RAW Accrual Sync|active|same|executeWorkflowTrigger,manualTrigger,scheduleTrigger|triggerAtHour=2|instance|?|-|-
+W|aVpgEnYBAgIIss4k|Ozon RAW Accrual Sync|active|same|executeWorkflowTrigger,manualTrigger,scheduleTrigger|triggerAtHour=2|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|bFJsM3aFlIHIFeAd|DOSSIER INBOX Accept To Archive|active|same|scheduleTrigger|field=months,monthsInterval=100,triggerAtHour=3|instance|?|-|-
 W|bFiCQqKBDxzos4l2|Projekt_OCR OEM_V.3|archived|never|manualTrigger|-|instance|?|-|-
 W|broKqvpEUTx6eLH2|DOSSIER Diagnostics - Trash Ownership Check|archived|never|manualTrigger|-|instance|?|-|-
@@ -133,6 +134,7 @@ W|cvfGWTmU3oInRZuG|TMP Read Archive Answers|archived|never|webhook|-|instance|?|
 W|d3Rq28ZZDhUBiXYu|SYS Index Size + Zone Sync Monitor — COPY 2026-07-28|archived|never|scheduleTrigger|expression=0 9 * * 1 ,field=cronExpression|instance|?|-|-
 W|dGyt4h85UQzKxQ2R|Deklaration TransmissionOel|archived|never|scheduleTrigger|field=weeks,triggerAtHour=3|instance|?|-|-
 W|dN7mQoM3eeOo0xDo|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,monthsInterval=100|instance|?|-|-
+W|dZQmYeMiGiWrNilC|Ozon RAW Accrual Backfill Orchestrator|archived|never|manualTrigger|-|instance|?|-|-
 W|e9ScqWtLPgSsHf0A|Claude → Google Apps Script Read|active|unpublished|webhook|-|instance|?|-|-
 W|ecLCKdm5Vb39OGUo|ONE-OFF Cleanup: delete stray row 476 in Price Master Artikel|archived|never|manualTrigger|-|instance|?|-|-
 W|f4yb9twJIezGJEvz|Daily Briefing Generator|archived|never|scheduleTrigger|triggerAtHour=5|Europe/Berlin|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -164,7 +166,7 @@ W|m7vGqw03E6nzTR3a|GitHub Token Expiry Monitor|active|same|scheduleTrigger|daysI
 W|mAaWSmoXDH9Ofgg3|WB Reviews Intake|active|same|scheduleTrigger|field=minutes,minutesInterval=15|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|mhFl0vvbRdBaNZu6|Deklaration HydraulischesOel|archived|never|scheduleTrigger|field=weeks,triggerAtHour=4|instance|?|-|-
 W|mibzRHnFH68Y9Mo3|SYS Lint — TEST COPY (Н-28.08-04.3)|archived|never|scheduleTrigger|triggerAtHour=6|instance|?|-|-
-W|nE7FZhsy4V3yxB0f|OZON Fetch Reviews → Queue (Pagination)|active|unpublished|scheduleTrigger|field=months,monthsInterval=100|instance|?|-|-
+W|nE7FZhsy4V3yxB0f|OZON Fetch Reviews → Queue (Pagination)|archived|never|scheduleTrigger|field=months,monthsInterval=100|instance|?|-|-
 W|nNNJuafLqTX7g8TU|SKU Artikel Map — Ozon to SKU_Artikel_Map|active|same|scheduleTrigger|field=months,monthsInterval=1000|instance|?|-|-
 W|nPnj7varZYsV1Xoc|TMP Reset Test Rows|archived|never|webhook|-|instance|?|-|-
 W|nY5XeDw9VMAdYcEi|SYS Index Size + Zone Sync Monitor copy|inactive|never|scheduleTrigger|expression=0 9 * * 1 ,field=cronExpression|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -173,6 +175,7 @@ W|nxI4LTj4oHTYh3qA|Append text to Google Doc|archived|never|webhook|-|instance|?
 W|oJrg4XY0HZwPCq59|Контроль FBS Ozon|inactive|never|scheduleTrigger|field=hours|instance|?|-|-
 W|p3TOyeR4GnUmP695|SYS_INDEX Copy Staging to Target|archived|never|webhook|-|instance|?|-|-
 W|q78KdtgIWGTySlFN|WB FBS Supply→Tracking Sync|active|same|executeWorkflowTrigger,scheduleTrigger|field=minutes,minutesInterval=15|instance|?|-|-
+W|qIUgsRpTqHpyYyxr|Ozon RAW Accrual Backfill Day|archived|never|executeWorkflowTrigger,manualTrigger|-|instance|?|-|-
 W|qWk65OyxaoAu4jAl|Claude → Google Docs Replace|archived|never|webhook|-|instance|?|-|-
 W|qZWrl0MkRnZBipXA|SKU Category Weekly Snapshot|active|same|scheduleTrigger|field=weeks,triggerAtDay=1,triggerAtHour=6|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|qrZw8bxIEpRAUwEe|WB_WF_sku-mapping-loader|active|same|manualTrigger,scheduleTrigger|field=months,monthsInterval=100|instance|?|-|-
@@ -207,7 +210,6 @@ D|12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8|TXNstdVL8xlIygBp|03_Get_SYS_INDEX
 D|12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8|TXNstdVL8xlIygBp|06_Get_SYS_INDEX_Text|httpRequest|default|-
 D|14QMHYMM4mZRnnq1wHQA4_SA8ZnOeE1xcVJDL2h9h1Pk|Iis5dlRS1GWZqQXD|15_Write_Transactions|googleSheets|appendOrUpdate|-
 D|14QMHYMM4mZRnnq1wHQA4_SA8ZnOeE1xcVJDL2h9h1Pk|IvgysDKrq3UISYEY|07_Find_RAW_Rows_By_Date|googleSheets|default|-
-D|14QMHYMM4mZRnnq1wHQA4_SA8ZnOeE1xcVJDL2h9h1Pk|IvgysDKrq3UISYEY|09_Delete_RAW_Rows|googleSheets|delete|-
 D|14QMHYMM4mZRnnq1wHQA4_SA8ZnOeE1xcVJDL2h9h1Pk|IvgysDKrq3UISYEY|11_Write_RAW_To_Sheets|googleSheets|appendOrUpdate|-
 D|14QMHYMM4mZRnnq1wHQA4_SA8ZnOeE1xcVJDL2h9h1Pk|IvgysDKrq3UISYEY|12_Read_RAW_For_TX|googleSheets|default|-
 D|14QMHYMM4mZRnnq1wHQA4_SA8ZnOeE1xcVJDL2h9h1Pk|IvgysDKrq3UISYEY|15_Write_Transactions|googleSheets|appendOrUpdate|-
@@ -361,8 +363,6 @@ D|1mgtcD2wSm_-8hqfpv3v883KE34-Smy-kFxHvt6zMXj4|XG4gzxtqPJXafBXN|02_Fetch_Ready_A
 D|1mgtcD2wSm_-8hqfpv3v883KE34-Smy-kFxHvt6zMXj4|XG4gzxtqPJXafBXN|04_Mark_Publishing|googleSheets|update|ozon_reviews_queue
 D|1mgtcD2wSm_-8hqfpv3v883KE34-Smy-kFxHvt6zMXj4|XG4gzxtqPJXafBXN|09_Write_Alert_Log|googleSheets|append|ozon_alerts_log
 D|1mgtcD2wSm_-8hqfpv3v883KE34-Smy-kFxHvt6zMXj4|XG4gzxtqPJXafBXN|11_Update_Queue_Row|googleSheets|update|ozon_reviews_queue
-D|1mgtcD2wSm_-8hqfpv3v883KE34-Smy-kFxHvt6zMXj4|nE7FZhsy4V3yxB0f|04_Fetch_Queue|googleSheets|default|ozon_reviews_queue
-D|1mgtcD2wSm_-8hqfpv3v883KE34-Smy-kFxHvt6zMXj4|nE7FZhsy4V3yxB0f|06_Write_To_Queue|googleSheets|appendOrUpdate|ozon_reviews_queue
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|56cGbN0MRyggaGq8|01_Read_Articles_From_Sheets|googleSheets|default|Artikel
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|IHn3Bmyh1VeHf4Ya|03A_Fetch_Price_Master|googleSheets|default|-
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|J0v5swjXLfiANJa2|15_Save_SKU_Map_To_PriceMaster|googleSheets|appendOrUpdate|-
@@ -370,7 +370,6 @@ D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|S4rZMUkI21dVu3ML|04_Read_Artikel|
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|S4rZMUkI21dVu3ML|05_Read_Current|googleSheets|default|CURRENT
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|VMPxWzXPefKT2R1B|01_Read_Price_Master|googleSheets|default|Artikel
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|kNg2uEoYlaGOLC82|06B_Read_Price_Master|googleSheets|default|CURRENT
-D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|nE7FZhsy4V3yxB0f|03A_Fetch_Price_Master|googleSheets|default|-
 D|1n-xw5mdR4JhiAJgEVpkkqQT_GktBR2Dzw3A0BRWAJNA|DWyvoJYkCodJxMg1|01_Sheets_Read_URL_List|googleSheets|default|-
 D|1n-xw5mdR4JhiAJgEVpkkqQT_GktBR2Dzw3A0BRWAJNA|DWyvoJYkCodJxMg1|08_Update_Google_Sheets|googleSheets|update|-
 D|1qdefReY1qHfWdwroorbxz2Bi20_3dsGHuDBiYy2W_XQ|0fesM63M92naAnOl|03c_Read_Tracking|googleSheets|default|-
@@ -531,7 +530,7 @@ C|IHn3Bmyh1VeHf4Ya|httpCustomAuth|1
 C|Iis5dlRS1GWZqQXD|googleApi|1
 C|Iis5dlRS1GWZqQXD|httpHeaderAuth|1
 C|IndDiEuGPEZOU6NF|postgres|4
-C|IvgysDKrq3UISYEY|googleApi|5
+C|IvgysDKrq3UISYEY|googleApi|4
 C|IvgysDKrq3UISYEY|httpHeaderAuth|1
 C|J0v5swjXLfiANJa2|googleApi|1
 C|J0v5swjXLfiANJa2|httpCustomAuth|2
@@ -574,6 +573,8 @@ C|OnEludZYMusvFxTS|googleApi|3
 C|OnEludZYMusvFxTS|telegramApi|1
 C|P7CZYJZWIqC5Me4c|googleApi|1
 C|P7CZYJZWIqC5Me4c|httpHeaderAuth|1
+C|PWFVE0UbM3ajvVFc|googleApi|3
+C|PWFVE0UbM3ajvVFc|httpCustomAuth|2
 C|QmPIz9uhfU48FcWX|googleSheetsOAuth2Api|2
 C|R8w94X0mT0Fa2Oil|googleApi|2
 C|R8w94X0mT0Fa2Oil|httpHeaderAuth|3
@@ -582,6 +583,8 @@ C|S4rZMUkI21dVu3ML|googleApi|6
 C|S4rZMUkI21dVu3ML|httpHeaderAuth|3
 C|S4rZMUkI21dVu3ML|telegramApi|2
 C|SElTcMg3BpY6pmdo|googleApi|1
+C|SElTcMg3BpY6pmdo|httpCustomAuth|1
+C|SElTcMg3BpY6pmdo|httpHeaderAuth|1
 C|SoreXOUG4nhaWfQr|googleApi|4
 C|TXNstdVL8xlIygBp|googleApi|9
 C|TXNstdVL8xlIygBp|httpHeaderAuth|7
@@ -642,8 +645,6 @@ C|m7vGqw03E6nzTR3a|githubApi|1
 C|m7vGqw03E6nzTR3a|telegramApi|2
 C|mAaWSmoXDH9Ofgg3|googleApi|5
 C|mAaWSmoXDH9Ofgg3|httpHeaderAuth|4
-C|nE7FZhsy4V3yxB0f|googleSheetsOAuth2Api|3
-C|nE7FZhsy4V3yxB0f|httpCustomAuth|1
 C|nNNJuafLqTX7g8TU|googleApi|1
 C|nNNJuafLqTX7g8TU|httpCustomAuth|2
 C|nY5XeDw9VMAdYcEi|googleApi|3
@@ -689,6 +690,7 @@ R|LguGCDYJvMQSahcj|SElTcMg3BpY6pmdo|Config Daily Workflows
 R|LguGCDYJvMQSahcj|c9B1w8njEilu8mqx|Config Daily Workflows
 R|LguGCDYJvMQSahcj|gFFiBPm1OomOzJOj|Config Daily Workflows
 R|LguGCDYJvMQSahcj|qZWrl0MkRnZBipXA|Config Daily Workflows
+R|PWFVE0UbM3ajvVFc|J0v5swjXLfiANJa2|Sticky Note 79ec3ff0
 R|TXNstdVL8xlIygBp|B5jkqW0bUScxmTi7|10B_Watchlist_Items
 R|TXNstdVL8xlIygBp|B5jkqW0bUScxmTi7|12_Run_Checks
 R|TXNstdVL8xlIygBp|Htrj0Kyj7eT5SEhR|10B_Watchlist_Items
