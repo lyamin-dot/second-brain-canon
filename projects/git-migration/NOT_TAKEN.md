@@ -216,3 +216,5 @@ projects/git-migration/NOT_TAKEN.md
 ### Отложено — SYS Canary не снят, диагноз исправлен
 
 `SYS Canary — gdocs-replace-v2` (B5jkqW0bUScxmTi7, ежедневно 06:00 Europe/Moscow, паспорт 1fJl7hoWRvbKgsB5w5gVdWzHYo7vA0maNQjeoiwJIPDo) был снят той же сессией по предварительному согласию владельца; чтение кода после снятия показало прежний диагноз ошибочным — "вероятно, пишет в замороженные SYS_INDEX/CORE" (запись Блока B, чат 2026-09-30) опровергнут. Workflow меняет placeholder в собственном тестовом документе 1A681qbI5Tbz9a-A9HdSRin3Csttie0qxEYCSTmyTeF0, не связанном с SYS_INDEX или CORE; единственная цель — проверить, что webhook gdocs-replace-v2 ещё работает. При провале шлёт алерт в Telegram и дополнительно триггерит errorWorkflow M5BLqclKBjGTpz33 — читатель на отказ есть. Совпадение имени со снятой ротацией паролей-канареек (Password Rotation - SYS_INDEX + CORE) не означает функциональной связи. Восстановление публикации — вопрос владельцу.
+
+Публикация SYS Canary восстановлена 2026-09-30 по решению владельца (наряд Н-30.09-01): publish_workflow, активная версия b35b9475-da8b-4a19-9b18-2ff26c51a00d, active:true подтверждено чтением.
