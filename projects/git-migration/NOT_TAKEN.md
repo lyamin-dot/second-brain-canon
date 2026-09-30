@@ -200,3 +200,19 @@ projects/git-migration/NOT_TAKEN.md
 | «ФРАГМЕНТЫ БЕЗ КОНТЕКСТА» (20 фрагментов, строка 301) | Удалены решением Андрея 2026-09-28; 16 имеют текст в резервной копии, 4 смысла не несли | Строка 301; блок «Решения Андрея по подготовке к переносу» |
 | Хроника и опыт до 2026-08-22 | Уже в резервной копии, полный текст Зоны Б на 22.08 | BACKUP_OZON_UE_INDEX_2026-08-22_H-22.08-05 (1Xh8w2x9sgX5UgJyyqxQQ5-Oi6Wwq1Hi7o1aIiIR9t_I, 72 504 Б) |
 | Записи НЕЯСНО, чей статус живёт вне документа: очередь правок (A-1, U-1, AD-1, AG-18, AH-5, AH-11), невнесённые правки мастер-промпта и двух Skill (2026-09-24), правило нумерации позиций очереди, файлы `reconcile_ozon_accruals.py` и `RECON_OZON_ACCRUALS_EN.md` (последние — в `t-books-followups`) | Статус живёт в `registry/maintenance-queue.md` и в Skills; задачей лаборатории не является | `registry/maintenance-queue.md`, `registry/maintenance-queue-archive.md`; Зона Б, блок 2026-09-24, строки 373–398 |
+
+## Мониторы без читателя — снятие 2026-09-30 (labs/sys/t-monitors-no-reader.md)
+
+Источник: labs/sys/t-monitors-no-reader.md, шесть пронумерованных объектов; их единственный читатель (регламент обслуживания CORE Р.12) снят 2026-09-07 и удалён из репозитория 2026-09-17. Решение владельца о снятии — сессия чата 2026-09-30.
+
+| Воркфлоу | ID | Расписание | Что делал | Паспорт | Покрывал |
+|---|---|---|---|---|---|
+| SYS Index Size + Zone Sync Monitor | f7kdTpDADk7q0v2t | еженедельно пн 09:00 | Читал CORE и связанные INDEX-документы Google Docs, считал объём Зоны А по каждому, писал строку в таблицу 1Dm-mVKy...; вторая ветвь (05B-05F, перенос буквально закрытых [x]-строк в АРХИВ ЗАДАЧ) была отключена тумблером ENABLE_ARCHIVE_TRANSFER=false с момента создания и ни разу не запускалась в проде — документов не правил | 1gyfjWMaTSdyx4QlHdfBVWpcKTHSsnvG0EM8IzVvkc8w | объекты 1 и 3 |
+| SYS Maintenance Gap Monitor | 5Rs6pNDSm4weWDVj | еженедельно пн 09:00 | Проверял П1 (возраст харвеста, meta/PROTOCOL_harvest.md через git-read), П6 (возраст последнего прогона READER_R2 по паспорту), П7 (просрочка карантина в двух корпусах); находки слал в Telegram и дописывал в журнал 1hg_hLpIWQbSVduS7e2a8K5rSzYBEJ1HtZYxvs6KNXNY через gdocs-append-v2 | 1MGOrXhW7J7GRsu73OpM-QbvIwLo_vMmT8rQB0SLVkyM | объекты 2, 4, 5, 6 |
+| SYS Lint | TXNstdVL8xlIygBp | ежедневно 06:00 | Семь проверок L1-L7 (контрольные суммы CORE/SYS_INDEX/N8N_INDEX, дрейф Skills, рассинхрон зон, дубли реестра, LAST_HARVEST); L5 и L6 безусловно Н/Д по Н-29.08-03. Отчёт писал в отдельный Google Doc 1wAKbr31SWROzFt-Ax0hO7fkvtjBq3_Ow-iibOOOvJBk, в Telegram не слал | 1xkeoYWJp3iu7g2hJRVQGYnFV_5U5UhD5KNG25_3-sD0 | найден попутно, в t-monitors-no-reader.md не числился |
+
+Порядок снятия: SYS Lint первым (следил за остальными тремя через watchlist), затем Zone Sync Monitor, затем Gap Monitor. Каждое снятие подтверждено чтением workflow через n8n MCP (active:false) сразу после вызова unpublish.
+
+### Отложено — SYS Canary не снят, диагноз исправлен
+
+`SYS Canary — gdocs-replace-v2` (B5jkqW0bUScxmTi7, ежедневно 06:00 Europe/Moscow, паспорт 1fJl7hoWRvbKgsB5w5gVdWzHYo7vA0maNQjeoiwJIPDo) был снят той же сессией по предварительному согласию владельца; чтение кода после снятия показало прежний диагноз ошибочным — "вероятно, пишет в замороженные SYS_INDEX/CORE" (запись Блока B, чат 2026-09-30) опровергнут. Workflow меняет placeholder в собственном тестовом документе 1A681qbI5Tbz9a-A9HdSRin3Csttie0qxEYCSTmyTeF0, не связанном с SYS_INDEX или CORE; единственная цель — проверить, что webhook gdocs-replace-v2 ещё работает. При провале шлёт алерт в Telegram и дополнительно триггерит errorWorkflow M5BLqclKBjGTpz33 — читатель на отказ есть. Совпадение имени со снятой ротацией паролей-канареек (Password Rotation - SYS_INDEX + CORE) не означает функциональной связи. Восстановление публикации — вопрос владельцу.
