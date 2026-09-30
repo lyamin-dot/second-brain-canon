@@ -8,4 +8,4 @@ labs/ozon-ue/t-history-constants-design.md
 
 Условие снятия: константы читаются формулами по дате операции из историй, дизайн записан в техдок книг и совпадает с живой книгой.
 
-Ссылки: книга «Деньги» 1lBySm-BuN9h3S6RGHBrrBkJJtQpgdNmBEKrnjjqbvWQ; техдок OZON_UE_BOOKS_TECHDOC_EN 1W2HvOYwAA79WAq_CzRaJEqWBw0NnPVvX-dNHuFUsGj4; источник — Зона А OZON_UE_INDEX, строки 127–130; решение — Зона Б, блок «2026-09-28 | !save | Закрытие задач Зоны А по решениям Андрея».
+Ссылки: книга «Деньги» 1lBySm-BuN9h3S6RGHBrrBkJJtQpgdNmBEKrnjjqbvWQ; техдок OZON_UE_BOOKS_TECHDOC_EN 1W2HvOYwAA79WAq_CzRaJEqWBw0NnPVvX-dNHuFUsGj4; источник — Зона А OZON_UE_INDEX, строки 127–131; решение — Зона Б, блок «2026-09-28 | !save | Закрытие задач Зоны А по решениям Андрея».
