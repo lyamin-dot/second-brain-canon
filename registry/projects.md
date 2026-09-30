@@ -101,7 +101,7 @@ ANIS_EVIDENCE вес 3   — доказательная справка по ан
           Файл индекса: 1GhOuwVL41hzyWYF4X8Su0bSuraVw6X4pGxc0G3hkT2Y
 
 [SYS]     Система «Второй мозг»
-          Файл индекса: 12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8
+          Файл индекса: labs/sys/INDEX.md (репозиторий); документ Docs 12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8 заморожен 2026-09-30 (Р-123 журнала projects/git-migration/LOG.md)
 
 [ANAST_QUICKREF] Quick-reference анестезиология (PWA) | вес 3 | АКТИВЕН
           Файл индекса: 1MdqSVr0bHAJ5tbIgNJoHNuBjmqR2V8gLQf5RHco-430
