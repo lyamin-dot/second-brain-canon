@@ -1,0 +1,70 @@
+labs/ozon-ue/INDEX.md
+
+# INDEX_ozon-ue — список живых задач лаборатории OZON_UE
+
+Лаборатория, не летопись: у темы «юнит-экономика Ozon» финиша нет, задачи независимы (`second-brain-git` 4б.1). Тел задач здесь нет — только строка сути; тело каждой в своём `t-*.md`.
+
+Заведена 2026-09-30 переносом Зоны А OZON_UE_INDEX (Google Doc 13gg5K9lGx_ypJZdnt-Fe8xFtShWYYFI9uEtClPNsjhQ) по решению Андрея 2026-09-28 (позиция AH-11 очереди). Зона Б документа (хроника решений и прогресса, накопленный опыт) в repo не переносилась и остаётся в Docs — как Зона Б SYS_INDEX; решение Андрея 2026-09-30 в чате переноса. Из неё взяты только незакрытые дефекты (задачи `t-old-calc-sheets-fate`, `t-n8n-ozon-workflow-defects`, `t-raw-book-hygiene`, `t-master-map-ozon-sku`, `t-lm-decl-master-defects`, `t-books-followups`). Счёт переноса и адрес каждой невзятой записи — `projects/git-migration/NOT_TAKEN.md`, раздел «OZON_UE_INDEX». Число задач здесь не пишется: оно равно числу строк таблицы ниже.
+
+Колонка «заведена» — дата появления задачи в источнике, провенанс; прочерк — даты не было. Возраст считается по дате последнего коммита файла (4б.8), лежалой помечается не тронутая более 30 суток.
+
+## Постоянные адреса лаборатории (справка, не задача)
+
+Взято из Зоны А источника без изменений; читатель — сессия лаборатории на старте. Отступление от 4б.3 (в INDEX только список): без этого блока сессия, читающая только INDEX, теряет ID книг и документов; решение владельцу — оставить или вынести.
+
+ПРОЕКТ: Юнит-экономика Ozon — прибыль, издержки, аналитика SKU.
+Client-Id: 559661 | Поставщик: Аллея Групп | SKU: ~300
+АРХИТЕКТУРА: API → n8n → RAW Sheets → Unit Economics → DECISION_ENGINE
+Точная юнит-экономика по Ozon — от данных до решений по ценам.
+
+Связи:
+[LM_DECL] → в этом INDEX лежат 13 задач [НАРЯД-13] по LM_DECL_MASTER / Decl_Monitor / Watch v3 и DECL_SAAS. Остаются здесь — решение Андрея 2026-09-28, в другой INDEX не переносятся.
+[DECL_SAAS] → Фаза 0 (гейт: 3 серт-центра + 5 интервью селлеров) ведётся задачами [НАРЯД-13] здесь же.
+[WB_UE] → общая задача: гибридная архитектура исторических констант (cost_price, params_history) проектируется сразу под Ozon и WB.
+[Price Master 1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk] → предоставляет sku_cost_Шаблон!SKU_Artikel через Ozon_SKU_Staging (gid 1524622105) и воркфлоу J0v5swjXLfiANJa2.
+
+Инструменты:
+DOCS_FOLDER: 1yifa_sfm6l7b0l08dB8ghzadeEGbIcSQ
+Паспорт SKU Artikel Map → 1aKPiIDTTtIkxIJoARXWJzHfJLiwnwT70zAprs8PftN8
+Паспорт OZON RAW Konversion Sync (SElTcMg3BpY6pmdo) → 1qAScnksy_097CBM9C7j5MG_DkBWipcgdmgUyfqousKI (зарегистрирован 2026-09-13; с 25.08.2026 429, детали в паспорте ЗОНА В)
+Паспорт Ozon RAW Accrual Sync (aVpgEnYBAgIIss4k) → 1hcAxLuj3YBSPUrOe8bYNbFD6ib8r7y56Pv1Ad8j1j8w (создан 2026-09-17; НЕ production-ready — TEST_DATE и целевой тестовый лист не переключены, детали БЛОКЕР 1-2 в паспорте ЗОНА Б)
+Техдок SKU_Artikel_Map + MASTER_MAP → 1Y-__wFnv_60-w3JWZ6aqlqKRtRZTo91AmbCNmFmjEmQ
+SKU_ARTIKEL_MAP_SHEETS: 1dJN-wWrzr4LKi9FPTkbOpAu6N-LMymxiF-WJEFJPlCU
+OZON_ANALYTICS_DASHBOARD_SHEETS: 1hyhR4cktHgdl2jwugf-h6M5JkJ4SxZfLdw8eBD9Vy9A — таблица Ozon_Analytics_Dashboard (папка 1fmQoSplX9Y-1FX2QRS0PD6nsJWGa-Qol; modifiedTime на момент регистрации 2026-03-17) [ВЫВЕДЕН ИЗ РАБОТЫ 2026-09-28 решением Андрея: его вопросы закрывают книги «Цена», «Деньги», «Товары»; не считает с 23.08.2026]
+OZON_ANALYTICS_DASHBOARD_TECHDOC: 1YP6n558FedJMtJrYBrQNBx-S2lZvP9UYmTOrV0yM0Vs — «Тех.документация к файлу Ozon_Analytics_Dashboard» (та же папка; modifiedTime 2026-03-11). Зарегистрировано 2026-08-08 в CORE Р.2 и здесь. [документ выведенной из работы таблицы, 2026-09-28]
+Техдок sku_cost_Шаблон → 1y1gp2txlOZh330cIr2DB8zi-8A1Zg2pyt7dCSd3vDzk
+sku_cost_Шаблон SHEETS: 1eQPV1KQ2FE4kV935KV3_05c6VgbRZkU0y4DwFgTIEL4
+Книга «Цена» SHEETS: 1j_qIlvowDIWMJfxq8Ydag3WTLsstoyeA-eEFgGQoycg — калькулятор цены, листы «Калькулятор цены», «Сборы по товару», «Параметры»; скрипт oz_price_book.gs привязан к книге (меню «Ozon · Цена»); источники: sales_raw_operations (1P-Ggi…), «Актуальные цены Lique Moly» 17j3EOOGPFwnjF9RQbZzll-4Cm6JD8Cd5mNqm_p9AOBU, Price Master!Artikel (зарегистрировано 2026-09-28)
+Книга «Деньги» (Geld Ozon) SHEETS: 1lBySm-BuN9h3S6RGHBrrBkJJtQpgdNmBEKrnjjqbvWQ — листы «Куда ушли деньги», «Что-если», «Деньги по неделям», «Деньги по месяцам», «Параметры», «Поправки», «Деньги · лента», «Деньги · месяцы»; скрипты привязаны к книге: oz_money_book.gs (меню «Ozon · Деньги», недели и месяцы) и oz_money_tape.gs (ленты, buildMoneyTape и buildMoneyTapeMonths; добавлено 2026-09-29) (зарегистрировано 2026-09-28)
+Техдок книг «Цена», «Деньги», «Товары» (агентская, англ.) OZON_UE_BOOKS_TECHDOC_EN → 1W2HvOYwAA79WAq_CzRaJEqWBw0NnPVvX-dNHuFUsGj4 (папка DOCS; создан 2026-09-28). Русская версия для человека — Claude Doc https://claude.ai/code/artifact/f9549fbd-4632-41e7-ad3d-e9a3d908e75f
+Книга «Товары» (WarenOz) SHEETS: 1KN62zamEcLYzm3OrYtoloCzHnhpLA7g2oWr-YRfiTSM — листы «Товары за период», «Что-если по товару», «Классы по месяцам», «Параметры»; скрипт oz_goods_book.gs (меню «Ozon · Товары») (зарегистрировано 2026-09-28)
+LM_DECL_MASTER — техдокументация таблицы (агентская, англ.) LM_DECL_MASTER_TECHDOC_EN → 1_tOucfOnJ_BFCWK3eEmP9w5qpuvHtRuHT3MYgWzTp8g (папка DOCS; создан 2026-09-28). Русская версия для человека — LM_DECL_MASTER — техдокументация (RU) → 1Z6wbrh_W0R0_mqDNujihr_dZqKNfYC3h7cTrciWMapM (папка DOCS; создан 2026-09-28)
+
+## Задачи
+
+| файл | суть | метка | заведена |
+|---|---|---|---|
+| `t-ozon-raw-mirror-grid.md` | зеркало `OzonRawАналитика`: запас сетки около 5 500 строк, расширить до ~15.10.2026 | РУТИНА | 2026-09-19 |
+| `t-dup-2006.md` | дубль 20.06.2026 в `sales_raw_operations`: 233 строки, неделя 15.06 книги «Деньги» завышена на 53 705,01 ₽ | РЫЧАГ | 2026-09-30 |
+| `t-adjustments-rows.md` | лист «Поправки штук» книги RAW: перезаписать строку 539 и добавить строку 1131 | РУТИНА | 2026-09-30 |
+| `t-goods-book-script.md` | `oz_goods_book.gs`: поправки штук, раскладка «Денег»; активная эстафета «месяцы-Деньги-29.09» | РУТИНА | 2026-09-30 |
+| `t-cost-history-copy.md` | «Деньги» и «Товары» читают `cost_price_history` из тяжёлой книги — перенести на копию в лёгкой | РЫЧАГ | 2026-09-30 |
+| `t-tape-column-b.md` | «Деньги · лента»: описания колонки B (строки 7–10, 43–45, C50) привести к редакции 2 | РУТИНА | 2026-09-28 |
+| `t-returns-dynamics.md` | динамика возвратов по SKU по неделям в книге «Товары» | РЫЧАГ | 2026-09-28 |
+| `t-price-ozon-vs-wb.md` | правило: цена Ozon не выше цены WB, формула в калькуляторе цен | РЫЧАГ | 2026-09-28 |
+| `t-selsup-trial.md` | пробный период SelSup: три проверки на трёх кабинетах | РЫЧАГ | 2026-09-28 |
+| `t-ozon-ip-cabinet.md` | подключить кабинет Ozon ИП: ждёт credential ИП и сервисный аккаунт Google в PWFVE0UbM3ajvVFc | РЫЧАГ | 2026-09-28 |
+| `t-oz-dashboard-reference-block.md` | витрина `oz_dashboard`: блок «справочно» (Продаж шт, Возвраты шт, Средний чек) | РУТИНА | 2026-09-27 |
+| `t-history-constants-design.md` | гибридная архитектура исторических констант Ozon + WB — дизайн книги «Деньги» | РУТИНА | — |
+| `t-old-calc-sheets-fate.md` | судьба старых расчётных листов `sku_cost_Шаблон`, считающих себестоимость неверно; открытые дефекты этих листов | решение Андрея (метки в источнике нет) | 2026-09-28 |
+| `t-weekly-commissions-deferred.md` | `weekly_commissions` и склад: осознанно отложенные особенности | ОСОБЕННОСТЬ | — |
+| `t-n8n-ozon-workflow-defects.md` | открытые дефекты воркфлоу n8n цепочки Ozon (скан 2026-09-28) | РЫЧАГ (метки в источнике нет) | 2026-09-28 |
+| `t-raw-book-hygiene.md` | книга RAW: шапка AB/AC, лист «Лист3», провал строк в июле | РУТИНА (метки в источнике нет) | 2026-09-28 |
+| `t-master-map-ozon-sku.md` | MASTER_MAP: `ozon_sku` = 0 у артикулов 1908 и 2203 | РУТИНА (метки в источнике нет) | 2026-09-28 |
+| `t-books-followups.md` | хвосты книг «Деньги» и «Товары»: ABC-переход, падение прибыли 31.08–27.09, перенос «Поправок» | РУТИНА (метки в источнике нет) | 2026-09-28 |
+| `t-decl-pdf-inbox-cleanup.md` | убрать устаревшие PDF из DECL_PDF_INBOX [НАРЯД-13] | РУТИНА | 2026-09-28 |
+| `t-lm-decl-master-defects.md` | LM_DECL_MASTER: ложное «Истёк», колонка G, флажки Decl_History [НАРЯД-13] | РУТИНА (метки в источнике нет) | 2026-09-28 |
+| `t-decl-saas-phase0.md` | DECL_SAAS фаза 0: 3 серт-центра + 5 интервью, гейт [НАРЯД-13] | РЫЧАГ | — |
+| `t-decl-saas-starters.md` | DECL_SAAS: стартеры чатов после гейта 0, строка источника была повреждена [НАРЯД-13] | условная | — |
+| `t-ideas-backlog.md` | семь живых идей (SKU Stock Forecast, Price API, Postgres и др.) | — | 2026-09-28 |
+| `t-open-questions.md` | шесть вопросов без ответа (аллокация склада, other_cost и др.) | — | 2026-08-22 |

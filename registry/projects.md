@@ -14,6 +14,7 @@ registry/projects.md
 | лаборатория | папка | носитель | статус |
 |---|---|---|---|
 | sys | labs/sys/ | repo — Зона А SYS_INDEX (перенос 2026-09-14, ф4 git-migration); Зона Б осталась в Docs 12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8 | активна |
+| ozon-ue | labs/ozon-ue/ | repo — Зона А OZON_UE_INDEX и незакрытые дефекты Зоны Б (перенос 2026-09-30, git-migration; Контролёр — круги ещё не проведены, приёмки нет); Зона Б осталась в Docs 13gg5K9lGx_ypJZdnt-Fe8xFtShWYYFI9uEtClPNsjhQ | черновик — не доставлен в main |
 
 ## Проекты с INDEX в Google Docs
 
