@@ -40,6 +40,8 @@ sku_cost_Шаблон SHEETS: 1eQPV1KQ2FE4kV935KV3_05c6VgbRZkU0y4DwFgTIEL4
 Книга «Товары» (WarenOz) SHEETS: 1KN62zamEcLYzm3OrYtoloCzHnhpLA7g2oWr-YRfiTSM — листы «Товары за период», «Что-если по товару», «Классы по месяцам», «Параметры»; скрипт oz_goods_book.gs (меню «Ozon · Товары») (зарегистрировано 2026-09-28)
 LM_DECL_MASTER — техдокументация таблицы (агентская, англ.) LM_DECL_MASTER_TECHDOC_EN → 1_tOucfOnJ_BFCWK3eEmP9w5qpuvHtRuHT3MYgWzTp8g (папка DOCS; создан 2026-09-28). Русская версия для человека — LM_DECL_MASTER — техдокументация (RU) → 1Z6wbrh_W0R0_mqDNujihr_dZqKNfYC3h7cTrciWMapM (папка DOCS; создан 2026-09-28)
 
+Добавлено переносом (в источнике нет): книга RAW с листами `sales_raw_operations`, `ozon_raw_accrual_TEST`, `ozon_accrual_types` — 1P-GgiFm3067U_sgC2Dojos3BbT_-au6v-mT52vVT3y4. В строке «Книга «Цена»» источника этот ID обрезан («1P-Ggi…»); полный взят из `skills/n8n-workflow-registry/SKILL.md`, строка 75.
+
 ## Задачи
 
 | файл | суть | метка | заведена |
