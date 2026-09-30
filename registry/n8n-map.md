@@ -99,7 +99,7 @@ W|QmPIz9uhfU48FcWX|LM_DECL — Seed РОСС (заполнение РОСС де
 W|R8w94X0mT0Fa2Oil|OZON QA Response|active|same|scheduleTrigger|field=minutes,minutesInterval=30|instance|?|-|-
 W|S4rZMUkI21dVu3ML|WB FBS Decision Engine|active|same|scheduleTrigger|expression=0 11,13,15 * * *,field=cronExpression;expression=0,15 16 * * *,field=cronExpression|instance|?|-|-
 W|S61kFx4naWzPzqRc|TMP Ozon Adapter Re-run (no RAW sync)|archived|never|manualTrigger|-|instance|?|-|-
-W|SElTcMg3BpY6pmdo|OZON RAW Konversion Sync|active|same|scheduleTrigger|triggerAtHour=6,triggerAtMinute=30|Europe/Berlin|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|SElTcMg3BpY6pmdo|OZON RAW Konversion Sync|inactive|never|scheduleTrigger|triggerAtHour=6,triggerAtMinute=30|Europe/Berlin|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|SoreXOUG4nhaWfQr|TMP Ozon Cleanup — delete poisoned 20.08 rows|inactive|never|manualTrigger|-|instance|?|-|-
 W|TXNstdVL8xlIygBp|SYS Lint|active|same|scheduleTrigger|triggerAtHour=6|instance|?|-|-
 W|V43JMSOFHyf7wbiH|SYS INDEX Restore from Revision|active|same|webhook|-|instance|?|-|-
