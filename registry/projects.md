@@ -8,6 +8,7 @@ registry/projects.md
 | n8n-map | projects/n8n-map/ | repo | активен | |
 | kontext-reduktion | projects/kontext-reduktion/ | repo | активен | |
 | wb-ue | projects/wb-ue/ | repo | активен — перенос 2026-09-28, приёмка Контролёром закрыта (три круга, `projects/git-migration/LOG.md` Р-115…Р-118); источник заморожен | |
+| deklaration-ozon | projects/deklaration-ozon/ | repo | активен — создан 2026-10-01 выделением из OZON_UE (лаборатория ozon-ue); Андрей, чат 2026-10-01 | |
 
 ## Лаборатории
 
