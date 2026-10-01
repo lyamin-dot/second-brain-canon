@@ -25,7 +25,7 @@ Client-Id: 559661 | Поставщик: Аллея Групп | SKU: ~300
 
 Инструменты:
 DOCS_FOLDER: 1yifa_sfm6l7b0l08dB8ghzadeEGbIcSQ
-Паспорт SKU Artikel Map → 1aKPiIDTTtIkxIJoARXWJzeXkucUHoWQ86TCzhnJHUcOM-tDgY
+Паспорт SKU Artikel Map → 1aKPiIDTTtIkxIJoARXWJzHfJLiwnwT70zAprs8PftN8
 Паспорт OZON RAW Konversion Sync (SElTcMg3BpY6pmdo) → 1qAScnksy_097CBM9C7j5MG_DkBWipcgdmgUyfqousKI (зарегистрирован 2026-09-13; с 25.08.2026 429, детали в паспорте ЗОНА В)
 Паспорт Ozon RAW Accrual Sync (aVpgEnYBAgIIss4k) → 1hcAxLuj3YBSPUrOe8bYNbFD6ib8r7y56Pv1Ad8j1j8w (создан 2026-09-17; НЕ production-ready — TEST_DATE и целевой тестовый лист не переключены, детали БЛОКЕР 1-2 в паспорте ЗОНА Б)
 Техдок SKU_Artikel_Map + MASTER_MAP → 1Y-__wFnv_60-w3JWZ6aqlqKRtRZTo91AmbCNmFmjEmQ
