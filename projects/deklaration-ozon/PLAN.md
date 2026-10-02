@@ -87,6 +87,7 @@ Decl_History — журнал смены номеров: одна строка �
 | паспорт Scan | `11nO1-pF22USWrJzeXkucUHoWQ86TCzhnJHUcOM-tDgY` |
 | паспорт Ozon Upload | `16r4swPyVr6gMZpcTPL-08waBrUKLt5YSqKRhaRuswr4` |
 | инструкция Ozon Upload для человека / для агента | `1WGkP1-RS-okY2lPjXG2ZDlH84lbGaXAFJyv5LNK9Z70` / `1yi16FSJKF6oRP1nLdNoSg70-A4kwFTngfbFkpT7qp1s` (папка `1OuVo5-ELBm7B8KWgJNh6mnwP6raz-Qdy`, в ней же обе папки с PDF) |
+| план действий до доказанного покрытия (Google Doc, носитель плана действий; создан 2026-10-02) | `1MTmatK-9oeK1sbJJr6BzP6rcAg3GRVYJ5mkIkLXGuQ8` |
 | папка DOCS | `1yifa_sfm6l7b0l08dB8ghzadeEGbIcSQ` |
 | PDF деклараций: входящие / архив | `1s3NIJM2FRvigNN3C1tP7iM0GpU0HDXGA` / `1UR005hwTC88IXqTsEaYaInmO-wVZFHRG` |
 | книга SKU_Artikel_Map (лист MASTER_MAP: артикул → ozon_sku) и её техдок | `1dJN-wWrzr4LKi9FPTkbOpAu6N-LMymxiF-WJEFJPlCU` / `1Y-__wFnv_60-w3JWZ6aqlqKRtRZTo91AmbCNmFmjEmQ` |
