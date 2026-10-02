@@ -57,3 +57,12 @@ DoD: Один Google Doc «DESIGN_единая_модель_данных_тов�
   - Проект в репозитории: projects/deklaration-ozon/ (PLAN.md, STATE.md, LOG.md Р-17…Р-22, NOT_TAKEN.md); таблица покрытия: 13RLqXuMGp7vNbgV1R1GuMcZBkEp1W2T0
   - Воркфлоу: Scan vKjqExap1mJjM6Ap, Ozon Upload BLNA8sbdnLtuz7Uj, WB Sync QCQI6utFFH3dvTJT, Получение nmID WB gglEq5U90Gt3sI7h, Deklaration_MotorOel_V.5 56cGbN0MRyggaGq8, Seed IG49VPuULlv60IOz
   - Паспорта: Scan 11nO1-pF22USWrJzeXkucUHoWQ86TCzhnJHUcOM-tDgY; Ozon Upload 16r4swPyVr6gMZpcTPL-08waBrUKLt5YSqKRhaRuswr4; Seed 1MjKNc_7R0rxQxYlk4ywDqwsq5Qct0ANpn5-cDBCg59M; PLAN_ACTIONS 1MTmatK-9oeK1sbJJr6BzP6rcAg3GRVYJ5mkIkLXGuQ8
+## Ход
+
+2026-10-02 — DoD наряда исполнен: Google Doc «DESIGN_единая_модель_данных_товара» `1hhO6Vd5WNNmxzPfIEvvcfWeaehf0ns0FdI6imSrpNVM` в папке DOCS, 145 строк инвентаризации, сверен с исходником чтением gdocs-read 73929 (текст совпал; последняя строка с ID легла 10-м пунктом нумерованного списка — косметика). Ждёт ответов Андрея на 9 вопросов раздела (6).
+Главное из документа (данные 02.10, выгрузки книг xlsx):
+- Гипотеза «MASTER_MAP — хаб» опровергнута: MASTER_MAP — снимок скрипта buildMasterMap() от 19.06; живой хаб уже есть — Price Master!Artikel (его читают книги «Цена», «Деньги», «Товары»). Расхождения MASTER_MAP и Artikel: SKU Ozon 31, LM-номера 34, nmID WB 98.
+- Корень списка товаров — книга «Справочник LM 2026.08.20» `1UBiXDZDHfMwxK3Q6mDRYaG65MjnIF2K7ygZhWhOPumY` (лист «Артикулы», ведёт Андрей) → Акт.цена (ID корня в J3) → WB_RAW!sku_cost → Price Master!Artikel; Artikel совпадает с корнем построчно (0 расхождений из 455).
+- Новые артикулы вне MASTER_MAP: 1457, 1458, 1916, 1930, 2103; вне LM_DECL: 1916, 1930, 2103.
+- Потолок: WB_RAW!sku_cost!A берёт Акт.цена!A2:A500 — после 499 строк новые товары молча пропадут везде (занято 457).
+- Рекомендация — вариант А: хаб Price Master!Artikel, роботы пишут в листы-накопители (как Ozon_SKU_Staging), Scan дописывает новые LM-номера в LM_DECL, MASTER_MAP выводится после переключения читателей.
