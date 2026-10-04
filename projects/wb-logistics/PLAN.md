@@ -65,3 +65,5 @@ Supply Accepted: 7x9wPrugdbseaEp2
 - Процессное правило про момент отправки /supply и урок о ручных правках кода ноды (полная замена кода, обязательный Publish) — `LOG.md`, запись Р-89 (блок 2026-07-06).
 - Опыт update_workflow через MCP (сброс settings.timezone, errorWorkflow и waitBetweenTries) и парсинга дат из Sheets — `LOG.md`, запись Р-95 (блок 2026-10-02).
 - Паттерны n8n, Sheets и WB API — `LOG.md`, записи Р-47…Р-62; ошибки и решения — Р-63…Р-70.
+- Sheets read-ноды без executeOnce дают 429; gdocs-append кладёт ADR после маркера конца зоны — `LOG.md`, запись Р-85 (блок 2026-06-30, раздел «ОПЫТ»).
+- composite matchingColumns в Sheets-ноде 4.7 не работает, autoMapInputData требует явной schema — `LOG.md`, запись Р-90 (блок 2026-07-07, строка «Находки»).
