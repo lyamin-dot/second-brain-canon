@@ -1,0 +1,1 @@
+meta/prompts/wb-logistics.md
