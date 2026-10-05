@@ -11,6 +11,7 @@ registry/projects.md
 | deklaration-ozon | projects/deklaration-ozon/ | repo | активен — создан 2026-10-01 выделением из OZON_UE (лаборатория ozon-ue); Андрей, чат 2026-10-01 | |
 | wb-logistics | projects/wb-logistics/ | repo | активен — перенос 2026-10-04 из WB_LOGISTICS_INDEX (Google Doc `1mxYgiK9X4qOId2vNF7xnne-cQszTqPpJZHux_AuDZjQ`); приёмка Контролёром: перенос принят, замечания исправлены; источник заморожен 2026-10-04; мастер-промпт проекта переведён на repo (зеркало `meta/prompts/wb-logistics.md`) | https://claude.ai/project/019ea86d-05da-7731-b99f-f0f163be8182 |
 | card-content-sync | projects/card-content-sync/ | repo | активен — создан 2026-10-04 из задачи лаборатории ozon-ue `t-card-content-sync.md` (наряд Н-04.10-01а); Ф0 остановлена: нет ключей API у Ozon ИП и второго магазина WB | |
+| wb-reviews | projects/wb-reviews/ | repo | активен — перенос 2026-10-05 Зоны А WB_REVIEWS_INDEX (Google Doc `1D-mwjyl_rJ0ekYBSwliIRBwfOSJdJBeDi1SQddaeODc`); приёмка Контролёром: два круга, второй — принят (`projects/wb-reviews/LOG.md` Р-5); Зона Б осталась в замороженном Docs | https://claude.ai/project/019e8466-e4cb-7588-99c1-496ee2d759ed |
 
 ## Лаборатории
 
