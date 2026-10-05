@@ -72,6 +72,9 @@ INDEX_FOLDER:       1UV-7hP0L2jiwPAtulPZ1gket-mdz0ktT
 <!-- T-017 | CORE байт 13378-13561 | Р.2 N8N_REGISTRY (live snapshot, автообновление 05:30, воркфлоу gFFiBPm1OomOzJOj) -->
 N8N_REGISTRY: 1zdz12-cwFZyHaHkKA8tJ1MvQKGCMN4xZdYztfYS3SOc (live snapshot, автообновление 05:30 ежедневно, воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj)
 
+<!-- 2026-10-05 | n8n-map Ф5, Р-8 журнала projects/n8n-map/LOG.md -->
+N8N_CREDENTIALS: 1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ (закрытая таблица — реестр credentials инстанса n8n: лист «Авто» целиком пишет воркфлоу Credential Inventory qolCVtDpTo2YlnGb по ручному запуску, лист «Ключи» — Андрей и агент, лист «Правило имени»; читается gsheets-read; имён и прав credentials в repo нет)
+
 <!-- T-024 | CORE байт 15080-15411 | Р.2 INFRA_CONTRACT (источник ID инструментов записи для изолированных контуров) -->
 INFRA_CONTRACT: 1Jz0_xLGVRMOOFLQ55f5bUM93syreIZArAO6TlGis0J0 — единственный источник ID инструментов записи для всех изолированных контуров (SYS, DOSSIER, MED/Spiegel, Tutor) — статус ЭМБРИОН 2026-07-22 (канон: PROTOCOL_infra-contract, Р.14)
 
