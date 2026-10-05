@@ -27,8 +27,9 @@ Client-Id: 559661 | Поставщик: Аллея Групп | SKU: ~300
 Инструменты:
 DOCS_FOLDER: 1yifa_sfm6l7b0l08dB8ghzadeEGbIcSQ
 Паспорт SKU Artikel Map → 1aKPiIDTTtIkxIJoARXWJzHfJLiwnwT70zAprs8PftN8
-Паспорт OZON RAW Konversion Sync (SElTcMg3BpY6pmdo) → 1qAScnksy_097CBM9C7j5MG_DkBWipcgdmgUyfqousKI (зарегистрирован 2026-09-13; с 25.08.2026 429, детали в паспорте ЗОНА В)
-Паспорт Ozon RAW Accrual Sync (aVpgEnYBAgIIss4k) → 1hcAxLuj3YBSPUrOe8bYNbFD6ib8r7y56Pv1Ad8j1j8w (создан 2026-09-17; НЕ production-ready — TEST_DATE и целевой тестовый лист не переключены, детали БЛОКЕР 1-2 в паспорте ЗОНА Б)
+Паспорт OZON RAW Konversion Sync (SElTcMg3BpY6pmdo) → 1qAScnksy_097CBM9C7j5MG_DkBWipcgdmgUyfqousKI (зарегистрирован 2026-09-13; с 25.08.2026 429, детали в паспорте ЗОНА В) [в n8n снят с публикации: снимок registry/n8n-map.md 2026-10-04 показывает inactive; записано 2026-10-05]
+Паспорт Ozon RAW Accrual Sync (aVpgEnYBAgIIss4k) → 1hcAxLuj3YBSPUrOe8bYNbFD6ib8r7y56Pv1Ad8j1j8w (создан 2026-09-17; пометка «НЕ production-ready» в паспорте устарела: воркфлоу активен и с 08.09.2026 питает адаптер BPVFEmZF6QxXuTB6 в бою, данные в sales_raw_operations по 04.10.2026; паспорт не обновлялся — записано 2026-10-05)
+Паспорта адаптера BPVFEmZF6QxXuTB6, «Получение SKU Ozon» J0v5swjXLfiANJa2 и Accrual Types Sync c7TIdv32dHV3MBRU здесь не записаны: есть ли они в DOCS — не проверялось (2026-10-05)
 Техдок SKU_Artikel_Map + MASTER_MAP → 1Y-__wFnv_60-w3JWZ6aqlqKRtRZTo91AmbCNmFmjEmQ
 SKU_ARTIKEL_MAP_SHEETS: 1dJN-wWrzr4LKi9FPTkbOpAu6N-LMymxiF-WJEFJPlCU
 OZON_ANALYTICS_DASHBOARD_SHEETS: 1hyhR4cktHgdl2jwugf-h6M5JkJ4SxZfLdw8eBD9Vy9A — таблица Ozon_Analytics_Dashboard (папка 1fmQoSplX9Y-1FX2QRS0PD6nsJWGa-Qol; modifiedTime на момент регистрации 2026-03-17) [ВЫВЕДЕН ИЗ РАБОТЫ 2026-09-28 решением Андрея: его вопросы закрывают книги «Цена», «Деньги», «Товары»; не считает с 23.08.2026]
