@@ -14,7 +14,7 @@ projects/card-content-sync/STATE.md
 
 ## Документы (папка DOCS проекта OZON_UE `1yifa_sfm6l7b0l08dB8ghzadeEGbIcSQ`)
 
-- Паспорт воркфлоу «OZON_WF_card-description-sync» `1zhJe_8qAL2xMGD8ikmLfNY6qd7olhvCbpBQPRCTtGFw` — прочитан gdocs-read (исполнение 75256): 117 строк, последний маркер %%ЗОНА_В_КОНЕЦ%% на месте.
+- Паспорт воркфлоу «OZON_WF_card-description-sync» `1zhJe_8qAL2xMGD8ikmLfNY6qd7olhvCbpBQPRCTtGFw` — создан 2026-10-05; обновлён в тот же день под правило `<p>`, режим «пересчёт хэшей» и выбор листов по имени (блок решения в зоне В и правки зон А и Б; чтение gdocs-read 75645, последняя правка gdocs-replace 75660 — occurrencesChanged 1). Описание воркфлоу в n8n называет три режима и строку PASSPORT (search_workflows 2026-10-05).
 - Инструкция книги для агента «OZON_card-descriptions_book_instruction_EN» `1OG9hHfw3WDEWM6liw6RNABcBjr2IBovsruv_sYmN6Fo` — прочитана gdocs-read (исполнение 75257), 35 строк.
 - Инструкция книги для человека «OZON_card-descriptions_book_instruction_RU» `1nIeCKstXlqQlx9msUocUjNWv8YcFQFER27dtg-QHPD4` — обычный документ (выбор Андрея 2026-10-05), прочитана gdocs-read (исполнение 75263), 46 строк.
 
