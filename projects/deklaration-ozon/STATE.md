@@ -76,7 +76,6 @@ Scan с 2026-10-04 сам проверяет артикул на страниц�
 - В описание WB Sync `QCQI6utFFH3dvTJT` дописать руками строку «PASSPORT: 1cXeMBem_qOazW7PwQPWwNMAnejKHHoDYoO7yaOsmXcM» (не через MCP).
 
 - Описания воркфлоу (строку паспорта вписывать руками в настройках воркфлоу, не через MCP): Scan `vKjqExap1mJjM6Ap` — заменить «Passport: 11nO1-pF22USWrJzeXkucUHoWQ86TCzhnJHUcOM-tDgY» на «PASSPORT: 11nO1-pF22USWrJzeXkucUHoWQ86TCzhnJHUcOM-tDgY»; Deklaration_MotorOel_V.5 `56cGbN0MRyggaGq8` — дописать «PASSPORT: 1plXm9__V_KamjRtSgvFvdfgHo_J8uI52swwipgsoKAo» (паспорт LM_WF_deklaration-motoroel найден на Drive). У V.2 `VMPxWzXPefKT2R1B` паспорта нет; зонды FSA Probe и Cert Probe архивированы 2026-10-02 (`LOG.md` Р-15).
-- Положить выписку РОСС RU Д-DE.РА01.В.20237/26 в DECL_PDF_INBOX (`LOG.md` Т-5).
 - Для пяти товаров с мёртвой страницей LM (наши 1331, 1332, 1342, 1356, 1702) и четырёх с истёкшей декларацией при мёртвой странице (LM 7660, 3925, 3326, 1528) вписать новый product_url в LM_DECL — тогда Scan найдёт действующий номер сам.
 - Лист «Не_обновлено» (sheetId 1121715642) скрыт скриптом setupAll по ошибке — показать.
 - Декларации РОСС в листе «Декларации» (дубль строки РОСС 01582/26 к 2026-10-02 уже удалён — в выгрузке одна строка): строка РОСС 17140/26 (истекла 2026-06-22, 0 артикулов) — удалить или оставить; у артикула 20768 в колонке declaration_no стоит РОСС 20237/26 при ross_no РОСС 01582/26 и странице 404 — очистить declaration_no.
