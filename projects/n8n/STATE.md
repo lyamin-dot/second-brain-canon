@@ -1,0 +1,85 @@
+projects/n8n/STATE.md
+
+# STATE_n8n — текущее состояние работ
+
+[добавлено сессией переноса] Здесь только то, что меняет действие следующей сессии. Решения — `LOG.md`; правила и устройство проекта — `PLAN.md`; невзятое при переносе — `NOT_TAKEN.md`.
+
+[добавлено сессией переноса] Перенос из N8N_INDEX (Google Doc `1GktMsgl1UOIzuWj02gqDirMSYlSjiuLuDVDd9vevB5Q`) выполнен 2026-10-06 сессией переноса по `meta/PROTOCOL_file-migration.md`; источник — Зона А, строки 1–335 снимка экспорта Docs text/plain 2026-10-06: 126 940 Б, UTF-8 без BOM, CRLF, 842 строки по LF, sha256 d4234e0f5962f1f855904dea954ccbdd5abfb16adb5ec31b296524367929f88a. Номера «строка N» во всех файлах проекта — по этому снимку после замены CRLF на LF.
+
+[добавлено сессией переноса] Тексты задач ниже взяты из источника без изменения (CRLF заменён на LF); всё, что начинается с «[добавлено сессией переноса]», в источнике отсутствует. В конце каждой задачи — адрес строки источника в скобках.
+
+## СЛЕДУЮЩИЙ ШАГ
+
+- Строки PASSPORT в description (прежние наряды Н-24.08-05 и Н-25.08-07) — фаза Ф3 проекта n8n-map (projects/n8n-map/STATE.md); живой состав воркфлоу — registry/n8n-map.md. [строка 30, последняя фраза]
+
+- [добавлено сессией переноса] Порядка работ над открытыми задачами источник не задаёт: метки БЛОКЕР, РЫЧАГ, РУТИНА, БАГ, БЕЗОПАСНОСТЬ стоят в тексте задач, очерёдность определяет владелец. Задачи, ждущие «да» владельца, названы в тексте задачи.
+
+- [добавлено сессией переноса] Живой состав воркфлоу и credentials инстанса — `registry/n8n-map.md` (строит воркфлоу N8N Registry Sync, обновляется ежедневно); проект снимка — `projects/n8n-map/`.
+
+## ОТКРЫТЫЕ ЗАДАЧИ
+
+[добавлено сессией переноса] Задачи 139, 140 и 183 помечены в источнике «ЗАМОРОЖЕНО»: проект OZON_REVIEWS заморожен решением владельца (`LOG.md` Р-3); разморозка — решение владельца.
+
+[ ] ЗАМОРОЖЕНО [проект OZON_REVIEWS заморожен, решение Андрея 2026-10-06: не разбирать до разморозки; OZON Publish Reviews XG4gzxtqPJXafBXN выключен 2026-10-06 по его же указанию. Также выключены 2026-10-06 по решению Андрея (были активны и писали в ту же книгу): OZON Fetch Reviews → Queue IHn3Bmyh1VeHf4Ya (каждые 2 ч, appendOrUpdate в лист без заголовка), OZON QA Response R8w94X0mT0Fa2Oil, OZON Publish Manual XFEhjlkrXXnl1bpU — все четыре воркфлоу OZON_REVIEWS теперь inactive; при разморозке сначала вернуть заголовок листа, потом включать] БАГ [2026-10-06] ⚡OZON_REVIEWS: OZON Publish Reviews (XG4gzxtqPJXafBXN) падает каждые 30 минут с 2026-10-04 22:30 UTC (первое упавшее исполнение 75032) — «The column "status" could not be found» в 02_Fetch_Ready_Auto. Причина: на листе ozon_reviews_queue книги OZON Reviews System (1mgtcD2wSm_-8hqfpv3v883KE34-Smy-kFxHvt6zMXj4) нет строки заголовков — в строке 1 лежит старейшая запись REV_019f3e06… от 07.07, то есть заголовок удалён и данные сдвинулись вверх (gsheets-read, исполнение 75906). Под угрозой все, кто читает лист по именам колонок: OZON Fetch Reviews → Queue, OZON QA Response, OZON Publish Manual. errorWorkflow у воркфлоу нет — алерта не было. Эталон заголовка — строка 1 листа ozon_reviews_archive: её первые 28 колонок (review_id … final_text) совпадают с очередью по порядку; имя 29-й колонки очереди (свободный текст QA-разбора) не установлено. Фикс — вставить строку заголовков (Андрей: структура Sheets). Попутно: публикация в Ozon и так отвечает PermissionDenied «not available with existing subscription». [строка 139]
+
+[ ] ЗАМОРОЖЕНО [OZON_REVIEWS, 2026-10-06] БАГ [2026-10-06] ⚡OZON_REVIEWS: OZON Reviews Archive (HH7pDL2VZfU9C9Np; inactive, триггер выключен правкой 04.10 18:40 UTC) — ошибка на единицу в 10_Delete_From_Queue: startIndex = row_number − 1, а параметр Sheets v4.7 ждёт номер строки как есть («The row number to delete from, The first row is 2»). Узел удаляет строку НАД архивированной, для первой записи — строку заголовков. Так и было: прогоны 22.09–03.10 (последний — 74461) каждую ночь падали на «protected cell» при row_number 2 — защита заголовка блокировала удаление. Почерк совпадает с пропажей заголовка очереди (строка выше); кто удалил его 04.10 — не установлено. Фикс — startIndex = row_number (правка воркфлоу, «да» Андрея). До фикса не включать: каждая удачная ночь стирала бы неархивированные отзывы. [строка 140]
+
+[ ] РЫЧАГ: Добавить error.message в текст алерта Error Notifier (M5BLqclKBjGTpz33) — сейчас алерт содержит только имя воркфлоу, время и lastNodeExecuted, для диагностики всё равно нужен UI. Правка в одном воркфлоу, эффект на всех, кто на него ссылается [строка 157]
+
+[ ] БЛОКЕР: cost_monitor строка 17 (возвраты) — ждёт operation_category из n8n (WB_UE) [строка 177]
+
+[ ] РЫЧАГ: Перейти на Google Service Account — устраняет протухание OAuth2 навсегда [строка 178]
+
+[ ] РЫЧАГ: Daily Briefing v2 — выручка Ozon+WB за вчера + дайджест INBOX/INDEX (перенос из SYS Этап 4.1) → Telegram 07:00. Статусы воркфлоу НЕ включать — уже покрыто Health Monitor Daily [строка 179]
+
+[ ] РЫЧАГ: Автозапись high-urgency новостей в Second Brain (IF urgency=high → gdocs-append) [строка 182]
+
+[ ] ЗАМОРОЖЕНО [OZON_REVIEWS, 2026-10-06; публикация Ozon отвечает PermissionDenied «not available with existing subscription»] РУТИНА: OZON Reviews — обработать оставшиеся ~78 отзывов status=new [строка 183]
+
+[ ] [НАРЯД-13] PROTOCOL_error-memory (CORE Раздел 14): гейт JWT-миграции снят 2026-07-21 — приступать при подтверждении Андрея [строка 190]
+
+[добавлено сессией переноса] «CORE Раздел 14» теперь — `registry/protocols.md` (`meta/MAP_core-sections.md`, строка Р.14); слова «error-memory» в `registry/protocols.md`, `core/MANIFEST.md` и `meta/MAP_core-sections.md` нет (grep 2026-10-06). Документ протокола — Google Doc `1AmkdP_s-jVbj9OjxJRku4j4RizbwRym-tKQQK7f0j9M` (строка 235).
+
+[ ] БЕЗОПАСНОСТЬ: ключ khFoOjJlnL7P99Md ("X-N8N-API-KEY", Header Auth, НЕ n8n API key) не ротирован. Потребители в DM26WhTJyCV0DhkP закрыты объектом 13.08 (обе ноды на "WB Marketplace API") — сам ключ всё ещё жив и не отозван. Полный отчёт: 1Ru8-kvrULlDRSk8A_R_iRwPqB0Dkd7JdEA-oEaF2r2A [строка 192]
+
+[ ] РЫЧАГ: после ротации khFoOjJlnL7P99Md сузить Allowed HTTP Request Domains с All до marketplace-api.wildberries.ru [строка 193]
+
+[ ] НАБЛЮДАЕМОСТЬ 2026-09-07 (подтверждено Андреем): SYS Canary (B5jkqW0bUScxmTi7) работает и алерты доходят — но search_executions/get_execution не показывают её прогоны вообще, хотя это schedule-триггер, а не webhook (не объясняется РЫЧАГ [EXEC-ID-НЕДОВЕРИЕ], который про webhook-класс). Причина: retention/pruning n8n не сохраняет УСПЕШНЫЕ прод-прогоны (cron и webhook) — search_executions без workflowId вернул 1896 результатов, все mode:"manual" от собственных вызовов сессии. Следствие: любой будущий аудит через search_executions систематически не увидит прод-активность cron/webhook воркфлоу — это независимая от Р-51 дыра в наблюдаемости. Готово = решить, нужен ли отдельный лог успешных прогонов (напр. запись в Data Table при каждом успешном cron-запуске) или дефект принимается как есть. [строка 195]
+
+[ ] [ПЕРЕСМОТРЕНО 2026-10-06: «0 execution» ничего не доказывает — n8n не хранит успешные прод-прогоны (НАБЛЮДАЕМОСТЬ 2026-09-07), а упавший Notifier оставил бы error-запись; их нет. Проверка без republish — Telegram Андрея: пришёл ли алерт об ошибке «OZON_UE Accrual → sales_raw_operations Adapter» (BPVFEmZF6QxXuTB6, errorWorkflow = Notifier) около 2026-10-02 00:29 UTC, исполнение 73404. Пришёл — БАГ закрыть; нет — Notifier мёртв] БАГ: Error Notifier (M5BLqclKBjGTpz33) — 0 execution за всё время при активной привязке от 4 gdocs-* инструментов. Republish-тест нужен для подтверждения/опровержения гипотезы класс 5.23 (наряд 5, 07.08.2026) [строка 212]
+
+[ ] [ДОПОЛНЕНО 2026-10-06: цена отсутствия errorWorkflow измерена — Sweeper падал КАЖДУЮ ночь минимум 23.09–04.10 (02_List_TrashStaging: протух refresh token credential XagmJHhXQU748dYW «Google Drive account», исполнение 74531), и никто не узнал. К 04.10 17:56 UTC починено (ручной прогон 74836 success, прод-ошибок 05–06.10 нет). На том же credential сидят create_folder uapccJY1O4ykyDi7, Claude → Obsidian kJTXJuHQAv1go52t и три DOSSIER-воркфлоу (W3KjaXVqWD2c02IK, bFJsM3aFlIHIFeAd, KEucSnA2duWI3eRA) — в эти дни они были бы неработоспособны. Довод за перевод Drive-узлов на Service Account (РЫЧАГ выше)] БЕЗОПАСНОСТЬ [ПОПЫТКА Н-05.09-01 ПРОВАЛИЛАСЬ 2026-09-05]: GDrive Trash Sweeper (LFDK2oAFdGWQ3Nxd) — errorWorkflow всё ещё не задан. update_workflow через SDK не установил settings.errorWorkflow и переприсвоил webhookId нетронутой ноды 06_Notify_Telegram — откат по мандату до публикации, рабочий не пострадал. Следующая попытка требует сначала найти правильный SDK-синтаксис для workflow-level settings и подтвердить вручную в UI, что credentials на 3 нодах не потеряны. [строка 215]
+
+[ ] РЫЧАГ: после каждой zip-перезаливки Skill в Customize → Skills — сверить в НОВОМ чате задеплоенную копию построчно с текущим Drive-источником, не полагаться на факт заливки как на доказательство содержимого (найдено Н-14.08-01.7, 2026-08-13: n8n-workflow-registry разошёлся по квитанции frontmatter/строка 14 при чистом Drive-источнике) [строка 219]
+
+[ ] [2026-10-06: SYS Lint TXNstdVL8xlIygBp inactive по снимку n8n-map, последний прод-прогон 30.09 упал (исполнение 71929) — баг не горит, чинить перед включением или архивировать: SYS_INDEX, который он линтил, заморожен] БАГ [Н-29.08-06, 30.08]: «состояние записано: нет» при success=true, match=false в первом прогоне SYS Lint после внедрения 12B_Assemble_Report. L6D_ReadBack_State возвращает success=true, но canonicalized-checkSum не совпадает с newStateText. Вероятная причина: gdocs-read возвращает CRLF, newStateText собирается без CRLF — canonicalize в 12B нормализует только rbText, но не newStateText симметрично. Готово = следующий прогон пишет «состояние записано: да» ИЛИ явная правка canonicalize с двусторонней нормализацией. [строка 224]
+
+[ ] РЫЧАГ [ERROR-MEMORY]: Фаза 2 по PROTOCOL_error-memory (1AmkdP_s-jVbj9OjxJRku4j4RizbwRym-tKQQK7f0j9M) — Sonnet в проекте N8N, СТРОГО после JWT-миграции [строка 235]
+
+[ПОДТВЕРЖДЕНО 2026-10-05: 02E_Fetch_Harvest шлёт POST на git-read без authentication и заголовка, 04C и 04D — с httpHeaderAuth; вебхук git-read закрыт, значит 02E получит отказ (onError continue скроет). Воркфлоу inactive — не горит; фикс — привязать тот же Header Auth, что у 04C, до включения] [2026-09-25] НАХОДКА (наряд Н-23.09-03, закрытие Header Auth + создание паспортов): SYS Maintenance Gap Monitor (5Rs6pNDSm4weWDVj), узел 02E_Fetch_Harvest — вызов http://n8n:5678/webhook/git-read БЕЗ заголовка Authorization в текущем JSON узла. Наряд Н-23.09-03 явно исключил этот узел из правки («уже с заголовком»), но факт в JSON этому противоречит — проверить, входит ли git-read в периметр закрытых 13 вебхуков вообще, или остаётся открытым сознательно по другой причине. [строка 240]
+
+[СВЕРЕНО 2026-10-06 ⚡WB_REVIEWS: два документа с одним именем WB_WF_reviews-publication — актуальный 1FNC4wz0bPV_hZtHTDz7dpjIJhDO6G6QM7U8ThJs0ynY (25.08, папка DOCS_FOLDER N8N, на него указывает PASSPORT в description) и старый 1aC9cxl_3TdaxUnsWnMAvq2twsK1YT0sBLl68p3OPYmg (правка 18.07, папка 1UQ4IR1VBMmBlfMWPXJeYqjvWlZNhZCTj). Поиск по имени (путь 2 n8n-workflow-passport) находит оба. Предложение: перенести в новый то, что из старого ещё верно, старый переименовать «… ЗАМОРОЖЕН 2026-10-06 · актуальный 1FNC4…»; делать при ближайшем касании воркфлоу] [2026-09-25] СТАРЫЙ ДОЛГ (не сегодняшний, вскрыт при чтении паспортов для наряда): WB Reviews Publication (tjDpartntNeOHCRZ) имеет два конфликтующих паспорта — подробный от 2026-07-18 (до миграции на v2) и краткий текущий от 2026-08-25. Не устранено. [строка 250]
+
+[ ] [из ЭСТАФЕТЫ 2026-08-26, сверено 2026-10-06] ДОЛГ Н-26.08-02: выбрать между ukuFBDUD4mRYVGBu и VMPxWzXPefKT2R1B (LM_DECL_MASTER, оба inactive) ⚡DEKLARATION_OZON. Остальное в эстафете снято: паспорта архивным воркфлоу не нужны, SYSTEM-MAP заменён снимком registry/n8n-map.md. [строка 291]
+
+## Хвосты аудита 2026-07-28
+
+[добавлено сессией переноса] Пункта 1 в источнике нет: нумерация начинается с 2. Пункт 4 («ЗАКРЫТО 2026-10-06») в этот файл не взят — `NOT_TAKEN.md`, строка 49.
+
+ХВОСТЫ АУДИТА 2026-07-28 (сверено и сжато 2026-10-06; отзыв ключа khFoOjJlnL7P99Md — в ОТКРЫТЫХ ЗАДАЧАХ, строка БЕЗОПАСНОСТЬ): [строка 44]
+
+2. Ротация ключа Serper — ГОТОВА К ИСПОЛНЕНИЮ, гейт пройден (ноль литералов в исполняемых телах, доказано grep’ом по всей БД). Кабинет Serper → тем же заходом обновить credential jrLCVHitEIZeye7E. Ноль правок в воркфлоу. Проверка — ручной прогон GDI35U36bBRzKZp5 по объекту. [строка 47]
+
+3. Снять onError:continueRegularOutput с 10B_Fetch_Supplies_ScanDt — именно он 12 дней рисовал зелёный статус поверх отказа ноды. [строка 48]
+
+5. [ВЫПОЛНЕНО 2026-10-06 по листу «Авто» N8N_CREDENTIALS (734 привязки, 24 credential, снято 2026-10-05): активных пар «чужой домен ↔ credential» ноль. Единственное несовпадение — khFoOjJlnL7P99Md «X-N8N-API-KEY» записан на узлах 03_Ozon_Transaction_List (MPzPrtsnPtf0sVQo) и 03_Ozon_Analytics_Request (SElTcMg3BpY6pmdo) к api-seller.ozon.ru, но «Активен в узле: нет» — остаток в JSON, ключ туда не уходит; чистить при правке этих узлов (там же литерал ключа Ozon, labs/ozon-ue)] ТЗ-8 (новое): SQL-сверка «домен URL ноды vs имя привязанного credential» по всем httpRequest-нодам инстанса. Два промаха R1a найдены дёрганьем за ОДИН credential из 19; остальные 18 не проверены. Три секунды на прогон. [строка 50]
+
+6. Хвосты ТЗ-6: maxTries на 01A/01E воркера ZyaOSSDvGsf0eq7L не выставлен явно; прогон родителя IG49VPuULlv60IOz не выполнен (делать ПОСЛЕ ротации Serper — закроет и её верификацию). [строка 51]
+
+7. Фон: Hf92DOmQPqbQWW5G «Контроль Price WB» (inactive) / 10_WB_Prices_Info — credential не привязан; чинить перед включением. [строка 52]
+
+8. [сжато 2026-10-06 из приоритетов аудита 2026-07-23] Открыто: литералы API-ключей в телах узлов — Ozon (адрес labs/ozon-ue/t-n8n-ozon-workflow-defects.md) и Anthropic (1 ключ, 2 воркфлоу, не перепроверено) → перенос в credentials. Вебхуки закрыты (27 из 27 с headerAuth), Serper вычищен 2026-07-27; cost_monitor и Service Account — в ОТКРЫТЫХ ЗАДАЧАХ. [строка 53]
+
+## Закрыто в источнике, но с решением, которое остаётся за владельцем
+
+[x] АУДИТ ЗАВЕРШЁН 2026-10-05 по снимку n8n-map (поле errorWorkflow строк W): из 82 активных без errorWorkflow 54 (не считая сам Error Notifier), в т.ч. все 9 воркфлоу Канала Git, Registry Sync, OZON/WB Reviews, GDrive Trash Sweeper. Список: grep снимка W с state=active и полем 10 = «-». Решение о массовой привязке — у Андрея. Было: ЗАДАЧА: завершить аудит errorWorkflow-покрытия (наряд 5 п.2) — обойдено 10 из 91, остаток включает Health Monitor Daily/Intraday, SYS Canary, Password Rotation, WB/Ozon HTTP-группу (~30+) [строка 218]
