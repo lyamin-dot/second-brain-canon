@@ -12,6 +12,10 @@ projects/deklaration-ozon/STATE.md
 
 Список товаров и ключи (артикул, номера Liqui Moly, SKU Ozon, nmID WB) читать из Price Master!Artikel, колонки A:N; правила и известные дыры — `meta/PRODUCT_DATA_HIERARCHY.md`. Для этого проекта важно: 5 значений LM_ID_1 и 13 значений LM_ID_2 из Artikel не найдены в LM_DECL (раздел 5.3 файла; список брать свежим чтением); товар только из кабинета ИП (пример 1180) приходит без SKU Ozon и nmID.
 
+## Читатели MASTER_MAP (2026-10-07)
+
+Ozon Upload и WB Sync до сих пор читают MASTER_MAP со старыми названиями колонок; точные правки узлов — `labs/ozon-ue/t-product-data-model.md`, записи 2026-10-07. До правки не запускать их боевой режим: MASTER_MAP расходится с Artikel (на 2026-10-02: SKU Ozon 31, nmID WB 98). Пункт про вписывание ozon_sku для 7841 (артикул 1908) и 2203 в MASTER_MAP устарел: MASTER_MAP выводится из эксплуатации, а Artikel подтягивает SKU Ozon из накопителя Ozon_SKU_Staging. WB Sync ИП читает Artikel без диапазона A:N; в задаче записана гипотеза, что из-за этого подменяется sku.
+
 ## Решения Андрея 2026-10-01 (чат создания проекта)
 
 - Задачи лаборатории `t-lm-decl-scan-rollout` и `t-decl-pdf-inbox-cleanup` закрыты (коммит 0057ea0, `LOG.md` Р-8); их тела — `git show b4de974:labs/ozon-ue/t-lm-decl-scan-rollout.md` и `git show b4de974:labs/ozon-ue/t-decl-pdf-inbox-cleanup.md`. Состояние живёт здесь. Две задачи про DECL_SAAS (`t-decl-saas-phase0.md`, `t-decl-saas-starters.md`) — монетизация, в проект не входят и остаются в лаборатории.
