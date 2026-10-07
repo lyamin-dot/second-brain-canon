@@ -8,4 +8,6 @@ labs/ozon-ue/t-hierarchy-notify-projects.md
 
 Условие снятия: по каждому проекту из списка выше — либо запись в STATE со ссылкой на `meta`-файл, либо запись в этой задаче, почему проекту она не нужна.
 
+2026-10-07 — сделано: в `projects/wb-logistics/STATE.md` и `projects/wb-reviews/STATE.md` добавлен раздел «Таблица товаров (2026-10-07)» со ссылкой на `meta`-файл. Для wb-logistics проверено по книге: лист CURRENT в Price Master есть (чтение метаданных 2026-10-07), поэтому запись «цены и объёмы из CURRENT» не изменена. Остальные проекты по поиску товарные таблицы не используют, записи им не нужны. Осталось: предложить Андрею строку «читай `meta/PRODUCT_DATA_HIERARCHY.md`» для мастер-промптов проектов вне репозитория; воркфлоу wb-logistics и wb-reviews, читающие MASTER_MAP или sku_mapping, не проверялись.
+
 Ссылки: `meta/PRODUCT_DATA_HIERARCHY.md`; `labs/ozon-ue/t-product-data-model.md` (записи 2026-10-07); Price Master 1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk.
