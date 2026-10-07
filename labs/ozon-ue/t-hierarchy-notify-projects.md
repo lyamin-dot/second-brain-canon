@@ -1,0 +1,11 @@
+labs/ozon-ue/t-hierarchy-notify-projects.md
+
+# Оповестить остальные проекты: Price Master (лист Artikel) — единственный источник товарных данных
+
+Суть: решение Андрея 2026-10-07 — оповестить все проекты, которых касается главная таблица товаров. Записано в `meta/PRODUCT_DATA_HIERARCHY.md` и в STATE трёх проектов: `wb-ue`, `deklaration-ozon`, `card-content-sync` (записи 2026-10-07 в `t-product-data-model.md`). Остальные проекты не проверены. Поиск по клону репозитория 2026-10-07 (слова `MASTER_MAP`, `SKU_Artikel_Map`, `Price Master`, ID книги) нашёл упоминания ещё в `projects/wb-logistics` (PLAN.md строка 19 и LOG.md запись Р-51 от 2026-06-09: Price Master — «единый источник цен», лист CURRENT, колонка G) и в `projects/wb-reviews` (LOG.md и NOT_TAKEN.md: вопрос К-8 — Intake берёт `product_name` из WB API, а не из Price Master). Что именно в этих проектах устарело, не разобрано. Проекты `n8n`, `n8n-map`, `anis-evidence`, `archive-recon`, `git-migration`, `kontext-reduktion`, `labs/sys` товарные таблицы по этому поиску не используют, кроме упоминания пути в `labs/sys/t-repo-search-unknown-path.md` и в `registry/n8n-map.md` (не разбирались). Мастер-промпт проекта запись в STATE сам не открывает: проект узнаёт о схеме, только если его сессия читает STATE или `meta`-файл.
+
+Следующий шаг: прочитать места, найденные поиском, и по каждому проекту решить, что изменилось (колонки, лист, источник). Где что-то устарело — дописать в STATE проекта раздел «Таблица товаров» со ссылкой на `meta/PRODUCT_DATA_HIERARCHY.md` (шаблон — запись в `projects/wb-ue/STATE.md`, раздел «Таблица товаров (обновлено 2026-10-07)»). Проектам с мастер-промптом вне репозитория предложить Андрею строку «читай `meta/PRODUCT_DATA_HIERARCHY.md`» — правку промпта делает он сам.
+
+Условие снятия: по каждому проекту из списка выше — либо запись в STATE со ссылкой на `meta`-файл, либо запись в этой задаче, почему проекту она не нужна.
+
+Ссылки: `meta/PRODUCT_DATA_HIERARCHY.md`; `labs/ozon-ue/t-product-data-model.md` (записи 2026-10-07); Price Master 1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk.
