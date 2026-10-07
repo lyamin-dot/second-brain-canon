@@ -29,6 +29,8 @@ projects/wb-ue/PLAN.md
 
 **WB_Аналитика** (Google Sheets). 14 листов: `dashboard`, `как_читать`, `cost_monitor`, `weekly_history`, `sales_unit_economics`, `sales_sku_profit_ranking`, `sales_abc_profit_analysis`, `sales_sku_efficiency_matrix`, `sales_growth_opportunities`, `_data`, `wb_reports_official`, `_map`, `_refs`, `_dashboard_backup` (сверено 28.09, листа `_dashboard_backup_conflict1561150441` больше нет). Период расчёта: `dashboard!K3 = DATE(2026;1;1)`, `dashboard!K4 = TODAY()`. Формулы и оформление правит только скрипт `WB_Monitor.gs` (Расширения → Apps Script книги, исходник живёт в книге, в Drive отдельно не хранится). Ручная правка ячейки стирается следующим прогоном `setupAll`.
 
+`weekly_history`: недели заложены заранее в колонках B…BC (54 недели, последняя 11–17.01.2027); колонка пуста, пока конец недели позже `LAST_DATA_DATE`, поэтому недели добавлять не нужно; колонки кончатся в январе 2027 (Р-57). `monthly_history` (24 месяца, B…Y) строится отдельным файлом `MonthlyHistory.gs`, выдан 2026-10-07, лист появится после запуска Андреем `buildMonthlyHistory` (Р-58).
+
 **Price Master**: `1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk` | Документация: `13qo8xl-Hg0Xpvq02QmlWbe2raogsMrl3Q8CXuZkibVg`. `sku_price_calculator` создан 2026-06-09, документирован (docx). `sku_fees_map` — вспомогательный для калькулятора, создан 2026-06-09.
 
 **DOCS_FOLDER**: `1nOwTGH6AR9vKfM1VM-mThfnRmDAaeOZn` — папка паспортов и ранбуков проекта.
