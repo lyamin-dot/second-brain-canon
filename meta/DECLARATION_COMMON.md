@@ -56,3 +56,4 @@ meta/DECLARATION_COMMON.md
 | дата | проект | что изменилось | затрагивает |
 |---|---|---|---|
 | 2026-10-07 | deklaration-ozon → оба | проект разделён; создан этот файл и `meta/DECLARATION_SCAN.md`; Scan, книга и состояние общего слоя вынесены из PLAN/STATE deklaration-ozon | оба проекта, `meta/PRODUCT_DATA_HIERARCHY.md` (ссылка на хозяина книги) |
+| 2026-10-08 | deklaration-wb → оба | ОКПД 2 по артикулам ведётся в Price Master!ARTIKEL_PROPS (колонки okpd2, okpd2_src): записаны 13 кодов из выписок деклараций; источники и покрытие — `projects/deklaration-wb/LOG.md` Р-2 | оба проекта: ОКПД 2 и ТН ВЭД — свойство товара, а не площадки |
