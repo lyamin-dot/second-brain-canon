@@ -8,7 +8,8 @@ registry/projects.md
 | n8n-map | projects/n8n-map/ | repo | активен | |
 | kontext-reduktion | projects/kontext-reduktion/ | repo | активен | |
 | wb-ue | projects/wb-ue/ | repo | активен — перенос 2026-09-28, приёмка Контролёром закрыта (три круга, `projects/git-migration/LOG.md` Р-115…Р-118); источник заморожен | |
-| deklaration-ozon | projects/deklaration-ozon/ | repo | активен — создан 2026-10-01 выделением из OZON_UE (лаборатория ozon-ue); Андрей, чат 2026-10-01 | |
+| deklaration-ozon | projects/deklaration-ozon/ | repo | активен — создан 2026-10-01 выделением из OZON_UE (лаборатория ozon-ue); Андрей, чат 2026-10-01; 2026-10-07 разделён по площадке: Wildberries ведёт deklaration-wb, общий слой — `meta/DECLARATION_COMMON.md` (Андрей, чат 2026-10-07; `projects/deklaration-ozon/LOG.md` Р-47) |
+| deklaration-wb | projects/deklaration-wb/ | repo | активен — создан 2026-10-07 выделением из deklaration-ozon (Wildberries, кабинеты основной и ИП); Андрей, чат 2026-10-07; `projects/deklaration-wb/LOG.md` Р-1 | |
 | wb-logistics | projects/wb-logistics/ | repo | активен — перенос 2026-10-04 из WB_LOGISTICS_INDEX (Google Doc `1mxYgiK9X4qOId2vNF7xnne-cQszTqPpJZHux_AuDZjQ`); приёмка Контролёром: перенос принят, замечания исправлены; источник заморожен 2026-10-04; мастер-промпт проекта переведён на repo (зеркало `meta/prompts/wb-logistics.md`) | https://claude.ai/project/019ea86d-05da-7731-b99f-f0f163be8182 |
 | card-content-sync | projects/card-content-sync/ | repo | активен — создан 2026-10-04 из задачи лаборатории ozon-ue `t-card-content-sync.md` (наряд Н-04.10-01а); Ф0 остановлена: нет ключей API у Ozon ИП и второго магазина WB | |
 | wb-reviews | projects/wb-reviews/ | repo | активен — перенос 2026-10-05 Зоны А WB_REVIEWS_INDEX (Google Doc `1D-mwjyl_rJ0ekYBSwliIRBwfOSJdJBeDi1SQddaeODc`); приёмка Контролёром: два круга, второй — принят (`projects/wb-reviews/LOG.md` Р-5); Зона Б осталась в замороженном Docs | https://claude.ai/project/019e8466-e4cb-7588-99c1-496ee2d759ed |
@@ -57,7 +58,9 @@ ANIS_EVIDENCE вес 3   — доказательная справка по ан
 
 CARD_CONTENT_SYNC вес 6   — одна книга описаний карточек для четырёх магазинов Ozon и WB (папка projects/card-content-sync/; вес подтвердил Андрей 2026-10-05)
 
-DEKLARATION_OZON вес 8   — декларации соответствия Liqui Moly в карточках Ozon и WB; товар без декларации не продаётся (папка projects/deklaration-ozon/; вес назначил Андрей 2026-10-06)
+DEKLARATION_OZON вес 8   — декларации соответствия Liqui Moly в карточках Ozon (Wildberries — DEKLARATION_WB); товар без декларации не продаётся (папка projects/deklaration-ozon/; вес назначил Андрей 2026-10-06)
+
+DEKLARATION_WB вес 8   — декларации и другие документы в карточках Wildberries, кабинеты основной и ИП; карточку без подтверждённого документа WB может скрыть (папка projects/deklaration-wb/; вес назначил Андрей 2026-10-08)
 
 <!-- T-004 | CORE байт 2461-5539 | Р.1 карточки 14 проектов (описание, статус, реквизиты, файл индекса, Claude Project) -->
 
