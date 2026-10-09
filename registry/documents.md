@@ -32,7 +32,7 @@ WB_CV_INDEX:        1qWAjqyjxb_M7S9XveSqt9L0c_AH1DyT1LAEsrf9Qkz0
 
 WB_LOGISTICS_INDEX: 1mxYgiK9X4qOId2vNF7xnne-cQszTqPpJZHux_AuDZjQ
 Claude Project WB_LOGISTICS: https://claude.ai/project/019ea86d-05da-7731-b99f-f0f163be8182
-wb_fbs_orders_tracking (Sheets, includes performance_log + monitor_params, подтверждено кодом 7 воркфлоу SYSTEM-MAP 18.07): 1qdefReY1qHfWdwroorbxz2Bi20_3dsGHiYy2W_XQ
+wb_fbs_orders_tracking (Sheets, includes performance_log + monitor_params, подтверждено кодом 7 воркфлоу SYSTEM-MAP 18.07): 1qdefReY1qHfWdwroorbxz2Bi20_3dsGHuDBiYy2W_XQ (исправлено 2026-10-09: прежняя ручная копия была без «uDB», 41 знак; верное значение — 19 вхождений в снимке `registry/n8n-map.md`, снятом с инстанса, зонд Z-10 `projects/n8n-map/PLAN.md`)
 RENO_INDEX:         1r3hSt4pccSHbya31KLNYtyr5xJtbTl1VcX-OCprBjcM
 TRADING_INDEX:      1GhOuwVL41hzyWYF4X8Su0bSuraVw6X4pGxc0G3hkT2Y
 SYS_INDEX:          12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8
@@ -113,3 +113,5 @@ REPORT_git-migration_2026-09-17: 1LhAtFDlfmeQ8CYCM7P3QOpAlZPHPmFAcVnP-clFGcJA �
 
 
 ARCHIVE_RECON_CATALOG: 1aRqQr6wRY3_p4_FFd4TJfyQXHZtGuLixj8UimZd0znU — Google Sheets «Каталог архива статей — archive-recon», лист «catalog» (17 колонок: path, source, top_folder, topic, topic_origin, doc_type, pages, size_bytes, year, year_source, doi, awmf_reg_nr, mm_status, duplicate_of, excluded, excluded_reason, processed_date), 495 строк данных на 2026-09-27. Не был зарегистрирован здесь при создании — ID отсутствовал в repo, следующая сессия не нашла бы таблицу; зарегистрирован задним числом сессией 2026-09-27 по решению Р-13 журнала projects/archive-recon/LOG.md. Лист «Sheet2» той же таблицы — не канон, содержит незавершённую, оборванную на полуслове заметку, статус и происхождение не выяснены (см. STATE.md проекта archive-recon).
+
+HARVEST_2026-10-08: 1AYwP1WPKpZtCSs2TcgYUBN4OpX_7_8QiOcgxFFR3EbE — «harvest-2026-10-08.md», полный пакет находок харвеста 2026-10-08 (редакция 2). Разобран сессией SYS 2026-10-09: правки внесены в девять Skills (зеркало `skills/`), решения по противоречиям — в позициях очереди и в `meta/PROTOCOL_harvest.md`. Читается только по вопросу «откуда взялась правка Skill от 2026-10-09».
