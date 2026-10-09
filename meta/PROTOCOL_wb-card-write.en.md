@@ -7,7 +7,7 @@ Human version (RU, authoritative wording): meta/PROTOCOL_wb-card-write.md. Edit 
 - decl_no | 15001135 | LM_DECL (book LM_DECL_MASTER) = Price Master Artikel!X = WB_Compare!E ref_decl
 - decl date_from | 15001137 | LM_DECL_MASTER sheet «Декларации».date_from
 - decl date_to | 15001138 | same sheet .date_to; NEVER write an expired decl
-- tnved | 15000001 | from declaration extract; per-SKU known only for 68827/26: block1=3403199000, block2=3403990000 (LOG R-4). Else: no reference -> do not touch
+- tnved | 15000001 | from declaration extract; per-SKU reference = Price Master ARTIKEL_PROPS col N tnved_decl (col O tnved_decl_src = origin or why empty; LOG R-13). Empty -> no reference -> do not touch. Col C tnved = main-cabinet card value, NOT reference
 - okpd2 | 15004292 | documents only (decl extract, Natl. catalog, importer). Analogy ban temporarily lifted 2026-10-09 ONLY for 11 IP autochem cards (R-12); any other card -> ask Andrei
 - kizMarked | card field | seller's legal statement; set only on Andrei's explicit word for named cards
 - needKiz | card field, read-only | WB derives from subject+tnved+okpd2; API cannot set; without okpd2 WB won't accept via API (manual UI tick works). Reference = MAIN cabinet need_kiz (hand-checked)
