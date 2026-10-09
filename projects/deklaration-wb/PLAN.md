@@ -63,5 +63,8 @@ projects/deklaration-wb/PLAN.md
 | карточки WB основного кабинета (в том числе маркировка КИЗ, колонки N need_kiz и O kiz_marked) | лист WB_Cards_Staging; робот «WB Cards → Price Master (WB_Cards_Staging)» `fGHfVrI58Ws1wfTw`, 04:10 по Москве; паспорт WB_WF_wb-cards-staging `1bm75deygPU93mNWQYnPvlpRX6t87WvgM7kG-y6U1qrA` |
 | карточки WB кабинета ИП (те же колонки A–O) | лист WB_Cards_Staging_IP (sheetId 490064629); робот «WB Cards ИП → Price Master (WB_Cards_Staging_IP)» `vIteQxGrqI7kLkb0`, 04:25 по Москве, ключ WB_Контент_ИП_R `YPDyMLkOwVYUOAOE`; паспорт WB_WF_wb-cards-staging-ip `1EUGi6ZU5f6DaZ3WSlRBkB1-YQ7OdODjFXspujDi3a7s` |
 | инструмент «Price Master — лист и заголовки (инструмент)»: новый лист и строка заголовков в любой книге | `NaD5kdaD2tFOkkO7`, параметры в узле 01_Params; паспорт WB_WF_price-master-sheet-headers `10XmcuORETkk2Rj6qlOzCjYk5O5Mm9TMNIaG_F202TqM` |
+| инструмент «WB Card Tool ИП — пакет (проверка/запись)»: исправить много карточек кабинета ИП за раз | `nIRKnhKyI5LibFW3`, параметры в узле 01_Params; паспорт WB_WF_wb-card-tool-ip-batch `1H5p-hAyfQxqu36vlBM1T25HuKjd64qDDmdRY_lYUu30` (с 2026-10-09) |
+| инструмент «WB Card Tool ИП — одна карточка (проверка/запись)» | `4dWCd1l1QiUQBPQQ`, параметры в узле 01_Params; паспорт WB_WF_wb-card-tool-ip-single `1DWn2B3cPOVkmvE4drUrh_x4vJU7X36aXJ9thnJdsitw` (с 2026-10-09) |
+| порядок записи карточек WB через API и источники истины | `meta/PROTOCOL_wb-card-write.md` (для человека), `meta/PROTOCOL_wb-card-write.en.md` (для агента) |
 | папка паспортов роботов карточек WB (DOCS) | `1yifa_sfm6l7b0l08dB8ghzadeEGbIcSQ` |
 | правило «какой лист читать для какого кабинета» | `meta/PRODUCT_DATA_HIERARCHY.md`, раздел 4б; решение — `LOG.md` Р-8 |
