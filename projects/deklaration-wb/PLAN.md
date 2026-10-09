@@ -59,4 +59,9 @@ projects/deklaration-wb/PLAN.md
 |---|---|
 | паспорт WB Sync / инструкция WB Sync для человека | `1cXeMBem_qOazW7PwQPWwNMAnejKHHoDYoO7yaOsmXcM` / `1RqQkq0mEZwMydnGTci6XvGefegXYaVqEpSz7XpHE00w` (проверены чтением 2026-10-02) |
 | общий слой: книга LM_DECL_MASTER, Scan, папки PDF, DOCS | `meta/DECLARATION_SCAN.md`, раздел «Адреса общего слоя» |
-| накопитель карточек WB, лист категорий и GTIN_OKPD | книга Price Master `1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk` (листы WB_Cards_Staging, GTIN_OKPD) |
+| накопитель карточек WB, лист категорий и GTIN_OKPD | книга Price Master `1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk` (листы WB_Cards_Staging, WB_Cards_Staging_IP, GTIN_OKPD, ARTIKEL_PROPS) |
+| карточки WB основного кабинета (в том числе маркировка КИЗ, колонки N need_kiz и O kiz_marked) | лист WB_Cards_Staging; робот «WB Cards → Price Master (WB_Cards_Staging)» `fGHfVrI58Ws1wfTw`, 04:10 по Москве; паспорт WB_WF_wb-cards-staging `1bm75deygPU93mNWQYnPvlpRX6t87WvgM7kG-y6U1qrA` |
+| карточки WB кабинета ИП (те же колонки A–O) | лист WB_Cards_Staging_IP (sheetId 490064629); робот «WB Cards ИП → Price Master (WB_Cards_Staging_IP)» `vIteQxGrqI7kLkb0`, 04:25 по Москве, ключ WB_Контент_ИП_R `YPDyMLkOwVYUOAOE`; паспорт WB_WF_wb-cards-staging-ip `1EUGi6ZU5f6DaZ3WSlRBkB1-YQ7OdODjFXspujDi3a7s` |
+| инструмент «Price Master — лист и заголовки (инструмент)»: новый лист и строка заголовков в любой книге | `NaD5kdaD2tFOkkO7`, параметры в узле 01_Params; паспорт WB_WF_price-master-sheet-headers `10XmcuORETkk2Rj6qlOzCjYk5O5Mm9TMNIaG_F202TqM` |
+| папка паспортов роботов карточек WB (DOCS) | `1yifa_sfm6l7b0l08dB8ghzadeEGbIcSQ` |
+| правило «какой лист читать для какого кабинета» | `meta/PRODUCT_DATA_HIERARCHY.md`, раздел 4б; решение — `LOG.md` Р-8 |
