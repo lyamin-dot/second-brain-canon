@@ -25,7 +25,7 @@ Human version (RU, authoritative wording): meta/PROTOCOL_wb-card-write.md. Edit 
 1. Compute targets from sheets (not memory).
 2. List disputes: no reference; expired reference; sources disagree (LM_DECL vs «Декларации».articles); other valid decl on card.
 3. mode='проверка', run, check 03_Build (found count, problems empty, report).
-4. Show summary + disputes to Andrei; write only after his OK.
+4. Show summary + disputes to Andrei; write only after his OK. IP cabinet: a valid but wrong declaration IS replaced by the reference (rule lifted 2026-10-10, R-15); main cabinet: valid declaration is not replaced.
 5. mode='запись', run; 06_Report: 200 + empty error = accepted; random 400/500 "Internal server error" -> retry only failed chunks via ONLY.
 6. Reset mode='проверка', ONLY=[]; append exec ids to 01_Params comment.
 7. Verify NEXT DAY via staging sheets/WB_Compare (IP applies with hours delay; 45 s / 4 min reads show old card — not a rejection).
