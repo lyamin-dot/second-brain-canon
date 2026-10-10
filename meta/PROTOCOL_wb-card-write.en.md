@@ -5,7 +5,7 @@ Human version (RU, authoritative wording): meta/PROTOCOL_wb-card-write.md. Edit 
 
 ## TRUTH (field | WB char id | source)
 - decl_no | 15001135 | LM_DECL (book LM_DECL_MASTER) = Price Master Artikel!X = WB_Compare!E ref_decl
-- decl date_from | 15001137 | LM_DECL_MASTER sheet «Декларации».date_from
+- decl date_from | 15001137 | LM_DECL_MASTER sheet «Декларации».date_from, checked against the PDF extract: registration date, NOT 'date_to minus 1 year' (terms seen: 181, 216, 339 days; R-16). Write ONLY as DD.MM.YYYY; 'MM-DD-YY' makes WB create a document without a period -> 'Вы не приложили документ' (R-14)
 - decl date_to | 15001138 | same sheet .date_to; NEVER write an expired decl
 - tnved | 15000001 | from declaration extract; per-SKU reference = Price Master ARTIKEL_PROPS col N tnved_decl (col O tnved_decl_src = origin or why empty; LOG R-13). Empty -> no reference -> do not touch. Col C tnved = main-cabinet card value, NOT reference
 - okpd2 | 15004292 | documents only (decl extract, Natl. catalog, importer). Analogy ban temporarily lifted 2026-10-09 ONLY for 11 IP autochem cards (R-12); any other card -> ask Andrei
