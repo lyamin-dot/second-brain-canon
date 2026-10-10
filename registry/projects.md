@@ -15,7 +15,7 @@ registry/projects.md
 | wb-reviews | projects/wb-reviews/ | repo | активен — перенос 2026-10-05 Зоны А WB_REVIEWS_INDEX (Google Doc `1D-mwjyl_rJ0ekYBSwliIRBwfOSJdJBeDi1SQddaeODc`); приёмка Контролёром: два круга, второй — принят (`projects/wb-reviews/LOG.md` Р-5); Зона Б осталась в замороженном Docs | https://claude.ai/project/019e8466-e4cb-7588-99c1-496ee2d759ed |
 | n8n | projects/n8n/ | repo | активен — перенос 2026-10-06 Зоны А N8N_INDEX (Google Doc `1GktMsgl1UOIzuWj02gqDirMSYlSjiuLuDVDd9vevB5Q`); приёмка Контролёром: четыре круга, четвёртый — принят (`projects/n8n/LOG.md` Р-3); доставлено в main 1642f60; источник заморожен 2026-10-06, Зона Б осталась в Docs архивом | |
 | archivarius | projects/archivarius/ | repo | проектирование — заведён 2026-10-10 переработкой прежнего Claude Project «Архивариус» (запись Р-1 журнала `projects/archivarius/LOG.md`); проект в интерфейсе на новую папку не переключён, прежний промпт — `meta/prompts/archivarius.md` | |
-| deklaration-v2 | projects/deklaration-v2/ | repo | активен — заведён 2026-10-10 по слову Андрея (чат 2026-10-10; запись Р-1 журнала `projects/deklaration-v2/LOG.md`): перестройка контроля карточек и кодов четырёх магазинов; старая версия deklaration-ozon и deklaration-wb работает параллельно до переключения; вес не назначен | |
+| deklaration-v2 | projects/deklaration-v2/ | repo | активен — заведён 2026-10-10 по слову Андрея (чат 2026-10-10; запись Р-1 журнала `projects/deklaration-v2/LOG.md`): перестройка контроля карточек и кодов четырёх магазинов; старая версия deklaration-ozon и deklaration-wb работает параллельно до переключения; вес 8 (Андрей, 2026-10-10) | |
 
 ## Лаборатории
 
@@ -63,6 +63,8 @@ CARD_CONTENT_SYNC вес 6   — одна книга описаний карто
 DEKLARATION_OZON вес 8   — декларации соответствия Liqui Moly в карточках Ozon (Wildberries — DEKLARATION_WB); товар без декларации не продаётся (папка projects/deklaration-ozon/; вес назначил Андрей 2026-10-06)
 
 DEKLARATION_WB вес 8   — декларации и другие документы в карточках Wildberries, кабинеты основной и ИП; карточку без подтверждённого документа WB может скрыть (папка projects/deklaration-wb/; вес назначил Андрей 2026-10-08)
+
+DEKLARATION_V2 вес 8   — «Декларации и коды 2.0»: перестройка контроля карточек и кодов четырёх магазинов Ozon и WB (папка projects/deklaration-v2/; вес назначил Андрей 2026-10-10)
 
 <!-- T-004 | CORE байт 2461-5539 | Р.1 карточки 14 проектов (описание, статус, реквизиты, файл индекса, Claude Project) -->
 
