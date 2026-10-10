@@ -1,7 +1,7 @@
 meta/PROTOCOL_wb-card-write.en.md
 
 # WB card write via API — agent copy (compact)
-Human version (RU, authoritative wording): meta/PROTOCOL_wb-card-write.md. Edit both together. Decisions: projects/deklaration-wb/LOG.md R-7, R-11, R-12 (written Р-NN, Cyrillic Р).
+Human version (RU, authoritative wording): meta/PROTOCOL_wb-card-write.md. Edit both together. Decisions: projects/deklaration-wb/LOG.md R-7, R-11, R-12, R-14, R-15, R-16 (written Р-NN, Cyrillic Р).
 
 ## TRUTH (field | WB char id | source)
 - decl_no | 15001135 | LM_DECL (book LM_DECL_MASTER) = Price Master Artikel!X = WB_Compare!E ref_decl
