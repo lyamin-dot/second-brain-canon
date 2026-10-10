@@ -17,7 +17,7 @@ Human version (RU, authoritative wording): meta/PROTOCOL_wb-card-write.md. Edit 
 - WB_Cards_Staging (main, robot fGHfVrI58Ws1wfTw 04:10 MSK), WB_Cards_Staging_IP (IP, robot vIteQxGrqI7kLkb0 04:25 MSK), WB_Compare (formulas). Rules: meta/PRODUCT_DATA_HIERARCHY.md 4б, 4в.
 
 ## TOOLS (IP cabinet only; no batch tool for main yet)
-- nIRKnhKyI5LibFW3 batch. 01_Params: mode 'проверка'|'запись', chunk=10, kizMarked, D{key:[no,from,to]}, rows[[nmID,sku,grp,declKey|'',tnved|'',okpd2|'']] ('' = untouched). Reads whole cabinet, keeps other chars, POST /content/v2/cards/update in chunks, 7 s apart. 04_Gate_Zapis ONLY=[n..] re-sends chosen chunks. Output: 03_Build.report (before->after), problems; 06_Report per-chunk status.
+- nIRKnhKyI5LibFW3 batch. 01_Params: mode 'проверка'|'запись', chunk=10, kizMarked, D{key:[no,from,to]}, rows[[nmID,sku,grp,full decl no,date_from DD.MM.YYYY,date_to DD.MM.YYYY,okpd2?]] (kizMarked null = card value passed as is; writes chars 15001135/37/38 and 15004292 only if okpd2 given; never tnved). Reads whole cabinet, keeps other chars, POST /content/v2/cards/update in chunks, 7 s apart. 04_Gate_Zapis ONLY=[n..] re-sends chosen chunks. Output: 03_Build.report (before->after), problems; 06_Report per-chunk status.
 - 4dWCd1l1QiUQBPQQ single card. 01_Params: mode, nmID, set{charId:[vals]}, kizMarked. Waits 45 s, diffs.
 - Keys: write «WB Kontent_ИП_Wr» OBHpKT8vPkAzVjH9; read WB_Контент_ИП_R.
 
