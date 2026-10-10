@@ -20,7 +20,7 @@ meta/DECLARATION_COMMON.md
 | Ozon основной (Аллея Групп, Client-Id 559661) | да | да, после «да» Андрея | Ozon Upload `BLNA8sbdnLtuz7Uj` (не публиковать), credential «Ozon Seller API» `QGpZpf4c03WyZG9A`; лист Ozon_SKU_Staging | рабочий |
 | Ozon ИП | нет | нет | «Ozon IP SKU Staging (ИП)» `PWFVE0UbM3ajvVFc`, лист Ozon_IP_SKU_Staging | ключа API нет (`labs/ozon-ue/t-ozon-ip-cabinet.md`); Ozon Upload под второй кабинет не переделан, решение не принято |
 | WB основной | да | да, после «да» на список nmID; карточки «Автохимия» и «Смазки автомобильные» код не пишет (SKIP_OKPD2) | WB Sync `QCQI6utFFH3dvTJT`; «WB Cards → Price Master» `fGHfVrI58Ws1wfTw`, лист WB_Cards_Staging | рабочий, 454 карточки |
-| WB ИП | да | нет | WB Sync ИП `9Qhnkz9E6mjidqs5` (опубликованная версия — только проверка; черновик с боевым путём не опубликован), ключ `WB_Контент_ИП_R` | 215 карточек, запись в опубликованной версии не заведена |
+| WB ИП | да | да, после «да» (`nIRKnhKyI5LibFW3`) | WB Sync ИП `9Qhnkz9E6mjidqs5` (только проверка); ключи `WB_Контент_ИП_R`, `WB Kontent_ИП_Wr` | 215 карточек; запись с 2026-10-09 |
 
 Правило: пока у кабинета нет записи в таблице «чтение да, запись да», проект его проверяет, но не пишет. Новый кабинет или новое право ключа вносится сюда тем же действием, что и в PLAN проекта.
 
