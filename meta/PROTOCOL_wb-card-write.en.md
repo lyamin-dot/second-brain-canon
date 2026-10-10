@@ -37,3 +37,6 @@ Human version (RU, authoritative wording): meta/PROTOCOL_wb-card-write.md. Edit 
 - Each decl write recreates WB document (new id); interim verdict (supplier_not_registered) may turn ok hours later.
 - Char values = array of strings: ["3403990000"], ["01.06.2026"].
 - Sparse cards (e.g. 1053: 2 chars) are sent as is; tool invents nothing.
+- 200 + new updatedAt does not prove applied: check card documents.verdict next day.
+- Manual-KIZ cards with okpd2 invisible via API: write without okpd2 risks dropping needKiz; write with okpd2 first tried on 1345/1745 (R-16) - check after the night robot and again next day; do not repeat on other cards without Andrei's word.
+- WB may return dates as MM-DD-YY on read; write only DD.MM.YYYY.
