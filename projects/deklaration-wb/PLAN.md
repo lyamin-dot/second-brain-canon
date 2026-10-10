@@ -14,7 +14,7 @@ projects/deklaration-wb/PLAN.md
 
 Вне проекта: Ozon (`projects/deklaration-ozon/`); Scan и книга LM_DECL_MASTER (общий слой, `meta/DECLARATION_SCAN.md`); единая модель данных товара (лаборатория `ozon-ue`, `meta/PRODUCT_DATA_HIERARCHY.md`); юнит-экономика WB (`projects/wb-ue/`); описания карточек (`projects/card-content-sync/`); отзывы (`projects/wb-reviews/`).
 
-Кабинеты: основной — чтение и боевая запись (ключ категории «Контент» с правом записи, привязан к узлу 08 WB Sync); ИП — только чтение (ключ `WB_Контент_ИП_R`, узлов записи нет, `projects/deklaration-ozon/LOG.md` Р-40); запись в карточки ИП — отдельное решение Андрея, не принято. Реестр всех четырёх кабинетов — `meta/DECLARATION_COMMON.md`.
+Кабинеты: основной — чтение и боевая запись (ключ категории «Контент» с правом записи, привязан к узлу 08 WB Sync); ИП — чтение (ключ `WB_Контент_ИП_R`) и запись пакетным инструментом `nIRKnhKyI5LibFW3` (ключ `WB Kontent_ИП_Wr`) после «да» Андрея, с 2026-10-09 (`LOG.md` Р-12); WB Sync ИП `9Qhnkz9E6mjidqs5` — только проверка. Реестр всех четырёх кабинетов — `meta/DECLARATION_COMMON.md`.
 
 ## Wildberries — перенос и обновление деклараций (проект устройства, 2026-10-02)
 
