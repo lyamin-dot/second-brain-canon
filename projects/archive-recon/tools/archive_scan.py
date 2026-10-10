@@ -79,6 +79,7 @@ GL_VARIANTS = [
     ("short", re.compile(r"(?i)kurzversion|kurzfassung|kurzleitlinie|(?<![a-z])kurz[.\s_-]")),
     ("long", re.compile(r"(?i)langversion|langfassung")),
 ]
+IGNORED_NAMES = {"desktop.ini", "thumbs.db", ".ds_store"}     # system litter: counted, not inventoried
 CARD_RE = re.compile(r"(?i)(?<![a-z])mm(?![a-z])")
 MM_MARKER_RE = re.compile(r"(?i)ohne\s*mm|mm\s*fehlt|kein(?:e)?\s*mm")
 
@@ -134,10 +135,11 @@ def md5_stream(path):
 # ----------------------------------------------------------------------------- walking
 
 def walk_tree(root):
-    """Walk completely. Returns (files, folders, unreadable, skipped).
+    """Walk completely. Returns (files, folders, unreadable, skipped, ignored).
     Nothing is skipped silently: every folder that did not open and every entry that is
-    neither a regular file nor a folder is listed."""
+    neither a regular file nor a folder is listed; ignored system files are counted."""
     files, folders, unreadable, skipped = [], {}, [], []
+    ignored = collections.Counter()
     stack = [root]
     while stack:
         d = stack.pop()
@@ -162,6 +164,9 @@ def walk_tree(root):
                     info["subfolders"] += 1
                     stack.append(p)
                 elif e.is_file(follow_symlinks=False):
+                    if e.name.lower() in IGNORED_NAMES or e.name.startswith("~$"):
+                        ignored[e.name.lower() if e.name.lower() in IGNORED_NAMES else "~$*"] += 1
+                        continue
                     info["files"] += 1
                     files.append(p)
                 else:
@@ -169,7 +174,7 @@ def walk_tree(root):
             except OSError as ex:
                 skipped.append((rel, "could not classify: %s" % ex))
     files.sort(key=lambda p: p.lower())
-    return files, folders, unreadable, skipped
+    return files, folders, unreadable, skipped, ignored
 
 
 # ----------------------------------------------------------------------------- cache
@@ -487,11 +492,17 @@ def belongs(cr_title, raw, name):
     return "yes" if frac >= 0.7 else "maybe" if frac >= 0.4 else "no"
 
 
-def title_key(name, cr_title, meta_title):
+def title_nums(name):
+    """Digit tokens of the file name apart from years/dates: 'Seite 2 3' differs from 'Seite 4 5'."""
+    s = re.sub(r"(?i)\b(kopie|copy|kopia)\b|\(\d+\)", " ", os.path.splitext(name)[0])
+    s = re.sub(r"(?<!\d)(?:19|20)\d{2}[-._]?\d{0,2}[-._]?\d{0,2}(?!\d)", " ", s)
+    return tuple(re.findall(r"\d+", s))
+
+
+def title_key(name, cr_title):
+    # the PDF metadata title is not used: chapters of one book share it
     if cr_title:
         return norm_text(cr_title)
-    if meta_title:
-        return norm_text(meta_title)
     s = os.path.splitext(name)[0]
     s = re.sub(r"(?i)\b(kopie|copy|kopia)\b|\(\d+\)", " ", s)
     s = re.sub(r"(?<!\d)(?:19|20)\d{2}[-._]?\d{0,2}[-._]?\d{0,2}(?!\d)", " ", s)
@@ -571,7 +582,7 @@ def main():
     t0 = time.time()
     cache = Cache(os.path.join(out, "scan_cache.sqlite"))
     print("Walking %s ..." % root)
-    files, folders, unreadable, skipped = walk_tree(root)
+    files, folders, unreadable, skipped, ignored = walk_tree(root)
     print("%d files in %d folders; %d folders did not open." % (len(files), len(folders), len(unreadable)))
 
     # ---- stage 1: per-file raw data (cached)
@@ -595,13 +606,15 @@ def main():
             raw = {}
             if kind == "pdf":
                 raw = extract_pdf(p, st.st_size, a.text_pages)
-            elif kind == "video" and not a.hash_video:
-                raw = {"md5": None}
+            elif (kind == "video" and not a.hash_video) or kind == "gdrive_pointer":
+                raw = {"md5": None}      # video: slow; Drive pointers (.gdoc...) cannot be read as files
             else:
                 try:
                     raw = {"md5": md5_stream(p)}
                 except OSError as ex:
                     raw = {"md5": None, "error": "md5: %s" % str(ex)[:150]}
+        if kind == "gdrive_pointer":
+            raw = {"md5": None}
         if kind == "video" and a.hash_video and raw.get("md5") is None:
             try:
                 raw["md5"] = md5_stream(p)
@@ -718,7 +731,8 @@ def main():
             r["mm_status"] = "card"
         else:
             r["mm_status"] = "n/a"
-        r["title_key"] = title_key(name, r["crossref_title"], raw.get("meta_title", "")) if kind == "pdf" else ""
+        r["title_key"] = title_key(name, r["crossref_title"]) if kind == "pdf" else ""
+        r["_nums"] = () if r["crossref_title"] else title_nums(name)
         # saved text
         if a.save_text and kind == "pdf" and (raw.get("first") or raw.get("ocr")) and raw.get("md5"):
             tname = "%s__%s.txt" % (raw["md5"][:12], re.sub(r'[^\w\-. ]+', "_", os.path.splitext(name)[0])[:60])
@@ -765,7 +779,7 @@ def main():
         for s in pdfs[i + 1:]:
             if int(s["pages"]) - int(r["pages"]) > 2:
                 break
-            if r["md5"] == s["md5"] or (r["doi"] and r["doi"] == s["doi"]):
+            if r["md5"] == s["md5"] or (r["doi"] and r["doi"] == s["doi"]) or r["_nums"] != s["_nums"]:
                 continue
             sm = difflib.SequenceMatcher(None, r["title_key"], s["title_key"])
             if sm.real_quick_ratio() >= 0.9 and sm.quick_ratio() >= 0.9 and sm.ratio() >= 0.9:
@@ -873,6 +887,9 @@ def main():
     L.append("")
     L.append("ENTRIES SKIPPED (not followed / not classified)")
     L.extend(["  %s  [%s]" % s_ for s_ in skipped] or ["(none)"])
+    L.append("")
+    L.append("IGNORED SYSTEM FILES (not in the inventory): " +
+             (", ".join("%s %d" % kv for kv in ignored.most_common()) or "(none)"))
     L.append("")
     L.append("TOTALS")
     L.append("files: %d   folders: %d   total size: %.2f GB" % (len(rows), len(folders), sum(int(r["size"] or 0) for r in rows) / 1e9))
