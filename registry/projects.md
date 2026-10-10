@@ -14,6 +14,7 @@ registry/projects.md
 | card-content-sync | projects/card-content-sync/ | repo | активен — создан 2026-10-04 из задачи лаборатории ozon-ue `t-card-content-sync.md` (наряд Н-04.10-01а); Ф0 остановлена: нет ключей API у Ozon ИП и второго магазина WB | |
 | wb-reviews | projects/wb-reviews/ | repo | активен — перенос 2026-10-05 Зоны А WB_REVIEWS_INDEX (Google Doc `1D-mwjyl_rJ0ekYBSwliIRBwfOSJdJBeDi1SQddaeODc`); приёмка Контролёром: два круга, второй — принят (`projects/wb-reviews/LOG.md` Р-5); Зона Б осталась в замороженном Docs | https://claude.ai/project/019e8466-e4cb-7588-99c1-496ee2d759ed |
 | n8n | projects/n8n/ | repo | активен — перенос 2026-10-06 Зоны А N8N_INDEX (Google Doc `1GktMsgl1UOIzuWj02gqDirMSYlSjiuLuDVDd9vevB5Q`); приёмка Контролёром: четыре круга, четвёртый — принят (`projects/n8n/LOG.md` Р-3); доставлено в main 1642f60; источник заморожен 2026-10-06, Зона Б осталась в Docs архивом | |
+| archivarius | projects/archivarius/ | repo | проектирование — заведён 2026-10-10 переработкой прежнего Claude Project «Архивариус» (запись Р-1 журнала `projects/archivarius/LOG.md`); проект в интерфейсе на новую папку не переключён, прежний промпт — `meta/prompts/archivarius.md` | |
 
 ## Лаборатории
 
