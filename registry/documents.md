@@ -25,6 +25,7 @@ REFERENCE_DOC:      1wLXGvxc5HQ9KXgsZzqAGTN0-1nmhbf_L9fAjYVAJh_k
 <!-- T-007 | CORE байт 6267-7545 | Р.2 ID проектных INDEX (N8N … WB_REVIEWS_INDEX, вкл. wb_fbs_orders_tracking) -->
 N8N_INDEX:          1GktMsgl1UOIzuWj02gqDirMSYlSjiuLuDVDd9vevB5Q
 SERVER_INDEX:       1n5WPjZ99H9cwVj3w7FwLsvLZLiabAFIcp8fF5hzq5rY
+SERVER_SVC_ocr:     1ZBCgE6hOyz3q-0hkL6v5KzN_0qeTY66iuzySbhz98dQ
 OZON_UE_INDEX:      13gg5K9lGx_ypJZdnt-Fe8xFtShWYYFI9uEtClPNsjhQ
 OZON_CV_INDEX:      1t4DWGWB7z_4uAsGhbs8xHXvr6MI__i8A5Nc73puid3U
 WB_UE_INDEX:        1qY2bB8VZtepPQCp0uZQ6hzO4a2SsE-_ooHnghYHjuZY
