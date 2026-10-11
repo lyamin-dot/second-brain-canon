@@ -10,7 +10,7 @@ projects/deklaration-v2/PLAN.md
 
 ## Старт сессии
 
-Прочитать Skill `second-brain-engineer` и выполнить его стартовый протокол (раздел Р1: `meta/PENDING_RULES.md` и `STATE.md` этого проекта). Перед работой с n8n — Skill `n8n-engineering-manual`. Перед работой с файлами repo `second-brain-canon` — Skill `second-brain-git`. Перед работой с Google Drive и Sheets — Skill `google-drive-docs`. Паспорта воркфлоу — Skill `n8n-workflow-passport`. Идентификаторы книг и специфика API — Skill `n8n-workflow-registry`.
+Прочитать Skill `second-brain-engineer` и выполнить его стартовый протокол (раздел Р1: `meta/PENDING_RULES.md` и `STATE.md` этого проекта), затем целиком мастер-промпт `meta/prompts/deklaration-v2.md` — проект ведётся как Летопись без Claude Project, промпт хранится в Git (запись Р-6 журнала). Перед работой с n8n — Skill `n8n-engineering-manual`. Перед работой с файлами repo `second-brain-canon` — Skill `second-brain-git`. Перед работой с Google Drive и Sheets — Skill `google-drive-docs`. Паспорта воркфлоу — Skill `n8n-workflow-passport`. Идентификаторы книг и специфика API — Skill `n8n-workflow-registry`.
 
 ## Фазы (порядок не переставлять)
 
