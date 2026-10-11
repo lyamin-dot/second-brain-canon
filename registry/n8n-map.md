@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-10-09T18:52:22.066Z
+instance_last_change|2026-10-10T20:26:50.893Z
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0sVn3WwpIyaItpki|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,triggerAtDayOfMonth=1,triggerAtHour=3|instance|?|-|-
 W|16iuTMqNFMvh2uwb|TEMP Delete TEST_UNREACHABLE row (naryad Н-07.09-02)|archived|never|manualTrigger|-|instance|?|-|-
@@ -30,6 +30,7 @@ W|5Rs6pNDSm4weWDVj|SYS Maintenance Gap Monitor|inactive|never|scheduleTrigger|ex
 W|68JvOJ3AQoM0l7Ud|TMP Reset 3 Rows|archived|never|webhook|-|instance|?|-|-
 W|6M9nS9iKQzMdztUs|WB FBS Morning Forecast|active|same|scheduleTrigger|expression=0 7 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|6esmzrag6woy53Ua|OZON Reviews Response v2|archived|never|scheduleTrigger|field=minutes,minutesInterval=30|instance|?|-|-
+W|6zZ45FqZb3SlwM9L|OCR Server Probe|inactive|never|manualTrigger|-|instance|?|-|-
 W|71ciMI0H1gD8W6HS|KB Probe TMP|archived|never|manualTrigger|-|instance|?|-|-
 W|72DWYjGbeAxEgYwj|Git Read|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|7KVl4QpSnA2pATdV|00X|archived|never|-|-|instance|?|-|-
@@ -477,6 +478,7 @@ D|1xxO6QpwyJ17tbpGjX9VJgtCt7y-Bfs0h0TCIuPUU5B4|SElTcMg3BpY6pmdo|05_Write_to_Shee
 D|1zKvsxBkMi9AWD81EzTElmIHmyXQQQ7K9|EPr2EUtI23wZ3X7c|04_Move_To_TrashStaging|googleDrive|move|-
 D|1zKvsxBkMi9AWD81EzTElmIHmyXQQQ7K9|LFDK2oAFdGWQ3Nxd|02_List_TrashStaging|googleDrive|search|-
 D|1zdz12-cwFZyHaHkKA8tJ1MvQKGCMN4xZdYztfYS3SOc|gFFiBPm1OomOzJOj|Перезаписать N8N_REGISTRY|httpRequest|default|-
+D|dynamic|6zZ45FqZb3SlwM9L|04_Download_PDF|googleDrive|download|-
 D|dynamic|BLNA8sbdnLtuz7Uj|10_Download_PDF|googleDrive|download|-
 D|dynamic|EPr2EUtI23wZ3X7c|03_Stamp_AppProperties|googleDrive|update|-
 D|dynamic|EPr2EUtI23wZ3X7c|04_Move_To_TrashStaging|googleDrive|move|-
@@ -556,6 +558,7 @@ C|5Rs6pNDSm4weWDVj|telegramApi|1
 C|6M9nS9iKQzMdztUs|googleApi|3
 C|6M9nS9iKQzMdztUs|httpHeaderAuth|1
 C|6M9nS9iKQzMdztUs|telegramApi|1
+C|6zZ45FqZb3SlwM9L|googleDriveOAuth2Api|1
 C|72DWYjGbeAxEgYwj|githubApi|1
 C|72DWYjGbeAxEgYwj|httpHeaderAuth|1
 C|7OQh206m8xrZAzPF|githubApi|6
