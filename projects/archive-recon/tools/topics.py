@@ -19,7 +19,7 @@ TOPICS = {
  'Kardiologie': ['kardial','cardiac','herzinsuffizienz','heart failure','myokardinfarkt','myocardial infarction','koronar','coronary','vorhofflimmern','atrial fibrillation','rhythmusstörung','arrhythm','endokarditis','endocarditis','herzklappe','aortenstenose','kardiogen','cardiogenic','ekg','ecg','acs','stemi'],
  'Reanimation': ['reanimation','resuscitation','herzstillstand','kreislaufstillstand','cardiac arrest','cpr','ecpr','defibrillation','advanced life support','ALS','ERC','rosc','postreanimation'],
  'Polytrauma': ['polytrauma','schwerverletzt','trauma','verletzung','injury','unfall','fraktur','fracture','beckenfraktur','schädel-hirn-trauma','traumatic brain','atls','damage control'],
- 'SchockRaum': ['schockraum','emergency department','notaufnahme','trauma bay','resuscitation room','schockraummanagement','zentrale notaufnahme'],
+ 'Schockraum': ['schockraum','emergency department','notaufnahme','trauma bay','resuscitation room','schockraummanagement','zentrale notaufnahme'],
  'Transfusionsmedizin': ['transfusion','erythrozyt','red blood cell','thrombozyt','platelet','plasma','gerinnung','koagulopathie','coagulopathy','coagulation','hämostase','haemostasis','hemostasis','rotem','teg','viskoelast','viscoelast','fibrinogen','tranexam','blutung','bleeding','hämorrhag','haemorrhag','hemorrhag','patient blood management','massivtransfusion','gerinnungsfaktor','antikoagul','anticoagul'],
  'Notarzt': ['notarzt','rettungsdienst','präklinisch','prähospital','prehospital','emergency medical service','ems','einsatz','rettungswagen','leitstelle','notfallsanitäter','luftrettung'],
  'Leitender NA': ['leitender notarzt','leitende notärzt','massenanfall','manv','großschadenslage','katastrophen','sichtung','triage','mass casualty'],
