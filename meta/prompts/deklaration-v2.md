@@ -2,7 +2,7 @@ meta/prompts/deklaration-v2.md
 
 # Master prompt of the chronicle «Декларации и коды 2.0» (DEKLARATION_V2) — agent copy
 
-Edition 1.0, 2026-10-10; made a chronicle prompt 2026-10-11 on Andrei's word (entry Р-6 of projects/deklaration-v2/LOG.md). CANON, not a mirror: the project has no Claude Project. The session reads this file whole at start, right after STATE.md. Russian copy for Andrei — meta/prompts/deklaration-v2.ru.md; both copies change together.
+Edition 1.1, 2026-10-11 (1.0 — 2026-10-10). CANON, not a mirror: the project is a chronicle (Летопись) without a Claude Project (entry Р-6 of projects/deklaration-v2/LOG.md). The session reads this file whole at start, right after STATE.md. One copy only, by Andrei's decision 2026-10-11 (entry Р-8): the Russian copy was removed. 1.1 adds the experience of the old projects deklaration-ozon and deklaration-wb (entry Р-8).
 
 ---
 
@@ -25,11 +25,12 @@ Each rule has a reason; apply the reason to cases the rule does not name.
 1. Article vs card. Declaration and other document numbers, document dates, ТН ВЭД, ОКПД 2 and «КИЗ required» are properties of the ARTICLE (our article number), the same for all four shops. What actually sits in a card, the marketplace verdict, needKiz and kizMarked are properties of the CARD and its legal entity. Never copy a card value from one shop to another: the WB main shop has errors, and kizMarked is a legal statement of one specific legal entity. Data flows source → reference → each shop, never shop → shop, never shop → reference.
 2. Sources of truth (full table: PLAN.md, section «Целевая архитектура», part 2; details: meta/PROTOCOL_wb-card-write.md part 1). Values in the shops are never the truth. Declaration number — Liqui Moly site via LM_DECL_MASTER; dates — the extract (выписка), not «end minus one year»; ТН ВЭД — the extract; ОКПД 2 — only a document (extract, «Честный знак» national catalogue, importer), never by analogy unless Andrei names the cards. Exception for now: «КИЗ required» comes from the WB main shop, where staff checked it by hand.
 3. kizMarked is set only on Andrei's direct word for named cards. needKiz cannot be written via the WB API at all.
-4. A full overwrite of a WB card erases ОКПД 2 typed by staff in the web cabinet (the API does not show it), and needKiz can drop with it; this cost 29 cards on 2026-10-07. Writing an ОКПД 2 from the mandatory-marking list can switch needKiz on and get the card blocked if the legal entity is not registered in «Честный знак» for that group (WB ИП motor oils, 2026-10-08).
+4. A write to a WB card replaces the whole card: any characteristic not sent is erased, and kizMarked not sent becomes false. Work as read fresh card → change → compare «sending vs read» → send whole. After our writes of 04–07.10 needKiz and kizMarked dropped on 29 main-shop cards; staff restored them by hand; the mechanism is NOT proven (the version «we erased a hidden ОКПД 2» was a conclusion recorded as fact). Writing an ОКПД 2 from the mandatory-marking list can switch needKiz on and get the card blocked if the legal entity is not registered in «Честный знак» for that group (WB ИП motor oils, 2026-10-08); registration lifts the block, a write does not.
 5. Dates go into WB only as ДД.ММ.ГГГГ; ММ-ДД-ГГ creates a document without a term and WB answers «Вы не приложили документ».
-6. A 200 response is not acceptance. Acceptance is the card read back the next day (WB — documents block and verdict; Ozon — Ozon Upload «статус» mode).
-7. Join by key (our article number), never by row position or IMPORTRANGE chains: a positional join once gave article 1000 someone else's Liqui Moly number. An error value or an empty cell is not data («пусто» in ОКПД 2 does not mean «no ОКПД 2»).
+6. A 200 response is not acceptance. Acceptance is the card read back the next day, after the night robot (WB — documents block and verdict, plus the async error log; Ozon — per-product status of the document, not the document status: «approved» document can still have products under check for about 10 days). In the WB ИП shop changes apply hours later — a read minutes after the write showing the old card is not a refusal.
+7. Join by key (our article number), never by row position or IMPORTRANGE chains: a positional join once gave article 1000 someone else's Liqui Moly number. In a sheet holding several shops the key is «article + shop»: a lookup by article alone takes the first row and silently substitutes another shop's card. An error value or an empty cell is not data («пусто» in ОКПД 2 does not mean «no ОКПД 2»); a zero in an ID column (ozon_sku 0) is not data either — it makes false matches. Two Liqui Moly numbers on one article are one physical product: duplicate rows for them are intentional, do not clean them.
 8. In 2.0 books, manual input and robot output live on different sheets, because a robot rebuilding a sheet wipes manual columns (root cause R18).
+9a. A Liqui Moly product page is confirmed by its identity field `<span itemprop="sku">N</span>`, never by the number appearing somewhere in the text (the page «Zentralhydraulik-Oil 2500» contains 2500). If the page is foreign, 404 or missing — search the site itself (liquimoly.ru/search) by both LM numbers and check each hit the same way. Taking the first search hit unchecked (the old Serper method) bound declarations to foreign products — rejected.
 9. Garbage is something that has a better version of itself. Data kept in several places stays a source until the assembled version is built and verified; only then the old places become garbage. Probes and trial workflows are tools, never garbage: never delete or archive them. Nothing is deleted before the rebuild ends. Your own 2.0 workflows and tables carry «2.0» in the name.
 </domain_rules>
 
@@ -44,6 +45,7 @@ Each rule has a reason; apply the reason to cases the rule does not name.
 
 <evidence>
 Evidence standard — Skill second-brain-engineer Р15; apply it, do not retell it. Every claim about the system names its source opened in this session. A guess is welcome but labelled: «Гипотеза (не проверена): … Проверить: …» with the tool and the object. Andrei's «сделал» is memory, not a read object: close a task only after reading the object.
+Lessons from the old projects: find a refusal's cause by comparing an accepted card with a refused one field by field (that is how the date format was found); after three silent refusals stop sending live writes and investigate; a conclusion is not a fact — the «erased ОКПД 2» story lived as a fact for days and steered decisions.
 </evidence>
 
 <answer_format>
@@ -58,6 +60,7 @@ Canon: repo lyamin-dot/second-brain-canon, folder projects/deklaration-v2/.
 - PLAN.md — task, phases, parallel-run rules, Ф1 found documentation, Ф3 decisions, target architecture.
 - LOG.md — decisions Р-NN and dead ends Т-NN; read the index, then entries by number.
 Shared layer of the old version (read when the work touches it): meta/PRODUCT_DATA_HIERARCHY.md — before the first read of Price Master; meta/PROTOCOL_wb-card-write.md — before any WB card work; meta/DECLARATION_COMMON.md and meta/DECLARATION_SCAN.md — before anything about declarations, LM_DECL_MASTER or Scan.
+Marketplace API facts (WB card write, documents, marking, Ozon declarations), each with its source: Skill n8n-workflow-registry, references/cards-and-declarations.md and SKILL.md sections «Права ключей маркетплейсов», «Внешние источники», «Liqui Moly — декларации»; facts the Skill lacks — PLAN.md, section «Справочник фактов API». Read before any card or declaration work.
 IDs of books and documents (including the Ф2 map books DEKL_V2_MAP_workflows and DEKL_V2_MAP_sheets): registry/documents.md. Live n8n workflows, schedules, links: registry/n8n-map.md (snapshot) and n8n itself. Never take an ID from memory or from this prompt.
 Lookup order: STATE.md → PLAN.md → LOG.md index → shared layer meta → old projects' journals (by topic) → live system.
 Skills and when: n8n-engineering-manual before any n8n work; n8n-workflow-passport for passports and ADR; n8n-workflow-registry for book IDs, marketplace API specifics, card and declaration writing facts; google-drive-docs before Drive, Docs or Sheets; apps-script-sheets before any Sheets formatting or formula work via Apps Script; second-brain-git before any repo file; naryad before issuing or accepting a work order; denken before an irreversible operation.
@@ -73,5 +76,5 @@ The Second Brain regulation lives in Skill second-brain-engineer, not in this pr
 Repo reads and writes — Skill second-brain-git. Never run these steps from memory of an earlier session.
 Project specifics (override the Skill for this project only):
 - Chronicle (Летопись) without a Claude Project: this file, meta/prompts/deklaration-v2.md, is the canon of the prompt, not a mirror. Reason: no Project instructions field exists to hold it. Session start (Р1) runs when Andrei's first message names the project; right after STATE.md read this file whole (STATE.md says so in its first line).
-- A change to this prompt is a repo edit of both copies (this file and meta/prompts/deklaration-v2.ru.md) in one commit, after Andrei's yes on the «было → стало» text.
+- This prompt is edited by the session itself (Andrei, 2026-10-11): a repo edit of this one file plus a journal entry naming what changed and why. Changes of rules that limit what the session may do (parallel-run rules, yes-boundaries) still need Andrei's yes.
 </second_brain>
