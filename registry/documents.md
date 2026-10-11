@@ -66,7 +66,7 @@ SKILL_SBE:          1gybzP1Gre3aJCkjRcHFoSe1m6YpcYYEd9w8qGHTzPWI — ЗАМОР�
 USER_MANUAL:        1ZFUggkhZoip6ytesV0D-SlfIsCtpNZQ6TKQfYqnjiHo
 TECH_INDEX:         10fAtNieWynJL3hUUVn8KsPWhv66RwkiAihLApJDhOMM
 N8N_TEMPLATES:      1A5LrTDyThvox90jCHjM6UnVhQhfmPOv3K8gAylUnY4g — TEMPLATES.md (T1-T4), спутник SKILL n8n-engineering-manual. Существование подтверждено 2026-08-11 (был в Корзине, невидим владельцу; восстановлен Андреем). Корень Диска, не папка SKILLS.
-N8N_INCIDENT_LOG:   1Ts6ycdKBH42uTtC6osi0FsqO8C2v8-ifTrKCaWQVB7Q — INCIDENT_LOG.md, тот же спутник. Восстановлен 2026-08-11. Корень Диска, не папка SKILLS.
+N8N_INCIDENT_LOG:   1Ts6ycdKBH42uTtC6osi0FsqO8C2v8-ifTrKCaWQVB7Q — ЗАМОРОЖЕН 2026-10-11 (устаревшая копия INCIDENT_LOG.md версии v1.1 от 2026-08-04, последнее изменение документа 2026-08-13; живой текст — файл INCIDENT_LOG.md внутри Skill n8n-engineering-manual; Р-20 журнала projects/archivarius/LOG.md, решение Андрея в чате SYS 2026-10-11). Восстановлен 2026-08-11. Корень Диска, не папка SKILLS.
 _SYSTEM папка:      1Y43bKpjWCkk3L0qi6dEfMfakF5jG_R2x
 INDEX_FOLDER:       1UV-7hP0L2jiwPAtulPZ1gket-mdz0ktT
 
