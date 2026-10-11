@@ -12,7 +12,7 @@ import csv, re, sys, os, collections
 
 TOPICS = {
  'Sepsis': ['sepsis','septisch','septic','sofa-score','qsofa','procalcitonin','laktat','lactate','vasopressor','noradrenalin','norepinephrine','surviving sepsis','fokussanierung'],
- 'ANTIBIOTIKA': ['antibiot','antiinfektiv','antimikrob','antimicrob','stewardship','resistenz','resistance','mrsa','vre','esbl','carbapenem','penicillin','cephalosporin','vancomycin','staphylococcus','staph. aureus','infektiolog','pilzinfektion','antimykot','antiviral','erreger','pathogen'],
+ 'Antibiotika': ['antibiot','antiinfektiv','antimikrob','antimicrob','stewardship','resistenz','resistance','mrsa','vre','esbl','carbapenem','penicillin','cephalosporin','vancomycin','staphylococcus','staph. aureus','infektiolog','pilzinfektion','antimykot','antiviral','erreger','pathogen'],
  'Beatmung': ['beatmung','ventilation','beatmet','ARDS','lungenversagen','respiratory failure','respiratorische insuffizienz','peep','tidalvolumen','tidal volume','weaning','entwöhnung','ecmo','extrakorporal','niv','high-flow','highflow','oxygenierung','oxygenation','intubation','atemweg','airway','tracheotomie','tracheostomy'],
  'Delir': ['delir','delirium','kognitiv','cognitive dysfunction','postoperative cognitive','agitation','verwirrtheit'],
  'Sedierung': ['sedierung','sedation','analgosedierung','propofol','midazolam','dexmedetomidin','ketamin','rass','sedativ'],
