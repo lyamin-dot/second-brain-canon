@@ -40,7 +40,7 @@ TOPICS = {
  'Geburtshilfe': ['geburtshilf','obstetri','schwangerschaft','pregnan','sectio','caesarean','cesarean','peripartal','postpartal','präeklampsie','preeclampsia','gebär'],
  'Dermatologie': ['dermatolog','haut','skin','verbrennung','burn','wundversorgung'],
  'Arbeitsmedizin': ['arbeitsmedizin','occupational','arbeitsschutz','arbeitszeit','betriebsarzt'],
- '00 SONO': ['sonographie','sonografie','ultraschall','ultrasound','echokardiograph','echocardiograph','pocus','fast-','e-fast','efast','tee','tte','lungenultraschall','lung ultrasound','doppler','sonographisch','эхокардиограф','узи','ультразвук','эхо','ECHO','echo','echokardiografie','kursbuchecho','sonografisch','b-mode','m-mode','schallkopf','transducer'],
+ 'Sonografie': ['sonographie','sonografie','ultraschall','ultrasound','echokardiograph','echocardiograph','pocus','fast-','e-fast','efast','tee','tte','lungenultraschall','lung ultrasound','doppler','sonographisch','эхокардиограф','узи','ультразвук','эхо','ECHO','echo','echokardiografie','kursbuchecho','sonografisch','b-mode','m-mode','schallkopf','transducer'],
 }
 
 def compile_terms(terms):
