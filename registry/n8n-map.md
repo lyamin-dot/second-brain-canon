@@ -1,8 +1,9 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-10-10T20:26:50.893Z
+instance_last_change|2026-10-11T18:47:37.459Z
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
 W|0sVn3WwpIyaItpki|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,triggerAtDayOfMonth=1,triggerAtHour=3|instance|?|-|-
 W|16iuTMqNFMvh2uwb|TEMP Delete TEST_UNREACHABLE row (naryad Н-07.09-02)|archived|never|manualTrigger|-|instance|?|-|-
 W|1J4Ct6uGFb3NJzaS|WB API Probe [temp]|archived|never|manualTrigger|-|instance|?|-|-
@@ -38,6 +39,7 @@ W|7OQh206m8xrZAzPF|Git Commit Files|active|same|webhook|-|instance|?|M5BLqclKBjG
 W|7QIb83QknGoozrH4|DOSSIER INBOX Accept To Archive|archived|never|scheduleTrigger|field=months,monthsInterval=100,triggerAtHour=3|instance|?|-|-
 W|7u3QNQzZZ20ZapUz|WB FBS Morning Forecast|archived|never|scheduleTrigger|expression=45 9 * * *,field=cronExpression|instance|?|-|-
 W|7x9wPrugdbseaEp2|WB FBS Supply Accepted|active|same|scheduleTrigger|expression=20 * * * *,field=cronExpression|instance|?|M5BLqclKBjGTpz33|-
+W|8ImKyDrw1Q2JIfHw|ArchiveRecon OCR Scans Run|inactive|never|manualTrigger|-|instance|?|-|-
 W|8oQBdEdlnl6CbeeP|TaeglichesVerkauf|archived|never|scheduleTrigger|triggerAtHour=2|instance|?|-|-
 W|8zHzPxv2lE9BpZ1e|99_Compare_RAW_Sources|archived|never|manualTrigger|-|instance|?|-|-
 W|92MulfAlJjHZXoxw|TEST WB Week34 RAW vs TX Audit|archived|never|manualTrigger|-|instance|?|-|-
@@ -73,6 +75,7 @@ W|HZOKbfm56jWs2yVK|TEST Ozon Notifications|archived|never|manualTrigger|-|instan
 W|Hf92DOmQPqbQWW5G|Контроль Price WB|inactive|never|scheduleTrigger|field=minutes,minutesInterval=15|instance|?|-|-
 W|Hpy9TCly6LKCjlqf|GDrive Share File|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|Htrj0Kyj7eT5SEhR|Skills Drift Detector (Nightly)|archived|never|scheduleTrigger|triggerAtHour=3,triggerAtMinute=15|instance|?|-|-
+W|I3rU3hWHAHzUTWnv|DEKL 2.0 — Листы|inactive|never|manualTrigger|-|instance|?|-|-
 W|IG49VPuULlv60IOz|LM_DECL — Seed (заполнение базы)|inactive|never|manualTrigger,scheduleTrigger|expression=0 3 1 1 *,field=cronExpression|instance|?|-|-
 W|IHn3Bmyh1VeHf4Ya|OZON Fetch Reviews → Queue|inactive|never|scheduleTrigger|field=hours,hoursInterval=2|instance|?|-|-
 W|Iis5dlRS1GWZqQXD|WB RAW History Load V.3 CLEAN|active|same|scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
@@ -96,6 +99,7 @@ W|M5BLqclKBjGTpz33|🚨 Error Notifier|active|same|errorTrigger|-|instance|?|-|-
 W|M5dqSv2yiklnDXoP|Claude → Google Docs Overwrite v2 (verified)|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|M7u4VX4Y4KtYyoVV|Git Append|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|MPzPrtsnPtf0sVQo|OzonRawАналитика|active|unpublished|-|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|NDY1YGwLIt4w3HQB|ArchiveRecon OCR Texts Join|inactive|never|manualTrigger|-|instance|?|-|-
 W|NTNN2Kvqg09yoRKi|OZON RAW Analytics History Load|active|same|scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
 W|NaD5kdaD2tFOkkO7|Price Master — лист и заголовки (инструмент)|inactive|never|manualTrigger|-|instance|?|-|-
 W|NsOOnadQGNlbxf6g|Fix Category in OzonRawАналитика|inactive|never|manualTrigger|-|instance|?|-|-
@@ -264,12 +268,15 @@ D|1AhgaspMQl3wLsVT7Iub0d195r8DwwUarhQAWwjBO8xE|kNg2uEoYlaGOLC82|06_Read_WB_Param
 D|1AhgaspMQl3wLsVT7Iub0d195r8DwwUarhQAWwjBO8xE|q78KdtgIWGTySlFN|02_Read_Supplies|googleSheets|default|wb_fbs_supplies
 D|1Dm-mVKyXaFTEwFJRM_J16z8yQg4gu_axZTKy11e4w-4|f7kdTpDADk7q0v2t|Append row in sheet|googleSheets|append|-
 D|1Dm-mVKyXaFTEwFJRM_J16z8yQg4gu_axZTKy11e4w-4|nY5XeDw9VMAdYcEi|Append row in sheet|googleSheets|append|-
+D|1EscsvItOOyO1wDaHpyjtAOgR8KzglCVW|8ImKyDrw1Q2JIfHw|15_Upload_Text|googleDrive|upload|-
+D|1EscsvItOOyO1wDaHpyjtAOgR8KzglCVW|NDY1YGwLIt4w3HQB|02_List_Texts|googleDrive|search|-
 D|1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ|qolCVtDpTo2YlnGb|Дописать новые в Ключи|googleSheets|append|Ключи
 D|1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ|qolCVtDpTo2YlnGb|Записать лист Авто|googleSheets|append|Авто
 D|1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ|qolCVtDpTo2YlnGb|Очистить лист Авто|googleSheets|clear|Авто
 D|1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ|qolCVtDpTo2YlnGb|Прочитать лист Ключи|googleSheets|read|Ключи
 D|1GktMsgl1UOIzuWj02gqDirMSYlSjiuLuDVDd9vevB5Q|TXNstdVL8xlIygBp|04_Get_N8N_INDEX_Meta|httpRequest|default|-
 D|1GktMsgl1UOIzuWj02gqDirMSYlSjiuLuDVDd9vevB5Q|TXNstdVL8xlIygBp|07_Get_N8N_INDEX_Text|httpRequest|default|-
+D|1Hq1nxFaKM7knfZyY3nhy4SqYW5jZQWvt|NDY1YGwLIt4w3HQB|05_Upload_Joined|googleDrive|upload|-
 D|1I7tGZkvzcQnfhEyu-yNXGtwnz9amsg9X0xXu9Nr3bRc|oJrg4XY0HZwPCq59|Append row in sheet|googleSheets|append|-
 D|1I7tGZkvzcQnfhEyu-yNXGtwnz9amsg9X0xXu9Nr3bRc|oJrg4XY0HZwPCq59|FBS Monitor|googleSheets|default|-
 D|1JwV7bbfLLxztE7gRrUEOUIvUk-xCOcwDkT88RA5bHPg|2KorY7GdncsIs5Ro|02_Fetch_Queue|googleSheets|default|-
@@ -343,6 +350,7 @@ D|1PO7vNyoY16tYqpU_KB5xuK4aSAbOU7YW_MM0scg5ksY|vKjqExap1mJjM6Ap|10B_Upsert_Decla
 D|1PRgyyTY1h4DK6O0ECY8bmcb3zxQlNpRO|KEucSnA2duWI3eRA|01_List_INBOX|googleDrive|default|-
 D|1QZeNHNtYy6JmMj80_CBUihJ6B8yF3u3u|W3KjaXVqWD2c02IK|01_List_CORPUS_Files|googleDrive|default|-
 D|1QZeNHNtYy6JmMj80_CBUihJ6B8yF3u3u|W3KjaXVqWD2c02IK|10_Write_CORPUS_File|googleDrive|createFromText|-
+D|1VXq7zJJOnktxmRK1HvnwqBVPaPDlUDV0|8ImKyDrw1Q2JIfHw|02_Get_Files_CSV|googleDrive|download|-
 D|1XMy8XsF4tIyiPIhiW2dAt8Sihbsy4xQOXWQhjCJEHyE|B5tok1gRWl3gp7X6|01_Read_Shablon|googleSheets|default|Шаблон
 D|1XMy8XsF4tIyiPIhiW2dAt8Sihbsy4xQOXWQhjCJEHyE|B5tok1gRWl3gp7X6|02_Read_KB_Motor_Oil|googleSheets|default|kb_motor_oil
 D|1XMy8XsF4tIyiPIhiW2dAt8Sihbsy4xQOXWQhjCJEHyE|B5tok1gRWl3gp7X6|08_Write_KB_Motor_Oil|googleSheets|appendOrUpdate|kb_motor_oil
@@ -479,11 +487,13 @@ D|1zKvsxBkMi9AWD81EzTElmIHmyXQQQ7K9|EPr2EUtI23wZ3X7c|04_Move_To_TrashStaging|goo
 D|1zKvsxBkMi9AWD81EzTElmIHmyXQQQ7K9|LFDK2oAFdGWQ3Nxd|02_List_TrashStaging|googleDrive|search|-
 D|1zdz12-cwFZyHaHkKA8tJ1MvQKGCMN4xZdYztfYS3SOc|gFFiBPm1OomOzJOj|Перезаписать N8N_REGISTRY|httpRequest|default|-
 D|dynamic|6zZ45FqZb3SlwM9L|04_Download_PDF|googleDrive|download|-
+D|dynamic|8ImKyDrw1Q2JIfHw|10_Download_PDF|googleDrive|download|-
 D|dynamic|BLNA8sbdnLtuz7Uj|10_Download_PDF|googleDrive|download|-
 D|dynamic|EPr2EUtI23wZ3X7c|03_Stamp_AppProperties|googleDrive|update|-
 D|dynamic|EPr2EUtI23wZ3X7c|04_Move_To_TrashStaging|googleDrive|move|-
 D|dynamic|KEucSnA2duWI3eRA|02_Download_File|googleDrive|download|-
 D|dynamic|LFDK2oAFdGWQ3Nxd|04_Delete_Expired|googleDrive|deleteFile|-
+D|dynamic|NDY1YGwLIt4w3HQB|03_Download_Text|googleDrive|download|-
 D|dynamic|W3KjaXVqWD2c02IK|07_Export_Doc_As_Text|googleDrive|download|-
 D|dynamic|W3KjaXVqWD2c02IK|09_Delete_Temp_Doc_Copy|googleDrive|deleteFile|-
 D|dynamic|bFJsM3aFlIHIFeAd|02 Download PDF File|googleDrive|download|-
@@ -537,6 +547,7 @@ A|ujSvQq7stXmNZQYj|04B2_Verify_QA|question
 A|ujSvQq7stXmNZQYj|04B_Rollback_QA|questions
 C|0fesM63M92naAnOl|googleApi|4
 C|0fesM63M92naAnOl|telegramApi|1
+C|0jJSryMqJJqodL4K|googleApi|8
 C|2KorY7GdncsIs5Ro|googleApi|2
 C|2KorY7GdncsIs5Ro|httpHeaderAuth|5
 C|2KorY7GdncsIs5Ro|postgres|1
@@ -566,6 +577,7 @@ C|7OQh206m8xrZAzPF|httpHeaderAuth|1
 C|7x9wPrugdbseaEp2|googleApi|3
 C|7x9wPrugdbseaEp2|httpHeaderAuth|3
 C|7x9wPrugdbseaEp2|telegramApi|1
+C|8ImKyDrw1Q2JIfHw|googleDriveOAuth2Api|4
 C|9Qhnkz9E6mjidqs5|googleApi|3
 C|9Qhnkz9E6mjidqs5|httpHeaderAuth|3
 C|AVoemWtBLO8L0Kdm|googleApi|1
@@ -607,6 +619,7 @@ C|H84pqpqX1qf85Pj6|httpHeaderAuth|2
 C|HH7pDL2VZfU9C9Np|googleApi|4
 C|Hpy9TCly6LKCjlqf|googleApi|2
 C|Hpy9TCly6LKCjlqf|httpHeaderAuth|1
+C|I3rU3hWHAHzUTWnv|googleApi|5
 C|IG49VPuULlv60IOz|googleSheetsOAuth2Api|2
 C|IHn3Bmyh1VeHf4Ya|googleApi|4
 C|IHn3Bmyh1VeHf4Ya|httpCustomAuth|1
@@ -644,6 +657,7 @@ C|M7u4VX4Y4KtYyoVV|httpHeaderAuth|1
 C|MPzPrtsnPtf0sVQo|googleApi|3
 C|MPzPrtsnPtf0sVQo|httpCustomAuth|1
 C|MPzPrtsnPtf0sVQo|httpHeaderAuth|1
+C|NDY1YGwLIt4w3HQB|googleDriveOAuth2Api|3
 C|NTNN2Kvqg09yoRKi|googleSheetsOAuth2Api|1
 C|NTNN2Kvqg09yoRKi|httpCustomAuth|1
 C|NaD5kdaD2tFOkkO7|googleApi|2
