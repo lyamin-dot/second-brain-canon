@@ -37,4 +37,6 @@ labs/sys/INDEX.md
 | `t-git-replace-escape.md` | тело Git Replace модель набирает последовательностями \uXXXX — правило 8.2 second-brain-git текстом не держится; идея — вход из файла Drive, как у Git Append File | РУТИНА | 2026-10-11 |
 | `t-stale-registry-facts.md` | реестры и проектные файлы называют устаревшее живым: `registry/protocols.md:16` (PROTOCOL_system-map), `n8n-workflow-registry` 177–178 (motor_oil), требование переназначать credential WB после update_workflow против roots R1b v4.4 | РУТИНА | 2026-10-11 |
 | `t-capture-types-mismatch.md` | словарь типов захвата: в Р6 Skill second-brain-engineer семь типов, в `core/R-04.md` восемь (лишняя «Проблема»); решение Андрея | РУТИНА | 2026-10-12 |
-| `t-avtopilot-skill.md` | Skill avtopilot — работа до конца после одного согласования; решение принято, пилот прошёл, ждёт заливки Skill Андреем | РЫЧАГ | 2026-10-13 |
+| `t-avtopilot-skill.md` | Skill avtopilot — работа до конца после одного согласования; залит и зеркалирован, ждёт строки в `naryad` | РЫЧАГ | 2026-10-13 |
+| `t-gsheets-credential-rejected.md` | ключ доступа n8n «Google Sheets account» отвергнут Google (исполнение 72481); круг воркфлоу на нём не проверен | кандидат в БЛОКЕРы | 2026-10-13 |
+| `t-draft-trigger-divergence.md` | у двух активных воркфлоу черновик с выключенным триггером: публикация черновика молча остановит расписание | кандидат в БЛОКЕРы | 2026-10-13 |
