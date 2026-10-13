@@ -22,3 +22,16 @@ Build: data.json = tools/build_data.py over inputs NOT in repo (data.json cut fr
 Open after test of v11: first-pages-only text (main defect, needs PDFs); PDF-metadata years flagged not fixed; "newer edition outside archive" notes from model knowledge, not checked on ERC/AHA/AWMF sites.
 
 Next: (1) PDF access; (2) full text + bookmarks into search, whole-book TOCs; (3) Opus re-test; (4) main archive (phase Ф5).
+
+## Book assembly algorithm (split books; PLAN.md section "Метод: как книга…", code tools/build_data.py)
+
+Never use file names (they lie: "5.1" = chapter 7). Use printed book page numbers.
+1 Book: running footer "Surname, Title (ISBN …)" in first-pages text; same ISBN = same book (Thieme prints it on every page; other publishers: re-verify).
+2 TOC: read front-matter file fully (Drive read_file_content on PDF, or local script) -> chapters [num, title, first page]; last text page = Sachverzeichnis/Literatur.
+3 File span: collect printed page numbers next to footer (regex PAGE): start = min, end = start + pdf_pages - 1.
+4 Chapter = last chapter with first_page <= start; if end >= next chapter start -> spans "Kap. a–b".
+5 No page numbers or start < chapter 1 -> front matter. Same span -> likely copy. Span inside longer file -> "contained in".
+6 Coverage per chapter: covered pages / (next chapter start - this start); chapter without own files but covered by previous file -> "start of chapter in file X".
+7 Verify on first use per book/publisher: first TOC heading found in file text must be in the same chapter (Notfallsonografie: 73/73 match).
+Fallback without page numbers: TOC section headings in first-pages text (Р-28), weaker.
+Out of scope: no PDF merge/rename; TOC text not in public repo; whole-file books -> PDF bookmarks (deferred).
