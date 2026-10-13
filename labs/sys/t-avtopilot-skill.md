@@ -40,9 +40,20 @@ labs/sys/t-avtopilot-skill.md
 ## Следующий шаг
 
 1. СДЕЛАНО 2026-10-13: Skill `avtopilot` залит — папка `/mnt/skills/plugins/avtopilot/` есть в сессии SYS, её `SKILL.md` совпадает с `skills/avtopilot/SKILL.md` побайтно (diff пуст).
-2. НЕ СДЕЛАНО на 2026-10-13: строки об автономном режиме в живом Skill `naryad` нет (поиск по словам «автономный режим» в `/mnt/skills/plugins/naryad/SKILL.md` пуст). Текст «было → стало» выдан Андрею в чате SYS 2026-10-13.
+2. НЕ СДЕЛАНО на 2026-10-13: строки об автономном режиме в живом Skill `naryad` нет (поиск по словам «автономный режим» в `/mnt/skills/plugins/naryad/SKILL.md` пуст). Андрей внесёт её на харвесте — позиция AI-16 `registry/maintenance-queue.md`, там же полный текст.
 3. СДЕЛАНО 2026-10-13: зеркало `skills/avtopilot/SKILL.md` в репозитории.
 4. Отдельный зонд запланированной задачи со свежей сессией — только когда понадобится работа дольше одной сессии.
+
+## Второе применение 2026-10-13
+
+По итогам пилота Андрей одним ответом решил судьбу живых дефектов, и сессия довела их без его участия:
+- WB RAW Finance Sync V.3 (`IvgysDKrq3UISYEY`): у `03_WB_Report_Request`, `07_Find_RAW_Rows_By_Date`, `11_Write_RAW_To_Sheets` теперь `onError: stopWorkflow`; опубликовано, `activeVersionId` = `versionId` = 8b04c53d; ADR в паспорте WB_WF_finance-sync-v3 (прочитан обратно). Мёртвая цепочка удаления оставлена: данные доходят, правка связей результата не меняла бы.
+- OzonRawАналитика (`MPzPrtsnPtf0sVQo`): не чинилась — данные доходят (последняя дата 2026-10-12); включён триггер в черновике.
+- Projekt_OCR OEM_V.5 (`DWyvoJYkCodJxMg1`): снят с публикации, не архивирован.
+- LM_DECL_MASTER V.2 (`VMPxWzXPefKT2R1B`): дефект принят — воркфлоу выключен.
+- SKU Category Weekly Snapshot (`qZWrl0MkRnZBipXA`): задача `labs/ozon-ue/t-sku-snapshot-counters.md`.
+
+Задача `t-audit-0723-unverified.md` закрыта 2026-10-13 удалением; её текст с таблицей вердиктов читается из истории по родителю коммита удаления.
 
 ## Условие снятия
 

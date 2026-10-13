@@ -12,6 +12,8 @@ labs/sys/t-gsheets-credential-rejected.md
 
 Видеть это по прогонам почти нельзя: у воркфлоу `MPzPrtsnPtf0sVQo`, `IvgysDKrq3UISYEY` и `qZWrl0MkRnZBipXA` поиск исполнений 2026-10-13 вернул ноль сохранённых прогонов, хотя все три активны на расписании. Это класс задачи `t-failure-visibility.md`.
 
+Воркфлоу `DWyvoJYkCodJxMg1` снят с публикации 2026-10-13 по слову Андрея (не архивирован, вернуть — publish_workflow); проверено поиском: `active: false`. Своими падениями он больше не сигналит, поэтому ключ нужно проверять по другим воркфлоу. Два RAW-воркфлоу Ozon и WB работают на другом ключе — «Google Service Account» `jfdmcscQb8HQG3vu` (чтение 2026-10-13).
+
 ## Следующий шаг
 
 1. Сессия: найти воркфлоу, где узлы используют `lXyVaJbpEY7AJvHC` (get_workflow_details по активным воркфлоу с узлами Google Sheets — через субагента, ответ тяжёлый).
