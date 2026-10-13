@@ -8,7 +8,7 @@ meta/PROTOCOL_harvest.md
 
 последний харвест: 2026-10-08
 
-прочитаны после заморозки (шаг 1 их больше не читает): N8N_INDEX (заморожен 2026-10-06), WB_UE_INDEX (2026-09-28), WB_LOGISTICS_INDEX (2026-10-04), SYS_INDEX (2026-09-30), WB_REVIEWS_INDEX (2026-10-05), PROJECT_LOG_SYS (2026-09-26) — все прочитаны харвестом 2026-10-08; SYS_JOURNAL_2026, SYS_JOURNAL_2026_02, N8N_JOURNAL_2026, JOURNAL_INCIDENTS, N8N_INCIDENT_LOG (все заморожены 2026-10-13) — прочитаны целиком: записи до 2026-08-31 включительно — Архивариусом 2026-10-10…2026-10-11, единственная более поздняя запись (SYS_JOURNAL_2026, 2026-09-08) — сессией SYS 2026-10-13, её правило уже в google-drive-docs references/failures.md (запись Р-41 журнала `projects/archivarius/LOG.md`)
+прочитаны после заморозки (шаг 1 их больше не читает): N8N_INDEX (заморожен 2026-10-06), WB_UE_INDEX (2026-09-28), WB_LOGISTICS_INDEX (2026-10-04), SYS_INDEX (2026-09-30), WB_REVIEWS_INDEX (2026-10-05), PROJECT_LOG_SYS (2026-09-26) — все прочитаны харвестом 2026-10-08; SYS_JOURNAL_2026, SYS_JOURNAL_2026_02, N8N_JOURNAL_2026, JOURNAL_INCIDENTS, N8N_INCIDENT_LOG (первые четыре заморожены 2026-10-13, N8N_INCIDENT_LOG — 2026-10-11) — прочитаны целиком: записи до 2026-08-31 включительно — Архивариусом 2026-10-10…2026-10-11, единственная более поздняя запись (SYS_JOURNAL_2026, 2026-09-08) — сессией SYS 2026-10-13, её правило уже в google-drive-docs references/failures.md (запись Р-41 журнала `projects/archivarius/LOG.md`)
 
 ## Шаги
 
