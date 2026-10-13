@@ -36,3 +36,4 @@ labs/sys/INDEX.md
 | `t-prompt-blocker-registry.md` | мастер-промпт SYS ищет блокеры в CORE Р.5, а в `core/R-05.md` строк-задач нет; готов текст «было → стало» для Андрея | РУТИНА | 2026-10-11 |
 | `t-git-replace-escape.md` | тело Git Replace модель набирает последовательностями \uXXXX — правило 8.2 second-brain-git текстом не держится; идея — вход из файла Drive, как у Git Append File | РУТИНА | 2026-10-11 |
 | `t-stale-registry-facts.md` | реестры и проектные файлы называют устаревшее живым: `registry/protocols.md:16` (PROTOCOL_system-map), `n8n-workflow-registry` 177–178 (motor_oil), требование переназначать credential WB после update_workflow против roots R1b v4.4 | РУТИНА | 2026-10-11 |
+| `t-capture-types-mismatch.md` | словарь типов захвата: в Р6 Skill second-brain-engineer семь типов, в `core/R-04.md` восемь (лишняя «Проблема»); решение Андрея | РУТИНА | 2026-10-12 |
