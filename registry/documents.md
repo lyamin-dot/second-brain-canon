@@ -138,3 +138,8 @@ ARCHIVE_RECON_DUP_REPORT: 1dfLABlJsD1R_gyDa3tHL-GOO7E1xrlMX — dup_report.txt �
 
 <!-- 2026-10-14 | лаборатория OZON_UE, задача t-money-telegram; зарегистрировано при !save (Р6) -->
 OZON_WF_money-telegram: 1QeXJwWfy-yusxe29JTiqj7FutVhEp9PJZSFiVOTztGk — Google Doc (обычный, text/plain), паспорт воркфлоу «OZON Money Telegram» YkUb5SnLtEaTctoH, папка DOCS лаборатории (1yifa_sfm6l7b0l08dB8ghzadeEGbIcSQ). Создан 2026-10-14 create_file; read-back gdocs-read exec 79888: byteLength 12483 равен длине исходника после преобразования Docs (переводы строк CRLF, пустые строки удвоены), checkSum 29b89c7a.
+
+
+<!-- 2026-10-14 | проект WB_UE, ввод бренда Lopal; зарегистрировано при создании (Р6) -->
+WB_MAP_product-price-chain_en: 1P8jHudxxfyp8PNqlwsagiK0H26RI4vnLLlavB4Nmwa8 — Google Doc (обычный, text/plain), папка DOCS проекта WB_UE (1nOwTGH6AR9vKfM1VM-mThfnRmDAaeOZn). Агентская копия на английском: карта цепочки «товар → цена → себестоимость» для Liqui Moly и Lopal — книги и ID, формулы Справочников, Акт.цена, sku_cost, Artikel, cost_price_history, витрины WB_Аналитика, 18 воркфлоу Price Master по узлам. Создан 2026-10-14 create_file; read-back gdocs-read exec 80139: byteLength 11293, checkSum 03b6df09. При расхождении верна английская.
+WB_MAP_product-price-chain_ru: 1JBzHYrYAWXDNM4SY7aRcM3-YJ1pYh2QDtnzMcOz3NpE — Google Doc (обычный, text/plain), та же папка. Русская копия той же карты для человека. read-back gdocs-read exec 80141: byteLength 16483, checkSum 4243e4b2, 104 строки.
