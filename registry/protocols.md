@@ -13,7 +13,7 @@ registry/protocols.md
 
 <!-- T-098 | CORE байт 94792-95167 | Р.14 шапка реестра кросс-проектных протоколов + PROTOCOL_system-map -->
 --- РЕЕСТР КРОСС-ПРОЕКТНЫХ ПРОТОКОЛОВ (добавлено 2026-07-19) ---
-PROTOCOL_system-map (сквозная карта системы для проектов 3+ воркфлоу, v1.0 2026-07-18): 1ljhcIrkDIy5cSCm5P35QzjXOd2fsvFnLFBZcfJ5Sws0 — эталон исполнения WB_SYSTEM-MAP: 1HRYdi7Hth7chT1StAZ7mqdk9m7lyp1H9DMNz6jvpIh4
+PROTOCOL_system-map — НЕ ДЕЙСТВУЕТ с 2026-10-09 (харвест 2026-10-08, противоречие В16: Skill n8n-workflow-passport, правка 2026-10-09, заменил SYSTEM-MAP снимком registry/n8n-map.md; пометка — задача labs/sys/t-stale-registry-facts.md, сессия SYS 2026-10-14). Прежний текст строки: (сквозная карта системы для проектов 3+ воркфлоу, v1.0 2026-07-18): 1ljhcIrkDIy5cSCm5P35QzjXOd2fsvFnLFBZcfJ5Sws0 — эталон исполнения WB_SYSTEM-MAP: 1HRYdi7Hth7chT1StAZ7mqdk9m7lyp1H9DMNz6jvpIh4
 
 <!-- T-101 | CORE байт 96025-96647 | Р.14 PROTOCOL_project-development (триаж -> TRIZ -> гейт -> исполнение -> журнал применений) -->
 PROTOCOL_project-development (методология разработки новых начинаний: триаж → TRIZ-проектирование → гейт → исполнение → журнал применений, v1.0 2026-07-19): 1yfWV_Xhdke9GG2gvlGygtxFtEBnHLwzj5X3lz-k6kvM — два трека (полный/лёгкий); журналы применений = детектор жизни всех протоколов, правило 60 дней при обслуживании; §10 — заготовка переносимости для внешних пользователей
