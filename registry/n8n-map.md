@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-10-12T11:56:22.816Z
+instance_last_change|2026-10-13T19:12:29.456Z
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
 W|0sVn3WwpIyaItpki|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,triggerAtDayOfMonth=1,triggerAtHour=3|instance|?|-|-
@@ -57,7 +57,7 @@ W|CELGBmo7vQFF1Ej7|Claude → Google Docs Append|archived|never|webhook|-|instan
 W|CVsLN6j9lxHibgKr|KB MO — Annotation Preprocessor|active|same|manualTrigger,scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|DCdm1xOojRKOpn4I|GTIN Map → Price Master!GTIN_OKPD|inactive|never|manualTrigger|-|instance|?|-|-
 W|DM26WhTJyCV0DhkP|WB FBS Order Close v2 [Supply Summary]|active|same|scheduleTrigger|field=hours,triggerAtMinute=5|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
-W|DWyvoJYkCodJxMg1|Projekt_OCR OEM_V.5|active|same|manualTrigger,scheduleTrigger|field=months|instance|?|M5BLqclKBjGTpz33|-
+W|DWyvoJYkCodJxMg1|Projekt_OCR OEM_V.5|inactive|never|manualTrigger,scheduleTrigger|field=months|instance|?|M5BLqclKBjGTpz33|-
 W|DcIqwTVqBqMQyigs|WB Monitor Telegram Reader|inactive|never|scheduleTrigger|daysInterval=1,field=days,triggerAtHour=10,triggerAtMinute=0 + field=weeks,triggerAtDay=1,triggerAtHour=9,triggerAtMinute=0,weeksInterval=1|instance|?|-|-
 W|EH2JaB8WGa0JsBqs|Deklaration_Hydraulisches_Oil_V.4|active|same|scheduleTrigger|field=months,monthsInterval=1000,triggerAtHour=5|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|EPr2EUtI23wZ3X7c|GDrive Trash Stager|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
@@ -99,7 +99,7 @@ W|Lxm7oI6e3QWuc7Vq|KB Loader — Motor Oil|active|same|manualTrigger,scheduleTri
 W|M5BLqclKBjGTpz33|🚨 Error Notifier|active|same|errorTrigger|-|instance|?|-|-
 W|M5dqSv2yiklnDXoP|Claude → Google Docs Overwrite v2 (verified)|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|M7u4VX4Y4KtYyoVV|Git Append|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
-W|MPzPrtsnPtf0sVQo|OzonRawАналитика|active|unpublished|-|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|MPzPrtsnPtf0sVQo|OzonRawАналитика|active|unpublished|scheduleTrigger|triggerAtHour=2|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|NDY1YGwLIt4w3HQB|ArchiveRecon OCR Texts Join|inactive|never|manualTrigger|-|instance|?|-|-
 W|NTNN2Kvqg09yoRKi|OZON RAW Analytics History Load|active|same|scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
 W|NaD5kdaD2tFOkkO7|Price Master — лист и заголовки (инструмент)|inactive|never|manualTrigger|-|instance|?|-|-
