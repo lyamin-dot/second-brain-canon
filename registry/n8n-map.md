@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-10-13T19:12:29.456Z
+instance_last_change|2026-10-14T11:29:02.331Z
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
 W|0sVn3WwpIyaItpki|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,triggerAtDayOfMonth=1,triggerAtHour=3|instance|?|-|-
@@ -58,7 +58,7 @@ W|CVsLN6j9lxHibgKr|KB MO — Annotation Preprocessor|active|same|manualTrigger,s
 W|DCdm1xOojRKOpn4I|GTIN Map → Price Master!GTIN_OKPD|inactive|never|manualTrigger|-|instance|?|-|-
 W|DM26WhTJyCV0DhkP|WB FBS Order Close v2 [Supply Summary]|active|same|scheduleTrigger|field=hours,triggerAtMinute=5|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|DWyvoJYkCodJxMg1|Projekt_OCR OEM_V.5|inactive|never|manualTrigger,scheduleTrigger|field=months|instance|?|M5BLqclKBjGTpz33|-
-W|DcIqwTVqBqMQyigs|WB Monitor Telegram Reader|inactive|never|scheduleTrigger|daysInterval=1,field=days,triggerAtHour=10,triggerAtMinute=0 + field=weeks,triggerAtDay=1,triggerAtHour=9,triggerAtMinute=0,weeksInterval=1|instance|?|-|-
+W|DcIqwTVqBqMQyigs|WB Monitor Telegram Reader|active|same|scheduleTrigger|daysInterval=1,field=days,triggerAtHour=12,triggerAtMinute=30|Europe/Berlin|?|M5BLqclKBjGTpz33|-
 W|EH2JaB8WGa0JsBqs|Deklaration_Hydraulisches_Oil_V.4|active|same|scheduleTrigger|field=months,monthsInterval=1000,triggerAtHour=5|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|EPr2EUtI23wZ3X7c|GDrive Trash Stager|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|FZYQbWNpuF91Xk7l|WB Reviews Intake — BACKUP 2026-06-15|archived|never|scheduleTrigger|field=minutes,minutesInterval=15|instance|?|-|-
@@ -138,6 +138,7 @@ W|YGJORuBiel3PsN5T|TMP Insert Test Rows|archived|never|webhook|-|instance|?|-|-
 W|YQBfmS0fC7IPcsbz|WB FBS Telegram Router|active|same|telegramTrigger|-|instance|?|M5BLqclKBjGTpz33|-
 W|YXOyKpBZQuywu3kM|ТЕСТ_КОПИЯ_SYS_Lint_H-27.08-02|archived|never|scheduleTrigger|triggerAtHour=6|instance|?|-|-
 W|YfzWwu1VmIUCbUu0|Claude → Google Docs Append v2 (verified)|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|YkUb5SnLtEaTctoH|OZON Money Telegram|active|same|scheduleTrigger|expression=10 9 * * *,field=cronExpression|Europe/Berlin|?|M5BLqclKBjGTpz33|-
 W|YozhFlVFZVKnj3U8|ARTIKEL_PROPS — OKPD2 68827 Block 1 (einmalig)|archived|never|manualTrigger|-|instance|?|-|-
 W|Z68QJF5mYs3W8Uw8|TEST Ozon QA API Check|archived|never|manualTrigger|-|instance|?|-|-
 W|ZIvTVFHNw9m2gns3|OZON Reviews Response|archived|never|scheduleTrigger|field=minutes,minutesInterval=30|instance|?|-|-
@@ -472,9 +473,6 @@ D|1qdefReY1qHfWdwroorbxz2Bi20_3dsGHuDBiYy2W_XQ|q78KdtgIWGTySlFN|09_Update_Tracki
 D|1rBU7c-xSL8D4kd5bXiAhk5UbVPOvAAhEWjiQIt3NByI|5Rs6pNDSm4weWDVj|02B_Fetch_R2_Passport|httpRequest|default|-
 D|1rICK7-MBFqeR9FbCugganrTGU8kvPK4yuEyqNs8EnEo|GxV03QtlsRCInkMU|01_Read_Articles_From_Sheets|googleSheets|default|-
 D|1rICK7-MBFqeR9FbCugganrTGU8kvPK4yuEyqNs8EnEo|GxV03QtlsRCInkMU|06_Update_Google_Sheets|googleSheets|update|-
-D|1sBYaluh1NDkb0zVmbV-NX4jsNbawEpXlae8fRg2AiuI|DcIqwTVqBqMQyigs|02_Read_Alert_Text|googleSheets|read|dashboard
-D|1sBYaluh1NDkb0zVmbV-NX4jsNbawEpXlae8fRg2AiuI|DcIqwTVqBqMQyigs|12_Read_Weekly_Text|googleSheets|read|dashboard
-D|1sBYaluh1NDkb0zVmbV-NX4jsNbawEpXlae8fRg2AiuI|DcIqwTVqBqMQyigs|13_Read_Chart_Rows|googleSheets|read|dashboard
 D|1sBYaluh1NDkb0zVmbV-NX4jsNbawEpXlae8fRg2AiuI|P7CZYJZWIqC5Me4c|04_Write_Reports_Official|googleSheets|appendOrUpdate|wb_reports_official
 D|1sPD5SAFCTygzUaEPg8RKRPHQyc0HCMIK-aMpnXqYu3k|2vWu3qaUkYFlDt4v|02 Read Auto Chemistry Sheet|googleSheets|default|-
 D|1sPD5SAFCTygzUaEPg8RKRPHQyc0HCMIK-aMpnXqYu3k|5Iyr82zmzCeievFv|01_Read_KB_Sheet|googleSheets|default|-
@@ -604,8 +602,8 @@ C|DCdm1xOojRKOpn4I|googleApi|3
 C|DM26WhTJyCV0DhkP|googleApi|7
 C|DM26WhTJyCV0DhkP|httpHeaderAuth|2
 C|DWyvoJYkCodJxMg1|googleSheetsOAuth2Api|2
-C|DcIqwTVqBqMQyigs|googleApi|3
-C|DcIqwTVqBqMQyigs|telegramApi|3
+C|DcIqwTVqBqMQyigs|googleApi|1
+C|DcIqwTVqBqMQyigs|telegramApi|1
 C|EH2JaB8WGa0JsBqs|googleSheetsOAuth2Api|2
 C|EH2JaB8WGa0JsBqs|httpHeaderAuth|1
 C|EPr2EUtI23wZ3X7c|googleApi|2
@@ -719,6 +717,8 @@ C|YQBfmS0fC7IPcsbz|googleApi|1
 C|YQBfmS0fC7IPcsbz|telegramApi|4
 C|YfzWwu1VmIUCbUu0|googleApi|2
 C|YfzWwu1VmIUCbUu0|httpHeaderAuth|1
+C|YkUb5SnLtEaTctoH|googleApi|1
+C|YkUb5SnLtEaTctoH|telegramApi|1
 C|ZXTQwjUkd81wyRoI|githubApi|1
 C|ZXTQwjUkd81wyRoI|httpHeaderAuth|1
 C|ZyaOSSDvGsf0eq7L|httpHeaderAuth|2
