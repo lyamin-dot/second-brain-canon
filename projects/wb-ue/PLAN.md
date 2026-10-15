@@ -35,7 +35,7 @@ projects/wb-ue/PLAN.md
 
 **DOCS_FOLDER**: `1nOwTGH6AR9vKfM1VM-mThfnRmDAaeOZn` — папка паспортов и ранбуков проекта.
 
-Паспорта воркфлоу: WB RAW Finance Sync V.3 → `1GWR2SwPYlyl6T_frXYRDi_kVpyx7wBgIimEGZGOiacI`; WB RAW History Load V.3 CLEAN → `12oBjTa2nSWjX1UBf1L07IM3mNcdGPplvlx89r3R2uR8`; WB Reports Official Sync → `1prHzpt-wWl-SVFwnR8N0CG7VgVue4ZGLvEPBgVBhtN8`; WB Monitor Telegram Reader → `1LOGZGKFHV6CoDYcUEvi9unGYM9vzWy-A7YNg24YqfmU` (имя файла паспорта ещё «reconciliation-reader» — долг на переименование, см. `STATE.md`).
+Паспорта воркфлоу: WB RAW Finance Sync V.3 → `1GWR2SwPYlyl6T_frXYRDi_kVpyx7wBgIimEGZGOiacI`; WB RAW History Load V.3 CLEAN → `12oBjTa2nSWjX1UBf1L07IM3mNcdGPplvlx89r3R2uR8`; WB Reports Official Sync → `1prHzpt-wWl-SVFwnR8N0CG7VgVue4ZGLvEPBgVBhtN8`; WB Monitor Telegram Reader → `1LOGZGKFHV6CoDYcUEvi9unGYM9vzWy-A7YNg24YqfmU` (файл паспорта переименован 2026-10-15 в WB_WF_monitor-telegram-reader, ID прежний; зоны А и Б описывают редакцию 3).
 
 РАНБУК «Расхождение витрины с отчётами WB» — читать первым при любом расхождении: RU `1dcneWnN81XlMGygkpZk2KPJy1e6daQJBQWFUhjp1Omo`, EN `1Qo70VGg8FxeJeDDvbC0VIhPGi5o2Vj167YRozdiO_zE`. Правило поддержания: новое название операции WB или новый тип строки — дописывать в обе версии.
 
