@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-10-14T11:29:02.331Z
+instance_last_change|2026-10-15T18:56:32.754Z
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
 W|0sVn3WwpIyaItpki|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,triggerAtDayOfMonth=1,triggerAtHour=3|instance|?|-|-
@@ -104,6 +104,7 @@ W|NDY1YGwLIt4w3HQB|ArchiveRecon OCR Texts Join|inactive|never|manualTrigger|-|in
 W|NTNN2Kvqg09yoRKi|OZON RAW Analytics History Load|active|same|scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
 W|NaD5kdaD2tFOkkO7|Price Master — лист и заголовки (инструмент)|inactive|never|manualTrigger|-|instance|?|-|-
 W|NsOOnadQGNlbxf6g|Fix Category in OzonRawАналитика|inactive|never|manualTrigger|-|instance|?|-|-
+W|NuxQa0gRqrsZAIPw|DEKL 2.0 — Ввод: точечная запись (инструмент)|inactive|never|manualTrigger|-|instance|?|-|-
 W|Nzgy6Q1XwXQVxt1F|Git Append File|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|OAvQVlxvZK12Scfn|Projekt_OCR OEM|archived|never|manualTrigger|-|instance|?|-|-
 W|OYIhTm8h2ABMHQUW|Claude → Google Docs Overwrite|archived|never|webhook|-|instance|?|-|-
@@ -189,6 +190,7 @@ W|l3KwZiRtVCKQtmys|Update kb_motor_oil (stroke_type + fuel_type)|inactive|never|
 W|lMuIxJkBAOsmUJmw|Claude → Google Docs Replace v2 (verified) ZEITcopy|archived|never|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|lObf0fHB7mq5pTLg|OZON Reviews Response [BACKUP]|archived|never|scheduleTrigger|field=minutes,minutesInterval=30|instance|?|-|-
 W|lRUou3hpBLZ49GcD|Daily Context Builder|archived|never|scheduleTrigger|triggerAtHour=6|Europe/Berlin|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|m31GGno1ZOQ0a2Xf|WB Card Tool основной — пакет характеристик (проверка/запись)|inactive|never|manualTrigger|-|instance|?|-|-
 W|m7vGqw03E6nzTR3a|GitHub Token Expiry Monitor|active|same|scheduleTrigger|daysInterval=1,field=days,triggerAtHour=8,triggerAtMinute=0|instance|?|M5BLqclKBjGTpz33|-
 W|mAaWSmoXDH9Ofgg3|WB Reviews Intake|active|same|scheduleTrigger|field=minutes,minutesInterval=15|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|mQtuCpSN83XNvPGT|CZ GTIN Probe (temp)|archived|never|formTrigger|-|instance|?|-|-
@@ -555,7 +557,7 @@ A|ujSvQq7stXmNZQYj|04B2_Verify_QA|question
 A|ujSvQq7stXmNZQYj|04B_Rollback_QA|questions
 C|0fesM63M92naAnOl|googleApi|4
 C|0fesM63M92naAnOl|telegramApi|1
-C|0jJSryMqJJqodL4K|googleApi|8
+C|0jJSryMqJJqodL4K|googleApi|9
 C|2KorY7GdncsIs5Ro|googleApi|2
 C|2KorY7GdncsIs5Ro|httpHeaderAuth|5
 C|2KorY7GdncsIs5Ro|postgres|1
@@ -670,6 +672,7 @@ C|NTNN2Kvqg09yoRKi|googleSheetsOAuth2Api|1
 C|NTNN2Kvqg09yoRKi|httpCustomAuth|1
 C|NaD5kdaD2tFOkkO7|googleApi|2
 C|NsOOnadQGNlbxf6g|googleSheetsOAuth2Api|2
+C|NuxQa0gRqrsZAIPw|googleApi|3
 C|Nzgy6Q1XwXQVxt1F|githubApi|3
 C|Nzgy6Q1XwXQVxt1F|googleApi|1
 C|Nzgy6Q1XwXQVxt1F|httpHeaderAuth|1
@@ -760,6 +763,7 @@ C|kNg2uEoYlaGOLC82|telegramApi|1
 C|kRz5VVlxA1LiY7KG|googleApi|2
 C|kRz5VVlxA1LiY7KG|httpHeaderAuth|1
 C|l3KwZiRtVCKQtmys|googleSheetsOAuth2Api|7
+C|m31GGno1ZOQ0a2Xf|httpHeaderAuth|4
 C|m7vGqw03E6nzTR3a|githubApi|1
 C|m7vGqw03E6nzTR3a|telegramApi|2
 C|mAaWSmoXDH9Ofgg3|googleApi|5
