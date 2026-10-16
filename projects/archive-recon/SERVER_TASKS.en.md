@@ -41,3 +41,5 @@ OCR of pages without text layer (list in outlines.json, notext_pages) through th
 
 ## Report
 (Server session: append one block per task — date, task, status DONE/BLOCKED, numbers, open questions. Do not edit text above this heading.)
+
+2026-10-13 | S0 | DONE (accepted by the server agent, project SERVER, journal SERVER_INDEX; relayed by the cloud session 2026-10-16, Р-34 LOG.md) | / free 116 GB; /srv/archive does not exist yet; RAM 7.7 GB, no swap; python3 3.12.3; PyMuPDF NOT on host; SQLite FTS5 ok; rclone v1.74.4 with a config file; service-account key not found by name pattern (not proof of absence) | OPEN for the owner before S1: (1) scanner in a throwaway container with a memory limit (server agent recommends) or on the host; (2) dedicated service account for the archive (server agent recommends) or n8n-liamin. Do not start S1 before both decisions.
