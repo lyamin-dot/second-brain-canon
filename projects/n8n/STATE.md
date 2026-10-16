@@ -28,11 +28,11 @@ projects/n8n/STATE.md
 
 [x] ЗАКРЫТО 2026-10-09: замер сделан — данные прогонов 342 МБ, метаданные 2,4 МБ, вся база 382 МБ; на сервере EXECUTIONS_DATA_PRUNE=true, EXECUTIONS_DATA_MAX_AGE=336 (14 дней), EXECUTIONS_DATA_PRUNE_MAX_COUNT=50000, EXECUTIONS_DATA_SAVE_ON_SUCCESS=none; решение Андрея и моё: настройки не менять, при желании повторить замер ~15.10 командой docker exec -i n8n-postgres-1 psql (запрос в сессии 2026-10-08). [2026-10-08, Р-4] ЗАМЕР архива сервера: execution_data и execution_entity в PostgreSQL (размер таблиц через pg_total_relation_size), затем решение по EXECUTIONS_DATA_MAX_AGE (имена переменных сверить с docs.n8n.io). Выполняет Андрей на сервере; до замера «архив большой» — допущение.
 
-[ ] [2026-10-08] ⚡WB_LOGISTICS: WB FBS Order Intake (kNg2uEoYlaGOLC82) — неопубликованный черновик 38772a1b: в узле 08_Deduplicate_And_Enrich из knownIds убран фильтр notified==='TRUE'. Андрей черновик не помнит. Решить: публиковать или отбросить. Гипотеза (не проверена): опубликованная версия дублирует строки трекинга; проверить — сверить две версии узла и строки листа.
+[x] ЗАКРЫТО 2026-10-16 по объекту — черновик 38772a1b опубликован (activeVersionId = 38772a1b-22cd-4f4a-ba6c-32b112c2eabe, get_workflow_details); в 08_Deduplicate_And_Enrich knownIds без фильтра notified. [2026-10-08] ⚡WB_LOGISTICS: WB FBS Order Intake (kNg2uEoYlaGOLC82) — неопубликованный черновик 38772a1b: в узле 08_Deduplicate_And_Enrich из knownIds убран фильтр notified==='TRUE'. Андрей черновик не помнит. Решить: публиковать или отбросить. Гипотеза (не проверена): опубликованная версия дублирует строки трекинга; проверить — сверить две версии узла и строки листа.
 
 [ ] [2026-10-08] РИСК: Error Notifier не ограничивает частоту — постоянно падающий воркфлоу каждые 15–30 минут засыпает Telegram (OZON Publish Reviews дал около 67 ошибок за два дня). Решать вместе с задачей error.message (строка 157); новый монитор не строить.
 
-[ ] [2026-10-08] Описание Workflow Health Monitor — Daily (LguGCDYJvMQSahcj) ещё говорит «8 воркфлоу», в списке теперь 6; в Telegram-режиме Markdown подчёркивание в именах ломает разметку — имён с «_» в списке нет, не возвращать.
+[x] ЗАКРЫТО 2026-10-16 по объекту — описание LguGCDYJvMQSahcj переписано («6 воркфлоу», 227 знаков, PASSPORT сохранён; ответ update_workflow). [2026-10-08] Описание Workflow Health Monitor — Daily (LguGCDYJvMQSahcj) ещё говорит «8 воркфлоу», в списке теперь 6; в Telegram-режиме Markdown подчёркивание в именах ломает разметку — имён с «_» в списке нет, не возвращать.
 
 [ ] [2026-10-08] ADR в паспорта правленых воркфлоу (Daily Health и 39 с новым errorWorkflow, Skill n8n-workflow-passport) — одна запись о массовой правке settings.
 
