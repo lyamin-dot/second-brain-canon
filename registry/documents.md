@@ -152,3 +152,6 @@ WB_DESIGN_two-books_ru: 1pUTrATImP9sFoJJmjVGsnATbhDyb_staJqJxKvPtjRY — Google 
 
 <!-- 2026-10-15 | проект WB_UE, Фаза 3, пакет А2; зарегистрировано при создании (Р6) -->
 WB_MONEY_book: 1lapptqj5vHZzuvo1360-V6f07KKrwjNzJilGR1CxDT8 — Google Sheets «WB · Деньги», папка старой книги WB_Аналитика (1RrkB1rsVIQbJ4xMKTxQrjR7Gx1AVU7Ps). Новая книга денег WB по проекту WB_DESIGN_two-books: недели, месяцы, монитор, дашборд, текст Telegram; структуру строит скрипт wb_money_book.gs (вставляет и запускает Андрей). Создана 2026-10-15 create_file пустой, сервисному аккаунту n8n выдан доступ на чтение; проверка gsheets-read 80434 (один лист «Лист1»).
+
+<!-- 2026-10-17 | проект WB_UE, запись Р-69; зарегистрировано при создании (Р6) -->
+WB_RAW_ARCHIVE_2026-10-17: 1ke5wsN6NQm9z7mtU-FN0yLy5-HVhFbIAJ_Lue_H6YIs — Google Sheets «WB_RAW_Аналитика_АРХИВ_2026-10-17 (копия до удаления листов V1)», та же папка, что WB_RAW_Аналитика (1X4Qn8GW4YHM1eiKE_w5m1GGAj5koZ-7a). Полная копия книги WB_RAW_Аналитика на 2026-10-17, сделана copy_file Drive перед удалением старых листов wb_raw_report и wb_transactions из живой книги (предел 10 млн ячеек, Р-69 журнала projects/wb-ue/LOG.md). Только хранение, никто не пишет. Проверка gsheets-read 81720: 8 листов, размеры равны живой книге.
