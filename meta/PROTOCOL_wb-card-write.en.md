@@ -10,7 +10,7 @@ Human version (RU, authoritative wording): meta/PROTOCOL_wb-card-write.md. Edit 
 - tnved | 15000001 | from declaration extract; per-SKU reference = Price Master ARTIKEL_PROPS col N tnved_decl (col O tnved_decl_src = origin or why empty; LOG R-13). Empty -> no reference -> do not touch. Col C tnved = main-cabinet card value, NOT reference
 - okpd2 | 15004292 | documents only (decl extract, Natl. catalog, importer). Analogy ban temporarily lifted 2026-10-09 ONLY for 11 IP autochem cards (R-12); any other card -> ask Andrei. 2026-10-10 Andrei also allowed okpd2 20.59.41.000 for 1345 and 1745 (manual KIZ; experiment, outcome in LOG R-16)
 - kizMarked | card field | seller's legal statement; set only on Andrei's explicit word for named cards
-- needKiz | card field, read-only | WB derives from subject+tnved+okpd2; API cannot set; without okpd2 WB won't accept via API (manual UI tick works). Reference = MAIN cabinet need_kiz (hand-checked)
+- needKiz | card field | FIXED 2026-10-17 (R-21; meta/CASES_wb-api-card-write.en.md cases 3, 4): MUST be sent in every write, default = card value; omitted -> WB drops needKiz and kizMarked. okpd2 does not switch it on via API (19.20.29.170 didn't); manual UI tick switches it on, sent needKiz:true keeps it. Both write tools and both WB Sync robots send it since 2026-10-17. Reference = MAIN cabinet need_kiz (hand-checked)
 - Current cabinet values are NOT truth. Never copy main -> IP.
 
 ## READ STATE
