@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-10-15T18:56:32.754Z
+instance_last_change|2026-10-16T17:40:26.958Z
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
 W|0sVn3WwpIyaItpki|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,triggerAtDayOfMonth=1,triggerAtHour=3|instance|?|-|-
@@ -81,7 +81,7 @@ W|IG49VPuULlv60IOz|LM_DECL — Seed (заполнение базы)|inactive|nev
 W|IHn3Bmyh1VeHf4Ya|OZON Fetch Reviews → Queue|inactive|never|scheduleTrigger|field=hours,hoursInterval=2|instance|?|-|-
 W|Iis5dlRS1GWZqQXD|WB RAW History Load V.3 CLEAN|active|same|scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
 W|IndDiEuGPEZOU6NF|KB Snapshot — Motor Oil (one-off)|inactive|never|manualTrigger|-|instance|?|-|-
-W|IvgysDKrq3UISYEY|WB RAW Finance Sync V.3|active|same|scheduleTrigger|field=weeks,triggerAtDay=3,triggerAtHour=10|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|IvgysDKrq3UISYEY|WB RAW Finance Sync V.3|active|same|scheduleTrigger|field=weeks,triggerAtDay=3,triggerAtHour=10|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|J0v5swjXLfiANJa2|Получение SKU Ozon|active|same|scheduleTrigger|daysInterval=1,field=days,triggerAtHour=3|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|J8tubuqNsN471jEl|***-COPY-guard-05082026|archived|never|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|JaSDlwWAmjpYmEaD|WB TMP DB Probe Motor Oil|inactive|never|manualTrigger|-|instance|?|-|-
@@ -179,7 +179,7 @@ W|jWTJHPE42bTgytd7|TMP_Crypto_Check_H06|archived|never|manualTrigger|-|instance|
 W|jb9L7xLCYyiJ95aa|KB Loader — Transmission Oil|active|same|manualTrigger,scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
 W|kJTXJuHQAv1go52t|Claude → Obsidian|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|kJv2A7pI7mIAS5Lq|WB RAW History Load copy|archived|never|scheduleTrigger|field=months,monthsInterval=12|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
-W|kNg2uEoYlaGOLC82|WB FBS Order Intake|active|unpublished|scheduleTrigger|field=hours|instance|?|-|-
+W|kNg2uEoYlaGOLC82|WB FBS Order Intake|active|same|scheduleTrigger|field=hours|instance|?|-|-
 W|kNur1WRuKFjCXFrN|ONE-OFF: create Ozon_SKU_Staging sheet in Price Master|archived|never|manualTrigger|-|instance|?|-|-
 W|kPzX9KCDFGb1bRz7|WB FBS Order Intake [BACKUP — DELETE AFTER v2 CONFIRMED]|archived|never|scheduleTrigger|field=hours|instance|?|-|-
 W|kRroCboOJz3aF4BP|My workflow 2|archived|never|-|-|instance|?|-|-
@@ -574,7 +574,7 @@ C|56cGbN0MRyggaGq8|httpHeaderAuth|1
 C|5Iyr82zmzCeievFv|googleApi|2
 C|5Iyr82zmzCeievFv|httpHeaderAuth|1
 C|5Rs6pNDSm4weWDVj|googleApi|3
-C|5Rs6pNDSm4weWDVj|httpHeaderAuth|2
+C|5Rs6pNDSm4weWDVj|httpHeaderAuth|3
 C|5Rs6pNDSm4weWDVj|telegramApi|1
 C|6M9nS9iKQzMdztUs|googleApi|3
 C|6M9nS9iKQzMdztUs|httpHeaderAuth|1
@@ -653,6 +653,7 @@ C|LFDK2oAFdGWQ3Nxd|googleDriveOAuth2Api|2
 C|LFDK2oAFdGWQ3Nxd|telegramApi|1
 C|LNlWIEdH0tkzmqPB|googleApi|1
 C|LNlWIEdH0tkzmqPB|httpHeaderAuth|1
+C|LguGCDYJvMQSahcj|googleApi|1
 C|LguGCDYJvMQSahcj|httpHeaderAuth|1
 C|LguGCDYJvMQSahcj|telegramApi|2
 C|LoaTosh6logkGdVt|googleApi|5
