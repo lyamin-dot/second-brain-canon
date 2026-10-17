@@ -28,7 +28,7 @@ Human version (RU, authoritative wording): meta/PROTOCOL_wb-card-write.md. Edit 
 4. Show summary + disputes to Andrei; write only after his OK. IP cabinet: a valid but wrong declaration IS replaced by the reference (rule lifted 2026-10-10, R-15); main cabinet: valid declaration is not replaced.
 5. mode='запись', run; 06_Report: 200 + empty error = accepted; random 400/500 "Internal server error" -> retry only failed chunks via ONLY.
 6. Reset mode='проверка', ONLY=[]; append exec ids to 01_Params comment.
-7. Verify NEXT DAY via staging sheets/WB_Compare (IP applies with hours delay; 45 s / 4 min reads show old card — not a rejection).
+7. FIXED 2026-10-17 ('hours delay' was a false diagnosis; CASES cases 1, 7): if at 45 s documents has no new document with our no/dates, the write FAILED - don't wait. Existing document changes only via documents.items (dates YYYY-MM-DDT00:00:00Z) + chars; both write tools do this since 2026-10-17. New doc verdict in 3-11 s; overallVerdict recalculated later - check it NEXT DAY via staging sheets/WB_Compare.
 8. LOG.md entry + STATE.md next step.
 
 ## TRAPS
