@@ -67,5 +67,6 @@ projects/deklaration-wb/PLAN.md
 | инструмент «WB Card Tool ИП — одна карточка (проверка/запись)» | `4dWCd1l1QiUQBPQQ`, параметры в узле 01_Params; паспорт WB_WF_wb-card-tool-ip-single `1DWn2B3cPOVkmvE4drUrh_x4vJU7X36aXJ9thnJdsitw` (с 2026-10-09) |
 | инструмент «Price Master — запись колонок по ключу (инструмент)»: обновить колонки существующих строк листа по ключу | `AVoemWtBLO8L0Kdm`, данные в узле 01_Params, книга и лист — в узле 02_Update_By_Key, LIMIT — в узле 01b_Limit; первая запись — колонки tnved_decl и tnved_decl_src листа ARTIKEL_PROPS 2026-10-09 (`LOG.md` Р-13) |
 | порядок записи карточек WB через API и источники истины | `meta/PROTOCOL_wb-card-write.md` (для человека), `meta/PROTOCOL_wb-card-write.en.md` (для агента) |
+| журнал действий с карточками WB (что записано, удалено, какие галки поставлены); только дописывается, одна запись на пакет; роль файла заведена 2026-10-17 по просьбе владельца (`LOG.md` Р-20) | `projects/deklaration-wb/CARD_WRITES.md` |
 | папка паспортов роботов карточек WB (DOCS) | `1yifa_sfm6l7b0l08dB8ghzadeEGbIcSQ` |
 | правило «какой лист читать для какого кабинета» | `meta/PRODUCT_DATA_HIERARCHY.md`, раздел 4б; решение — `LOG.md` Р-8 |
