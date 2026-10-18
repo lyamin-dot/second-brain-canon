@@ -14,12 +14,12 @@ projects/n8n/STATE.md
 
 ## СЛЕДУЮЩИЙ ШАГ
 
-- Сверить снимок 2026-10-18: ожидание выше. Расхождение — разбирать по строке W воркфлоу.
-- Ручные действия Андрея — раздел ниже. До них три задачи этого файла открыты.
+- После 2026-10-19 02:00 по серверу: проверить, что ночной прогон OzonRawАналитика MPzPrtsnPtf0sVQo прошёл без алерта — это первый прогон, который гарантированно идёт после удаления ключа X-N8N-API-KEY. Доказательство — строки за 2026-10-18 в листе sales_raw_operations книги 1P-GgiFm3067U_sgC2Dojos3BbT_-au6v-mT52vVT3y4 (gsheets-read) и отсутствие алерта. Упал — убрать висячую ссылку на ключ из узла 03_Ozon_Transaction_List (правка узла по «да» Андрея).
+- Ручные действия Андрея — раздел ниже, остались пункты 2 и 3.
 
 ## Ручные действия Андрея
 
-1. Удалить credential «X-N8N-API-KEY» (khFoOjJlnL7P99Md) в n8n → Credentials. Он висит лишней привязкой на узлах 03_Ozon_Transaction_List (MPzPrtsnPtf0sVQo) и 03_Ozon_Analytics_Request (SElTcMg3BpY6pmdo, неактивен), оба узла ходят с ключом «Ozon Seller API». Если его значение — живой ключ n8n API или WB, отозвать и там, где он выдан. После удаления — проверить, что ночной прогон OzonRawАналитика (02:00 по серверу) не прислал алерт. Гипотеза (не проверена): лишняя привязка после удаления ключа узел не роняет.
+1. СДЕЛАНО 2026-10-18, проверено по объекту: list_credentials с запросом «X-N8N» вернул 0 записей. Остаток: узлы 03_Ozon_Transaction_List (MPzPrtsnPtf0sVQo, get_workflow_details 2026-10-18: credentials.httpHeaderAuth = khFoOjJlnL7P99Md) и 03_Ozon_Analytics_Request (SElTcMg3BpY6pmdo, неактивен) ещё ссылаются на удалённый ключ — висячая ссылка; узел аутентифицируется по genericAuthType httpCustomAuth (Ozon Seller API). Убрать ссылку при ближайшей правке этих узлов. Было: удалить credential «X-N8N-API-KEY» (khFoOjJlnL7P99Md) в n8n → Credentials. Он висит лишней привязкой на узлах 03_Ozon_Transaction_List (MPzPrtsnPtf0sVQo) и 03_Ozon_Analytics_Request (SElTcMg3BpY6pmdo, неактивен), оба узла ходят с ключом «Ozon Seller API». Если его значение — живой ключ n8n API или WB, отозвать и там, где он выдан. После удаления — проверить, что ночной прогон OzonRawАналитика (02:00 по серверу) не прислал алерт. Гипотеза (не проверена): лишняя привязка после удаления ключа узел не роняет.
 2. Перевыпустить ключ Serper в кабинете Serper и вставить новое значение в credential «Serper API» (jrLCVHitEIZeye7E); старый отозвать. Правок в воркфлоу ноль. Проверка — ручной прогон GDI35U36bBRzKZp5, результат по объекту.
 3. Одна команда на сервере — найти литералы ключей в узлах и истории версий (закрывает вопрос «Anthropic: 1 ключ, 2 воркфлоу, не перепроверено» из аудита 2026-07-23):
    docker exec -i n8n-postgres-1 psql -U n8n -d n8n -c "select id, name, active from workflow_entity where nodes::text like '%sk-ant-%' or nodes::text ilike '%Api-Key%'"
