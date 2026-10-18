@@ -155,3 +155,6 @@ WB_MONEY_book: 1lapptqj5vHZzuvo1360-V6f07KKrwjNzJilGR1CxDT8 — Google Sheets «
 
 <!-- 2026-10-17 | проект WB_UE, запись Р-69; зарегистрировано при создании (Р6) -->
 WB_RAW_ARCHIVE_2026-10-17: 1ke5wsN6NQm9z7mtU-FN0yLy5-HVhFbIAJ_Lue_H6YIs — Google Sheets «WB_RAW_Аналитика_АРХИВ_2026-10-17 (копия до удаления листов V1)», та же папка, что WB_RAW_Аналитика (1X4Qn8GW4YHM1eiKE_w5m1GGAj5koZ-7a). Полная копия книги WB_RAW_Аналитика на 2026-10-17, сделана copy_file Drive перед удалением старых листов wb_raw_report и wb_transactions из живой книги (предел 10 млн ячеек, Р-69 журнала projects/wb-ue/LOG.md). Только хранение, никто не пишет. Проверка gsheets-read 81720: 8 листов, размеры равны живой книге.
+
+<!-- 2026-10-18 | проект gas-bridge, запись Р-1 его журнала; зарегистрировано при создании (Р6) -->
+GAS_SANDBOX: 1Dm1luJ3YkSE2Tv8BV0DsMfgK1-E2Jc0_b51PYXUZeI0 — Google Sheets «gas-sandbox», корень Диска Андрея, создана подключённым Google Drive. Тестовая книга инструмента gas-bridge: к ней привязывается пробный скрипт и разрешена запись кода (строка access=write таблицы данных n8n gas_allowlist). Данные книги никто не читает; это мишень для проверок инструмента, не удалять.
