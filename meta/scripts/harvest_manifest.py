@@ -5,8 +5,8 @@ git history, not from the session's memory (meta/PROTOCOL_harvest.md, steps 1 an
 Usage: python3 harvest_manifest.py <clone path> <last harvest date YYYY-MM-DD>
 Output: JSON on stdout. Google Docs modification dates are not known to the script:
 the session takes them (get_file_metadata) for the docs_candidates list.
-Source file is ASCII-only on purpose (Cyrillic written as backslash-u escapes), so it can be
-sent through the Git channel without the escape-typing problem of rule 8.2.
+Note: the first commit tried to keep the file ASCII-only (Cyrillic as backslash-u escapes);
+the Git channel decoded the escapes into real Cyrillic letters. Behaviour is identical.
 History: 2026-10-18 first run; fix same day - journal records "T-N | date |" without status field.
 """
 import json, re, subprocess, sys, os
