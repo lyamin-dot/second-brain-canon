@@ -32,9 +32,9 @@ Human version (RU, authoritative wording): meta/PROTOCOL_wb-card-write.md. Edit 
 8. LOG.md entry + STATE.md next step.
 
 ## TRAPS
-- Full overwrite drops okpd2 typed manually in UI (API doesn't return it) -> may drop needKiz (07.10: 29 main cards). Don't rewrite main-cabinet «Автохимия»/«Смазки автомобильные» without document okpd2.
+- Full overwrite drops any characteristic not sent. 07.10 (29 main cards) needKiz was lost: likely cause = needKiz not sent (case 3); the "UI-typed okpd2 erased" version is unproven (deklaration-ozon LOG R-46). Fixed by harvest 2026-10-18 (V14). Don't rewrite main-cabinet «Автохимия»/«Смазки автомобильные» without document okpd2.
 - okpd2 in mandatory-marking list may switch needKiz on -> block if seller not registered in Честный знак for that group (IP oils 08.10).
-- Each decl write recreates WB document (new id); interim verdict (supplier_not_registered) may turn ok hours later.
+- A decl write WITH documents.items recreates WB document (new id); characteristics alone do not change an existing document (case 1); interim verdict (supplier_not_registered) may turn ok hours later.
 - Char values = array of strings: ["3403990000"], ["01.06.2026"].
 - Sparse cards (e.g. 1053: 2 chars) are sent as is; tool invents nothing.
 - 200 + new updatedAt does not prove applied: check card documents.verdict next day.
