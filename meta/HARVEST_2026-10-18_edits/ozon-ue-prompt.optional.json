@@ -1,0 +1,9 @@
+[
+ {
+  "finding": "AH-17, вариант с учётом разделения 2026-10-07 и проекта deklaration-v2 (на решение Андрея)",
+  "instead_of": "AH-17",
+  "file": "meta/prompts/ozon-ue.md",
+  "old": "Architecture: Ozon API → n8n → RAW Google Sheets book → Unit Economics book → DECISION_ENGINE.",
+  "new": "Architecture: Ozon API → n8n → RAW Google Sheets book → Unit Economics book → DECISION_ENGINE.\nConformity declarations (LM_DECL: search and matching, workflows Scan and Ozon Upload, book LM_DECL_MASTER) are not worked on here since 2026-10-01 (Andrei's decision): they belong to separate chronicle projects. Which projects and where — registry/projects.md (rows deklaration-*) and the [LM_DECL] line of «Постоянные адреса» in labs/ozon-ue/INDEX.md; this prompt deliberately holds no project paths (paragraph below). A declaration finding made here goes neither into this lab nor into Zone B: it goes as one line into the «От соседнего проекта» section of the STATE.md of the project it concerns — the same way Skill second-brain-git 10.6 prescribes for projects in the repository. Exception: the product-data link model (article, Ozon SKU, WB card, price, declaration number as key) is kept here — task t-product-data-model (Andrei's decision 2026-10-02, projects/deklaration-ozon/LOG.md Р-23)."
+ }
+]

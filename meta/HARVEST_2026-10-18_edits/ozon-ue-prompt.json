@@ -1,0 +1,14 @@
+[
+ {
+  "finding": "AH-17",
+  "file": "meta/prompts/ozon-ue.md",
+  "old": "Architecture: Ozon API → n8n → RAW Google Sheets book → Unit Economics book → DECISION_ENGINE.",
+  "new": "Architecture: Ozon API → n8n → RAW Google Sheets book → Unit Economics book → DECISION_ENGINE.\nDeclaration search and matching (conformity declarations: LM_DECL, workflows Scan and Ozon Upload, book LM_DECL_MASTER) has been a separate chronicle project, projects/deklaration-ozon/, since 2026-10-01 (Andrei's decision). Do not work on declarations here and do not write to Zone B for them; read projects/deklaration-ozon/STATE.md and PLAN.md. Exception: the product-data link model (article, Ozon SKU, WB card, price, declaration number as key) is kept here — task labs/ozon-ue/t-product-data-model.md (Andrei's decision 2026-10-02, projects/deklaration-ozon/LOG.md Р-23)."
+ },
+ {
+  "finding": "AI-18",
+  "file": "meta/prompts/ozon-ue.md",
+  "old": "Before the first such write in a session read core/R-06-marshrut.md, core/R-06b.md, core/R-06d.md, core/R-08.md, core/R-11.md (Manifest «По событию» row «запись в INDEX-документ проекта»).",
+  "new": "Before the first such write in a session read core/R-06-marshrut.md, core/R-06b.md, core/R-06d.md, core/R-08.md, core/R-11.md (Manifest «По событию» row «запись в INDEX-документ проекта»). Before the first write to repository files in a session (a task file, labs/ozon-ue/INDEX.md) read core/R-06-marshrut.md, paragraph «ОБЛАСТЬ ДЕЙСТВИЯ» (Manifest «По событию» row «запись в файлы репозитория»)."
+ }
+]
