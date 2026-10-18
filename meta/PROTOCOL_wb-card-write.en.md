@@ -39,4 +39,4 @@ Human version (RU, authoritative wording): meta/PROTOCOL_wb-card-write.md. Edit 
 - Sparse cards (e.g. 1053: 2 chars) are sent as is; tool invents nothing.
 - 200 + new updatedAt does not prove applied: check card documents.verdict next day.
 - Manual-KIZ cards with okpd2 invisible via API: write without okpd2 risks dropping needKiz; outcome of 1345/1745 trial (R-16, R-19, R-21): KIZ flags were lost because needKiz was not sent, not because of okpd2; with needKiz sent the flag holds with any code (CASES cases 3, 4). okpd2 by analogy still only on Andrei's word for named cards; codes are kept in DEKL 2.0 sheet «Ввод», cols D-E and K-R.
-- WB may return dates as MM-DD-YY on read; write only DD.MM.YYYY.
+- WB may return dates as MM-DD-YY on read; write DD.MM.YYYY in characteristics 15001137/15001138, and only YYYY-MM-DDT00:00:00Z inside documents.items (case 2 of meta/CASES_wb-api-card-write.md; harvest 2026-10-18, decision V14).
