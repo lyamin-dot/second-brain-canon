@@ -27,7 +27,7 @@ projects/n8n/STATE.md
 
 ## ОТКРЫТЫЕ ЗАДАЧИ
 
-[ ] [2026-10-17] Error Notifier M5BLqclKBjGTpz33 с 2026-10-17 сохраняет успешные прогоны (Р-6). Закрыть задачу «формат алерта» (правка 2026-10-08: строки «Ошибка:» до 500 знаков и «Прогон:», версия bf4cc77f) по первому сохранённому прогону Notifier: search_workflow_executions по M5BLqclKBjGTpz33, в выходе узла Send a text message текст содержит обе строки.
+[x] ЗАКРЫТО 2026-10-18 по объекту — исполнение 81691 Error Notifier (2026-10-17 16:26 UTC, алерт о падении nvNYvvmuOqGyHXfL, исполнение 81689): в ответе Telegram ok:true, message_id 7487, текст содержит «Ошибка: GUARD: anchor occurrences=0…» и «Прогон: https://…/executions/81689» (get_workflow_execution, узел Send a text message). Было: Error Notifier M5BLqclKBjGTpz33 с 2026-10-17 сохраняет успешные прогоны (Р-6). Закрыть задачу «формат алерта» (правка 2026-10-08: строки «Ошибка:» до 500 знаков и «Прогон:», версия bf4cc77f) по первому сохранённому прогону Notifier: search_workflow_executions по M5BLqclKBjGTpz33, в выходе узла Send a text message текст содержит обе строки.
 
 [ ] [2026-10-17] Таймзона: 68 активных без явной таймзоны работают по серверной Europe/Berlin. Массово не ставить (Р-6, отвергнуто). Правило при касании воркфлоу: если расписание или текст рассчитаны на московское время (пример — Order Intake kNg2uEoYlaGOLC82, описание «Telegram только в 06:00 и 16:00 МСК»), ставить Europe/Moscow и пересчитать часы расписания; иначе ставить Europe/Berlin явно.
 
