@@ -98,3 +98,9 @@ D6 — ИСПРАВЛЕН (черновик); опубликованной ве�
 ## 2026-10-18 (автопилот OZON_UE) — правка узла 03 выдана Андрею
 
 Сборщик aVpgEnYBAgIIss4k не правился после аудита: get_workflow_details 2026-10-18, updatedAt 2026-10-08T11:09:22Z, versionId = activeVersionId a3f06d9b. Андрею выдан текст правки в интерфейсе n8n: узел 03_Ozon_Accrual_By_Day → Options → Response → Never Error выключить; Settings → On Error «Continue (regular output)» → «Stop Workflow»; сохранить и опубликовать. Не внесено до чтения объекта.
+
+## Проверка 19.10 (автопилот OZON_UE)
+
+Правка узла 03_Ozon_Accrual_By_Day внесена Андреем (updatedAt 2026-10-18T17:02:42Z, versionId = activeVersionId 97b48ef0): onError отсутствует (остановка), neverError отсутствует, учётная запись Ozon Seller API на месте; 08_Write_To_Sheets_TEST без onError. ПРОЧИТАНО ПОСРЕДНИКОМ (get_workflow_details, пути JSON узлов). Пункт 1 списка закрыт.
+Новая находка: узел 05_Ozon_FBS_Posting_Get того же сборщика стоит с onError continueRegularOutput и neverError true — та же схема «отказ Ozon = успех». Последствие мягче: узел обогащает строки из posting/fbs/get, его отказ не обнуляет начисления, а оставляет пустыми поля обогащения. Решение Андрея нет.
+Дальше по списку: D2 — догон двух дней и сдвиг адаптера на 02:40, затем догнать 01.10.
