@@ -364,6 +364,7 @@ aa10976734cf6136810ef9b9e2d0b73028e7cd178bc9a2ee73a34d3eb32a67bf  second-brain-g
 Порядок внутри каждого Skill: сначала кластеры с копиями или противоречием (§2), затем «история» (нарратив, даты, исполнения, байты, блоки ИСТОРИЯ ДИАГНОЗА, история правок в шапках), затем остальное. Номера — строки таблицы §2. Теги: КОПИИ / ПРОТИВОРЕЧИЕ / РАСХОЖДЕНИЕ (только §3а, после кластеров КОПИИ/ПРОТИВОРЕЧИЕ и до ИСТОРИЯ) / ИСТОРИЯ / ЧИСТО. В конце каждого Skill — счёт строк истории правок в шапках (к удалению по решению 2026-10-18).
 
 ### 5.1 second-brain-git
+Синтез 2026-10-19: `meta/SYNTHESIS_second-brain-git_2026-10-19.md`. Строки 10 и 51 раздела 2 разделены решением Андрея 2026-10-19: общий принцип «массовую механическую работу делает скрипт» и правило «правка Skill действует после перезаливки» — дом `second-brain-engineer`; адреса строк этого раздела относятся к тексту до синтеза (зеркало 20ce00f).
 2. Транспорт чтения и сужение (7.6, грязные воркфлоу, посредник) — §2 п.4, 5, 31 — `second-brain-git/SKILL.md:135`–`second-brain-git/SKILL.md:171`; `second-brain-git/references/costs.md:11`–`second-brain-git/references/costs.md:31` — КОПИИ.
 3. Форма вызова execute_workflow и Канал — §2 п.6 — `second-brain-git/SKILL.md:28`–`second-brain-git/SKILL.md:32` — КОПИИ.
 4. \uXXXX и текст-файлом (8.2, Git Append File) — §2 п.7, 9 — `second-brain-git/references/write.md:71`–`second-brain-git/references/write.md:78`, `second-brain-git/references/write.md:90` — КОПИИ.
@@ -539,7 +540,7 @@ aa10976734cf6136810ef9b9e2d0b73028e7cd178bc9a2ee73a34d3eb32a67bf  second-brain-g
 
 | Skill | статус | дата |
 |---|---|---|
-| second-brain-git | не начат | — |
+| second-brain-git | идёт: синтез готов, текст в зеркале `skills/second-brain-git/`, ждёт заливки после правок П-1, П-2 `second-brain-engineer` — отчёт `meta/SYNTHESIS_second-brain-git_2026-10-19.md` | 2026-10-19 |
 | second-brain-engineer | не начат | — |
 | n8n-engineering-manual | не начат | — |
 | apps-script-sheets | не начат | — |
