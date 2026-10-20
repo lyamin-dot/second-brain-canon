@@ -542,8 +542,8 @@ aa10976734cf6136810ef9b9e2d0b73028e7cd178bc9a2ee73a34d3eb32a67bf  second-brain-g
 
 | Skill | статус | дата |
 |---|---|---|
-| second-brain-git | идёт: синтез готов, текст в зеркале `skills/second-brain-git/`, ждёт заливки после правок П-1, П-2 `second-brain-engineer` — отчёт `meta/SYNTHESIS_second-brain-git_2026-10-19.md` | 2026-10-19 |
-| second-brain-engineer | идёт: синтез готов, текст в зеркале `skills/second-brain-engineer/`, ждёт заливки и решения Андрея по порогу Р21 (повторный тест 3 из 4) — отчёт `meta/SYNTHESIS_second-brain-engineer_2026-10-20.md`; ссылки этой карты на `references/history.md` ведут в текст на коммите baa077c | 2026-10-20 |
+| second-brain-git | готов: живой Skill совпал с зеркалом 2026-10-20 (сверка сессии SYS, коммит f4f4a49); прежнее: идёт: синтез готов, текст в зеркале `skills/second-brain-git/`, ждёт заливки после правок П-1, П-2 `second-brain-engineer` — отчёт `meta/SYNTHESIS_second-brain-git_2026-10-19.md` | 2026-10-19 |
+| second-brain-engineer | залит: живой Skill с порогом Р21 совпал с зеркалом 2026-10-20; открыты проверочная задача на Р21 (критерий Э-5) и вопросы 2–11 раздела «Ждёт Андрея» отчёта; прежнее: идёт: синтез готов, текст в зеркале `skills/second-brain-engineer/`, ждёт заливки и решения Андрея по порогу Р21 (повторный тест 3 из 4) — отчёт `meta/SYNTHESIS_second-brain-engineer_2026-10-20.md`; ссылки этой карты на `references/history.md` ведут в текст на коммите baa077c | 2026-10-20 |
 | n8n-engineering-manual | идёт: синтез готов, текст в зеркале `skills/n8n-engineering-manual/`, ждёт заливки zip (позиция AJ-23 Очереди) — отчёт `meta/SYNTHESIS_n8n-engineering-manual_2026-10-20.md` | 2026-10-20 |
 | apps-script-sheets | не начат | — |
 | google-drive-docs | не начат | — |
