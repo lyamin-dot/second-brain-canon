@@ -424,6 +424,8 @@ aa10976734cf6136810ef9b9e2d0b73028e7cd178bc9a2ee73a34d3eb32a67bf  second-brain-g
 17. Остальное: A2, §3, §4.1–4.2, 4.4–4.7, 4.11–4.12, R2, R3, R5, R8–R11, R14, R17, T1, T3, §7, T4 — ЧИСТО.
 Строк истории правок в шапках: 10 — `n8n-engineering-manual/SKILL.md:8`, `n8n-engineering-manual/SKILL.md:9`, `n8n-engineering-manual/SKILL.md:10`, `n8n-engineering-manual/SKILL.md:11`, `n8n-engineering-manual/SKILL.md:12`; `n8n-engineering-manual/references/write.md:5`; `n8n-engineering-manual/references/engine.md:5`; `n8n-engineering-manual/references/roots.md:5`; `n8n-engineering-manual/references/templates.md:3`, `n8n-engineering-manual/references/templates.md:7` (плюс `n8n-engineering-manual/INCIDENT_LOG.md:2`, `n8n-engineering-manual/INCIDENT_LOG.md:6`).
 
+Синтез 2026-10-20: кластеры 1–16 этого подраздела переписаны, дома кластеров, размазанных по файлам, — контракт в `labs/sys/t-knowledge-synthesis.md`; адреса строк вида `n8n-engineering-manual/<файл>:<строка>` выше относятся к тексту до синтеза (зеркало на коммите 2f2a173) — отчёт `meta/SYNTHESIS_n8n-engineering-manual_2026-10-20.md`.
+
 ### 5.4 google-drive-docs
 1. Верификация §7, read-back, не повторять (E16, E21) — §2 п.1, 11 — `google-drive-docs/SKILL.md:74`–`google-drive-docs/SKILL.md:93`, `google-drive-docs/SKILL.md:104`; `google-drive-docs/references/failures.md:22`, `google-drive-docs/references/failures.md:27`, `google-drive-docs/references/failures.md:33`–`google-drive-docs/references/failures.md:35`; `google-drive-docs/references/infra.md:21`; `google-drive-docs/references/docs-write.md:26` — КОПИИ.
 2. Форма вызова §3, manual, никогда curl — §2 п.6, 134 — `google-drive-docs/SKILL.md:65`–`google-drive-docs/SKILL.md:69`; `google-drive-docs/references/sheets.md:11`, `google-drive-docs/references/sheets.md:50` — КОПИИ.
@@ -542,7 +544,7 @@ aa10976734cf6136810ef9b9e2d0b73028e7cd178bc9a2ee73a34d3eb32a67bf  second-brain-g
 |---|---|---|
 | second-brain-git | идёт: синтез готов, текст в зеркале `skills/second-brain-git/`, ждёт заливки после правок П-1, П-2 `second-brain-engineer` — отчёт `meta/SYNTHESIS_second-brain-git_2026-10-19.md` | 2026-10-19 |
 | second-brain-engineer | идёт: синтез готов, текст в зеркале `skills/second-brain-engineer/`, ждёт заливки и решения Андрея по порогу Р21 (повторный тест 3 из 4) — отчёт `meta/SYNTHESIS_second-brain-engineer_2026-10-20.md`; ссылки этой карты на `references/history.md` ведут в текст на коммите baa077c | 2026-10-20 |
-| n8n-engineering-manual | не начат | — |
+| n8n-engineering-manual | идёт: синтез готов, текст в `meta/SYNTHESIS_n8n-engineering-manual_2026-10-20/new/`, ждёт ответа Андрея о месте `INCIDENT_LOG.md`, затем зеркало и zip — отчёт `meta/SYNTHESIS_n8n-engineering-manual_2026-10-20.md` | 2026-10-20 |
 | apps-script-sheets | не начат | — |
 | google-drive-docs | не начат | — |
 | naryad | не начат | — |
