@@ -293,3 +293,60 @@ Re-read both old files sentence by sentence against the table: no uncovered sent
   2. `n8n-engineering-manual` (live) mentions get_workflow_details 23 times (with second-brain-git) and has no pointer to Р21; a session in n8n work follows the manual, not this Skill's last section. The test failure (Health Monitor task) was exactly this path. Suggest a «было → стало» pointer in the manual (outside group A).
   3. Over-breadth risk: the first sentence makes the trigger unconditional on tool kind; when the session needs the workflow text itself to edit it (Р10 / n8n manual), Р21 now says hand it to a mediator, while the third bullet says rules the session executes are never read via mediator. The edit case (need text, not answer) is not carved out — expect either a conflict or the session ignoring Р21 as inapplicable. Suggest: «… когда нужен ответ на вопрос о воркфлоу, а не его текст для правки».
   4. Placement: Р21 is the last section of a 150-line file, after the long Р15 table; nothing in the description frontmatter or the header mentions it. Minor.
+
+## Круг 2
+
+Input: `A_round1_diff.md`, writer report section «Круг 2». All 229 round-1 quotes re-checked by script against the round-2 files: 228 still verbatim; A-O184 quote changed by the fix (re-verified below). Rule-id parity checked by script (regex over both Skill files vs rows of «Правило → случаи»).
+
+### Count after round 2
+
+| verdict | count |
+|---|---|
+| В ТЕКСТЕ | 205 |
+| ПО АДРЕСУ | 17 |
+| СНЯТИЕ ПРЕДЛОЖЕНО | 6 |
+| ОСЛАБЛЕНО | 1 (A-O099 — declared to Andrei, «Расширено» круга 1 пункт 3) |
+| ПОТЕРЯНО | 0 |
+| total | 229 |
+
+### Changed verdicts
+
+| id | round 1 | round 2 | evidence |
+|---|---|---|---|
+| A-O022 | ОСЛАБЛЕНО | В ТЕКСТЕ | SKILL.md line 20: «Номера разделов прежние и при раскладке и синтезе не перенумеровываются» |
+| A-O099 | ОСЛАБЛЕНО | ОСЛАБЛЕНО (declared) | unchanged text «тем же шагом, на котором узнан»; consistent with live `second-brain-git` 10.6; decision stays with Andrei |
+| A-O184 | ПО АДРЕСУ | ПО АДРЕСУ | new quote «1 случай, последний 2026-10-10 (разбор корпуса) — отчёт синтеза, правило Р21.подсказка». Note: 2026-10-10 is the date of the analysis record Р-8, not of the case itself; the report table says so — acceptable, but the Skill line reads as a case date |
+| A-O063 | ПО АДРЕСУ (pending) | ПО АДРЕСУ | dispatcher ruling per Р14 point 6; declared «Расширено круга 2» пункт 2 |
+
+### Units touched by the diff — nothing lost
+
+- Р14 (A-O106…A-O125): ПРОВЕРКА added after point 6; all 20 unit quotes intact. Declared (Расширено круга 2, пункт 1).
+- Р15 absence line (A-O151): quote intact; Р21 pointer added in parentheses, does not narrow the absence rule.
+- Р15 basis list (A-O140, A-O144, A-O156) and write-moment basis list (A-O217, A-O221, A-O227…A-O229): counts and last dates unchanged; only `правило <id>` appended.
+- write-moment ПРОВЕРКА: rewritten to «совпадают с выдачей … из которой взяты» — checks old rule A-O215 / A-O216 without a new duty. My round-1 point 3.1 (undeclared «name the source» duty) is closed; proposal moved to «Расширено круга 2» пункт 3.
+- Routing row for save.md (A-O038): quote intact; Р12 trigger added — declared (пункт 11).
+- Р21 new exception vs A-O167 / A-O174 / A-O178: not a weakening of the old text. The old trigger was «нужен ответ на вопрос, а не текст»; editing needs text and was outside old Р21 anyway. The exception makes that explicit.
+- Р21 «Не путать» line: `правило Р21.непутать` added; no unit changed.
+
+### Rule-id parity
+
+Every `правило <id>` in SKILL.md and write-moment.md (21 ids: Р0.граница, Р6.цель, Р6.документ, Р6.сосед, Р15.слово, Р15.состояние, Р15.причина, Р15.описание, Р15.условие, Р15.отсутствие, Р15.идентификатор, Р15.число-критерий, Р15.дата, Р15.число-живого-файла, Р21.триггер, Р21.файл, Р21.подсказка, Р21.адрес, Р21.расход, Р21.непутать, раскладка.Р21) has an identically named row in the report table — none missing. The table also has rows not cited by «правило»: Р6.трение (Skill cites Andrei's agreement directly — allowed form) and three header rows for Andrei's decisions — fine.
+`baa077c:` addresses verified: prompt-craft.md:98 (2026-10-06 lesson), history.md:19 (third edit 2026-10-06), history.md:21 (А44 and «двумя посредниками разных моделей»).
+Still open precondition: `meta/SYNTHESIS_second-brain-engineer_2026-10-20.md` does not exist yet — the dispatcher must create it with this table before ПО АДРЕСУ verdicts become final.
+
+### Р21 reachability — status of the three issues
+
+1. Р15 absence-search line → **closed**: «(воркфлоу целиком, когда нужен только ответ, — через посредника, Р21)».
+2. `n8n-engineering-manual` has no pointer → **closed on paper, open in effect**: a «было → стало» text for live SKILL.md line 60 is in the report (Копии в других Skills, пункт 5; the «было» text matches line 60 of the live Skill). The session will keep missing Р21 on the n8n path until Andrei applies it.
+3. Clash with Р10 / editing → **closed** by the exception.
+
+### Does the edit-exception create a loophole?
+
+Yes, a small one. «собирается ИЗМЕНИТЬ» is the session's own intention, and nothing checks it. Р10 requires Andrei's «да» before the change, not before the read, so the session can read the whole workflow, claim it "planned an edit", and never edit. The test-failure case («какие узлы Health Monitor шлют в Telegram») is a pure question and is not covered by the exception if the session reads it honestly. But diagnostics («почему не работает» → maybe fix) are exactly where the session will claim the exception. Suggested closure (text for the writer, not applied):
+- Было: «воркфлоу, который сессия собирается ИЗМЕНИТЬ, она читает сама (Р10, references/permissions.md).»
+- Стало: «воркфлоу, правку которого Андрей поручил в этой задаче или которая стоит в записанном пакете разрешения Р10, сессия читает сама (Р10, references/permissions.md). Диагностика «почему не работает» исключением не является, пока правка не названа: сначала ответ посредника, затем чтение для правки.»
+This is a narrowing of a round-2 addition, not of old text; no unit verdict depends on it.
+
+### Undeclared ПОТЕРЯНО / ОСЛАБЛЕНО after round 2
+
+None. Remaining ОСЛАБЛЕНО A-O099 is declared for Andrei.
