@@ -541,7 +541,7 @@ aa10976734cf6136810ef9b9e2d0b73028e7cd178bc9a2ee73a34d3eb32a67bf  second-brain-g
 | Skill | статус | дата |
 |---|---|---|
 | second-brain-git | идёт: синтез готов, текст в зеркале `skills/second-brain-git/`, ждёт заливки после правок П-1, П-2 `second-brain-engineer` — отчёт `meta/SYNTHESIS_second-brain-git_2026-10-19.md` | 2026-10-19 |
-| second-brain-engineer | не начат | — |
+| second-brain-engineer | идёт: синтез готов, текст в зеркале `skills/second-brain-engineer/`, ждёт заливки и решения Андрея по порогу Р21 (повторный тест 3 из 4) — отчёт `meta/SYNTHESIS_second-brain-engineer_2026-10-20.md`; ссылки этой карты на `references/history.md` ведут в текст на коммите baa077c | 2026-10-20 |
 | n8n-engineering-manual | не начат | — |
 | apps-script-sheets | не начат | — |
 | google-drive-docs | не начат | — |
