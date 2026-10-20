@@ -546,7 +546,7 @@ aa10976734cf6136810ef9b9e2d0b73028e7cd178bc9a2ee73a34d3eb32a67bf  second-brain-g
 | second-brain-engineer | готов: живой Skill с порогом Р21 совпал с зеркалом 2026-10-20, проверочная задача на Р21 пройдена 2026-10-20 (критерий Э-5); открыты вопросы 2–11 раздела «Ждёт Андрея» отчёта; прежнее: идёт: синтез готов, текст в зеркале `skills/second-brain-engineer/`, ждёт заливки и решения Андрея по порогу Р21 (повторный тест 3 из 4) — отчёт `meta/SYNTHESIS_second-brain-engineer_2026-10-20.md`; ссылки этой карты на `references/history.md` ведут в текст на коммите baa077c | 2026-10-20 |
 | n8n-engineering-manual | идёт: синтез готов, текст в зеркале `skills/n8n-engineering-manual/`, ждёт заливки zip (позиция AJ-23 Очереди) — отчёт `meta/SYNTHESIS_n8n-engineering-manual_2026-10-20.md` | 2026-10-20 |
 | apps-script-sheets | не начат | — |
-| google-drive-docs | не начат | — |
+| google-drive-docs | идёт: синтез готов (вне порядка, по слову Андрея 2026-10-20), текст в зеркале `skills/google-drive-docs/`, ждёт заливки zip — отчёт `meta/SYNTHESIS_google-drive-docs_2026-10-20.md`; ссылки этой карты вида `google-drive-docs/<файл>:<строка>` относятся к тексту на коммите 2573cb4 | 2026-10-21 |
 | naryad | не начат | — |
 | avtopilot | не начат | — |
 | n8n-workflow-passport | не начат | — |

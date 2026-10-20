@@ -1,0 +1,28 @@
+# PARTICULARS — группа B (references/docs-read.md, references/docs-write.md)
+
+Особенности конкретных объектов, снятые из Skill (протокол синтеза, раздел «Чего в Skill не бывает»; решение Андрея 2026-10-20 о форме ID воркфлоу — вариант В). Поиск — `grep -rn` в клоне second-brain-canon, коммит c07975a.
+
+Что считалось свойством платформы и осталось в Skill: контракты полей вызова и ответа инструментов gdocs-* (это интерфейс инструмента, который вызывает любая сессия, — тот же класс, что «форма вызова»), поведение Docs API (`\n` между параграфами, экспорт с `\r\n` и BOM, отказ на 1 900 000), свойство типа узла `n8n-nodes-base.httpRequest`. Имена внутренних узлов воркфлоу (`06_Build_Response`, `03_Get_Metadata`, `Parse Payload`, `Build Response`, `03_Upload`, `07_Verify`) — особенность конкретного воркфлоу: из нового текста сняты, поведение описано словами.
+
+| unit (quote ≤80) | carrier | does the carrier already hold it (what was grepped) |
+|---|---|---|
+| «### 3.5 gdocs-read (`hJZhQ9KaeFgeRm3k`)» | `registry/n8n-map.md`, строка `W|hJZhQ9KaeFgeRm3k|Claude → Google Docs Read (full)` | да (поиск `hJZhQ9KaeFgeRm3k` — строка 179) |
+| «### 3.1 gdocs-append v2 (`YfzWwu1VmIUCbUu0`)» | `registry/n8n-map.md`, строка 143 | да (поиск `YfzWwu1VmIUCbUu0`: «Claude → Google Docs Append v2 (verified)») |
+| «### 3.2 gdocs-replace v2 (`nvNYvvmuOqGyHXfL`)» | `registry/n8n-map.md`, строка 209 | да (поиск `nvNYvvmuOqGyHXfL`) |
+| «### 3.3 create_folder (`uapccJY1O4ykyDi7`)» | `registry/n8n-map.md`, строка 235 | да (поиск `uapccJY1O4ykyDi7`: «Claude → Create Folder») |
+| «### 3.4 gdocs-overwrite v2 (`M5dqSv2yiklnDXoP`)» | `registry/n8n-map.md`, строка 102 | да (поиск `M5dqSv2yiklnDXoP`) |
+| «### 3.6 gdocs-apply-from-file (`fdiWemSCln1WA8gt`)» | `registry/tools.md`, строка 2 (GDOCS_APPLY_FROM_FILE); в `registry/n8n-map.md` строка 171 с маской «***» | да (поиск `fdiWemSCln1WA8gt`) |
+| «Узел `06_Build_Response` считает `byteLength` и `checkSum` (FNV-1a, 32 бита)» | `projects/archivarius/TRIAGE.md`, таблица проб стадии Б, строка 994 («узел 06_Build_Response gdocs-read») | да (поиск `06_Build_Response`) |
+| «`driveSize` — размер по метаданным Drive (узел `03_Get_Metadata`)» | `registry/tools.md`, строка 22 («узлы `03_Get_Metadata` и `05A_Export_Doc` имеют тип `n8n-nodes-base.httpRequest`») | частично: имя узла есть, связь «driveSize берётся из этого узла» — нет. Точный текст строки на дозапись в `registry/tools.md` (после строки 40, отдельной строкой; кавычки-ёлочки не входят): «gdocs-read: поле ответа `driveSize` берётся из узла `03_Get_Metadata` (метаданные Drive) и с `byteLength` экспорта не совпадает.» |
+| «код `06_Build_Response` делит текст только по `\n` (прочитано 2026-10-12)» | `projects/archivarius/TRIAGE.md`, строка 994 («текст делится на строки только по `\n`») | да |
+| «(узел Build Response, прочитано 2026-10-12)» — токен append ищется по всему документу | `projects/archivarius/TRIAGE.md`, строка 993; `labs/sys/t-gdocs-write-defects.md`, пункт 3 | да (поиск `40 символ`) |
+| «(узел Parse Payload: `'\n' + text`)» | `projects/archivarius/TRIAGE.md`, строка 993 («воркфлоу сам ставит `\n` перед текстом», узлы Parse Payload и Build Response) | да |
+| «узел Build Response перечитывает документ … (`verifiedBy=absence-of-search`; код версии 2026-09-25…)» | `projects/archivarius/TRIAGE.md`, строка 991; запись Р-14 журнала `projects/archivarius/LOG.md` (строка 304) | да (поиск `absence-of-search`). Само поведение («удаление проверяется по исчезновению якоря») — свойство контракта инструмента, оставлено в Skill без имени узла |
+| «Узел 03_Upload пишет `={{ $json.newContent }}`, а проверка 07_Verify сравнивает с `String(newContent)`» | `projects/archivarius/TRIAGE.md`, строка 992 | да (поиск `03_Upload`) |
+| «Все узлы загрузки воркфлоу — типа `n8n-nodes-base.httpRequest`» (apply-from-file) | паспорт воркфлоу (ID паспорта — `registry/tools.md`, строка 2); в репозитории — нет | нет (поиск `fdiWemSCln1WA8gt` и `httpRequest` в `registry/tools.md`, строка 22 — карта узлов только для gdocs-read и Канала git). Оставлено в Skill: без этого факта правило «статус — с includeData:false» не имеет причины. Точный текст строки на дозапись в `registry/tools.md` (после строки 22, отдельной строкой; кавычки-ёлочки не входят): «gdocs-apply-from-file (строка GDOCS_APPLY_FROM_FILE выше) тоже ГРЯЗНЫЙ: все его узлы загрузки — типа `n8n-nodes-base.httpRequest`, `get_execution(includeData:true)` приносит полный текст документа; статус брать с `includeData:false`.» |
+| «на объёме около 29 КБ у этого инструмента уже портились байты (инцидент 31.07)» | история случая; носитель — блок T-053 удалённого `core/R-06c.md` (история коммита d5881fd) и запись Р-36 журнала `projects/archivarius/LOG.md` | да; в Skill оставлено как причина правила, без даты; дата — в BASIS (B.3.0.1) |
+| «регрессионная мишень TEST_GDOCS_APPLY, `registry/tools.md`» | `registry/tools.md`, строка 3 | да; в Skill оставлен указатель на строку |
+| «Пример: строка, перенесённая из Зоны А в Зону Б, начинается с «[перенесено из Зоны А 2026-09-23]»» | — | пример формы пометки, не особенность объекта; оставлен в Skill |
+| «2026-07-30 правка K4 нацелилась … ID вёл к архивной копии Skill версии 2.9 при живой 2.11» | запись Р-14 журнала `projects/archivarius/LOG.md`, урок У-88 (строка 311) | да; в Skill — обобщённая причина без объекта |
+
+Поиск по классу безопасности (репозиторий публичный): в новых текстах группы B нет путей вебхуков, имён и номеров ключей доступа, адресов почты, личных папок (поиск в `new/` по `webhook/`, `@`, `credential`, `[тип ключа вебхука — вычищено по И-7]` — пусто, кроме слова «вебхука» в описании поля `verifiedBy`).
