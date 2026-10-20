@@ -18,7 +18,8 @@ Layout of second-brain-engineer (live file 48 098 B): CONSTANT = header+table 50
 
 ## Harvest-edit valuation (next session starts here)
 Objects: open queue positions targeting Skills — read registry/maintenance-queue.md fresh (expected: AJ-1…AJ-10 packets in meta/HARVEST_2026-10-18_edits/; AJ-11…AJ-20, where AJ-14 = fifteen lessons in meta/HARVEST_2026-10-18_reports/LESSONS_WAITING_CANDIDATES.md; AI-5, AI-6, AI-23, AI-25…AI-28).
-Per edit, questions in order; first "yes" gives verdict:
+Per edit, questions Q0–Q5 in order; first "yes" gives verdict. DONE 2026-10-20: meta/HARVEST_2026-10-18_verdicts.md.
+- Q0 (Andrei 2026-10-20, asked first) edit describes state or specifics of a concrete project, sheet/book, workflow, server or marketplace cabinet (can change or be cancelled any minute)? → NOT_IN_SKILL; name the carrier (project/lab canon, passport, registry/, meta/CASES_*.md), check the fact is there, else move it. Platform/tool property true for any instance (n8n engine, Sheets, Telegram, git) is not specifics → go on. Rule also in meta/PROTOCOL_knowledge-synthesis.md «Чего в Skill не бывает».
 - Q1 edit only adds history (header history line, "entered on <date>", case story without new rule)? → NOT_ENTERED (history; address exists). Basis: Andrei decision 2 of 2026-10-18.
 - Q2 fixes a fact that a session violated after reading the item (text does not hold; e.g. \uXXXX)? → TO_CODE (workflow/script task, needs Andrei "yes"); Skill gets one line "device: …", no paragraph.
 - Q3 mechanism has a cluster in the Skill (meta/SKILLS_MAP.md or phrase grep over catalog)? → SYNTH_CLUSTER <name>; edit becomes a unit in step С3 table; new text's layer by trigger.
