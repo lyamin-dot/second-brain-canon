@@ -550,7 +550,7 @@ aa10976734cf6136810ef9b9e2d0b73028e7cd178bc9a2ee73a34d3eb32a67bf  second-brain-g
 | naryad | не начат | — |
 | avtopilot | не начат | — |
 | n8n-workflow-passport | не начат | — |
-| n8n-workflow-registry | идёт: разобран по носителям (не синтез кластеров: Skill целиком из особенностей экземпляра), от него остался маршрутизатор в зеркале `skills/n8n-workflow-registry/` (коммит 842e605), ждёт заливки zip (позиция AJ-30) — отчёт `meta/SYNTHESIS_n8n-workflow-registry_2026-10-21.md`; адреса этой карты вида `n8n-workflow-registry/<файл>:<строка>` ведут в текст на коммите b91fb1e | 2026-10-21 |
+| n8n-workflow-registry | готов: живой Skill совпал с зеркалом 2026-10-21 (`diff -rq` пуст, клон 000783e; позиция AJ-30 ВНЕСЕНО); прежнее: идёт: разобран по носителям (не синтез кластеров: Skill целиком из особенностей экземпляра), от него остался маршрутизатор в зеркале `skills/n8n-workflow-registry/` (коммит 842e605), ждёт заливки zip (позиция AJ-30) — отчёт `meta/SYNTHESIS_n8n-workflow-registry_2026-10-21.md`; адреса этой карты вида `n8n-workflow-registry/<файл>:<строка>` ведут в текст на коммите b91fb1e | 2026-10-21 |
 | context-handoff | не начат | — |
 | denken | не начат | — |
 
