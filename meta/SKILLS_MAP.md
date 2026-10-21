@@ -509,6 +509,7 @@ aa10976734cf6136810ef9b9e2d0b73028e7cd178bc9a2ee73a34d3eb32a67bf  second-brain-g
 Строк истории правок в шапках: 3 — `n8n-workflow-passport/SKILL.md:8`, `n8n-workflow-passport/SKILL.md:10`, `n8n-workflow-passport/SKILL.md:12`.
 
 ### 5.9 context-handoff
+Синтез 2026-10-21 (отчёт `meta/SYNTHESIS_context-handoff_2026-10-21.md`): копии заменены ссылками на дом; противоречия 3 и 7 раздела 3 сняты — эстафета пишет файл носителя по таблице раздела 0, запись в Google Docs идёт по якорю SENTINEL, не gdocs-append. Адреса строк ниже — текст на коммите 95d559b.
 1. Протокол записи (стоп-линия, конфликт, replace по якорю, обратное чтение) и repo-вариант через STATE.md — §2 п.1, 86, 93, 94; §3 п.3, 7 — `context-handoff/SKILL.md:121`–`context-handoff/SKILL.md:137`, `context-handoff/SKILL.md:162` — КОПИИ, ПРОТИВОРЕЧИЕ (§3 п.3, §3 п.7).
 2. Захваты до эстафеты, !save — §2 п.45 — `context-handoff/SKILL.md:125`, `context-handoff/SKILL.md:160` — КОПИИ.
 3. Метки Ф/Г и протухание — §2 п.30, 36 — `context-handoff/SKILL.md:107`, `context-handoff/SKILL.md:141`–`context-handoff/SKILL.md:145` — КОПИИ.
@@ -552,7 +553,7 @@ aa10976734cf6136810ef9b9e2d0b73028e7cd178bc9a2ee73a34d3eb32a67bf  second-brain-g
 | avtopilot | готов: живой Skill совпал с зеркалом 2026-10-21 (`diff -rq` пуст, клон 00e3c46, сверка сессии SYS 21:59; позиция AJ-6 ВНЕСЕНО); прежнее: идёт: синтез готов, текст в зеркале `skills/avtopilot/`, ждёт заливки zip (позиция AJ-6) — отчёт `meta/SYNTHESIS_avtopilot_2026-10-21.md`; адреса этой карты вида `avtopilot/SKILL.md:<строка>` ведут в текст на коммите f4f4a49 | 2026-10-21 |
 | n8n-workflow-passport | идёт: синтез готов, текст в зеркале `skills/n8n-workflow-passport/`, ждёт заливки zip (позиции AJ-33, AJ-34) — отчёт `meta/SYNTHESIS_n8n-workflow-passport_2026-10-21.md`; адреса этой карты вида `n8n-workflow-passport/SKILL.md:<строка>` ведут в текст на коммите 97b5eaa | 2026-10-21 |
 | n8n-workflow-registry | готов: живой Skill совпал с зеркалом 2026-10-21 (`diff -rq` пуст, клон 000783e; позиция AJ-30 ВНЕСЕНО); прежнее: идёт: разобран по носителям (не синтез кластеров: Skill целиком из особенностей экземпляра), от него остался маршрутизатор в зеркале `skills/n8n-workflow-registry/` (коммит 842e605), ждёт заливки zip (позиция AJ-30) — отчёт `meta/SYNTHESIS_n8n-workflow-registry_2026-10-21.md`; адреса этой карты вида `n8n-workflow-registry/<файл>:<строка>` ведут в текст на коммите b91fb1e | 2026-10-21 |
-| context-handoff | не начат | — |
+| context-handoff | идёт: синтез готов, текст в зеркале `skills/context-handoff/`, ждёт заливки zip (позиция AJ-8) — отчёт `meta/SYNTHESIS_context-handoff_2026-10-21.md`; адреса этой карты вида `context-handoff/SKILL.md:<строка>` ведут в текст на коммите 95d559b | 2026-10-21 |
 | denken | не начат | — |
 
 Примечание: google-drive-docs не входит в заданную первую четвёрку, но среди «остальных семи» по числу копий он первый; поэтому стоит пятым. Переставить ли его выше apps-script-sheets — решение Андрея (вопрос в §7).
