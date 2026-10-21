@@ -494,6 +494,7 @@ aa10976734cf6136810ef9b9e2d0b73028e7cd178bc9a2ee73a34d3eb32a67bf  second-brain-g
 Строк истории правок в шапках: 3 — `n8n-workflow-registry/SKILL.md:8`, `n8n-workflow-registry/SKILL.md:10`, `n8n-workflow-registry/SKILL.md:12` (плюс `n8n-workflow-registry/references/cards-and-declarations.md:5` «Внесено 2026-10-09 по харвесту»).
 
 ### 5.8 n8n-workflow-passport
+Синтез 2026-10-21 (отчёт `meta/SYNTHESIS_n8n-workflow-passport_2026-10-21.md`): кластеры 1–9 — копии заменены ссылками на дом, часть паспорта оставлена; кластер 10 — история свёрнута в строки основания. Адреса строк ниже — текст на коммите 97b5eaa.
 1. Снятие с публикации, Р-126 — §2 п.20, 21 — `n8n-workflow-passport/SKILL.md:142`–`n8n-workflow-passport/SKILL.md:158` — КОПИИ.
 2. Многострочный якорь, 2 КБ, apply-from-file, gdocs-append запрещён — §2 п.86, 87; §3 п.11 — `n8n-workflow-passport/SKILL.md:121`–`n8n-workflow-passport/SKILL.md:138` — КОПИИ.
 3. Поле credentials с 2026-10-08, имя ключа в паспорте — §2 п.64 — `n8n-workflow-passport/SKILL.md:28`–`n8n-workflow-passport/SKILL.md:30`, `n8n-workflow-passport/SKILL.md:198`–`n8n-workflow-passport/SKILL.md:204` — КОПИИ.
@@ -549,7 +550,7 @@ aa10976734cf6136810ef9b9e2d0b73028e7cd178bc9a2ee73a34d3eb32a67bf  second-brain-g
 | google-drive-docs | готов: живой Skill совпал с зеркалом 2026-10-21 (сверка сессии SYS, `diff -rq`); открыты вопросы 2–8 раздела «Ждёт Андрея» отчёта `meta/SYNTHESIS_google-drive-docs_2026-10-20.md`; ссылки этой карты вида `google-drive-docs/<файл>:<строка>` относятся к тексту на коммите 2573cb4 | 2026-10-21 |
 | naryad | готов: живой Skill совпал с зеркалом 2026-10-21 (diff -rq пуст, коммит 1d30fcb; позиция AJ-7 ВНЕСЕНО); прежнее: идёт: синтез готов, текст в зеркале `skills/naryad/`, ждёт заливки zip (позиция AJ-7) — отчёт `meta/SYNTHESIS_naryad_2026-10-21.md`; адреса этой карты вида `naryad/SKILL.md:<строка>` ведут в текст на коммите f4f4a49 | 2026-10-21 |
 | avtopilot | идёт: синтез готов, текст в зеркале `skills/avtopilot/`, ждёт заливки zip (позиция AJ-6) — отчёт `meta/SYNTHESIS_avtopilot_2026-10-21.md`; адреса этой карты вида `avtopilot/SKILL.md:<строка>` ведут в текст на коммите f4f4a49 | 2026-10-21 |
-| n8n-workflow-passport | не начат | — |
+| n8n-workflow-passport | идёт: синтез готов, текст в зеркале `skills/n8n-workflow-passport/`, ждёт заливки zip (позиции AJ-33, AJ-34) — отчёт `meta/SYNTHESIS_n8n-workflow-passport_2026-10-21.md`; адреса этой карты вида `n8n-workflow-passport/SKILL.md:<строка>` ведут в текст на коммите 97b5eaa | 2026-10-21 |
 | n8n-workflow-registry | готов: живой Skill совпал с зеркалом 2026-10-21 (`diff -rq` пуст, клон 000783e; позиция AJ-30 ВНЕСЕНО); прежнее: идёт: разобран по носителям (не синтез кластеров: Skill целиком из особенностей экземпляра), от него остался маршрутизатор в зеркале `skills/n8n-workflow-registry/` (коммит 842e605), ждёт заливки zip (позиция AJ-30) — отчёт `meta/SYNTHESIS_n8n-workflow-registry_2026-10-21.md`; адреса этой карты вида `n8n-workflow-registry/<файл>:<строка>` ведут в текст на коммите b91fb1e | 2026-10-21 |
 | context-handoff | не начат | — |
 | denken | не начат | — |

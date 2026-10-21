@@ -9,11 +9,13 @@ projects/knowledge-synthesis/STATE.md
 - Готовы и приняты по снимку: `second-brain-git`, `second-brain-engineer`, `n8n-engineering-manual`, `google-drive-docs`, `apps-script-sheets`, `n8n-workflow-registry` (раздел 6 `meta/SKILLS_MAP.md`). `n8n-workflow-registry` не синтезирован, а разобран по носителям: от Skill остался маршрутизатор, отчёт — `meta/SYNTHESIS_n8n-workflow-registry_2026-10-21.md`; живой Skill совпал с зеркалом 2026-10-21 (позиции Очереди AJ-30, AJ-27, AJ-29 — ВНЕСЕНО).
 - `naryad`: готов — синтез 2026-10-21, решения Андрея по спискам отчёта внесены (запись Р-4 `LOG.md`), живой Skill совпал с зеркалом `skills/naryad/` 2026-10-21 (`diff -rq` пуст, коммит 1d30fcb; позиция AJ-7 ВНЕСЕНО). Отчёт — `meta/SYNTHESIS_naryad_2026-10-21.md`.
 - `avtopilot`: синтез 2026-10-21 готов, текст в зеркале `skills/avtopilot/`, zip собран из зеркала после последнего коммита приёмки — ждёт заливки Андреем и приёмки по снимку (позиция AJ-6); отчёт — `meta/SYNTHESIS_avtopilot_2026-10-21.md`, два вопроса Андрею там же, раздел «Вопросы Андрею».
-- Не начаты: `n8n-workflow-passport`, `context-handoff`, `denken`.
+- `n8n-workflow-passport`: синтез 2026-10-21 готов, текст в зеркале `skills/n8n-workflow-passport/`, zip собран из зеркала после последнего коммита — ждёт заливки Андреем и приёмки по снимку (позиции AJ-33, AJ-34); отчёт — `meta/SYNTHESIS_n8n-workflow-passport_2026-10-21.md`.
+- `avtopilot`: после коммита cad58d9 зеркало отличается от живого Skill одной строкой (ссылка на `meta/CASES_avtopilot.md`) — нужна перезаливка zip из зеркала.
+- Не начаты: `context-handoff`, `denken`.
 
 ## Следующий шаг
 
-Приёмка заливки `avtopilot` по снимку: `diff -rq skills/avtopilot /mnt/skills/plugins/avtopilot` пуст → раздел 6 карты «готов», позиция AJ-6 — ВНЕСЕНО. Затем следующий Skill по разделу 6 карты — `n8n-workflow-passport` (слово «синтез каталога» или «синтез n8n-workflow-passport»).
+Приёмка заливок по снимку: `diff -rq skills/<имя> /mnt/skills/plugins/<имя>` пуст для `avtopilot` и `n8n-workflow-passport` → раздел 6 карты «готов», позиции AJ-6, AJ-33 и AJ-34 (часть о паспорте) — ВНЕСЕНО. Затем следующий Skill по разделу 6 карты — `context-handoff` (слово «синтез каталога» или «синтез context-handoff»).
 
 ## Ждёт Андрея
 
@@ -27,6 +29,7 @@ projects/knowledge-synthesis/STATE.md
 7. Разбор `n8n-workflow-registry`: списки «Предлагаю снять» и «Расширено» отчёта `meta/SYNTHESIS_n8n-workflow-registry_2026-10-21.md`; позиция AJ-27.
 8. Синтез `naryad`: открыто — (а) вычеркнуть ли «Drive-копию» из вопроса 7 пересмотра (`references/revision.md`); (б) подтвердить снятие прежнего вопроса 4 дерева ГДЕ (артефакт с нуля → Cowork, различение по автономности) — запись Р-4 `LOG.md`, поле «допущение»; (в) закрыть задачу `labs/sys/t-naryad-where-tree.md` — её условие снятия выполнено (новое дерево в живом Skill, принято по снимку), удаление файла — по «да» Андрея.
 9. Синтез `avtopilot`: раздел «Вопросы Андрею» отчёта `meta/SYNTHESIS_avtopilot_2026-10-21.md` — расширить ли правило о гипотезах приёмщика до любого субагента; список «Расширено» там же.
+10. Синтез `n8n-workflow-passport`: разделы «Расширено» и «Противоречия и вопросы Андрею» отчёта `meta/SYNTHESIS_n8n-workflow-passport_2026-10-21.md` — судьба вытесненной версии воркфлоу (паспорт против n8n-engineering-manual 2.5), «как вернуть» в строке снятия, место `DOCS_FOLDER`.
 Часть вопросов 2–6 закрыта ответами 2026-10-21 (`meta/ANSWERS_synthesis-questions_2026-10-21.md`, принято Андреем 10:09); открытое — сверять по этому файлу, а не по строкам выше.
 
 ## Ждёт отправки в git
