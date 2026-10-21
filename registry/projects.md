@@ -18,7 +18,7 @@ registry/projects.md
 | gas-bridge | projects/gas-bridge/ | repo | активен — заведён 2026-10-18 (Андрей, чат SYS; `projects/gas-bridge/LOG.md` Р-1): инструмент автономного чтения, правки и отката кода Apps Script книг через n8n; вес не назначен | |
 | sku-cost | projects/sku-cost/ | repo | закрыт 2026-10-18 — цель переопределена Андреем, преемник gas-bridge (`projects/gas-bridge/LOG.md` Р-1); до закрытия: активен, пробный — создан 2026-10-18 (Летопись без Claude Project; Андрей, чат Claude Code 2026-10-18; `projects/sku-cost/LOG.md` Р-1): код Apps Script книги sku_cost_Шаблон под clasp и git; статус книги после решения Андрея 2026-10-06 (книга заменяется, не сопровождается) ждёт его ответа — `projects/sku-cost/STATE.md` | |
 | deklaration-v2 | projects/deklaration-v2/ | repo | активен — заведён 2026-10-10 по слову Андрея (чат 2026-10-10; запись Р-1 журнала `projects/deklaration-v2/LOG.md`): перестройка контроля карточек и кодов четырёх магазинов; старая версия deklaration-ozon и deklaration-wb работает параллельно до переключения; вес 8 (Андрей, 2026-10-10) | |
-| knowledge-synthesis | projects/knowledge-synthesis/ | repo | активен — заведён 2026-10-21 по слову Андрея (чат SYS 2026-10-21) развёртыванием задачи лаборатории `labs/sys/t-knowledge-synthesis.md` по пункту 4б.7; запись Р-1 журнала `projects/knowledge-synthesis/LOG.md` | |
+| knowledge-synthesis | projects/knowledge-synthesis/ | repo | активен — заведён 2026-10-21 по слову Андрея (чат SYS 2026-10-21) развёртыванием задачи лаборатории `projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md` по пункту 4б.7; запись Р-1 журнала `projects/knowledge-synthesis/LOG.md` | |
 
 ## Лаборатории
 

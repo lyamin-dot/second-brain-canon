@@ -29,7 +29,7 @@ Output: meta/HARVEST_2026-10-18_verdicts.md — table: position | edit | decidin
 Heavy reading of *.json packets → one mid-class subagent per 2–3 skills, batched questions, evidence addresses required, NOT_FOUND allowed.
 
 ## Steps
-0. DONE (this session): this plan (RU+EN); protocol gets new step С4а (trigger→file) after С4; "when synthesis is mandatory" links valuation procedure; task labs/sys/t-knowledge-synthesis.md updated; INDEX row reduced to one line.
+0. DONE (this session): this plan (RU+EN); protocol gets new step С4а (trigger→file) after С4; "when synthesis is mandatory" links valuation procedure; task projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md updated; INDEX row reduced to one line.
 1. Valuation (new SYS chat) → verdicts file + queue statuses; Andrei gets Q5 rows only; heavy *.json reading → mid-class subagent, batched questions with evidence addresses.
 2. Layout of second-brain-engineer by script (session with open push): commit mirror skills/second-brain-engineer/ + zip. Acceptance by script: each non-empty source line exactly once in result files; section numbers unchanged; new table rows present.
 3. Andrei uploads zip. Check: live snapshot == mirror both ways (second-brain-git 2.6).

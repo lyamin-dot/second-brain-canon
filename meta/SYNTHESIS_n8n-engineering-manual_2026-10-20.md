@@ -2,7 +2,7 @@ meta/SYNTHESIS_n8n-engineering-manual_2026-10-20.md
 
 # Синтез Skill `n8n-engineering-manual` — отчёт прохода, 2026-10-20
 
-Проход по протоколу `meta/PROTOCOL_knowledge-synthesis.md`, автопилотом, по контракту в `labs/sys/t-knowledge-synthesis.md` (раздел «Синтез `n8n-engineering-manual` — контракт автопилота, 2026-10-20»; согласие Андрея 2026-10-20 16:19). Текст до синтеза — зеркало `skills/n8n-engineering-manual/` на коммите 2f2a173 (совпадало с живым Skill побайтно, `diff -rq` пуст). Новый текст — папка `meta/SYNTHESIS_n8n-engineering-manual_2026-10-20/new/`; в зеркало и zip он уходит после ответа Андрея о месте `INCIDENT_LOG.md` (раздел «Ждёт Андрея», пункт 1).
+Проход по протоколу `meta/PROTOCOL_knowledge-synthesis.md`, автопилотом, по контракту в `projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md` (раздел «Синтез `n8n-engineering-manual` — контракт автопилота, 2026-10-20»; согласие Андрея 2026-10-20 16:19). Текст до синтеза — зеркало `skills/n8n-engineering-manual/` на коммите 2f2a173 (совпадало с живым Skill побайтно, `diff -rq` пуст). Новый текст — папка `meta/SYNTHESIS_n8n-engineering-manual_2026-10-20/new/`; в зеркало и zip он уходит после ответа Андрея о месте `INCIDENT_LOG.md` (раздел «Ждёт Андрея», пункт 1).
 
 ## Итог в одном абзаце
 

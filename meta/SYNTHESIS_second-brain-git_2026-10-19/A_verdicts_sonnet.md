@@ -546,7 +546,7 @@ New text: ROOT/out/A/new/SKILL.md (47 542 B). Diff against round 0: round1_diff.
 | Quote of skills/README.md | FIXED. Now «направление потока — РЕПОЗИТОРИЙ → Customize. Правки Skill делаются в файлах этой папки»; verified in skills/README.md line 11, verbatim. The old quote «правка здесь, затем zip в Customize» was a paraphrase from the old map line, not from README. |
 | U35 | Accepted as СНЯТИЕ: «Превышение бюджета чтения — не отказ и не блок» stays in section 5; the rule «не повод для позиции в Очереди» is at old write.md 5.5(3) line 50 (group B). |
 | Pointer under the map to engineer Р13 paragraph | **Forward reference, not verifiable yet.** /mnt/skills/plugins/second-brain-engineer/SKILL.md has no paragraph «Правка Skill действует только после перезаливки» today; it exists only as proposed text in WRITER_REPORT (engineer edit 2, group B/П-2). Valid only if the owner adopts that edit. |
-| «Случаи без адреса» → meta/SYNTHESIS_second-brain-git_2026-10-19.md | **Forward reference.** File does not exist in the clone yet; labs/sys/t-knowledge-synthesis.md line 99 names it among the files this task may create. Valid if the section «Случаи без адреса» is written in it. Both cases ([РТ] 2026-09-24; live 01_Webhook call 2026-10-09) have no primary source in the clone (round 0). |
+| «Случаи без адреса» → meta/SYNTHESIS_second-brain-git_2026-10-19.md | **Forward reference.** File does not exist in the clone yet; projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md line 99 names it among the files this task may create. Valid if the section «Случаи без адреса» is written in it. Both cases ([РТ] 2026-09-24; live 01_Webhook call 2026-10-09) have no primary source in the clone (round 0). |
 
 ### (2) Did the diff lose anything round 0 preserved
 
@@ -574,7 +574,7 @@ Nothing else changed. No unit moved to ПОТЕРЯНО.
 | projects/archivarius/TRIAGE.md, section and subsection, points 1–3 | exist (lines 2545, 2553) |
 | AH-26, AH-28, commits 065370f, a832aac | exist (round 0) |
 | engineer SKILL.md, Р13, paragraph «Правка Skill действует только после перезаливки» | does not exist yet (proposed text only) |
-| meta/SYNTHESIS_second-brain-git_2026-10-19.md, «Случаи без адреса» | does not exist yet (permitted creation by labs/sys/t-knowledge-synthesis.md) |
+| meta/SYNTHESIS_second-brain-git_2026-10-19.md, «Случаи без адреса» | does not exist yet (permitted creation by projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md) |
 | projects/sku-cost/STATE.md, «Ждёт Андрея», пункт 3 | exists; says «Предложение», consistent with the new wording |
 | references/costs.md «4б» | not found in old costs.md |
 

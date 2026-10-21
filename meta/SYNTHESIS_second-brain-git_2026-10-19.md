@@ -2,7 +2,7 @@ meta/SYNTHESIS_second-brain-git_2026-10-19.md
 
 # Синтез Skill second-brain-git — отчёт прохода, 2026-10-19
 
-Первый Skill полного прохода по каталогу (раздел «Ход прохода» карты `meta/SKILLS_MAP.md`). Процедура — шаги С1–С7 `meta/PROTOCOL_knowledge-synthesis.md`; контракт автопилота — раздел «Синтез `second-brain-git` — контракт автопилота, 2026-10-19» задачи `labs/sys/t-knowledge-synthesis.md`. Текст до синтеза — зеркало `skills/second-brain-git/` на коммите 20ce00f (совпадал с живым Skill в Customize байт в байт на 2026-10-19). Новый текст — зеркало `skills/second-brain-git/` в коммите этого отчёта. Таблицы единиц, вердикты проверяющих, отчёты писателей и разности кругов правок — папка `meta/SYNTHESIS_second-brain-git_2026-10-19/` (префикс файла — группа: A, B, C).
+Первый Skill полного прохода по каталогу (раздел «Ход прохода» карты `meta/SKILLS_MAP.md`). Процедура — шаги С1–С7 `meta/PROTOCOL_knowledge-synthesis.md`; контракт автопилота — раздел «Синтез `second-brain-git` — контракт автопилота, 2026-10-19» задачи `projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md`. Текст до синтеза — зеркало `skills/second-brain-git/` на коммите 20ce00f (совпадал с живым Skill в Customize байт в байт на 2026-10-19). Новый текст — зеркало `skills/second-brain-git/` в коммите этого отчёта. Таблицы единиц, вердикты проверяющих, отчёты писателей и разности кругов правок — папка `meta/SYNTHESIS_second-brain-git_2026-10-19/` (префикс файла — группа: A, B, C).
 
 ## Итог
 

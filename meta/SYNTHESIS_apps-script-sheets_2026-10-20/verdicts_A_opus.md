@@ -334,7 +334,7 @@ No other untabled knowledge was found.
 
 ## 2. Расширено (the new text claims more than OLD + NEW units)
 
-1. Line 16: a general rule «в Skill не пишутся ID, листы, разделитель, пояс, контрольные числа конкретной книги» with carriers (registry/documents.md, n8n-map.md, tools.md). Backed by Andrei's decision 2026-10-20 (labs/sys/t-knowledge-synthesis.md:179, verified). New in the Skill, not a unit.
+1. Line 16: a general rule «в Skill не пишутся ID, листы, разделитель, пояс, контрольные числа конкретной книги» with carriers (registry/documents.md, n8n-map.md, tools.md). Backed by Andrei's decision 2026-10-20 (projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md:179, verified). New in the Skill, not a unit.
 2. Line 31 (§0.1): a new «Почему» (a formula on another sheet breaks silently or counts a wrong number) and a pointer to §3.1.
 3. Line 33 (§0.2): the separator is never taken «из записи в каноне». This widens N7 and follows from N10.
 4. Line 41: «справочная копия кода в Drive, сделанная раньше» is declared not live text. This can read as contradicting line 46, where the .gs backup in Drive is the path for books outside the table. Clarify: the copy is live only when Andrei made it for this task, after his last edit.

@@ -10,8 +10,8 @@ Method: every "live" claim checked by grep -n / Read on the live files. Observat
 | id | item | verdict | evidence | note |
 |---|---|---|---|---|
 | A-S1 | rule of the `[НОВОЕ 2026-09-07]` marker (+ marker in Р4 step 0) | KEEP | live S:16; r/onboarding.md:69 | Both still live. Marker means "awaiting Andrei's yes": removing it without his yes silently settles the rule. Remove both on his one-line yes (report item 7). |
-| A-S2 | "Назначен при раскладке 2026-10-20", "Файл выделен…", cut references | REMOVE_OK | grep "Назначен при раскладке\|Файл выделен\|нарезк" in live = 0 hits; baa077c; labs/sys/t-knowledge-synthesis.md:198 | History only; mechanism is in the rules themselves. |
-| A-S3 | header line "Редакция 2026-09-07 … с правками …" | REMOVE_OK | live S:8 has only "Редакция 2026-10-20."; labs/sys/t-knowledge-synthesis.md:40 (Andrei 2026-10-18 pt 2: history in headers not entered) | Owner decision exists. |
+| A-S2 | "Назначен при раскладке 2026-10-20", "Файл выделен…", cut references | REMOVE_OK | grep "Назначен при раскладке\|Файл выделен\|нарезк" in live = 0 hits; baa077c; projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md:198 | History only; mechanism is in the rules themselves. |
+| A-S3 | header line "Редакция 2026-09-07 … с правками …" | REMOVE_OK | live S:8 has only "Редакция 2026-10-20."; projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md:40 (Andrei 2026-10-18 pt 2: history in headers not entered) | Owner decision exists. |
 | B-S1 | history paragraphs in headers of save/harvest/start/commands/search/permissions/outside | REMOVE_OK | grep "Правка 20" in r/ = 0; baa077c | Active parts moved into body (r/save.md:11,28,29; r/outside.md:11). |
 | B-S2 | "Назначен при раскладке" at Р13 and Р18 triggers | REMOVE_OK | r/permissions.md:25,40 (no mark); t-knowledge-synthesis.md:198 | History. |
 | B-S3 | Р16 "однобуквенные префиксы A–Z исчерпаны 2026-09-24" | REMOVE_OK | still live r/outside.md:14; queue rows are visibly two-letter (registry/maintenance-queue.md:206 AJ-17); numbering rule: second-brain-git references/write.md:179 | Particular of one file (R-a), observable in the object. Still live: needs a removal edit. Optional: one line into queue header first. |
@@ -35,7 +35,7 @@ Ids: A-n = A report "Расширено" item n (11 listed last); A2-n = A "Ра
 
 | id | item | verdict | evidence | note |
 |---|---|---|---|---|
-| A-1 | Р6 trigger "Любой ответ, в разговоре которого появилось" | ACCEPT | live S:60; basis labs/sys/t-knowledge-synthesis.md:209 (retest finding), S:22 | Matches real firing area; scope by letter wider, by intent same. |
+| A-1 | Р6 trigger "Любой ответ, в разговоре которого появилось" | ACCEPT | live S:60; basis projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md:209 (retest finding), S:22 | Matches real firing area; scope by letter wider, by intent same. |
 | A-2 | Р6 common reason "next session reads canon, not chat" + sign for goal change | ACCEPT | S:72-73; r/outside.md:7 (same mechanism); case Р6.цель archive-recon LOG Р-13/Р-14 | True by construction. |
 | A-3 | neighbour fact written "тем же шагом", not at !save | ACCEPT | S:75; second-brain-git references/write.md:235 (10.6 already says it); meta/SKILLS_MAP_resolution_2026-10-19.md:54-57 | Removes a conflict between two Skills. Not Andrei's own word, but not a new duty. |
 | A-4 | Р0 reason for 3-Skill border | ACCEPT | S:50; baa077c prompt-craft.md journal entry 2026-10-06 | Reason, case-based. |

@@ -2,7 +2,7 @@ meta/SYNTHESIS_pilot_2026-10-18.md
 
 # Пилот синтеза знания — раздел Р15 Skill second-brain-engineer
 
-Первый прогон процедуры `meta/PROTOCOL_knowledge-synthesis.md`, 2026-10-18, сессия SYS (Аргус), автопилот; задача `labs/sys/t-knowledge-synthesis.md`.
+Первый прогон процедуры `meta/PROTOCOL_knowledge-synthesis.md`, 2026-10-18, сессия SYS (Аргус), автопилот; задача `projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md`.
 
 ## Что было на входе
 
@@ -43,7 +43,7 @@ meta/SYNTHESIS_pilot_2026-10-18.md
 
 ## Правка для Skill second-brain-engineer — полный текст «было → стало»
 
-Вносить после решения Андрея по пункту 0.4.1 CORE (задача `labs/sys/t-knowledge-synthesis.md`, «Ждёт Андрея», пункт 1): новый текст ссылается на него. Эта правка заменяет правки 0, 1, 2 и 9 файла `meta/HARVEST_2026-10-18_edits/second-brain-engineer.json` (находки А1, А5, Б11 в разделе Р15) — их отдельно не вносить. Правка 10 того же файла (копия А1 в `references/save.md`) остаётся отдельной.
+Вносить после решения Андрея по пункту 0.4.1 CORE (задача `projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md`, «Ждёт Андрея», пункт 1): новый текст ссылается на него. Эта правка заменяет правки 0, 1, 2 и 9 файла `meta/HARVEST_2026-10-18_edits/second-brain-engineer.json` (находки А1, А5, Б11 в разделе Р15) — их отдельно не вносить. Правка 10 того же файла (копия А1 в `references/save.md`) остаётся отдельной.
 
 Якорь: от строки «## Р15. Провенанс и верификация — единый стандарт» до строки перед «## Р16. Работа вне Claude Project и регистрация обязательств» файла `SKILL.md`.
 
