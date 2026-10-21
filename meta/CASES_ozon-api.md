@@ -4,7 +4,7 @@ meta/CASES_ozon-api.md
 
 Домен — поведение Ozon Seller API, верное для любого кабинета; читатель — сессия, которая строит или чинит воркфлоу, ходящий в Ozon. Правила записи и проверки — Skills `n8n-engineering-manual` (R4) и `second-brain-git`; здесь только факты API с адресами.
 
-Перенесено 2026-10-21 из Skill `n8n-workflow-registry` при разборе его по носителям (задача `labs/sys/t-knowledge-synthesis.md`, отчёт `meta/SYNTHESIS_n8n-workflow-registry_2026-10-21.md`); текст строк не правился, прежнее место — зеркало `skills/n8n-workflow-registry/` на коммите b91fb1e, SKILL.md, строки 115–139, и references/cards-and-declarations.md, строки 52–55. Пометка `[снимок ДД.ММ]` значит «сверено со строкой registry/n8n-map.md на эту дату», `[владелец ДД.ММ]` — «со слов Андрея»; строка без пометки набита руками и могла устареть.
+Перенесено 2026-10-21 из Skill `n8n-workflow-registry` при разборе его по носителям (задача `labs/sys/t-knowledge-synthesis.md`, отчёт `meta/SYNTHESIS_n8n-workflow-registry_2026-10-21.md`); текст строк не правился, прежнее место — зеркало `skills/n8n-workflow-registry/` на коммите b91fb1e, SKILL.md, строки 115, 116, 119–127, 130–134, 138, 139, и references/cards-and-declarations.md, строки 50, 52, 54, 55; остальные строки тех же разделов лежат у других носителей — перечень в отчёте. Пометка `[снимок ДД.ММ]` значит «сверено со строкой registry/n8n-map.md на эту дату», `[владелец ДД.ММ]` — «со слов Андрея»; строка без пометки набита руками и могла устареть.
 
 Ссылки строк ниже на подраздел «Внешние источники» и на «SKILL.md, «Внешние источники»» ведут теперь в `meta/CASES_external-access.md`.
 
