@@ -9,10 +9,10 @@ projects/knowledge-synthesis/STATE.md
 - Готовы и приняты по снимку: `second-brain-git`, `second-brain-engineer`, `n8n-engineering-manual`, `google-drive-docs`, `apps-script-sheets`, `n8n-workflow-registry` (раздел 6 `meta/SKILLS_MAP.md`). `n8n-workflow-registry` не синтезирован, а разобран по носителям: от Skill остался маршрутизатор, отчёт — `meta/SYNTHESIS_n8n-workflow-registry_2026-10-21.md`; живой Skill совпал с зеркалом 2026-10-21 (позиции Очереди AJ-30, AJ-27, AJ-29 — ВНЕСЕНО).
 - `naryad`: готов — синтез 2026-10-21, решения Андрея по спискам отчёта внесены (запись Р-4 `LOG.md`), живой Skill совпал с зеркалом `skills/naryad/` 2026-10-21 (`diff -rq` пуст, коммит 1d30fcb; позиция AJ-7 ВНЕСЕНО). Отчёт — `meta/SYNTHESIS_naryad_2026-10-21.md`.
 - `avtopilot`: синтез 2026-10-21 готов, текст в зеркале `skills/avtopilot/`, zip собран из зеркала после последнего коммита приёмки — ждёт заливки Андреем и приёмки по снимку (позиция AJ-6); отчёт — `meta/SYNTHESIS_avtopilot_2026-10-21.md`, два вопроса Андрею там же, раздел «Вопросы Андрею».
-- `n8n-workflow-passport`: синтез 2026-10-21 готов, текст в зеркале `skills/n8n-workflow-passport/`, zip собран из зеркала после последнего коммита — ждёт заливки Андреем и приёмки по снимку (позиции AJ-33, AJ-34); отчёт — `meta/SYNTHESIS_n8n-workflow-passport_2026-10-21.md`.
+- `n8n-workflow-passport`: готов — живой Skill совпал с зеркалом 2026-10-21 22:35 (позиции AJ-33, AJ-34 — часть о паспорте ВНЕСЕНО).
 - `avtopilot`: готов — живой Skill совпал с зеркалом 2026-10-21 21:59 (позиция AJ-6 ВНЕСЕНО).
 - `context-handoff`: синтез 2026-10-21 готов, текст в зеркале `skills/context-handoff/`, zip собран из зеркала — ждёт заливки и приёмки по снимку (позиция AJ-8); отчёт — `meta/SYNTHESIS_context-handoff_2026-10-21.md`; копии в других Skills — позиция AJ-35.
-- Не начат: `denken`.
+- `denken`: синтез идёт с 2026-10-21 22:36 — контракт в `PLAN.md`.
 
 ## Следующий шаг
 
