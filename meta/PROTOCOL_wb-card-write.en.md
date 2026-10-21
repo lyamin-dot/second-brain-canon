@@ -9,15 +9,15 @@ Human version (RU, authoritative wording): meta/PROTOCOL_wb-card-write.md. Edit 
 - decl date_to | 15001138 | same sheet .date_to; NEVER write an expired decl
 - tnved | 15000001 | from declaration extract; per-SKU reference = Price Master ARTIKEL_PROPS col N tnved_decl (col O tnved_decl_src = origin or why empty; LOG R-13). Empty -> no reference -> do not touch. Col C tnved = main-cabinet card value, NOT reference
 - okpd2 | 15004292 | documents only (decl extract, Natl. catalog, importer). Analogy ban temporarily lifted 2026-10-09 ONLY for 11 IP autochem cards (R-12); any other card -> ask Andrei. 2026-10-10 Andrei also allowed okpd2 20.59.41.000 for 1345 and 1745 (manual KIZ; experiment, outcome in LOG R-16)
-- kizMarked | card field | seller's legal statement; set only on Andrei's explicit word for named cards
-- needKiz | card field | FIXED 2026-10-17 (R-21; meta/CASES_wb-api-card-write.en.md cases 3, 4): MUST be sent in every write, default = card value; omitted -> WB drops needKiz and kizMarked. okpd2 does not switch it on via API (19.20.29.170 didn't); manual UI tick switches it on, sent needKiz:true keeps it. Both write tools and both WB Sync robots send it since 2026-10-17. Reference = MAIN cabinet need_kiz (hand-checked)
+- kizMarked | card field | seller's legal statement; since 2026-10-21 (projects/deklaration-v2/LOG.md R-39 p.9) equals MAIN cabinet need_kiz in both WB cabinets (before: only on Andrei's explicit word for named cards)
+- needKiz | card field | FIXED 2026-10-17 (R-21; meta/CASES_wb-api-card-write.en.md cases 3, 4): MUST be sent in every write, = MAIN cabinet need_kiz since 2026-10-21 (R-39 p.10; before: card value); omitted -> WB drops needKiz and kizMarked. okpd2 does not switch it on via API (19.20.29.170 didn't); manual UI tick switches it on, sent needKiz:true keeps it. Both write tools and both WB Sync robots send it since 2026-10-17. Reference = MAIN cabinet need_kiz (hand-checked)
 - Current cabinet values are NOT truth. Never copy main -> IP.
 
 ## READ STATE
 - WB_Cards_Staging (main, robot fGHfVrI58Ws1wfTw 04:10 MSK), WB_Cards_Staging_IP (IP, robot vIteQxGrqI7kLkb0 04:25 MSK), WB_Compare (formulas). Rules: meta/PRODUCT_DATA_HIERARCHY.md 4б, 4в.
 
 ## TOOLS (IP cabinet only; no batch tool for main yet)
-- nIRKnhKyI5LibFW3 batch. 01_Params: mode 'проверка'|'запись', chunk=10, kizMarked, D{key:[no,from,to]}, rows[[nmID,sku,grp,full decl no,date_from DD.MM.YYYY,date_to DD.MM.YYYY,okpd2?]] (kizMarked null = card value passed as is; writes chars 15001135/37/38 and 15004292 only if okpd2 given; never tnved). Reads whole cabinet, keeps other chars, POST /content/v2/cards/update in chunks, 7 s apart. 04_Gate_Zapis ONLY=[n..] re-sends chosen chunks. Output: 03_Build.report (before->after), problems; 06_Report per-chunk status.
+- nIRKnhKyI5LibFW3 batch. 01_Params: mode 'проверка'|'запись', chunk=10, kizMarked, D{key:[no,from,to]}, rows[[nmID,sku,grp,full decl no,date_from DD.MM.YYYY,date_to DD.MM.YYYY,okpd2?]] (kizMarked null = card value passed as is — conflicts with rule R-39 of 2026-10-21, tool change pending Andrei's yes; writes chars 15001135/37/38 and 15004292 only if okpd2 given; never tnved). Reads whole cabinet, keeps other chars, POST /content/v2/cards/update in chunks, 7 s apart. 04_Gate_Zapis ONLY=[n..] re-sends chosen chunks. Output: 03_Build.report (before->after), problems; 06_Report per-chunk status.
 - 4dWCd1l1QiUQBPQQ single card. 01_Params: mode, nmID, set{charId:[vals]}, kizMarked. Waits 45 s, diffs.
 - Keys: write «WB Kontent_ИП_Wr» OBHpKT8vPkAzVjH9; read WB_Контент_ИП_R.
 
