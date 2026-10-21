@@ -1,0 +1,98 @@
+id	verdict	address	quote	note
+U392	NOT_FOUND			terms: "Карточки товаров и декларации", "cards-and-declarations" (only pointers to the old Skill file in v2 PLAN, prompts/deklaration-v2.md, roots.md); title itself has no carrier
+U393	NOT_FOUND			terms: "Спутник раздела 3", "cards-and-declarations" ; structural link to old SKILL.md section 3 not stated anywhere else
+U394	PARTIAL	meta/prompts/deklaration-v2.md:66	meta/PROTOCOL_wb-card-write.md — before any WB card work	read-before-write rule exists for WB card work (and cases file line); nothing for Ozon card write or declarations via API except pointer to the old Skill
+U395	NOT_FOUND			terms: "только факты внешних API", "установленные исполнениями", "не пересказывается"; scope statement of the old file has no other carrier
+U396	FOUND	meta/CASES_wb-api-card-write.md:5	Порядок работы с карточками в проекте деклараций — `meta/PROTOCOL_wb-card-write	CASES header points to PROTOCOL as the full WB card procedure
+U397	NOT_FOUND			terms: "Каждый факт несёт адрес", "несёт адрес"; no carrier for this convention
+U399	FOUND	meta/CASES_wb-api-card-write.md:11	Ответ 200 с пустой ошибкой означает «принято в обработку», а не «применено»	also prompts/deklaration-v2.md rule 6 "A 200 response is not acceptance"
+U400	FOUND	meta/CASES_wb-api-card-write.md:37	WB отвечает 200, ошибок нет, updatedAt карточки меняется	CASES case 1; document stays old
+U401	JOURNAL_ONLY	projects/deklaration-ozon/LOG.md:295	ответ 200, updatedAt меняется, cards/error/list пуст, документ в карточке пре	journal entry Т-7 (2026-10-05): cards 1923; 1345,1745; 1753,1788,1911 = six cards; no non-journal carrier for the 2026-10-05 case (CASES case 1 has other cards and dates 10.10/17.10)
+U402	JOURNAL_ONLY	projects/deklaration-ozon/LOG.md:294	Т-7 | 2026-10-05 | записать декларацию в карточку WB	Т-7 only in journal
+U403	FOUND	meta/CASES_wb-api-card-write.md:126	через 45 секунд — чтение карточки и списка ошибок; сравнение поле за полем	CASES verification procedure step 2: read card + read error list; prompts rule 6 describes the same two steps
+U404	FOUND	meta/CASES_wb-api-card-write.md:126	через 45 секунд — чтение карточки и списка ошибок; сравнение поле за полем	re-read card and compare field by field; endpoint get/cards/list in CASES header
+U405	FOUND	projects/deklaration-wb/PLAN.md:35	(тело `{cursor:{limit:100},order:{ascending:false}}`	same body; written without leading slash
+U406	FOUND	projects/deklaration-wb/PLAN.md:35	GET даёт 405	
+U407	FOUND	projects/deklaration-wb/PLAN.md:35	записи по пакетам и vendorCode, nmID нет	
+U408	FOUND	projects/deklaration-wb/PLAN.md:35	- Факты записи (`projects/deklaration-ozon/LOG.md` Р-30)	the paragraph "Факты записи" exists in PLAN (address target intact)
+U409	FOUND	projects/deklaration-wb/PLAN.md:35	WB отклоняет всю склейку (imtID), если в ней есть карточка с ошибкой	also card-content-sync PLAN; v2 PLAN section "Справочник фактов API" item 4 says this is an inference from error texts, not a proven rule
+U410	PARTIAL	projects/card-content-sync/PLAN.md:101	Описание принадлежит карточке (nmID), а не склейке (imtID)	imtID as merge group is implied (47 groups, 39 with several cards); no explicit definition "common imtID"
+U411	FOUND	projects/deklaration-wb/PLAN.md:35	WB отклоняет всю склейку (imtID), если в ней есть карточка с ошибкой	v2 PLAN item 4: later 15 cards of same group were written despite the defect (Р-35), so "no card of the group written" is not proven
+U412	FOUND	projects/deklaration-wb/PLAN.md:35	- Факты записи (`projects/deklaration-ozon/LOG.md` Р-30)	same address Р-30
+U413	FOUND	meta/CASES_wb-api-card-write.md:12	cards/update заменяет карточку целиком	also wb PLAN line "Ловушка записи"
+U414	FOUND	projects/deklaration-wb/PLAN.md:32	Запись только чтение → правка → запись: карточка из свежего чтения того же	scheme read fresh -> edit -> send whole
+U415	FOUND	projects/deklaration-wb/PLAN.md:32	Узел перед отправкой сравнивает отправляемое с прочитанным	
+U416	FOUND	projects/deklaration-wb/PLAN.md:32	- Ловушка записи (по документации Content API	paragraph "Ловушка записи" exists
+U417	FOUND	meta/prompts/deklaration-v2.md:30	kizMarked not sent becomes false	carrier: rule 4 of prompt; but the instruction "pass the current value from the read" is superseded: since 2026-10-21 needKiz and kizMarked are sent equal to main-cabinet "Нужен КИЗ" (PROTOCOL section 1)
+U418	PARTIAL	projects/n8n/INCIDENT_LOG.md:54	по пункту 3 записи Р-44 журнала projects/deklaration-ozon/LOG.md	Р-44 is cited by INCIDENT_LOG only for another point; the kizMarked-default fact itself is in prompts/deklaration-v2.md rule 4 without Р-44 address
+U419	CONTRADICTED	meta/CASES_wb-api-card-write.md:80	Ложный диагноз «WB применяет запись с задержкой в часы»	CASES case 7 and PROTOCOL step 7 call the "delay in hours" diagnosis false; note STATE of deklaration-wb line "Запись в карточки WB ИП РАБОТАЕТ, но с задержкой в часы" still carries the old claim
+U420	CONTRADICTED	meta/CASES_wb-api-card-write.md:86	если через 45 секунд в documents нет нового документа	CASES case 7: rest of line "— запись не применилась, ждать не нужно, искать причину"; Skill says reads at 45 s / 4 min showing old card is not a failure. Part "200 = accepted for processing" is consistent (CASES rule 1)
+U421	FOUND	meta/CASES_wb-api-card-write.md:128	На следующий день после ночного робота — повторная сверка по листу карточек	the next-day check after the night robot is kept (also PROTOCOL step 7), but the reason "delay in hours" is refuted (case 7); next-day check now = hold-check, not wait-for-application
+U422	FOUND	meta/CASES_wb-api-card-write.md:83	Ошибочный вывод (журнал Р-11, пункт 5)	address Р-11 item 5 is cited by CASES case 7 as the source of the (refuted) conclusion
+U424	FOUND	projects/deklaration-wb/STATE.md:115	утренний вывод «молча отбрасывает» из Р-9 и Р-10 отменён	same line has "На 15:12 UTC 09.10 полностью исправлена 212515921"; the line is stale in that it still asserts delay in hours
+U425	FOUND	meta/PROTOCOL_wb-card-write.md:43	Ответ 400 или 500 «Internal server error» бывает случайно	retry only failed chunks via ONLY
+U426	PARTIAL	meta/PROTOCOL_wb-card-write.md:5	записи Р-7, Р-11, Р-12, Р-14, Р-15, Р-16	Р-12 cited as a decision source; item/point 6 not cited; the random 400/500 fact itself is at PROTOCOL step 5
+U427	FOUND	meta/PROTOCOL_wb-card-write.md:53	Значения характеристик передаются массивом строк	
+U428	FOUND	meta/PROTOCOL_wb-card-write.md:53	["3403990000"], ["01.06.2026"]	fact is in PROTOCOL section 5 (Ловушки) itself
+U429	FOUND	projects/card-content-sync/PLAN.md:100	предел поля у WB — 2 000 символов	also PLAN: paragraphs separated by \n (LF), no HTML; Ozon <br/> in card-content-sync STATE
+U430	FOUND	projects/card-content-sync/PLAN.md:139	(`LOG.md` Р-5)	card-content-sync PLAN cites Р-5 for the same probe 75203 facts
+U431	FOUND	projects/deklaration-wb/PLAN.md:27	характеристики 15001135 «Номер декларации соответствия»	same line has 15001136 номер сертификата, 15001137, 15001138 (names slightly differ: «Дата регистрации сертификата/декларации»)
+U432	FOUND	projects/deklaration-wb/PLAN.md:27	Поля для ссылки на реестр нет	
+U433	PARTIAL	projects/deklaration-wb/PLAN.md:27	(`verdict.reason`, `overallVerdict`)	block documents with WB verdict named; items structure {type, number, startDate, endDate, isEndless} in CASES sample body; verdict{verified,status} not stated
+U434	FOUND	projects/deklaration-wb/PLAN.md:27	Поле карточки `documents` держит документ с вердиктом сверки WB	"его WB заполняет сам"
+U435	FOUND	projects/deklaration-wb/PLAN.md:27	(прогон 73747, 2026-10-02, `projects/deklaration-ozon/LOG.md` Р-21)	
+U436	FOUND	meta/PROTOCOL_wb-card-write.md:52	создаёт документ заново (новый id)	
+U437	FOUND	meta/PROTOCOL_wb-card-write.md:52	может смениться на ok через несколько часов	
+U438	FOUND	projects/deklaration-wb/PLAN.md:35	расхождение даёт «document_dates_mismatch»	
+U439	PARTIAL	/mnt/skills/plugins/n8n-engineering-manual/references/engine.md:125	Даты из внешних источников разбирать явно, по всем встреченным форматам	general rule present; missing: "unknown date = error with signal, not empty value" (engine.md says unknown format gives Invalid Date silently); CASES case 6 says empty date is a parser error to fix at the source
+U440	FOUND	meta/PRODUCT_DATA_HIERARCHY.md:54	ММ-ДД-ГГ (01-27-27 = 27.01.2027)	
+U441	FOUND	meta/PRODUCT_DATA_HIERARCHY.md:54	ММ-ДД-ГГ (01-27-27 = 27.01.2027)	line is in section 4 of the file
+U442	FOUND	projects/deklaration-wb/STATE.md:117	разбор дат ММ-ДД-ГГ в 06_Build исправлен	fix is in draft ea873ad4 (not published) per same line
+U443	FOUND	projects/deklaration-wb/PLAN.md:27	(необязательные, строка, одно значение, даты ДД.ММ.ГГГГ)	probe 73747 of 2026-10-02
+U444	PARTIAL	meta/CASES_wb-api-card-write.md:46	даты в блоке documents принимаются только в формате RFC3339 со временем	format YYYY-MM-DDT00:00:00Z present; missing: that this is how dates ARRIVE in documents, and the node 03_Build_Rows of workflow fGHfVrI58Ws1wfTw as source
+U445	FOUND	projects/deklaration-wb/STATE.md:117	в основном WB Sync такой разбор уже есть (три формата дат)	
+U446	PARTIAL	meta/CASES_wb-api-card-write.md:104	при чтении через API может не приходить	carrier hedges ("may not come"); Skill states it flatly; INCIDENT_LOG says "был ли он заполнен до записи, не установлено"
+U447	CONTRADICTED	meta/PROTOCOL_wb-card-write.md:50	версия «стёрт ОКПД 2, введённый в кабинете» не доказана	PROTOCOL section 5: likely mechanism is omitted needKiz; v2 PLAN also says the Skill claim is unproven
+U448	PARTIAL	projects/deklaration-wb/STATE.md:35	Для предметов «Автохимия» и «Смазки автомобильные» WB требует КИЗ только при	missing: that WB clears needKiz and kizMarked together with OKPD2 loss; CASES case 3/4 attribute the loss to omitted needKiz
+U449	PARTIAL	projects/n8n/INCIDENT_LOG.md:53	повторная запись kizMarked=true не помогла	fact present; cause "without OKPD2" not stated; CASES case 3 says kizMarked is refused while needKiz=false
+U450	FOUND	projects/n8n/INCIDENT_LOG.md:53	у 29 карточек основного кабинета флаги КИЗ стали false	also WBST line "29 карточек теряли КИЗ после наших записей"; cause differs (omitted needKiz likely)
+U451	PARTIAL	projects/n8n/INCIDENT_LOG.md:54	по пункту 3 записи Р-44 журнала projects/deklaration-ozon/LOG.md	Р-44 cited for another point; Т-9 not cited outside journals
+U452	FOUND	meta/CASES_wb-api-card-write.md:104	ОКПД 2, записанный через API, при чтении приходит (1745, 1928)	prompts/deklaration-v2.md rule 4: "survives the next write"
+U453	FOUND	meta/PROTOCOL_wb-card-write.md:5	записи Р-7, Р-11, Р-12, Р-14, Р-15, Р-16	deklaration-wb LOG entries Р-7 and Р-11 cited
+U454	NOT_FOUND			terms: directory/tnved, isKiz, "по паре", "предмет + ТН ВЭД"; only pointer in v2 PLAN to the old Skill and RES-005 line 46 "справочнику WB (isKiz по ТН ВЭД)" (partial: no path, no subject+TNVED pair) ; journal deklaration-ozon/LOG.md:374 has it
+U455	PARTIAL	projects/deklaration-wb/STATE.md:35	из перечня постановления № 1683	decree 1683 and its link to OKPD2 present; date 30.11.2024 not stated outside journals
+U456	PARTIAL	projects/n8n/INCIDENT_LOG.md:54	по пункту 3 записи Р-44 журнала projects/deklaration-ozon/LOG.md	Р-44 cited, point 3 not 2
+U457	NOT_FOUND			terms: directory/okpd, "Справочник ОКПД 2", "api/content/v2/directory"; no hits anywhere (journals too)
+U458	NOT_FOUND			terms: AH-25, "не подтверждено"; AH-25 only in excluded files (registry/maintenance-queue.md, harvest edits, old Skill)
+U459	CONTRADICTED	projects/deklaration-v2/PLAN.md:314	строка «`needKiz` … только чтение»	v2 PLAN says the Skill row is refuted by cases; CASES case 3 and PROTOCOL section 1: needKiz must be sent in every write, WB recomputes it if omitted
+U460	PARTIAL	meta/PROTOCOL_wb-card-write.md:17	Включить признак через API по коду ОКПД 2 нельзя	manual staff checkbox turning it on is present; but carrier says it cannot be enabled via API even with OKPD2 (Skill: only "without OKPD2")
+U461	PARTIAL	meta/PROTOCOL_wb-card-write.md:16	Это заявление продавца по закону о маркировке	legal-statement nature present; "289-ФЗ" not given (RES-005 uses 289-ФЗ for the platform-economy law)
+U462	CONTRADICTED	meta/prompts/deklaration-v2.md:29	The old rule «kizMarked only on Andrei's word for named cards» is cancelled	PROTOCOL section 1: since 2026-10-21 kizMarked equals main-cabinet "Нужен КИЗ"; before that only on direct word
+U463	PARTIAL	meta/PROTOCOL_wb-card-write.md:5	записи Р-7, Р-11, Р-12, Р-14, Р-15, Р-16	Р-7 cited generally; the «отвергнуто» point not; PROTOCOL section 1 line on kizMarked exists
+U464	FOUND	meta/prompts/deklaration-v2.md:30	registration lifts the block, a write does not	also CASES case 11 and PROTOCOL section 5
+U465	PARTIAL	meta/PROTOCOL_wb-card-write.md:5	записи Р-7, Р-11, Р-12, Р-14, Р-15, Р-16	Р-7 cited, point 3 not; the fact (registration lifts the block) is in prompts rule 4
+U466	FOUND	projects/deklaration-ozon/PLAN.md:35	POST /v2/product/certificate/create одним вызовом, товары передаются списком	
+U467	FOUND	projects/deklaration-ozon/PLAN.md:35	метод /v1/product/certificate/create отключён Ozon 2026-08-31 (вызов даёт 404)	
+U468	FOUND	projects/deklaration-ozon/PLAN.md:35	Факты API Ozon (по записи лаборатории от 2026-10-01	paragraph exists
+U469	FOUND	projects/deklaration-ozon/PLAN.md:35	для типа DECLARATION стандарт — только NATIONAL или EAEU	
+U470	FOUND	projects/deklaration-v2/PLAN.md:326	Проверка Ozon ошибку не ловит: EAEU для РОСС входит в допустимые значения	
+U471	FOUND	projects/deklaration-v2/PLAN.md:326	Проверка Ozon ошибку не ловит: EAEU для РОСС входит в допустимые значения	
+U472	FOUND	projects/deklaration-v2/PLAN.md:326	(`projects/deklaration-ozon/LOG.md` Р-16, Т-5)	
+U473	FOUND	projects/deklaration-v2/PLAN.md:326	Стандарт декларации выводится из номера	also OZPLAN: узел 11A_Build_Params выбирает по номеру
+U474	FOUND	projects/deklaration-ozon/PLAN.md:35	v1 этого метода отвечает 400 «obsolete method cannot be used»	
+U475	FOUND	projects/deklaration-ozon/PLAN.md:35	page_size у /v1/product/certificate/list не больше 100	
+U476	JOURNAL_ONLY	projects/deklaration-ozon/LOG.md:114	limit от 1 до 1000; page_size не годится	only deklaration-ozon/LOG.md (probe entry near Т-4)
+U477	PARTIAL	projects/deklaration-v2/PLAN.md:293	причину отказа API не отдаёт вовсе	fields product_id, sku, product_status_code: only product_status_code named; journal LOG.md has full list
+U478	FOUND	projects/deklaration-ozon/PLAN.md:35	причину отказа API не отдаёт (`LOG.md` Т-4)	address Т-4 cited in PLAN
+U479	FOUND	projects/deklaration-ozon/PLAN.md:35	/v2/product/info/list в API нет (есть /v3)	
+U480	FOUND	meta/prompts/deklaration-v2.md:32	an «approved» document can still have products under check for about 10 days	OZPLAN: "Ozon проверяет каждый товар отдельно"
+U481	FOUND	projects/deklaration-ozon/PLAN.md:35	режим «статус»	
+U482	JOURNAL_ONLY	projects/deklaration-ozon/LOG.md:300	Р-36 | В СИЛЕ | 2026-10-05 | РОСС 20237/26 в Ozon	Р-36 only in journal
+U483	FOUND	projects/deklaration-ozon/PLAN.md:35	фильтруют статус документа, а не товаров	
+U484	FOUND	projects/deklaration-ozon/PLAN.md:35	зависание видно только по колонке «Одобрено товаров»	
+U485	FOUND	projects/deklaration-ozon/PLAN.md:35	Факты API Ozon (по записи лаборатории от 2026-10-01	address PLAN.md paragraph exists
+U486	PARTIAL	projects/deklaration-ozon/PLAN.md:35	прежняя сессия прочитала полный swagger.json на docs.ozon.ru в браузере	swagger read in browser 2026-10-01 present; "проверены вызовами" missing, line says "в этой сессии не перепроверялось"
+U487	PARTIAL	projects/card-content-sync/PLAN.md:113	Документация Ozon Seller API не прочитана и сервером n8n	server read of docs.ozon.ru timed out; no explicit statement that session cannot read it; journal LOG.md has proxy 403
+U488	FOUND	projects/card-content-sync/PLAN.md:83	Ozon /v4/product/info/attributes, visibility ALL, limit 1 000	attribute 4191 batch read in card-content-sync STATE: "описание Ozon — атрибут 4191, читается пакетно"
+U489	FOUND	projects/card-content-sync/PLAN.md:141	теги `<br/>` заменены на LF	
+U490	FOUND	projects/card-content-sync/PLAN.md:139	(`LOG.md` Р-5)	

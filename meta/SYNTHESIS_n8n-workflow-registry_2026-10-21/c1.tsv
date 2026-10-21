@@ -1,0 +1,173 @@
+id	verdict	address	quote	note
+U001	FOUND	skills/n8n-workflow-passport/SKILL.md:25	формулы ключей | n8n-workflow-registry	Skill name used as the address of book IDs/API specifics in the passport Skill
+U002	PARTIAL	skills/n8n-workflow-passport/SKILL.md:25	ID книг Sheets, специфика внешних API, формулы ключей | n8n-workflow-registry	scope named (book IDs, API specifics, key formulas); missing: "not derivable from elsewhere" framing, pgvector, workflow traps, Liqui Moly
+U003	FOUND	skills/n8n-engineering-manual/SKILL.md:166	Живой состав воркфлоу: ID, имя, статус, черновик, расписание, таймзона, вызовы, документы, типы credential	roster is outside the registry Skill (here: manual says it lives in n8n-map.md)
+U004	FOUND	skills/n8n-engineering-manual/SKILL.md:166	`registry/n8n-map.md` репозитория second-brain-canon	
+U005	NOT_FOUND			terms: "ТОЛЬКО когда нужна", "читать только", "по вопросу"; only the old skill description (manifest.json) says it
+U006	FOUND	skills/n8n-engineering-manual/references/roots.md:290	`references/cards-and-declarations.md`	roots.md R18 names the cards file as home of WB card-write facts; Ozon declarations not named
+U007	NOT_FOUND			terms: "cards-and-declarations", "перед такой записью", "читаются перед"; no read-before-write instruction found outside old skill
+U008	FOUND	skills/n8n-engineering-manual/SKILL.md:3	ЧИТАЙ ПЕРЕД ЛЮБОЙ РАБОТОЙ С n8n	manual front matter says read before any n8n work; passport Skill row also routes n8n mechanics to manual
+U009	NOT_FOUND			title only; no carrier
+U035	NOT_FOUND			terms: "нашёл строку, забрал деталь", "Вход по вопросу"
+U036	NOT_FOUND			terms: "[снимок", "снимок ДД.ММ" - marker legend only in old skill
+U037	NOT_FOUND			terms: "[владелец", "со слов Андрея" - marker legend
+U038	NOT_FOUND			terms: "БЕЗ пометки", "набита руками"
+U039	NOT_FOUND			terms: "непомеченная строка", "никто об этом не узнает"
+U040	PARTIAL	skills/n8n-engineering-manual/SKILL.md:95	**Факт об экземпляре — с экземпляра, в момент использования.**	same principle (do not store instance facts in text) for instance address/version/tz; not for derivable workflow facts in registry
+U041	NOT_FOUND			terms: "перед записью в карточку", "cards-and-declarations", "методы деклараций Ozon"
+U042	NOT_FOUND			terms: "Остальное — в этом файле"
+U043	PARTIAL	skills/n8n-engineering-manual/SKILL.md:16	ПОДТВЕРЖДЕНИЕ ПОСЛЕ ПРОЧТЕНИЯ: номер пункта	same read-confirmation rule exists for manual (section number + literal quote); not for the registry Skill (name found detail and its marker)
+U044	PARTIAL	skills/n8n-engineering-manual/SKILL.md:16	Фиксированная фраза подтверждением не считается	same sentence in the manual and passport Skill; scope is another Skill
+U045	PARTIAL	skills/n8n-workflow-passport/SKILL.md:56	доказывает, что файл открыт, а не что в нём что-то прочитано	same reasoning in passport Skill; scope is another Skill
+U046	NOT_FOUND			terms: "Чего здесь нет"; manual §10 "Что в этом Skill не живёт" is the analogue table for another Skill
+U047	FOUND	skills/n8n-engineering-manual/SKILL.md:166	Живой состав воркфлоу: ID, имя, статус, черновик, расписание, таймзона, вызовы, документы, типы credential	
+U048	FOUND	skills/n8n-engineering-manual/SKILL.md:166	формат строк — `projects/n8n-map/PLAN.md` раздел 4	
+U049	FOUND	skills/n8n-engineering-manual/SKILL.md:167	Пути вебхуков и признак их аутентификации | Google Doc N8N_REGISTRY, строки HOOK и HOOKCALL	
+U050	FOUND	skills/n8n-engineering-manual/SKILL.md:167	Google Doc N8N_REGISTRY, строки HOOK и HOOKCALL	
+U051	PARTIAL	registry/documents.md:78	реестр credentials инстанса n8n	documents.md says N8N_CREDENTIALS is the credentials registry; missing: binding to node, active-in-node flag, host, rights/expiry/shop/entity
+U052	FOUND	registry/documents.md:78	N8N_CREDENTIALS: 1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ (закрытая таблица	
+U053	FOUND	registry/documents.md:78	лист «Авто» целиком пишет воркфлоу Credential Inventory qolCVtDpTo2YlnGb по ручному запуску	
+U054	FOUND	projects/n8n-map/PLAN.md:193	лист «Ключи» — ручное знание по ID credential	
+U055	FOUND	projects/n8n-map/PLAN.md:193	Правило имени нового credential: «<Сервис> · <Юрлицо> · <R или RW>»	
+U056	PARTIAL	projects/n8n-map/PLAN.md:193	<R или RW>	rule form present; the explicit decoding (R read-only, RW read-write) not stated in a carrier
+U057	FOUND	projects/deklaration-wb/STATE.md:118	не соблюдается по решению Андрея 2026-10-06: имена credential WB содержат русское слово и признак права	
+U058	FOUND	projects/deklaration-wb/STATE.md:118	например `WB_Контент_ИП_R`	
+U059	FOUND	projects/deklaration-wb/STATE.md:118	потому что токенов WB много и иначе их не различить	
+U060	FOUND	projects/deklaration-wb/STATE.md:118	ЗАДАЧА Андрею (правило имён credential)	the cited source file itself holds the exception
+U061	FOUND	projects/deklaration-wb/STATE.md:118	(а) переписать правило в листе «Правило имени» под реальный порядок имён	task for owner: sheet rule to be rewritten, i.e. does not yet contain exception
+U062	PARTIAL	registry/documents.md:78	читается gsheets-read	gsheets-read named; range A1:Z1100 (with row number) not stated
+U063	FOUND	skills/n8n-workflow-passport/SKILL.md:21	Как работает, с чем связано, почему именно так, какие ловушки	
+U064	FOUND	skills/n8n-workflow-passport/SKILL.md:81	Строка `PASSPORT: <ID Google Doc>` в конце `description` воркфлоу	
+U065	FOUND	skills/n8n-workflow-passport/SKILL.md:24	Механика n8n, корневые причины отказов, протокол правки | n8n-engineering-manual	
+U066	FOUND	skills/google-drive-docs/SKILL.md:3	ОБЯЗАТЕЛЬНО читай этот Skill перед любой операцией с Google Drive, Google Docs, Google Sheets	google-drive-docs front matter states it owns Drive/Docs/Sheets tool IO
+U067	FOUND	skills/google-drive-docs/SKILL.md:76	ID берётся в момент вызова из строки `registry/n8n-map.md` с этим именем	
+U068	FOUND	skills/n8n-engineering-manual/SKILL.md:174	Чтение и запись в репозиторий канона | second-brain-git	
+U069	FOUND	skills/n8n-engineering-manual/SKILL.md:171	`projects/n8n/INCIDENT_LOG.md` (репозиторий second-brain-canon)	
+U070	PARTIAL	skills/google-drive-docs/SKILL.md:81	ID, прописанный в тексте, устаревает молча	principle (no IDs in Skill text) present for tools; "no per-workflow tables" for the registry not stated
+U071	PARTIAL	skills/google-drive-docs/SKILL.md:81	Skill, который держит ID, отправляет вызов в архивный или чужой воркфлоу	same reason (copy diverges silently); "third source of truth, diverged twice" not stated
+U072	NOT_FOUND			terms: "ss0QkY9V8YEMHf2B", "LM_DECL_MASTER" + "устарев*"; no record of the two stale marks outside old skill
+U073	NOT_FOUND			terms: "Не заводить заново", "per-workflow"
+U074	NOT_FOUND			title only
+U075	FOUND	skills/google-drive-docs/SKILL.md:48	## 1. БЫСТРЫЙ ВЫБОР ИНСТРУМЕНТА	google-drive-docs holds Docs tools table (section 1), section 3 (n8n write/read), section 7 verification; subsections 3.1-3.6 not individually verified
+U076	FOUND	skills/google-drive-docs/SKILL.md:76	ID берётся в момент вызова из строки `registry/n8n-map.md` с этим именем	
+U077	NOT_FOUND			terms: "не повторяются намеренно"; a decision statement of the old skill
+U078	PARTIAL	skills/google-drive-docs/SKILL.md:81	Skill, который держит ID, отправляет вызов в архивный или чужой воркфлоу	principle: a copy of IDs in Skill goes stale; "third source of truth" wording absent
+U079	PARTIAL	projects/n8n/NOT_TAKEN.md:75	паспорт N8N Registry Sync (gFFiBPm1OomOzJOj) называет нижестоящий вебхук «gdocs-overwrite (OYIhTm8h2ABMHQUW)»	passport error recorded (2026-09-25 debt); the "until 26.09.2026" date and that it named archived target as in old text: debt open/transferred, no fix date stated
+U080	FOUND	registry/n8n-map.md:79	W|Hpy9TCly6LKCjlqf|GDrive Share File|active	ID, name, active; input shape, created date and limitation not in carrier
+U081	NOT_FOUND			terms: "emailAddress", "permissions.create", "GDrive Share" (only n8n-map W-line)
+U082	NOT_FOUND			terms: "11.08.2026", "2026-08-11"+Share
+U083	NOT_FOUND			terms: "сервисным аккаунтом", "первое разрешение", "Hpy9TCly6LKCjlqf"
+U084	NOT_FOUND			terms: "permissions.create", "404"+Share
+U085	NOT_FOUND			terms: "Годится, только когда", "доступ хотя бы на чтение"
+U086	FOUND	registry/n8n-map.md:185	W|kJTXJuHQAv1go52t|Claude → Obsidian|active	
+U087	FOUND	skills/google-drive-docs/SKILL.md:101	Старые версии gdocs-append, gdocs-replace и gdocs-overwrite (без «v2» в имени) не вызывать	
+U088	PARTIAL	registry/n8n-map.md:58	W|CELGBmo7vQFF1Ej7|Claude → Google Docs Append|archived	archived IDs are recognizable by n8n-map W lines; the stated purpose of the list is not stated
+U089	FOUND	projects/n8n/NOT_TAKEN.md:33	(был CELGBmo7vQFF1Ej7 — АРХИВИРОВАН 2026-07-22)	
+U090	FOUND	projects/n8n/NOT_TAKEN.md:33	YfzWwu1VmIUCbUu0 — дозапись с re-fetch верификацией (был CELGBmo7vQFF1Ej7	replacement and date 2026-07-22 on same line
+U091	FOUND	registry/n8n-map.md:216	W|qWk65OyxaoAu4jAl|Claude → Google Docs Replace|archived	
+U092	NOT_FOUND			terms: "21.07.2026", "2026-07-21"+gdocs; discrepancy date for gdocs-replace v1 not found
+U093	FOUND	registry/n8n-map.md:112	W|OYIhTm8h2ABMHQUW|Claude → Google Docs Overwrite|archived	
+U094	PARTIAL	projects/n8n/NOT_TAKEN.md:33	(был OYIhTm8h2ABMHQUW — архивирован 2026-07-31)	archive fact present; wipe of SYS_INDEX on 30.07.2026 and INCIDENT_LOG analysis not found (terms: обнулил, SYS_INDEX+30.07, INCIDENT_LOG)
+U095	NOT_FOUND			title only
+U096	FOUND	projects/n8n-map/PLAN.md:101	D|<docId|dynamic>|<wf>|<node>|<nodeType>|<op>|<sheet|->	D row format: doc -> workflow, node
+U097	NOT_FOUND			terms: "обратный вопрос", "человеческих имён"
+U098	NOT_FOUND			terms: "ID отсюда не убираются"
+U099	NOT_FOUND			title only
+U100	PARTIAL	projects/n8n/STATE.md:36	книги OZON Reviews System (1mgtcD2wSm_-8hqfpv3v883KE34-Smy-kFxHvt6zMXj4)	same ID, human name there is "OZON Reviews System", not "Reviews Queue"
+U101	PARTIAL	registry/n8n-map.md:423	|ozon_reviews_queue	D line for sheet ozon_reviews_queue; sheet ozon_qa_queue not in snapshot lines for this ID; node count there 18 D lines vs 20 in old
+U102	FOUND	projects/wb-logistics/PLAN.md:19	Price Master (1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk)	
+U103	PARTIAL	registry/n8n-map.md:437	|Artikel	sheets Artikel (and CURRENT at another D line) present; node count differs (22 D lines in later snapshot vs 8)
+U104	FOUND	meta/DECLARATION_SCAN.md:73	книга SKU_Artikel_Map (лист MASTER_MAP: артикул → ozon_sku)	ID on the same line
+U105	FOUND	registry/n8n-map.md:387	|MASTER_MAP	sheet MASTER_MAP here; SKU_Artikel_Map sheet in the next D lines
+U106	NOT_FOUND			terms: "lm_id", "sku + lm_id", "wb_nm_id"; MASTER_MAP column composition not stated (Artikel columns differ)
+U107	FOUND	registry/n8n-map.md:388	|16_Write_WB_nmID|googleSheets|update|MASTER_MAP	node writes the MASTER_MAP sheet of the same book ID
+U108	FOUND	labs/ozon-ue/t-product-data-model.md:64	MASTER_MAP — снимок скрипта buildMasterMap() от 19.06	not a truth source, lags (diff counts given)
+U109	FOUND	labs/ozon-ue/t-master-map-ozon-sku.md:18	ноль остался только в снимке MASTER_MAP 19.06	
+U110	FOUND	labs/ozon-ue/t-product-data-model.md:64	живой хаб уже есть — Price Master!Artikel	
+U111	FOUND	labs/ozon-ue/t-master-map-ozon-sku.md:18	выводится из употребления после переключения читателей	
+U112	FOUND	labs/ozon-ue/t-master-map-ozon-sku.md:18	2026-10-03 — по выгрузкам задачи `t-product-data-model`	
+U114	FOUND	labs/ozon-ue/t-master-map-ozon-sku.md:18	ноль остался только в снимке MASTER_MAP 19.06	refutation of "single cross-mapping" check dated 2026-10-03
+U115	FOUND	meta/DECLARATION_COMMON.md:30	книга LM_DECL_MASTER (`1PO7vNyoY16tYqpU_KB5xuK4aSAbOU7YW_MM0scg5ksY`)	
+U116	PARTIAL	registry/n8n-map.md:332	|LM_DECL	sheet LM_DECL present; node count differs (later snapshot 29 D lines in 11 workflows vs 13 nodes)
+U117	PARTIAL	meta/DECLARATION_SCAN.md:23	Скрыты, не удалены: Unique, Decl_Monitor	Decl_Monitor hidden; "dashboard with traffic light, touched by no node" not stated
+U119	NOT_FOUND			title only
+U120	NOT_FOUND			terms: "двадцать девять", "не названы нигде"; later snapshot has 47 distinct doc IDs in D lines, count of unnamed not stated
+U121	NOT_FOUND			terms: "тремя и более узлами"
+U122	NOT_FOUND			terms: "кто знает имя"
+U123	NOT_FOUND			terms: "это долг, а не факт"
+U124	FOUND	labs/ozon-ue/t-dup-2006.md:11	книга RAW (лист `sales_raw_operations`) 1P-GgiFm3067U_sgC2Dojos3BbT_-au6v-mT52vVT3y4	sheets ozon_raw_accrual_TEST, ozon_accrual_types in n8n-map D lines
+U125	FOUND	projects/wb-logistics/PLAN.md:50	wb_fbs_orders_tracking (Sheets, включает performance_log + monitor_params	ID on the same line
+U126	FOUND	registry/n8n-map.md:295	|wb_reviews_archive	sheet wb_reviews_archive for this book ID
+U127	FOUND	registry/n8n-map.md:366	|kb_motor_oil	
+U128	FOUND	registry/n8n-map.md:391	|SKU_Artikel	sheet SKU_Artikel (cost_price_history at another D line)
+U129	FOUND	registry/n8n-map.md:269	|wb_fbs_params	
+U130	FOUND	meta/PRODUCT_DATA_HIERARCHY.md:14	WB_RAW_Аналитика (14QMHYMM4mZRnnq1wHQA4_SA8ZnOeE1xcVJDL2h9h1Pk)	
+U131	FOUND	registry/n8n-map.md:262	|Акт.цена	
+U132	PARTIAL	registry/documents.md:168	WB_ANALITIKA_book: 1sBYaluh1NDkb0zVmbV-NX4jsNbawEpXlae8fRg2AiuI	ID and name WB_Аналитика present; n8n-map has wb_reports_official only; sheet "dashboard" not found
+U133	FOUND	registry/n8n-map.md:404	06_Read_Seen_Posts	node name reveals seen_posts for this book ID; workflow named only by ID in D line
+U134	FOUND	registry/n8n-map.md:412	02 Read Transmission Oil Sheet	D line for this book ID (workflows by ID)
+U135	FOUND	registry/n8n-map.md:484	02 Read Auto Chemistry Sheet	D line for this book ID
+U136	FOUND	registry/n8n-map.md:252	45_Sheets_WB_SKU_MAP_Clear	D line for this book ID; workflow named by ID Hf92DOmQPqbQWW5G
+U137	FOUND	registry/n8n-map.md:384	L6A_Get_SYS_LINT_STATE	D line for this book ID
+U138	NOT_FOUND			terms: "Все строки таблицы", snapshot marker
+U139	NOT_FOUND			terms: "grep '^D|'" ; later snapshot has 47 doc IDs, command not stated
+U140	FOUND	projects/n8n-map/PLAN.md:28	Строка 35: `wb_fbs_orders_tracking` = `1qdefReY1qHfWdwroorbxz2Bi20_3dsGHiYy2W_XQ`, 41 символ	corruption recorded there; but documents.md:36 says it was fixed 2026-10-09
+U141	CONTRADICTED	registry/documents.md:36	(исправлено 2026-10-09: прежняя ручная копия была без «uDB», 41 знак	old text says still corrupt as of 09.10.2026; carrier says fixed on 2026-10-09
+U142	FOUND	registry/documents.md:36	1qdefReY1qHfWdwroorbxz2Bi20_3dsGHuDBiYy2W_XQ (исправлено 2026-10-09	
+U143	NOT_FOUND			title only
+U144	FOUND	skills/second-brain-engineer/references/write-moment.md:13	выдача объекта или поиска этой сессии — копированием	
+U145	FOUND	registry/documents.md:36	прежняя ручная копия была без «uDB», 41 знак	
+U146	NOT_FOUND			terms: "44 знак", "44 симв", "длина"+ID
+U147	NOT_FOUND			terms: "44 знака", "44 символа"
+U148	NOT_FOUND			terms: "33 знака", "33 симв"
+U149	NOT_FOUND			terms: "Другая длина", "повреждён или это не ID Google"
+U150	NOT_FOUND			terms: "36 знаков", "ID Claude Project"
+U151	NOT_FOUND			terms: "замену одного знака", "сверка по объекту остаётся"
+U152	PARTIAL	projects/n8n-map/PLAN.md:234	| Z-10 | get_workflow_details `S4rZMUkI21dVu3ML` (перепроверка Z-8)	Z-10 probe present; deklaration-ozon LOG Т-3 pointer only in journal
+U153	NOT_FOUND			title only
+U154	PARTIAL	skills/n8n-engineering-manual/references/roots.md:112	**R4. Статус `success` и код 200 не доказывают реального успеха	general rule 200/success is not proof; Ozon-specific "error in body at HTTP 200" not stated as rule
+U155	FOUND	labs/ozon-ue/t-n8n-ozon-workflow-defects.md:17	{"code":9,"message":"obsolete method cannot be used"}	endpoint /v3/finance/transaction/list in labs/sys/t-ozon-ue-parked-active.md:11
+U156	FOUND	labs/ozon-ue/t-n8n-ozon-workflow-defects.md:17	исполнение при этом success с нулём строк	
+U157	FOUND	projects/n8n/STATE.md:36	Публикация в Ozon отвечает PermissionDenied «not available with existing subscription»	
+U158	PARTIAL	skills/n8n-engineering-manual/references/roots.md:114	итог любой правки и любого прогона проверяется по объекту воздействия	verify by object present; check of body fields code/message not stated
+U159	FOUND	skills/n8n-engineering-manual/references/roots.md:112	**R4. Статус `success` и код 200 не доказывают реального успеха	
+U160	JOURNAL_ONLY	projects/archivarius/LOG.md:281	лимит запросов Ozon считается на Client-Id	journal only: "лимит запросов Ozon считается на Client-Id и делится между всеми воркфлоу"
+U161	NOT_FOUND			terms: "Client-Id"+кабинет; second cabinet own counter not stated (only Client-Id 559661 of main cabinet)
+U162	NOT_FOUND			terms: "50 запрос", "22.05.2025", "request rate limit"
+U163	NOT_FOUND			terms: "429", "You have reached request rate limit"
+U164	NOT_FOUND			terms: "t.me/s", "OzonSellerAPI"
+U165	NOT_FOUND			terms: "seller-api", per-method limit
+U166	NOT_FOUND			terms: "analytics/data", "seller-api"
+U167	NOT_FOUND			terms: "24.02.2026", "product/import", "product/update/offers"
+U168	NOT_FOUND			terms: "30 000 товаров", "30000"
+U169	NOT_FOUND			terms: "You hav", over-limit rejection
+U170	NOT_FOUND			terms: "avoshop"
+U171	JOURNAL_ONLY	projects/archivarius/LOG.md:281	лечит только его собственный вклад	journal only: line 281 "лечит только его собственный вклад"; "не дефект этого воркфлоу" part not verbatim
+U172	JOURNAL_ONLY	projects/archivarius/LOG.md:281	Диагностика 429 у Ozon начинается с суммы запросов	journal only: "Диагностика 429 у Ozon начинается с суммы запросов всех воркфлоу того же Client-Id"
+U173	JOURNAL_ONLY	projects/archivarius/LOG.md:281	пауза между пакетами внутри одного воркфлоу	journal only: "пауза между пакетами внутри одного воркфлоу (У-27) лечит только его собственный вклад"
+U174	PARTIAL	labs/ozon-ue/INDEX.md:30	с 25.08.2026 429, детали в паспорте ЗОНА В	429 on this workflow since 25.08.2026; "6 of 6 runs" only in journal
+U175	JOURNAL_ONLY	projects/archivarius/LOG.md:281	на том же Client-Id ещё 12 активных воркфлоу	journal only: "на том же Client-Id ещё 12 активных воркфлоу"
+U176	FOUND	registry/documents.md:110	REPORT_H-25.08-01: 1LRmdYNxKELAcM3iBJeAcyycI94iiBcb5cKxHAT_n9VY — отчёт по наряду Н-25.08-01	report ID registered; У-77 only in journal archivarius LOG:281
+U177	NOT_FOUND			terms: "pros", "cons", status rejected for Ozon reviews
+U178	NOT_FOUND			terms: "review/comment/create", задержка 4 секунды
+U179	NOT_FOUND			terms: "06C_Map", "operation_type", "Не классифицировано: "+opType
+U180	NOT_FOUND			terms: "Не классифицировано", "06C_Map_Operation_Category"
+U181	NOT_FOUND			terms: "question/list", "question/answer/create"
+U182	PARTIAL	projects/n8n/STATE.md:36	Публикация в Ozon отвечает PermissionDenied «not available with existing subscription»	subscription gating of publication present; Premium Plus, ~25k RUB, public answer on card, /v3/chat/ not stated
+U183	NOT_FOUND			terms: "/v3/chat/", ответ через чат
+U184	NOT_FOUND			terms: "TYPE_NEW_QUESTION"
+U185	PARTIAL	skills/n8n-engineering-manual/references/engine.md:116	Наблюдались как минимум три несовместимых варианта: пустой массив; `length < limit`; пустая строка в `last_id` ответа	three stop variants listed generally; mapping to /v1/review/list and "last_id unchanged" not stated
+U186	PARTIAL	skills/n8n-engineering-manual/references/engine.md:115	встроенный механизм HTTP-ноды (`paginationCompleteWhen:other` + `completeExpression`)	built-in pagination form named; not tied to Ozon transactions
+U187	NOT_FOUND			terms: "operations.length", "completeExpression" (only generic hits)
+U188	PARTIAL	skills/n8n-engineering-manual/references/engine.md:92	Items per Batch = 1 + Batch Interval	rate limit held by node batch settings; Ozon ~1 rps and 4000 ms not stated
+U189	NOT_FOUND			terms: "accrual/by-day" (only parked-active line gives the call, no body/response shape)
+U190	NOT_FOUND			terms: "last_id" пустой строкой Ozon accrual; generic 4.9.5 only
+U191	NOT_FOUND			terms: "accrued_category", "NON_ITEM"
+U192	NOT_FOUND			terms: "sale_commission", "total_accrued", "нэттинг"
+U193	NOT_FOUND			terms: "container_fees"
+U194	PARTIAL	labs/sys/t-ozon-ue-parked-active.md:38	→ POST `/v3/posting/fbs/get` (один запрос в 4 секунды)	chain accrual -> unique shipments -> /v3/posting/fbs/get present; the unit_number/POSTING trap and 404 85-91% not stated
+U195	NOT_FOUND			terms: "unit_number", "posting_number"
+U196	NOT_FOUND			terms: "85–91", 404 ITEM/NON_ITEM
+U197	FOUND	skills/n8n-engineering-manual/SKILL.md:120	`raw_key` — композитный ключ строки RAW, свой на каждый источник.	
+U198	NOT_FOUND			terms: "business_date|operation_id", "operation_id"
+U199	NOT_FOUND			terms: "accrual_id"

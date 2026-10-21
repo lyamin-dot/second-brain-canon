@@ -1,0 +1,188 @@
+id	verdict	address	quote	note
+U200	FOUND	projects/wb-ue/STATE.md:52	[business_date, report_id, rrd_id].join('_')	
+U201	FOUND	projects/wb-ue/STATE.md:52	Формула сейчас одинакова в узле `06_Add_RAW_Key` обоих воркфлоу	workflow ids IvgysDKrq3UISYEY/Iis5dlRS1GWZqQXD stated in projects/wb-ue/PLAN.md:15; read-date 2026-10-09 not stated
+U202	FOUND	projects/wb-ue/STATE.md:52	в узле `06_Add_RAW_Key` обоих воркфлоу	Iis5dlRS1GWZqQXD named in projects/wb-ue/PLAN.md:15
+U203	CONTRADICTED	projects/wb-ue/STATE.md:21	raw_key не менять	line 52 of same file states the decision to drop report_id, but line 21 (Р-69, 2026-10-17) says raw_key is NOT to be changed
+U204	FOUND	projects/wb-ue/STATE.md:52	синтетический (пример из прогона 67799: `97472420260914`)	
+U205	FOUND	projects/wb-ue/STATE.md:52	одна и та же строка WB в дневной и недельной выгрузке получает разные `raw_key`	
+U206	FOUND	projects/wb-ue/STATE.md:52	уникальность проверена на всех 87228 строках, коллизий ноль	
+U207	PARTIAL	projects/wb-ue/STATE.md:52	Формула сейчас одинакова в узле	formula described as current, but no date 2026-10-09 and no 'not applied' wording; line 21 says raw_key will not be changed
+U209	FOUND	skills/n8n-engineering-manual/SKILL.md:120	Форматы намеренно разные, RAW-слои не объединяются	reasons (why) not elaborated, only the fact
+U210	FOUND	meta/PROTOCOL_wb-card-write.md:55	Ответ 200 и новый updatedAt применения не доказывают	
+U211	PARTIAL	meta/CASES_wb-api-card-write.md:12	cards/update заменяет карточку целиком	pointer text itself absent; card write facts live in meta/CASES_wb-api-card-write.md and meta/PROTOCOL_wb-card-write.md
+U212	NOT_FOUND			terms: wbRu; PATCH /api/v1/questions; answer:{text}; state
+U213	NOT_FOUND			terms: wbRu; state обязательно; ответ не появляется на сайте
+U214	PARTIAL	labs/sys/t-draft-trigger-divergence.md:110	https://feedbacks-api.wildberries.ru/api/v1/feedbacks и …/api/v1/questions	host named for both APIs; token category 'Вопросы и отзывы' not stated
+U215	NOT_FOUND			terms: Authorization без Bearer; Header Auth токен без слова; 2026-06-02
+U216	NOT_FOUND			terms: Finance API Bearer; apiKey схема
+U217	NOT_FOUND			terms: POST /api/v1/feedbacks/answer; первый ответ; 204
+U218	PARTIAL	projects/wb-reviews/PLAN.md:25	PATCH /api/v1/feedbacks/answer	path of PATCH answer and one-edit limit (PLAN.md:24 'РОВНО ОДНУ правку') present; same body {id,text} and 60-day window missing
+U219	FOUND	projects/wb-reviews/NOT_TAKEN.md:56	PATCH /api/v1/feedbacks — WB отвечает 405 Method Not Allowed, allow: GET, HEAD	
+U220	PARTIAL	labs/sys/t-draft-trigger-divergence.md:110	isAnswered=true, take=100, skip=N	parameter names only; limits take<=5000, skip<=199990 and 'mandatory' missing
+U221	PARTIAL	labs/sys/t-draft-trigger-divergence.md:110	isAnswered=true, take=100, skip=N, order=dateDesc	take=100 and skip offset stated; 'skip = page*100' and stop-when-less-than-100 missing
+U222	PARTIAL	projects/wb-reviews/NOT_TAKEN.md:72	60-дневное окно на нодах 11/12 Intake	60-day window on Intake nodes 11/12 mentioned; dateFrom/dateTo and memory-crash reason missing
+U223	NOT_FOUND			terms: падал по памяти; OOM Intake; сборка отвеченных
+U224	NOT_FOUND			terms: 3 запроса в секунду; всплеск 6; rate limit 3 rps; x-ratelimit
+U225	NOT_FOUND			terms: делят все воркфлоу; лимит на аккаунт продавца
+U226	JOURNAL_ONLY	projects/archivarius/LOG.md:550	спецификации Wildberries из открытого SDK eslazarev/wildberries-sdk	journal mentions the eslazarev SDK as source of specs, not 09-communications.yaml/commit 9885191/2026-10-13 check
+U227	PARTIAL	projects/wb-reviews/NOT_TAKEN.md:56	откат ответа на ОТЗЫВ не работал с 2026-06-02	405 on PATCH /api/v1/feedbacks since 2026-06-02 for Rollback; Intake/Publication case and POST replacement missing
+U228	FOUND	projects/wb-reviews/NOT_TAKEN.md:56	откат ответа на ОТЗЫВ не работал с 2026-06-02. Нода 04A_Rollback_Review	fix date 2026-07-28 in same line ('ВЫПОЛНЕНО Андреем 2026-07-28')
+U229	PARTIAL	projects/wb-reviews/NOT_TAKEN.md:56	БЛОКЕР (новый, Claude 2026-07-27, R4)	the cited record exists; WB_REVIEWS_INDEX lines and У-129/Р-28 not reproduced
+U230	FOUND	projects/wb-reviews/PLAN.md:24	WB допускает РОВНО ОДНУ правку опубликованного ответа	rollback = moderation #2 and last (same line)
+U231	FOUND	projects/wb-reviews/STATE.md:37	перед PATCH отзыва читать поле editable из GET /api/v1/feedback	full host URL in PLAN.md:27
+U232	FOUND	projects/wb-reviews/PLAN.md:26	body.data.answer = {text, state, editable}	
+U233	FOUND	projects/wb-reviews/PLAN.md:25	WB вернул 204 No Content — то есть УСПЕХ на несуществующий отзыв	control read via GET data.answer.text: PLAN.md:27
+U234	FOUND	projects/wb-reviews/PLAN.md:29	Заголовков x-ratelimit-limit и x-ratelimit-reset WB не отдаёт	
+U235	FOUND	projects/wb-reviews/PLAN.md:25	Н13. ГЕЙТ ПО statusCode НЕ РАБОТАЕТ ДЛЯ ОТЗЫВОВ	Н13/Н17/Н18/Н19 present at PLAN.md:25,26,27,29
+U236	JOURNAL_ONLY	projects/wb-logistics/LOG.md:22	WB API /orders/status: поле называется `orders` (Array of int64), не `orderIds`.	
+U237	JOURNAL_ONLY	projects/wb-logistics/LOG.md:57	фильтрация confirm-заказов по shippedIds из wb_fbs_orders_tracking	journal; equivalent fact (confirm includes shipped, filter by tracking), wording differs
+U238	NOT_FOUND			terms: rrdid; Wait 70; 70 сек; пагинация статистики (only wb-ue/LOG.md:7 title about rrdId pagination decision, different fact)
+U239	JOURNAL_ONLY	projects/wb-ue/LOG.md:169	Finance API v1 (sales-reports/detailed)	only endpoint name 'sales-reports/detailed' in journal; POST finance-api.wildberries.ru path and token category Finance missing
+U240	NOT_FOUND			terms: 2026-05-26T00:00:00+03:00; даты с зоной; Finance API даты
+U241	NOT_FOUND			terms: rrdId в теле; старт 0; до ответа 204
+U242	NOT_FOUND			terms: денежные поля строками; money strings Finance API
+U243	NOT_FOUND			terms: Finance Header Auth Bearer TOKEN
+U244	JOURNAL_ONLY	projects/wb-ue/LOG.md:60	знак операции определяется полем `doc_type`, не `operation_name`	
+U245	JOURNAL_ONLY	projects/wb-ue/LOG.md:59	`revenue` и `for_pay` при этом положительные (WB их вычитает)	
+U246	JOURNAL_ONLY	projects/wb-ue/LOG.md:58	Р-11 | В СИЛЕ | 2026-09-14 | кодировка возврата	
+U247	JOURNAL_ONLY	projects/wb-ue/LOG.md:64	«Логистика»→«Доставка», «Коррекция логистики»→«Коррекция стоимости доставки»	
+U248	JOURNAL_ONLY	projects/wb-ue/LOG.md:65	неизвестное название молча падало в `operation_category='other'` и пропадало из 	
+U249	PARTIAL	projects/wb-ue/STATE.md:108	vw, vwNds, acquiringFee, ppvzReward, ppvzSalesCommission, kvw, kvwBase, spp	fields of Finance API v1 named; the payout identity forPay = retailAmount - vw - ... only in journal projects/wb-ue/LOG.md:169
+U250	JOURNAL_ONLY	projects/wb-ue/LOG.md:169	На всех 289 продажах недели 14–20.09 выполняется тождество `forPay = retailAmoun	
+U251	JOURNAL_ONLY	projects/wb-ue/LOG.md:94	Вычитать эту строку из for_pay нельзя ни при каких условиях — двойной счёт	
+U252	NOT_FOUND			terms: statistics-api; common-api; finance-api/{reportId}; домены-ловушки (common-api only for key-category /ping)
+U253	NOT_FOUND			terms: POST /api/v3/orders/status семантика статусов FBS
+U254	NOT_FOUND			terms: supplierStatus new/confirm/complete/cancel/cancel_carrier значения
+U255	NOT_FOUND			terms: ready_for_pickup; postponed_delivery; accepted_by_carrier; sent_to_carrier; waiting; sorted; sold
+U256	NOT_FOUND			terms: defect; canceled_by_carrier; значения отмены wbStatus
+U257	JOURNAL_ONLY	projects/wb-logistics/LOG.md:597	Детект declined_by_client/canceled_by_client по wbStatus (НЕ supplierStatus — он	
+U258	JOURNAL_ONLY	projects/wb-logistics/LOG.md:597	добавлена параллельная ветка отмен 03→04C_Match_Cancelled	journal; ALL-values requirement not stated
+U259	JOURNAL_ONLY	projects/wb-logistics/LOG.md:481	БЛОКИРУЮТ закрытие любой поставк	
+U260	NOT_FOUND			terms: неизвестный статус сигнал в отчёт; тихий пропуск статус
+U261	NOT_FOUND			terms: новый статус Wildberries не в ту ветвь
+U262	NOT_FOUND			terms: 03-orders-fbs; 9885191; eslazarev; значения сверены 2026-10-13
+U263	JOURNAL_ONLY	projects/wb-logistics/LOG.md:481	~20+ заказов в трекинге status=new, а в WB declined_by_client / canceled_by_clie	
+U264	JOURNAL_ONLY	projects/wb-logistics/LOG.md:597	Order Close v2 (DM26WhTJyCV0DhkP): добавлена параллельная ветка отмен	date 2026-06-30 in Р-83 header line 594
+U265	JOURNAL_ONLY	projects/wb-logistics/LOG.md:668	cancel-ветка теперь ловит отмены САМИМ	order 5271100427 / WB-GI-249910370 appear in this journal area (line 668 area); exact ids not matched on this line
+U266	JOURNAL_ONLY	projects/wb-logistics/LOG.md:477	Р-75 | В СИЛЕ | 2026-06-29 | находки аудита сообщений и охват воркфлоу	journal records Р-75..Р-89 exist; У-120 lesson in archivarius journal not checked
+U269	JOURNAL_ONLY	projects/wb-logistics/LOG.md:554	только date (создание) + lastChangeDate. Приёмки нет.	
+U270	JOURNAL_ONLY	projects/wb-logistics/LOG.md:564	GET /api/v3/supplies?limit=1000&next=0 — все поставки + scanDt за один запрос	
+U271	JOURNAL_ONLY	projects/wb-logistics/LOG.md:642	пометить order_id status=shipped	status values appear in journal; sheet name wb_fbs_orders_tracking in PLAN.md:50, 'metrics from own journal' not stated
+U272	JOURNAL_ONLY	projects/wb-logistics/LOG.md:666	заказы в tracking помечаются in_transit (НЕ shipped	values new/in_transit/shipped/cancelled are spread across journal lines 597,642,666
+U273	JOURNAL_ONLY	projects/wb-logistics/LOG.md:628	«Отгружено»/«Среднее время» нельзя строить на realtime WB-статусе	
+U274	JOURNAL_ONLY	projects/wb-logistics/LOG.md:628	прогон 14988 (29.06 22:05) ещё видел 0 complete через 2.5ч после сдачи	
+U275	JOURNAL_ONLY	projects/wb-logistics/LOG.md:628	детект отгрузки отстаёт от физической сдачи до ~24ч	
+U276	JOURNAL_ONLY	projects/wb-logistics/LOG.md:604	«Отгружено 0» против «WB 72»	Evening Report determines shipped by disappearance; 'sticks near zero' wording absent
+U277	JOURNAL_ONLY	projects/wb-logistics/LOG.md:563	Источник истины приёмки = scanDt	journal; also projects/wb-logistics/STATE.md:11 uses scanDt for 'WB принял (скан поставки)'
+U278	NOT_FOUND			terms: решение Андрея 2026-10-04 scanDt приёмка
+U279	JOURNAL_ONLY	projects/wb-logistics/LOG.md:604	«Отгружено 0» против «WB 72»	
+U280	JOURNAL_ONLY	projects/wb-logistics/LOG.md:604	Р-84 | В СИЛЕ | 2026-06-30 | !save: Evening Report	Р-84, Р-85, Р-86 present (lines 604,619,635)
+U281	FOUND	projects/wb-reviews/STATE.md:31	сейчас ["QA_OIL_MATCH","QA_SPEC"]	08B_IF_Need_RAG node
+U282	FOUND	projects/n8n/PLAN.md:36	chatId 6054723832 подтверждён Андреем как канал, который он реально читает	'hardcoded' not stated; also n8n/PLAN.md:35
+U283	JOURNAL_ONLY	projects/wb-logistics/LOG.md:525	chatId -1004269834495	
+U284	FOUND	projects/n8n-map/PLAN.md:193	Права ключей Ozon — методом POST /v1/roles (роли и expires_at)	
+U285	FOUND	projects/n8n-map/PLAN.md:193	категории ключей WB — GET /ping по доменам категорий	
+U286	FOUND	projects/n8n-map/PLAN.md:193	common-api отвечает 200 любому ключу и категорией не считается	
+U287	FOUND	skills/n8n-engineering-manual/references/write.md:33	право ключа часто видно лишь при первой записи — ответ 403 «read-only token»	also n8n-map/PLAN.md:193 'право записи WB — только из кабинета или из факта применённой записи'
+U288	FOUND	skills/n8n-engineering-manual/references/templates.md:248	Право ключа на запись проверено (ответ 403 «read-only token» иначе придёт только	
+U289	NOT_FOUND			terms: второй кабинет свой ключ; ключ основного кабинета на чужой не годится
+U290	PARTIAL	projects/n8n-map/PLAN.md:193	Права ключей Ozon — методом POST /v1/roles	sources named in the unit (deklaration-ozon Р-22/Р-30, deklaration-wb Р-6) not located as such; Ф5 content present
+U291	FOUND	registry/documents.md:78	лист «Ключи» — Андрей и агент	
+U292	PARTIAL	projects/n8n-map/PLAN.md:236	публичный API из сессии недоступен	cloud-session side (proxy 403) stated; n8n server (Germany) vantage in projects/deklaration-ozon/LOG.md:50 (journal)
+U293	NOT_FOUND			terms: зонд временный воркфлоу только чтение факты API не из документации
+U294	JOURNAL_ONLY	projects/deklaration-ozon/LOG.md:50	pub.fsa.gov.ru недоступен с сервера n8n [IP сервера убран, И-7] и из Германии — таймауты 	
+U295	NOT_FOUND			terms: pub.fsa.gov.ru из облачной сессии не проверялось
+U296	JOURNAL_ONLY	projects/deklaration-ozon/LOG.md:392	mobile.api.crpt.ru отвечает 451 (геоблокировка)	
+U297	JOURNAL_ONLY	projects/card-content-sync/LOG.md:39	не ответил за 60 секунд (ECONNABORTED)	docs.ozon.ru swagger timeout; ids 73350/529VWvqSTg8l4fUU not matched on this line
+U298	JOURNAL_ONLY	projects/archivarius/LOG.md:550	сайт Ozon закрыт robots.txt	session cannot open Ozon docs; 'proxy 403' not stated
+U299	NOT_FOUND			terms: swagger Wildberries yaml 404; страница 498
+U300	FOUND	projects/wb-ue/STATE.md:122	официальная документация dev.wildberries.ru из сессии не открылась	
+U301	FOUND	projects/n8n-map/PLAN.md:56	по `localhost:5678`, с курсором и credential `monitor_key_v2` (Z-1)	
+U302	FOUND	projects/n8n-map/PLAN.md:236	публичный API из сессии недоступен	Z-12 CONNECT tunnel failed 403
+U303	JOURNAL_ONLY	projects/deklaration-ozon/LOG.md:50	зонд `gb4og08Wk2lVoAnH`, исполнение 72314	pointer unit; Т-1/Т-4/Т-10/Р-21 records
+U304	NOT_FOUND			terms: повторить один дешёвый зонд; что недоступно сегодня может открыться завтра
+U305	PARTIAL	projects/wb-reviews/STATE.md:31	данные из products_kb	table products_kb only; PostgreSQL 16 in projects/n8n/PLAN.md:9; liquimoly_kb, pgvector 0.8.2, host postgres:5432, kb_user missing
+U306	NOT_FOUND			terms: WB_REVIEWS_INDEX строки 962 1803
+U307	FOUND	projects/wb-reviews/STATE.md:31	08B_IF_Need_RAG: добавить QA_OTHER в список категорий с базой знаний	reader = RAG branch of WB Reviews Response
+U308	FOUND	projects/archivarius/STATE.md:31	направление «Допуски OEM» Андрей прекратил	date 2026-10-12 is in journal projects/archivarius/LOG.md:511
+U309	NOT_FOUND			terms: база знаний живёт пока Response читает
+U310	PARTIAL	labs/sys/t-stale-registry-facts.md:27	motor_oil — 182 записи, загружены полностью 2026-07-29	only a quotation of the old Skill claim; exec 33576 missing; not an independent statement
+U311	FOUND	projects/wb-reviews/PLAN.md:45	в products_kb навсегда остаётся РОВНО ОДНА строка motor_oil	
+U312	PARTIAL	projects/wb-reviews/STATE.md:53	Загрузка antifreeze в базу знаний	antifreeze not loaded (task Ру-4); counts 146 and 42 for auto_chemistry/transmission_oil missing
+U313	NOT_FOUND			terms: числа на 2026-07-29 не перепроверены
+U315	PARTIAL	projects/wb-reviews/PLAN.md:45	её артикула нет в листе kb_motor_oil, поэтому ни один перезалив её не трогает и 	orphan outcome described; general rule 'text-key edit creates orphan' not stated
+U316	NOT_FOUND			terms: ON CONFLICT article_number название товара ключ загрузчики products_kb
+U317	PARTIAL	projects/wb-reviews/PLAN.md:45	её артикула нет в листе kb_motor_oil	orphan whose article is absent from source sheet; cause (fixed key text -> new row) not stated
+U318	PARTIAL	projects/wb-reviews/PLAN.md:45	ни один перезалив её не трогает и не будет	RAG-keeps-finding-stale-data consequence not stated
+U319	NOT_FOUND			terms: SELECT COUNT сравнить число строк категории
+U320	NOT_FOUND			terms: DELETE только по явному списку article_number поимённо
+U321	NOT_FOUND			terms: чтение обратно COUNT отсутствие удалённых значений
+U322	NOT_FOUND			terms: не удалять строку нельзя доказать мусор базы вопрос Андрею
+U323	PARTIAL	projects/wb-reviews/NOT_TAKEN.md:104	хранит список 5 удалённых article_number	five deleted + one kept orphan (PLAN.md:45); six found / 2026-07-29 details missing
+U324	FOUND	projects/wb-reviews/NOT_TAKEN.md:104	воркфлоу KB Snapshot — Motor Oil (one-off), хранит список 5 удалённых article_nu	node names Check Orphan Count / Delete Orphan Duplicates not stated
+U325	PARTIAL	projects/wb-reviews/NOT_TAKEN.md:104	| 368 |	evidence line 368 referenced; У-127/Р-28 not checked
+U326	JOURNAL_ONLY	projects/archivarius/LOG.md:550	У-154 (права kb_user в базе) чтением не проверить	journal mentions kb_user rights lesson; CREATE TABLE in public not stated
+U327	NOT_FOUND			terms: DDL воркфлоу не может владелец базы вручную
+U328	JOURNAL_ONLY	projects/archivarius/LOG.md:550	вносится с пометкой «наблюдение 2026-06-27, не перепроверено»	
+U329	NOT_FOUND			terms: PostgreSQL 15 CREATE schema public revoked
+U330	NOT_FOUND			terms: voyage-3; размерность 1024
+U331	PARTIAL	skills/n8n-engineering-manual/SKILL.md:97	другая модель даёт другую размерность векторов, и база требует полной переиндекс	rule present without model names voyage-3/voyage-3-lite/512
+U332	PARTIAL	skills/n8n-engineering-manual/SKILL.md:97	модель эмбеддингов, которой пишутся и ищутся векторы базы знаний, совпадает с мо	warning exists in manual section 1 but model name moved out ('вынесены из Skill решением Андрея 2026-10-20'); 'intentional duplicate' remark absent
+U333	FOUND	meta/DECLARATION_SCAN.md:35	«LM_DECL — Scan» `vKjqExap1mJjM6Ap` — опубликован	
+U334	FOUND	projects/deklaration-ozon/PLAN.md:26	общий слой, описание и состояние в `meta/DECLARATION_SCAN.md`	
+U335	FOUND	projects/deklaration-ozon/NOT_TAKEN.md:11	Конвейер PDF снят 2026-09-30	'do not run' implicit; script v1.1 named in same line
+U337	FOUND	skills/google-drive-docs/references/sheets.md:140	Drive API v2: `Drive.Files.insert(metadata, blob, {convert:true})`	
+U338	FOUND	skills/google-drive-docs/references/sheets.md:138	### 4.4 Apps Script: PDF → Google Doc	
+U339	FOUND	projects/deklaration-ozon/NOT_TAKEN.md:11	Подробности скрипта processDeclPdfInbox версии 1.1	
+U340	FOUND	meta/DECLARATION_SCAN.md:108	Что раньше переносило выписки из DECL_PDF_INBOX в DECL_PDF_ARCHIVE	hypothesis recorded: processDeclPdfInbox
+U341	FOUND	skills/n8n-engineering-manual/references/engine.md:100	не принимается без проверки поля идентичности на самой странице	
+U342	FOUND	skills/n8n-engineering-manual/references/engine.md:100	артикула в разметке `itemprop="sku"`	
+U343	FOUND	projects/deklaration-v2/PLAN.md:128	без проверки артикула — способ, отвергнутый в Р-28/Р-32 ozon	
+U344	FOUND	projects/deklaration-v2/PLAN.md:128	Р-28/Р-32 ozon	labs/ozon-ue/t-product-data-model.md pointer not checked
+U345	PARTIAL	projects/n8n-map/PLAN.md:56	по `localhost:5678`, с курсором и credential `monitor_key_v2` (Z-1)	own /api/v1/ via credential stated; Header Auth type and header name X-N8N-API-KEY missing
+U346	FOUND	projects/n8n/PLAN.md:29	ротирован на monitor_key_v2 (без expiration)	
+U347	FOUND	projects/n8n-map/PLAN.md:23	Ключ ротирован на `monitor_key_v2` 2026-07-21	
+U348	FOUND	projects/n8n-map/PLAN.md:23	§3 велит обновить ключ `monitor_key`, который «истекает 25–26.07.2026»	recorded as stale: rotated 2026-07-21
+U349	NOT_FOUND			terms: Списка мест использования здесь нет намеренно
+U350	NOT_FOUND			terms: пропускал одного потребителя из четырёх SYS Lint
+U351	PARTIAL	projects/n8n-map/PLAN.md:45	Какие типы credential использует воркфлоу; какие воркфлоу держат тип T	need for consumer list at rotation stated; 'take A and C rows of snapshot' procedure missing
+U352	FOUND	registry/n8n-map.md:98	W|LguGCDYJvMQSahcj|Workflow Health Monitor — Daily|active	four-consumer set visible via C rows 669,815,715(TXNstd),764
+U353	FOUND	registry/n8n-map.md:228	W|tABmSQXQalGnjRJw|Workflow Health Monitor — Intraday|inactive	
+U354	CONTRADICTED	registry/n8n-map.md:126	W|TXNstdVL8xlIygBp|SYS Lint|inactive	unit says SYS Lint active; snapshot 2026-10-18 says inactive; N8N Registry Sync active at line 174 matches
+U355	FOUND	registry/n8n-map.md:669	C|LguGCDYJvMQSahcj|httpHeaderAuth|1	other three: lines 815 (tABmSQXQalGnjRJw), 716 (TXNstdVL8xlIygBp), 764 (gFFiBPm1OomOzJOj)
+U356	FOUND	skills/n8n-engineering-manual/references/roots.md:253	привязывает тип credential к воркфлоу, а не к узлу	
+U357	PARTIAL	registry/documents.md:78	лист «Авто» целиком пишет воркфлоу Credential Inventory	columns 'Активен в узле', 'Хост узла' and row-per-pair structure missing
+U358	PARTIAL	skills/n8n-engineering-manual/references/write.md:72	Прежний ключ после `setNodeCredential` остаётся на узле	old credential kept on node after setNodeCredential; auth-type-change case and 'only selected is sent' partly (узел берёт ключ по полю authentication, not verified)
+U359	PARTIAL	registry/documents.md:78	лист «Авто» целиком пишет воркфлоу Credential Inventory	consumer-list procedure (rows with ID and Активен в узле = да, after fresh run) missing
+U360	PARTIAL	skills/n8n-engineering-manual/references/roots.md:253	Проверять по узлу — полем `credentials` в `get_workflow_details` (R1a) или глаза	plaintext check by eye in editor stated in generalized form; 'neither snapshot nor sheet shows it' missing
+U361	NOT_FOUND			terms: MCP-ключ не истекает; не путать ключи
+U362	PARTIAL	skills/n8n-engineering-manual/references/roots.md:245	У Header Auth два противоположных смысла	name git-channel-webhook-auth and MCP key not stated here
+U363	PARTIAL	skills/n8n-engineering-manual/references/roots.md:243	утечка чужого ключа через вебхук отдаёт то, что этот ключ открывает	general rule about separate key for webhook; specific three-key mix-up not stated
+U364	NOT_FOUND			terms: credential хранит копию значения ключа
+U365	FOUND	skills/n8n-engineering-manual/references/roots.md:256	Удаление ключа в n8n сам ключ у сервиса не отзывает	'passes without error' not stated
+U366	FOUND	skills/n8n-engineering-manual/references/roots.md:256	отзыв у сервиса-выдавателя	
+U367	JOURNAL_ONLY	projects/archivarius/LOG.md:65	отзыв только в Settings → n8n API	'Delete' then 'Delete Forever' buttons not stated
+U368	NOT_FOUND			terms: Create an API key; Label; Expiration
+U369	FOUND	skills/n8n-engineering-manual/references/roots.md:256	отзыв у сервиса-выдавателя	Ozon/WB/Voyage named only in unit
+U370	NOT_FOUND			terms: создать новый ключ в Settings → n8n API перевести потребителей
+U371	NOT_FOUND			terms: удалить старый ключ затем credential уборка
+U372	JOURNAL_ONLY	projects/archivarius/LOG.md:550	документация n8n из её открытого репозитория (отзыв ключа API только в Settings 	commit 928b0b7 not stated on this line
+U373	JOURNAL_ONLY	projects/archivarius/LOG.md:354	Урок У-13г: нужна ли проверка на живом сервере n8n — нет	decision of Andrei 2026-10-11 not to test on server
+U374	JOURNAL_ONLY	projects/archivarius/LOG.md:65	удаление credential не отзывает сам ключ API	
+U375	NOT_FOUND			terms: SKU Category Historical Backfill; защиты от дублей; sku_category_history
+U376	NOT_FOUND			terms: sku_category_history_detail; очистить листы до заголовков
+U377	PARTIAL	registry/n8n-map.md:130	W|VWyXmCPJevCnbkZT|SKU Category Historical Backfill|inactive|never|scheduleTrigg	trigger set to a 100-month interval (not a real schedule); the rule 'never put on real schedule' not stated
+U378	NOT_FOUND			terms: листы не раскрываются узлом по имени; снимок
+U379	PARTIAL	registry/n8n-map.md:70	W|GVyBj6xEcFjnmQ09|WB+Ozon News Filter|active	workflow and node 06_Read_Seen_Posts (line 404) exist; sheet name seen_posts / dedup description missing
+U380	FOUND	registry/n8n-map.md:404	D|1eujHu87IO0IlngLX164_O81LxPI5NNpq9S47E8anVSo|GVyBj6xEcFjnmQ09|06_Read_Seen_Pos	
+U381	FOUND	labs/ozon-ue/INDEX.md:48	книга RAW с листами `sales_raw_operations`, `ozon_raw_accrual_TEST`, `ozon_accru	
+U382	PARTIAL	projects/n8n/STATE.md:17	OzonRawАналитика MPzPrtsnPtf0sVQo	old workflow and sheet sales_raw_operations of book 1P-Ggi… named; 29 columns missing
+U383	NOT_FOUND			terms: 1_E2KCZOVYaf68xVECwv9ZaGGn4bdz3jsh5D3lhsqdyM
+U384	PARTIAL	labs/sys/t-ozon-ue-parked-active.md:11	Ozon отключил эндпоинт `/v3/finance/transaction/list`	file quotes the old Skill claim and marks it unverified (line ~34: 'Работает ли вызов — НЕ ОПРЕДЕЛЕНО')
+U385	PARTIAL	labs/sys/t-ozon-ue-parked-active.md:11	помечен «воркфлоу не трогать, только читать при сверке»	file quotes the old Skill claim; not an independent statement
+U386	FOUND	registry/n8n-map.md:104	W|MPzPrtsnPtf0sVQo|OzonRawАналитика|active|same|scheduleTrigger|triggerAtHour=2	daily 02:00 also labs/sys/t-ozon-ue-parked-active.md:33
+U387	PARTIAL	registry/n8n-map.md:330	aVpgEnYBAgIIss4k|08_Write_To_Sheets_TEST|googleSheets|appendOrUpdate|ozon_raw_ac	workflow writes sheet ozon_raw_accrual_TEST; 16 columns missing
+U388	FOUND	labs/ozon-ue/INDEX.md:31	Паспорт Ozon RAW Accrual Sync (aVpgEnYBAgIIss4k) → 1hcAxLuj3YBSPUrOe8bYNbFD6ib8r	
+U389	CONTRADICTED	labs/sys/t-ozon-ue-parked-active.md:39	Запись Skill `n8n-workflow-registry` «TEST_DATE захардкожен» устарела наполовину	line 38 states TEST_DATE is NOT hardcoded (date = yesterday or business_date input); labs/ozon-ue/INDEX.md:31 says 'НЕ production-ready' mark is outdated, workflow feeds adapter in production
+U390	FOUND	registry/n8n-map.md:525	X|5MDOGVCTxwDjHqy3|aVpgEnYBAgIIss4k|03_Call_RAW_Sync	active + 02:00 trigger at line 152
+U391	PARTIAL	registry/n8n-map.md:156	W|c7TIdv32dHV3MBRU|OZON_UE Accrual Types Sync|active	workflow exists; link to sheet ozon_accrual_types: adapter BPVFEmZF6QxXuTB6 reads it (line 313), not this workflow

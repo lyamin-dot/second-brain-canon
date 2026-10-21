@@ -1,0 +1,491 @@
+id	file	line	class	kind	quote	note
+U001	SKILL.md	2	ПОРОГ	ROUTE	name: "n8n-workflow-registry"	skill name n8n-workflow-registry
+U002	SKILL.md	3	АДРЕС	ROUTE	Справочник деталей инстанса n8n Андрея, которые ниоткуда не выводятся	scope: instance details not derivable elsewhere
+U003	SKILL.md	3	АДРЕС	ROUTE	Живой состав воркфлоу — ID, имя, статус, расписание, связи, документы, типы cred	live workflow roster is not here
+U004	SKILL.md	3	АДРЕС	ROUTE	он в файле registry/n8n-map.md репозитория second-brain-canon	roster lives in registry/n8n-map.md
+U005	SKILL.md	3	ПРАВИЛО	ROUTE	Читай ТОЛЬКО когда нужна конкретная деталь	read only for a concrete detail (book ID, API request form, key formula, key rights, unreachable source)
+U006	SKILL.md	3	АДРЕС	ROUTE	Факты записи карточек товаров и деклараций Wildberries и Ozon лежат в references	card/declaration write facts in references file
+U007	SKILL.md	3	ПРАВИЛО	ROUTE	читаются перед такой записью	read the card file before such write
+U008	SKILL.md	3	АДРЕС	ROUTE	Правила и механика n8n — в n8n-engineering-manual, читать его до правки любого в	n8n rules in n8n-engineering-manual, read before editing any workflow
+U009	SKILL.md	6	ПОРОГ	ROUTE	# Справочник инстанса — детали, которые ниоткуда не выводятся	title
+U010	SKILL.md	8	ИСТОРИЯ	HIST	Редакция 2026-09-26.	edition date 2026-09-26
+U011	SKILL.md	8	ИСТОРИЯ	HIST	адрес живого состава воркфлоу переведён с Google Doc N8N_REGISTRY на файл regist	roster address moved from Doc N8N_REGISTRY to n8n-map.md (phase Ф2)
+U012	SKILL.md	8	ИСТОРИЯ	HIST	абзац про ключ к своему API исправлен — он называл ротированный ключ действующим	fix: API key paragraph named rotated key as current; skipped 1 of 4 consumers
+U013	SKILL.md	8	ИСТОРИЯ	HIST	раздел про инструменты Docs сведён к тому, чего нет в google-drive-docs	Docs tools section reduced
+U014	SKILL.md	8	ИСТОРИЯ	HIST	добавлен раздел 2.2 — двадцать девять книг инстанса, у которых нет человеческого	added section 2.2, 29 unnamed books
+U015	SKILL.md	8	ИСТОРИЯ	HIST	MASTER_MAP опознан как лист, а не отдельная книга	MASTER_MAP identified as a sheet
+U016	SKILL.md	8	ИСТОРИЯ	HIST	Прежний заголовок несёл пометку «v3.0, усечён» — она описывала неизвестное прошл	old title mark v3.0 truncated removed as unverifiable
+U017	SKILL.md	10	ИСТОРИЯ	HIST	Правка 2026-10-09 по харвесту 2026-10-08.	edit 2026-10-09 by harvest 2026-10-08
+U018	SKILL.md	10	ИСТОРИЯ	HIST	в раздел 3 «Wildberries» добавлены факты записи карточек	WB card write facts added (AH-25, AH-29, A33, B2, B8)
+U019	SKILL.md	10	ИСТОРИЯ	HIST	добавлены подразделы «Ozon — общее», «Ozon — декларации и описание карточек», «П	subsections added (A4, A50, B2, B8)
+U020	SKILL.md	10	ИСТОРИЯ	HIST	«Внешние источники: что недоступно и откуда» (А27 с дополнением из Б7)	external sources subsection added (A27+B7)
+U021	SKILL.md	10	ИСТОРИЯ	HIST	формула `raw_key` Wildberries исправлена по коду узла	WB raw_key formula fixed from node code (contradiction В17)
+U022	SKILL.md	10	ИСТОРИЯ	HIST	MASTER_MAP перестал называться живым кросс-маппингом (В12)	MASTER_MAP no longer live cross-mapping (В12)
+U023	SKILL.md	10	ИСТОРИЯ	HIST	скрипт `processDeclPdfInbox` описан как снятый (В18)	script processDeclPdfInbox described as removed (В18)
+U024	SKILL.md	10	ИСТОРИЯ	HIST	к строке о книге ключей N8N_CREDENTIALS добавлено правило имени и исключение вла	credential name rule and WB exception added (В19)
+U025	SKILL.md	10	ИСТОРИЯ	HIST	добавлена проверка ID Google по длине (А38)	length check added (А38)
+U026	SKILL.md	10	ИСТОРИЯ	HIST	добавлена проверка страницы товара Liqui Moly по артикулу (А51)	LM page check by article added (А51)
+U027	SKILL.md	10	ИСТОРИЯ	HIST	Позиции AH-25 и AH-29 этой правкой закрываются по содержанию.	AH-25 and AH-29 closed by content
+U028	SKILL.md	12	ИСТОРИЯ	HIST	Правка 2026-10-13 по стадии Б отбора уроков Архивариуса	edit 2026-10-13, archivarius stage B, Р-38, lessons У-13г,У-77,У-118,У-120,У-127,У-129,У-154
+U029	SKILL.md	12	ИСТОРИЯ	HIST	добавлен абзац «Отзыв ключа» — удаление credential ключ не отзывает	added key-revocation paragraph (referenced by manual roots.md R13)
+U030	SKILL.md	12	ИСТОРИЯ	HIST	в «Ozon — общее» — лимит частоты на Client-Id	added Client-Id rate limit
+U031	SKILL.md	12	ИСТОРИЯ	HIST	строка о статусах FBS переписана по спецификации Wildberries (прежняя называла н	FBS status row rewritten; old had nonexistent declined
+U032	SKILL.md	12	ИСТОРИЯ	HIST	добавлены строки о методах ответа на отзывы и о метриках отгрузки по собственном	added review answer methods and shipping metrics rows
+U033	SKILL.md	12	ИСТОРИЯ	HIST	подраздел pgvector переписан — имя базы, таблицы и пользователя, верное число за	pgvector subsection rewritten
+U034	SKILL.md	12	ИСТОРИЯ	HIST	Платформенные факты сверены 2026-10-13 чтением документации; что не перепроверен	platform facts verified 2026-10-13 by docs; unverified marked inline
+U035	SKILL.md	16	ПРАВИЛО	ROUTE	Вход по вопросу, а не чтением целиком: нашёл строку, забрал деталь, вышел.	use by question not full read
+U036	SKILL.md	18	ПОРОГ	ROUTE	`[снимок ДД.ММ]` — сверено со строкой файла registry/n8n-map.md	marker snapshot = checked against n8n-map.md line
+U037	SKILL.md	18	ПОРОГ	ROUTE	`[владелец ДД.ММ]` — со слов Андрея	marker owner = per Andrei's words
+U038	SKILL.md	18	ПРАВИЛО	ROUTE	Строка БЕЗ пометки набита руками, датой не подтверждена и может быть устаревшей.	unmarked line is hand-typed, possibly stale
+U039	SKILL.md	18	ПРИЧИНА	ROUTE	непомеченная строка живёт ровно до того дня, когда объект изменится, и никто об 	why not store derivable things: unmarked line silently goes stale
+U040	SKILL.md	18	ПРАВИЛО	ROUTE	причина не заводить здесь ничего, что выводится из объекта	do not keep anything derivable from the object
+U041	SKILL.md	20	АДРЕС	ROUTE	Что читать дальше: перед записью в карточку товара Wildberries или Ozon и перед 	read cards file before card write / declarations via API
+U042	SKILL.md	20	ПРАВИЛО	ROUTE	Остальное — в этом файле.	rest is in this file
+U043	SKILL.md	22	ПРОВЕРКА	ROUTE	Подтверждение прочтения — назвать найденную деталь и её пометку.	read confirmation = name found detail and its marker
+U044	SKILL.md	22	ПРАВИЛО	ROUTE	Фиксированная фраза подтверждением не считается	fixed phrase is not confirmation
+U045	SKILL.md	22	ПРИЧИНА	ROUTE	она доказывает, что файл открыт, а не что в нём что-то нашли	why: phrase proves only file opened
+U046	SKILL.md	24	ПРАВИЛО	ROUTE	Чего здесь нет и где это лежит:	intro to not-here table
+U047	SKILL.md	28	АДРЕС	ROUTE	Живой состав воркфлоу: ID, имя, статус, черновик, расписание, таймзона, вызовы, 	roster fields
+U048	SKILL.md	28	АДРЕС	ROUTE	registry/n8n-map.md репозитория second-brain-canon; формат строк — projects/n8n-	roster in n8n-map.md; line format in PLAN.md sect 4
+U049	SKILL.md	29	АДРЕС	ROUTE	Пути вебхуков и признак их аутентификации	webhook paths and auth flag
+U050	SKILL.md	29	АДРЕС	OBJ_BOOK	Google Doc N8N_REGISTRY, строки HOOK и HOOKCALL	Doc N8N_REGISTRY rows HOOK, HOOKCALL
+U051	SKILL.md	30	АДРЕС	ROUTE	Какой credential привязан к какому узлу, активен ли он в узле, на какой хост узе	credential binding info lives in N8N_CREDENTIALS
+U052	SKILL.md	30	АДРЕС	OBJ_BOOK	закрытая книга N8N_CREDENTIALS, ID — в registry/documents.md	closed book N8N_CREDENTIALS; ID in registry/documents.md
+U053	SKILL.md	30	АДРЕС	OBJ_WF	Лист «Авто» перезаписывает воркфлоу Credential Inventory qolCVtDpTo2YlnGb по руч	sheet Авто overwritten by workflow Credential Inventory qolCVtDpTo2YlnGb on manual run
+U054	SKILL.md	30	АДРЕС	OBJ_BOOK	лист «Ключи» — ручное знание по ID credential	sheet Ключи = manual knowledge by credential ID
+U055	SKILL.md	30	ПРАВИЛО	OBJ_BOOK	лист «Правило имени» — правило имени нового ключа «<Сервис> · <Юрлицо> · <R или 	name rule for new key: Service · Entity · R or RW
+U056	SKILL.md	30	ПОРОГ	OBJ_BOOK	(R — только чтение, RW — чтение и запись)	R read-only, RW read-write
+U057	SKILL.md	30	ИСКЛЮЧЕНИЕ	OBJ_API	Исключение владельца от 2026-10-06: ключи Wildberries называются с русским слово	owner exception 2026-10-06: WB keys named with Russian word + right flag
+U058	SKILL.md	30	ПОРОГ	OBJ_API	например `WB_Контент_ИП_R`	example key name WB_Контент_ИП_R
+U059	SKILL.md	30	ПРИЧИНА	OBJ_API	токенов Wildberries много, и по общему правилу их не различить	why: many WB tokens indistinguishable
+U060	SKILL.md	30	АДРЕС	ROUTE	(projects/deklaration-wb/STATE.md)	source of exception
+U061	SKILL.md	30	СЛУЧАЙ	OBJ_BOOK	Лист «Правило имени» этого исключения пока не содержит — правит владелец.	sheet Правило имени lacks the exception; owner edits
+U062	SKILL.md	30	ПРАВИЛО	OBJ_BOOK	Читать через gsheets-read, диапазон с номером строки (A1:Z1100)	read via gsheets-read, range A1:Z1100
+U063	SKILL.md	31	АДРЕС	ROUTE	Как устроен воркфлоу и почему именно так	how a workflow works: its passport
+U064	SKILL.md	31	АДРЕС	ROUTE	адрес — строка PASSPORT в description воркфлоу	passport address = PASSPORT line in workflow description
+U065	SKILL.md	32	АДРЕС	ROUTE	Механика n8n, корневые причины отказов, протокол правки	n8n mechanics → n8n-engineering-manual
+U066	SKILL.md	33	АДРЕС	ROUTE	Инструменты чтения и записи Google Docs, Sheets, Drive: поля вызова, верификация	Docs/Sheets/Drive tools → google-drive-docs
+U067	SKILL.md	33	АДРЕС	ROUTE	(ID — `registry/n8n-map.md`)	tool IDs come from n8n-map.md
+U068	SKILL.md	34	АДРЕС	ROUTE	Чтение и запись файлов репозитория канона	repo file IO → second-brain-git
+U069	SKILL.md	35	АДРЕС	ROUTE	`projects/n8n/INCIDENT_LOG.md` (репозиторий second-brain-canon)	incident history location
+U070	SKILL.md	37	ПРАВИЛО	ROUTE	Per-workflow таблиц здесь нет	no per-workflow tables here
+U071	SKILL.md	37	ПРИЧИНА	OBJ_WF	они были третьим источником истины и дважды разошлись с объектом	why: third truth source, diverged twice
+U072	SKILL.md	37	СЛУЧАЙ	OBJ_WF	устаревшие пометки на `ss0QkY9V8YEMHf2B` и `LM_DECL_MASTER` пришлось исправлять 	2 cases: stale marks on ss0QkY9V8YEMHf2B and LM_DECL_MASTER
+U073	SKILL.md	37	ПРАВИЛО	ROUTE	Не заводить заново.	do not recreate
+U074	SKILL.md	41	ПОРОГ	ROUTE	## 1. Инструменты Drive и Docs	section title
+U075	SKILL.md	43	АДРЕС	ROUTE	живут в google-drive-docs: таблица быстрого выбора инструмента (§1), разделы 3.1	Docs tools documented in google-drive-docs §1, 3.1-3.6, §7
+U076	SKILL.md	43	АДРЕС	ROUTE	их ID — по правилу §1 того же Skill, из строки `registry/n8n-map.md` по имени во	tool IDs from n8n-map.md by workflow name
+U077	SKILL.md	43	ПРАВИЛО	ROUTE	Здесь они не повторяются намеренно.	not repeated here on purpose
+U078	SKILL.md	43	ПРИЧИНА	ROUTE	Копия этого списка была бы третьим источником истины	why: copy would be third truth source
+U079	SKILL.md	43	СЛУЧАЙ	OBJ_WF	паспорт Registry Sync до 26.09.2026 называл получателем перезаписи заархивирован	case: Registry Sync passport named archived OYIhTm8h2ABMHQUW as overwrite target until 26.09.2026
+U080	SKILL.md	47	ПОРОГ	OBJ_WF	`Hpy9TCly6LKCjlqf` — GDrive Share File, активен [снимок 26.09]	workflow Hpy9TCly6LKCjlqf GDrive Share File active
+U081	SKILL.md	47	ПОРОГ	OBJ_WF	Вход POST `{fileId, emailAddress?, role?}` → permissions.create плюс read-back.	input POST {fileId,emailAddress?,role?}; permissions.create + read-back
+U082	SKILL.md	47	СЛУЧАЙ	OBJ_WF	Создан 11.08.2026.	created 2026-08-11
+U083	SKILL.md	48	ПРАВИЛО	OBJ_WF	ходит под сервисным аккаунтом и не может выдать файлу самое первое разрешение	runs as service account; cannot grant first permission
+U084	SKILL.md	48	ПОРОГ	MECH	permissions.create отвечает 404	Drive permissions.create returns 404 if account has no access
+U085	SKILL.md	48	ПРАВИЛО	OBJ_WF	Годится, только когда доступ хотя бы на чтение уже есть.	usable only if read access already exists
+U086	SKILL.md	50	ПОРОГ	OBJ_WF	`kJTXJuHQAv1go52t` — Claude → Obsidian, активен [снимок 26.09]	workflow kJTXJuHQAv1go52t Claude to Obsidian active
+U087	SKILL.md	52	ПРАВИЛО	OBJ_WF	Звать нельзя, через MCP они и не видны	archived Docs tool versions must not be called
+U088	SKILL.md	52	ПРИЧИНА	OBJ_WF	список нужен, чтобы узнавать их ID в старых текстах и паспортах	why: to recognize IDs in old texts
+U089	SKILL.md	56	ПОРОГ	OBJ_WF	`CELGBmo7vQFF1Ej7` | gdocs-append v1	archived gdocs-append v1 CELGBmo7vQFF1Ej7
+U090	SKILL.md	56	СЛУЧАЙ	OBJ_WF	заменён на `YfzWwu1VmIUCbUu0` 22.07.2026	replaced by YfzWwu1VmIUCbUu0 on 2026-07-22
+U091	SKILL.md	57	ПОРОГ	OBJ_WF	`qWk65OyxaoAu4jAl` | gdocs-replace v1	archived gdocs-replace v1 qWk65OyxaoAu4jAl
+U092	SKILL.md	57	СЛУЧАЙ	OBJ_WF	расхождение обнаружено 21.07.2026	discrepancy found 2026-07-21
+U093	SKILL.md	58	ПОРОГ	OBJ_WF	`OYIhTm8h2ABMHQUW` | gdocs-overwrite v1	archived gdocs-overwrite v1 OYIhTm8h2ABMHQUW
+U094	SKILL.md	58	СЛУЧАЙ	OBJ_WF	30.07.2026 обнулил SYS_INDEX — разбор в `projects/n8n/INCIDENT_LOG.md`	incident 2026-07-30: it wiped SYS_INDEX; analysis in INCIDENT_LOG
+U095	SKILL.md	62	ПОРОГ	ROUTE	## 2. Книги Google Sheets и документы	section title
+U096	SKILL.md	64	ПРИЧИНА	ROUTE	Снимок отвечает строками D на вопрос «какие воркфлоу и какими узлами трогают док	snapshot D rows answer which workflows touch doc ID
+U097	SKILL.md	64	ПРИЧИНА	OBJ_BOOK	На обратный вопрос — «какой ID у книги, которую человек зовёт Price Master»	snapshot lacks human names; reverse lookup is this section
+U098	SKILL.md	64	ПРАВИЛО	OBJ_BOOK	поэтому ID отсюда не убираются	IDs stay in this section
+U099	SKILL.md	66	ПОРОГ	ROUTE	### 2.1 Книги с человеческим именем	subsection title
+U100	SKILL.md	69	ПОРОГ	OBJ_BOOK	**Reviews Queue** — `1mgtcD2wSm_-8hqfpv3v883KE34-Smy-kFxHvt6zMXj4`	book Reviews Queue ID
+U101	SKILL.md	69	ПОРОГ	OBJ_BOOK	листы `ozon_reviews_queue` и `ozon_qa_queue`; 20 узлов [снимок 26.09]	sheets ozon_reviews_queue, ozon_qa_queue; 20 nodes
+U102	SKILL.md	70	ПОРОГ	OBJ_BOOK	**Price Master** — `1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk`	book Price Master ID
+U103	SKILL.md	70	ПОРОГ	OBJ_BOOK	листы `Artikel` и `CURRENT`; 8 узлов [снимок 26.09]	sheets Artikel, CURRENT; 8 nodes
+U104	SKILL.md	71	ПОРОГ	OBJ_BOOK	**SKU_Artikel_Map** — `1dJN-wWrzr4LKi9FPTkbOpAu6N-LMymxiF-WJEFJPlCU`	book SKU_Artikel_Map ID
+U105	SKILL.md	71	ПОРОГ	OBJ_BOOK	листы `SKU_Artikel_Map` и `MASTER_MAP`	sheets SKU_Artikel_Map, MASTER_MAP
+U106	SKILL.md	71	ПОРОГ	OBJ_BOOK	MASTER_MAP — таблица соответствия `sku + lm_id + ozon_sku + wb_nm_id`	MASTER_MAP columns sku, lm_id, ozon_sku, wb_nm_id
+U107	SKILL.md	71	ПОРОГ	OBJ_WF	это ЛИСТ внутри этой же книги, а не отдельный файл: узел `16_Write_WB_nmID` пише	MASTER_MAP is a sheet; node 16_Write_WB_nmID writes it
+U108	SKILL.md	71	ПРАВИЛО	OBJ_BOOK	Источником истины MASTER_MAP НЕ является: это снимок, собранный скриптом 19.06.2	MASTER_MAP not truth source; snapshot of 2026-06-19 script, lagging
+U109	SKILL.md	71	СЛУЧАЙ	OBJ_BOOK	у нашего артикула 1908 в MASTER_MAP стоит `ozon_sku` = 0, а в Price Master, лист	evidence: article 1908 ozon_sku=0 in MASTER_MAP, real in Price Master
+U110	SKILL.md	71	ПРАВИЛО	OBJ_BOOK	Живой источник соответствия артикулов — **Price Master, лист `Artikel`**.	live article mapping source = Price Master sheet Artikel
+U111	SKILL.md	71	ПРАВИЛО	OBJ_BOOK	По решению владельца 2026-10-02 MASTER_MAP выводится из употребления после того,	owner decision 2026-10-02: MASTER_MAP retired after readers switch to Price Master
+U112	SKILL.md	71	АДРЕС	ROUTE	labs/ozon-ue/t-master-map-ozon-sku.md, запись 2026-10-03; шаг 5 задачи labs/ozon	pointers for MASTER_MAP retirement
+U113	SKILL.md	72	ИСТОРИЯ	HIST	ИСТОРИЯ ДИАГНОЗА: прежняя редакция называла MASTER_MAP «единым кросс-маппингом»	history: MASTER_MAP once called unified cross-mapping
+U114	SKILL.md	72	СЛУЧАЙ	OBJ_BOOK	опровергнуто сверкой 2026-10-03 — ноль у артикула 1908 остался только в снимке 1	refuted by check 2026-10-03: zero only in 19.06 snapshot
+U115	SKILL.md	75	ПОРОГ	OBJ_BOOK	**LM_DECL_MASTER** — `1PO7vNyoY16tYqpU_KB5xuK4aSAbOU7YW_MM0scg5ksY`	book LM_DECL_MASTER ID
+U116	SKILL.md	75	ПОРОГ	OBJ_BOOK	13 узлов; там, где узел раскрывает имя листа, это `LM_DECL` [снимок 26.09]	13 nodes; sheet LM_DECL
+U117	SKILL.md	75	ПОРОГ	OBJ_BOOK	Лист `Decl_Monitor` — дашборд со светофором; ни одним узлом не трогается	sheet Decl_Monitor is a dashboard, untouched by nodes
+U118	SKILL.md	75	ИСТОРИЯ	HIST	Прежняя редакция этого файла называла рабочим листом именно `Decl_Monitor`	old edition called Decl_Monitor the working sheet
+U119	SKILL.md	77	ПОРОГ	ROUTE	### 2.2 Книги без человеческого имени	subsection title
+U120	SKILL.md	79	СЛУЧАЙ	OBJ_BOOK	Двадцать девять книг из сорока одной, которые трогают воркфлоу, не названы нигде	29 of 41 books untouched by name anywhere
+U121	SKILL.md	79	ПРАВИЛО	OBJ_BOOK	Ниже те, что используются тремя и более узлами	table lists books used by 3+ nodes
+U122	SKILL.md	79	ПРАВИЛО	OBJ_BOOK	кто знает имя, дописывает его сюда	whoever knows name adds it here
+U123	SKILL.md	79	ПРИЧИНА	OBJ_BOOK	это долг, а не факт	missing name is debt not fact
+U124	SKILL.md	83	ПОРОГ	OBJ_BOOK	`1P-GgiFm3067U_sgC2Dojos3BbT_-au6v-mT52vVT3y4` | `sales_raw_operations`	OZON_UE RAW book ID; sheets sales_raw_operations, ozon_raw_accrual_TEST, ozon_accrual_types; 19 nodes
+U125	SKILL.md	84	ПОРОГ	OBJ_BOOK	`1qdefReY1qHfWdwroorbxz2Bi20_3dsGHuDBiYy2W_XQ` | `wb_fbs_orders_tracking`	WB FBS book ID; sheets wb_fbs_orders_tracking, wb_fbs_monitor_params, wb_fbs_performance_log; 19 nodes
+U126	SKILL.md	85	ПОРОГ	OBJ_BOOK	`1JwV7bbfLLxztE7gRrUEOUIvUk-xCOcwDkT88RA5bHPg` | `wb_reviews_archive`	WB reviews archive book ID; 17 nodes
+U127	SKILL.md	86	ПОРОГ	OBJ_BOOK	`1XMy8XsF4tIyiPIhiW2dAt8Sihbsy4xQOXWQhjCJEHyE` | `kb_motor_oil`	KB motor oil book ID; sheets kb_motor_oil, Шаблон; 15 nodes
+U128	SKILL.md	87	ПОРОГ	OBJ_BOOK	`1eQPV1KQ2FE4kV935KV3_05c6VgbRZkU0y4DwFgTIEL4` | `SKU_Artikel`	cost price book ID; sheets SKU_Artikel, cost_price_history; 14 nodes
+U129	SKILL.md	88	ПОРОГ	OBJ_BOOK	`1AhgaspMQl3wLsVT7Iub0d195r8DwwUarhQAWwjBO8xE` | `wb_fbs_params`	WB FBS params book ID; 4 sheets; 12 nodes
+U130	SKILL.md	89	ПОРОГ	OBJ_BOOK	`14QMHYMM4mZRnnq1wHQA4_SA8ZnOeE1xcVJDL2h9h1Pk` | имя листа узлы не раскрывают	WB RAW Finance book ID; 6 nodes
+U131	SKILL.md	90	ПОРОГ	OBJ_BOOK	`17j3EOOGPFwnjF9RQbZzll-4Cm6JD8Cd5mNqm_p9AOBU` | `Акт.цена`	active price book ID; sheets Акт.цена, Акт.цена_backfill; 4 nodes
+U132	SKILL.md	91	ПОРОГ	OBJ_BOOK	`1sBYaluh1NDkb0zVmbV-NX4jsNbawEpXlae8fRg2AiuI` | `dashboard`	WB reports book ID; sheets dashboard, wb_reports_official; 4 nodes
+U133	SKILL.md	92	ПОРОГ	OBJ_BOOK	`1eujHu87IO0IlngLX164_O81LxPI5NNpq9S47E8anVSo` | имя листа узлы не раскрывают; з	News Filter book ID with seen_posts; 3 nodes
+U134	SKILL.md	93	ПОРОГ	OBJ_BOOK	`1gPjWlhld9LAzGScEU9l63OGfcXK48dujYX1A9Uh6gBk` | имя листа	KB transmission oil book ID; 3 nodes
+U135	SKILL.md	94	ПОРОГ	OBJ_BOOK	`1sPD5SAFCTygzUaEPg8RKRPHQyc0HCMIK-aMpnXqYu3k` | имя листа	KB auto chemistry book ID; 3 nodes
+U136	SKILL.md	95	ПОРОГ	OBJ_BOOK	`11j0yKZ0FvE9EbZiTzCStEACsgecliaElVccpUixmQcQ` | имя листа	Контроль Price WB book ID; 3 nodes
+U137	SKILL.md	96	ПОРОГ	OBJ_BOOK	`1cK5dues1ffnUdy6UGCDHiMzxp1ZucdyvawS5Dvx-o3M` | имя листа	SYS Lint book ID; 3 nodes
+U138	SKILL.md	98	ПРОВЕРКА	OBJ_BOOK	Все строки таблицы — [снимок 26.09].	all table rows snapshot 26.09
+U139	SKILL.md	98	АДРЕС	ROUTE	Полный список из сорока одного документа с их узлами достаётся из снимка одной к	full list of 41 docs via grep '^D|' registry/n8n-map.md
+U140	SKILL.md	100	СЛУЧАЙ	OBJ_BOOK	ID `1qdefReY1qHfWdwroorbxz2Bi20_3dsGHuDBiYy2W_XQ` лежит в `registry/documents.md	WB FBS book ID corrupted at documents.md line 35: 41 chars instead of 44
+U141	SKILL.md	100	СЛУЧАЙ	OBJ_BOOK	на 09.10.2026 строка всё ещё повреждена: в ней пропущены три знака `uDB`	as of 2026-10-09 still corrupt, missing uDB
+U142	SKILL.md	100	ПРАВИЛО	OBJ_BOOK	Верный ID — тот, что в таблице выше и в узлах воркфлоу.	correct ID is the one in table and nodes
+U143	SKILL.md	102	ПОРОГ	ROUTE	### 2.3 Проверка ID Google по длине	subsection title
+U144	SKILL.md	104	ПРАВИЛО	MECH	ID попадает в канон только из объекта или из поиска этой же сессии — не по памят	IDs enter canon only from object/search of same session
+U145	SKILL.md	104	СЛУЧАЙ	OBJ_BOOK	перепечатанная руками копия уже повредилась (строка 35 выше)	retyped copy already corrupted (line 35)
+U146	SKILL.md	104	ПРАВИЛО	MECH	Дешёвая проверка перед записью любого ID Google — длина	cheap check before writing Google ID: length
+U147	SKILL.md	105	ПОРОГ	MECH	документ Google Docs и книга Google Sheets — 44 знака	Docs/Sheets ID = 44 chars
+U148	SKILL.md	106	ПОРОГ	MECH	папка Google Drive — 33 знака	Drive folder ID = 33 chars
+U149	SKILL.md	108	ПРОВЕРКА	MECH	Другая длина — ID повреждён или это не ID Google	other length = corrupt or not Google ID
+U150	SKILL.md	108	ПОРОГ	OBJ_OTHER	ID Claude Project длиной 36 знаков с дефисами	Claude Project ID 36 chars with hyphens
+U151	SKILL.md	108	ПРОВЕРКА	MECH	Длина ловит пропуск и лишний знак, но не замену одного знака другим; сверка по о	length check misses substitution; object check is the only proof
+U152	SKILL.md	108	АДРЕС	ROUTE	Происхождение: projects/n8n-map/PLAN.md, зонд Z-10; projects/deklaration-ozon/LO	origin pointers Z-10, Т-3
+U153	SKILL.md	112	ПОРОГ	ROUTE	## 3. Внешние API и доменные детали	section title
+U154	SKILL.md	115	ПОРОГ	MECH	Ozon кладёт ошибку в тело ответа при коде HTTP 200.	Ozon puts error in body with HTTP 200
+U155	SKILL.md	115	СЛУЧАЙ	MECH	`{"code":9,"message":"obsolete method cannot be used"}` у отключённого `/v3/fina	example: disabled /v3/finance/transaction/list returns code 9 obsolete method
+U156	SKILL.md	115	СЛУЧАЙ	MECH	исполнение при этом success с нулём строк	execution success with zero rows
+U157	SKILL.md	115	СЛУЧАЙ	OBJ_API	`PermissionDenied` «not available with existing subscription» на публикации отве	example: PermissionDenied on review answer publish (subscription)
+U158	SKILL.md	115	ПРАВИЛО	MECH	тело ответа проверяется на поля `code` и `message`, а итог — по объекту	check body fields code/message and verify by object
+U159	SKILL.md	115	АДРЕС	ROUTE	Общее правило «результат по объекту, не по статусу» — корень R4	general rule = root R4 in n8n-engineering-manual
+U160	SKILL.md	116	ПОРОГ	MECH	Лимит частоты Seller API считается на Client-Id, а не на воркфлоу	Ozon rate limit counted per Client-Id, not per workflow
+U161	SKILL.md	116	ПОРОГ	OBJ_API	у второго кабинета (другое юрлицо) свой Client-Id, значит и свой счётчик	second cabinet has own Client-Id/counter
+U162	SKILL.md	116	ПОРОГ	MECH	Общий лимит — 50 запросов в секунду на все методы с одного Client-Id, с 22.05.20	Ozon limit 50 rps per Client-Id since 2025-05-22 (was 10)
+U163	SKILL.md	116	ПОРОГ	MECH	превышение даёт 429 «You have reached request rate limit per second»	exceeding gives 429 message
+U164	SKILL.md	116	АДРЕС	ROUTE	Источник — официальный канал новостей Seller API в Telegram (t.me/s/OzonSellerAP	source Telegram OzonSellerAPI msgs 485, 491
+U165	SKILL.md	116	ПРАВИЛО	MECH	у отдельных методов свой, более низкий потолок, и он назван в тексте ответа 429	per-method lower limits named in 429 text
+U166	SKILL.md	116	СЛУЧАЙ	MECH	`/v1/analytics/data` в августе 2026 отвечал «rate limit exceeded for `seller-api	/v1/analytics/data limit 2 rps seen Aug 2026
+U167	SKILL.md	116	ПОРОГ	MECH	С 24.02.2026 операции с товарами (`/v3/product/import`, `/v1/product/update/offe	since 2026-02-24 product ops limit applies to 4 methods
+U168	SKILL.md	116	ПОРОГ	MECH	ограничены 30 000 товаров в минуту на все четыре метода вместе	30000 items/min shared by 4 methods
+U169	SKILL.md	116	ПОРОГ	MECH	запрос, в котором товаров больше остатка, отклоняется целиком с текстом «You hav	over-limit request rejected whole with this text
+U170	SKILL.md	116	СЛУЧАЙ	MECH	пересказ avoshop.ru от 18.02.2026, первоисточник Ozon не прочитан	source avoshop.ru 2026-02-18 retelling, primary not read
+U171	SKILL.md	116	ПРАВИЛО	MECH	429 при одном запросе за прогон — не дефект этого воркфлоу и паузой внутри него 	429 with one request per run is not workflow defect; pause inside does not cure
+U172	SKILL.md	116	ПРАВИЛО	MECH	диагностика начинается с текста ошибки (какой лимит назван) и с суммы запросов в	diagnosis: error text + sum of requests of all workflows on same Client-Id
+U173	SKILL.md	116	ПРИЧИНА	MECH	пауза между пакетами внутри воркфлоу уменьшает только его собственный вклад	pause reduces only own contribution
+U174	SKILL.md	116	СЛУЧАЙ	OBJ_WF	1 случай, 2026-08-25 — шесть из шести плановых прогонов OZON RAW Konversion Sync	case 2026-08-25: 6 of 6 runs of OZON RAW Konversion Sync SElTcMg3BpY6pmdo failed 429
+U175	SKILL.md	116	СЛУЧАЙ	OBJ_API	на том же Client-Id было ещё 12 активных воркфлоу	12 other active workflows on same Client-Id
+U176	SKILL.md	116	АДРЕС	ROUTE	(отчёт REPORT_H-25.08-01, раздел 2, ID — registry/documents.md; урок У-77 журнал	evidence pointers REPORT_H-25.08-01, У-77, Р-13
+U177	SKILL.md	119	ПОРОГ	MECH	Поля `pros`, `cons`, `text` раздельные; статус `rejected` возможен.	Ozon review fields pros/cons/text separate; status rejected possible
+U178	SKILL.md	120	ПОРОГ	MECH	Публикация отзыва: POST `/v1/review/comment/create`, задержка 4 секунды между за	review publish endpoint; 4 s delay
+U179	SKILL.md	121	ПОРОГ	OBJ_WF	Маппинг `operation_type` → узел `06C_Map_Operation_Category`, обычный объект JS.	operation_type mapping in node 06C_Map_Operation_Category, JS object
+U180	SKILL.md	121	ПРАВИЛО	OBJ_WF	Новый тип добавляется в словарь; неизвестные дают `'Не классифицировано: ' + opT	new type added to dictionary; unknown yields Не классифицировано
+U181	SKILL.md	122	ПОРОГ	MECH	Эндпоинты вопросов идут БЕЗ `/product/`: POST `/v1/question/list`, `/v1/question	Ozon question endpoints without /product/
+U182	SKILL.md	123	ПОРОГ	MECH	Публичный ответ на карточке закрыт без тарифа Premium Plus (порядка 25 тысяч руб	public answer needs Premium Plus (~25k RUB/month)
+U183	SKILL.md	123	ПОРОГ	MECH	ответ через чат `/v3/chat/` виден только самому покупателю	chat answer via /v3/chat/ visible only to buyer
+U184	SKILL.md	124	ПОРОГ	MECH	Вебхука `TYPE_NEW_QUESTION` не существует.	no TYPE_NEW_QUESTION webhook
+U185	SKILL.md	125	ПОРОГ	MECH	Стоп пагинации `/v1/review/list` — любое из трёх: пустой массив, `last_id` не из	review/list stop: empty array, unchanged last_id, length<limit
+U186	SKILL.md	126	ПОРОГ	OBJ_WF	Встроенная пагинация HTTP-узла для транзакций: `paginationCompleteWhen: other`	HTTP node pagination for transactions: paginationCompleteWhen other
+U187	SKILL.md	126	ПОРОГ	OBJ_WF	`completeExpression: ={{ $response.body.result.operations.length < 1000 }}`	completeExpression operations.length<1000
+U188	SKILL.md	127	ПОРОГ	MECH	Ограничение частоты примерно один запрос в секунду: Items per Batch = 1, Batch I	~1 rps: Items per Batch 1, Batch Interval 4000 ms
+U189	SKILL.md	130	ПОРОГ	MECH	POST `/v1/finance/accrual/by-day`, тело `{date, last_id}` → ответ `{accruals:[..	accrual endpoint request/response shape
+U190	SKILL.md	130	ПРАВИЛО	MECH	Пагинация останавливается, когда `last_id` пришёл пустой строкой, НЕ по длине ма	stop when last_id empty string, not array length
+U191	SKILL.md	131	ПОРОГ	MECH	`accrued_category` принимает `POSTING`, `ITEM`, `NON_ITEM`; у каждой своя вложен	accrued_category values; each has own nested shape
+U192	SKILL.md	132	ПОРОГ	MECH	Наблюдаемая формула нэттинга: `sale_amount + sale_commission + delivery.total_ac	observed netting formula
+U193	SKILL.md	133	ПОРОГ	MECH	`container_fees` ни разу не приходило непустым; статус поля неизвестен.	container_fees never non-empty; status unknown
+U194	SKILL.md	134	ПОРОГ	MECH	Ловушка совместимости с `/v3/posting/fbs/get` (вход `{posting_number}`)	compat trap with /v3/posting/fbs/get
+U195	SKILL.md	134	ПРАВИЛО	MECH	валидный `posting_number` даёт только `unit_number` из записей с `accrued_catego	valid posting_number only from unit_number of POSTING records
+U196	SKILL.md	134	СЛУЧАЙ	MECH	Взятый из `ITEM` или `NON_ITEM` даёт 404 в 85–91 проценте случаев.	from ITEM/NON_ITEM gives 404 in 85-91% of cases
+U197	SKILL.md	137	ПРАВИЛО	ROUTE	Ключ строки RAW-слоя, свой на каждый источник:	raw_key is per source
+U198	SKILL.md	138	ПОРОГ	MECH	Ozon, транзакции — `business_date|operation_id`	Ozon transactions raw_key
+U199	SKILL.md	139	ПОРОГ	MECH	Ozon, начисления — `accrual_id`	Ozon accruals raw_key
+U200	SKILL.md	140	ПОРОГ	OBJ_WF	Wildberries — `[business_date, report_id, rrd_id].join('_')`, то есть три поля ч	WB raw_key formula three fields underscore
+U201	SKILL.md	140	ПОРОГ	OBJ_WF	узле `06_Add_RAW_Key` воркфлоу WB RAW Finance Sync V.3 (`IvgysDKrq3UISYEY`, проч	key in node 06_Add_RAW_Key of workflow IvgysDKrq3UISYEY, read 2026-10-09
+U202	SKILL.md	140	ПОРОГ	OBJ_WF	WB RAW History Load V.3 CLEAN (`Iis5dlRS1GWZqQXD`)	same key in workflow Iis5dlRS1GWZqQXD
+U203	SKILL.md	140	ПРАВИЛО	OBJ_WF	Решено убрать из ключа `report_id` и оставить `business_date` и `rrd_id`	decision: drop report_id from key, keep business_date + rrd_id
+U204	SKILL.md	140	ПРИЧИНА	MECH	в дневной выгрузке `report_id` синтетический (пример `97472420260914`)	why: daily export report_id synthetic, e.g. 97472420260914
+U205	SKILL.md	140	ПРИЧИНА	MECH	одна и та же строка Wildberries в дневной и недельной выгрузке получает разные к	same WB row in daily and weekly export gets different keys
+U206	SKILL.md	140	СЛУЧАЙ	OBJ_API	уникальность пары `business_date` + `rrd_id` проверена на 87 228 строках, совпад	uniqueness verified on 87228 rows, 0 collisions
+U207	SKILL.md	140	СЛУЧАЙ	OBJ_WF	На 09.10.2026 правка НЕ внесена — в узле по-прежнему три поля. Когда внесут, эту	as of 2026-10-09 edit not applied; rewrite line when done
+U208	SKILL.md	141	ИСТОРИЯ	HIST	прежняя редакция давала формулу `rrd_id|sale_dt|report_id`; опровергнуто чтением	history: old formula rrd_id|sale_dt|report_id refuted by node reading
+U209	SKILL.md	143	АДРЕС	ROUTE	Почему форматы намеренно разные и почему RAW-слои не объединяются — n8n-engineer	why formats differ → manual section 3
+U210	SKILL.md	146	АДРЕС	ROUTE	Карточки товаров и декларации: ответ 200 на запись не доказывает применения	pointer summary of card write facts
+U211	SKILL.md	146	АДРЕС	ROUTE	Подробно и с адресами — references/cards-and-declarations.md, разделы 1 и 2.	details in references sections 1 and 2
+U212	SKILL.md	147	ПОРОГ	MECH	Ответ на вопрос: PATCH `/api/v1/questions`, тело `{id, answer:{text}, state:"wbR	WB question answer PATCH /api/v1/questions body
+U213	SKILL.md	147	ПРАВИЛО	MECH	Поле `state` обязательно — без него ответ не появляется на сайте.	state required else answer not shown
+U214	SKILL.md	148	ПОРОГ	MECH	Отзывы и вопросы — оба API на `feedbacks-api.wildberries.ru`, токен категории «В	feedbacks-api host; token category Questions and Reviews
+U215	SKILL.md	148	ПОРОГ	MECH	Credential — Header Auth, заголовок `Authorization`, значение — токен без слова 	Header Auth Authorization, token without Bearer, works since 2026-06-02
+U216	SKILL.md	148	ПОРОГ	MECH	у Finance API ниже значение с `Bearer`, и оно тоже работает	Finance API uses Bearer and also works
+U217	SKILL.md	148	ПОРОГ	MECH	Первый ответ на отзыв — POST `/api/v1/feedbacks/answer`, тело `{id, text}`, отве	first review answer POST body {id,text} returns 204
+U218	SKILL.md	148	ПОРОГ	MECH	Правка уже опубликованного ответа — PATCH `/api/v1/feedbacks/answer` с тем же те	edit answer PATCH once within 60 days
+U219	SKILL.md	148	ПОРОГ	MECH	Адрес `/api/v1/feedbacks` принимает только чтение: PATCH на него даёт 405 с заго	/api/v1/feedbacks read-only; PATCH gives 405
+U220	SKILL.md	148	ПОРОГ	MECH	Список отзывов — GET `/api/v1/feedbacks`, обязательные параметры `isAnswered`, `	list feedbacks params take<=5000, skip<=199990
+U221	SKILL.md	148	ПОРОГ	OBJ_WF	воркфлоу WB Reviews Intake берёт `take` = 100 и `skip` = номер страницы × 100 и 	Intake paging take=100, stop when <100
+U222	SKILL.md	148	ПОРОГ	OBJ_WF	Отвеченные отзывы и вопросы Intake читает только за последние 60 дней (`dateFrom	Intake reads answered only last 60 days
+U223	SKILL.md	148	ПРИЧИНА	OBJ_WF	без окна узел сборки отвеченных падал по памяти	why: without window node crashed by memory
+U224	SKILL.md	148	ПОРОГ	MECH	Лимит частоты — 3 запроса в секунду, всплеск 6, на один аккаунт продавца на все 	limit 3 rps burst 6 per seller account per category
+U225	SKILL.md	148	ПРАВИЛО	OBJ_WF	его делят все воркфлоу отзывов и вопросов	limit shared by all review workflows
+U226	SKILL.md	148	ПРОВЕРКА	MECH	Методы и лимит сверены 2026-10-13 со спецификацией Wildberries `09-communication	verified 2026-10-13 vs 09-communications.yaml (eslazarev/wildberries-sdk commit 9885191)
+U227	SKILL.md	148	СЛУЧАЙ	OBJ_WF	2026-06-02 при запуске Intake и Publication PATCH на `/feedbacks` дал 405 и был 	case 2026-06-02: PATCH gave 405, replaced by POST
+U228	SKILL.md	148	СЛУЧАЙ	OBJ_WF	узел `04A_Rollback_Review` с 2026-06-02 бил PATCH в `/api/v1/feedbacks` и получа	case: node 04A_Rollback_Review got 405 for 8 weeks until 2026-07-28 fix
+U229	SKILL.md	148	АДРЕС	ROUTE	(WB_REVIEWS_INDEX, строки 927, 476, 1075, 1080; projects/wb-reviews/NOT_TAKEN.md	evidence pointers lines 927,476,1075,1080; У-129, Р-28
+U230	SKILL.md	149	ПРАВИЛО	MECH	Ответ на отзыв можно исправить только один раз, и откат ответа сжигает эту единс	review answer editable once; rollback burns it
+U231	SKILL.md	149	ПРОВЕРКА	MECH	Перед PATCH читать поле `editable` в GET `feedbacks-api.wildberries.ru/api/v1/fe	before PATCH read editable via GET feedback?id
+U232	SKILL.md	149	ПОРОГ	MECH	ответ продавца — `data.answer`: `{text, state, editable}`	seller answer in data.answer {text,state,editable}
+U233	SKILL.md	149	ПРОВЕРКА	MECH	На PATCH к несуществующему отзыву Wildberries отвечает 204, то есть успехом — пр	PATCH to nonexistent review returns 204; verify by control read
+U234	SKILL.md	149	ПОРОГ	MECH	Заголовок `x-ratelimit-remaining` приходит без `x-ratelimit-limit` и `x-ratelimi	x-ratelimit-remaining without limit/reset; window not computable
+U235	SKILL.md	149	АДРЕС	ROUTE	(projects/wb-reviews/PLAN.md, пункты Н13, Н17, Н18, Н19)	pointer PLAN.md Н13,Н17-Н19
+U236	SKILL.md	150	ПОРОГ	MECH	`/orders/status`: поле называется `orders`, не `orderIds`; тело `{orders:[...]}`	orders/status field orders; pass object without stringify
+U237	SKILL.md	151	ПРАВИЛО	MECH	`supplierStatus=confirm` включает и отгруженные заказы — фильтровать дополнитель	confirm includes shipped; filter by tracking status
+U238	SKILL.md	152	ПОРОГ	MECH	Пагинация статистики: курсор `rrdid`, между страницами узел Wait на 70 секунд из	stats pagination cursor rrdid; Wait 70 s
+U239	SKILL.md	153	ПОРОГ	MECH	Finance API v1: POST `finance-api.wildberries.ru/api/finance/v1/sales-reports/de	Finance API v1 endpoint; token category Finance
+U240	SKILL.md	153	ПОРОГ	MECH	Даты с зоной: `2026-05-26T00:00:00+03:00`.	dates with zone
+U241	SKILL.md	153	ПОРОГ	MECH	Пагинация: `rrdId` в теле, старт 0, до ответа 204.	pagination rrdId body start 0 until 204
+U242	SKILL.md	153	ПОРОГ	MECH	Денежные поля приходят строками.	money fields as strings
+U243	SKILL.md	153	ПОРОГ	MECH	Credential — Header Auth, имя `Authorization`, значение `Bearer TOKEN`.	Finance credential Header Auth Bearer TOKEN
+U244	SKILL.md	154	ПОРОГ	MECH	Знак строки финансового отчёта задаёт поле `doc_type` («Возврат»), а не название	sign set by doc_type not operation_name
+U245	SKILL.md	154	ПОРОГ	MECH	при возврате `revenue` и `for_pay` положительные	on return revenue and for_pay positive
+U246	SKILL.md	154	АДРЕС	ROUTE	(projects/wb-ue/LOG.md, Р-11)	pointer Р-11
+U247	SKILL.md	154	ПОРОГ	MECH	Wildberries молча переименовывает операции: с 01.09.2026 «Логистика» стала «Дост	WB renamed operations since 2026-09-01
+U248	SKILL.md	154	ПРАВИЛО	MECH	неизвестное название падает в категорию «прочее» и пропадает из витрины	unknown name falls to other and vanishes from showcase
+U249	SKILL.md	154	ПОРОГ	MECH	Тождество выплаты: `forPay = retailAmount − vw − vwNds − acquiringFee − ppvzRewa	payout identity formula
+U250	SKILL.md	154	СЛУЧАЙ	MECH	выполнено на всех 289 продажах недели 14–20.09.2026 (там же, Р-33)	verified on 289 sales of week 14-20.09.2026
+U251	SKILL.md	154	ПРАВИЛО	MECH	`commissionPercent` — номинал тарифа: в выплате он не участвует, и вычитать коми	commissionPercent nominal; do not subtract from for_pay; double count (Р-18)
+U252	SKILL.md	155	ПОРОГ	MECH	Домены-ловушки, которые НЕ работают: `statistics-api` (старый v5), `common-api`,	trap domains that do not work
+U253	SKILL.md	156	ПОРОГ	MECH	Семантика статусов FBS (POST `/api/v3/orders/status`).	FBS status semantics
+U254	SKILL.md	156	ПОРОГ	MECH	`supplierStatus` меняет действие продавца: `new` — новое задание, `confirm` — на	supplierStatus values and meanings
+U255	SKILL.md	156	ПОРОГ	MECH	`wbStatus` — статус системы Wildberries: рабочие `waiting` (в работе), `sorted` 	wbStatus working values
+U256	SKILL.md	156	ПОРОГ	MECH	отмены — `canceled` (отмена сборочного задания), `declined_by_client` (покупател	wbStatus cancel values
+U257	SKILL.md	156	ПРАВИЛО	MECH	Отмена покупателем или самим Wildberries видна только в `wbStatus`, а `supplierS	cancel visible only in wbStatus; supplierStatus stays new
+U258	SKILL.md	156	ПРАВИЛО	MECH	Детект отмены нужен отдельной ветвью по `wbStatus` со ВСЕМИ значениями отмены из	need separate wbStatus branch with ALL cancel values
+U259	SKILL.md	156	ПРИЧИНА	MECH	иначе висящий хвост вечно блокирует переход «поставка отгружена»	why: hanging tail blocks supply-shipped transition
+U260	SKILL.md	156	ПРАВИЛО	MECH	Значение, которого нет ни среди отмен, ни среди рабочих статусов, — сигнал в отч	unknown status = report signal not silent skip
+U261	SKILL.md	156	ПРИЧИНА	MECH	новый статус Wildberries иначе уходит не в ту ветвь	why: new status goes wrong branch
+U262	SKILL.md	156	ПРОВЕРКА	MECH	Значения сверены 2026-10-13 со спецификацией Wildberries `03-orders-fbs.yaml`	verified 2026-10-13 vs 03-orders-fbs.yaml commit 9885191
+U263	SKILL.md	156	СЛУЧАЙ	OBJ_WF	2026-06-29 около двадцати отказов `declined_by_client` и `canceled_by_client` ви	case 2026-06-29: ~20 cancels hung as new
+U264	SKILL.md	156	СЛУЧАЙ	OBJ_WF	ветку отмен в Order Close v2 (`DM26WhTJyCV0DhkP`) добавили 2026-06-30	cancel branch added to Order Close v2 DM26WhTJyCV0DhkP on 2026-06-30
+U265	SKILL.md	156	СЛУЧАЙ	OBJ_API	2026-07-06 заказ 5271100427, отменённый самим Wildberries, тем же путём держал п	case 2026-07-06: order 5271100427 held supply WB-GI-249910370
+U266	SKILL.md	156	АДРЕС	ROUTE	(projects/wb-logistics/LOG.md, записи Р-75, Р-83 и Р-89; урок У-120 журнала proj	evidence pointers Р-75,Р-83,Р-89,У-120
+U267	SKILL.md	157	ИСТОРИЯ	HIST	ИСТОРИЯ ДИАГНОЗА: прежняя редакция называла значение `declined` — в спецификации	history: old edition said declined
+U268	SKILL.md	157	ИСТОРИЯ	HIST	Запись 2026-07-06 называет отмены Wildberries «canceled/cancel»: `canceled` — зн	history: log entry terms clarified
+U269	SKILL.md	158	ПОРОГ	MECH	Времени приёмки на уровне заказа не существует: `/orders/status` отдаёт только т	no order-level acceptance time
+U270	SKILL.md	158	ПОРОГ	MECH	Время приёмки есть только на уровне поставки: `scanDt` в GET `/supplies` плюс `/	acceptance time only at supply level scanDt
+U271	SKILL.md	159	ПРАВИЛО	OBJ_WF	Метрики «отгружено», «среднее время до отгрузки» и очередь «в работе» строятся п	metrics built from own journal sheet wb_fbs_orders_tracking field status
+U272	SKILL.md	159	ПОРОГ	OBJ_BOOK	(значения `new`, `in_transit`, `shipped`, `cancelled`, projects/wb-logistics/STA	status values new,in_transit,shipped,cancelled
+U273	SKILL.md	159	ПРАВИЛО	MECH	а не по живому статусу Wildberries и не по исчезновению заказа из выборки API	not by live WB status nor by disappearance from selection
+U274	SKILL.md	159	СЛУЧАЙ	OBJ_WF	прогон Order Close 14988 29.06.2026 в 22:05 видел ноль заказов `complete` через 	execution 14988 on 2026-06-29 22:05 saw zero complete 2.5h after handover
+U275	SKILL.md	159	СЛУЧАЙ	MECH	отставание наблюдалось до суток (наблюдение 2026-06-29, не перепроверено	lag up to a day, observed 2026-06-29, unverified
+U276	SKILL.md	159	ПРИЧИНА	MECH	Счёт «отгружено = пропало из выборки» молча залипает около нуля	why: disappearance-based count sticks near zero
+U277	SKILL.md	159	ПРАВИЛО	MECH	Приёмку Wildberries считать по `scanDt` поставки	count acceptance by supply scanDt
+U278	SKILL.md	159	СЛУЧАЙ	OBJ_OTHER	решение Андрея 2026-10-04	decision of Andrei 2026-10-04
+U279	SKILL.md	159	СЛУЧАЙ	OBJ_WF	2026-06-30 — Evening Report показал «Отгружено 0» при 72 отгруженных по Order Cl	case 2026-06-30: Evening Report showed 0 vs 72 shipped
+U280	SKILL.md	159	АДРЕС	ROUTE	(projects/wb-logistics/LOG.md, записи Р-84 и Р-85	evidence pointers Р-84,Р-85,Р-86,У-118
+U281	SKILL.md	160	ПОРОГ	OBJ_WF	Воркфлоу WB Reviews Response использует RAG для категорий `QA_OIL_MATCH` и `QA_S	WB Reviews Response uses RAG for QA_OIL_MATCH, QA_SPEC
+U282	SKILL.md	161	ПОРОГ	OBJ_OTHER	Личный Telegram Андрея: `chatId` захардкожен, `6054723832`.	personal Telegram chatId 6054723832 hardcoded
+U283	SKILL.md	161	ПОРОГ	OBJ_OTHER	Группа логистики: `chat_id = -1004269834495`.	logistics group chat_id -1004269834495
+U284	SKILL.md	164	ПОРОГ	MECH	Ozon: POST `/v1/roles` отдаёт роли ключа и срок его действия (`expires_at`).	Ozon /v1/roles returns key roles and expires_at
+U285	SKILL.md	165	ПРОВЕРКА	MECH	Wildberries: категория ключа проверяется GET `/ping` на домене каждой категории.	WB key category via GET /ping per domain
+U286	SKILL.md	165	ПОРОГ	MECH	`common-api` отвечает 200 любому ключу и категорию не показывает.	common-api returns 200 for any key
+U287	SKILL.md	165	ПОРОГ	MECH	Право записи (только чтение или чтение и запись) через API не видно: только в ка	write right not visible via API; read-only key gets 403
+U288	SKILL.md	165	ПРАВИЛО	MECH	Проверять до боевого режима, а не узнавать при первой боевой записи.	check rights before production
+U289	SKILL.md	166	ПРАВИЛО	OBJ_API	Второй кабинет (другое юрлицо) — свой ключ: ключ основного кабинета на чужой каб	second cabinet needs its own key
+U290	SKILL.md	167	АДРЕС	ROUTE	Источники: projects/n8n-map/PLAN.md, фаза Ф5; projects/deklaration-ozon/LOG.md, 	sources for key rights
+U291	SKILL.md	167	АДРЕС	OBJ_BOOK	Где записаны права каждого ключа — лист «Ключи» книги N8N_CREDENTIALS (таблица в	key rights recorded in sheet Ключи of N8N_CREDENTIALS
+U292	SKILL.md	170	ПОРОГ	OBJ_OTHER	Две точки, откуда сессия может обратиться наружу, видят разное: сервер n8n (Герм	two vantage points: n8n server Germany, cloud session via proxy
+U293	SKILL.md	170	ПРАВИЛО	MECH	Факты API, которые нельзя прочитать в документации, сначала снимает зонд — време	undocumented API facts first captured by probe: temp read-only workflow
+U294	SKILL.md	174	ПОРОГ	OBJ_OTHER	`pub.fsa.gov.ru` (реестр деклараций) | таймаут 20 секунд на корне, API и входе (	pub.fsa.gov.ru: server timeout 20s, probe gb4og08Wk2lVoAnH exec 72314
+U295	SKILL.md	174	ПОРОГ	OBJ_OTHER	| не проверялось |	cloud session: not checked
+U296	SKILL.md	175	ПОРОГ	OBJ_OTHER	`mobile.api.crpt.ru` («Честный знак») | 451 — геоблокировка; через российский пр	crpt: 451 geoblock; via owner Russian proxy 403
+U297	SKILL.md	176	ПОРОГ	OBJ_OTHER	`docs.ozon.ru`, swagger.json Ozon | таймаут 30–60 секунд (исполнения 73350, зонд	docs.ozon.ru timeout 30-60s exec 73350 probe 529VWvqSTg8l4fUU
+U298	SKILL.md	176	ПОРОГ	OBJ_OTHER	| прокси 403 |	cloud: proxy 403
+U299	SKILL.md	177	ПОРОГ	OBJ_OTHER	swagger Wildberries | yaml — 404, страница — 498	WB swagger yaml 404 page 498
+U300	SKILL.md	178	ПОРОГ	OBJ_OTHER	`dev.wildberries.ru` (документация) | — | не открылась	dev.wildberries.ru not opened from cloud
+U301	SKILL.md	179	ПОРОГ	OBJ_OTHER	публичный API своего инстанса n8n (`/api/v1/`) | доступен воркфлоу по `localhost	own n8n API reachable at localhost:5678 from workflow
+U302	SKILL.md	179	ПОРОГ	OBJ_OTHER	прокси 403 (зонд Z-12) — такие факты снимает воркфлоу на сервере	cloud proxy 403 probe Z-12; such facts taken by server workflow
+U303	SKILL.md	181	АДРЕС	ROUTE	Источники: projects/deklaration-ozon/LOG.md, Т-1, Т-4, Т-10, Р-21; projects/card	sources for external sources table
+U304	SKILL.md	181	ПРАВИЛО	MECH	Что недоступно сегодня, может открыться завтра: перед тем как строить обход, пов	before building workaround repeat one cheap probe
+U305	SKILL.md	184	ПОРОГ	OBJ_OTHER	База `liquimoly_kb` в PostgreSQL 16 с расширением pgvector 0.8.2, хост `postgres	DB liquimoly_kb PG16 pgvector 0.8.2 host postgres:5432 table products_kb user kb_user
+U306	SKILL.md	184	АДРЕС	ROUTE	(WB_REVIEWS_INDEX, строки 962 и 1803)	evidence lines 962, 1803
+U307	SKILL.md	184	ПОРОГ	OBJ_WF	Читатель — WB Reviews Response (RAG, строка подраздела «Wildberries»).	reader is WB Reviews Response (RAG)
+U308	SKILL.md	184	СЛУЧАЙ	OBJ_OTHER	Направление «Допуски OEM» проекта wb-reviews Андрей прекратил 2026-10-12	OEM tolerances direction stopped 2026-10-12
+U309	SKILL.md	184	ПРАВИЛО	OBJ_OTHER	база знаний к нему не сводится и живёт, пока Response её читает	KB lives while Response reads it
+U310	SKILL.md	186	ПОРОГ	OBJ_OTHER	`motor_oil` — 182 записи, загружены полностью 2026-07-29 (исполнение 33576)	motor_oil 182 rows loaded 2026-07-29 exec 33576
+U311	SKILL.md	186	СЛУЧАЙ	OBJ_OTHER	плюс одна осиротевшая строка, которая останется навсегда: её артикула нет в лист	plus one orphan row permanent
+U312	SKILL.md	186	ПОРОГ	OBJ_OTHER	`auto_chemistry` — 146, полная; `transmission_oil` — 42, полная; `antifreeze` — 	counts auto_chemistry 146, transmission_oil 42, antifreeze not loaded
+U313	SKILL.md	186	СЛУЧАЙ	OBJ_OTHER	Числа — на 2026-07-29, не перепроверены.	numbers as of 2026-07-29 unverified
+U314	SKILL.md	187	ИСТОРИЯ	HIST	прежняя редакция писала «`motor_oil` — около 183 записей, загрузка неполная»; оп	history: old said ~183 incomplete; refuted
+U315	SKILL.md	189	ПРАВИЛО	MECH	**Правка текстового ключа порождает сироту.**	editing text key creates orphan
+U316	SKILL.md	189	ПРИЧИНА	MECH	Загрузчики пишут в `products_kb` по ключу `article_number` — это название товара	loaders upsert by article_number text via ON CONFLICT
+U317	SKILL.md	189	ПРИЧИНА	MECH	Исправленный в листе-источнике текст ключа (лишний пробел, кириллическая «Т» вме	fixed key text gives new row, old stays
+U318	SKILL.md	189	ПРИЧИНА	MECH	ни один перезалив её не трогает, и RAG продолжает находить устаревшие данные	no reload touches it; RAG finds stale data
+U319	SKILL.md	189	ПРАВИЛО	MECH	Порядок до и после перезалива: сравнить число строк категории в базе (SELECT COU	procedure: compare COUNT with source rows
+U320	SKILL.md	189	ПРАВИЛО	MECH	разницу выписать поимённо — списком значений `article_number`, а не числом; DELE	list differences by name; DELETE only by explicit list
+U321	SKILL.md	189	ПРОВЕРКА	MECH	затем чтение обратно — COUNT и отсутствие удалённых значений	read back: COUNT and absence of deleted values
+U322	SKILL.md	189	ИСКЛЮЧЕНИЕ	MECH	Строку, про которую нельзя доказать, что это мусор базы, а не ошибка источника, 	do not delete row not provably DB garbage; ask Andrei
+U323	SKILL.md	189	СЛУЧАЙ	OBJ_OTHER	1 случай, 2026-07-29 — перед перезаливом `motor_oil` вместо равенства 182 = 182 	case 2026-07-29: six orphans found, five deleted, one kept
+U324	SKILL.md	189	АДРЕС	OBJ_WF	список удалённых сохранён в коде воркфлоу KB Snapshot — Motor Oil (one-off) `Ind	deleted list in workflow IndDiEuGPEZOU6NF nodes
+U325	SKILL.md	189	АДРЕС	ROUTE	(WB_REVIEWS_INDEX, строки 323 и 368;	evidence lines 323, 368, У-127, Р-28
+U326	SKILL.md	191	ПОРОГ	OBJ_OTHER	У `kb_user` нет права CREATE TABLE в схеме `public`	kb_user lacks CREATE TABLE in public
+U327	SKILL.md	191	ПРАВИЛО	OBJ_OTHER	менять структуру базы (DDL — создание и изменение таблиц, индексов) воркфлоу не 	workflows cannot DDL; owner does manually
+U328	SKILL.md	191	СЛУЧАЙ	OBJ_OTHER	Наблюдение 2026-06-27, не перепроверено (WB_REVIEWS_INDEX, строка 1102; урок У-1	observation 2026-06-27 unverified
+U329	SKILL.md	191	ПОРОГ	MECH	Согласуется с поведением PostgreSQL начиная с версии 15: право CREATE на схему `	PG15+ revoked CREATE on public by default
+U330	SKILL.md	193	ПОРОГ	OBJ_OTHER	Модель эмбеддингов — `voyage-3`, размерность 1024.	embedding model voyage-3 dim 1024
+U331	SKILL.md	193	ПРАВИЛО	OBJ_OTHER	НЕ `voyage-3-lite` с размерностью 512: ошибка необратима и стоит переиндексации 	not voyage-3-lite 512; error irreversible
+U332	SKILL.md	193	ПРИЧИНА	OBJ_OTHER	То же предупреждение стоит в n8n-engineering-manual разделом 1 — единственный на	same warning in manual section 1; intentional duplicate
+U333	SKILL.md	196	ПОРОГ	OBJ_WF	Действующий конвейер деклараций — один воркфлоу «LM_DECL — Scan» (`vKjqExap1mJjM	declaration pipeline = workflow LM_DECL Scan vKjqExap1mJjM6Ap
+U334	SKILL.md	196	АДРЕС	ROUTE	устройство и ловушки — meta/DECLARATION_SCAN.md репозитория	design and traps in meta/DECLARATION_SCAN.md
+U335	SKILL.md	198	ПРАВИЛО	OBJ_WF	Скрипт Apps Script `processDeclPdfInbox` версии 1.1 СНЯТ 2026-09-30 вместе со св	script processDeclPdfInbox v1.1 removed 2026-09-30; do not run
+U336	SKILL.md	198	ИСТОРИЯ	HIST	Знание о нём сохраняется на случай, если конвертация PDF снова понадобится	knowledge kept in case PDF conversion needed again
+U337	SKILL.md	198	ПОРОГ	MECH	он конвертировал PDF деклараций через Drive API v2 (`Files.insert`, `convert:tru	converted PDF via Drive API v2 Files.insert convert:true
+U338	SKILL.md	198	АДРЕС	ROUTE	почему только v2 — Skill `google-drive-docs`, references/sheets.md, §4.4	why only v2 in google-drive-docs references/sheets.md §4.4
+U339	SKILL.md	198	АДРЕС	ROUTE	Подробности — projects/deklaration-ozon/NOT_TAKEN.md.	details pointer
+U340	SKILL.md	198	СЛУЧАЙ	OBJ_WF	Открытый вопрос: что теперь переносит выписки из DECL_PDF_INBOX в DECL_PDF_ARCHI	open question: what moves extracts INBOX to ARCHIVE
+U341	SKILL.md	200	ПРАВИЛО	OBJ_API	Страница товара на liquimoly.ru: первую ссылку поисковой выдачи не брать без про	do not take first search result without checking
+U342	SKILL.md	200	ПРОВЕРКА	OBJ_API	Проверка — по полю идентичности в разметке `<span itemprop="sku">N</span>`	check by itemprop sku span
+U343	SKILL.md	200	СЛУЧАЙ	OBJ_WF	Старые воркфлоу брали `organic[0].link` поиска Serper без проверки и привязывали	old workflows took organic[0].link of Serper unchecked
+U344	SKILL.md	200	АДРЕС	ROUTE	(projects/deklaration-ozon/LOG.md, Р-28, Р-31, Р-32; labs/ozon-ue/t-product-data	evidence pointers
+U345	SKILL.md	203	ПОРОГ	OBJ_OTHER	Воркфлоу обращаются к `/api/v1/` своего же инстанса через credential типа Header	workflows call own /api/v1/ via Header Auth X-N8N-API-KEY
+U346	SKILL.md	203	ПОРОГ	OBJ_OTHER	Действующее значение живёт в credential `monitor_key_v2`, без даты истечения.	current key in credential monitor_key_v2, no expiry
+U347	SKILL.md	203	СЛУЧАЙ	OBJ_OTHER	Прежний `monitor_key` ротирован 21.07.2026 [владелец 21.07]	old monitor_key rotated 2026-07-21
+U348	SKILL.md	203	ПРАВИЛО	OBJ_OTHER	всякое указание на его срок истечения 25–26.07.2026 устарело и исполнению не под	any mention of expiry 25-26.07.2026 is stale
+U349	SKILL.md	205	ПРАВИЛО	OBJ_OTHER	Списка мест использования здесь нет намеренно	no consumer list here on purpose
+U350	SKILL.md	205	ПРИЧИНА	OBJ_OTHER	он устаревал быстрее, чем его правили, и пропускал одного потребителя из четырёх	why: list went stale, missed SYS Lint
+U351	SKILL.md	205	ПРАВИЛО	OBJ_OTHER	Перед ротацией список берётся из снимка: строки `A` дают воркфлоу, обращающиеся 	before rotation take list from snapshot A and C rows
+U352	SKILL.md	205	СЛУЧАЙ	OBJ_WF	На 26.09.2026 таких воркфлоу четыре: Workflow Health Monitor — Daily (`LguGCDYJv	4 consumers: Health Monitor Daily LguGCDYJvMQSahcj active
+U353	SKILL.md	205	СЛУЧАЙ	OBJ_WF	Workflow Health Monitor — Intraday (`tABmSQXQalGnjRJw`, неактивен)	Health Monitor Intraday tABmSQXQalGnjRJw inactive
+U354	SKILL.md	205	СЛУЧАЙ	OBJ_WF	SYS Lint (`TXNstdVL8xlIygBp`, активен) и N8N Registry Sync (`gFFiBPm1OomOzJOj`, 	SYS Lint TXNstdVL8xlIygBp; Registry Sync gFFiBPm1OomOzJOj active
+U355	SKILL.md	205	СЛУЧАЙ	OBJ_WF	У всех четырёх в снимке есть узлы с типом `httpHeaderAuth`	all four have httpHeaderAuth nodes
+U356	SKILL.md	205	ПОРОГ	MECH	Привязать тип к КОНКРЕТНОМУ узлу снимок не может: строки C считают типы по воркф	snapshot cannot bind type to a node
+U357	SKILL.md	205	АДРЕС	OBJ_BOOK	Привязку к узлу даёт лист «Авто» книги N8N_CREDENTIALS: строка на каждую пару «c	node binding from sheet Авто with columns
+U358	SKILL.md	205	ПРИЧИНА	MECH	n8n не стирает прежний credential из узла при смене типа аутентификации: в узле 	n8n keeps old credential in node on auth type change
+U359	SKILL.md	205	ПРАВИЛО	OBJ_OTHER	Перед ротацией список потребителей ключа — строки листа «Авто» с его ID и «Актив	consumer list = Авто rows active yes after fresh Inventory run
+U360	SKILL.md	205	ПРОВЕРКА	MECH	Лежит ли значение ключа открытым текстом в параметрах узла, не показывает ни сни	plaintext key in node params checked only visually
+U361	SKILL.md	207	ПРАВИЛО	OBJ_OTHER	НЕ путать этот ключ с MCP-ключом, которым Claude обращается к n8n: тот не истека	do not confuse with MCP key which does not expire
+U362	SKILL.md	207	ПРАВИЛО	OBJ_OTHER	не путать ни один из двух с `git-channel-webhook-auth` — секретом вебхуков Канал	do not confuse with git-channel-webhook-auth secret
+U363	SKILL.md	207	ПРИЧИНА	MECH	тип auth у всех трёх один, назначение разное, и подмена одного другим даёт не от	why: same auth type; mixing leaks wrong secret
+U364	SKILL.md	209	ПОРОГ	MECH	Credential в n8n хранит копию значения ключа, а не сам ключ.	n8n credential stores a copy of key
+U365	SKILL.md	209	ПРАВИЛО	MECH	Удаление credential стирает эту копию из n8n и проходит без ошибки, но ключ прод	deleting credential does not revoke key
+U366	SKILL.md	209	ПРАВИЛО	MECH	Ключ отзывает только тот, кто его выдал.	only issuer revokes key
+U367	SKILL.md	209	ПРАВИЛО	MECH	отозвать его можно только в Settings → n8n API: кнопка Delete рядом с ключом, за	n8n API key revoked in Settings, Delete then Delete Forever
+U368	SKILL.md	209	ПОРОГ	MECH	Там же ключ создаётся (Create an API key), с меткой (Label) и сроком действия (E	created there with Label and Expiration
+U369	SKILL.md	209	ПРАВИЛО	MECH	Ключ, выданный внешним сервисом (Ozon, Wildberries, Voyage AI), отзывается у это	external-service keys revoked at that service
+U370	SKILL.md	209	ПРАВИЛО	MECH	Порядок при утечке или ротации ключа к API n8n: создать новый ключ в Settings → 	rotation order step 1-2: create new, move consumers
+U371	SKILL.md	209	ПРАВИЛО	MECH	удалить старый ключ в Settings → n8n API → только после этого удалить или переим	steps 3-4: delete old key, then cleanup credential
+U372	SKILL.md	209	ПРОВЕРКА	MECH	Проверено чтением документации n8n 2026-10-13	verified by n8n docs 2026-10-13 commit 928b0b7
+U373	SKILL.md	209	СЛУЧАЙ	OBJ_OTHER	На инстансе не проверялось — проба требовала удалить действующий ключ, Андрей от	not tested on instance; Andrei declined 2026-10-11 (Р-17)
+U374	SKILL.md	209	СЛУЧАЙ	MECH	1 случай, 2026-07 — запись корпуса N8N_JOURNAL_2026, строка 2804	case 2026-07: credential deletion does not revoke key, journal line 2804, У-13г, Р-8
+U375	SKILL.md	212	ПРАВИЛО	OBJ_WF	**SKU Category Historical Backfill** — защиты от дублей нет вообще.	SKU Category Historical Backfill has no duplicate protection
+U376	SKILL.md	212	ПРАВИЛО	OBJ_WF	Перед каждым запуском вручную очистить листы `sku_category_history` и `sku_categ	clear sheets sku_category_history and _detail to headers before each run
+U377	SKILL.md	212	ПРАВИЛО	OBJ_WF	Триггер никогда не переводить на реальное расписание.	never put trigger on real schedule
+U378	SKILL.md	212	ПОРОГ	OBJ_BOOK	Эти два листа ни один узел по имени не раскрывает, поэтому в снимке их нет и кни	two sheets not named by nodes, absent from snapshot
+U379	SKILL.md	214	ПОРОГ	OBJ_WF	**News Filter** (`WB+Ozon News Filter`) — дедупликация через Google Sheets, лист	News Filter dedup via sheet seen_posts
+U380	SKILL.md	214	ПОРОГ	OBJ_BOOK	книга — `1eujHu87IO0IlngLX164_O81LxPI5NNpq9S47E8anVSo` [снимок 26.09]	News Filter book ID
+U381	SKILL.md	216	ПРАВИЛО	OBJ_WF	**OZON_UE RAW** — два источника в одной книге `1P-GgiFm3067U_sgC2Dojos3BbT_-au6v	OZON_UE RAW two sources in one book; do not confuse
+U382	SKILL.md	217	ПОРОГ	OBJ_WF	Старый продакшен: лист `sales_raw_operations`, 29 колонок, воркфлоу `OzonRawАнал	old prod sheet sales_raw_operations 29 cols workflow MPzPrtsnPtf0sVQo
+U383	SKILL.md	217	ПОРОГ	OBJ_BOOK	паспорт `1_E2KCZOVYaf68xVECwv9ZaGGn4bdz3jsh5D3lhsqdyM`	passport doc ID of old workflow
+U384	SKILL.md	217	СЛУЧАЙ	OBJ_API	Источник сломан 08.09.2026 — Ozon отключил `/v3/finance/transaction/list`.	source broken 2026-09-08: Ozon disabled endpoint
+U385	SKILL.md	217	ПРАВИЛО	OBJ_WF	Воркфлоу не трогать, только читать при сверке.	do not touch; read only for reconciliation
+U386	SKILL.md	217	СЛУЧАЙ	OBJ_WF	воркфлоу при этом активен и стоит на расписании 02:00 [снимок 26.09], то есть ка	still active, schedule 02:00, hits disabled endpoint nightly
+U387	SKILL.md	218	ПОРОГ	OBJ_WF	Новый, тестовый: лист `ozon_raw_accrual_TEST`, 16 колонок, воркфлоу `Ozon RAW Ac	new test sheet 16 cols workflow aVpgEnYBAgIIss4k
+U388	SKILL.md	218	ПОРОГ	OBJ_BOOK	паспорт `1hcAxLuj3YBSPUrOe8bYNbFD6ib8r7y56Pv1Ad8j1j8w`	passport doc ID of new workflow
+U389	SKILL.md	218	СЛУЧАЙ	OBJ_WF	К продакшену не готов на 17.09.2026: `TEST_DATE` захардкожен, пишет в тестовый л	not prod-ready as of 2026-09-17: TEST_DATE hardcoded, test sheet, schema incompatible
+U390	SKILL.md	218	СЛУЧАЙ	OBJ_WF	воркфлоу активен, стоит на расписании 02:00 и вызывается как саб-воркфлоу узлом 	active 02:00, called by node 03_Call_RAW_Sync of 5MDOGVCTxwDjHqy3
+U391	SKILL.md	219	ПОРОГ	OBJ_WF	Третий лист той же книги, `ozon_accrual_types`, обслуживает воркфлоу `OZON_UE Ac	third sheet ozon_accrual_types served by OZON_UE Accrual Types Sync
+U392	cards-and-declarations.md	1	ПОРОГ	ROUTE	# Карточки товаров и декларации — Wildberries и Ozon	title
+U393	cards-and-declarations.md	3	АДРЕС	ROUTE	Спутник раздела 3 файла SKILL.md этого Skill.	companion to SKILL.md section 3
+U394	cards-and-declarations.md	3	ПРАВИЛО	ROUTE	Читается перед любой записью в карточку товара Wildberries или Ozon и перед рабо	read before any card write or declarations via API
+U395	cards-and-declarations.md	3	ПРАВИЛО	MECH	Здесь только факты внешних API, установленные исполнениями	only external API facts established by executions
+U396	cards-and-declarations.md	3	АДРЕС	ROUTE	порядок работы с карточками Wildberries целиком — meta/PROTOCOL_wb-card-write.md	full WB card procedure in meta/PROTOCOL_wb-card-write.md
+U397	cards-and-declarations.md	5	ПРАВИЛО	ROUTE	Каждый факт несёт адрес, где его можно перечитать.	every fact carries re-read address
+U398	cards-and-declarations.md	5	ИСТОРИЯ	HIST	Внесено 2026-10-09 по харвесту 2026-10-08 (находки А4, А33, Б2, Б8; позиции очер	added 2026-10-09 by harvest; А4,А33,Б2,Б8; AH-25, AH-29
+U399	cards-and-declarations.md	11	ПРАВИЛО	MECH	**Ответ 200 ничего не доказывает.**	200 proves nothing
+U400	cards-and-declarations.md	11	ПОРОГ	MECH	POST `/content/v2/cards/update` отвечает 200 и меняет `updatedAt` карточки, но д	cards/update returns 200, changes updatedAt, document may stay old
+U401	cards-and-declarations.md	11	СЛУЧАЙ	OBJ_API	так шесть карточек отказали поштучно 2026-10-05, хотя журнал ошибок был пуст	case 2026-10-05: six cards failed individually, error log empty
+U402	cards-and-declarations.md	11	АДРЕС	ROUTE	(projects/deklaration-ozon/LOG.md, Т-7)	evidence Т-7
+U403	cards-and-declarations.md	11	ПРОВЕРКА	MECH	Итог записи проверяется двумя способами, оба обязательны	verify write by two methods, both required
+U404	cards-and-declarations.md	12	ПРОВЕРКА	MECH	перечитать карточку через POST `/content/v2/get/cards/list` и сравнить поле за п	re-read card via get/cards/list and compare field by field
+U405	cards-and-declarations.md	13	ПРОВЕРКА	MECH	прочитать журнал ошибок асинхронной записи — POST `/content/v2/cards/error/list`	read error log POST cards/error/list body limit 100
+U406	cards-and-declarations.md	13	ПОРОГ	MECH	Метод GET на этот адрес отвечает 405.	GET on error/list returns 405
+U407	cards-and-declarations.md	13	ПОРОГ	MECH	Записи журнала сгруппированы по пакетам и `vendorCode`, поля `nmID` в них нет	log grouped by batch and vendorCode, no nmID
+U408	cards-and-declarations.md	13	АДРЕС	ROUTE	(projects/deklaration-wb/PLAN.md, абзац «Факты записи»)	evidence PLAN.md Facts of write
+U409	cards-and-declarations.md	15	ПРАВИЛО	MECH	**Одна ошибочная карточка отклоняет всю склейку.**	one bad card rejects whole merge group
+U410	cards-and-declarations.md	15	ПОРОГ	MECH	Склейка — группа карточек с общим `imtID`.	merge group = cards with common imtID
+U411	cards-and-declarations.md	15	ПОРОГ	MECH	Если в ней есть карточка с ошибкой, Wildberries не применяет запись ни к одной к	one error means no card of group written
+U412	cards-and-declarations.md	15	АДРЕС	ROUTE	(projects/deklaration-ozon/LOG.md, Р-30)	evidence Р-30
+U413	cards-and-declarations.md	17	ПРАВИЛО	MECH	**Запись заменяет карточку целиком.** Характеристика, не переданная в запросе, с	write replaces card fully; omitted characteristic erased
+U414	cards-and-declarations.md	17	ПРАВИЛО	MECH	запись идёт только по схеме «прочитал свежую карточку в том же прогоне → поправи	write scheme: read fresh, edit fields, send whole
+U415	cards-and-declarations.md	17	ПРОВЕРКА	MECH	узел перед отправкой сравнивает отправляемое с прочитанным	node compares outgoing with read before sending
+U416	cards-and-declarations.md	17	АДРЕС	ROUTE	(projects/deklaration-wb/PLAN.md, абзац «Ловушка записи»)	evidence PLAN.md write trap
+U417	cards-and-declarations.md	17	ПРАВИЛО	MECH	Поле `kizMarked`, не переданное в запросе, принимается равным false — передавать	kizMarked omitted = false; pass current value
+U418	cards-and-declarations.md	17	АДРЕС	ROUTE	(projects/deklaration-ozon/LOG.md, Р-44)	evidence Р-44
+U419	cards-and-declarations.md	19	ПОРОГ	OBJ_API	**Применение с задержкой в часы (кабинет ИП).** В кабинете второго юрлица Wildbe	IP cabinet applies edits with hours delay
+U420	cards-and-declarations.md	19	ПОРОГ	OBJ_API	Ответ 200 значит «принято в обработку»; чтение через 45 секунд и через 4 минуты 	200 means accepted; read at 45s and 4min shows old card, not failure
+U421	cards-and-declarations.md	19	ПРАВИЛО	OBJ_API	Проверять на следующий день, после ночного робота листа карточек	verify next day after nightly card-sheet robot
+U422	cards-and-declarations.md	19	АДРЕС	ROUTE	(projects/deklaration-wb/LOG.md, Р-11 пункт 5)	evidence Р-11 p5
+U423	cards-and-declarations.md	20	ИСТОРИЯ	HIST	ИСТОРИЯ ДИАГНОЗА: записи Р-9 и Р-10 того же журнала считали, что Wildberries мол	history: Р-9, Р-10 believed WB silently drops IP cabinet writes
+U424	cards-and-declarations.md	20	СЛУЧАЙ	OBJ_API	опровергнуто чтением 2026-10-09 15:12 UTC — записи применились, просто позже	refuted by read 2026-10-09 15:12 UTC; applied later
+U425	cards-and-declarations.md	22	ПОРОГ	MECH	**Случайные отказы пачки.** Ответ 400 или 500 «Internal server error» на пачку к	random batch 400/500; retry passes
+U426	cards-and-declarations.md	22	АДРЕС	ROUTE	(projects/deklaration-wb/LOG.md, Р-12 пункт 6)	evidence Р-12 p6
+U427	cards-and-declarations.md	24	ПОРОГ	MECH	Значения характеристик передаются массивом строк: `["3403990000"]`, `["01.06.202	characteristic values as string arrays
+U428	cards-and-declarations.md	24	АДРЕС	ROUTE	(meta/PROTOCOL_wb-card-write.md, раздел 5)	evidence protocol sect 5
+U429	cards-and-declarations.md	26	ПОРОГ	MECH	Предел поля — 2 000 символов; переносы строк — обычный перевод строки (у Ozon — 	WB description limit 2000 chars, newline plain; Ozon br tag
+U430	cards-and-declarations.md	26	АДРЕС	ROUTE	(projects/card-content-sync/LOG.md, Р-5)	evidence Р-5
+U431	cards-and-declarations.md	30	ПОРОГ	MECH	Характеристики 15001135 «Номер декларации соответствия», 15001136 «Номер сертифи	WB characteristic IDs 15001135-15001138
+U432	cards-and-declarations.md	30	ПОРОГ	MECH	Характеристики для ссылки на запись реестра нет.	no characteristic for registry link
+U433	cards-and-declarations.md	30	ПОРОГ	MECH	у карточки есть блок `documents`: `items[{type, number, startDate, endDate, verd	documents block structure
+U434	cards-and-declarations.md	30	ПОРОГ	MECH	это собственная сверка Wildberries документа с реестром	block is WB own registry check
+U435	cards-and-declarations.md	30	АДРЕС	ROUTE	(projects/deklaration-ozon/LOG.md, Р-21)	evidence Р-21
+U436	cards-and-declarations.md	30	ПОРОГ	MECH	При каждой записи декларации Wildberries создаёт документ заново, с новым id	each declaration write recreates document with new id
+U437	cards-and-declarations.md	30	ПОРОГ	MECH	промежуточный вердикт вроде `supplier_not_registered` через несколько часов може	interim verdict supplier_not_registered may become ok
+U438	cards-and-declarations.md	30	ПОРОГ	MECH	Даты документа Wildberries сверяет с реестром — расхождение даёт `document_dates	date mismatch gives document_dates_mismatch
+U439	cards-and-declarations.md	32	ПРАВИЛО	MECH	Встречаются разные, и разбирать их надо явно, по всем встреченным формам; неузна	parse all date forms explicitly; unknown date = error signal
+U440	cards-and-declarations.md	33	ПОРОГ	MECH	ММ-ДД-ГГ: `01-27-27` значит 27.01.2027	format MM-DD-YY example
+U441	cards-and-declarations.md	33	АДРЕС	ROUTE	(meta/PRODUCT_DATA_HIERARCHY.md, раздел 4)	evidence PRODUCT_DATA_HIERARCHY sect 4
+U442	cards-and-declarations.md	33	СЛУЧАЙ	OBJ_WF	Воркфлоу «LM_DECL — WB Sync ИП» эту форму не понимал, пока разбор не исправили	workflow LM_DECL WB Sync IP did not parse MM-DD-YY until fixed
+U443	cards-and-declarations.md	34	ПОРОГ	MECH	ДД.ММ.ГГГГ — в характеристиках 15001137 и 15001138 у карточек, снятых зондом 202	DD.MM.YYYY in chars 15001137/8 from probe 2026-10-02
+U444	cards-and-declarations.md	35	ПОРОГ	MECH	в блоке `documents` даты приходят в виде ГГГГ-ММ-ДД с временем (код узла `03_Bui	documents dates YYYY-MM-DD with time; node 03_Build_Rows wf fGHfVrI58Ws1wfTw
+U445	cards-and-declarations.md	36	СЛУЧАЙ	OBJ_WF	Основной «LM_DECL — WB Sync» разбирает три формата (projects/deklaration-wb/STAT	main LM_DECL WB Sync parses three formats
+U446	cards-and-declarations.md	38	ПОРОГ	MECH	**ОКПД 2 — характеристика 15004292.** ОКПД 2, введённый руками в личном кабинете	OKPD2 char 15004292 hand-entered not shown by API
+U447	cards-and-declarations.md	38	ПРАВИЛО	MECH	поэтому полная перезапись карточки (раздел 1) его стирает	full rewrite erases it
+U448	cards-and-declarations.md	38	ПОРОГ	MECH	Для предметов «Автохимия» и «Смазки автомобильные» вместе с ним Wildberries сним	for subjects Autochem/Lubricants WB clears needKiz and kizMarked
+U449	cards-and-declarations.md	38	ПОРОГ	MECH	повторная запись `kizMarked=true` без ОКПД 2 не принимается	writing kizMarked=true without OKPD2 not accepted
+U450	cards-and-declarations.md	38	СЛУЧАЙ	OBJ_API	так 2026-10-07 потеряли отметку маркировки 29 карточек основного кабинета	case 2026-10-07: 29 main cabinet cards lost marking
+U451	cards-and-declarations.md	38	АДРЕС	ROUTE	(projects/deklaration-ozon/LOG.md, Р-44 и Т-9)	evidence Р-44, Т-9
+U452	cards-and-declarations.md	38	ПОРОГ	MECH	ОКПД 2, записанный через API, API показывает, и он переживает следующую запись	API-written OKPD2 visible and survives
+U453	cards-and-declarations.md	38	АДРЕС	ROUTE	(projects/deklaration-wb/LOG.md, Р-7 и Р-11)	evidence Р-7, Р-11
+U454	cards-and-declarations.md	40	ПОРОГ	MECH	Wildberries решает по паре «предмет + ТН ВЭД»: справочник `/content/v2/directory	KIZ need decided by subject+TNVED; directory tnved isKiz
+U455	cards-and-declarations.md	40	ПОРОГ	MECH	маркировка нужна только при ОКПД 2 из перечня постановления Правительства № 1683	marking only for OKPD2 from decree 1683 of 2024-11-30
+U456	cards-and-declarations.md	40	АДРЕС	ROUTE	(projects/deklaration-ozon/LOG.md, Р-44 пункт 2)	evidence Р-44 p2
+U457	cards-and-declarations.md	40	ПОРОГ	MECH	Справочник ОКПД 2 — `/api/content/v2/directory/okpd`	OKPD2 directory endpoint
+U458	cards-and-declarations.md	40	СЛУЧАЙ	MECH	взято из позиции очереди AH-25; вызовом в журналах не подтверждено	from AH-25; not confirmed by call
+U459	cards-and-declarations.md	43	ПОРОГ	MECH	`needKiz` («Нужна маркировка КИЗ») — только чтение: Wildberries выводит его сам 	needKiz read-only derived by WB
+U460	cards-and-declarations.md	43	ПОРОГ	MECH	Через API без ОКПД 2 признак не включается; ручная галка сотрудника в личном каб	API cannot enable without OKPD2; manual checkbox can
+U461	cards-and-declarations.md	44	ПОРОГ	MECH	`kizMarked` («Подтверждаю, что на товар нанесена маркировка») — записывается, но	kizMarked writable; legal statement under 289-FZ
+U462	cards-and-declarations.md	44	ПРАВИЛО	MECH	Ставить только по прямому слову владельца на названные им карточки	set only on owner's direct word for named cards
+U463	cards-and-declarations.md	44	АДРЕС	ROUTE	(projects/deklaration-wb/LOG.md, Р-7 «отвергнуто»; meta/PROTOCOL_wb-card-write.m	evidence Р-7, protocol sect 1
+U464	cards-and-declarations.md	45	ПОРОГ	MECH	Блокировку карточки «подлежит обязательной маркировке» снимает не запись в карто	block removed by seller registration in Chestny Znak
+U465	cards-and-declarations.md	45	АДРЕС	ROUTE	(projects/deklaration-wb/LOG.md, Р-7 пункт 3)	evidence Р-7 p3
+U466	cards-and-declarations.md	49	ПОРОГ	MECH	Загрузка: POST `/v2/product/certificate/create` одним вызовом, товары передаются	Ozon upload v2 certificate/create with skus list
+U467	cards-and-declarations.md	49	ПОРОГ	MECH	Метод `/v1/product/certificate/create` отключён Ozon 2026-08-31, вызов даёт 404	v1 certificate/create disabled 2026-08-31 returns 404
+U468	cards-and-declarations.md	49	АДРЕС	ROUTE	(projects/deklaration-ozon/PLAN.md, абзац «Факты API Ozon»)	evidence PLAN.md Ozon API facts
+U469	cards-and-declarations.md	50	ПОРОГ	MECH	Для типа DECLARATION стандарт — только `NATIONAL` или `EAEU`.	DECLARATION standard NATIONAL or EAEU
+U470	cards-and-declarations.md	50	ПРАВИЛО	MECH	Что значение прошло проверку Ozon, не значит, что оно верное	passing Ozon validation does not mean correct
+U471	cards-and-declarations.md	50	СЛУЧАЙ	OBJ_API	`EAEU` для декларации РОСС Ozon принял	EAEU accepted for ROSS declaration
+U472	cards-and-declarations.md	50	АДРЕС	ROUTE	(projects/deklaration-ozon/LOG.md, Т-5, Р-16)	evidence Т-5, Р-16
+U473	cards-and-declarations.md	50	ПРАВИЛО	MECH	стандарт выводится из номера документа	standard derived from document number
+U474	cards-and-declarations.md	51	ПОРОГ	MECH	Сертифицируемые типы товаров: POST `/v2/product/certification/list {page, page_s	certification/list v2; v1 returns 400
+U475	cards-and-declarations.md	52	ПОРОГ	MECH	`page_size` у `/v1/product/certificate/list` — не больше 100.	certificate/list page_size max 100
+U476	cards-and-declarations.md	52	ПОРОГ	MECH	У `/v1/product/certificate/products/list` поле `limit` от 1 до 1000, `page_size`	products/list limit 1-1000, page_size invalid
+U477	cards-and-declarations.md	52	ПОРОГ	MECH	по товару он отдаёт только `product_id`, `sku`, `product_status_code`, причину о	returns product_id, sku, product_status_code, no reason
+U478	cards-and-declarations.md	52	АДРЕС	ROUTE	(projects/deklaration-ozon/LOG.md, Т-4)	evidence Т-4
+U479	cards-and-declarations.md	53	ПОРОГ	MECH	Метода `/v2/product/info/list` нет, есть `/v3/product/info/list`.	no v2 product/info/list, use v3
+U480	cards-and-declarations.md	54	ПОРОГ	MECH	Статус документа `approved` не значит, что товары одобрены: Ozon проверяет кажды	approved does not mean goods approved; ~10 days per item
+U481	cards-and-declarations.md	54	ПРОВЕРКА	MECH	итог перечитывается отдельным режимом «статус»	re-read result by separate status mode
+U482	cards-and-declarations.md	54	АДРЕС	ROUTE	(projects/deklaration-ozon/LOG.md, Р-36)	evidence Р-36
+U483	cards-and-declarations.md	54	ПОРОГ	MECH	Вкладки кабинета «На проверке», «Отклонены», «Одобрены» фильтруют статус докумен	cabinet tabs filter document status not goods
+U484	cards-and-declarations.md	54	ПРОВЕРКА	MECH	зависание видно только по колонке «Одобрено товаров»	hang visible only in column Approved goods
+U485	cards-and-declarations.md	54	АДРЕС	ROUTE	(projects/deklaration-ozon/PLAN.md)	evidence PLAN.md
+U486	cards-and-declarations.md	55	ПРОВЕРКА	MECH	Факты этого раздела сняты с полного swagger.json, прочитанного в браузере 2026-1	section facts from swagger.json read in browser 2026-10-01
+U487	cards-and-declarations.md	55	ПРАВИЛО	MECH	из сессии документацию Ozon прочитать нельзя (SKILL.md, «Внешние источники»)	Ozon docs unreadable from session
+U488	cards-and-declarations.md	59	ПОРОГ	MECH	Описание читается пакетно атрибутом 4191 «Аннотация» через `/v4/product/info/att	Ozon description via attribute 4191 batch; no per-item endpoint
+U489	cards-and-declarations.md	59	ПОРОГ	MECH	Переносы строк у Ozon — только тег `<br/>`; при сравнении с текстом Wildberries 	Ozon newline br tag; replace when comparing
+U490	cards-and-declarations.md	59	АДРЕС	ROUTE	(projects/card-content-sync/LOG.md, Р-5)	evidence Р-5
