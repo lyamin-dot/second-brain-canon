@@ -34,7 +34,7 @@ WB_FBS_Performance_Monitor (Sheets): 1iGMBRgdt8GqKnJU4yhJAfpG-_w-9f8q_G51w5myxlS
 Мастер-промпт: 1jGfkSpMLZ3kMCRmlU8IjxsT_3vzlM0ikpUb4CU-0sQM
 Справочник тарифов: 1YczbMKezk7YHLLvJTXaySuRmtRoex0UK1FoVOyS95H8
 Документация Ozon FBS: 1DRHbgipyu40AoLFd_z_qvycaQPMvHnoG4PAjRej6P5E
-DOCS папка: 1H_JNBn7PrtUQomzS-xjGsMXYsGKLctZB
+DOCS_FOLDER: 1H_JNBn7PrtUQomzS-xjGsMXYsGKLctZB
 
 Паспорт decision-engine → 1shad9S_zIlYsWY3ih98WE-X9YfPtdchXZvXeDsTW1gs
 Паспорт morning-forecast → 1NL5z2zhEpk6T6m8tFRe_QykS1UOY3y09jam1wxrJ1Vc
