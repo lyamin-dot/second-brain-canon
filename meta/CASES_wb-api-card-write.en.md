@@ -26,6 +26,7 @@ Endpoints: write POST content-api.wildberries.ru/content/v2/cards/update (array 
 11. Writing okpd2 from mandatory-marking list blocked cards (IP motor oils 08.10) | needKiz switched on, seller not registered in Честный знак for that group | write such okpd2 only after checking seller registration.
 12. "Документы, подтверждающие безопасность, не требуются" | documents:{excludeDocuments:true} in cards/update works (16 IP cards, exec 81433) | seller's legal statement: only for owner-named cards, never automatically for missing declaration (Andrei 2026-10-17); robots skip such cards.
 13. vendorCode points to another product: 1709 Marder-Spray has 39032 (a motor oil no) in vendorCode, 39021 in chars/description | robots match by vendorCode -> wrong declaration/tnved | fix vendorCode manually in UI; never via API without owner's decision (matching key).
+14. needKiz/kizMarked algorithm (2026-10-21; RU wording: projects/deklaration-v2/PLAN.md, section Planы...)
 
 ## VERIFY PROCEDURE
 1. Dry run: before->after per field, count of untouched chars. 2. Write one card; at 45 s re-read card + error list; diff field by field. 3. Success = new document id with our no/dates, verdict valid; needKiz/kizMarked as intended; no chars lost; error list empty. 4. Next day after night robot: re-check staging sheet. 5. Log every card action (date, cabinet, sku+nmID, change, whose word, proof, result).
