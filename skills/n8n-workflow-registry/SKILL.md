@@ -32,7 +32,7 @@ description: "Справочник деталей инстанса n8n Андр�
 | Механика n8n, корневые причины отказов, протокол правки | n8n-engineering-manual |
 | Инструменты чтения и записи Google Docs, Sheets, Drive: поля вызова, верификация; правило, откуда брать ID | google-drive-docs (ID — `registry/n8n-map.md`) |»
 | Чтение и запись файлов репозитория канона | second-brain-git |
-| История инцидентов | INCIDENT_LOG |
+| История инцидентов | `projects/n8n/INCIDENT_LOG.md` (репозиторий second-brain-canon) |
 
 Per-workflow таблиц здесь нет: они были третьим источником истины и дважды разошлись с объектом — устаревшие пометки на `ss0QkY9V8YEMHf2B` и `LM_DECL_MASTER` пришлось исправлять руками. Не заводить заново.
 
@@ -55,7 +55,7 @@ Per-workflow таблиц здесь нет: они были третьим ис
 |---|---|---|
 | `CELGBmo7vQFF1Ej7` | gdocs-append v1 | archived [снимок 26.09], заменён на `YfzWwu1VmIUCbUu0` 22.07.2026 |
 | `qWk65OyxaoAu4jAl` | gdocs-replace v1 | archived [снимок 26.09], расхождение обнаружено 21.07.2026 |
-| `OYIhTm8h2ABMHQUW` | gdocs-overwrite v1 | archived [снимок 26.09]; 30.07.2026 обнулил SYS_INDEX — разбор в INCIDENT_LOG |
+| `OYIhTm8h2ABMHQUW` | gdocs-overwrite v1 | archived [снимок 26.09]; 30.07.2026 обнулил SYS_INDEX — разбор в `projects/n8n/INCIDENT_LOG.md` |
 
 ---
 

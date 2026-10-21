@@ -10,7 +10,7 @@
 
 **Закон раздела. `byteLength` и `checkSum` — а `totalLines`, когда он заполнен, — описывают весь документ в том виде, в каком его отдал экспорт, и от среза строк, режима и других параметров вызова не зависят; поле `text` и счётчик `returnedChars` описывают только то, что вернулось в ответе.** Почему: воркфлоу всегда загружает документ целиком и только потом вырезает из него ответ. Отсюда три следствия, на которых стоят правила ниже: целостность чтения проверяется числами первого рода при любом запрошенном диапазоне; пустой `text` ещё не значит пустой документ; диапазон строк не уменьшает цену чтения.
 
-**Контракт.** body `{fileId, mode?: "full"|"tail", tailChars?: 2000, fromLine?, toLine?}` → `{success, fileId, name, mimeType, mode, length, returnedChars, driveSize, byteLength, checkSum, totalLines, fromLine, toLine, text, reason}`. Полное чтение без лимита 130 КБ, без base64. Ветвление native Doc (export text/plain) / text-файл (alt=media) — автоматически.
+**Контракт.** body `{fileId, mode?: "full"|"tail", tailChars?: 2000, fromLine?, toLine?}` → `{success, fileId, name, mimeType, mode, length, returnedChars, driveSize, byteLength, checkSum, totalLines, fromLine, toLine, text, reason}`. Полное чтение, без base64. Ветвление native Doc (export text/plain) / text-файл (alt=media) — автоматически.
 
 **Диапазон строк.** `fromLine` и `toLine` — целые от 1; `toLine` необязателен и без него означает «до конца документа». При заданном `fromLine` поле `text` содержит срез строк после split по `\n`, и заполняется `totalLines` — реальное число строк документа. Без `fromLine` поле `totalLines` всегда `null`.
 
