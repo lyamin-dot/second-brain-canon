@@ -166,3 +166,54 @@ WB_WF_wb-copy-main-to-ip: 1bK_FYscfzIyUANdr_8VWhgXvjIj9d22gPmjlAfAPAhY — Googl
 
 <!-- 2026-10-20 | синтез Skill apps-script-sheets: ID снят из references/samples.md Skill, в реестре его не было -->
 WB_ANALITIKA_book: 1sBYaluh1NDkb0zVmbV-NX4jsNbawEpXlae8fRg2AiuI — Google Sheets «WB_Аналитика», старая книга юнит-экономики Wildberries (витрина «норма → отклонение → светофор», скрипт WB_Monitor.gs). Заморожена окончательно 2026-10-17 (запись Р-69 журнала projects/wb-ue/LOG.md, пункт 8); её заменила «WB · Деньги» (WB_MONEY_book). Не удалять, пока «WB · Деньги» читает из неё wb_reports_official.
+
+
+<!-- 2026-10-21 | разбор Skill n8n-workflow-registry по носителям: книги Google Sheets и правило проверки ID перенесены сюда -->
+## Книги Google Sheets — имена, листы, кто работает; проверка ID по длине
+
+Перенесено 2026-10-21 из Skill `n8n-workflow-registry` при разборе его по носителям (задача `labs/sys/t-knowledge-synthesis.md`, отчёт `meta/SYNTHESIS_n8n-workflow-registry_2026-10-21.md`); текст строк не правился, прежнее место — зеркало `skills/n8n-workflow-registry/` на коммите b91fb1e, SKILL.md, строки 18–108. Пометка `[снимок ДД.ММ]` значит «сверено со строкой registry/n8n-map.md на эту дату», `[владелец ДД.ММ]` — «со слов Андрея»; строка без пометки набита руками и могла устареть. Слова «строка 35 выше» в абзаце о проверке ID по длине ведут к строке `wb_fbs_orders_tracking` этого файла; повреждённый ID в ней исправлен 2026-10-09, что там и записано.
+
+Строки помечены источником. `[снимок ДД.ММ]` — сверено со строкой файла registry/n8n-map.md, то есть выведено из JSON инстанса. `[владелец ДД.ММ]` — со слов Андрея. Строка БЕЗ пометки набита руками, датой не подтверждена и может быть устаревшей. Это и есть причина не заводить здесь ничего, что выводится из объекта: непомеченная строка живёт ровно до того дня, когда объект изменится, и никто об этом не узнает.
+
+Строка таблицы «Чего здесь нет» прежнего Skill о книге ключей N8N_CREDENTIALS (ID книги — строка N8N_CREDENTIALS этого файла):
+
+| Что нужно | Где |
+|---|---|
+| Какой credential привязан к какому узлу, активен ли он в узле, на какой хост узел его отправляет; права, сроки, магазин и юрлицо ключей | закрытая книга N8N_CREDENTIALS, ID — в registry/documents.md. Лист «Авто» перезаписывает воркфлоу Credential Inventory qolCVtDpTo2YlnGb по ручному запуску; лист «Ключи» — ручное знание по ID credential; лист «Правило имени» — правило имени нового ключа «<Сервис> · <Юрлицо> · <R или RW>» (R — только чтение, RW — чтение и запись). Исключение владельца от 2026-10-06: ключи Wildberries называются с русским словом и признаком права, например `WB_Контент_ИП_R`, — токенов Wildberries много, и по общему правилу их не различить (projects/deklaration-wb/STATE.md). Лист «Правило имени» этого исключения пока не содержит — правит владелец. Читать через gsheets-read, диапазон с номером строки (A1:Z1100) |
+
+Снимок отвечает строками D на вопрос «какие воркфлоу и какими узлами трогают документ с этим ID». На обратный вопрос — «какой ID у книги, которую человек зовёт Price Master» или «в какой книге лежит лист seen_posts» — он не отвечает: человеческих имён в нём нет, а имя листа узел раскрывает не всегда. Этот раздел и есть ответ на обратный вопрос, поэтому ID отсюда не убираются.
+
+- **Reviews Queue** — `1mgtcD2wSm_-8hqfpv3v883KE34-Smy-kFxHvt6zMXj4`, листы `ozon_reviews_queue` и `ozon_qa_queue`; 20 узлов [снимок 26.09].
+- **Price Master** — `1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk`, листы `Artikel` и `CURRENT`; 8 узлов [снимок 26.09].
+- **SKU_Artikel_Map** — `1dJN-wWrzr4LKi9FPTkbOpAu6N-LMymxiF-WJEFJPlCU`, листы `SKU_Artikel_Map` и `MASTER_MAP`. MASTER_MAP — таблица соответствия `sku + lm_id + ozon_sku + wb_nm_id`; это ЛИСТ внутри этой же книги, а не отдельный файл: узел `16_Write_WB_nmID` пишет в этот лист по тому же ID книги [снимок 26.09]. Источником истины MASTER_MAP НЕ является: это снимок, собранный скриптом 19.06.2026, и он отстаёт от живых данных — например, у нашего артикула 1908 в MASTER_MAP стоит `ozon_sku` = 0, а в Price Master, лист `Artikel`, настоящий SKU Ozon. Живой источник соответствия артикулов — **Price Master, лист `Artikel`**. По решению владельца 2026-10-02 MASTER_MAP выводится из употребления после того, как его читатели переключатся на Price Master (labs/ozon-ue/t-master-map-ozon-sku.md, запись 2026-10-03; шаг 5 задачи labs/ozon-ue/t-product-data-model.md).
+
+- **LM_DECL_MASTER** — `1PO7vNyoY16tYqpU_KB5xuK4aSAbOU7YW_MM0scg5ksY`; 13 узлов; там, где узел раскрывает имя листа, это `LM_DECL` [снимок 26.09]. Лист `Decl_Monitor` — дашборд со светофором; ни одним узлом не трогается, поэтому в снимке его нет [снимок 26.09]. Прежняя редакция этого файла называла рабочим листом именно `Decl_Monitor` — это описывало дашборд для человека, а не то, куда пишут воркфлоу.
+
+Двадцать девять книг из сорока одной, которые трогают воркфлоу, не названы нигде: ни здесь, ни в `registry/documents.md`. Ниже те, что используются тремя и более узлами, опознанные по именам листов и воркфлоу. Человеческого имени у них нет — это долг, а не факт; кто знает имя, дописывает его сюда.
+
+| ID книги | Листы | Кто работает | Узлов |
+|---|---|---|---|
+| `1P-GgiFm3067U_sgC2Dojos3BbT_-au6v-mT52vVT3y4` | `sales_raw_operations`, `ozon_raw_accrual_TEST`, `ozon_accrual_types` | конвейер OZON_UE RAW целиком | 19 |
+| `1qdefReY1qHfWdwroorbxz2Bi20_3dsGHuDBiYy2W_XQ` | `wb_fbs_orders_tracking`, `wb_fbs_monitor_params`, `wb_fbs_performance_log` | WB FBS Decision Engine, Evening Report, Morning Forecast, Order Close v2 | 19 |
+| `1JwV7bbfLLxztE7gRrUEOUIvUk-xCOcwDkT88RA5bHPg` | `wb_reviews_archive` | WB Reviews Intake, Publication, History Load, Full History Load | 17 |
+| `1XMy8XsF4tIyiPIhiW2dAt8Sihbsy4xQOXWQhjCJEHyE` | `kb_motor_oil`, `Шаблон` | KB Loader Motor Oil, KB MO Annotation Preprocessor, KB Sync Motor Oil Specs | 15 |
+| `1eQPV1KQ2FE4kV935KV3_05c6VgbRZkU0y4DwFgTIEL4` | `SKU_Artikel`, `cost_price_history` | OZON_UE Cost Price Snapshot и Backfill, Accrual-адаптер, SKU Category Backfill | 14 |
+| `1AhgaspMQl3wLsVT7Iub0d195r8DwwUarhQAWwjBO8xE` | `wb_fbs_params`, `wb_fbs_supplies`, `wb_fbs_decision_log`, `wb_fbs_forecast_snapshot` | тот же конвейер WB FBS | 12 |
+| `14QMHYMM4mZRnnq1wHQA4_SA8ZnOeE1xcVJDL2h9h1Pk` | имя листа узлы не раскрывают | WB RAW Finance Sync V.3, WB RAW History Load V.3 CLEAN | 6 |
+| `17j3EOOGPFwnjF9RQbZzll-4Cm6JD8Cd5mNqm_p9AOBU` | `Акт.цена`, `Акт.цена_backfill` | OZON_UE Cost Price Snapshot и Backfill | 4 |
+| `1sBYaluh1NDkb0zVmbV-NX4jsNbawEpXlae8fRg2AiuI` | `dashboard`, `wb_reports_official` | WB Reports Official Sync, WB Monitor Telegram Reader | 4 |
+| `1eujHu87IO0IlngLX164_O81LxPI5NNpq9S47E8anVSo` | имя листа узлы не раскрывают; здесь лежит `seen_posts` | WB+Ozon News Filter | 3 |
+| `1gPjWlhld9LAzGScEU9l63OGfcXK48dujYX1A9Uh6gBk` | имя листа узлы не раскрывают | KB Loader Transmission Oil, KB TO Annotation Preprocessor | 3 |
+| `1sPD5SAFCTygzUaEPg8RKRPHQyc0HCMIK-aMpnXqYu3k` | имя листа узлы не раскрывают | KB Loader Auto Chemistry, KB AC Annotation Preprocessor | 3 |
+| `11j0yKZ0FvE9EbZiTzCStEACsgecliaElVccpUixmQcQ` | имя листа узлы не раскрывают | Контроль Price WB | 3 |
+| `1cK5dues1ffnUdy6UGCDHiMzxp1ZucdyvawS5Dvx-o3M` | имя листа узлы не раскрывают | SYS Lint | 3 |
+
+Все строки таблицы — [снимок 26.09]. Полный список из сорока одного документа с их узлами достаётся из снимка одной командой: `grep '^D|' registry/n8n-map.md`.
+
+ID попадает в канон только из объекта или из поиска этой же сессии — не по памяти и не перепечаткой из другого текста: перепечатанная руками копия уже повредилась (строка 35 выше). Дешёвая проверка перед записью любого ID Google — длина:
+- документ Google Docs и книга Google Sheets — 44 знака;
+- папка Google Drive — 33 знака.
+
+Другая длина — ID повреждён или это не ID Google (например, ID Claude Project длиной 36 знаков с дефисами). Длина ловит пропуск и лишний знак, но не замену одного знака другим; сверка по объекту остаётся единственным доказательством. Происхождение: projects/n8n-map/PLAN.md, зонд Z-10; projects/deklaration-ozon/LOG.md, Т-3.
+
+Паспорт воркфлоу `OzonRawАналитика` (`MPzPrtsnPtf0sVQo`): `1_E2KCZOVYaf68xVECwv9ZaGGn4bdz3jsh5D3lhsqdyM`; паспорт воркфлоу `Ozon RAW Accrual Sync` (`aVpgEnYBAgIIss4k`): `1hcAxLuj3YBSPUrOe8bYNbFD6ib8r7y56Pv1Ad8j1j8w` (строки 217–218 прежнего Skill; ID паспортов там шли без пометки источника).
