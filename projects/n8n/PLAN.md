@@ -78,6 +78,8 @@ Per-workflow таблиц здесь нет: они были третьим ис
 
 ### Ловушки отдельных воркфлоу без своего проекта в репозитории
 
+SKU Category Historical Backfill работает в книге лаборатории ozon-ue (`labs/ozon-ue/INDEX.md`, строка sku_cost_Шаблон). У лаборатории нет PLAN.md — только список задач (`second-brain-git` 4б.3), поэтому ловушка лежит здесь, а не там.
+
 **SKU Category Historical Backfill** — защиты от дублей нет вообще. Перед каждым запуском вручную очистить листы `sku_category_history` и `sku_category_history_detail` до заголовков. Триггер никогда не переводить на реальное расписание. Эти два листа ни один узел по имени не раскрывает, поэтому в снимке их нет и книгу по ним не найти.
 
 **News Filter** (`WB+Ozon News Filter`) — дедупликация через Google Sheets, лист `seen_posts`; книга — `1eujHu87IO0IlngLX164_O81LxPI5NNpq9S47E8anVSo` [снимок 26.09].
