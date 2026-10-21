@@ -7,11 +7,13 @@ projects/knowledge-synthesis/STATE.md
 ## Где стоим (2026-10-21, вечер)
 
 - Готовы и приняты по снимку: `second-brain-git`, `second-brain-engineer`, `n8n-engineering-manual`, `google-drive-docs`, `apps-script-sheets`, `n8n-workflow-registry` (раздел 6 `meta/SKILLS_MAP.md`). `n8n-workflow-registry` не синтезирован, а разобран по носителям: от Skill остался маршрутизатор, отчёт — `meta/SYNTHESIS_n8n-workflow-registry_2026-10-21.md`; живой Skill совпал с зеркалом 2026-10-21 (позиции Очереди AJ-30, AJ-27, AJ-29 — ВНЕСЕНО).
-- Не начаты: `naryad`, `avtopilot`, `n8n-workflow-passport`, `context-handoff`, `denken`.
+- `naryad`: синтез готов 2026-10-21, текст в зеркале `skills/naryad/`, ждёт заливки zip (позиция AJ-7 Очереди) — отчёт `meta/SYNTHESIS_naryad_2026-10-21.md`, папка таблиц рядом; независимая приёмка пройдена.
+- Не начаты: `avtopilot`, `n8n-workflow-passport`, `context-handoff`, `denken`.
 
 ## Следующий шаг
 
-Синтез `naryad` автопилотом по протоколу — по слову Андрея «синтез naryad»: контракт на согласие, ревизия, исполнение, независимая приёмка, отчёт, zip из зеркала после последнего коммита приёмки (тупик Т-1 `LOG.md`), заливка, приёмка по снимку.
+1. Андрей заливает zip `naryad`, собранный из зеркала после последнего коммита (тупик Т-1 `LOG.md`). Сессия сравнивает снимок живого Skill с зеркалом `skills/naryad/` командой `diff -rq` в обе стороны; совпало — позиция AJ-7 ВНЕСЕНО, статус «готов» в разделе 6 карты.
+2. Затем — синтез `avtopilot` по слову Андрея «синтез avtopilot».
 
 ## Ждёт Андрея
 
@@ -23,6 +25,7 @@ projects/knowledge-synthesis/STATE.md
 5. Синтез `google-drive-docs`: вопросы 2–8 раздела «Ждёт Андрея» отчёта — строка 337.
 6. Синтез `apps-script-sheets`: семь вопросов раздела «Ждёт Андрея» отчёта — строка 347.
 7. Разбор `n8n-workflow-registry`: списки «Предлагаю снять» и «Расширено» отчёта `meta/SYNTHESIS_n8n-workflow-registry_2026-10-21.md`; позиция AJ-27.
+8. Синтез `naryad`: списки «Предлагаю снять» (4 пункта), «Противоречия» (2), «Расширено», «Пробелы» отчёта `meta/SYNTHESIS_naryad_2026-10-21.md`; пересборка дерева ГДЕ — задача `labs/sys/t-naryad-where-tree.md`.
 Часть вопросов 2–6 закрыта ответами 2026-10-21 (`meta/ANSWERS_synthesis-questions_2026-10-21.md`, принято Андреем 10:09); открытое — сверять по этому файлу, а не по строкам выше.
 
 ## Ждёт отправки в git
