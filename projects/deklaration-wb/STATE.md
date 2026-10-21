@@ -2,6 +2,8 @@ projects/deklaration-wb/STATE.md
 
 # STATE_deklaration-wb — текущее состояние
 
+**ЗАМОРОЖЕН 2026-10-21.** Проект закрыт и поглощён deklaration-v2 (запись Р-40 журнала `projects/deklaration-v2/LOG.md`, слово Андрея 2026-10-21). Открытые пункты этого файла перенесены в `projects/deklaration-v2/STATE.md`, раздел «Принято от deklaration-wb». Файл больше не правится и не читается на старте — это история. Строки «⚡ Это затрагивает» про Wildberries писать в `projects/deklaration-v2/STATE.md`. Инструменты и воркфлоу проекта стали инструментами deklaration-v2 и не архивируются.
+
 Здесь только то, что меняет действие следующей сессии. Правила и устройство — `PLAN.md`; решения, тупики и хроника — `LOG.md`. Общий слой (Scan, книга LM_DECL_MASTER, кабинеты, типы документов, таблица товаров) — `meta/DECLARATION_COMMON.md` и `meta/DECLARATION_SCAN.md`.
 
 Проект выделен 2026-10-07 из `projects/deklaration-ozon/` (`LOG.md` Р-1). Разделы ниже перенесены из его `STATE.md` дословно, ссылки на записи журнала `projects/deklaration-ozon/LOG.md` дополнены путём.
