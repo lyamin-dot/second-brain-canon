@@ -163,3 +163,6 @@ GAS_SANDBOX: 1Dm1luJ3YkSE2Tv8BV0DsMfgK1-E2Jc0_b51PYXUZeI0 — Google Sheets «ga
 
 <!-- 2026-10-18 | проект card-content-sync, запись Р-12 его журнала; зарегистрировано при создании (Р6) -->
 WB_WF_wb-copy-main-to-ip: 1bK_FYscfzIyUANdr_8VWhgXvjIj9d22gPmjlAfAPAhY — Google Doc, паспорт воркфлоу-инструмента «WB Copy Кипарис → ИП (инструмент)» dD7Y3XMZ0R1Uvsys (перенос карточек основного кабинета WB в кабинет ИП); папка DOCS 1yifa_sfm6l7b0l08dB8ghzadeEGbIcSQ. Создан create_file 2026-10-18, текст прочитан gdocs-read (исполнение 82361).
+
+<!-- 2026-10-20 | синтез Skill apps-script-sheets: ID снят из references/samples.md Skill, в реестре его не было -->
+WB_ANALITIKA_book: 1sBYaluh1NDkb0zVmbV-NX4jsNbawEpXlae8fRg2AiuI — Google Sheets «WB_Аналитика», старая книга юнит-экономики Wildberries (витрина «норма → отклонение → светофор», скрипт WB_Monitor.gs). Заморожена окончательно 2026-10-17 (запись Р-69 журнала projects/wb-ue/LOG.md, пункт 8); её заменила «WB · Деньги» (WB_MONEY_book). Не удалять, пока «WB · Деньги» читает из неё wb_reports_official.
