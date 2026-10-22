@@ -14,7 +14,7 @@ projects/knowledge-synthesis/STATE.md
 
 1. Сделано 2026-10-22: Андрей залил четыре архива (avtopilot, naryad, denken, second-brain-git), заливка принята по снимку — `diff -rq skills/<имя> /mnt/skills/plugins/<имя>` пуст для всех четырёх (клон 0c6ed2e, снимок Skills сессии SYS 10:17).
 2. Харвест по новой форме (запись Р-3) и позиция AJ-35 Очереди при синтезе `second-brain-engineer` и `second-brain-git`.
-3. Размер Skills — отдельной беседой, вход `meta/BRIEF_skill-size_2026-10-22.md` (по смыслу — проект `projects/kontext-reduktion/`).
+3. Размер Skills — взят проектом `projects/kontext-reduktion/` 2026-10-22 (контракт автопилота в его PLAN.md, запись Р-34 его журнала): протокол синтеза получил три правила слоя (основание по адресу в `references/basis.md`, шапка для исполнителя, зерно `references/` по моменту действия) — следующий синтез любого Skill исполняет их; зеркало `second-brain-engineer` уже переложено и ждёт заливки.
 
 ## Ждёт Андрея
 
