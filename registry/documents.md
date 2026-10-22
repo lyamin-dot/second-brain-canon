@@ -36,7 +36,7 @@ Claude Project WB_LOGISTICS: https://claude.ai/project/019ea86d-05da-7731-b99f-f
 wb_fbs_orders_tracking (Sheets, includes performance_log + monitor_params, подтверждено кодом 7 воркфлоу SYSTEM-MAP 18.07): 1qdefReY1qHfWdwroorbxz2Bi20_3dsGHuDBiYy2W_XQ (исправлено 2026-10-09: прежняя ручная копия была без «uDB», 41 знак; верное значение — 19 вхождений в снимке `registry/n8n-map.md`, снятом с инстанса, зонд Z-10 `projects/n8n-map/PLAN.md`)
 RENO_INDEX:         1r3hSt4pccSHbya31KLNYtyr5xJtbTl1VcX-OCprBjcM
 TRADING_INDEX:      1GhOuwVL41hzyWYF4X8Su0bSuraVw6X4pGxc0G3hkT2Y
-SYS_INDEX:          12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8
+SYS_INDEX:          12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8 — ЗАМОРОЖЕН 2026-09-30 (решение 2026-09-23, Р-109 журнала projects/git-migration/LOG.md); рабочий носитель — labs/sys/INDEX.md; не читать и не писать
 
 CONTENT_INDEX:      12YmBvtmAGImFm2fMPz2FglsrCibG3v7acj3NY5LG7m0
 
