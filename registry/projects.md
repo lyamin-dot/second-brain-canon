@@ -20,6 +20,7 @@ registry/projects.md
 | deklaration-v2 | projects/deklaration-v2/ | repo | активен — заведён 2026-10-10 по слову Андрея (чат 2026-10-10; запись Р-1 журнала `projects/deklaration-v2/LOG.md`): перестройка контроля карточек и кодов четырёх магазинов; старая версия deklaration-ozon и deklaration-wb работает параллельно до переключения; вес 8 (Андрей, 2026-10-10) | |
 | knowledge-synthesis | projects/knowledge-synthesis/ | repo | активен — заведён 2026-10-21 по слову Андрея (чат SYS 2026-10-21) развёртыванием задачи лаборатории `projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md` по пункту 4б.7; запись Р-1 журнала `projects/knowledge-synthesis/LOG.md` | |
 | file-catalog | projects/file-catalog/ | repo | активен — заведён 2026-10-21 (Летопись без Claude Project; выбор проекта — сессия по поручению Андрея, чат 2026-10-21; запись Р-1 журнала `projects/file-catalog/LOG.md`): каталог содержимого шести внешних дисков — что где лежит, содержимое документов, дубли и сохранность, медиа; вес не назначен | |
+| family-docs | projects/family-docs/ | repo | активен — заведён 2026-10-22 (Летопись без Claude Project; Андрей, чат Claude Code 2026-10-22; запись Р-1 журнала `projects/family-docs/LOG.md`): реестр личных документов семьи в Google Sheets — виды, типы, номера, сроки, недостающее; Ф1 немецкие документы сделана, Ф3 — российские; вес не назначен | |
 
 ## Лаборатории
 
