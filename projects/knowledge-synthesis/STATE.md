@@ -9,15 +9,18 @@ projects/knowledge-synthesis/STATE.md
 - Пункт 1 финиша `PLAN.md` достигнут 2026-10-22: все одиннадцать собственных Skills синтезированы и приняты по снимку (раздел 6 `meta/SKILLS_MAP.md` — у всех «готов»). Отчёты — `meta/SYNTHESIS_<имя>_<дата>.md`; решения — записи Р-1…Р-12 `LOG.md`.
 - Пункт 2 финиша (вопросы владельцу) закрыт 2026-10-22 решениями Андрея по сводному списку — запись Р-12 `LOG.md`. Внесённое в зеркала `skills/avtopilot/`, `skills/naryad/`, `skills/denken/`, `skills/second-brain-git/` действует после заливки архивов.
 - Открыт пункт 3 финиша: шаги 6–8 плана версии 3 (`meta/PLAN_skill-layers_2026-10-20_v3.md`, раздел 5).
+- 2026-10-22: `n8n-engineering-manual` переложен по трём правилам слоя (запись Р-13 `LOG.md`, контракт — раздел «Контракт автопилота — разрез `n8n-engineering-manual`» `PLAN.md`): зеркало `skills/n8n-engineering-manual/` в main, ждёт заливки zip Андреем; диагностика отказа воркфлоу дешевле на 22,8 % (`meta/scripts/reading_cost.py`, вид S4б).
 
 ## Следующий шаг
 
 1. Сделано 2026-10-22: Андрей залил четыре архива (avtopilot, naryad, denken, second-brain-git), заливка принята по снимку — `diff -rq skills/<имя> /mnt/skills/plugins/<имя>` пуст для всех четырёх (клон 0c6ed2e, снимок Skills сессии SYS 10:17).
+1а. Второй проход синтеза `n8n-engineering-manual` по содержанию — позиция AJ-38 Очереди, дата смерти 2026-11-12: 18 находок харвеста 2026-10-22 (раздел 3 `meta/HARVEST_2026-10-22.md`) и три противоречия текста с решениями владельца; по шагам С1–С7 протокола синтеза; адрес корня или пункта — по указателю `references/roots.md` или `references/engine.md` (после разреза R13 лежит в roots-security.md, R1b — в roots-write.md, T5.4 — в templates.md).
 2. Харвест по новой форме (запись Р-3) и позиция AJ-35 Очереди при синтезе `second-brain-engineer` и `second-brain-git`.
 3. Размер Skills — взят проектом `projects/kontext-reduktion/` 2026-10-22 (контракт автопилота в его PLAN.md, запись Р-34 его журнала): протокол синтеза получил три правила слоя (основание по адресу в `references/basis.md`, шапка для исполнителя, зерно `references/` по моменту действия) — следующий синтез любого Skill исполняет их; зеркало `second-brain-engineer` уже переложено и ждёт заливки.
 
 ## Ждёт Андрея
 
+0. Залить zip `n8n-engineering-manual` (переложение 2026-10-22); после заливки — сверка `diff -rq skills/n8n-engineering-manual /mnt/skills/plugins/n8n-engineering-manual` (пусто) и поведенческий тест, раздел 2 `meta/TEST_skill-layers_2026-10-22.md`.
 1. Мастер-промпты ozon-ue и wb-ue: по словам Андрея текст вставлен 2026-10-22; приёмка по объекту — первой сессией каждого из этих проектов (позиция AJ-36 `registry/maintenance-queue.md`).
 2. Возврат из архива трёх одноразовых воркфлоу deklaration-wb (имена — `projects/deklaration-wb/STATE.md`, запись Р-18 `projects/deklaration-wb/LOG.md`): действие руками в интерфейсе n8n.
 3. Решения по 23 оставшимся находкам Архивариуса — задача `labs/sys/t-triage-findings.md` (по denken решено 2026-10-22).

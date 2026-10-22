@@ -39,12 +39,12 @@ if len(labels) != len(rep['basis']): fail(f'ярлыков в basis.md {len(labe
 # 2. восстановление результата
 used = collections.Counter()
 recon = collections.Counter()
-LAB = re.compile(r'\[основание: ([A-Za-z-]+-\d\d)\]')
+LAB = re.compile(r'\[основание: ([A-Za-z-]+-\d\d)(?: · правило [^\]]+)?\]')
 for k, t in R.items():
     text = head if k == 'references/basis.md' else t
     for ln in text.split('\n'):
         if not ln.strip(): continue
-        m = re.match(r'^(\s*(?:- )?)\[основание: ([A-Za-z-]+-\d\d)\]$', ln)
+        m = re.match(r'^(\s*(?:- )?)\[основание: ([A-Za-z-]+-\d\d)(?: · правило [^\]]+)?\]$', ln)
         if m:
             lab = m.group(2); used[lab] += 1
             block = labels.get(lab)
@@ -64,6 +64,14 @@ for k, t in R.items():
 for lab in labels:
     if used[lab] != 1: fail(f'ярлык {lab} использован {used[lab]} раз')
 
+# 2б. номер правила в ярлыке совпадает с основанием; хвостов «Основание:» вне basis.md нет
+for k, t in R.items():
+    for m in re.finditer(r'\[основание: ([A-Za-z-]+-\d\d) · правило ([^\]]+)\]', t):
+        for rid_ in m.group(2).split(', '):
+            if rid_ not in ' '.join(labels.get(m.group(1), [])): fail(f'{k}: ярлык {m.group(1)} несёт правило {rid_}, которого нет в его основании')
+    if k != 'references/basis.md':
+        for i, ln in enumerate(t.split('\n'), 1):
+            if re.search(r'(?:^|[.;»)!*] )\s*(?:- )?Основани[ея](?![»])(?: [^:]{0,70})?:', ln): fail(f'{k}:{i}: хвост «Основание» не вынесен')
 # 3. мультимножество
 src = collections.Counter(l for t in S.values() for l in t.split('\n') if l.strip())
 added = collections.Counter(l for l in rep['added'] if l.strip())
@@ -80,7 +88,7 @@ src_m = collections.Counter(x for t in S.values() for x in MK(t))
 res_m = collections.Counter(x for t in R.values() for x in MK(t))
 if src_m != res_m: fail(f'маркеры пунктов разошлись: {(src_m - res_m) + (res_m - src_m)}')
 H = lambda t: re.findall(r'(?m)^#{3} (.+)', t)
-if collections.Counter(h for t in S.values() for h in H(t)) != collections.Counter(h for t in R.values() for h in H(t)): fail('подзаголовки ### разошлись')
+if collections.Counter(h for t in S.values() for h in H(t)) != collections.Counter(h for k, t in R.items() if k != 'references/basis.md' for h in H(t)): fail('подзаголовки ### разошлись')
 # 5. строки таблицы ведут на существующие файлы
 TBL = [l for k in ('SKILL.md', 'references/engine.md', 'references/roots.md') for l in R[k].split('\n') if l.startswith('|')]
 for f in sorted(set(re.findall(r'(?<![/\w-])((?:references/)?[a-z][a-z-]*\.md)', '\n'.join(TBL)))):

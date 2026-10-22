@@ -55,9 +55,9 @@ def session_types(repo, sk, project):
             + S('n8n-engineering-manual', 'references', 'write.md')),
         ('S4б то же + диагностика «почему не работает»', base + sbe('permissions.md') + S('n8n-engineering-manual', 'SKILL.md')
             + S('n8n-engineering-manual', 'references', 'write.md') + S('n8n-engineering-manual', 'references', 'roots.md')
-            + [p for p in S('n8n-engineering-manual', 'references', 'roots-write.md') if os.path.exists(p)]),
+            + [p for p in S('n8n-engineering-manual', 'references', 'roots-silent.md') if os.path.exists(p)]),
         # с 2026-10-22 roots.md — закон, указатель и таблица «симптом → корень»; корни — в файлах по моменту действия;
-        # в S4б считается худший случай — самый большой файл корней (roots-write.md); S4в — проектирование логики
+        # в S4б считается худший случай — самый большой файл корней (roots-silent.md); S4в — проектирование логики
         ('S4в SYS + проектирование логики воркфлоу (механика движка)', base + sbe('permissions.md') + S('n8n-engineering-manual', 'SKILL.md')
             + S('n8n-engineering-manual', 'references', 'engine.md')
             + [p for f in ('engine-flow.md', 'engine-http.md') for p in S('n8n-engineering-manual', 'references', f) if os.path.exists(p)]),
