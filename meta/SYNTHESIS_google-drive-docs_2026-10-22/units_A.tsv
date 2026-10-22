@@ -1,0 +1,125 @@
+id	source	class	quote
+A-001	old_A.md:4	ПРАВИЛО	сессия видит их только через MCP-сервер n8n
+A-002	old_A.md:4	ПРАВИЛО	всё, что этот путь не показывает, считается неизвестным, а не успешным
+A-003	old_A.md:4	АДРЕС	Общая механика вызова живёт в n8n-engineering-manual, §1.1
+A-004	old_A.md:6	ПРАВИЛО	Вызов — только `n8n:execute_workflow`, никогда curl или bash.
+A-005	old_A.md:6	ПРИЧИНА	egress-прокси облачной сессии блокирует домен инстанса
+A-006	old_A.md:6	АДРЕС	n8n-engineering-manual, §1.1, правило §1.1.0
+A-007	old_A.md:8	ПРАВИЛО	параметр `triggerNodeName` — точное имя узла-триггера этого воркфлоу
+A-008	old_A.md:8	ПОРОГ	`inputs: {webhookData: {method: "POST", body: {…поля инструмента…}}}`
+A-009	old_A.md:8	ПОРОГ	для воркфлоу с формой — `inputs: {formData: {…}}`
+A-010	old_A.md:8	ПРАВИЛО	поля `type` внутри `inputs` нет
+A-011	old_A.md:8	ПРАВИЛО	Имя триггера у каждого воркфлоу своё — его не угадывают
+A-012	old_A.md:8	АДРЕС	из `get_workflow_details` или из сигнатуры в `registry/tools.md`
+A-013	old_A.md:8	ПРОВЕРКА	вызов с неверным именем безвреден: сервер отвечает ошибкой со списком доступных 
+A-014	old_A.md:8	АДРЕС	Тексты ошибок старой формы и правило «верить ответу сервера, а не описанию инстр
+A-015	old_A.md:8	АДРЕС	Поля `body` каждого инструмента — его контракт в §3.1–3.6, §4.0, §4.0а
+A-016	old_A.md:9	СЛУЧАЙ	2 случая, последний 2026-10-09 — отчёт синтеза, правило A.3.3
+A-017	old_A.md:11	ПРАВИЛО	Метод POST указывается явно, поле называется `inputs`, а не `data`.
+A-018	old_A.md:11	ПРИЧИНА	по умолчанию инструмент ставит метод GET; с полем `data` тело не доезжает до вор
+A-019	old_A.md:11	ПРОВЕРКА	разбор входа в воркфлоу падает на отсутствии обязательного поля («Missing fileId
+A-020	old_A.md:11	ПРОВЕРКА	MCP при этом отвечает `{"status":"started"}`
+A-021	old_A.md:11	ПРИЧИНА	тихий отказ, который выглядит как ошибка параметров, а не формы вызова
+A-022	old_A.md:12	СЛУЧАЙ	1 случай, последний 2026-09-08 — отчёт синтеза, правило A.3.4
+A-023	old_A.md:14	ПРАВИЛО	`executionMode` — обязательный параметр; ответ инструмента виден только в `manua
+A-024	old_A.md:14	ПРИЧИНА	Запуск в `production` исполняет опубликованную версию асинхронно
+A-025	old_A.md:14	ПОРОГ	тело ответа не возвращается, исполнение не видно в `get_execution` и `search_exe
+A-026	old_A.md:14	ПОРОГ	поля `success`, `reason`, `context` наблюдаемы только в ручном режиме и в запуск
+A-027	old_A.md:14	ПРАВИЛО	в бою запись проверяется только обратным чтением целевого файла через gdocs-read
+A-028	old_A.md:14	АДРЕС	references/roots.md, правило R2.3
+A-029	old_A.md:15	АДРЕС	Основание — n8n-engineering-manual, §1.1, правило §1.1.2.
+A-030	old_A.md:17	ПРАВИЛО	Имена полей `body` — не косметика: каждый инструмент получает поля точно по свое
+A-031	old_A.md:17	ПРИЧИНА	отправляет в Google запрос с пустым телом — файл молча затирается пустотой
+A-032	old_A.md:17	ПРОВЕРКА	Признак: `modifiedTime` обновлён, файл пуст.
+A-033	old_A.md:17	ИСКЛЮЧЕНИЕ	Инструменты v2 от этого защищены — при отсутствии нужного поля они отказывают с 
+A-034	old_A.md:17	ПОРОГ	старая версия overwrite ждала поле `newContent` и на поле `text` затирала файл
+A-035	old_A.md:18	СЛУЧАЙ	1 случай, дата в источнике не записана — отчёт синтеза, правило A.3.2
+A-036	old_A.md:20	ПОРОГ	Текст крупнее примерно 1–2 КБ через тело вызова gdocs-append, gdocs-replace или 
+A-037	old_A.md:20	АДРЕС	причина, порядок путей и сверка стыков порций: §3.0 (`references/docs-write.md`)
+A-038	old_A.md:26	ПРАВИЛО	Ошибка, которую инструмент показал, — дешёвая: её видно.
+A-039	old_A.md:26	ПРАВИЛО	Опасны строки, где решение — «не повторять, а перечитать» (E06, E16, E21)
+A-040	old_A.md:26	ПРИЧИНА	повтор записи по ложному сигналу удваивает append и повторяет replace
+A-041	old_A.md:26	АДРЕС	Верификация записи — §7.
+A-042	old_A.md:30	ПРАВИЛО	Doc пустой/не открывается после create_file | contentMimeType: text/plain (§2.1)
+A-043	old_A.md:31	ПРАВИЛО	replace не заменяет | reason/context из manual-прогона; разделители `\n\n` / `\r
+A-044	old_A.md:32	ПРАВИЛО	нужно заменить многострочный фрагмент документа (многострочный `search`)
+A-045	old_A.md:32	ПРАВИЛО	gdocs-overwrite v2; текст крупнее примерно 1–2 КБ — gdocs-apply-from-file (§3.6)
+A-046	old_A.md:32	ИСКЛЮЧЕНИЕ	Многострочный текст замены на месте однострочного якоря — штатный replace, не эт
+A-047	old_A.md:33	ПРАВИЛО	Webhook заблокирован | n8n:execute_workflow через MCP, не curl
+A-048	old_A.md:34	ПРАВИЛО	MCP-путь auth error | переподключить коннектор claude.ai + новый чат
+A-049	old_A.md:34	ИСКЛЮЧЕНИЕ	n8n-путь на сервисном аккаунте не протухает, §6.1
+A-050	old_A.md:35	ПРОВЕРКА	запись не пишет без ошибки | read-back файла (§7)
+A-051	old_A.md:36	ПРАВИЛО	Credential в кэше: «does not exist» | переключить узел на другой ключ и вернуть 
+A-052	old_A.md:37	АДРЕС	Sheets: `'A: field'` / returnAllMatches / IMPORTRANGE | см. §4.2
+A-053	old_A.md:38	ПРАВИЛО	create_file без id | text/plain+textContent, повторить; проверить права папки (§
+A-054	old_A.md:39	ПРАВИЛО	узел записи без credential после записи воркфлоу
+A-055	old_A.md:39	ПРАВИЛО	ключ сервисного аккаунта (тип credential googleApi) к узлу привязывает сама сесс
+A-056	old_A.md:39	ПОРОГ	операцией `setNodeCredential` точечной формы `update_workflow`
+A-057	old_A.md:39	ПРОВЕРКА	сверяет поле `credentials` узла
+A-058	old_A.md:39	ПРАВИЛО	привязка в черновике начинает действовать для расписания, вебхука и запуска в ре
+A-059	old_A.md:39	АДРЕС	n8n-engineering-manual R1a.1, R1a.5, R2
+A-060	old_A.md:39	ПРАВИЛО	существующие привязки запись не сбрасывает (§9)
+A-061	old_A.md:39	АДРЕС	узлы Google Sheets — так же, §6.2 (г) references/infra.md
+A-062	old_A.md:40	ПРОВЕРКА	файл затёрт пустотой, modifiedTime свежий | проверить имя поля body (`newContent
+A-063	old_A.md:41	ПРИЧИНА	доступ коннектора на запись (write-scope) протух
+A-064	old_A.md:41	ПРАВИЛО	create_file падает, чтение работает
+A-065	old_A.md:41	ПРАВИЛО	фолбэк: создать документ иначе — вручную в интерфейсе Docs или копией существующ
+A-066	old_A.md:41	СЛУЧАЙ	способ создания — вывод, случай не записан
+A-067	old_A.md:41	ПРАВИЛО	наполнить gdocs-overwrite v2 — у него независимая авторизация (§6.1)
+A-068	old_A.md:41	ПРАВИЛО	либо переподключение коннектора + новый чат
+A-069	old_A.md:42	ПРИЧИНА	файл не расшарен на аккаунт коннектора или на сервисный аккаунт (§2.4, §6.2)
+A-070	old_A.md:42	ПРОВЕРКА	если файл должен существовать — ещё и Корзина (§2.2 п.6)
+A-071	old_A.md:43	ПРОВЕРКА	gdocs-replace v2 вернул success:false, но occurrencesChanged>0
+A-072	old_A.md:43	ПРИЧИНА	замена в документе состоялась, не прошла проверка после неё
+A-073	old_A.md:43	ПОРОГ	перечитанный текст пуст; новый текст не найден; при удалении якорь всё ещё найде
+A-074	old_A.md:43	ПРАВИЛО	верифицировать перечитыванием, НЕ повторять вызов (§3.2 (д))
+A-075	old_A.md:43	ИСКЛЮЧЕНИЕ	Не путать: «indexOf по пустой строке при replace="" даёт ложный отказ всегда»
+A-076	old_A.md:43	ПРИЧИНА	код версии 2026-09-25 проверяет удаление по исчезновению якоря
+A-077	old_A.md:44	ПРАВИЛО	«файл маленький» по metadata, а хвост обрезан | fileSize ненадёжен для нативных 
+A-078	old_A.md:45	ПРИЧИНА	неуникальный якорь: считать вхождения ДО вызова (§3.2)
+A-079	old_A.md:45	ПРАВИЛО	откат — обратный replace + полное перечитывание
+A-080	old_A.md:46	ПРОВЕРКА	gdocs-read вернул `text:""` при `success:true`
+A-081	old_A.md:46	ПРАВИЛО	сверить `fromLine` с `totalLines`: срез за концом документа — не отказ чтения
+A-082	old_A.md:47	ПРАВИЛО	не подбирать якорь вслепую: сначала посмотреть байты строки через gdocs-read
+A-083	old_A.md:47	ПРИЧИНА	гипотеза — неразрывный пробел или иной невидимый символ
+A-084	old_A.md:47	СЛУЧАЙ	наблюдалось на строках шапки документов, в том числе на строке поля LAST_UPDATED
+A-085	old_A.md:48	ПРОВЕРКА	gdocs-overwrite v2: success:false «content mismatch on first/last 100 chars», by
+A-086	old_A.md:48	ПРАВИЛО	запись, вероятно, состоялась — не повторять, читать файл
+A-087	old_A.md:48	ПРОВЕРКА	проверить, что newContent передан строкой, а не объектом (§3.4)
+A-088	old_A.md:49	ПРИЧИНА	клиент OAuth в статусе публикации «Testing»: токен обновления живёт 7 дней
+A-089	old_A.md:49	ПРОВЕРКА	ключ OAuth (n8n или rclone), работавший около недели, отказывает `invalid_grant`
+A-090	old_A.md:49	АДРЕС	§6.1 references/infra.md
+A-091	old_A.md:51	СЛУЧАЙ	E01–E15, E17, E18 — отчёт синтеза, правило D.8.1
+A-092	old_A.md:51	СЛУЧАЙ	E16 — 2 случая, последний 2026-10-12
+A-093	old_A.md:51	СЛУЧАЙ	E19 — 1 случай, последний 2026-09-24
+A-094	old_A.md:51	СЛУЧАЙ	E20 — 3 случая, последний датированный 2026-07-24
+A-095	old_A.md:51	СЛУЧАЙ	E21 — 1 случай, последний 2026-08-30
+A-096	old_A.md:51	СЛУЧАЙ	решение Андрея 2026-10-20
+A-097	old_A.md:51	АДРЕС	`labs/sys/t-knowledge-synthesis.md`, решения по синтезу n8n-engineering-manual
+A-098	old_A.md:51	АДРЕС	E22 — свойство платформы Google OAuth, основание — §6.1 references/infra.md.
+A-N01	FINDINGS.md:9	ПРАВИЛО	who and when moved a file is not proven by the modified date
+A-N02	FINDINGS.md:9	ПРОВЕРКА	prove it by the object's activity/revision history or by the record of the move
+A-N03	FINDINGS.md:9	СЛУЧАЙ	наблюдение 1, не проверено пробой
+A-N04	FINDINGS.md:9	АДРЕС	journal record Р-29, field «допущение», line 172
+A-N05	FINDINGS.md:9	ПРИЧИНА	behaviour on parent change is not documented and was observed once unchanged
+A-N06	FINDINGS.md:10	ПРАВИЛО	take triggerNodeName from the workflow (get_workflow_details) or from the row of
+A-N07	FINDINGS.md:10	ПРАВИЛО	the name `01_Webhook` is a property of the Канал workflows only
+A-N08	FINDINGS.md:10	ПРАВИЛО	is not transferred to gdocs-*/gsheets-* tools
+A-N09	FINDINGS.md:10	ПРОВЕРКА	Symptom: error «Provide triggerNodeName…»/no trigger with that name on first cal
+A-N10	FINDINGS.md:10	СЛУЧАЙ	Source: `meta/HARVEST_2026-10-22_reports/L1.md` row 14 (HCL:8, 2026-10-18)
+A-N11	FINDINGS.md:10	ПРАВИЛО	Do NOT write the trigger name of a concrete workflow into the Skill as a fact
+A-N12	FINDINGS.md:11	ПРАВИЛО	create_file does not accept a binary file (JPEG, zip) in one call
+A-N13	FINDINGS.md:11	СЛУЧАЙ	dead end proven twice, Андрей uploaded manually
+A-N14	FINDINGS.md:11	АДРЕС	references/mcp.md line 47 (byte relay through the session context corrupts chara
+A-N15	FINDINGS.md:12	ПОРОГ	execute_workflow in mode manual returned only `{executionId, status:"started"}`
+A-N16	FINDINGS.md:12	ПРАВИЛО	the workflow answer is read afterwards with get_workflow_execution includeData:t
+A-N17	FINDINGS.md:12	СЛУЧАЙ	executions 83657, 83686, 2026-10-21, session N8N
+A-N18	FINDINGS.md:12	СЛУЧАЙ	Git Read Batch (executions 84315, 84316, 84317
+A-N19	FINDINGS.md:12	ПОРОГ	for gdocs-read that is hundreds of KB in context (n8n-engineering-manual R4.5)
+A-N20	FINDINGS.md:12	ПРАВИЛО	Current SKILL.md §3 claims the answer is visible in manual directly — that is th
+A-N21	FINDINGS.md:13	ПОРОГ	n8n answers «Too Many Requests» to four or more simultaneous execute_workflow ca
+A-N22	FINDINGS.md:13	ПОРОГ	two parallel calls and a 20-second pause pass
+A-N23	FINDINGS.md:13	ПРАВИЛО	run a series of document edits one or two at a time
+A-N24	FINDINGS.md:13	ПРАВИЛО	a retry after the pause does not repeat a write unless the workflow itself answe
+A-N25	FINDINGS.md:13	ПРОВЕРКА	check the document first
+A-N26	FINDINGS.md:13	СЛУЧАЙ	(2026-10-21, two cases, session N8N)
