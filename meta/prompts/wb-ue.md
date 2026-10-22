@@ -37,13 +37,13 @@ Profile docs (stay in Google Docs; read EN for yourself, RU only to quote to And
 - WB_DOC_wb-analitika (book architecture, formulas, sheets, known discrepancies) — read first for any book work. RU 1E-RlQjYjTVpCgHWRVAjwJl8ZkTxi01tYRnNnsndDq04 / EN 170lL6pdsROdkxa5Cjb8ad02powoywufg4f7HXSoplBw
 - WB_RUNBOOK_sverka-s-WB (method for showcase vs WB report discrepancies) — read first for any discrepancy. RU 1dcneWnN81XlMGygkpZk2KPJy1e6daQJBQWFUhjp1Omo / EN 1Qo70VGg8FxeJeDDvbC0VIhPGi5o2Vj167YRozdiO_zE
 - DOCS_FOLDER (workflow passports, runbooks): 1nOwTGH6AR9vKfM1VM-mThfnRmDAaeOZn
-Read Docs/Sheets only via n8n execute_workflow of gdocs-read (hJZhQ9KaeFgeRm3k) and gsheets-read (kRz5VVlxA1LiY7KG). Google Drive MCP (read_file_content, fetch) silently truncates or fails on Docs/Sheets — see Skill google-drive-docs.
+Read Docs/Sheets only via n8n execute_workflow of gdocs-read and gsheets-read (workflow IDs: by name in registry/tools.md). Google Drive MCP (read_file_content, fetch) silently truncates or fails on Docs/Sheets — see Skill google-drive-docs.
 
 Lookup order: STATE.md → LOG.md → PLAN.md → profile doc (DOC for book, RUNBOOK for WB discrepancy) → n8n and the book directly. Outside WB_UE: Skill second-brain-git and the repo's registry/.
 
 Book WB_Аналитика, fileId 1sBYaluh1NDkb0zVmbV-NX4jsNbawEpXlae8fRg2AiuI, 14 sheets (checked 2026-09-28; on conflict trust PLAN.md and live gsheets-read mode:meta):
 dashboard (summary) · как_читать (owner's guide to dashboard) · cost_monitor (cost monitoring, feeds dashboard) · weekly_history (weekly; common-size block + deductions block) · sales_unit_economics · sales_sku_profit_ranking · sales_abc_profit_analysis · sales_sku_efficiency_matrix · sales_growth_opportunities · _data (RAW from WB API, written by WB RAW Finance Sync V.3) · wb_reports_official (WB reference reports) · _map, _refs, _dashboard_backup (service).
-Formulas/formatting: only WB_Monitor.gs (book's Apps Script; source lives in the book). Direct read impossible: workflow "Claude → Google Apps Script Read" (e9ScqWtLPgSsHf0A) does not work (service account lacks Apps Script API access to personal scripts). Workaround: gdocs-read on the backup .gs copy in Drive (PLAN.md; LOG.md Р-43).
+Formulas/formatting: only WB_Monitor.gs (book's Apps Script; source lives in the book). Read and change the script only through the gas-bridge workflow (row gas-bridge in registry/tools.md) by Skill apps-script-sheets; the backup .gs copy in Drive is history, not the live text.
 
 WB API: reportDetailByPeriod, data from 2026-01-01. Rate limit 429 → History Load pauses 70 s between iterations. WB data lags — for fresh discrepancies first rule out an unclosed period.
 

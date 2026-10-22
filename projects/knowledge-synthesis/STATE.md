@@ -12,16 +12,15 @@ projects/knowledge-synthesis/STATE.md
 
 ## Следующий шаг
 
-1. Андрей заливает четыре архива (avtopilot, naryad, denken, second-brain-git); следующая сессия SYS принимает заливку по снимку: `diff -rq skills/<имя> /mnt/skills/plugins/<имя>` пуст для всех четырёх.
+1. Сделано 2026-10-22: Андрей залил четыре архива (avtopilot, naryad, denken, second-brain-git), заливка принята по снимку — `diff -rq skills/<имя> /mnt/skills/plugins/<имя>` пуст для всех четырёх (клон 0c6ed2e, снимок Skills сессии SYS 10:17).
 2. Харвест по новой форме (запись Р-3) и позиция AJ-35 Очереди при синтезе `second-brain-engineer` и `second-brain-git`.
 3. Размер Skills — отдельной беседой, вход `meta/BRIEF_skill-size_2026-10-22.md` (по смыслу — проект `projects/kontext-reduktion/`).
 
 ## Ждёт Андрея
 
-1. Заливка архивов четырёх Skills (выше).
-2. Вставка текста в живые мастер-промпты ozon-ue и wb-ue — позиция AJ-36 `registry/maintenance-queue.md`.
-3. Возврат из архива трёх одноразовых воркфлоу deklaration-wb (имена — `projects/deklaration-wb/STATE.md`, запись Р-18 `projects/deklaration-wb/LOG.md`): действие руками в интерфейсе n8n.
-4. Решения по 23 оставшимся находкам Архивариуса — задача `labs/sys/t-triage-findings.md` (по denken решено 2026-10-22).
+1. Мастер-промпты ozon-ue и wb-ue: по словам Андрея текст вставлен 2026-10-22; приёмка по объекту — первой сессией каждого из этих проектов (позиция AJ-36 `registry/maintenance-queue.md`).
+2. Возврат из архива трёх одноразовых воркфлоу deklaration-wb (имена — `projects/deklaration-wb/STATE.md`, запись Р-18 `projects/deklaration-wb/LOG.md`): действие руками в интерфейсе n8n.
+3. Решения по 23 оставшимся находкам Архивариуса — задача `labs/sys/t-triage-findings.md` (по denken решено 2026-10-22).
 Адресов вида «строка N на коммите 421cb72» больше нет: на этом коммите файла истории не было; номера строк в `HISTORY_2026-10-18_to_2026-10-21.md` совпадают с прежним файлом задачи.
 
 ## Ждёт отправки в git

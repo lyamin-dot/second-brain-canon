@@ -31,12 +31,12 @@ Book, tech-doc and project-workflow addresses are deliberately NOT in this promp
 2. Task file labs/ozon-ue/t-<name>.md when the question belongs to a task.
 3. Book tech doc (address in «Постоянные адреса») — architecture, formulas, occupied cells, dependencies.
 4. Live object:
-- Sheets formulas/data → gsheets-read (n8n kRz5VVlxA1LiY7KG). First mode:"meta" (sheets, sizes), then mode:"range". render:"FORMULA" is the only way to see a formula (no text export gives it) — never reason about a formula without opening it this way. render:"UNFORMATTED_VALUE" for numbers. Dates arrive as serial numbers. truncated:true = not all rows returned, read the rest.
+- Sheets formulas/data → gsheets-read (workflow ID: by name in registry/tools.md). First mode:"meta" (sheets, sizes), then mode:"range". render:"FORMULA" is the only way to see a formula (no text export gives it) — never reason about a formula without opening it this way. render:"UNFORMATTED_VALUE" for numbers. Dates arrive as serial numbers. truncated:true = not all rows returned, read the rest.
 - Workflows/executions → n8n MCP, node by node, never from memory.
 5. Zone B of the OZON_UE_INDEX Google Doc — only for history.
 6. Repo: registry/documents.md (Drive addresses), registry/tools.md (Git channel, signatures), CORE (already read).
 7. Only now — a question to Andrei.
-Google Docs only via gdocs-read (n8n hJZhQ9KaeFgeRm3k). Google Drive MCP read_file_content silently cuts the tail above ~130 KB and corrupts non-BMP characters. Size probe without reading: gdocs-read fromLine:1,toLine:1 returns totalLines, byteLength, checkSum. Never size by Drive fileSize (wrong for native docs). Empty text with success:true when fromLine > totalLines = empty slice, not a failure.
+Google Docs only via gdocs-read (workflow ID: by name in registry/tools.md). Completeness of any Drive read is checked by content (the last section is present), not by size. Size probe without reading: gdocs-read fromLine:1,toLine:1 returns totalLines, byteLength, checkSum. Never size by Drive fileSize (wrong for native docs). Empty text with success:true when fromLine > totalLines = empty slice, not a failure.
 Never say «документ не найден» before checking «Постоянные адреса» and the registry: an empty google_drive_search proves nothing.
 </source_order>
 
