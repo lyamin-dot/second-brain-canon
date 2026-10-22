@@ -18,7 +18,7 @@ meta/DECLARATION_COMMON.md
 | кабинет | чтение | запись | воркфлоу и накопитель | состояние на 2026-10-07 |
 |---|---|---|---|---|
 | Ozon основной (Аллея Групп, Client-Id 559661) | да | да, после «да» Андрея | Ozon Upload `BLNA8sbdnLtuz7Uj` (не публиковать), credential «Ozon Seller API» `QGpZpf4c03WyZG9A`; лист Ozon_SKU_Staging | рабочий |
-| Ozon ИП | нет | нет | «Ozon IP SKU Staging (ИП)» `PWFVE0UbM3ajvVFc`, лист Ozon_IP_SKU_Staging | ключа API нет (`labs/ozon-ue/t-ozon-ip-cabinet.md`); Ozon Upload под второй кабинет не переделан, решение не принято |
+| Ozon ИП | да | да, после «да» Андрея | «LM_DECL — Ozon Upload ИП» `GElwjPKkJQkCao3b`, «Ozon Card Fields Fix (ИП)» `eLBcH8MeE38NbMZq`, проба `m6svDS7yhrTjTCrt`; «Ozon IP SKU Staging (ИП)» `PWFVE0UbM3ajvVFc` | с 2026-10-22 рабочий: 169 товаров, 10 деклараций (`projects/deklaration-ozon/LOG.md` Р-48, Р-49) |
 | WB основной | да | да, после «да» на список nmID; карточки «Автохимия» и «Смазки автомобильные» код не пишет (SKIP_OKPD2) | WB Sync `QCQI6utFFH3dvTJT`; «WB Cards → Price Master» `fGHfVrI58Ws1wfTw`, лист WB_Cards_Staging | рабочий, 454 карточки |
 | WB ИП | да | да, после «да» (`nIRKnhKyI5LibFW3`) | WB Sync ИП `9Qhnkz9E6mjidqs5` (только проверка); ключи `WB_Контент_ИП_R`, `WB Kontent_ИП_Wr` | 215 карточек; запись с 2026-10-09 |
 

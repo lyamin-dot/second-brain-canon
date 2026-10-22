@@ -24,8 +24,10 @@ projects/deklaration-ozon/PLAN.md
 
 Рабочие:
 - «LM_DECL — Scan» `vKjqExap1mJjM6Ap` — общий слой, описание и состояние в `meta/DECLARATION_SCAN.md`.
-- «LM_DECL — Ozon Upload» `BLNA8sbdnLtuz7Uj` — должен оставаться неопубликованным (active: false). Режимы формы «проверка», «боевой», «статус» (с 2026-10-02, `LOG.md` Р-14). Паспорт `16r4swPyVr6gMZpcTPL-08waBrUKLt5YSqKRhaRuswr4`.
+- «LM_DECL — Ozon Upload» `BLNA8sbdnLtuz7Uj` — опубликован; решение Андрея 2026-10-22: не выключать (`LOG.md` Р-49; прежнее требование active: false снято). Режимы формы «проверка», «боевой», «статус» (с 2026-10-02, `LOG.md` Р-14). Паспорт `16r4swPyVr6gMZpcTPL-08waBrUKLt5YSqKRhaRuswr4`.
 - «Ozon Fields Probe (ИП)» `m6svDS7yhrTjTCrt` — инструмент только чтения по кабинету Ozon ИП: характеристики документов и кодов, документы кабинета, сверка с ARTIKEL_PROPS и «Нужен КИЗ» основного кабинета WB; запуск вручную, не публикуется, не архивируется (`LOG.md` Р-48).
+- «LM_DECL — Ozon Upload ИП» `GElwjPKkJQkCao3b` — загрузка действующих деклараций в кабинет Ozon ИП; режим в узле 02_Params («проверка» по умолчанию, «боевой» — после «да» на список); в таблицы не пишет; не публикуется (`LOG.md` Р-49).
+- «Ozon Card Fields Fix (ИП)» `eLBcH8MeE38NbMZq` — ТН ВЭД и «Нужен код маркировки» в карточках кабинета ИП по эталонам; режим в узле 02_Params; меняет только переданные характеристики (проба `LOG.md` Р-49); не публикуется.
 
 ## Загрузка в Ozon — устройство и запреты
 
