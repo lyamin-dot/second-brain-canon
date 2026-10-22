@@ -25,6 +25,7 @@ projects/deklaration-ozon/PLAN.md
 Рабочие:
 - «LM_DECL — Scan» `vKjqExap1mJjM6Ap` — общий слой, описание и состояние в `meta/DECLARATION_SCAN.md`.
 - «LM_DECL — Ozon Upload» `BLNA8sbdnLtuz7Uj` — должен оставаться неопубликованным (active: false). Режимы формы «проверка», «боевой», «статус» (с 2026-10-02, `LOG.md` Р-14). Паспорт `16r4swPyVr6gMZpcTPL-08waBrUKLt5YSqKRhaRuswr4`.
+- «Ozon Fields Probe (ИП)» `m6svDS7yhrTjTCrt` — инструмент только чтения по кабинету Ozon ИП: характеристики документов и кодов, документы кабинета, сверка с ARTIKEL_PROPS и «Нужен КИЗ» основного кабинета WB; запуск вручную, не публикуется, не архивируется (`LOG.md` Р-48).
 
 ## Загрузка в Ozon — устройство и запреты
 
