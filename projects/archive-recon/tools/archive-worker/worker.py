@@ -12,7 +12,7 @@ from urllib.parse import urlparse, parse_qs
 
 import pymupdf
 
-VERSION = "1.0"
+VERSION = "1.1"
 DATA = os.environ.get("DATA_DIR", "/data")
 OUT = os.path.join(DATA, os.environ.get("OUT_SUBDIR", "ocr"))
 DB = os.path.join(OUT, "index.sqlite")
@@ -419,11 +419,20 @@ def check_dpi(v):
 
 # ---------------------------------------------------------------- read API
 def fts_query(q):
-    """Turn free text into a safe FTS5 query: every word quoted, implicit AND."""
-    words = re.findall(r"[^\W_]+", q)
-    if not words:
+    """Turn free text into a safe FTS5 query, implicit AND.
+    Supported: "a b" phrase, word* prefix (stem of 3+ letters). Everything else is
+    reduced to plain words; only word characters and our own quotes reach FTS5."""
+    parts = []
+    for phrase, word, star in re.findall(r'"([^"]*)"|([^\W_]+)(\*?)', q):
+        if phrase:
+            words = re.findall(r"[^\W_]+", phrase)
+            if words:
+                parts.append('"%s"' % " ".join(words))
+        elif word:
+            parts.append('"%s"*' % word if star and len(word) >= 3 else '"%s"' % word)
+    if not parts:
         raise Bad("empty query")
-    return " ".join('"%s"' % w for w in words[:20])
+    return " ".join(parts[:20])
 
 
 def search(c, q, limit=10, book=None):

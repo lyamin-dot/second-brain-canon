@@ -24,7 +24,7 @@ Decision: LOG.md Р-39 (2026-10-21). Design: SERVER_PLAN_ocr.en.md. Interface: t
 - Andrei: runs code-update command; answers stops.
 
 ## PROCEDURES
-P1 search: call "search" {q, limit<=20}; FTS5 syntax (prefix `word*`, phrase "a b"). Report book, pdf page, printed label, source, snippet. Full page -> "status and page". Do not paste long page texts into the repo.
+P1 search: call "search" {q, limit<=20}. Query = plain words, implicit AND; no OR/NOT/NEAR (stripped). Code 1.0 (deployed until Andrei installs 1.1): `*` and quotes are IGNORED -> exact word forms only; Russian inflection misses (эластография vs эластографии): try several word forms. Code 1.1: `word*` prefix (stem >=3 letters) and "a b" phrase work. Version: status field `version`. Report book, pdf page, printed label, source, snippet. Full page -> "status and page". Do not paste long page texts into the repo.
 P2 error triage (book status error or pause by 3 errors): read /status error text. Wrong language -> control book lang; garbage OCR on small print -> dpi 300; corrupt file -> skip + note in LOG.md. Then control resume. Max 2 retries per book, then skip and record.
 P3 rejoin rule change: control settings, then rebuild_search (no re-OCR). Record in LOG.md.
 P4 code change: write code in tools/archive-worker/, commit, give Andrei commit + sha256 via server agent. Never during mass run unless a stop requires it. Code must keep: no Drive writes, whitelist, no new inbound endpoints.
