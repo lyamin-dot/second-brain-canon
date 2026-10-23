@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-10-21T18:20:39.038Z
+instance_last_change|2026-10-22T19:18:58.921Z
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
 W|0sVn3WwpIyaItpki|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,triggerAtDayOfMonth=1,triggerAtHour=3|instance|?|-|-
@@ -67,6 +67,7 @@ W|EPr2EUtI23wZ3X7c|GDrive Trash Stager|active|same|webhook|-|instance|?|M5BLqclK
 W|FZYQbWNpuF91Xk7l|WB Reviews Intake — BACKUP 2026-06-15|archived|never|scheduleTrigger|field=minutes,minutesInterval=15|instance|?|-|-
 W|FnB2Imp7thMKuwnD|OzonRawАналитика_Monat|inactive|never|-|-|instance|?|-|-
 W|GDI35U36bBRzKZp5|Deklaration_TransmissionOil_V.4|inactive|never|scheduleTrigger|field=months,monthsInterval=1000,triggerAtHour=5|instance|?|-|-
+W|GElwjPKkJQkCao3b|LM_DECL — Ozon Upload ИП|inactive|never|manualTrigger|-|instance|?|-|-
 W|GTrCbV5GmyhJKcNd|WB Reviews History Load|inactive|never|scheduleTrigger|field=months,monthsInterval=100|instance|?|-|-
 W|GVyBj6xEcFjnmQ09|WB+Ozon News Filter|active|same|scheduleTrigger|field=hours,hoursInterval=6|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|GZhOSbxt2KeU4dMo|CZ Proxy Test (temp)|inactive|never|formTrigger|-|instance|?|-|-
@@ -145,7 +146,7 @@ W|YQBfmS0fC7IPcsbz|WB FBS Telegram Router|active|same|telegramTrigger|-|instance
 W|YXOyKpBZQuywu3kM|ТЕСТ_КОПИЯ_SYS_Lint_H-27.08-02|archived|never|scheduleTrigger|triggerAtHour=6|instance|?|-|-
 W|YfzWwu1VmIUCbUu0|Claude → Google Docs Append v2 (verified)|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|YkUb5SnLtEaTctoH|OZON Money Telegram|active|same|scheduleTrigger|expression=10 9 * * *,field=cronExpression|Europe/Berlin|?|M5BLqclKBjGTpz33|-
-W|YozhFlVFZVKnj3U8|ARTIKEL_PROPS — OKPD2 68827 Block 1 (einmalig)|archived|never|manualTrigger|-|instance|?|-|-
+W|YozhFlVFZVKnj3U8|ARTIKEL_PROPS — OKPD2 68827 Block 1 (einmalig)|inactive|never|manualTrigger|-|instance|?|-|-
 W|Z2mVOq6AQDwXyTo7|DEKL 2.0 — Готовность WB|inactive|never|formTrigger|-|instance|?|-|-
 W|Z68QJF5mYs3W8Uw8|TEST Ozon QA API Check|archived|never|manualTrigger|-|instance|?|-|-
 W|ZIvTVFHNw9m2gns3|OZON Reviews Response|archived|never|scheduleTrigger|field=minutes,minutesInterval=30|instance|?|-|-
@@ -168,6 +169,7 @@ W|dN7mQoM3eeOo0xDo|WB RAW History Load V.2|archived|never|scheduleTrigger|field=
 W|dZQmYeMiGiWrNilC|Ozon RAW Accrual Backfill Orchestrator|archived|never|manualTrigger|-|instance|?|-|-
 W|e9ScqWtLPgSsHf0A|Claude → Google Apps Script Read|inactive|never|webhook|-|instance|?|-|-
 W|eCNJfCuwFxOI26H1|WB Cards Error List ИП (инструмент)|inactive|never|manualTrigger|-|instance|?|-|-
+W|eLBcH8MeE38NbMZq|Ozon Card Fields Fix (ИП)|inactive|never|manualTrigger|-|instance|?|-|-
 W|ecLCKdm5Vb39OGUo|ONE-OFF Cleanup: delete stray row 476 in Price Master Artikel|archived|never|manualTrigger|-|instance|?|-|-
 W|f4yb9twJIezGJEvz|Daily Briefing Generator|archived|never|scheduleTrigger|triggerAtHour=5|Europe/Berlin|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|f7kdTpDADk7q0v2t|SYS Index Size + Zone Sync Monitor|inactive|never|scheduleTrigger|expression=0 9 * * 1 ,field=cronExpression|instance|?|-|-
@@ -200,6 +202,7 @@ W|lMuIxJkBAOsmUJmw|Claude → Google Docs Replace v2 (verified) ZEITcopy|archive
 W|lObf0fHB7mq5pTLg|OZON Reviews Response [BACKUP]|archived|never|scheduleTrigger|field=minutes,minutesInterval=30|instance|?|-|-
 W|lRUou3hpBLZ49GcD|Daily Context Builder|archived|never|scheduleTrigger|triggerAtHour=6|Europe/Berlin|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|m31GGno1ZOQ0a2Xf|WB Card Tool основной — пакет характеристик (проверка/запись)|inactive|never|manualTrigger|-|instance|?|-|-
+W|m6svDS7yhrTjTCrt|Ozon Fields Probe (ИП)|inactive|never|manualTrigger|-|instance|?|-|-
 W|m7vGqw03E6nzTR3a|GitHub Token Expiry Monitor|active|same|scheduleTrigger|daysInterval=1,field=days,triggerAtHour=8,triggerAtMinute=0|instance|?|M5BLqclKBjGTpz33|-
 W|mAaWSmoXDH9Ofgg3|WB Reviews Intake|active|same|scheduleTrigger|field=minutes,minutesInterval=15|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|mQtuCpSN83XNvPGT|CZ GTIN Probe (temp)|archived|never|formTrigger|-|instance|?|-|-
@@ -231,11 +234,12 @@ W|sazYUzoDpfV18SFs|TMP Check Answered Sync|archived|never|manualTrigger|-|instan
 W|ss0QkY9V8YEMHf2B|WB Reviews Full History Load|active|same|scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
 W|tABmSQXQalGnjRJw|Workflow Health Monitor — Intraday|inactive|never|scheduleTrigger|field=hours|instance|?|-|-
 W|tJOghFMZIR8HkV6B|LM_DECL — Test Worker (temp)|archived|never|manualTrigger|-|instance|?|-|-
-W|tVkcLMa6tN811CwZ|ARTIKEL_PROPS — OKPD2 + KIZ-Gefahrenzone (einmalig)|archived|never|manualTrigger|-|instance|?|-|-
+W|tVkcLMa6tN811CwZ|ARTIKEL_PROPS — OKPD2 + KIZ-Gefahrenzone (einmalig)|inactive|never|manualTrigger|-|instance|?|-|-
 W|tZ4NrzdAAurD4GQH|Ozon_Audit|inactive|never|manualTrigger|-|instance|?|-|-
 W|tjDpartntNeOHCRZ|WB Reviews Publication|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|tqPGNJZlJirbgm2o|ИНСТРУМЕНТ Зонд смены ключа узла Google Sheets|inactive|never|manualTrigger|-|instance|?|-|-
 W|tzBYQN0u8IuWOyUw|Projekt_OCR OEM_V.2|archived|never|manualTrigger|-|instance|?|-|-
+W|u06pa4u5sDYdQD3W|Ozon Copy Осн → ИП (инструмент)|inactive|never|manualTrigger|-|instance|?|-|-
 W|uUwqH9RPjMfoax9M|Git Read Batch|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|uapccJY1O4ykyDi7|Claude → Create Folder|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|ujSvQq7stXmNZQYj|WB Reviews Rollback v2|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -247,7 +251,7 @@ W|vKjqExap1mJjM6Ap|LM_DECL — Scan (декларации: проверка и �
 W|wJLRBqspf6zzHGFB|TEST WB finance repull week34|archived|never|manualTrigger|-|instance|?|-|-
 W|wOZAEx0hAKX4rSwZ|COPY Claude → Google Docs Replace v2 (naryad4 fix draft)|archived|never|webhook|-|instance|?|-|-
 W|wWFfPIAfLd7yunU8|KB TO — Annotation Preprocessor|active|same|manualTrigger,scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
-W|xRAIcTOz8TdZAOYm|ARTIKEL_PROPS — OKPD2 aus Deklarationen (einmalig)|archived|never|manualTrigger|-|instance|?|-|-
+W|xRAIcTOz8TdZAOYm|ARTIKEL_PROPS — OKPD2 aus Deklarationen (einmalig)|inactive|never|manualTrigger|-|instance|?|-|-
 W|xeOK5epLnbXxH4WT|TEST ПРАВКА-B Zone Sync (наряд 2)|archived|never|manualTrigger|-|instance|?|-|-
 W|xijbGRJS2apq61ls|OZON_UE Adapter Catch-up|inactive|never|manualTrigger|-|Europe/Berlin|?|M5BLqclKBjGTpz33|-
 W|yJLJBGDxi7GPGYMX|WB Content Charcs Probe|archived|never|manualTrigger|-|instance|?|-|-
@@ -454,6 +458,7 @@ D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|QCQI6utFFH3dvTJT|02_Read_MasterMa
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|S4rZMUkI21dVu3ML|04_Read_Artikel|googleSheets|default|Artikel
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|S4rZMUkI21dVu3ML|05_Read_Current|googleSheets|default|CURRENT
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|VMPxWzXPefKT2R1B|01_Read_Price_Master|googleSheets|default|Artikel
+D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|YozhFlVFZVKnj3U8|03_Update_Okpd|googleSheets|update|ARTIKEL_PROPS
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|fGHfVrI58Ws1wfTw|04_Write_WB_Cards_Staging|googleSheets|appendOrUpdate|WB_Cards_Staging
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|jEYQtwSxCEF0Swiv|02_Read_Artikel|googleSheets|read|Artikel
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|jEYQtwSxCEF0Swiv|03_Read_WB_Staging|googleSheets|read|WB_Cards_Staging
@@ -461,7 +466,10 @@ D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|jEYQtwSxCEF0Swiv|05_Save_Props|go
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|kNg2uEoYlaGOLC82|06B_Read_Price_Master|googleSheets|default|CURRENT
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|qKgc8hhOLwehejYp|03_Read_Artikel|googleSheets|default|-
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|r35gXE6VxvuacEfW|01_Read_PriceMaster|googleSheets|default|-
+D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|tVkcLMa6tN811CwZ|03A_Update_Okpd|googleSheets|update|ARTIKEL_PROPS
+D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|tVkcLMa6tN811CwZ|03B_Update_Danger|googleSheets|update|ARTIKEL_PROPS
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|vIteQxGrqI7kLkb0|04_Write_WB_Cards_Staging_IP|googleSheets|appendOrUpdate|WB_Cards_Staging_IP
+D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|xRAIcTOz8TdZAOYm|03_Update_Props|googleSheets|update|ARTIKEL_PROPS
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|zuhOhRc6PchTJERw|02_Create_Tab|googleSheets|create|-
 D|1n-xw5mdR4JhiAJgEVpkkqQT_GktBR2Dzw3A0BRWAJNA|DWyvoJYkCodJxMg1|01_Sheets_Read_URL_List|googleSheets|default|-
 D|1n-xw5mdR4JhiAJgEVpkkqQT_GktBR2Dzw3A0BRWAJNA|DWyvoJYkCodJxMg1|08_Update_Google_Sheets|googleSheets|update|-
@@ -513,6 +521,7 @@ D|dynamic|8ImKyDrw1Q2JIfHw|10_Download_PDF|googleDrive|download|-
 D|dynamic|BLNA8sbdnLtuz7Uj|10_Download_PDF|googleDrive|download|-
 D|dynamic|EPr2EUtI23wZ3X7c|03_Stamp_AppProperties|googleDrive|update|-
 D|dynamic|EPr2EUtI23wZ3X7c|04_Move_To_TrashStaging|googleDrive|move|-
+D|dynamic|GElwjPKkJQkCao3b|10_Download_PDF|googleDrive|download|-
 D|dynamic|KEucSnA2duWI3eRA|02_Download_File|googleDrive|download|-
 D|dynamic|LFDK2oAFdGWQ3Nxd|04_Delete_Expired|googleDrive|deleteFile|-
 D|dynamic|NDY1YGwLIt4w3HQB|03_Download_Text|googleDrive|download|-
@@ -636,6 +645,8 @@ C|FnB2Imp7thMKuwnD|googleApi|3
 C|FnB2Imp7thMKuwnD|httpCustomAuth|1
 C|GDI35U36bBRzKZp5|googleSheetsOAuth2Api|2
 C|GDI35U36bBRzKZp5|httpHeaderAuth|1
+C|GElwjPKkJQkCao3b|googleApi|4
+C|GElwjPKkJQkCao3b|httpCustomAuth|6
 C|GTrCbV5GmyhJKcNd|googleSheetsOAuth2Api|2
 C|GTrCbV5GmyhJKcNd|httpHeaderAuth|2
 C|GVyBj6xEcFjnmQ09|googleApi|3
@@ -746,6 +757,7 @@ C|YfzWwu1VmIUCbUu0|googleApi|2
 C|YfzWwu1VmIUCbUu0|httpHeaderAuth|1
 C|YkUb5SnLtEaTctoH|googleApi|1
 C|YkUb5SnLtEaTctoH|telegramApi|1
+C|YozhFlVFZVKnj3U8|googleApi|1
 C|Z2mVOq6AQDwXyTo7|googleApi|5
 C|ZXTQwjUkd81wyRoI|githubApi|1
 C|ZXTQwjUkd81wyRoI|httpHeaderAuth|1
@@ -763,6 +775,8 @@ C|dEMUvxBGI6JIp4vQ|googleSheetsOAuth2Api|8
 C|e9ScqWtLPgSsHf0A|googleApi|1
 C|e9ScqWtLPgSsHf0A|httpHeaderAuth|1
 C|eCNJfCuwFxOI26H1|httpHeaderAuth|1
+C|eLBcH8MeE38NbMZq|googleApi|1
+C|eLBcH8MeE38NbMZq|httpCustomAuth|6
 C|f7kdTpDADk7q0v2t|googleApi|3
 C|f7kdTpDADk7q0v2t|httpHeaderAuth|2
 C|f7kdTpDADk7q0v2t|telegramApi|1
@@ -792,6 +806,8 @@ C|kRz5VVlxA1LiY7KG|googleApi|2
 C|kRz5VVlxA1LiY7KG|httpHeaderAuth|1
 C|l3KwZiRtVCKQtmys|googleSheetsOAuth2Api|7
 C|m31GGno1ZOQ0a2Xf|httpHeaderAuth|4
+C|m6svDS7yhrTjTCrt|googleApi|1
+C|m6svDS7yhrTjTCrt|httpCustomAuth|7
 C|m7vGqw03E6nzTR3a|githubApi|1
 C|m7vGqw03E6nzTR3a|telegramApi|2
 C|mAaWSmoXDH9Ofgg3|googleApi|5
@@ -826,12 +842,15 @@ C|ss0QkY9V8YEMHf2B|googleApi|2
 C|ss0QkY9V8YEMHf2B|httpHeaderAuth|2
 C|tABmSQXQalGnjRJw|httpHeaderAuth|1
 C|tABmSQXQalGnjRJw|telegramApi|1
+C|tVkcLMa6tN811CwZ|googleApi|2
 C|tZ4NrzdAAurD4GQH|googleSheetsOAuth2Api|2
 C|tZ4NrzdAAurD4GQH|httpCustomAuth|2
 C|tjDpartntNeOHCRZ|googleApi|3
 C|tjDpartntNeOHCRZ|httpHeaderAuth|3
 C|tqPGNJZlJirbgm2o|googleApi|1
 C|tqPGNJZlJirbgm2o|googleSheetsOAuth2Api|1
+C|u06pa4u5sDYdQD3W|googleApi|5
+C|u06pa4u5sDYdQD3W|httpCustomAuth|11
 C|uUwqH9RPjMfoax9M|githubApi|1
 C|uUwqH9RPjMfoax9M|httpHeaderAuth|1
 C|uapccJY1O4ykyDi7|googleDriveOAuth2Api|1
@@ -848,6 +867,7 @@ C|vKjqExap1mJjM6Ap|googleApi|5
 C|vKjqExap1mJjM6Ap|telegramApi|1
 C|wWFfPIAfLd7yunU8|googleApi|2
 C|wWFfPIAfLd7yunU8|httpHeaderAuth|1
+C|xRAIcTOz8TdZAOYm|googleApi|1
 C|zuhOhRc6PchTJERw|googleApi|1
 R|529VWvqSTg8l4fUU|J0v5swjXLfiANJa2|Sticky Note 1684327b
 R|LguGCDYJvMQSahcj|0fesM63M92naAnOl|Config Daily Workflows
