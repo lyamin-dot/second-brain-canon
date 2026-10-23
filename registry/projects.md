@@ -128,3 +128,7 @@ FINANZEN вес 6   — налоговый и финансовый аналит�
 
 [ANAST_QUICKREF] Quick-reference анестезиология (PWA) | вес 3 | АКТИВЕН
           Файл индекса: 1MdqSVr0bHAJ5tbIgNJoHNuBjmqR2V8gLQf5RHco-430
+
+[FINANZEN] Налоговый и финансовый аналитик | вес 6 | АКТИВЕН
+          Файл индекса: FINANZEN_INDEX (ID — registry/documents.md); папка FINANZEN_FOLDER
+          Claude Project: ждёт адреса от Андрея
