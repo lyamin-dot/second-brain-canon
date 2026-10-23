@@ -1,6 +1,6 @@
 ---
 name: google-drive-docs
-description: "ОБЯЗАТЕЛЬНО читай этот Skill перед любой операцией с Google Drive, Google Docs, Google Sheets — даже если задача кажется простой. Применять при: create_file, gdocs-append, gdocs-replace, gdocs-overwrite, gdocs-apply-from-file, gdocs-read, чтении диапазона строк документа, создании таблиц (Apps Script или пустая книга коннектором плюс структура воркфлоу), работе с папками, переносе файлов, поиске в Drive, бэкапах через rclone. Этот файл — два жёстких правила, выбор инструмента, общие правила n8n-пути, верификация и антипаттерны; контракты отдельных инструментов, Sheets, MCP, тихие отказы и таблица ошибок лежат в references/ и читаются перед своим действием по таблице «Что читать дальше». Исключение: create_file в папку _git_staging по second-brain-git 8.3 (Git Append File) этого Skill не требует — форма вызова целиком там."
+description: "ОБЯЗАТЕЛЬНО читай перед любой операцией с Google Drive, Google Docs, Google Sheets, даже если задача кажется простой: create_file, gdocs-append, gdocs-replace, gdocs-overwrite, gdocs-apply-from-file, gdocs-read, чтение диапазона строк документа, создание таблицы, работа с папками, перенос файлов, поиск в Drive, бэкап через rclone. Не читать для create_file в папку _git_staging по second-brain-git 8.3 (Git Append File)."
 ---
 
 Редакция 2026-10-22.
