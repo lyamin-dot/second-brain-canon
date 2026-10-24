@@ -21,6 +21,7 @@ registry/projects.md
 | knowledge-synthesis | projects/knowledge-synthesis/ | repo | активен — заведён 2026-10-21 по слову Андрея (чат SYS 2026-10-21) развёртыванием задачи лаборатории `projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md` по пункту 4б.7; запись Р-1 журнала `projects/knowledge-synthesis/LOG.md` | |
 | file-catalog | projects/file-catalog/ | repo | активен — заведён 2026-10-21 (Летопись без Claude Project; выбор проекта — сессия по поручению Андрея, чат 2026-10-21; запись Р-1 журнала `projects/file-catalog/LOG.md`): каталог содержимого шести внешних дисков — что где лежит, содержимое документов, дубли и сохранность, медиа; вес не назначен | |
 | family-docs | projects/family-docs/ | repo | активен — заведён 2026-10-22 (Летопись без Claude Project; Андрей, чат Claude Code 2026-10-22; запись Р-1 журнала `projects/family-docs/LOG.md`): реестр личных документов семьи в Google Sheets — виды, типы, номера, сроки, недостающее; Ф1 немецкие документы сделана, Ф3 — российские; вес не назначен | |
+| marketplace-rebuild | projects/marketplace-rebuild/ | repo | активен — заведён 2026-10-24 (Летопись без Claude Project; Андрей, чат SYS 2026-10-24; запись Р-1 журнала `projects/marketplace-rebuild/LOG.md`): перестройка всей системы работы на маркетплейсах Ozon и Wildberries под нынешние возможности ИИ; общий план — черновик, ждёт обсуждения с коллегой; вес не назначен | |
 
 ## Лаборатории
 
