@@ -21,7 +21,7 @@ registry/projects.md
 | knowledge-synthesis | projects/knowledge-synthesis/ | repo | активен — заведён 2026-10-21 по слову Андрея (чат SYS 2026-10-21) развёртыванием задачи лаборатории `projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md` по пункту 4б.7; запись Р-1 журнала `projects/knowledge-synthesis/LOG.md` | |
 | file-catalog | projects/file-catalog/ | repo | активен — заведён 2026-10-21 (Летопись без Claude Project; выбор проекта — сессия по поручению Андрея, чат 2026-10-21; запись Р-1 журнала `projects/file-catalog/LOG.md`): каталог содержимого шести внешних дисков — что где лежит, содержимое документов, дубли и сохранность, медиа; вес не назначен | |
 | family-docs | projects/family-docs/ | repo | активен — заведён 2026-10-22 (Летопись без Claude Project; Андрей, чат Claude Code 2026-10-22; запись Р-1 журнала `projects/family-docs/LOG.md`): реестр личных документов семьи в Google Sheets — виды, типы, номера, сроки, недостающее; Ф1 немецкие документы сделана, Ф3 — российские; вес не назначен | |
-| marketplace-rebuild | projects/marketplace-rebuild/ | repo | активен — заведён 2026-10-24 (запись Р-1 журнала `projects/marketplace-rebuild/LOG.md`): перестройка всей системы работы на маркетплейсах Ozon и Wildberries под нынешние возможности ИИ; общий план прошёл две ревизии (Р-2, Р-7); с 2026-10-24 ведётся Claude Project интегратора (Р-8; мастер-промпт — `meta/prompts/marketplace-rebuild.md`), URL — после создания Андреем; вес не назначен (предложение сессии: 9) | |
+| marketplace-rebuild | projects/marketplace-rebuild/ | repo | активен — заведён 2026-10-24 (запись Р-1 журнала `projects/marketplace-rebuild/LOG.md`): перестройка всей системы работы на маркетплейсах Ozon и Wildberries под нынешние возможности ИИ; общий план прошёл две ревизии (Р-2, Р-7); с 2026-10-24 ведётся Claude Project интегратора (Р-8; мастер-промпт — `meta/prompts/marketplace-rebuild.md`); вес 9 (Андрей, чат Claude Code 2026-10-24) | https://claude.ai/project/01a16da5-b65d-7743-97ba-abf97c232604 |
 
 ## Лаборатории
 
@@ -58,7 +58,7 @@ TRADE    вес 3   — личный проект, не бизнес
 RENO     вес 3   — личный проект, не бизнес
 SYS      вес 2   — мета-задача, инфраструктура системы
 
-MARKETPLACE_REBUILD вес не назначен (предложение сессии 2026-10-24: 9; решает Андрей)   — перестройка всей системы работы на маркетплейсах Ozon и Wildberries; Claude Project интегратора (папка projects/marketplace-rebuild/; запись Р-8 журнала проекта)
+MARKETPLACE_REBUILD вес 9   — перестройка всей системы работы на маркетплейсах Ozon и Wildberries; Claude Project интегратора (папка projects/marketplace-rebuild/; запись Р-8 журнала проекта)
 
 AUTOCHEM_BUNDLES вес 5   — комбинации товаров Автохимия для маркетплейсов (WB+Ozon)
 
