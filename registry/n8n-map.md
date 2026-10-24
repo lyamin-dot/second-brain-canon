@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-10-22T19:18:58.921Z
+instance_last_change|2026-10-23T14:49:57.942Z
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
 W|0sVn3WwpIyaItpki|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,triggerAtDayOfMonth=1,triggerAtHour=3|instance|?|-|-
@@ -849,7 +849,7 @@ C|tjDpartntNeOHCRZ|googleApi|3
 C|tjDpartntNeOHCRZ|httpHeaderAuth|3
 C|tqPGNJZlJirbgm2o|googleApi|1
 C|tqPGNJZlJirbgm2o|googleSheetsOAuth2Api|1
-C|u06pa4u5sDYdQD3W|googleApi|5
+C|u06pa4u5sDYdQD3W|googleApi|6
 C|u06pa4u5sDYdQD3W|httpCustomAuth|11
 C|uUwqH9RPjMfoax9M|githubApi|1
 C|uUwqH9RPjMfoax9M|httpHeaderAuth|1
