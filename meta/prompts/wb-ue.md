@@ -41,14 +41,14 @@ Read Docs/Sheets only via n8n execute_workflow of gdocs-read and gsheets-read (w
 
 Lookup order: STATE.md → LOG.md → PLAN.md → profile doc (DOC for book, RUNBOOK for WB discrepancy) → n8n and the book directly. Outside WB_UE: Skill second-brain-git and the repo's registry/.
 
-Book WB_Аналитика, fileId 1sBYaluh1NDkb0zVmbV-NX4jsNbawEpXlae8fRg2AiuI, 14 sheets (checked 2026-09-28; on conflict trust PLAN.md and live gsheets-read mode:meta):
-dashboard (summary) · как_читать (owner's guide to dashboard) · cost_monitor (cost monitoring, feeds dashboard) · weekly_history (weekly; common-size block + deductions block) · sales_unit_economics · sales_sku_profit_ranking · sales_abc_profit_analysis · sales_sku_efficiency_matrix · sales_growth_opportunities · _data (RAW from WB API, written by WB RAW Finance Sync V.3) · wb_reports_official (WB reference reports) · _map, _refs, _dashboard_backup (service).
-Formulas/formatting: only WB_Monitor.gs (book's Apps Script; source lives in the book). Read and change the script only through the gas-bridge workflow (row gas-bridge in registry/tools.md) by Skill apps-script-sheets; the backup .gs copy in Drive is history, not the live text.
+Money book «WB · Деньги» (registry/documents.md, row WB_MONEY_book; script wb_money_book.gs) computes WB profit since 2026-10-15: it reads WB_RAW_Аналитика (wb_transactions_V2, cost_price_history, wb_cost_config) and the sheet wb_reports_official of the old book, and writes only itself (LOG Р-72). Old book WB_Аналитика, fileId 1sBYaluh1NDkb0zVmbV-NX4jsNbawEpXlae8fRg2AiuI, is frozen (LOG Р-69) and only receives wb_reports_official; its 14 sheets (checked 2026-09-28):
+dashboard (summary) · как_читать (owner's guide to dashboard) · cost_monitor (cost monitoring, feeds dashboard) · weekly_history (weekly; common-size block + deductions block) · sales_unit_economics · sales_sku_profit_ranking · sales_abc_profit_analysis · sales_sku_efficiency_matrix · sales_growth_opportunities · _data (frozen formula view of WB_RAW_Аналитика) · wb_reports_official (WB reference reports) · _map, _refs, _dashboard_backup (service).
+Formulas/formatting: only the book's own script — wb_money_book.gs for «WB · Деньги»; WB_Monitor.gs of the frozen WB_Аналитика is not edited. Read and change the script only through the gas-bridge workflow (row gas-bridge in registry/tools.md) by Skill apps-script-sheets; the backup .gs copy in Drive is history, not the live text.
 
-WB API: reportDetailByPeriod, data from 2026-01-01. Rate limit 429 → History Load pauses 70 s between iterations. WB data lags — for fresh discrepancies first rule out an unclosed period.
+WB API: Finance API v1, cabinet Kiparis only — POST sales-reports/detailed (Finance Sync, History Load) and sales-reports/list (Reports Official Sync); data from 2026-01-01. History Load waits 75 s before each week.. WB data lags — for fresh discrepancies first rule out an unclosed period.
 
 n8n workflows (role + ID; publish status, errorWorkflow, schedule, open fixes live in STATE.md/PLAN.md — verify live via n8n MCP):
-- WB RAW Finance Sync V.3 — IvgysDKrq3UISYEY — weekly finance pull into _data
+- WB RAW Finance Sync V.3 — IvgysDKrq3UISYEY — weekly finance pull into WB_RAW_Аналитика (wb_raw_report_V2, wb_transactions_V2)
 - WB RAW History Load V.3 CLEAN — Iis5dlRS1GWZqQXD — historical load, manual start
 - WB Reports Official Sync — P7CZYJZWIqC5Me4c — reference reports into wb_reports_official
 - WB Monitor Telegram Reader (ex WB Reconciliation Reader) — DcIqwTVqBqMQyigs
