@@ -54,3 +54,6 @@ Skill `n8n-workflow-registry`, раздел «Ловушки отдельных 
 
 ## Дополнение 2026-10-22: число колонок двух листов — перенесено из Skill
 Skill n8n-workflow-registry до разбора по носителям (зеркало `skills/n8n-workflow-registry/SKILL.md` на коммите b91fb1e, строки 217–218) держал: лист `sales_raw_operations` — 29 колонок, лист `ozon_raw_accrual_TEST` — 16 колонок. Из Skill строки сняты решением Андрея 2026-10-22 (чат SYS, «вопросы синтеза», группа А); других носителей у этих чисел нет, поэтому они записаны здесь. По листам не перепроверены — число колонок брать из самой книги, это снимок.
+
+## 2026-10-24 — ⚡ от OZON_UE: OzonRawАналитика снят с публикации
+MPzPrtsnPtf0sVQo снят с публикации 24.10 по поручению Андрея (get_workflow_details: active false, activeVersionId null). Основание и сверка данных (за 17–23.10 все ключи начислений в sales_raw_operations есть, строк не от адаптера с 07.10 — 0) — labs/ozon-ue/t-n8n-ozon-workflow-defects.md, раздел «2026-10-24». В живом Skill n8n-workflow-registry строки об этом воркфлоу нет (grep /mnt/skills 2026-10-24). По MPzPrtsnPtf0sVQo условие снятия выполнено; по aVpgEnYBAgIIss4k остаётся паспорт (см. поправку 2026-10-16).
