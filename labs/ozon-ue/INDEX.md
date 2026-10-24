@@ -47,6 +47,7 @@ sku_cost_Шаблон SHEETS: 1eQPV1KQ2FE4kV935KV3_05c6VgbRZkU0y4DwFgTIEL4 [РЕ
 LM_DECL_MASTER — техдокументация таблицы (агентская, англ.) LM_DECL_MASTER_TECHDOC_EN → 1_tOucfOnJ_BFCWK3eEmP9w5qpuvHtRuHT3MYgWzTp8g (папка DOCS; создан 2026-09-28). Русская версия для человека — LM_DECL_MASTER — техдокументация (RU) → 1Z6wbrh_W0R0_mqDNujihr_dZqKNfYC3h7cTrciWMapM (папка DOCS; создан 2026-09-28)
 
 Книга ozon_raw_конверсия 1xxO6QpwyJ17tbpGjX9VJgtCt7y-Bfs0h0TCIuPUU5B4, лист ozon_raw_analytics — выручка и заказанные штуки по SKU и дню (/v1/analytics/data); пишут NTNN2Kvqg09yoRKi (ручной инструмент, одна дата в коде) и SElTcMg3BpY6pmdo (снят с публикации). В книге RAW есть ещё лист «Поправки штук» (ручной; читают книги «Деньги» и «Товары»). Записано 2026-10-24 по get_workflow_details и gsheets-read meta 85363.
+Карта входов и выходов OZON_UE (методы Ozon и расписания, ключи и сроки, запись в Ozon, чужие книги, ручные входы, чего нет, состояние паспортов) → `meta/OZON_UE_INPUTS_MAP.md`, снята 2026-10-24 по живым объектам; при смене входа, ключа или записи в Ozon править её тем же действием.
 Добавлено переносом (в источнике нет): книга RAW с листами `sales_raw_operations`, `ozon_raw_accrual_TEST`, `ozon_accrual_types` — 1P-GgiFm3067U_sgC2Dojos3BbT_-au6v-mT52vVT3y4. В строке «Книга «Цена»» источника этот ID обрезан («1P-Ggi…»); полный взят из `skills/n8n-workflow-registry/SKILL.md`, строка 75.
 
 ## Задачи
