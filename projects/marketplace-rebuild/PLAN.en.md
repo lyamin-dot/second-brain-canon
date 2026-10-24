@@ -3,7 +3,7 @@ projects/marketplace-rebuild/PLAN.en.md
 # Marketplace rebuild — agent copy
 
 Pair of projects/marketplace-rebuild/PLAN.md (Russian, for Andrei). No master copy: divergence = stop and ask Andrei (second-brain-git 4.6). Edit both in one commit. Role: LOG Р-5.
-Status: general plan passed two reviews (LOG Р-2, Р-7); Andrei's decisions of review 2 applied 2026-10-24. One open question: integrator role (STATE.md). Per-stage detailed plans next, S0 first.
+Status: general plan passed two reviews (LOG Р-2, Р-7); Andrei's decisions of review 2 applied 2026-10-24; integrator role set up (Р-8). Per-stage detailed plans next, S0 first. Human-language explanation = Claude Doc «Дорожная карта перестройки маркетплейсов» (link in STATE.md); on divergence this file wins.
 
 ## 1 Goal
 Rebuild everything touching Ozon/WB marketplaces (n8n workflows, Google Sheets books, Apps Script, repo projects/labs, passports) for current AI capabilities. Keep all working algorithms and results; remove junk; make the system legible to Andrei and agents.
@@ -79,6 +79,7 @@ S5 Close: freeze old projects (status in registry/projects.md), update registrie
 - S0 probes, S1b inventory, S1c scheme scripts, S3–S4 building: Claude Code (long autonomous runs, clone with push, shell).
 - S1a research: Claude app research tool, or Claude Code with deep-research Skill.
 - Publishing scheme artifacts, data model, Andrei questions/decisions, read-only cabinet checks: project chat in Claude app (linked computer + browser).
+- Integrator: part contracts, issuing/accepting work orders, STATE.md + LOG, questions to Andrei: Claude Project «Перестройка маркетплейсов» (MARKETPLACE_REBUILD), prompt mirror meta/prompts/marketplace-rebuild.md (Р-8). Role must outlive a session; builder and auditor are other agents by work order.
 HYPOTHESIS: n8n connector available in Claude Code — check in S0; else probes in project chat.
 
 ## 7 Risks
@@ -89,6 +90,14 @@ Token expiry mid-work — high without action/high — S0, Andrei.
 Long pauses lose place — high/med — per-area STATE.md, no deadlines.
 Schemes go stale — med/med — script-generated.
 Old errors carried into new — high/high — per-area auditor before build; reconcile vs primary source not old.
+
+## 9 Roles + part contracts (Р-8)
+Roles: Andrei (decisions, credentials, yes); integrator (connections + addresses, this Claude Project); builder (Claude Code, by work order, MKT2 objects); auditor (separate agent: old version audit, new vs primary-source reconciliation); researcher (3 questions of S1). Integrator builds nothing big and knows no internals; builder never switches or self-checks; auditor never builds.
+Contract per part = one row below, written BEFORE build, carried in the builder's work order; acceptance = by row, reading the object, never the report.
+| Part | Reads (object, address) | Writes (object, address) | Owner | Proof |
+|---|---|---|---|---|
+| — | — | — | — | — |
+Empty until first S0 work order; first row = MKT2 probe workflow.
 
 ## 8 Rejected (LOG Р-2)
 One big "everything MP" doc; per-project self-audit only; rebuild-all-at-once without pilot; area order by weight; rebuilding UE again; detailed full inventory upfront; 2-week parallel limit. (LOG Р-6) reconciling new vs old as proof of correctness; one big upfront audit of all areas. (LOG Р-7) shop-count check in S0; buy-vs-build research for UE; scheme level 3 "agent tools"; scheme regeneration after each switch-over; pilot after inventory+schemes; "no new book" criterion; parameterising UE tables by cabinet.
