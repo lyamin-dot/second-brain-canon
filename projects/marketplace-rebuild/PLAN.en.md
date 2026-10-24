@@ -13,7 +13,7 @@ Team: Andrei + agent only; staff use nothing.
 
 ## 2 Scope
 IN: unit economics Ozon+WB; declarations & codes; WB logistics; reviews WB+Ozon; content/card descriptions; Autochem bundles; product master (Price Master and derivatives); marketplace API credentials; workflows/books of these areas.
-Shops: 4 cabinets — Ozon main, Ozon ИП, WB main, WB ИП. "New" ИП shops = not reflected in accounting (Andrei 2026-10-24) though already in declarations work. HYPOTHESIS: 4 shops, not 6 — confirm in stage 0.
+Shops: 4 cabinets, 2 legal entities — OOO «Кипарис» on Ozon and on WB; ИП on Ozon and on WB. Count CONFIRMED by Andrei (chat 2026-10-24, second plan review); "4 not 6" hypothesis closed, no stage-0 check. ИП cabinets already in work of deklaration-ozon, deklaration-v2 (card/code control of all 4 shops) and card-content-sync (WB cards transfer OOO -> ИП). Sales accounting / UE for ИП cabinets does not exist at all (Andrei 2026-10-24) — hence S3 pilot.
 OUT: Second Brain infra (Git channel, CORE, Skills), n8n server as machine, personal projects. Touch only if an MP area cannot be rebuilt otherwise, via the owning project.
 Neighbours whose objects get replaced: deklaration-v2, deklaration-ozon, wb-ue, wb-logistics, wb-reviews, card-content-sync, gas-bridge (tool), labs/ozon-ue, Docs projects (Ozon reviews, content, Autochem bundles, WB/Ozon conversion). They live until their area switches over.
 
@@ -40,7 +40,6 @@ S0 Prep
 - Andrei: renew GitHub token of Git channel before 2026-11-30 (labs/sys/t-github-token-expiry.md).
 - Agent: 3 probes on MKT2 objects, each proven by execution number / script version: (1) build workflow; (2) bind existing credential to node; (3) edit Apps Script of a book COPY via gas-bridge. Failed probe -> back to barrier map, fix plan before work.
 - Agent: list n8n credentials; check API keys exist for Ozon ИП and WB ИП; missing -> Andrei creates.
-- Agent: confirm shop count.
 - Done: 3 execution numbers; credential list per 4 cabinets; token renewed (new expiry read from GitHub response header, not from words).
 
 S1 Research + inventory + schemes (parallel)
