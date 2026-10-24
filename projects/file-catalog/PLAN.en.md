@@ -7,7 +7,7 @@ NON-GOALS: folder restructuring/renaming; media player; backup service.
 
 INVARIANTS
 I1 disks read-only unless owner confirms specific write/delete.
-I2 NO deletion before all 6 disks inventoried. Delete only copies beyond 2 on distinct physical disks; via _quarantine on same disk; only owner-confirmed list (logged).
+I2 NO deletion until all reachable media are scanned (R-5: a broken and an inaccessible medium cannot be scanned; reports say 'single copy among scanned media'). Delete only copies beyond 2 on distinct live physical disks; via _quarantine on same disk; only owner-confirmed list (logged).
 I3 catalog data (names, paths, content, exports) NEVER to public repo second-brain-canon. Repo = plans/decisions/code w/o personal data.
 I4 no dashboards/schedules/detectors before first disk scanned. Controller = gate role only.
 I5 every stage ends with usable result.
