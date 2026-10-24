@@ -3,7 +3,7 @@ projects/marketplace-rebuild/PLAN.en.md
 # Marketplace rebuild — agent copy
 
 Pair of projects/marketplace-rebuild/PLAN.md (Russian, for Andrei). No master copy: divergence = stop and ask Andrei (second-brain-git 4.6). Edit both in one commit. Role: LOG Р-5.
-Status: DRAFT general plan, for review by a second reviewing agent. Per-stage detailed plans come after acceptance.
+Status: general plan passed two reviews (LOG Р-2, Р-7); Andrei's decisions of review 2 applied 2026-10-24. One open question: integrator role (STATE.md). Per-stage detailed plans next, S0 first.
 
 ## 1 Goal
 Rebuild everything touching Ozon/WB marketplaces (n8n workflows, Google Sheets books, Apps Script, repo projects/labs, passports) for current AI capabilities. Keep all working algorithms and results; remove junk; make the system legible to Andrei and agents.
@@ -39,29 +39,29 @@ Any stage may pause indefinitely (Andrei works in bursts). STATE.md keeps per-st
 S0 Prep
 - Andrei: renew GitHub token of Git channel before 2026-11-30 (labs/sys/t-github-token-expiry.md).
 - Agent: 3 probes on MKT2 objects, each proven by execution number / script version: (1) build workflow; (2) bind existing credential to node; (3) edit Apps Script of a book COPY via gas-bridge. Failed probe -> back to barrier map, fix plan before work.
-- Agent: list n8n credentials; check API keys exist for Ozon ИП and WB ИП; missing -> Andrei creates.
+- API keys: Кипарис both MPs and Ozon ИП exist; WB ИП partial, setup unfinished (Andrei 2026-10-24). Agent: from n8n credential list find which WB ИП key rights are missing for S3 (read sales, stocks, cards); missing -> Andrei creates.
 - Done: 3 execution numbers; credential list per 4 cabinets; token renewed (new expiry read from GitHub response header, not from words).
 
-S1 Research + inventory + schemes (parallel)
+S1 Research + inventory + schemes (parallel). S3 pilot does NOT wait for S1b/S1c (Andrei 2026-10-24): starts after S0 + И-1 + И-2.
 S1a Research (added on Andrei's question 2026-10-24):
 - И-1 Data store: Google Sheets vs n8n data tables vs DB on server — limits, cost, agent/Andrei usability. Gates the S2 model.
 - И-2 Current Ozon/WB API versions: deprecated/disabled methods, new methods, limits. (One Ozon UE workflow already calls a disabled endpoint.)
 - И-3 Agent capabilities today: n8n MCP build + credential binding, Apps Script editing, agent scheduled tasks; what goes to agent vs deterministic workflow.
-- И-4 Buy-vs-build check for UE/analytics SaaS only; paid card-management services already rejected (2026-10-04).
-Rules: each question has a pre-written "answered" criterion; max one session per question; output = wiki/ note per wiki/DESIGN.md + wiki/INDEX.md row; external facts with primary source + read date (second-brain-engineer Р15).
+"Answered" criteria (Р-7): И-1 = one store named with row-limit numbers and cost, and whether agent and Andrei read it without an extra tool; И-2 = list of API methods current area workflows call, each marked active/disabled/replaced-by per MP docs with read date; И-3 = table agent-does/workflow-does per area operation, one reason per row.
+Rules: each question has its criterion above; max one session per question; output = wiki/ note per wiki/DESIGN.md + wiki/INDEX.md row; external facts with primary source + read date (second-brain-engineer Р15).
 S1b Inventory: script builds table of all MP objects (workflows, Google books, credentials — names only, closed carrier not public repo, Apps Script projects, repo projects/labs, Docs). Two fields: owner(project), status(working|tool|duplicate|broken|unused|unknown). No passports. Sources: registry/n8n-map.md (2026-10-23: 257 workflows = 80 active, 82 inactive, 95 archived; workflow-document links present), registry/projects.md, registry/documents.md, Drive search. Done: table + counts of "unknown" and "no owner".
-S1c Visual schemes (Andrei requirement 2026-10-24): polished interactive artifact pages, script-generated from S1b (I5). Levels: (1) overview — areas + 4 cabinets + knowledge carriers (chronicles, labs, Docs); (2) per area — workflows, books/sheets, read/write edges, schedule, owner; unknown/no-owner highlighted; (3) agent tools — Skills and their job, Git channel, connectors (n8n, Drive, memory, browser), environments (Claude app project chat, Claude Code), subagents. Regenerate after each switch-over (before/after). No secrets (I7). Done: 3 pages published; Andrei can trace any chosen workflow's reads/writes on them.
+S1c Visual schemes (Andrei requirement 2026-10-24): polished interactive artifact pages, script-generated from S1b (I5). Two levels: (1) overview — areas + 4 cabinets + knowledge carriers (chronicles, labs, Docs); (2) per area — workflows, books/sheets, read/write edges, schedule, owner; unknown/no-owner highlighted. No level 3 "agent tools" (Andrei has a Skill map; Git channel/connectors/environments = Second Brain infra, OUT per §2; Р-7). Built twice: S1 and S5; in between only on Andrei's request. No regeneration after each switch-over (would be a monitor, I6). No secrets (I7). Done: 2 pages published; Andrei can trace any chosen workflow's reads/writes on them.
 
 S2 Data model + Andrei decisions
-- Agent: one "how data is organised" doc: article-centric (one source of truth per property), cabinets as layers, Andrei's 3 new UE tables embedded as-is (NOT rebuilt), store per И-1.
+- Agent: one "how data is organised" doc: article-centric (one source of truth per property), cabinets as layers; Andrei's 3 UE tables are built for Кипарис only (Andrei 2026-10-24) — enter the model as the ready calculation for that entity, NOT rebuilt; store per И-1.
 - Andrei: decisions on duplicate/unknown/no-owner rows; ≤3 plain-language questions at a time, with consequences.
-- Reviewer agent checks model.
-- Falsifiable criterion: new cabinet connects in one working day without a new book. Fails -> model wrong.
+- Reviewer agent tests model with 3 cases: new cabinet; new article; one article sold in 2 cabinets at different prices — for each, show the single row/store where every property lives. Property without a single home -> model failed.
+- Criterion (tested by S3): adding a cabinet changes no formula and no workflow — cabinet = master row + own credential. Fails -> model wrong. (Old "no new book" criterion dropped: tied to store И-1 hasn't chosen; a copy of calc tables per legal entity is not a defect.)
 
-S3 Pilot: Ozon ИП + WB ИП enter accounting directly in new model. First slice of new product/shop master + ИП connected to UE. Done: daily sales, stocks, cards of both ИП cabinets in new tables; no new book needed.
+S3 Pilot: starts right after S0 + И-1 + И-2, not after S1b/S1c (Andrei 2026-10-24). Ozon ИП + WB ИП enter accounting directly in new model. Scope = DATA LAYER: first slice of product/shop master + MKT2 workflows putting daily sales, stocks, cards of both ИП cabinets into the new store. UE calculation for ИП NOT in pilot — done as copy of Кипарис tables after their audit (S4 area 2). Done: both ИП cabinets' data lands daily; adding a cabinet changed no formula/workflow.
 
 S4 Areas one by one, DEPENDENCY order not weight (Р-2):
-1 product/shop master for main cabinets; 2 UE Ozon+WB = connect Andrei's 3 tables to master; 3 declarations Ozon (WB already in deklaration-v2); 4 WB logistics; 5 reviews WB+Ozon; 6 content/card descriptions; 7 Autochem bundles.
+1 product/shop master for main cabinets; 2 UE Ozon+WB, path chosen by Andrei 2026-10-24, in order: (a) audit of the 3 Кипарис tables — built and running, but never independently verified that every parameter they were built for computes correctly ("not all smooth"); check each computed parameter vs MP financial report for a chosen period; (b) clear technical documentation: how tables are structured and interact (area docs, not inventory passports); (c) connect tables to master; (d) copy of tables for ИП fed from new store, no formula changes (two entities = two calculations; parameterising tables by cabinet rejected — would rebuild what Andrei just built, Р-2). (a) may start right after S0, parallel to pilot; first step: find the 3 books via Drive search, record IDs in STATE.md; 3 declarations Ozon (WB already in deklaration-v2); 4 WB logistics; 5 reviews WB+Ozon; 6 content/card descriptions; 7 Autochem bundles.
 Per area: AUDIT OF EXISTING (below) -> detailed plan -> build MKT2 -> unlimited parallel run (I2) -> reconciliation of NEW vs PRIMARY SOURCE on pre-named numbers -> Andrei "yes" -> switch -> old disabled not deleted. Done: old disabled, reconciliation in LOG with execution numbers.
 
 Auditor ("Ревизор", Andrei requirement 2026-10-24, LOG Р-6): goal = do not carry old errors into new system. Runs per area right before its detailed plan, not once upfront (would go stale). S3 pilot needs none (ИП cabinets have no old accounting version).
@@ -91,4 +91,4 @@ Schemes go stale — med/med — script-generated.
 Old errors carried into new — high/high — per-area auditor before build; reconcile vs primary source not old.
 
 ## 8 Rejected (LOG Р-2)
-One big "everything MP" doc; per-project self-audit only; rebuild-all-at-once without pilot; area order by weight; rebuilding UE again; detailed full inventory upfront; 2-week parallel limit. (LOG Р-6) reconciling new vs old as proof of correctness; one big upfront audit of all areas.
+One big "everything MP" doc; per-project self-audit only; rebuild-all-at-once without pilot; area order by weight; rebuilding UE again; detailed full inventory upfront; 2-week parallel limit. (LOG Р-6) reconciling new vs old as proof of correctness; one big upfront audit of all areas. (LOG Р-7) shop-count check in S0; buy-vs-build research for UE; scheme level 3 "agent tools"; scheme regeneration after each switch-over; pilot after inventory+schemes; "no new book" criterion; parameterising UE tables by cabinet.
