@@ -38,3 +38,16 @@ meta/OZON_UE_INPUTS_MAP.md
 | Ozon Card Fields Fix (ИП) eLBcH8MeE38NbMZq | deklaration-ozon | ИП: /v1/product/attributes/update | нет | да (ПП) |
 | LM_DECL — Ozon Upload ИП GElwjPKkJQkCao3b | deklaration-ozon | ИП: /v2/product/certificate/create | нет | да (ПП) |
 | OZON Publish Reviews XG4gzxtqPJXafBXN | в каноне OZON_UE не ведётся | Кипарис: /v1/review/comment/create, каждые 30 мин | нет | НЕТ (ПП) |
+| OZON Publish Manual XFEhjlkrXXnl1bpU | то же | Кипарис: /v1/review/comment/create, вебхук | нет | НЕТ (ПП) |
+| скрипты книг «Цена», «Деньги», «Товары» | OZON_UE | ничего: обращений к Ozon в коде 0 | — | — |
+
+Код книг прочитан мостом gas-bridge целиком (исполнения 85428–85450, ПП; три больших файла перепроверены сессией): наружу книги ходят только SpreadsheetApp.openById. Цены, остатки и ответы на отзывы сейчас не пишет ни один включённый воркфлоу (П, ПП). Ключ Кипарис с ролью Admin технически позволяет запись любому воркфлоу, к которому привязан.
+
+## 4. Чужие объекты
+
+| Книга / лист | Читает OZON_UE | Пишет OZON_UE | Владелец |
+|---|---|---|---|
+| Price Master, Ozon_SKU_Staging | — | J0v5swjXLfiANJa2 (П) | в `registry/documents.md` не указан; главная таблица товаров (`meta/PRODUCT_DATA_HIERARCHY.md`) |
+| Price Master, Artikel | адаптер BPVFEmZF6QxXuTB6, узел 01D (П); книги «Цена», «Деньги», «Товары» (код, ПП) | — | то же; колонка A — IMPORTRANGE из книги WB_RAW_Аналитика 14QMHYMM4mZRnnq1wHQA4_SA8ZnOeE1xcVJDL2h9h1Pk (WB_UE, Д) |
+| Price Master, ARTIKEL_PROPS | u06pa4u5sDYdQD3W (П) | — | то же |
+| «Описания карточек» 1IE0B89Pd1jVdDpgkjqb3pgJow3cFtimYY07RSEAnO6Y | — | u06pa4u5sDYdQD3W: листы «Перенос в Ozon ИП», «Снимок ИП 2026-10-23» (П) | card-content-sync (ПП) |
