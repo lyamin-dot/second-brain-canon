@@ -132,4 +132,4 @@ FINANZEN вес 6   — налоговый и финансовый аналит�
 
 [FINANZEN] Налоговый и финансовый аналитик | вес 6 | АКТИВЕН
           Файл индекса: FINANZEN_INDEX (ID — registry/documents.md); папка FINANZEN_FOLDER
-          Claude Project: ждёт адреса от Андрея
+          Claude Project «Finanz»: https://claude.ai/project/01a169c1-038e-77bb-b355-431321ac3452 (адрес — Андрей, чат SYS 2026-10-24; мастер-промпт редакции 2 вставлен по словам Андрея, копии — registry/documents.md, строки FINANZEN_PROMPT_EN_red2 и FINANZEN_PROMPT_RU_red2)
