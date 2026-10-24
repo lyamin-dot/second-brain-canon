@@ -77,3 +77,15 @@ meta/OZON_UE_INPUTS_MAP.md
 | причины и статусы возвратов | `labs/ozon-ue/t-returns-dynamics.md` | не делали; деньги возвратов в начислениях есть (П) |
 | конверсия | — | ежедневный SElT снят, NTNN ручной (П) |
 | всё по кабинету ИП | учёт ИП | ключ есть, не привязан (раздел 2) |
+
+Логистика, комиссия, эквайринг, хранение, штрафы по отправлению — есть, в начислениях (поля delivery_total, type_ids; П).
+
+## 7. Документация
+
+Строка PASSPORT в описании воркфлоу (П): есть у J0v5swjXLfiANJa2, c7TIdv32dHV3MBRU, BPVFEmZF6QxXuTB6, u06pa4u5sDYdQD3W, SElTcMg3BpY6pmdo, 5MDOGVCTxwDjHqy3. Нет у aVpgEnYBAgIIss4k (паспорт есть, устарел — Д), nNNJuafLqTX7g8TU и YkUb5SnLtEaTctoH (паспорта в каноне — Д), у MPzPrtsnPtf0sVQo, NTNN2Kvqg09yoRKi, xijbGRJS2apq61ls, PWFVE0UbM3ajvVFc, 2UsyP3q5Jd9OafJD и выключенных инструментов. Документы паспортов не открывались.
+
+Не описано в каноне или описано неверно (на 2026-10-24):
+1. DECISION_ENGINE из строки архитектуры мастер-промпта и INDEX — объекта для Ozon нет; в снимке n8n Decision Engine только у WB FBS (П).
+2. Ozon_Hashtag_Generator KQqajdrYKxle9JRe — активен, пишет книгу 1MfVmwlF2ar99Zo6k28VqNoI_CfE55sHbaoKEUKW3Yic, ни в одном проекте канона не ведётся (ПП).
+3. NsOOnadQGNlbxf6g (Fix Category in OzonRawАналитика) — закрыт для MCP, не прочитан.
+Исправлено тем же днём в `labs/ozon-ue/INDEX.md`: строка об источнике адаптера, книга ozon_raw_конверсия, лист «Поправки штук», скрипт книги «Цена» 1ozb26DZb9VspKXoKt50bdfBrhAVkBtZFKdZVf83VTuMDvOYtGGReELEr.
