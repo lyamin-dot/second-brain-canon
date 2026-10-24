@@ -16,3 +16,12 @@ meta/OZON_UE_INPUTS_MAP.md
 | /v3/product/list + /v3/product/info/list | Получение SKU Ozon J0v5swjXLfiANJa2 | ежедневно 03:00 | Price Master 1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk, лист Ozon_SKU_Staging | 85032, 24.10 (П) | nNNJuafLqTX7g8TU |
 | /v3/product/list + /v3/product/info/list | SKU Artikel Map nNNJuafLqTX7g8TU | активен, но «раз в 1000 месяцев» — фактически не запускается | SKU_Artikel_Map 1dJN-wWrzr4LKi9FPTkbOpAu6N-LMymxiF-WJEFJPlCU (выводится из эксплуатации, Д) | не сохраняются (П) | J0v5; снять — предложение, решения Андрея нет |
 | /v1/analytics/data (выручка и заказанные штуки по SKU и дню) | OZON RAW Analytics History Load NTNN2Kvqg09yoRKi | ручной инструмент, одна дата в коде | ozon_raw_конверсия 1xxO6QpwyJ17tbpGjX9VJgtCt7y-Bfs0h0TCIuPUU5B4, лист ozon_raw_analytics | не сохраняются (П) | ежедневный SElTcMg3BpY6pmdo снят с публикации (П) |
+| /v3/finance/transaction/list | OzonRawАналитика MPzPrtsnPtf0sVQo | СНЯТ С ПУБЛИКАЦИИ 2026-10-24 (П) | RAW, sales_raw_operations | метод отключён Ozon (исполнение 63904, Д) | FnB2Imp7thMKuwnD, выключен (ПП) |
+
+Свежесть цепочки: книга «Деньги», лист «Параметры» — последняя дата в источнике 23.10.2026, снимок 24.10.2026 6:32 (П). Сверка 17–23.10: каждый raw_key листа ozon_raw_accrual_TEST есть в sales_raw_operations, строк не от адаптера с 07.10 — 0 (gsheets-read 85439, 85442, 85446; ПП, пересчитано сессией).
+
+## 2. Ключи
+
+| Кабинет | Права | Истекает | Кто пользуется |
+|---|---|---|---|
+| Кипарис (основной) | Admin и 30 частных ролей, чтение и запись (лист «Ключи», П) | 2 дек. 2026 (лист «Ключи», П) — перевыпуск: `labs/ozon-ue/t-n8n-ozon-workflow-defects.md`, раздел 2026-10-24 | все входы раздела 1; инструмент u06pa4u5sDYdQD3W (только чтение основного); вне OZON_UE: BLNA8sbdnLtuz7Uj, r35gXE6VxvuacEfW, 529VWvqSTg8l4fUU, 555GP7GWs1EL5FIO, IHn3Bmyh1VeHf4Ya, XG4gzxtqPJXafBXN, XFEhjlkrXXnl1bpU, oJrg4XY0HZwPCq59, tZ4NrzdAAurD4GQH, FnB2Imp7thMKuwnD, ft4D2JGquVUzhtO0 (ПП) |
