@@ -333,8 +333,8 @@ projects/marketplace-rebuild/PLAN.md
 | raw.wb_order | GET statistics-api `/api/v1/supplier/orders` | элемент ответа | Гипотеза (не проверена): srid | версии | дата заказа | Статистика — НЕТ |
 | raw.wb_finance_row | POST `/api/finance/v1/sales-reports/detailed` | строка отчёта | тот же raw_key, что у листа wb_raw_report_V2 Кипариса (узлы Finance Sync IvgysDKrq3UISYEY) | версии | дата операции | Финансы — НЕТ |
 | raw.wb_finance_report | POST `/api/finance/v1/sales-reports/list` | отчёт | report_id (запись Р-72 журнала wb-ue, пункт 2) | версии | начало периода | Финансы — НЕТ |
-| raw.wb_stock_seller | POST `/api/analytics/v1/stocks-report/seller-warehouses` | элемент ответа целиком (вложенные склады или размеры не режутся) | по форме элемента, Гипотеза (не проверена): nmID | снимок дня | дата снимка | Гипотеза (не проверена): Аналитика |
-| raw.wb_stock_wb | POST `/api/analytics/v1/stocks-report/wb-warehouses` (только если у ИП есть склады WB) | то же | то же | снимок дня | дата снимка | то же |
+| raw.wb_stock_seller | POST `/api/analytics/v1/stocks-report/seller-warehouses` | элемент ответа — один размер на одном складе, вложенности нет (ответ 86101, запись Р-18) | nmId_chrtId_warehouseId | снимок дня | дата снимка | Гипотеза (не проверена): Аналитика |
+| raw.wb_stock_wb | POST `/api/analytics/v1/stocks-report/wb-warehouses` (у ИП есть остатки на складах WB, ответ 86101) | то же | то же | снимок дня | дата снимка | то же |
 | raw.wb_card | POST `/content/v2/get/cards/list` | элемент `cards` | nmID | версии | — | Контент — есть: WB_Контент_ИП_R |
 | raw.wb_price | GET `/api/v2/list/goods/filter` | элемент списка товаров целиком, массив размеров внутри | nmID | снимок дня | дата снимка | Гипотеза (не проверена): «Цены и скидки» — у ИП нет и в список Андрея не вошла |
 
