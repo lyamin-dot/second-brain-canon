@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-10-23T14:49:57.942Z
+instance_last_change|2026-10-24T22:07:20.799Z
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
 W|0sVn3WwpIyaItpki|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,triggerAtDayOfMonth=1,triggerAtHour=3|instance|?|-|-
@@ -104,7 +104,7 @@ W|Lxm7oI6e3QWuc7Vq|KB Loader — Motor Oil|active|same|manualTrigger,scheduleTri
 W|M5BLqclKBjGTpz33|🚨 Error Notifier|active|same|errorTrigger|-|instance|?|-|-
 W|M5dqSv2yiklnDXoP|Claude → Google Docs Overwrite v2 (verified)|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|M7u4VX4Y4KtYyoVV|Git Append|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
-W|MPzPrtsnPtf0sVQo|OzonRawАналитика|active|same|scheduleTrigger|triggerAtHour=2|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|MPzPrtsnPtf0sVQo|OzonRawАналитика|inactive|never|scheduleTrigger|triggerAtHour=2|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|NDY1YGwLIt4w3HQB|ArchiveRecon OCR Texts Join|inactive|never|manualTrigger|-|instance|?|-|-
 W|NTNN2Kvqg09yoRKi|OZON RAW Analytics History Load|active|same|scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
 W|NaD5kdaD2tFOkkO7|Price Master — лист и заголовки (инструмент)|inactive|never|manualTrigger|-|instance|?|-|-
@@ -156,6 +156,7 @@ W|ZyaOSSDvGsf0eq7L|LM_DECL — Worker (ядро парсинга)|active|same|ex
 W|aVpgEnYBAgIIss4k|Ozon RAW Accrual Sync|active|same|executeWorkflowTrigger,manualTrigger,scheduleTrigger|triggerAtHour=2|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|bFJsM3aFlIHIFeAd|DOSSIER INBOX Accept To Archive|active|same|scheduleTrigger|field=months,monthsInterval=100,triggerAtHour=3|instance|?|M5BLqclKBjGTpz33|-
 W|bFiCQqKBDxzos4l2|Projekt_OCR OEM_V.3|archived|never|manualTrigger|-|instance|?|-|-
+W|be3319g3PNeGlHN4|MKT2 Probe Build|inactive|never|manualTrigger|-|Europe/Moscow|?|-|-
 W|broKqvpEUTx6eLH2|DOSSIER Diagnostics - Trash Ownership Check|archived|never|manualTrigger|-|instance|?|-|-
 W|c7TIdv32dHV3MBRU|OZON_UE Accrual Types Sync|active|same|scheduleTrigger|field=weeks,triggerAtDay=1,triggerAtHour=1|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|c9B1w8njEilu8mqx|WB Telegram Alerts|active|same|scheduleTrigger|triggerAtHour=12 + triggerAtHour=18|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -270,6 +271,8 @@ D|14QMHYMM4mZRnnq1wHQA4_SA8ZnOeE1xcVJDL2h9h1Pk|IvgysDKrq3UISYEY|11_Write_RAW_To_
 D|14QMHYMM4mZRnnq1wHQA4_SA8ZnOeE1xcVJDL2h9h1Pk|IvgysDKrq3UISYEY|12_Read_RAW_For_TX|googleSheets|default|-
 D|14QMHYMM4mZRnnq1wHQA4_SA8ZnOeE1xcVJDL2h9h1Pk|IvgysDKrq3UISYEY|15_Write_Transactions|googleSheets|appendOrUpdate|-
 D|17j3EOOGPFwnjF9RQbZzll-4Cm6JD8Cd5mNqm_p9AOBU|2UsyP3q5Jd9OafJD|Read K3 (дата прайса)|googleSheets|default|Акт.цена
+D|17j3EOOGPFwnjF9RQbZzll-4Cm6JD8Cd5mNqm_p9AOBU|2UsyP3q5Jd9OafJD|Read K3 Lopal (дата прайса)|googleSheets|default|Акт.цена_Lopal
+D|17j3EOOGPFwnjF9RQbZzll-4Cm6JD8Cd5mNqm_p9AOBU|2UsyP3q5Jd9OafJD|Read Акт.цена_Lopal|googleSheets|default|Акт.цена_Lopal
 D|17j3EOOGPFwnjF9RQbZzll-4Cm6JD8Cd5mNqm_p9AOBU|2UsyP3q5Jd9OafJD|Read Акт.цена|googleSheets|default|Акт.цена
 D|17j3EOOGPFwnjF9RQbZzll-4Cm6JD8Cd5mNqm_p9AOBU|LoaTosh6logkGdVt|Read K3 (дата backfill)|googleSheets|default|Акт.цена_backfill
 D|17j3EOOGPFwnjF9RQbZzll-4Cm6JD8Cd5mNqm_p9AOBU|LoaTosh6logkGdVt|Read Акт.цена_backfill|googleSheets|default|Акт.цена_backfill
@@ -588,7 +591,7 @@ C|0jJSryMqJJqodL4K|googleApi|9
 C|2KorY7GdncsIs5Ro|googleApi|2
 C|2KorY7GdncsIs5Ro|httpHeaderAuth|5
 C|2KorY7GdncsIs5Ro|postgres|1
-C|2UsyP3q5Jd9OafJD|googleApi|5
+C|2UsyP3q5Jd9OafJD|googleApi|7
 C|2g4zVTcfYLLwrF73|httpHeaderAuth|1
 C|2vWu3qaUkYFlDt4v|googleApi|1
 C|2vWu3qaUkYFlDt4v|httpHeaderAuth|1
@@ -766,6 +769,7 @@ C|aVpgEnYBAgIIss4k|googleApi|1
 C|aVpgEnYBAgIIss4k|httpCustomAuth|2
 C|bFJsM3aFlIHIFeAd|googleApi|4
 C|bFJsM3aFlIHIFeAd|googleDriveOAuth2Api|1
+C|be3319g3PNeGlHN4|httpCustomAuth|1
 C|c7TIdv32dHV3MBRU|googleApi|1
 C|c7TIdv32dHV3MBRU|httpCustomAuth|1
 C|c9B1w8njEilu8mqx|googleApi|1
