@@ -1,4 +1,4 @@
-labs/sys/t-ozon-ue-parked-active.md
+meta/CASES_ozon-raw-sources.md
 
 # Два воркфлоу OZON_UE активны на расписании, хотя документированы как нерабочие
 
@@ -57,3 +57,15 @@ Skill n8n-workflow-registry до разбора по носителям (зер�
 
 ## 2026-10-24 — ⚡ от OZON_UE: OzonRawАналитика снят с публикации
 MPzPrtsnPtf0sVQo снят с публикации 24.10 по поручению Андрея (get_workflow_details: active false, activeVersionId null). Основание и сверка данных (за 17–23.10 все ключи начислений в sales_raw_operations есть, строк не от адаптера с 07.10 — 0) — labs/ozon-ue/t-n8n-ozon-workflow-defects.md, раздел «2026-10-24». В живом Skill n8n-workflow-registry строки об этом воркфлоу нет (grep /mnt/skills 2026-10-24). По MPzPrtsnPtf0sVQo условие снятия выполнено; по aVpgEnYBAgIIss4k остаётся паспорт (см. поправку 2026-10-16).
+
+
+## Итог 2026-10-26 — ответ на вопрос «какой источник OZON_UE RAW живой»
+
+- Живой источник начислений Ozon — воркфлоу `Ozon RAW Accrual Sync` (`aVpgEnYBAgIIss4k`). Каждую ночь в 02:00 по серверу (таймзона в воркфлоу не задана) он берёт POST `/v1/finance/accrual/by-day` за вчерашний день, дополняет отправлениями через POST `/v3/posting/fbs/get` и пишет реальные данные в лист `ozon_raw_accrual_TEST`. Лист назван TEST по истории, а не по роли. Выключать нельзя — решение Андрея 2026-10-16.
+- Читатель этого листа — адаптер «OZON_UE Accrual → sales_raw_operations Adapter» (`BPVFEmZF6QxXuTB6`, каждую ночь в 02:20, узел `02_Read_RAW_Accrual`); он пишет в боевой лист `sales_raw_operations`.
+- Прежний источник `OzonRawАналитика` (`MPzPrtsnPtf0sVQo`) ходил в эндпоинт `/v3/finance/transaction/list`, который Ozon отключил 2026-09-08. Воркфлоу снят с публикации 2026-10-24 по поручению Андрея и не архивирован (зонды и старые воркфлоу по решению Андрея не архивируются). Основание и сверка данных — `labs/ozon-ue/t-n8n-ozon-workflow-defects.md`, раздел «2026-10-24».
+- Ручной воркфлоу «OZON_UE Backfill 2026-09-08 → yesterday» (`5MDOGVCTxwDjHqy3`) вызывает Accrual Sync с параметром `business_date`; он неактивен и не вредит.
+- Число колонок листов — снимок, по листам не перепроверен, брать из самой книги: `sales_raw_operations` — 29, `ozon_raw_accrual_TEST` — 16 (раздел «Дополнение 2026-10-22» выше).
+- Открыто: паспорт Accrual Sync устарел (называет блокерами жёсткую дату TEST_DATE и тестовый лист) — ведётся в `labs/ozon-ue/INDEX.md`.
+
+Перенесено 2026-10-26 из `labs/sys/t-ozon-ue-parked-active.md` (задача закрыта; охота на потухшие факты): текст без изменений, кроме первой строки-пути, поэтому номера строк в ссылках вида «labs/sys/t-ozon-ue-parked-active.md:N» верны и для этого файла (`second-brain-git`, пункт 4б.6).
