@@ -83,3 +83,15 @@ SKU Category Historical Backfill работает в книге лаборато
 **SKU Category Historical Backfill** — защиты от дублей нет вообще. Перед каждым запуском вручную очистить листы `sku_category_history` и `sku_category_history_detail` до заголовков. Триггер никогда не переводить на реальное расписание. Эти два листа ни один узел по имени не раскрывает, поэтому в снимке их нет и книгу по ним не найти.
 
 **News Filter** (`WB+Ozon News Filter`) — дедупликация через Google Sheets, лист `seen_posts`; книга — `1eujHu87IO0IlngLX164_O81LxPI5NNpq9S47E8anVSo` [снимок 26.09].
+
+## Контракт автопилота 2026-10-26 — «Claude → Create Folder» выдаёт права сервисному аккаунту
+
+Согласие Андрея: «да, делай» 2026-10-26 14:35 (чат N8N) на вопрос в форме Р10. Диспетчер — сессия N8N.
+
+Цель. Папка, созданная воркфлоу «Claude → Create Folder» (uapccJY1O4ykyDi7), получает право writer сервисного аккаунта n8n тем же прогоном — ручной шаг «расшарить папку DOCS» исчезает у всех будущих проектов.
+
+Критерий приёмки: (а) пробная папка имеет permission role=writer, type=user для сервисного аккаунта — get_file_permissions; (б) после публикации versionId = activeVersionId; вебхук claude-create-folder — headerAuth, webhookId и ключ те же, что до правки; errorWorkflow M5BLqclKBjGTpz33 на месте; (в) ADR в паспорте воркфлоу (ID в description), перечитан gdocs-read; (г) задача от 26.10 в STATE.md закрыта с адресом доказательства.
+
+Пакеты: 1 — чтение паспорта; 2 — правка черновика (новый узел Google Drive v3 folder/share между «Create folder» и «Respond to Webhook»; в Respond — `folder_id` из `$('Create folder').item.json.id`, поле `shared_with_sa`); 3 — пробный прогон черновика (папка TEST_share_2026-10-26 в корне), проверка прав, сверка §2.2–2.3; 4 — публикация тумблером; 5 — ADR, STATE, LOG; 6 — приёмка отдельным субагентом по (а)–(г).
+
+Разрешённые правки: воркфлоу uapccJY1O4ykyDi7 (узлы «Share with SA», «Respond to Webhook», рёбра; черновик → публикация), его паспорт, projects/n8n/{PLAN,STATE,LOG}.md. Особые стопы: updatedAt воркфлоу не равен 2026-10-08T12:06:48.753Z; пробный прогон упал на ключе OAuth «Google Drive account» (ручное действие Андрея — переподключить ключ в редакторе); адрес сервисного аккаунта в репозиторий не пишется (И-7).
