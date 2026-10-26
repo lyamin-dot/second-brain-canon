@@ -9,7 +9,7 @@ projects/knowledge-synthesis/STATE.md
 - Пункт 1 финиша `PLAN.md` достигнут 2026-10-22: все одиннадцать собственных Skills синтезированы и приняты по снимку (раздел 6 `meta/SKILLS_MAP.md` — у всех «готов»). Отчёты — `meta/SYNTHESIS_<имя>_<дата>.md`; решения — записи Р-1…Р-12 `LOG.md`.
 - Пункт 2 финиша (вопросы владельцу) закрыт 2026-10-22 решениями Андрея по сводному списку — запись Р-12 `LOG.md`. Внесённое в зеркала `skills/avtopilot/`, `skills/naryad/`, `skills/denken/`, `skills/second-brain-git/` действует после заливки архивов.
 - Открыт пункт 3 финиша: шаги 6–8 плана версии 3 (`meta/PLAN_skill-layers_2026-10-20_v3.md`, раздел 5).
-- 2026-10-22: `n8n-engineering-manual` переложен по трём правилам слоя (запись Р-13 `LOG.md`, контракт — раздел «Контракт автопилота — разрез `n8n-engineering-manual`» `PLAN.md`): зеркало `skills/n8n-engineering-manual/` в main, ждёт заливки zip Андреем; диагностика отказа воркфлоу дешевле на 22,8 % (`meta/scripts/reading_cost.py`, вид S4б).
+- 2026-10-22: `n8n-engineering-manual` переложен по трём правилам слоя (запись Р-13 `LOG.md`, контракт — раздел «Контракт автопилота — разрез `n8n-engineering-manual`» `PLAN.md`): зеркало `skills/n8n-engineering-manual/` в main, залито (живой Skill равен зеркалу, `diff -rq` пуст — сверка 2026-10-26); диагностика отказа воркфлоу дешевле на 22,8 % (`meta/scripts/reading_cost.py`, вид S4б).
 
 ## Следующий шаг
 
