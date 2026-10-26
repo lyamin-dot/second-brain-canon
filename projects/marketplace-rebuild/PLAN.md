@@ -470,3 +470,7 @@ projects/marketplace-rebuild/PLAN.md
 - Сессия OZON_UE просит учёт ИП в PostgreSQL и три книги как у Кипариса (STATE.md, «От соседнего проекта», последняя запись) — модель это покрывает.
 
 ---
+
+## 14. ИНСТРУМЕНТЫ
+
+DOCS_FOLDER: 1vECymYl2-U_NgUlO43dp47X0x2sk-Mot — папка паспортов воркфлоу MKT2 на Google Drive (корень Диска Андрея, «MARKETPLACE_REBUILD DOCS»); создана 2026-10-26 воркфлоу «Claude → Create Folder», исполнение 87412 (наряд Андрея на паспорта MKT2, ID Н-26.10-02 совпал с нарядом ревизору — Р-23). Имя паспорта: MKT2_WF_<имя>; паспорта и ID — registry/documents.md.
