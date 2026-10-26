@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-10-26T11:47:47.795Z
+instance_last_change|2026-10-26T11:49:46.771Z
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
 W|0sVn3WwpIyaItpki|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,triggerAtDayOfMonth=1,triggerAtHour=3|instance|?|-|-
@@ -615,6 +615,7 @@ A|GTrCbV5GmyhJKcNd|02B_Fetch_Answered_Questions|questions
 A|LguGCDYJvMQSahcj|Get Executions|executions
 A|TXNstdVL8xlIygBp|10_Get_N8N_Workflows_Active|workflows
 A|TXNstdVL8xlIygBp|11_Get_N8N_Executions_Recent|executions
+A|gFFiBPm1OomOzJOj|Зонд папок API|workflows
 A|gFFiBPm1OomOzJOj|Получить список воркфлоу n8n|workflows
 A|mAaWSmoXDH9Ofgg3|02A_Fetch_WB_Feedbacks|feedbacks
 A|mAaWSmoXDH9Ofgg3|02B_Fetch_WB_Questions|questions
@@ -844,7 +845,7 @@ C|fdiWemSCln1WA8gt|httpHeaderAuth|1
 C|ft4D2JGquVUzhtO0|googleApi|8
 C|ft4D2JGquVUzhtO0|httpCustomAuth|1
 C|ft4D2JGquVUzhtO0|httpHeaderAuth|1
-C|gFFiBPm1OomOzJOj|httpHeaderAuth|4
+C|gFFiBPm1OomOzJOj|httpHeaderAuth|5
 C|gglEq5U90Gt3sI7h|googleApi|1
 C|gglEq5U90Gt3sI7h|httpHeaderAuth|5
 C|hJZhQ9KaeFgeRm3k|googleApi|3
