@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-10-24T22:07:20.799Z
+instance_last_change|2026-10-25T08:24:44.184Z
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
 W|0sVn3WwpIyaItpki|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,triggerAtDayOfMonth=1,triggerAtHour=3|instance|?|-|-
@@ -9,6 +9,7 @@ W|16iuTMqNFMvh2uwb|TEMP Delete TEST_UNREACHABLE row (naryad Н-07.09-02)|archive
 W|1J4Ct6uGFb3NJzaS|WB API Probe [temp]|archived|never|manualTrigger|-|instance|?|-|-
 W|1NQWYpqEqn1kqbrs|DOSSIER Calibration - PDF OCR via Raw Drive API (temp)|archived|never|manualTrigger|-|instance|?|-|-
 W|1fO5VX71vRKIFqOx|WB FBS Order Close|archived|never|scheduleTrigger|field=cronExpression|instance|?|-|-
+W|202qnZlWcKHhBMTI|MKT2 Collect /api/v1/supplier/orders|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=5,triggerAtMinute=10|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|2KorY7GdncsIs5Ro|WB Reviews Response|active|same|scheduleTrigger|field=minutes,minutesInterval=30|instance|?|M5BLqclKBjGTpz33|-
 W|2LbDTad2YJ0oIYd4|TEMP fanout test — delete me|archived|never|manualTrigger|-|instance|?|-|-
 W|2UsyP3q5Jd9OafJD|OZON_UE Cost Price Snapshot|inactive|never|manualTrigger|-|instance|?|-|-
@@ -16,6 +17,7 @@ W|2ZxUm8WNzccoVfuy|LM_DECL — Worker РОСС (парсинг РОСС декл
 W|2g4zVTcfYLLwrF73|Ozon key literal scan|inactive|never|manualTrigger|-|instance|?|-|-
 W|2nmeY1tRSZkeR8Nj|Deklaration MotorOel_V.2|archived|never|scheduleTrigger|field=weeks,triggerAtHour=2|instance|?|-|-
 W|2vWu3qaUkYFlDt4v|KB Loader — Auto Chemistry|inactive|never|manualTrigger|-|instance|?|-|-
+W|30wmV6YOFaSGAHVs|MKT2 API TEMPLATE|inactive|never|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|38BkuLXhxXLTPpqQ|Claude → Google Apps Script Bridge|inactive|never|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|3ARodiEgXWs4DGmx|Archive Search|active|same|webhook|-|instance|?|-|-
 W|45KuCVw1RrI6qg2q|LM_DECL — Coverage Probe (temp)|archived|never|formTrigger|-|instance|?|-|-
@@ -47,6 +49,8 @@ W|8ImKyDrw1Q2JIfHw|ArchiveRecon OCR Scans Run|inactive|never|manualTrigger|-|ins
 W|8oQBdEdlnl6CbeeP|TaeglichesVerkauf|archived|never|scheduleTrigger|triggerAtHour=2|instance|?|-|-
 W|8zHzPxv2lE9BpZ1e|99_Compare_RAW_Sources|archived|never|manualTrigger|-|instance|?|-|-
 W|92MulfAlJjHZXoxw|TEST WB Week34 RAW vs TX Audit|archived|never|manualTrigger|-|instance|?|-|-
+W|95w8XpN3OHNl2NsE|MKT2 API ip_ozon ozon_seller|active|same|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|9Bsr5pqvXupvB238|MKT2 Collect /content/v2/get/cards/list|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=6,triggerAtMinute=10|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|9Qhnkz9E6mjidqs5|LM_DECL — WB Sync ИП|active|same|formTrigger|-|instance|?|M5BLqclKBjGTpz33|-
 W|9YLOAuMpDRKgqjef|TEST WB reportDetailByPeriod week34|archived|never|manualTrigger|-|instance|?|-|-
 W|9flRXoFNEQzHgznB|WB API Structure Test|archived|never|manualTrigger|-|instance|?|-|-
@@ -57,13 +61,16 @@ W|BLNA8sbdnLtuz7Uj|LM_DECL — Ozon Upload|active|same|formTrigger|-|instance|?|
 W|BP2a4eIIYjghAVVt|Deklaration MotorOel|archived|never|scheduleTrigger|field=weeks,triggerAtHour=1|instance|?|-|-
 W|BPVFEmZF6QxXuTB6|OZON_UE Accrual → sales_raw_operations Adapter|active|same|executeWorkflowTrigger,manualTrigger,scheduleTrigger|triggerAtHour=2,triggerAtMinute=20|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|CELGBmo7vQFF1Ej7|Claude → Google Docs Append|archived|never|webhook|-|instance|?|-|-
+W|CJ2hKZFNG4SXFs29|MKT2 Collect /v1/finance/accrual/types|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=4,triggerAtMinute=5|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|CVsLN6j9lxHibgKr|KB MO — Annotation Preprocessor|active|same|manualTrigger,scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|DCdm1xOojRKOpn4I|GTIN Map → Price Master!GTIN_OKPD|inactive|never|manualTrigger|-|instance|?|-|-
 W|DM26WhTJyCV0DhkP|WB FBS Order Close v2 [Supply Summary]|active|same|scheduleTrigger|field=hours,triggerAtMinute=5|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|DWyvoJYkCodJxMg1|Projekt_OCR OEM_V.5|inactive|never|manualTrigger,scheduleTrigger|field=months|instance|?|M5BLqclKBjGTpz33|-
 W|DcIqwTVqBqMQyigs|WB Monitor Telegram Reader|active|same|scheduleTrigger|daysInterval=1,field=days,triggerAtHour=12,triggerAtMinute=30|Europe/Berlin|?|M5BLqclKBjGTpz33|-
+W|E0CHJ5l1ybJXFRte|MKT2 Collect /api/analytics/v1/stocks-report/seller-warehouses|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=5,triggerAtMinute=40|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|EH2JaB8WGa0JsBqs|Deklaration_Hydraulisches_Oil_V.4|active|same|scheduleTrigger|field=months,monthsInterval=1000,triggerAtHour=5|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|EPr2EUtI23wZ3X7c|GDrive Trash Stager|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
+W|FXw0wRAtLUaxEjzY|MKT2 Collect /api/v2/list/goods/filter|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=6,triggerAtMinute=0|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|FZYQbWNpuF91Xk7l|WB Reviews Intake — BACKUP 2026-06-15|archived|never|scheduleTrigger|field=minutes,minutesInterval=15|instance|?|-|-
 W|FnB2Imp7thMKuwnD|OzonRawАналитика_Monat|inactive|never|-|-|instance|?|-|-
 W|GDI35U36bBRzKZp5|Deklaration_TransmissionOil_V.4|inactive|never|scheduleTrigger|field=months,monthsInterval=1000,triggerAtHour=5|instance|?|-|-
@@ -90,6 +97,7 @@ W|IvgysDKrq3UISYEY|WB RAW Finance Sync V.3|active|same|scheduleTrigger|field=wee
 W|J0v5swjXLfiANJa2|Получение SKU Ozon|active|same|scheduleTrigger|daysInterval=1,field=days,triggerAtHour=3|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|J8tubuqNsN471jEl|***-COPY-guard-05082026|archived|never|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|JaSDlwWAmjpYmEaD|WB TMP DB Probe Motor Oil|inactive|never|manualTrigger|-|instance|?|-|-
+W|JzoU49Wy2soTzZ44|MKT2 API ip_wb wb_content|active|same|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|KEucSnA2duWI3eRA|DOSSIER INBOX Move Processed Files|active|same|scheduleTrigger|field=months,monthsInterval=100,triggerAtHour=3|instance|?|M5BLqclKBjGTpz33|-
 W|KQqajdrYKxle9JRe|Ozon_Hashtag_Generator|active|same|scheduleTrigger|field=months,monthsInterval=99|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|KUOjA3trUW7OlakK|LM_DECL — Page Probe (temp)|archived|never|manualTrigger|-|instance|?|-|-
@@ -105,6 +113,7 @@ W|M5BLqclKBjGTpz33|🚨 Error Notifier|active|same|errorTrigger|-|instance|?|-|-
 W|M5dqSv2yiklnDXoP|Claude → Google Docs Overwrite v2 (verified)|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|M7u4VX4Y4KtYyoVV|Git Append|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|MPzPrtsnPtf0sVQo|OzonRawАналитика|inactive|never|scheduleTrigger|triggerAtHour=2|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|N11s3B8ZMz9RMXGd|MKT2 Probe Sample|inactive|never|manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|NDY1YGwLIt4w3HQB|ArchiveRecon OCR Texts Join|inactive|never|manualTrigger|-|instance|?|-|-
 W|NTNN2Kvqg09yoRKi|OZON RAW Analytics History Load|active|same|scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
 W|NaD5kdaD2tFOkkO7|Price Master — лист и заголовки (инструмент)|inactive|never|manualTrigger|-|instance|?|-|-
@@ -115,20 +124,27 @@ W|OAvQVlxvZK12Scfn|Projekt_OCR OEM|archived|never|manualTrigger|-|instance|?|-|-
 W|OYIhTm8h2ABMHQUW|Claude → Google Docs Overwrite|archived|never|webhook|-|instance|?|-|-
 W|Omt9oDYf7NthOw5T|Git Write|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|OnEludZYMusvFxTS|LM_DECL — Watch (мониторинг изменений)|inactive|never|manualTrigger|-|instance|?|-|-
+W|OtPuEpGpiWdIblge|MKT2 Ref Seed|inactive|never|manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|-
+W|P53i6U31tpmdHHJK|MKT2 Collect /v5/product/info/prices|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=4,triggerAtMinute=50|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|P7CZYJZWIqC5Me4c|WB Reports Official Sync|active|same|scheduleTrigger|field=weeks,triggerAtDay=3,triggerAtHour=12|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|PWFVE0UbM3ajvVFc|Ozon IP SKU Staging (ИП)|inactive|never|manualTrigger|-|instance|?|-|-
 W|PmpbiKkwgjM9ph0L|TEST Ozon QA v2 question list|archived|never|manualTrigger|-|instance|?|-|-
 W|QCQI6utFFH3dvTJT|LM_DECL — WB Sync|active|same|formTrigger|-|instance|?|M5BLqclKBjGTpz33|-
+W|QL2OCGZa5kzRRsg2|MKT2 Collect /v1/analytics/stocks|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=4,triggerAtMinute=40|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|QmPIz9uhfU48FcWX|LM_DECL — Seed РОСС (заполнение РОСС деклараций)|inactive|never|manualTrigger,scheduleTrigger|expression=0 3 1 1 *,field=cronExpression|instance|?|-|-
+W|R5a2wT4emV9sUBT4|MKT2 Mirror ref.article|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=6,triggerAtMinute=20|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|R8w94X0mT0Fa2Oil|OZON QA Response|inactive|never|scheduleTrigger|field=minutes,minutesInterval=30|instance|?|-|-
 W|RJ9qlEVyBaaJkaGH|LM_DECL — WB Probe (temp)|inactive|never|manualTrigger|-|instance|?|-|-
 W|S4rZMUkI21dVu3ML|WB FBS Decision Engine|active|same|scheduleTrigger|expression=0 12,14,16 * * *,field=cronExpression;expression=15 16 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|S61kFx4naWzPzqRc|TMP Ozon Adapter Re-run (no RAW sync)|archived|never|manualTrigger|-|instance|?|-|-
 W|SElTcMg3BpY6pmdo|OZON RAW Konversion Sync|inactive|never|scheduleTrigger|triggerAtHour=6,triggerAtMinute=30|Europe/Berlin|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|SoreXOUG4nhaWfQr|TMP Ozon Cleanup — delete poisoned 20.08 rows|inactive|never|manualTrigger|-|instance|?|-|-
+W|TCbW7KGTccSJDgzW|MKT2 Collect /api/v1/supplier/sales|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=5,triggerAtMinute=0|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|TXNstdVL8xlIygBp|SYS Lint|inactive|never|scheduleTrigger|triggerAtHour=6|instance|?|-|-
 W|Ta4fU7QI1QRb32tB|Archive Read Status Page|active|same|webhook|-|instance|?|-|-
+W|U0P4iPkSmlKtvdD4|MKT2 Collect /v4/product/info/stocks|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=4,triggerAtMinute=30|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|UOxe3lay5R7cFed7|WB KIZ Probe (temp)|inactive|never|formTrigger|-|instance|?|-|-
+W|UvWU13d9oV1eNYDE|MKT2 Collect /api/finance/v1/sales-reports/detailed|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=5,triggerAtMinute=30|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|V43JMSOFHyf7wbiH|SYS INDEX Restore from Revision|inactive|never|-|-|instance|?|-|-
 W|VMPxWzXPefKT2R1B|LM_DECL_MASTER — Мониторинг деклараций V.2|inactive|never|manualTrigger,scheduleTrigger|field=months,monthsInterval=3,triggerAtHour=6|instance|?|-|-
 W|VWyXmCPJevCnbkZT|SKU Category Historical Backfill|inactive|never|scheduleTrigger|field=months,monthsInterval=100|instance|?|-|workflowsFromSameOwner
@@ -138,6 +154,7 @@ W|W3KjaXVqWD2c02IK|DOSSIER Build CORPUS+REGISTRY|active|same|scheduleTrigger|fie
 W|X0vUuwl46oukkEqg|WB API URL Test|archived|never|manualTrigger|-|instance|?|-|-
 W|XFEhjlkrXXnl1bpU|OZON Publish Manual|inactive|never|webhook|-|instance|?|-|-
 W|XG4gzxtqPJXafBXN|OZON Publish Reviews|inactive|never|scheduleTrigger|field=minutes,minutesInterval=30|instance|?|-|-
+W|XP6mOTq6EJ3Mjxav|MKT2 SQL Read|inactive|never|lc.chatTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|XhDOmRQ9Rxsn4jCK|WB TMP Probe Feedback GET|archived|never|manualTrigger|-|instance|?|-|-
 W|XqE2Go6BVPMxSq5D|OZON RAW Product Queries Sync|archived|never|scheduleTrigger|field=weeks,triggerAtDay=1,triggerAtHour=4|instance|?|-|-
 W|Xx2eAvmI6rHZLLA2|Deklaration TransmissionOel|archived|never|scheduleTrigger|field=weeks,triggerAtHour=2 + field=hours + field=weeks,triggerAtHour=2 + field=weeks,triggerAtHour=5 + field=weeks,triggerAtHour=1 + field=weeks,triggerAtHour=3|instance|?|-|-
@@ -152,6 +169,7 @@ W|Z68QJF5mYs3W8Uw8|TEST Ozon QA API Check|archived|never|manualTrigger|-|instanc
 W|ZIvTVFHNw9m2gns3|OZON Reviews Response|archived|never|scheduleTrigger|field=minutes,minutesInterval=30|instance|?|-|-
 W|ZXTQwjUkd81wyRoI|Git Log|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|Zh7hLysw3MPg1i1q|TEST Zone Sync ПРАВКА B — канарейка 2026-08-04|archived|never|manualTrigger|-|instance|?|-|-
+W|ZhpjwjErqHEpoFCA|MKT2 API ip_wb wb_statistics+finance+analytics+prices|active|same|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|ZyaOSSDvGsf0eq7L|LM_DECL — Worker (ядро парсинга)|active|same|executeWorkflowTrigger|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|aVpgEnYBAgIIss4k|Ozon RAW Accrual Sync|active|same|executeWorkflowTrigger,manualTrigger,scheduleTrigger|triggerAtHour=2|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|bFJsM3aFlIHIFeAd|DOSSIER INBOX Accept To Archive|active|same|scheduleTrigger|field=months,monthsInterval=100,triggerAtHour=3|instance|?|M5BLqclKBjGTpz33|-
@@ -179,6 +197,7 @@ W|fdiWemSCln1WA8gt|***|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|workflo
 W|ft4D2JGquVUzhtO0|Card Description Sync|inactive|never|formTrigger|-|instance|?|-|-
 W|fucfCvCqeXSQlBbe|LM_DECL — очистка листа (temp)|archived|never|manualTrigger|-|instance|?|-|-
 W|gFFiBPm1OomOzJOj|N8N Registry Sync|active|same|manualTrigger,scheduleTrigger|triggerAtHour=5,triggerAtMinute=30|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|gJv4sGN4QjzohlLE|MKT2 Collect /v1/finance/accrual/by-day|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=4,triggerAtMinute=20|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|gb4og08Wk2lVoAnH|LM_DECL — FSA Probe (temp)|archived|never|scheduleTrigger|expression=0 3 1 1 *,field=cronExpression|instance|?|-|-
 W|gglEq5U90Gt3sI7h|Получение nmID WB|active|same|manualTrigger,scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
 W|gm0wuzMLSc7c6fMx|WB RAW Finance Sync|archived|never|-|-|Europe/Berlin|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -189,6 +208,7 @@ W|jEYQtwSxCEF0Swiv|ARTIKEL_PROPS — Build (manuell)|inactive|never|manualTrigge
 W|jQpU63fMxoLUcuIG|WB RAW History Load|archived|never|scheduleTrigger|field=months,monthsInterval=12|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|jWTJHPE42bTgytd7|TMP_Crypto_Check_H06|archived|never|manualTrigger|-|instance|?|-|-
 W|jb9L7xLCYyiJ95aa|KB Loader — Transmission Oil|active|same|manualTrigger,scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
+W|jqlRF24Ycl9HCoXW|MKT2 DDL|inactive|never|manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|kJTXJuHQAv1go52t|Claude → Obsidian|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|kJv2A7pI7mIAS5Lq|WB RAW History Load copy|archived|never|scheduleTrigger|field=months,monthsInterval=12|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|kNg2uEoYlaGOLC82|WB FBS Order Intake|active|same|scheduleTrigger|field=hours|instance|?|M5BLqclKBjGTpz33|-
@@ -218,6 +238,7 @@ W|nvNYvvmuOqGyHXfL|Claude → Google Docs Replace v2 (verified)|active|same|webh
 W|nxI4LTj4oHTYh3qA|Append text to Google Doc|archived|never|webhook|-|instance|?|-|-
 W|oJrg4XY0HZwPCq59|Контроль FBS Ozon|inactive|never|scheduleTrigger|field=hours|instance|?|-|-
 W|p3TOyeR4GnUmP695|SYS_INDEX Copy Staging to Target|archived|never|webhook|-|instance|?|-|-
+W|pd2K2KtImWlFfueW|MKT2 Collect Engine|active|same|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|q78KdtgIWGTySlFN|WB FBS Supply→Tracking Sync|active|same|executeWorkflowTrigger,scheduleTrigger|field=minutes,minutesInterval=15|instance|?|M5BLqclKBjGTpz33|-
 W|qIUgsRpTqHpyYyxr|Ozon RAW Accrual Backfill Day|archived|never|executeWorkflowTrigger,manualTrigger|-|instance|?|-|-
 W|qKgc8hhOLwehejYp|LM_DECL Intake (новые номера Liqui Moly → LM_DECL)|active|same|manualTrigger,scheduleTrigger|expression=30 5 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -230,6 +251,7 @@ W|r35gXE6VxvuacEfW|Cards Watch — незнакомые карточки (4 ка
 W|rRDyHKXhPrx1KvRL|WB Характеристики предмета ИП (инструмент)|inactive|never|manualTrigger|-|instance|?|-|-
 W|rV3UHUSC1kFsKORC|LM_DECL — TDS диагностика (temp)|archived|never|manualTrigger|-|instance|?|-|-
 W|rzQJDEmwsX7GCKQy|WB Transactions Migration - History Load|archived|never|manualTrigger,scheduleTrigger|field=months,monthsInterval=100|instance|?|-|workflowsFromSameOwner
+W|sGVOfYuvtgATzpeq|MKT2 Collect /api/analytics/v1/stocks-report/wb-warehouses|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=5,triggerAtMinute=50|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|sZsdZ6xCrhLzOWkS|WB Reviews Rollback|archived|never|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|sazYUzoDpfV18SFs|TMP Check Answered Sync|archived|never|manualTrigger|-|instance|?|-|-
 W|ss0QkY9V8YEMHf2B|WB Reviews Full History Load|active|same|scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
@@ -241,6 +263,7 @@ W|tjDpartntNeOHCRZ|WB Reviews Publication|active|same|webhook|-|instance|?|M5BLq
 W|tqPGNJZlJirbgm2o|ИНСТРУМЕНТ Зонд смены ключа узла Google Sheets|inactive|never|manualTrigger|-|instance|?|-|-
 W|tzBYQN0u8IuWOyUw|Projekt_OCR OEM_V.2|archived|never|manualTrigger|-|instance|?|-|-
 W|u06pa4u5sDYdQD3W|Ozon Copy Осн → ИП (инструмент)|inactive|never|manualTrigger|-|instance|?|-|-
+W|uF5DnBLAYrJErZ9f|MKT2 Collect /v4/posting/fbs/list|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=4,triggerAtMinute=10|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|uUwqH9RPjMfoax9M|Git Read Batch|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|uapccJY1O4ykyDi7|Claude → Create Folder|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|ujSvQq7stXmNZQYj|WB Reviews Rollback v2|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -255,6 +278,7 @@ W|wWFfPIAfLd7yunU8|KB TO — Annotation Preprocessor|active|same|manualTrigger,s
 W|xRAIcTOz8TdZAOYm|ARTIKEL_PROPS — OKPD2 aus Deklarationen (einmalig)|inactive|never|manualTrigger|-|instance|?|-|-
 W|xeOK5epLnbXxH4WT|TEST ПРАВКА-B Zone Sync (наряд 2)|archived|never|manualTrigger|-|instance|?|-|-
 W|xijbGRJS2apq61ls|OZON_UE Adapter Catch-up|inactive|never|manualTrigger|-|Europe/Berlin|?|M5BLqclKBjGTpz33|-
+W|y3xbdeUTl5SbQjKC|MKT2 Collect /api/finance/v1/sales-reports/list|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=5,triggerAtMinute=20|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|yJLJBGDxi7GPGYMX|WB Content Charcs Probe|archived|never|manualTrigger|-|instance|?|-|-
 W|zLb8826Aqth95MHp|Deklaration_MotorOel_V.4|archived|never|scheduleTrigger|field=months,monthsInterval=1000,triggerAtHour=5|instance|?|-|workflowsFromSameOwner
 W|zOoQ5v92MpBIRKUw|Password Rotation — SYS_INDEX + CORE (daily)|archived|never|scheduleTrigger|expression=0 0 * * *,field=cronExpression|instance|?|-|-
@@ -458,6 +482,7 @@ D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|DCdm1xOojRKOpn4I|07_Save_GTIN|goo
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|IHn3Bmyh1VeHf4Ya|03A_Fetch_Price_Master|googleSheets|default|-
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|J0v5swjXLfiANJa2|15_Save_SKU_Map_To_PriceMaster|googleSheets|appendOrUpdate|-
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|QCQI6utFFH3dvTJT|02_Read_MasterMap|googleSheets|default|-
+D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|R5a2wT4emV9sUBT4|02_Read_Artikel_A_N|googleSheets|read|Artikel
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|S4rZMUkI21dVu3ML|04_Read_Artikel|googleSheets|default|Artikel
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|S4rZMUkI21dVu3ML|05_Read_Current|googleSheets|default|CURRENT
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|VMPxWzXPefKT2R1B|01_Read_Price_Master|googleSheets|default|Artikel
@@ -536,17 +561,33 @@ D|dynamic|kJTXJuHQAv1go52t|Update file|googleDrive|update|-
 D|dynamic|kJTXJuHQAv1go52t|Upload file|googleDrive|default|-
 D|dynamic|nY5XeDw9VMAdYcEi|Append row in sheet|googleSheets|append|-
 D|dynamic|uapccJY1O4ykyDi7|Create folder|googleDrive|default|-
+X|202qnZlWcKHhBMTI|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
 X|38BkuLXhxXLTPpqQ|j0DU23IXnp7xggX9|05_Call1|wait
 X|38BkuLXhxXLTPpqQ|j0DU23IXnp7xggX9|08_Call2|wait
 X|38BkuLXhxXLTPpqQ|j0DU23IXnp7xggX9|11_Call3|wait
 X|38BkuLXhxXLTPpqQ|j0DU23IXnp7xggX9|14_Call4|wait
 X|5MDOGVCTxwDjHqy3|BPVFEmZF6QxXuTB6|04_Call_Adapter|wait
 X|5MDOGVCTxwDjHqy3|aVpgEnYBAgIIss4k|03_Call_RAW_Sync|wait
+X|9Bsr5pqvXupvB238|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
+X|CJ2hKZFNG4SXFs29|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
+X|E0CHJ5l1ybJXFRte|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
+X|FXw0wRAtLUaxEjzY|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
 X|IG49VPuULlv60IOz|ZyaOSSDvGsf0eq7L|04_Execute_Worker|wait
+X|N11s3B8ZMz9RMXGd|dynamic|03_Call_Proxy|wait
 X|OnEludZYMusvFxTS|ZyaOSSDvGsf0eq7L|04_Execute_Worker|wait
+X|P53i6U31tpmdHHJK|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
+X|QL2OCGZa5kzRRsg2|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
 X|QmPIz9uhfU48FcWX|2ZxUm8WNzccoVfuy|04_Execute_Worker_ROSS|wait
+X|TCbW7KGTccSJDgzW|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
+X|U0P4iPkSmlKtvdD4|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
+X|UvWU13d9oV1eNYDE|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
 X|YQBfmS0fC7IPcsbz|q78KdtgIWGTySlFN|06B_Call_Supply_Sync|nowait
+X|gJv4sGN4QjzohlLE|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
+X|pd2K2KtImWlFfueW|dynamic|05_Call_Proxy|wait
+X|sGVOfYuvtgATzpeq|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
+X|uF5DnBLAYrJErZ9f|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
 X|xijbGRJS2apq61ls|BPVFEmZF6QxXuTB6|02_Call_Adapter|wait
+X|y3xbdeUTl5SbQjKC|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
 H|5Rs6pNDSm4weWDVj|02E_Fetch_Harvest|72DWYjGbeAxEgYwj|internal
 H|5Rs6pNDSm4weWDVj|04C_Call_GDocs_Append|YfzWwu1VmIUCbUu0|internal
 H|5Rs6pNDSm4weWDVj|04D_ReadBack_Tail|hJZhQ9KaeFgeRm3k|internal
@@ -596,6 +637,7 @@ C|2g4zVTcfYLLwrF73|httpHeaderAuth|1
 C|2vWu3qaUkYFlDt4v|googleApi|1
 C|2vWu3qaUkYFlDt4v|httpHeaderAuth|1
 C|2vWu3qaUkYFlDt4v|postgres|3
+C|30wmV6YOFaSGAHVs|httpHeaderAuth|1
 C|38BkuLXhxXLTPpqQ|httpHeaderAuth|1
 C|3ARodiEgXWs4DGmx|httpHeaderAuth|1
 C|4dWCd1l1QiUQBPQQ|httpHeaderAuth|4
@@ -621,6 +663,7 @@ C|7x9wPrugdbseaEp2|googleApi|3
 C|7x9wPrugdbseaEp2|httpHeaderAuth|3
 C|7x9wPrugdbseaEp2|telegramApi|1
 C|8ImKyDrw1Q2JIfHw|googleDriveOAuth2Api|4
+C|95w8XpN3OHNl2NsE|httpCustomAuth|1
 C|9Qhnkz9E6mjidqs5|googleApi|4
 C|9Qhnkz9E6mjidqs5|httpHeaderAuth|3
 C|AVoemWtBLO8L0Kdm|googleApi|1
@@ -678,6 +721,7 @@ C|J0v5swjXLfiANJa2|googleApi|1
 C|J0v5swjXLfiANJa2|httpCustomAuth|2
 C|JaSDlwWAmjpYmEaD|googleApi|1
 C|JaSDlwWAmjpYmEaD|postgres|5
+C|JzoU49Wy2soTzZ44|httpHeaderAuth|1
 C|KEucSnA2duWI3eRA|googleApi|3
 C|KEucSnA2duWI3eRA|googleDriveOAuth2Api|1
 C|KQqajdrYKxle9JRe|googleApi|2
@@ -717,6 +761,7 @@ C|Omt9oDYf7NthOw5T|githubApi|1
 C|Omt9oDYf7NthOw5T|httpHeaderAuth|1
 C|OnEludZYMusvFxTS|googleApi|3
 C|OnEludZYMusvFxTS|telegramApi|1
+C|OtPuEpGpiWdIblge|postgres|1
 C|P7CZYJZWIqC5Me4c|googleApi|1
 C|P7CZYJZWIqC5Me4c|httpHeaderAuth|1
 C|PWFVE0UbM3ajvVFc|googleApi|3
@@ -724,6 +769,8 @@ C|PWFVE0UbM3ajvVFc|httpCustomAuth|2
 C|QCQI6utFFH3dvTJT|googleApi|3
 C|QCQI6utFFH3dvTJT|httpHeaderAuth|3
 C|QmPIz9uhfU48FcWX|googleSheetsOAuth2Api|2
+C|R5a2wT4emV9sUBT4|googleApi|1
+C|R5a2wT4emV9sUBT4|postgres|1
 C|R8w94X0mT0Fa2Oil|googleApi|2
 C|R8w94X0mT0Fa2Oil|httpHeaderAuth|3
 C|R8w94X0mT0Fa2Oil|postgres|1
@@ -754,6 +801,7 @@ C|XFEhjlkrXXnl1bpU|httpCustomAuth|1
 C|XFEhjlkrXXnl1bpU|httpHeaderAuth|1
 C|XG4gzxtqPJXafBXN|googleApi|4
 C|XG4gzxtqPJXafBXN|httpCustomAuth|1
+C|XP6mOTq6EJ3Mjxav|postgres|1
 C|YQBfmS0fC7IPcsbz|googleApi|1
 C|YQBfmS0fC7IPcsbz|telegramApi|4
 C|YfzWwu1VmIUCbUu0|googleApi|2
@@ -764,6 +812,7 @@ C|YozhFlVFZVKnj3U8|googleApi|1
 C|Z2mVOq6AQDwXyTo7|googleApi|5
 C|ZXTQwjUkd81wyRoI|githubApi|1
 C|ZXTQwjUkd81wyRoI|httpHeaderAuth|1
+C|ZhpjwjErqHEpoFCA|httpHeaderAuth|1
 C|ZyaOSSDvGsf0eq7L|httpHeaderAuth|2
 C|aVpgEnYBAgIIss4k|googleApi|1
 C|aVpgEnYBAgIIss4k|httpCustomAuth|2
@@ -801,6 +850,7 @@ C|jEYQtwSxCEF0Swiv|googleApi|3
 C|jb9L7xLCYyiJ95aa|googleApi|1
 C|jb9L7xLCYyiJ95aa|httpHeaderAuth|1
 C|jb9L7xLCYyiJ95aa|postgres|3
+C|jqlRF24Ycl9HCoXW|postgres|1
 C|kJTXJuHQAv1go52t|googleDriveOAuth2Api|2
 C|kJTXJuHQAv1go52t|httpHeaderAuth|1
 C|kNg2uEoYlaGOLC82|googleApi|6
@@ -826,6 +876,7 @@ C|nvNYvvmuOqGyHXfL|httpHeaderAuth|1
 C|oJrg4XY0HZwPCq59|googleSheetsOAuth2Api|2
 C|oJrg4XY0HZwPCq59|httpCustomAuth|3
 C|oJrg4XY0HZwPCq59|telegramApi|1
+C|pd2K2KtImWlFfueW|postgres|4
 C|q78KdtgIWGTySlFN|googleApi|4
 C|q78KdtgIWGTySlFN|httpHeaderAuth|1
 C|q78KdtgIWGTySlFN|telegramApi|1
@@ -880,6 +931,12 @@ R|LguGCDYJvMQSahcj|BPVFEmZF6QxXuTB6|Config Daily Workflows
 R|LguGCDYJvMQSahcj|aVpgEnYBAgIIss4k|Config Daily Workflows
 R|LguGCDYJvMQSahcj|c9B1w8njEilu8mqx|Config Daily Workflows
 R|LguGCDYJvMQSahcj|gFFiBPm1OomOzJOj|Config Daily Workflows
+R|N11s3B8ZMz9RMXGd|95w8XpN3OHNl2NsE|02_Sample_Requests
+R|N11s3B8ZMz9RMXGd|JzoU49Wy2soTzZ44|02_Sample_Requests
+R|N11s3B8ZMz9RMXGd|ZhpjwjErqHEpoFCA|02_Sample_Requests
+R|OtPuEpGpiWdIblge|95w8XpN3OHNl2NsE|02_Seed_Ref
+R|OtPuEpGpiWdIblge|JzoU49Wy2soTzZ44|02_Seed_Ref
+R|OtPuEpGpiWdIblge|ZhpjwjErqHEpoFCA|02_Seed_Ref
 R|PWFVE0UbM3ajvVFc|J0v5swjXLfiANJa2|Sticky Note 79ec3ff0
 R|TXNstdVL8xlIygBp|B5jkqW0bUScxmTi7|10B_Watchlist_Items
 R|TXNstdVL8xlIygBp|B5jkqW0bUScxmTi7|12_Run_Checks
@@ -893,6 +950,8 @@ R|ft4D2JGquVUzhtO0|J0v5swjXLfiANJa2|Sticky Note 03689492
 R|ft4D2JGquVUzhtO0|QCQI6utFFH3dvTJT|Sticky Note 03689492
 R|m31GGno1ZOQ0a2Xf|nIRKnhKyI5LibFW3|03_Build
 R|nvNYvvmuOqGyHXfL|M5dqSv2yiklnDXoP|Parse Payload
+R|pd2K2KtImWlFfueW|IvgysDKrq3UISYEY|06_Parse_Page
+R|pd2K2KtImWlFfueW|aVpgEnYBAgIIss4k|06_Parse_Page
 R|tABmSQXQalGnjRJw|2KorY7GdncsIs5Ro|Config Intraday Workflows
 R|tABmSQXQalGnjRJw|DM26WhTJyCV0DhkP|Config Intraday Workflows
 R|tABmSQXQalGnjRJw|GVyBj6xEcFjnmQ09|Config Intraday Workflows
