@@ -68,7 +68,7 @@ ANIS_EVIDENCE вес 3   — доказательная справка по ан
 
 CARD_CONTENT_SYNC вес 6   — карточки Wildberries двух кабинетов (основной и ИП): книга описаний, перенос карточек основного кабинета в ИП; с 2026-10-18 только WB, Ozon — отдельный будущий проект (папка projects/card-content-sync/; вес подтвердил Андрей 2026-10-05; граница — LOG.md Р-11 проекта)
 
-DEKLARATION_OZON вес 8   — декларации соответствия Liqui Moly в карточках Ozon (Wildberries — DEKLARATION_WB); товар без декларации не продаётся (папка projects/deklaration-ozon/; вес назначил Андрей 2026-10-06)
+DEKLARATION_OZON вес 8   — декларации соответствия Liqui Moly в карточках Ozon (Wildberries — DEKLARATION_V2, с 2026-10-21 вместо закрытого DEKLARATION_WB); товар без декларации не продаётся (папка projects/deklaration-ozon/; вес назначил Андрей 2026-10-06)
 
 DEKLARATION_WB закрыт 2026-10-21 (поглощён DEKLARATION_V2)   — прежде вес 8 — декларации и другие документы в карточках Wildberries, кабинеты основной и ИП; карточку без подтверждённого документа WB может скрыть (папка projects/deklaration-wb/; вес назначил Андрей 2026-10-08)
 
