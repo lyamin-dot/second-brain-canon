@@ -24,7 +24,7 @@ projects/knowledge-synthesis/STATE.md
 
 000. `google-drive-docs` (синтез 2026-10-22): zip залит, живой Skill равен зеркалу (снимок 17:41, `diff -rq` пуст). Ждут ответа Андрея списки «Ослаблено», «Расширено», «Противоречия» отчёта `meta/SYNTHESIS_google-drive-docs_2026-10-22.md`; дописка в n8n-engineering-manual — позиция AJ-48.
 00. `apps-script-sheets` (синтез 2026-10-22): zip залит, живой Skill равен зеркалу (снимок 17:02, `diff -rq` пуст). Ждут ответа Андрея списки «Расширено» и «Вопросы Андрею» отчёта `meta/SYNTHESIS_apps-script-sheets_2026-10-22.md`.
-0. Залить zip `n8n-engineering-manual` (переложение 2026-10-22); после заливки — сверка `diff -rq skills/n8n-engineering-manual /mnt/skills/plugins/n8n-engineering-manual` (пусто) и поведенческий тест, раздел 2 `meta/TEST_skill-layers_2026-10-22.md`.
+0. Zip `n8n-engineering-manual` залит, сверка `diff -rq skills/n8n-engineering-manual /mnt/skills/plugins/n8n-engineering-manual` пуста (2026-10-26). Остался поведенческий тест, раздел 2 `meta/TEST_skill-layers_2026-10-22.md`.
 1. Мастер-промпты ozon-ue и wb-ue: по словам Андрея текст вставлен 2026-10-22; приёмка по объекту — первой сессией каждого из этих проектов (позиция AJ-36 `registry/maintenance-queue.md`).
 2. Возврат из архива трёх одноразовых воркфлоу deklaration-wb (имена — `projects/deklaration-wb/STATE.md`, запись Р-18 `projects/deklaration-wb/LOG.md`): действие руками в интерфейсе n8n.
 3. Решения по 23 оставшимся находкам Архивариуса — задача `labs/sys/t-triage-findings.md` (по denken решено 2026-10-22).
