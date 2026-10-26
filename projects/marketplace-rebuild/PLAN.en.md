@@ -139,3 +139,6 @@ Open for Andrei (pilot runs without): article brand + Lopal article list (option
 Old homes to disable at switch-over (after reconciliation + yes, never delete): 2 cost_price_history sheets, Ozon_IP_SKU_Staging + PWFVE0UbM3ajvVFc (workflow archived 26.10, Р-21), WB_Cards_Staging_IP + vIteQxGrqI7kLkb0, Artikel!N, Artikel!AA, MASTER_MAP.
 Builder notes: snapshot date = run start Moscow; «Закупка» key uniqueness unverified; Ozon warehouse stock truth rule (stock_product vs analytics) to set from first response; natural keys marked hypothesis must be fixed in contract row before load.
 Builder deviations accepted (LOG Р-18): collector = thin scheduled wrapper `MKT2 Collect <method>` + shared `MKT2 Collect Engine` pd2K2KtImWlFfueW; WB stock element = one size on one warehouse, key nmId_chrtId_warehouseId; called sub-workflows (engine, proxies) must be published; load window from 2026-10-01 (history depth = Andrei question).
+
+## 14 Tools
+DOCS_FOLDER: 1vECymYl2-U_NgUlO43dp47X0x2sk-Mot — Drive folder of MKT2 workflow passports («MARKETPLACE_REBUILD DOCS», Andrei Drive root), created 2026-10-26 by «Claude → Create Folder», exec 87412 (passport order Н-26.10-02а). Passport name MKT2_WF_<name>; passport IDs in registry/documents.md.
