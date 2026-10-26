@@ -12,7 +12,7 @@ projects/n8n/PLAN.md
 
 ## Связи
 
-- WB_UE → cost_monitor строка 17 ждёт operation_category из n8n [строка 59]
+- WB_UE → cost_monitor строка 17 ждала operation_category из n8n [строка 59] — снято 2026-10-26: WB_UE принял, возвраты считает «WB · Деньги» по operation_category return (`projects/wb-ue/STATE.md`, строки «От соседнего проекта»)
 - OZON_UE → OZON RAW Konversion Sync (SElTcMg3BpY6pmdo) — источник данных [строка 60]
 - WB_REVIEWS → WB Reviews Intake (mAaWSmoXDH9Ofgg3), WB Telegram Alerts (c9B1w8njEilu8mqx) [строка 61]
 
