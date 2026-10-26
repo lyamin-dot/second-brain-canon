@@ -259,3 +259,8 @@ MKT2_WF_mirror-ref-article: 1DojlhAB0cBmz_ETp60X5u3FODB65y9TZy-sbDMBvSgw — Goo
 MKT2_WF_api-ip-ozon-ozon-seller: 1oREuMbrBS3L1qcdNYHEbGojq8v3d-yP10a4uG0aHIGs — Google Doc (text/plain), паспорт посредника «MKT2 API ip_ozon ozon_seller» 95w8XpN3OHNl2NsE. Создан 2026-10-26 create_file.
 MKT2_WF_api-ip-wb-wb-content: 1Y1GezDbdoOSB4JJaEISYm7HF43aM31rJ3qx8LqBBH7w — Google Doc (text/plain), паспорт посредника «MKT2 API ip_wb wb_content» JzoU49Wy2soTzZ44. Создан 2026-10-26 create_file.
 MKT2_WF_api-ip-wb-stat-fin-an-price: 1AeZ9xe645pky9jlHDPL43E1VFcfXyB3dFRWXKRLHyxw — Google Doc (text/plain), паспорт посредника «MKT2 API ip_wb wb_statistics+finance+analytics+prices» ZhpjwjErqHEpoFCA. Создан 2026-10-26 create_file.
+
+<!-- 2026-10-26 | marketplace-rebuild, ревизия справочника Н-26.10-02 (Р-25); строки книг — находка ревизора 6.2 -->
+SPRAVOCHNIK_LM_book: 1UBiXDZDHfMwxK3Q6mDRYaG65MjnIF2K7ygZhWhOPumY — Google Sheets «Справочник LM 2026.08.20», действующий справочник Liqui Moly (ID стоит в ячейке J3 листа «Акт.цена» книги «Актуальные цены Lique Moly»; при новом прайсе меняется). Листы: «ВсеЦены» (прайс поставщика), «РРЦиМП» (ручной ввод артикула), «Артикулы» (проекция). Устройство — meta/PRODUCT_DATA_HIERARCHY.md.
+SPRAVOCHNIK_LOPAL_book: 1fkPSS9ZJ1NquPRDwPh1a4bjPM05XOoOWUVyDeypZBPU — Google Sheets «Справочник LOPAL_19 08 26», справочник бренда Lopal; листы «Прайс», «РРЦиМП».
+AUDIT_area1_drive_copy: 187dqUgvCOQNGCHc4NBF_W8p8C1P-x1tS — транспортная копия отчёта ревизора (text/markdown) в папке «MARKETPLACE_REBUILD DOCS»; канон — projects/marketplace-rebuild/AUDIT_area1_2026-10-26.md.
