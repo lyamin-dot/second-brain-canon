@@ -36,7 +36,7 @@ projects/wb-reviews/STATE.md
 
 [ ] Р-4. Rollback v2 (ujSvQq7stXmNZQYj): перед PATCH отзыва читать поле editable из GET /api/v1/feedback и при editable=false не тратить вызов, возвращать outcome «not_editable». Требует «да». Готово = прогон на TEST_REV_ROLLBACK_001 возвращает not_editable без PATCH.
 
-[ ] Р-5. Обработка ошибок: errorWorkflow M5BLqclKBjGTpz33 не задан у KB AC Annotation Preprocessor (5Iyr82zmzCeievFv), KB TO Annotation Preprocessor (wWFfPIAfLd7yunU8) и gdocs-apply-from-file (fdiWemSCln1WA8gt); у 06_Call_Claude во всех трёх препроцессорах нет retryOnFail. Требует «да» (настройки, не логика). Готово = get_workflow_details показывает errorWorkflow у всех трёх и retryOnFail у 06_Call_Claude.
+[ ] Р-5. Обработка ошибок: errorWorkflow M5BLqclKBjGTpz33 уже привязан ко всем трём (снимок `registry/n8n-map.md` 2026-10-26; запись Р-6 журнала `projects/n8n/LOG.md`) — осталось только retryOnFail; сверка 2026-10-26. Прежний текст: errorWorkflow не задан у KB AC Annotation Preprocessor (5Iyr82zmzCeievFv), KB TO Annotation Preprocessor (wWFfPIAfLd7yunU8) и gdocs-apply-from-file (fdiWemSCln1WA8gt); у 06_Call_Claude во всех трёх препроцессорах нет retryOnFail. Требует «да» (настройки, не логика). Готово = get_workflow_details показывает errorWorkflow у всех трёх и retryOnFail у 06_Call_Claude.
 
 [ ] Р-6. Последняя зависимость от OAuth Google: WB Reviews History Load (GTrCbV5GmyhJKcNd) — Google Sheets ноды без явной аутентификации (по умолчанию OAuth2). Все пять gdocs-воркфлоу уже на сервисном аккаунте (проверено 2026-10-05). Требует «да». Готово = все Sheets-ноды History Load на serviceAccount; задача «перевести Docs-запись на Service Account» закрыта.
 
