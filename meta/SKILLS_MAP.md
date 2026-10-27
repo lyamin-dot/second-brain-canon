@@ -519,7 +519,7 @@ aa10976734cf6136810ef9b9e2d0b73028e7cd178bc9a2ee73a34d3eb32a67bf  second-brain-g
 Строк истории правок в шапках: 0 (версия только во frontmatter `context-handoff/SKILL.md:3` «version: \"1.1\" created: 2026-08-03 supersedes: \"1.0\"»).
 
 ### 5.10 denken
-Синтез 2026-10-21 (отчёт `meta/SYNTHESIS_denken_2026-10-21.md`): `denken` — дом механизмов кластеров 1–5, копии в `naryad` и `avtopilot` ссылаются сюда; кластер 6 (история) свёрнут; находки стадии Б Архивариуса по `denken` ждут решения в `labs/sys/t-triage-findings.md`. Адреса строк ниже — текст на коммите d72cc65.
+Синтез 2026-10-21 (отчёт `meta/SYNTHESIS_denken_2026-10-21.md`): `denken` — дом механизмов кластеров 1–5, копии в `naryad` и `avtopilot` ссылаются сюда; кластер 6 (история) свёрнут; находки стадии Б Архивариуса по `denken` ждут решения в `meta/CASES_sys-lab-closed-2026-10-27.md` (раздел «labs/sys/t-triage-findings.md»). Адреса строк ниже — текст на коммите d72cc65.
 1. Генерация ≠ оценка, превосходная степень, слабое звено — §2 п.91, 90 — `denken/SKILL.md:22`–`denken/SKILL.md:32`, `denken/SKILL.md:78` — КОПИИ.
 2. Стоп-линия два круга — §2 п.92 — `denken/SKILL.md:112`–`denken/SKILL.md:118` — КОПИИ.
 3. Барьеры класса свой и квитанция рамки; показание к операции, смена цели — §2 п.40, 46 — `denken/SKILL.md:50`–`denken/SKILL.md:66` — КОПИИ.

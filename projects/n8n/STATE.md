@@ -54,7 +54,7 @@ projects/n8n/STATE.md
 
 ## Правила, вынесенные из закрытых задач
 
-- Восстановление инстанса — из ежедневного дампа базы n8n в Google Drive (папка «n8n-server-backup», с 25.10 вместе с базами mkt2 и liquimoly_kb, копия в MEGA; адреса и ход — `labs/sys/t-n8n-backup-stopped.md`, `labs/sys/t-server-knowledge.md`); свежесть проверяет узел 00_Backup_Freshness воркфлоу Workflow Health Monitor — Daily LguGCDYJvMQSahcj (строка в сводке 08:00). Снимок registry/n8n-map.md — карта, не бэкап; JSON воркфлоу отдельно не хранится (решение Р-9 журнала projects/n8n-map/LOG.md). Дамп без ключа шифрования N8N_ENCRYPTION_KEY ключи доступа не восстанавливает (n8n-engineering-manual §8).
+- Восстановление инстанса — из ежедневного дампа базы n8n в Google Drive (папка «n8n-server-backup», с 25.10 вместе с базами mkt2 и liquimoly_kb, копия в MEGA; адреса и ход — `meta/CASES_sys-lab-closed-2026-10-27.md` (раздел «labs/sys/t-n8n-backup-stopped.md»), `labs/sys/t-server-knowledge.md`); свежесть проверяет узел 00_Backup_Freshness воркфлоу Workflow Health Monitor — Daily LguGCDYJvMQSahcj (строка в сводке 08:00). Снимок registry/n8n-map.md — карта, не бэкап; JSON воркфлоу отдельно не хранится (решение Р-9 журнала projects/n8n-map/LOG.md). Дамп без ключа шифрования N8N_ENCRYPTION_KEY ключи доступа не восстанавливает (n8n-engineering-manual §8).
 
 - Описание воркфлоу длиннее 255 знаков (18 воркфлоу на 2026-10-16) операция setWorkflowMetadata не принимает: при правке описания через MCP сначала укоротить, сохранив строку PASSPORT, либо править в редакторе.
 - Имя «***» в снимке — маскировка имени, содержащего путь своего вебхука (projects/n8n-map/PLAN.md, раздел 4); настоящее имя — get_workflow_details. Не дефект, не расследовать.

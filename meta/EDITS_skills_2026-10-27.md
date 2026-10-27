@@ -136,6 +136,59 @@ body `{fileId, text}` → `{success, fileId, ...}`. Read-back зашит в ко
 - **БЛОКЕР** — уже зафиксированный объект: существующая строка с меткой БЛОКЕР в `labs/sys/INDEX.md`, в файле STATE.md проекта в репозитории или в Зоне А INDEX Docs-проекта. Сообщи о ней сразу, со ссылкой на эту строку — это не отвлечение, а то же дело другими словами. Файл `core/R-05.md` (CORE Р.5) держит только формулу приоритета и метки, строк с блокерами в нём нет.
 ```
 
+
+### А7. Ссылки Skills на задачи лаборатории, закрытые 2026-10-27 (позиция AJ-64)
+
+Тексты закрытых задач перенесены без изменений в `meta/CASES_sys-lab-closed-2026-10-27.md` (Skill second-brain-git, пункт 4б.6). Четыре ссылки в Skills ведут на удалённые пути.
+
+Правка 1. Skill google-drive-docs, references/basis.md — фраза встречается дважды, заменить обе.
+
+Было:
+```
+пункт 2 файла `labs/sys/t-harvest-close-leftovers.md`
+```
+
+Стало:
+```
+пункт 2 закрытой задачи `labs/sys/t-harvest-close-leftovers.md` (текст — `meta/CASES_sys-lab-closed-2026-10-27.md`, раздел «labs/sys/t-harvest-close-leftovers.md»)
+```
+
+Правка 2. Skill google-drive-docs, references/basis.md.
+
+Было:
+```
+`labs/sys/t-n8n-backup-stopped.md`, абзац «Ход 2026-10-18», строка 39
+```
+
+Стало:
+```
+`meta/CASES_sys-lab-closed-2026-10-27.md`, абзац «Ход 2026-10-18», строка 183 (текст закрытой задачи `labs/sys/t-n8n-backup-stopped.md`)
+```
+
+Правка 3. Skill google-drive-docs, references/infra.md.
+
+Было:
+```
+задачи `labs/sys/t-server-knowledge.md` и `labs/sys/t-n8n-backup-stopped.md`
+```
+
+Стало:
+```
+`meta/CASES_server-tools.md`, раздел «Бэкап баз сервера n8n», и задача `labs/sys/t-server-knowledge.md`
+```
+
+Правка 4. Skill naryad, references/revision.md.
+
+Было:
+```
+(пункт П-05 задачи `labs/sys/t-maintenance-audit.md`)
+```
+
+Стало:
+```
+(пункт П-05 закрытой задачи `labs/sys/t-maintenance-audit.md`; текст и вердикт — `meta/CASES_sys-lab-closed-2026-10-27.md`)
+```
+
 ---
 
 ## Блок Б — только после перевода репозитория в приватный и проверки Канала (позиция AJ-62)
@@ -206,4 +259,4 @@ body `{fileId, text}` → `{success, fileId, ...}`. Read-back зашит в ко
 ## Что сознательно не правится
 
 - Skill apps-script-sheets, шаг «3. Проект» (отзыв 1 задачи `labs/sys/t-apps-script-skill-feedback.md`): поясняющая фраза уже стоит в живом Skill — «Гейт не повторяется, если этот план уже согласован с Андреем в чате или записан в `PLAN.md` проекта». Правка не нужна.
-- 23 находки сверки Архивариуса (`labs/sys/t-triage-findings.md`): 19 уже исправлены синтезами Skills 2026-10-19…22; 4 живут в справочниках `meta/CASES_wb-api.md` и `meta/CASES_ozon-api.md`, это не Skill — вопрос в итоговом отчёте.
+- 23 находки сверки Архивариуса (`meta/CASES_sys-lab-closed-2026-10-27.md` (раздел «labs/sys/t-triage-findings.md»)): 19 уже исправлены синтезами Skills 2026-10-19…22; 4 живут в справочниках `meta/CASES_wb-api.md` и `meta/CASES_ozon-api.md`, это не Skill — вопрос в итоговом отчёте.
