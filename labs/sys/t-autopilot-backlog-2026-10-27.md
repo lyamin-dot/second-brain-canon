@@ -52,7 +52,7 @@ labs/sys/t-autopilot-backlog-2026-10-27.md
 
 1. GitHub и n8n, около 15 минут:
    а) github.com → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token: доступ только к репозиторию lyamin-dot/second-brain-canon, право Contents — Read and write, срок — год;
-   б) n8n → Credentials → ключ «GitHub account» → вставить новый токен → Save;
+   б) n8n → Credentials → ключ доступа GitHub, которым ходит Канал (его имя сессия назовёт в чате; в репозиторий имена ключей не пишутся) → вставить новый токен → Save;
    в) репозиторий second-brain-canon → Settings → General → Change visibility → Private.
 2. Залить архивы Skills: набор «AB», если пункт 1 сделан целиком, иначе набор «A» (Customize → Skills, шесть архивов: second-brain-engineer, google-drive-docs, n8n-engineering-manual, second-brain-git, avtopilot, naryad).
 3. Мастер-промпты: проект SYS — пункт А6 файла правок; проект wb-logistics — пункт Б5 (только если пункт 1 сделан); проект wb-ue — текст позиции AJ-52 очереди.
