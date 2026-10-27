@@ -29,10 +29,12 @@ frozen_read_line = m.group(0) if m else ""
 # --- step 1: experience documents in Google Docs ---
 docs = []
 for ln in read("registry/documents.md").splitlines():
-    mm = re.match(r"^([A-Za-z0-9_]+)(?:\s*\([^)]*\))?\s*:\s*(\S+)(.*)$", ln)
+    # The parenthesis before the colon may itself contain parentheses (PROJECT_LOG_SYS),
+    # so it is matched greedily up to the last ")" that is followed by ": <id>".
+    mm = re.match(r"^([A-Za-z0-9_]+)(\s*\(.*\))?\s*:\s*(\S+)(.*)$", ln)
     if not mm:
         continue
-    name, did, rest = mm.group(1), mm.group(2), mm.group(3)
+    name, did, rest = mm.group(1), mm.group(3).rstrip(",;."), (mm.group(2) or "") + mm.group(4)
     if not re.search(r"INDEX|JOURNAL|LOG", name):
         continue
     low = (rest or "").lower()
@@ -47,10 +49,6 @@ for ln in read("registry/documents.md").splitlines():
     already = name in frozen_read_line
     docs.append({"name": name, "id": did, "frozen_mark_in_registry": frozen,
                  "in_frozen_read_line": already, "excluded": excluded})
-# PROJECT_LOG_SYS is written with a parenthesis before the colon
-if "PROJECT_LOG_SYS" in read("registry/documents.md") and not any(d["name"] == "PROJECT_LOG_SYS" for d in docs):
-    docs.append({"name": "PROJECT_LOG_SYS", "id": None, "frozen_mark_in_registry": True,
-                 "in_frozen_read_line": "PROJECT_LOG_SYS" in frozen_read_line, "excluded": None})
 
 # --- step 1b: projects and labs in the repository ---
 projects, labs = [], []
