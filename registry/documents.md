@@ -268,3 +268,9 @@ AUDIT_area1_drive_copy: 187dqUgvCOQNGCHc4NBF_W8p8C1P-x1tS — транспорт
 <!-- 2026-10-27 | marketplace-rebuild, наряд Н-27.10-01, приёмка — запись Р-32 журнала projects/marketplace-rebuild/LOG.md -->
 MKT2_PRICES_TO_REPRICER_book: 1a9q-Cyyik27I3bf72DHJ67DogfKwvlTrUQLNYPsrHLM — Google Sheets «MKT2 Цены к репрайсеру», папка «03 Задачи/Репрайсер ИЗМЕНЕНИЯ» (1sCKmaqRes0GAGm9qojsL9cx7jZLObWhI). Единственный дом правил цены для репрайсера: формулы и лист «Параметры»; листы «Инструкция» (ручной путь), «Прайс», «Цены прайса», «Выгрузка WB ИП», «К загрузке WB ИП». Заполняет воркфлоу «MKT2 Prices To Repricer»; правила — записи Р-29…Р-31.
 MKT2_PRICES_TO_REPRICER_testcopy: 1YO35h9IfelxzbKVkNf6lt1-Do0IY92E8rAkk7hVqfT4 — копия книги MKT2_PRICES_TO_REPRICER_book для проверки ручного пути (пункт (д) наряда Н-27.10-01); после проверки — в корзину только с «да» Андрея.
+
+<!-- 2026-10-27 | wb-ue, автопилот 27.10 — запись Р-81 журнала projects/wb-ue/LOG.md -->
+WB_GS_goods-book_en: 1i5NUHZKbOWgKBlW2yob3z1vEbUG2ZbdEP64pVcArlk0 — Google Doc, DOCS_FOLDER проекта WB_UE (1nOwTGH6AR9vKfM1VM-mThfnRmDAaeOZn). Паспорт скрипта wb_goods_book.gs книги «WB · Товары», агентская копия; при расхождении права она. Создан 2026-10-27 create_file.
+WB_GS_goods-book_ru: 1wzusxih_DQaBNu5NNRA9tXclkJPCkoa80p8kjHF1Jww — Google Doc, та же папка. Паспорт скрипта wb_goods_book.gs, копия для человека. Создан 2026-10-27 create_file.
+WB_GS_price-book_en: 148kXgROCetjDmuokCNzW6aiEKe5wzzbmDrRCpmH1UNs — Google Doc, та же папка. Паспорт скрипта wb_price_book.gs книги «WB · Цена», агентская копия; при расхождении права она. Создан 2026-10-27 create_file.
+WB_GS_price-book_ru: 1fRTtIHPS-0W8XpaNkqlcENl0QEVT84GqL9MnKHXRsDY — Google Doc, та же папка. Паспорт скрипта wb_price_book.gs, копия для человека. Создан 2026-10-27 create_file; обратное чтение gdocs-read 88300: 7077 Б, кончается маркером %%ЗОНА_В_КОНЕЦ%%.
