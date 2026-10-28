@@ -24,10 +24,10 @@ meta/OZON_UE_INPUTS_MAP.md
 
 | Кабинет | Права | Истекает | Кто пользуется |
 |---|---|---|---|
-| Кипарис (основной) | Admin и 30 частных ролей, чтение и запись (лист «Ключи», П) | 2 дек. 2026 (лист «Ключи», П) — перевыпуск: `labs/ozon-ue/t-n8n-ozon-workflow-defects.md`, раздел 2026-10-24 | все входы раздела 1; инструмент u06pa4u5sDYdQD3W (только чтение основного); вне OZON_UE: BLNA8sbdnLtuz7Uj, r35gXE6VxvuacEfW, 529VWvqSTg8l4fUU, 555GP7GWs1EL5FIO, IHn3Bmyh1VeHf4Ya, XG4gzxtqPJXafBXN, XFEhjlkrXXnl1bpU, oJrg4XY0HZwPCq59, tZ4NrzdAAurD4GQH, FnB2Imp7thMKuwnD, ft4D2JGquVUzhtO0 (ПП) |
+| Кипарис (основной) | Admin и 30 частных ролей, чтение и запись (лист «Ключи», П) | 2 дек. 2026 (лист «Ключи», П) — перевыпуск: `meta/CASES_ozon-ue-lab-closed-2026-10-28.md` (раздел «labs/ozon-ue/t-n8n-ozon-workflow-defects.md»), раздел 2026-10-24 | все входы раздела 1; инструмент u06pa4u5sDYdQD3W (только чтение основного); вне OZON_UE: BLNA8sbdnLtuz7Uj, r35gXE6VxvuacEfW, 529VWvqSTg8l4fUU, 555GP7GWs1EL5FIO, IHn3Bmyh1VeHf4Ya, XG4gzxtqPJXafBXN, XFEhjlkrXXnl1bpU, oJrg4XY0HZwPCq59, tZ4NrzdAAurD4GQH, FnB2Imp7thMKuwnD, ft4D2JGquVUzhtO0 (ПП) |
 | ИП | в списке разрешённых методов есть запись (/v3/product/import, /v1/product/import/prices, /v1/barcode/add); имя роли не прочитано | 2027-01-19 (ответ /v1/roles в книге «Описания карточек», лист «Перенос в Ozon ИП», B420; П) | u06pa4u5sDYdQD3W (П); eLBcH8MeE38NbMZq, m6svDS7yhrTjTCrt, GElwjPKkJQkCao3b — проект deklaration-ozon (ПП) |
 
-Ключ ИП: есть, но частично настроен — в лист «Ключи» не внесён; выгрузка товаров ИП PWFVE0UbM3ajvVFc к ключу не привязана, листа Ozon_IP_SKU_Staging в Price Master нет (П). Задача — `labs/ozon-ue/t-ozon-ip-cabinet.md`.
+Ключ ИП: есть, но частично настроен — в лист «Ключи» не внесён; выгрузка товаров ИП PWFVE0UbM3ajvVFc к ключу не привязана, листа Ozon_IP_SKU_Staging в Price Master нет (П). Задача — `meta/CASES_ozon-ue-lab-closed-2026-10-28.md` (раздел «labs/ozon-ue/t-ozon-ip-cabinet.md»).
 
 ## 3. Запись в площадку
 
@@ -74,7 +74,7 @@ meta/OZON_UE_INPUTS_MAP.md
 | реклама по SKU | полная прибыль | ни одного воркфлоу; «Параметры»: реклама пока не в данных (П). Гипотеза (не проверена): нужен отдельный ключ Performance API |
 | текущие цены, скидки, тарифы комиссий | калькулятор цены, правило «Ozon не выше WB» | /v5/product/info/prices читает только ручной инструмент u06p (П); ежедневно не делали |
 | заказы до доставки, отмены | ранний сигнал | не делали; начисления приходят по факту |
-| причины и статусы возвратов | `labs/ozon-ue/t-returns-dynamics.md` | не делали; деньги возвратов в начислениях есть (П) |
+| причины и статусы возвратов | `meta/CASES_ozon-ue-lab-closed-2026-10-28.md` (раздел «labs/ozon-ue/t-returns-dynamics.md») | не делали; деньги возвратов в начислениях есть (П) |
 | конверсия | — | ежедневный SElT снят, NTNN ручной (П) |
 | всё по кабинету ИП | учёт ИП | ключ есть, не привязан (раздел 2) |
 
