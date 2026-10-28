@@ -37,6 +37,8 @@ projects/gas-bridge/PLAN.md
 
 ## Контракт вызова (для сессий, компактно)
 
+Перед первым чтением или правкой кода книги этим мостом сессия загружает Skill apps-script-sheets: контракт ниже описывает только механику вызова и правил Skill не заменяет (отпечаток проекта, допуск и серии правок живут в Skill). Решение Андрея 2026-10-28, задача labs/sys/t-apps-script-skill-feedback.md.
+
 ```
 execute_workflow workflowId=38BkuLXhxXLTPpqQ executionMode=manual triggerNodeName=01_Webhook
   inputs={webhookData:{method:"POST",body:{...}}}
