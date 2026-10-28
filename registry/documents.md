@@ -262,7 +262,7 @@ MKT2_WF_api-ip-wb-stat-fin-an-price: 1AeZ9xe645pky9jlHDPL43E1VFcfXyB3dFRWXKRLHyx
 
 <!-- 2026-10-26 | marketplace-rebuild, ревизия справочника Н-26.10-02 (Р-25); строки книг — находка ревизора 6.2 -->
 SPRAVOCHNIK_LM_book: 1UBiXDZDHfMwxK3Q6mDRYaG65MjnIF2K7ygZhWhOPumY — Google Sheets «Справочник LM 2026.08.20», действующий справочник Liqui Moly (ID стоит в ячейке J3 листа «Акт.цена» книги «Актуальные цены Lique Moly»; при новом прайсе меняется). Листы: «ВсеЦены» (прайс поставщика), «РРЦиМП» (ручной ввод артикула), «Артикулы» (проекция). Устройство — meta/PRODUCT_DATA_HIERARCHY.md.
-SPRAVOCHNIK_LOPAL_book: 1fkPSS9ZJ1NquPRDwPh1a4bjPM05XOoOWUVyDeypZBPU — Google Sheets «Справочник LOPAL_19 08 26», справочник бренда Lopal; листы «Прайс», «РРЦиМП».
+SPRAVOCHNIK_LOPAL_book: 1MxZZBg9w7nnPVcAuZkSCFJh8C9L_HlY8rhp5bDVGlhY — Google Sheets «Справочник LOPAL_28 10 26», действующий справочник бренда Lopal (прайс от 26.10.2026; ID стоит в ячейке J3 листа «Акт.цена_Lopal» книги «Актуальные цены Lique Moly»; при новом прайсе меняется). Листы: «Прайс» (прайс поставщика, колонка K «закупка» = G − 20 % — формула протягивается до последней строки прайса, иначе закупка 0), «Артикулы» (проекция), «РРЦиМП». Прежний справочник — 1fkPSS9ZJ1NquPRDwPh1a4bjPM05XOoOWUVyDeypZBPU «Справочник LOPAL_19 08 26», прайс от 19.08.2026. Заменено 2026-10-28 (Р-82 журнала projects/wb-ue/LOG.md).
 AUDIT_area1_drive_copy: 187dqUgvCOQNGCHc4NBF_W8p8C1P-x1tS — транспортная копия отчёта ревизора (text/markdown) в папке «MARKETPLACE_REBUILD DOCS»; канон — projects/marketplace-rebuild/AUDIT_area1_2026-10-26.md.
 
 <!-- 2026-10-27 | marketplace-rebuild, наряд Н-27.10-01, приёмка — запись Р-32 журнала projects/marketplace-rebuild/LOG.md -->
