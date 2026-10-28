@@ -274,3 +274,6 @@ WB_GS_goods-book_en: 1i5NUHZKbOWgKBlW2yob3z1vEbUG2ZbdEP64pVcArlk0 — Google Doc
 WB_GS_goods-book_ru: 1wzusxih_DQaBNu5NNRA9tXclkJPCkoa80p8kjHF1Jww — Google Doc, та же папка. Паспорт скрипта wb_goods_book.gs, копия для человека. Создан 2026-10-27 create_file.
 WB_GS_price-book_en: 148kXgROCetjDmuokCNzW6aiEKe5wzzbmDrRCpmH1UNs — Google Doc, та же папка. Паспорт скрипта wb_price_book.gs книги «WB · Цена», агентская копия; при расхождении права она. Создан 2026-10-27 create_file.
 WB_GS_price-book_ru: 1fRTtIHPS-0W8XpaNkqlcENl0QEVT84GqL9MnKHXRsDY — Google Doc, та же папка. Паспорт скрипта wb_price_book.gs, копия для человека. Создан 2026-10-27 create_file; обратное чтение gdocs-read 88300: 7077 Б, кончается маркером %%ЗОНА_В_КОНЕЦ%%.
+
+<!-- 2026-10-28 | wb-ue, падение прибыли октября — запись Р-83 журнала projects/wb-ue/LOG.md -->
+WB_DOC_profit-drop-2026-10: https://claude.ai/artifact/LjoT8GdpdhP7uV6s8qN58C — документ Claude (не Google Doc) «WB: падение прибыли в октябре 2026 — причина и решения», записка Андрея для руководителя: цифры недель 05–25.10, цепочка причины (скидка WB покупателю → репрайсер → цена продавца → выплата) с графиком, отвергнутые версии, риск нижней границы репрайсера, 7 решений, что запросить, источники. Создан 2026-10-28; читать инструментами Claude Docs (read по ссылке), не WebFetch.
