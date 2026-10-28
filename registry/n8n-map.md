@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-10-26T19:28:14.324Z
+instance_last_change|2026-10-27T20:42:25.232Z
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
 W|0sVn3WwpIyaItpki|WB RAW History Load V.2|archived|never|scheduleTrigger|field=months,triggerAtDayOfMonth=1,triggerAtHour=3|instance|?|-|-
@@ -99,6 +99,7 @@ W|J0v5swjXLfiANJa2|Получение SKU Ozon|active|same|scheduleTrigger|daysI
 W|J8tubuqNsN471jEl|***-COPY-guard-05082026|archived|never|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|JaSDlwWAmjpYmEaD|WB TMP DB Probe Motor Oil|inactive|never|manualTrigger|-|instance|?|-|-
 W|JzoU49Wy2soTzZ44|MKT2 API ip_wb wb_content|active|same|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|KAbY29qYs2BWxyAj|MKT2 Probe Code Builtins|inactive|never|manualTrigger|-|instance|?|-|-
 W|KEucSnA2duWI3eRA|DOSSIER INBOX Move Processed Files|active|same|scheduleTrigger|field=months,monthsInterval=100,triggerAtHour=3|instance|?|M5BLqclKBjGTpz33|-
 W|KQqajdrYKxle9JRe|Ozon_Hashtag_Generator|active|same|scheduleTrigger|field=months,monthsInterval=99|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|KUOjA3trUW7OlakK|LM_DECL — Page Probe (temp)|archived|never|manualTrigger|-|instance|?|-|-
@@ -181,6 +182,7 @@ W|be3319g3PNeGlHN4|MKT2 Probe Build|inactive|never|manualTrigger|-|Europe/Moscow
 W|broKqvpEUTx6eLH2|DOSSIER Diagnostics - Trash Ownership Check|archived|never|manualTrigger|-|instance|?|-|-
 W|c7TIdv32dHV3MBRU|OZON_UE Accrual Types Sync|active|same|scheduleTrigger|field=weeks,triggerAtDay=1,triggerAtHour=1|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|c9B1w8njEilu8mqx|WB Telegram Alerts|active|same|scheduleTrigger|triggerAtHour=12 + triggerAtHour=18|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|cdNOV5Pppr0XKB1A|MKT2 Prices To Repricer|inactive|never|manualTrigger|-|Europe/Moscow|?|-|-
 W|cscGFbFuz55DZJCw|WB FBS Order Close|archived|never|scheduleTrigger|field=hours,triggerAtMinute=5|instance|?|-|-
 W|cvfGWTmU3oInRZuG|TMP Read Archive Answers|archived|never|webhook|-|instance|?|-|-
 W|d3Rq28ZZDhUBiXYu|SYS Index Size + Zone Sync Monitor — COPY 2026-07-28|archived|never|scheduleTrigger|expression=0 9 * * 1 ,field=cronExpression|instance|?|-|-
@@ -232,9 +234,10 @@ W|mAaWSmoXDH9Ofgg3|WB Reviews Intake|active|same|scheduleTrigger|field=minutes,m
 W|mQtuCpSN83XNvPGT|CZ GTIN Probe (temp)|archived|never|formTrigger|-|instance|?|-|-
 W|mhFl0vvbRdBaNZu6|Deklaration HydraulischesOel|archived|never|scheduleTrigger|field=weeks,triggerAtHour=4|instance|?|-|-
 W|mibzRHnFH68Y9Mo3|SYS Lint — TEST COPY (Н-28.08-04.3)|archived|never|scheduleTrigger|triggerAtHour=6|instance|?|-|-
+W|muy8B73uPOaWLMMB|MKT2 Prices Book Setup|inactive|never|manualTrigger|-|instance|?|-|-
 W|nE7FZhsy4V3yxB0f|OZON Fetch Reviews → Queue (Pagination)|archived|never|scheduleTrigger|field=months,monthsInterval=100|instance|?|-|-
 W|nIRKnhKyI5LibFW3|WB Card Tool ИП — пакет (проверка/запись)|inactive|never|manualTrigger|-|instance|?|-|-
-W|nNNJuafLqTX7g8TU|SKU Artikel Map — Ozon to SKU_Artikel_Map|active|same|scheduleTrigger|field=months,monthsInterval=1000|instance|?|M5BLqclKBjGTpz33|-
+W|nNNJuafLqTX7g8TU|SKU Artikel Map — Ozon to SKU_Artikel_Map|inactive|never|scheduleTrigger|field=months,monthsInterval=1000|instance|?|M5BLqclKBjGTpz33|-
 W|nPnj7varZYsV1Xoc|TMP Reset Test Rows|archived|never|webhook|-|instance|?|-|-
 W|nY5XeDw9VMAdYcEi|SYS Index Size + Zone Sync Monitor copy|inactive|never|scheduleTrigger|expression=0 9 * * 1 ,field=cronExpression|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|nvNYvvmuOqGyHXfL|Claude → Google Docs Replace v2 (verified)|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -699,6 +702,7 @@ C|GVyBj6xEcFjnmQ09|googleApi|3
 C|GVyBj6xEcFjnmQ09|httpHeaderAuth|1
 C|GVyBj6xEcFjnmQ09|telegramApi|1
 C|Gbm7MZX6eqEgeRQj|githubApi|2
+C|Gbm7MZX6eqEgeRQj|googleApi|1
 C|Gbm7MZX6eqEgeRQj|httpHeaderAuth|1
 C|GxV03QtlsRCInkMU|googleSheetsOAuth2Api|2
 C|GxV03QtlsRCInkMU|httpHeaderAuth|1
@@ -822,6 +826,8 @@ C|c7TIdv32dHV3MBRU|googleApi|1
 C|c7TIdv32dHV3MBRU|httpCustomAuth|1
 C|c9B1w8njEilu8mqx|googleApi|1
 C|c9B1w8njEilu8mqx|telegramApi|1
+C|cdNOV5Pppr0XKB1A|googleApi|7
+C|cdNOV5Pppr0XKB1A|googleDocsOAuth2Api|1
 C|dD7Y3XMZ0R1Uvsys|httpHeaderAuth|3
 C|dEMUvxBGI6JIp4vQ|googleSheetsOAuth2Api|8
 C|e9ScqWtLPgSsHf0A|googleApi|1
@@ -865,6 +871,8 @@ C|m7vGqw03E6nzTR3a|githubApi|1
 C|m7vGqw03E6nzTR3a|telegramApi|2
 C|mAaWSmoXDH9Ofgg3|googleApi|5
 C|mAaWSmoXDH9Ofgg3|httpHeaderAuth|4
+C|muy8B73uPOaWLMMB|googleApi|1
+C|muy8B73uPOaWLMMB|googleSheetsOAuth2Api|1
 C|nIRKnhKyI5LibFW3|httpHeaderAuth|2
 C|nNNJuafLqTX7g8TU|googleApi|1
 C|nNNJuafLqTX7g8TU|httpCustomAuth|2
@@ -888,7 +896,7 @@ C|qolCVtDpTo2YlnGb|httpHeaderAuth|2
 C|qrZw8bxIEpRAUwEe|googleApi|1
 C|qrZw8bxIEpRAUwEe|postgres|1
 C|r35gXE6VxvuacEfW|googleApi|1
-C|r35gXE6VxvuacEfW|httpCustomAuth|1
+C|r35gXE6VxvuacEfW|httpCustomAuth|2
 C|r35gXE6VxvuacEfW|httpHeaderAuth|2
 C|r35gXE6VxvuacEfW|telegramApi|1
 C|rRDyHKXhPrx1KvRL|httpHeaderAuth|1
