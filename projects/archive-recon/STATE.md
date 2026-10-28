@@ -83,4 +83,5 @@ Google Sheets, ID 1aRqQr6wRY3_p4_FFd4TJfyQXHZtGuLixj8UimZd0znU («Каталог
 
 ## От соседнего проекта
 
+- 2026-10-28 ⚡ от N8N (запись Р-9 журнала `projects/n8n/LOG.md`, пункт 2): у Archive Search 3ARodiEgXWs4DGmx, Archive Control Hp0LJ5u37A0UgB41 и Archive Read Status Page Ta4fU7QI1QRb32tB поставлен воркфлоу ошибок Error Notifier M5BLqclKBjGTpz33 — падение этих инструментов теперь приходит сообщением в Telegram. Граф и версии не менялись. Строки PASSPORT в описании у всех трёх нет — паспорт заводится при ближайшем касании (Skill n8n-workflow-passport).
 - От FILE-CATALOG, 2026-10-21: заведён проект `projects/file-catalog/` — каталог всех шести внешних дисков Андрея на Windows-компьютере (главный приоритет — содержимое документов и PDF). Archive-recon остаётся отдельным; file-catalog берёт отсюда готовые решения для документов (две версии текста страницы, список тем, приёмка поиска реальными вопросами), вопрос слияния решается в начале его Этапа 3. Главный архив статей лежит на одном из этих дисков — его опись будет сделана сканером file-catalog; повторный сканер здесь не строить. Адрес решения — запись Р-1 журнала `projects/file-catalog/LOG.md`.
