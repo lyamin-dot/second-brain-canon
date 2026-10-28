@@ -8,6 +8,8 @@ projects/n8n/STATE.md
 
 ## Состояние инстанса
 
+Сверено 2026-10-27 по снимку `registry/n8n-map.md` (instance_last_change 2026-10-26T19:28): активных 100, неактивных 88, архивных 97; без errorWorkflow из активных 4, после правки 2026-10-28 (запись Р-9 журнала) — 1, сам Error Notifier; без явной таймзоны 64 (32 на Europe/Moscow, 4 на Europe/Berlin явно); с неопубликованным черновиком 1 — N8N Registry Sync gFFiBPm1OomOzJOj (узлы-зонды, projects/n8n-map/STATE.md); висячих вызовов 0.
+
 Сверено 2026-10-26 по снимку `registry/n8n-map.md` (коммит 08d5f27, instance_last_change 2026-10-25T08:24): активных 98, неактивных 89, архивных 95; без errorWorkflow из активных 4 — Archive Search 3ARodiEgXWs4DGmx, Archive Control Hp0LJ5u37A0UgB41, Archive Read Status Page Ta4fU7QI1QRb32tB и сам Error Notifier; без явной таймзоны 65 (30 на Europe/Moscow, 3 на Europe/Berlin явно); с неопубликованным черновиком 0 (после 26.10 — 1: черновик Registry Sync с узлами-зондами, projects/n8n-map/STATE.md); висячих вызовов 0; поле project `?` у всех. Скачок активных 80 → 98 за 24–26.10 — 23 воркфлоу MKT2 проекта marketplace-rebuild. Числа в блоке `<instance>` мастер-промпта N8N (81/40/94, 55 без errorWorkflow, 71 без таймзоны, 6 с черновиком) — снимок 06.10, устарели; замена — раздел «Ручные действия Андрея».
 
 Сверено 2026-10-18 по снимку `registry/n8n-map.md` (коммит ee37e02, instance_last_change 2026-10-17T16:50): активных 76, архивных 98, неактивных 69; без errorWorkflow из активных только сам Error Notifier; с неопубликованным черновиком один — WB FBS Morning Forecast 6M9nS9iKQzMdztUs (черновик 2026-10-17 16:31 UTC сделала параллельная сессия, это воркфлоу проекта WB_LOGISTICS — публиковать или отбросить решает он); без явной таймзоны 62. Ожидание абзаца ниже выполнено.
