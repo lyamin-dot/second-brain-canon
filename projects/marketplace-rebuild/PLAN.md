@@ -336,12 +336,12 @@ projects/marketplace-rebuild/PLAN.md
 | raw.wb_finance_report | POST `/api/finance/v1/sales-reports/list` | отчёт | report_id (запись Р-72 журнала wb-ue, пункт 2) | версии | начало периода | Финансы — НЕТ |
 | raw.wb_stock_seller | POST `/api/analytics/v1/stocks-report/seller-warehouses` | элемент ответа — один размер на одном складе, вложенности нет (ответ 86101, запись Р-18) | nmId_chrtId_warehouseId | снимок дня | дата снимка | Гипотеза (не проверена): Аналитика |
 | raw.wb_stock_wb | POST `/api/analytics/v1/stocks-report/wb-warehouses` (у ИП есть остатки на складах WB, ответ 86101) | то же | то же | снимок дня | дата снимка | то же |
-| raw.wb_card | POST `/content/v2/get/cards/list` | элемент `cards` | nmID | версии | — | Контент — есть: WB_Контент_ИП_R |
+| raw.wb_card | POST `/content/v2/get/cards/list` | элемент `cards` | nmID | версии | — | Контент — есть: ключ контента ИП на чтение |
 | raw.wb_price | GET `/api/v2/list/goods/filter` | элемент списка товаров целиком, массив размеров внутри | nmID | снимок дня | дата снимка | Гипотеза (не проверена): «Цены и скидки» — у ИП нет и в список Андрея не вошла |
 
 Не использовать: `/api/v1/supplier/stocks`, `/api/v1/supplier/incomes`, `/api/v5/supplier/reportDetailByPeriod` (RES-007, раздел «Методы для пилота ИП», пункт «НЕ использовать»).
 
-#### Ozon, кабинет ИП (ключ «Ozon Seller API ИП» умеет писать; отдельный ключ только на чтение — решение Андрея не получено)
+#### Ozon, кабинет ИП (ключ Ozon ИП умеет писать; отдельный ключ только на чтение — решение Андрея не получено)
 
 | таблица | метод | массив = строка | естественный ключ | способ | бизнес-дата |
 |---|---|---|---|---|---|
