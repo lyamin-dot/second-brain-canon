@@ -4,7 +4,7 @@ projects/marketplace-rebuild/DATA_MODEL.en.md
 
 Moved from `PLAN.en.md` section 13 on 2026-10-31 by script, text unchanged; role declared in `PLAN.md` section 10; decision — LOG Р-36. Full Russian text: `DATA_MODEL.md`.
 
-## 13 Pilot data model (accepted by separate reviewer, round 2, 2026-10-25; LOG Р-14). Full Russian text = PLAN.md §13; this is the agent digest.
+## 13 Pilot data model (accepted by separate reviewer, round 2, 2026-10-25; LOG Р-14). Full Russian text = DATA_MODEL.md (was PLAN.md §13 until 2026-10-31); this is the agent digest.
 DB mkt2 (PostgreSQL 16 on server), roles mkt2_writer (owner) / mkt2_reader (read-only), schemas ref + raw.
 ref: legal_entity; cabinet (4 rows, collection on only ip_ozon, ip_wb); cabinet_api (PK cabinet+api_scope+purpose; api_proxy_workflow_id; NO credential IDs/rights — binding lives in proxy node, rights/expiry in key book N8N_CREDENTIALS); article = full-rebuild mirror of Price Master!Artikel A,F,G,H only (not brand AA, not status N — both derived from Кипарис cards); v_article_item = view article↔MP item from newest raw cards, first word of vendorCode/offer_id; is_live only from runs status ok.
 raw: common cols cabinet_code, source_method, payload jsonb (one response element whole), payload_hash, load_run_id, first/last_loaded_at. Modes: versions (PK cabinet+natural_key+payload_hash; current = max last_loaded_at); day snapshot (PK cabinet+snapshot_date+natural_key; delete+insert one transaction only on ok run). raw.load_run = one row per run (exec number = proof).

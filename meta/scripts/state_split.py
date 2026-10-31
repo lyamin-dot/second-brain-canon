@@ -15,7 +15,7 @@
 Запуск: python3 state_split.py check <STATE.md>
         python3 state_split.py split <STATE.md> <папка вывода> [--expect-sha <blob sha>]
 
-Правило, которое исполняет скрипт, — meta/RULE_state-content.md (что остаётся в STATE.md).
+Правило, которое исполняет скрипт, — meta/CONTRACT_state-content.md (что остаётся в STATE.md).
 Раздел определяется заголовком (строки # / ## / ###). Текст до первого заголовка
 (шапка файла) остаётся. Заголовок сравнивается без учёта регистра.
 """
@@ -80,13 +80,16 @@ def main():
     buckets = {"STATE": [], "LOG": [], "PLAN": [], "UNDECIDED": []}
     for d, h, l in plan: buckets[d].extend(l)
     names = {"STATE": "STATE.new.md", "LOG": "to_LOG.md", "PLAN": "to_PLAN.md", "UNDECIDED": "UNDECIDED.md"}
+    # приёмка до записи: мультимножество непустых строк источника == объединение четырёх будущих файлов
+    src = sorted(l.strip() for l in text.splitlines() if l.strip())
+    dst = sorted(l.strip() for b in buckets.values() for l in "".join(b).splitlines() if l.strip())
+    if src != dst: sys.exit(f"ПРИЁМКА НЕ ПРОЙДЕНА, ничего не записано: строк в источнике {len(src)}, в выводе {len(dst)}")
+    os.makedirs(out, exist_ok=True)
     for d, lines in buckets.items():
         with open(os.path.join(out, names[d]), "w", encoding="utf-8") as f: f.write("".join(lines))
-    # приёмка по строкам: мультимножество непустых строк источника == объединение четырёх файлов
-    src = sorted(l for l in text.splitlines() if l.strip())
-    dst = sorted(l for b in buckets.values() for l in "".join(b).splitlines() if l.strip())
-    if src != dst:
-        sys.exit(f"ПРИЁМКА НЕ ПРОЙДЕНА: строк в источнике {len(src)}, в выводе {len(dst)}")
+    # повторная приёмка по записанным файлам
+    dst2 = sorted(l.strip() for d in buckets for l in open(os.path.join(out, names[d]), encoding="utf-8").read().splitlines() if l.strip())
+    if src != dst2: sys.exit("ПРИЁМКА НЕ ПРОЙДЕНА при перечитывании записанных файлов")
     print(f"приёмка: {len(src)} непустых строк источника — все найдены, потерь 0. Вывод: {out}")
 
 if __name__ == "__main__":

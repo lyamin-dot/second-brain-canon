@@ -13,13 +13,12 @@
   "plan_heading": "## Перенесено из STATE.md разбором 2026-10-30"
 }
 Разделы без решения остаются в STATE.md. Строки по номерам (включительно, с 1) переносятся
-из любого раздела; остаток раздела остаётся. Строки «note» — единственное, что добавляется
-сверх источника (строка происхождения блока хроники по форме second-brain-git 11.5 и
-заголовок блока в PLAN.md).
+из любого раздела; остаток раздела остаётся. Сверх источника добавляются только две служебные строки: строка происхождения блока хроники
+(форма second-brain-git 11.5) и заголовок блока в PLAN.md; «note» печатается в отчёт и в файлы не пишется.
 
 Выход в папке out/: STATE.new.md, LOG_append.md (блок хроники, дописывается в конец LOG.md),
 PLAN_append.md (дописывается в конец PLAN.md). Приёмка: мультимножество непустых строк
-источника == STATE.new + LOG_append + PLAN_append минус добавленные служебные строки.
+источника == STATE.new + LOG_append + PLAN_append минус две служебные строки; приёмка идёт ДО записи файлов и повторяется по записанным файлам.
 Запуск: python3 state_apply.py <решения.json> <папка out>
 """
 import hashlib, json, os, re, sys
@@ -48,21 +47,27 @@ def main():
             for i in range(a - 1, b): dest[i] = d["to"]
     bucket = {"STATE": [], "LOG": [], "PLAN": []}
     for i, l in enumerate(lines): bucket[dest[i]].append(l)
-    os.makedirs(out, exist_ok=True)
-    extra = []
+    text = "".join(lines)
     log_head = f"\nХроника | {dec['date']} | перенесено из {dec['state']} разбором по 5.1 — не свидетельство этой сессии\n"
     plan_head = "\n" + dec.get("plan_heading", f"## Перенесено из STATE.md разбором {dec['date']}") + "\n\n"
     notes = [d["note"] for d in dec["decisions"] if "note" in d]
-    with open(os.path.join(out, "STATE.new.md"), "w", encoding="utf-8") as f: f.write("".join(bucket["STATE"]))
-    with open(os.path.join(out, "LOG_append.md"), "w", encoding="utf-8") as f:
-        if bucket["LOG"]: f.write(log_head + "".join("  " + l if l.strip() else l for l in bucket["LOG"])); extra.append(log_head)
-    with open(os.path.join(out, "PLAN_append.md"), "w", encoding="utf-8") as f:
-        if bucket["PLAN"]: f.write(plan_head + "".join(bucket["PLAN"])); extra.append(plan_head)
-    src = sorted(l.strip() for l in lines if l.strip())
-    got = sorted(l.strip() for b in bucket.values() for l in b if l.strip())
-    if src != got: sys.exit(f"ПРИЁМКА НЕ ПРОЙДЕНА: {len(src)} строк в источнике, {len(got)} в выводе")
-    print(f"источник {len(raw)} Б sha {sha[:7]}; STATE.new {sum(len(l.encode()) for l in bucket['STATE'])} Б; "
-          f"в LOG {len(bucket['LOG'])} строк; в PLAN {len(bucket['PLAN'])} строк; приёмка: {len(src)} непустых строк, потерь 0")
+    # приёмка ДО записи на диск: собрать тексты выходных файлов в памяти, перечитать их как строки
+    # и сравнить мультимножество непустых строк с источником (служебные строки — только две: шапка хроники и заголовок PLAN)
+    out_texts = {"STATE.new.md": "".join(bucket["STATE"]),
+                 "LOG_append.md": (log_head + "".join("  " + l if l.strip() else l for l in bucket["LOG"])) if bucket["LOG"] else "",
+                 "PLAN_append.md": (plan_head + "".join(bucket["PLAN"])) if bucket["PLAN"] else ""}
+    service = {log_head.strip(), plan_head.strip()}
+    src = sorted(l.strip() for l in text.splitlines() if l.strip())
+    got = sorted(l.strip() for t in out_texts.values() for l in t.splitlines() if l.strip() and l.strip() not in service)
+    if src != got:
+        missing = [l for l in src if l not in got]; extra = [l for l in got if l not in src]
+        sys.exit(f"ПРИЁМКА НЕ ПРОЙДЕНА, ничего не записано: потеряно {len(missing)}, лишних {len(extra)}; первые: {missing[:2]} {extra[:2]}")
+    os.makedirs(out, exist_ok=True)
+    for name, body in out_texts.items():
+        with open(os.path.join(out, name), "w", encoding="utf-8") as f: f.write(body)
+    # повторная приёмка по записанным файлам (перечитывание с диска)
+    got2 = sorted(l.strip() for name in out_texts for l in open(os.path.join(out, name), encoding="utf-8").read().splitlines() if l.strip() and l.strip() not in service)
+    if src != got2: sys.exit("ПРИЁМКА НЕ ПРОЙДЕНА при перечитывании записанных файлов")
     for n in notes: print("  причина:", n)
 
 if __name__ == "__main__": main()
