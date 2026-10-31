@@ -89,7 +89,7 @@ MCP n8n не показывает, какой credential привязан к у�
 | магазин | credential | право записи контента | прогон-подтверждение |
 |---|---|---|---|
 | Ozon основное юрлицо | Custom Auth (Client-Id + Api-Key), тот же credential привязан Андреем к зонду `529VWvqSTg8l4fUU`; имя через MCP не видно | есть: роль ключа Admin, в неё входят /v1/product/attributes/update и /v3/product/import (метод /v1/roles); ключ истекает 2026-12-02 | 75203 (зонд: список, атрибуты, описания, роли — ответ 200) |
-| Ozon ИП | нет. Воркфлоу `PWFVE0UbM3ajvVFc` ждёт credential «Ozon API ИП» на узлах 10 и 12, ни разу не запускался (0 исполнений); листа Ozon_IP_SKU_Staging в Price Master нет | — | — |
+| Ozon ИП | нет. Воркфлоу `PWFVE0UbM3ajvVFc` архивирован 2026-10-26 по «да» Андрея (`labs/ozon-ue/t-ozon-ip-card-copy.md`; список карточек Ozon ИП собирает база mkt2, raw.ozon_product; сверка харвеста 2026-10-31); листа Ozon_IP_SKU_Staging в Price Master нет | — | — |
 | WB основное юрлицо | Header Auth, узлы `05_Fetch_Cards`, `08_Update_Cards`, `10_WB_Error_List` воркфлоу `QCQI6utFFH3dvTJT`; имя через MCP не видно | есть: боевая запись 2026-10-04 применила 10 карточек (`projects/deklaration-ozon/LOG.md` Р-30) | 74962 (режим «проверка», 454 карточки прочитаны, запись не вызывалась — последний узел `07_Gate_Boevoy`) |
 | WB второе юрлицо | нет: ни одного воркфлоу, листа или упоминания второго кабинета WB в n8n (поиск по «WB», «Wildberries», «ИП», «IP», 2026-10-04) | — | — |
 

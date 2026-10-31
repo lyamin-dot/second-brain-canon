@@ -2,6 +2,8 @@ meta/EDITS_skills_2026-10-30.md
 
 # Правки Skills 2026-10-30 — проверка STATE.md при записи (ревизия системы, шаг 4)
 
+ПРИМЕНЕНО 2026-10-31 — AJ-67 и AJ-68 ВНЕСЕНО, приняты по снимку (`registry/maintenance-queue.md`; сверка харвеста 2026-10-31).
+
 Источник: решение Андрея 2026-10-30 (чат SYS): проверка содержания STATE.md при записи — скриптом, без отдельного воркфлоу-монитора; контракт — `meta/CONTRACT_state-content.md`, скрипт — `meta/scripts/state_split.py` (режим `check`), перенос — `meta/scripts/state_apply.py`. Правки вносит Андрей в живые Skills (Customize), затем сессия обновляет зеркало `skills/` по `second-brain-git` 2.6. Позиции очереди — AJ-67 и AJ-68 в `registry/maintenance-queue.md`.
 
 ## А1. Skill `second-brain-engineer`, файл references/save.md, раздел Р7, после пункта 3
