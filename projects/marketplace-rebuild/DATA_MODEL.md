@@ -96,7 +96,7 @@ projects/marketplace-rebuild/DATA_MODEL.md
 | cabinet_code | text | ссылка на ref.cabinet |
 | source_method | text | метод API, как в документации |
 | payload | jsonb | один элемент ответа целиком |
-| payload_hash | text | отпечаток payload (md5 текста jsonb) |
+| payload_hash | text | отпечаток payload (md5 текста jsonb); для raw.wb_card и raw.ozon_product_attr — md5 копии payload, в которой элементы массивов characteristics (WB) и complex_attributes (Ozon) упорядочены; сам payload пишется как пришёл (с 2026-10-31, запись Р-38; перечень массивов — поле hash_sort в узле 02_Config движка) |
 | load_run_id | bigint | прогон, впервые принёсший версию |
 | first_loaded_at | timestamptz | когда версия впервые легла (UTC) — колонка даты загрузки |
 | last_loaded_at | timestamptz | когда последний раз пришла снова |
