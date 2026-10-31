@@ -196,3 +196,27 @@ REFERENCE_EXTRACTION.md — сравнение инструментов извл
 5. Остальная папка «AA Beruf» — около 460 статей, почти все с текстовым слоем. Тот же контейнер, другая папка очереди: переменная в compose, правка агента сервера. Индекс один, у книги есть папка-источник. Решение Андрея: начинать ли сразу после шага 4.
 6. Главный архив, около 70 ГБ, лежит на домашнем диске, а не на Google Диске, поэтому контейнер его не видит. Решение Андрея: (а) выгружать частями на Google Диск в папку очереди или (б) копировать с компьютера прямо на сервер rclone по SSH частями — тогда очередь читает локальную папку. Моё мнение — (а): канал чтения уже проверен, Диск остаётся единственным носителем оригиналов, а на сервере ничего не копится. Цена — время выгрузки с домашнего интернета.
 7. Книги по главам. Оглавления из закладок PDF (/toc) — строка на главу в каталоге поиска: книга, глава, страница начала. Метод сборки книги из файлов-глав — раздел «Метод: как книга, разрезанная на файлы, собирается по главам».
+
+## Перенесено из STATE.md разбором 2026-10-31 (контракт meta/CONTRACT_state-content.md): правила и справка Ф1 — не состояние
+
+## Где смотреть результат каталогизации
+
+Google Sheets, ID 1aRqQr6wRY3_p4_FFd4TJfyQXHZtGuLixj8UimZd0znU («Каталог архива статей — archive-recon»), лист «catalog» — 495 строк, 17 колонок (path, source, top_folder, topic, topic_origin, doc_type, pages, size_bytes, year, year_source, doi, awmf_reg_nr, mm_status, duplicate_of, excluded, excluded_reason, processed_date). Зарегистрирован в registry/documents.md этой сессией (2026-09-27, запись ARCHIVE_RECON_CATALOG) — до этого ID нигде в repo не встречался, следующая сессия не нашла бы таблицу. Лист «Sheet2» той же таблицы содержит не относящийся к канону, оборванный на полуслове черновик заметки «как пользоваться таблицей» — происхождение и статус не выяснены (см. «Открытые вопросы владельцу»).
+
+## Таблица правил (по итогам Ф1)
+
+| паттерн | где встречен | число подтверждений | пример пути |
+|---|---|---|---|
+| дата-папка на статью, статус OHNE MM, пара MM.pdf+.mom при готовности | Sepsis, Delir, ANTIBIOTIKA, TransfusuonsMedizin, Neurochirurgie, SchockRaum, Beatmung, Notarzt, 2024 CME Artikel | 9 из 25 подпапок корня (частично или полностью) | Sepsis/2024.08 OHNE MM .../ |
+| плоские PDF прямо в тематической папке, без подпапок и без OHNE MM | Regionale A, 2025 CME Artikel, Thorax, Allgemeine Chirurgie, Leitender NA, Sedierung, Medikamente, TransfusuonsMedizin (частично) | 8 из 25 | 2025 CME Artikel/*.pdf |
+| нетематические (не по датам) под-папки второго уровня — категория/книга/курс | Facharzt Anästhesie ZUM LESEN, 00 SONO, Beatmung, Notarzt («Rea»), Meine Vorträge | 5 из 25 | 00 SONO/01 POCUS Buch/ |
+| одиночные Google Docs «gpt …» вперемешку с любым из паттернов выше — заметки/конспекты из сессий с ChatGPT, размер от нескольких КБ до >2 МБ | корень, Sepsis, Kardiologie, TransfusuonsMedizin, Sedierung, Thorax, Neurochirurgie, Medikamente, SchockRaum | 9 из 25 | TransfusuonsMedizin/gpt ROTEM |
+| папка целиком вне темы специальности (сертификаты, личные цели, конспекты выступлений, учёт рабочего времени, материалы курсов по месту/дате) | 00 ZERTIFIKATE, 00 Ziele, Fortbildungen, H3A Persoenlich, Meine Vorträge, ÜberstundenKontrolle | 6 из 25 подпапок корня целиком вне предмета | H3A Persoenlich/BettenPlan.pdf |
+
+## Нераспознанные случаи
+
+- Файлы-ярлыки (.lnk и нативные ярлыки Google Диска) вместо самого документа — указывают на внешний Leitlinie-файл, не содержат текста сами. Встречены в Regionale A, Sedierung, 00 ZERTIFIKATE.
+- Дубликаты одного и того же файла в разных тематических папках (пример: «Nicht-traumatologisches Schockraummanagement…» лежит и в 2025 CME Artikel, и в SchockRaum, оба с суффиксом «- kopie»).
+- Файл с расширением .pdf, но mimeType text/plain и размером 102 байта («Pharmacologic treatment of agitation in traumatic brain injuries.pdf», Neurochirurgie) — расширение не соответствует содержимому, похоже на битый файл или заглушку, не на статью.
+- Отдельный служебный документ-трекер «CME Gelesen aber kein MindMap» (2024 CME Artikel) — вручную ведённый список статуса обработки на уровне папки, отдельно от маркера OHNE MM в имени файла.
+
