@@ -1,0 +1,1888 @@
+{
+ "repo_head": "9bd3fae76407f811f085c7e2533ce4a292d4a5fd",
+ "since": "2026-10-22",
+ "protocol_last_harvest": "2026-10-22",
+ "docs_candidates": [
+  {
+   "name": "N8N_INDEX",
+   "id": "1GktMsgl1UOIzuWj02gqDirMSYlSjiuLuDVDd9vevB5Q",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": true,
+   "excluded": null
+  },
+  {
+   "name": "SERVER_INDEX",
+   "id": "1n5WPjZ99H9cwVj3w7FwLsvLZLiabAFIcp8fF5hzq5rY",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": null
+  },
+  {
+   "name": "OZON_UE_INDEX",
+   "id": "13gg5K9lGx_ypJZdnt-Fe8xFtShWYYFI9uEtClPNsjhQ",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": null
+  },
+  {
+   "name": "OZON_CV_INDEX",
+   "id": "1t4DWGWB7z_4uAsGhbs8xHXvr6MI__i8A5Nc73puid3U",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": null
+  },
+  {
+   "name": "WB_UE_INDEX",
+   "id": "1qY2bB8VZtepPQCp0uZQ6hzO4a2SsE-_ooHnghYHjuZY",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": true,
+   "excluded": null
+  },
+  {
+   "name": "WB_CV_INDEX",
+   "id": "1qWAjqyjxb_M7S9XveSqt9L0c_AH1DyT1LAEsrf9Qkz0",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": null
+  },
+  {
+   "name": "WB_LOGISTICS_INDEX",
+   "id": "1mxYgiK9X4qOId2vNF7xnne-cQszTqPpJZHux_AuDZjQ",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": true,
+   "excluded": null
+  },
+  {
+   "name": "RENO_INDEX",
+   "id": "1r3hSt4pccSHbya31KLNYtyr5xJtbTl1VcX-OCprBjcM",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": null
+  },
+  {
+   "name": "TRADING_INDEX",
+   "id": "1GhOuwVL41hzyWYF4X8Su0bSuraVw6X4pGxc0G3hkT2Y",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": null
+  },
+  {
+   "name": "SYS_INDEX",
+   "id": "12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8",
+   "frozen_mark_in_registry": true,
+   "in_frozen_read_line": true,
+   "excluded": null
+  },
+  {
+   "name": "CONTENT_INDEX",
+   "id": "12YmBvtmAGImFm2fMPz2FglsrCibG3v7acj3NY5LG7m0",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": null
+  },
+  {
+   "name": "AUTOCHEM_BUNDLES_INDEX",
+   "id": "1Lnod5P2LTn5ECDHWEzfP34LCvXvgfBC6-gdZDq6ywDs",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": null
+  },
+  {
+   "name": "ANAST_QUICKREF_INDEX",
+   "id": "1MdqSVr0bHAJ5tbIgNJoHNuBjmqR2V8gLQf5RHco-430",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": null
+  },
+  {
+   "name": "WB_REVIEWS_INDEX",
+   "id": "1D-mwjyl_rJ0ekYBSwliIRBwfOSJdJBeDi1SQddaeODc",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": true,
+   "excluded": null
+  },
+  {
+   "name": "OZON_REVIEWS_INDEX",
+   "id": "1aVS_PLC-WR1HoSp24JwGvUS6S7D9wd7vQ-G8Lzyi3zQ",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": null
+  },
+  {
+   "name": "CHANGELOG",
+   "id": "1VsuHOWDTxnUkOZoQob1TPj2kNB4jUPtFchxgBMmgDWE",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": null
+  },
+  {
+   "name": "JOURNAL_INCIDENTS",
+   "id": "1q9WiAbbkqazabOA9VMBMBS_pk-S-P20-qsjAfODqEjk",
+   "frozen_mark_in_registry": true,
+   "in_frozen_read_line": true,
+   "excluded": null
+  },
+  {
+   "name": "SYS_JOURNAL_2026",
+   "id": "1gDi41gTkLp8b2Us6UN8h_Cpj5gcBxpsCE3UnVQ0NkVU",
+   "frozen_mark_in_registry": true,
+   "in_frozen_read_line": true,
+   "excluded": null
+  },
+  {
+   "name": "N8N_JOURNAL_2026",
+   "id": "19U4cDQ-JnxhZStBUKyJARL6NQHpCVxZZsEereITJ1Wo",
+   "frozen_mark_in_registry": true,
+   "in_frozen_read_line": true,
+   "excluded": null
+  },
+  {
+   "name": "TECH_INDEX",
+   "id": "10fAtNieWynJL3hUUVn8KsPWhv66RwkiAihLApJDhOMM",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": null
+  },
+  {
+   "name": "N8N_INCIDENT_LOG",
+   "id": "1Ts6ycdKBH42uTtC6osi0FsqO8C2v8-ifTrKCaWQVB7Q",
+   "frozen_mark_in_registry": true,
+   "in_frozen_read_line": true,
+   "excluded": null
+  },
+  {
+   "name": "INDEX_FOLDER",
+   "id": "1UV-7hP0L2jiwPAtulPZ1gket-mdz0ktT",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": "папка"
+  },
+  {
+   "name": "SYS_INDEX_SIZE_LOG",
+   "id": "1Dm-mVKyXaFTEwFJRM_J16z8yQg4gu_axZTKy11e4w-4",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": "таблица"
+  },
+  {
+   "name": "SYS_JOURNAL_2026_02",
+   "id": "1m6_0LQUBTzDTQ1B2hbQg9wrEh3kmtAifa0mdQfQM9bc",
+   "frozen_mark_in_registry": true,
+   "in_frozen_read_line": true,
+   "excluded": null
+  },
+  {
+   "name": "PROJECT_LOG_SYS",
+   "id": "1KT4ssADqRUny6rExLNdVxtPw4sNS-WBnY1f8-KfbiYo",
+   "frozen_mark_in_registry": true,
+   "in_frozen_read_line": true,
+   "excluded": null
+  },
+  {
+   "name": "ARCHIVE_RECON_CATALOG",
+   "id": "1aRqQr6wRY3_p4_FFd4TJfyQXHZtGuLixj8UimZd0znU",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": "таблица"
+  },
+  {
+   "name": "FINANZEN_INDEX",
+   "id": "1cdygEpOvnuf0wMuZK-TuQHVhff_yRNVGZXSW5kwSU0s",
+   "frozen_mark_in_registry": false,
+   "in_frozen_read_line": false,
+   "excluded": null
+  }
+ ],
+ "repo_projects": [
+  "projects/git-migration",
+  "projects/anis-evidence",
+  "projects/archive-recon",
+  "projects/n8n-map",
+  "projects/kontext-reduktion",
+  "projects/wb-ue",
+  "projects/deklaration-ozon",
+  "projects/deklaration-wb",
+  "projects/wb-logistics",
+  "projects/card-content-sync",
+  "projects/wb-reviews",
+  "projects/n8n",
+  "projects/archivarius",
+  "projects/gas-bridge",
+  "projects/sku-cost",
+  "projects/deklaration-v2",
+  "projects/knowledge-synthesis",
+  "projects/file-catalog",
+  "projects/family-docs",
+  "projects/marketplace-rebuild",
+  "projects/obzor"
+ ],
+ "repo_labs": [
+  "labs/sys",
+  "labs/ozon-ue"
+ ],
+ "journal_records": {
+  "projects/archive-recon/LOG.md": [
+   {
+    "id": "Р-41",
+    "date": "2026-10-22",
+    "line": 310
+   }
+  ],
+  "projects/n8n-map/LOG.md": [
+   {
+    "id": "Р-9",
+    "date": "2026-10-26",
+    "line": 70
+   }
+  ],
+  "projects/kontext-reduktion/LOG.md": [
+   {
+    "id": "Р-34",
+    "date": "2026-10-22",
+    "line": 273
+   },
+   {
+    "id": "Р-35",
+    "date": "2026-10-22",
+    "line": 282
+   },
+   {
+    "id": "Р-36",
+    "date": "2026-10-23",
+    "line": 291
+   },
+   {
+    "id": "Р-37",
+    "date": "2026-10-23",
+    "line": 298
+   },
+   {
+    "id": "Р-38",
+    "date": "2026-10-26",
+    "line": 306
+   }
+  ],
+  "projects/wb-ue/LOG.md": [
+   {
+    "id": "Р-72",
+    "date": "2026-10-24",
+    "line": 437
+   },
+   {
+    "id": "Р-73",
+    "date": "2026-10-24",
+    "line": 450
+   },
+   {
+    "id": "Т-2",
+    "date": "2026-10-25",
+    "line": 458
+   },
+   {
+    "id": "Р-74",
+    "date": "2026-10-25",
+    "line": 464
+   },
+   {
+    "id": "Р-75",
+    "date": "2026-10-25",
+    "line": 471
+   },
+   {
+    "id": "Р-76",
+    "date": "2026-10-25",
+    "line": 478
+   },
+   {
+    "id": "Р-77",
+    "date": "2026-10-25",
+    "line": 485
+   },
+   {
+    "id": "Р-78",
+    "date": "2026-10-25",
+    "line": 496
+   },
+   {
+    "id": "Р-79",
+    "date": "2026-10-26",
+    "line": 506
+   },
+   {
+    "id": "Р-80",
+    "date": "2026-10-26",
+    "line": 514
+   },
+   {
+    "id": "Р-81",
+    "date": "2026-10-27",
+    "line": 682
+   },
+   {
+    "id": "Р-82",
+    "date": "2026-10-28",
+    "line": 745
+   },
+   {
+    "id": "Р-83",
+    "date": "2026-10-28",
+    "line": 752
+   },
+   {
+    "id": "Р-84",
+    "date": "2026-10-29",
+    "line": 759
+   },
+   {
+    "id": "Р-85",
+    "date": "2026-10-30",
+    "line": 772
+   },
+   {
+    "id": "Р-86",
+    "date": "2026-10-31",
+    "line": 791
+   },
+   {
+    "id": "Р-87",
+    "date": "2026-10-31",
+    "line": 804
+   }
+  ],
+  "projects/deklaration-ozon/LOG.md": [
+   {
+    "id": "Р-48",
+    "date": "2026-10-22",
+    "line": 414
+   },
+   {
+    "id": "Р-49",
+    "date": "2026-10-22",
+    "line": 422
+   },
+   {
+    "id": "Р-50",
+    "date": "2026-10-22",
+    "line": 429
+   }
+  ],
+  "projects/n8n/LOG.md": [
+   {
+    "id": "Р-8",
+    "date": "2026-10-26",
+    "line": 57
+   },
+   {
+    "id": "Р-9",
+    "date": "2026-10-28",
+    "line": 65
+   }
+  ],
+  "projects/deklaration-v2/LOG.md": [
+   {
+    "id": "Р-47",
+    "date": "2026-10-28",
+    "line": 333
+   },
+   {
+    "id": "Р-48",
+    "date": "2026-10-28",
+    "line": 339
+   },
+   {
+    "id": "Р-49",
+    "date": "2026-10-28",
+    "line": 352
+   },
+   {
+    "id": "Р-50",
+    "date": "2026-10-28",
+    "line": 358
+   },
+   {
+    "id": "Р-51",
+    "date": "2026-10-28",
+    "line": 366
+   },
+   {
+    "id": "Р-52",
+    "date": "2026-10-28",
+    "line": 372
+   },
+   {
+    "id": "Р-53",
+    "date": "2026-10-28",
+    "line": 379
+   },
+   {
+    "id": "Р-54",
+    "date": "2026-10-28",
+    "line": 385
+   },
+   {
+    "id": "Р-55",
+    "date": "2026-10-28",
+    "line": 391
+   }
+  ],
+  "projects/knowledge-synthesis/LOG.md": [
+   {
+    "id": "Р-12",
+    "date": "2026-10-22",
+    "line": 49
+   },
+   {
+    "id": "Р-13",
+    "date": "2026-10-22",
+    "line": 56
+   },
+   {
+    "id": "Р-13",
+    "date": "2026-10-22",
+    "line": 63
+   },
+   {
+    "id": "Р-14",
+    "date": "2026-10-22",
+    "line": 70
+   },
+   {
+    "id": "Р-15",
+    "date": "2026-10-22",
+    "line": 77
+   },
+   {
+    "id": "Р-16",
+    "date": "2026-10-22",
+    "line": 83
+   },
+   {
+    "id": "Р-17",
+    "date": "2026-10-22",
+    "line": 88
+   }
+  ],
+  "projects/file-catalog/LOG.md": [
+   {
+    "id": "Р-5",
+    "date": "2026-10-24",
+    "line": 33
+   },
+   {
+    "id": "Р-6",
+    "date": "2026-10-24",
+    "line": 40
+   },
+   {
+    "id": "Р-7",
+    "date": "2026-10-26",
+    "line": 47
+   },
+   {
+    "id": "Р-8",
+    "date": "2026-10-26",
+    "line": 55
+   },
+   {
+    "id": "Р-9",
+    "date": "2026-10-26",
+    "line": 62
+   },
+   {
+    "id": "Р-10",
+    "date": "2026-10-26",
+    "line": 68
+   },
+   {
+    "id": "Р-11",
+    "date": "2026-10-26",
+    "line": 75
+   },
+   {
+    "id": "Р-12",
+    "date": "2026-10-26",
+    "line": 82
+   },
+   {
+    "id": "Р-13",
+    "date": "2026-10-26",
+    "line": 89
+   },
+   {
+    "id": "Р-14",
+    "date": "2026-10-26",
+    "line": 96
+   },
+   {
+    "id": "Р-15",
+    "date": "2026-10-27",
+    "line": 103
+   },
+   {
+    "id": "Р-16",
+    "date": "2026-10-27",
+    "line": 110
+   },
+   {
+    "id": "Р-17",
+    "date": "2026-10-27",
+    "line": 117
+   },
+   {
+    "id": "Р-18",
+    "date": "2026-10-27",
+    "line": 124
+   },
+   {
+    "id": "Р-19",
+    "date": "2026-10-27",
+    "line": 131
+   },
+   {
+    "id": "Р-20",
+    "date": "2026-10-27",
+    "line": 137
+   },
+   {
+    "id": "Р-21",
+    "date": "2026-10-27",
+    "line": 144
+   },
+   {
+    "id": "Р-22",
+    "date": "2026-10-27",
+    "line": 150
+   },
+   {
+    "id": "Р-23",
+    "date": "2026-10-27",
+    "line": 156
+   },
+   {
+    "id": "Р-24",
+    "date": "2026-10-27",
+    "line": 163
+   },
+   {
+    "id": "Р-25",
+    "date": "2026-10-27",
+    "line": 171
+   },
+   {
+    "id": "Р-26",
+    "date": "2026-10-27",
+    "line": 179
+   },
+   {
+    "id": "Р-27",
+    "date": "2026-10-28",
+    "line": 186
+   },
+   {
+    "id": "Р-28",
+    "date": "2026-10-28",
+    "line": 194
+   },
+   {
+    "id": "Р-29",
+    "date": "2026-10-29",
+    "line": 201
+   },
+   {
+    "id": "Р-30",
+    "date": "2026-10-29",
+    "line": 209
+   },
+   {
+    "id": "Р-31",
+    "date": "2026-10-30",
+    "line": 217
+   }
+  ],
+  "projects/family-docs/LOG.md": [
+   {
+    "id": "Р-1",
+    "date": "2026-10-22",
+    "line": 5
+   },
+   {
+    "id": "Р-2",
+    "date": "2026-10-22",
+    "line": 12
+   },
+   {
+    "id": "Т-1",
+    "date": "2026-10-22",
+    "line": 20
+   },
+   {
+    "id": "Р-3",
+    "date": "2026-10-22",
+    "line": 25
+   },
+   {
+    "id": "Т-2",
+    "date": "2026-10-22",
+    "line": 31
+   },
+   {
+    "id": "Р-4",
+    "date": "2026-10-22",
+    "line": 36
+   },
+   {
+    "id": "Т-3",
+    "date": "2026-10-22",
+    "line": 43
+   },
+   {
+    "id": "Р-5",
+    "date": "2026-10-22",
+    "line": 48
+   }
+  ],
+  "projects/marketplace-rebuild/LOG.md": [
+   {
+    "id": "Р-1",
+    "date": "2026-10-24",
+    "line": 3
+   },
+   {
+    "id": "Р-2",
+    "date": "2026-10-24",
+    "line": 7
+   },
+   {
+    "id": "Р-3",
+    "date": "2026-10-24",
+    "line": 11
+   },
+   {
+    "id": "Р-4",
+    "date": "2026-10-24",
+    "line": 15
+   },
+   {
+    "id": "Р-5",
+    "date": "2026-10-24",
+    "line": 19
+   },
+   {
+    "id": "Р-6",
+    "date": "2026-10-24",
+    "line": 22
+   },
+   {
+    "id": "Р-7",
+    "date": "2026-10-24",
+    "line": 26
+   },
+   {
+    "id": "Р-8",
+    "date": "2026-10-24",
+    "line": 30
+   },
+   {
+    "id": "Р-9",
+    "date": "2026-10-24",
+    "line": 34
+   },
+   {
+    "id": "Р-10",
+    "date": "2026-10-24",
+    "line": 38
+   },
+   {
+    "id": "Р-11",
+    "date": "2026-10-24",
+    "line": 42
+   },
+   {
+    "id": "Р-12",
+    "date": "2026-10-24",
+    "line": 46
+   },
+   {
+    "id": "Р-13",
+    "date": "2026-10-25",
+    "line": 50
+   },
+   {
+    "id": "Р-14",
+    "date": "2026-10-25",
+    "line": 54
+   },
+   {
+    "id": "Р-15",
+    "date": "2026-10-25",
+    "line": 58
+   },
+   {
+    "id": "Р-16",
+    "date": "2026-10-25",
+    "line": 61
+   },
+   {
+    "id": "Р-17",
+    "date": "2026-10-25",
+    "line": 65
+   },
+   {
+    "id": "Р-18",
+    "date": "2026-10-25",
+    "line": 68
+   },
+   {
+    "id": "Р-19",
+    "date": "2026-10-25",
+    "line": 72
+   },
+   {
+    "id": "Р-20",
+    "date": "2026-10-26",
+    "line": 75
+   },
+   {
+    "id": "Р-21",
+    "date": "2026-10-26",
+    "line": 79
+   },
+   {
+    "id": "Р-22",
+    "date": "2026-10-26",
+    "line": 83
+   },
+   {
+    "id": "Р-23",
+    "date": "2026-10-26",
+    "line": 86
+   },
+   {
+    "id": "Р-24",
+    "date": "2026-10-26",
+    "line": 89
+   },
+   {
+    "id": "Р-25",
+    "date": "2026-10-26",
+    "line": 92
+   },
+   {
+    "id": "Р-26",
+    "date": "2026-10-26",
+    "line": 96
+   },
+   {
+    "id": "Р-27",
+    "date": "2026-10-27",
+    "line": 99
+   },
+   {
+    "id": "Р-28",
+    "date": "2026-10-27",
+    "line": 108
+   },
+   {
+    "id": "Р-29",
+    "date": "2026-10-27",
+    "line": 114
+   },
+   {
+    "id": "Р-30",
+    "date": "2026-10-27",
+    "line": 123
+   },
+   {
+    "id": "Р-31",
+    "date": "2026-10-27",
+    "line": 130
+   },
+   {
+    "id": "Р-32",
+    "date": "2026-10-27",
+    "line": 136
+   },
+   {
+    "id": "Р-33",
+    "date": "2026-10-28",
+    "line": 143
+   },
+   {
+    "id": "Р-34",
+    "date": "2026-10-28",
+    "line": 150
+   },
+   {
+    "id": "Р-35",
+    "date": "2026-10-29",
+    "line": 156
+   },
+   {
+    "id": "Р-36",
+    "date": "2026-10-31",
+    "line": 226
+   },
+   {
+    "id": "Р-37",
+    "date": "2026-10-31",
+    "line": 232
+   },
+   {
+    "id": "Р-38",
+    "date": "2026-10-31",
+    "line": 239
+   },
+   {
+    "id": "Р-39",
+    "date": "2026-10-31",
+    "line": 244
+   },
+   {
+    "id": "Р-40",
+    "date": "2026-10-31",
+    "line": 252
+   }
+  ],
+  "projects/obzor/LOG.md": [
+   {
+    "id": "Р-1",
+    "date": "2026-10-31",
+    "line": 5
+   },
+   {
+    "id": "Р-2",
+    "date": "2026-10-31",
+    "line": 13
+   },
+   {
+    "id": "Р-3",
+    "date": "2026-10-31",
+    "line": 21
+   }
+  ]
+ },
+ "journal_records_total": 123,
+ "state_plan_changed": [
+  {
+   "path": "projects/git-migration/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/anis-evidence/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/archive-recon/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/archive-recon/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/n8n-map/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/n8n-map/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/kontext-reduktion/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/kontext-reduktion/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/wb-ue/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/wb-ue/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/deklaration-ozon/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/deklaration-ozon/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/wb-logistics/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/card-content-sync/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/card-content-sync/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/wb-reviews/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/wb-reviews/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/n8n/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/n8n/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/archivarius/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/gas-bridge/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/gas-bridge/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/sku-cost/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/deklaration-v2/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/deklaration-v2/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/knowledge-synthesis/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/knowledge-synthesis/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/file-catalog/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/file-catalog/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/family-docs/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/family-docs/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/marketplace-rebuild/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/marketplace-rebuild/PLAN.md",
+   "exists": true
+  },
+  {
+   "path": "projects/obzor/STATE.md",
+   "exists": true
+  },
+  {
+   "path": "projects/obzor/PLAN.md",
+   "exists": true
+  }
+ ],
+ "lab_tasks_changed": [
+  {
+   "path": "labs/sys/t-apps-script-skill-feedback.md",
+   "status": "AM",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-array-separator-probe.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-autopilot-backlog-2026-10-27.md",
+   "status": "AM",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-basis-section-labels.md",
+   "status": "AD",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-draft-trigger-divergence.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-extinguished-facts-routine.md",
+   "status": "ADM",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-gdocs-read-guard.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-gdocs-write-defects.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-git-channel-secret-filter.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-git-replace-escape.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-github-token-expiry.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-gsheets-credential-rejected.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-harvest-2026-10-22-leftovers.md",
+   "status": "AM",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-harvest-close-leftovers.md",
+   "status": "DM",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-harvest-frozen-journals.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-household-registry.md",
+   "status": "A",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-knowledge-loop.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-log-archive-1mb.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-maintenance-audit.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-monitoring-minor.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-n8n-backup-stopped.md",
+   "status": "DM",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-n8n-workflow-race.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-naryad-where-tree.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-ozon-ue-parked-active.md",
+   "status": "DM",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-private-repo.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-project-canon-hygiene.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-prompt-blocker-registry.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-prompt-mirror-private.md",
+   "status": "AM",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-public-host-info.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-r129-followups.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-registries-map.md",
+   "status": "A",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-repeat-standard.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-repo-search-unknown-path.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-server-knowledge.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-session-behavior-tests.md",
+   "status": "AM",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-skills-mirror-drift.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-skills-size-report-check.md",
+   "status": "AD",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-stale-registry-facts.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-system-revision.md",
+   "status": "AM",
+   "exists": true
+  },
+  {
+   "path": "labs/sys/t-test-counter-lilia.md",
+   "status": "AD",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-test-counter-liliya.md",
+   "status": "AD",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-triage-findings.md",
+   "status": "DM",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-unmerged-claude-branches.md",
+   "status": "DM",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-unsaved-session-files.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/sys/t-webhook-key-reuse.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/ozon-ue/t-autopilot-2026-10-27.md",
+   "status": "ADM",
+   "exists": false
+  },
+  {
+   "path": "labs/ozon-ue/t-books-followups.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/ozon-ue/t-cost-history-copy.md",
+   "status": "DM",
+   "exists": false
+  },
+  {
+   "path": "labs/ozon-ue/t-fin-result-sheet.md",
+   "status": "AM",
+   "exists": true
+  },
+  {
+   "path": "labs/ozon-ue/t-goods-book-script.md",
+   "status": "DM",
+   "exists": false
+  },
+  {
+   "path": "labs/ozon-ue/t-history-constants-design.md",
+   "status": "DM",
+   "exists": false
+  },
+  {
+   "path": "labs/ozon-ue/t-lopal-brand.md",
+   "status": "DM",
+   "exists": false
+  },
+  {
+   "path": "labs/ozon-ue/t-loss-analysis.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/ozon-ue/t-main-api-key.md",
+   "status": "A",
+   "exists": true
+  },
+  {
+   "path": "labs/ozon-ue/t-management-next-steps.md",
+   "status": "A",
+   "exists": true
+  },
+  {
+   "path": "labs/ozon-ue/t-money-telegram.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/ozon-ue/t-n8n-ozon-workflow-defects.md",
+   "status": "DM",
+   "exists": false
+  },
+  {
+   "path": "labs/ozon-ue/t-ozon-ip-cabinet.md",
+   "status": "DM",
+   "exists": false
+  },
+  {
+   "path": "labs/ozon-ue/t-ozon-ip-card-copy.md",
+   "status": "AM",
+   "exists": true
+  },
+  {
+   "path": "labs/ozon-ue/t-price-ozon-vs-wb.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/ozon-ue/t-product-data-model.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/ozon-ue/t-purchase-history-robot.md",
+   "status": "AM",
+   "exists": true
+  },
+  {
+   "path": "labs/ozon-ue/t-raw-book-hygiene.md",
+   "status": "M",
+   "exists": true
+  },
+  {
+   "path": "labs/ozon-ue/t-returns-dynamics.md",
+   "status": "D",
+   "exists": false
+  },
+  {
+   "path": "labs/ozon-ue/t-sku-outside-artikel.md",
+   "status": "A",
+   "exists": true
+  }
+ ],
+ "meta_changed": [
+  {
+   "path": "meta/AUDIT_extinguished-facts_2026-10-25.md",
+   "exists": true
+  },
+  {
+   "path": "meta/BORDER_core-index-skill.md",
+   "exists": false
+  },
+  {
+   "path": "meta/BRIEF_skill-size_2026-10-22.en.md",
+   "exists": true
+  },
+  {
+   "path": "meta/BRIEF_skill-size_2026-10-22.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_claude-branches.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_external-access.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_n8n-draft-divergence.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_ozon-api.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_ozon-raw-sources.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_ozon-ue-lab-closed-2026-10-28.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_server-tools.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_skills-mirror-drift.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_sys-lab-closed-2026-10-27.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_sys-lab-closed-2026-10-31.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_unsaved-session-files.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_wb-api-card-write.en.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_wb-api-card-write.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CASES_wb-api.md",
+   "exists": true
+  },
+  {
+   "path": "meta/CONTRACT_state-content.md",
+   "exists": true
+  },
+  {
+   "path": "meta/COST_skill-reading_2026-10-22.md",
+   "exists": true
+  },
+  {
+   "path": "meta/DECLARATION_COMMON.md",
+   "exists": true
+  },
+  {
+   "path": "meta/DRAFT_descriptions_2026-10-22.md",
+   "exists": true
+  },
+  {
+   "path": "meta/DRAFT_master-prompt-sys_2026-10-22.md",
+   "exists": true
+  },
+  {
+   "path": "meta/EDITS_extinguished_2026-10-26.md",
+   "exists": true
+  },
+  {
+   "path": "meta/EDITS_post-retro_2026-10-23.md",
+   "exists": true
+  },
+  {
+   "path": "meta/EDITS_skills_2026-10-22.md",
+   "exists": true
+  },
+  {
+   "path": "meta/EDITS_skills_2026-10-27.md",
+   "exists": true
+  },
+  {
+   "path": "meta/EDITS_skills_2026-10-28.md",
+   "exists": true
+  },
+  {
+   "path": "meta/EDITS_skills_2026-10-30.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_answers.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/BLIND_MATCH.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/CONTROL.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/D1.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/J1.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/J2.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/J3.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/L1.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/L2.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/M1a.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/M1b.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/M1c.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/M2.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/M3a.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/M3b.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/QUEUE_STEP3.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/S1.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/S2.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/S3.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/TRIAGE_T1.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/TRIAGE_T2.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/V1_check.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/V2_check.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_2026-10-22_reports/V3_check.md",
+   "exists": true
+  },
+  {
+   "path": "meta/HARVEST_INPUT_2026-10-16.md",
+   "exists": false
+  },
+  {
+   "path": "meta/LESSONS_waiting.md",
+   "exists": true
+  },
+  {
+   "path": "meta/NARYAD_file-migration.md",
+   "exists": false
+  },
+  {
+   "path": "meta/OZON_UE_INPUTS_MAP.md",
+   "exists": true
+  },
+  {
+   "path": "meta/PROTOCOL_file-migration.md",
+   "exists": true
+  },
+  {
+   "path": "meta/PROTOCOL_knowledge-synthesis.md",
+   "exists": true
+  },
+  {
+   "path": "meta/RESTRUCTURE_n8n-engineering-manual_2026-10-22.json",
+   "exists": false
+  },
+  {
+   "path": "meta/RESTRUCTURE_second-brain-engineer_2026-10-22.json",
+   "exists": false
+  },
+  {
+   "path": "meta/RETRO_skill-rework_2026-10-23.md",
+   "exists": true
+  },
+  {
+   "path": "meta/ROADMAP_post-retro_2026-10-23.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SKILLS_MAP.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_apps-script-sheets_2026-10-22.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_apps-script-sheets_2026-10-22/ACCEPTANCE.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_apps-script-sheets_2026-10-22/BRIEF_ACCEPT.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_apps-script-sheets_2026-10-22/BRIEF_CHECKER.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_apps-script-sheets_2026-10-22/units.tsv",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_apps-script-sheets_2026-10-22/verdicts_round1.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_apps-script-sheets_2026-10-22/verdicts_round2.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/ACCEPTANCE.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/ACCEPTANCE_CLAIMS.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/BRIEF_CHECKER.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/BRIEF_WRITER.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/CONTRACT.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/FINDINGS.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/insert_A_1.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/new_A_1.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/new_A_2.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/new_B_1.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/new_B_2.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/new_C_1.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/new_C_2.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/old_A.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/old_B.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/old_C.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/restructure_report.json",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/round2.diff",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/semantic_check.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/units_A.tsv",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/units_B.tsv",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/units_C.tsv",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/verdicts_A.tsv",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/verdicts_B.tsv",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/verdicts_C.tsv",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/verdicts_summary.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/writer_A_report.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/writer_B_report.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_google-drive-docs_2026-10-22/writer_C_report.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-engineer_2026-10-22/ANSWERS_opus_2026-10-22.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-engineer_2026-10-22/BRIEF.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-engineer_2026-10-22/REPORT.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-engineer_2026-10-22/SBE_findings.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-engineer_2026-10-22/basis_add_A.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-engineer_2026-10-22/basis_add_B.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-engineer_2026-10-22/units_A.tsv",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-engineer_2026-10-22/units_B.tsv",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-engineer_2026-10-22/verify_A_round1.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-engineer_2026-10-22/verify_B_round1.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-engineer_2026-10-22/writer_A_report.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-engineer_2026-10-22/writer_B_report.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-git_2026-10-22.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-git_2026-10-22/CLUSTERS_old.md",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-git_2026-10-22/DIFF_round1.diff",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-git_2026-10-22/DIFF_round2.diff",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-git_2026-10-22/UNITS.tsv",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-git_2026-10-22/VERDICTS_round1.tsv",
+   "exists": true
+  },
+  {
+   "path": "meta/SYNTHESIS_second-brain-git_2026-10-22/VERDICTS_round2.tsv",
+   "exists": true
+  },
+  {
+   "path": "meta/TEST_skill-layers_2026-10-22.agent.md",
+   "exists": true
+  },
+  {
+   "path": "meta/TEST_skill-layers_2026-10-22.md",
+   "exists": true
+  },
+  {
+   "path": "meta/TEST_skill-layers_2026-10-22_report.md",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/accept_restructure.py",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/accept_restructure_gdd.py",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/accept_restructure_n8n.py",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/build_skill_edits_2026-10-23.py",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/extract_transcript.py",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/harvest_manifest.py",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/readers_inventory.py",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/reading_cost.py",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/restructure_gdd_2026-10-22.py",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/restructure_n8n_2026-10-22.py",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/restructure_sbe_2026-10-22.py",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/state_apply.py",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/state_split.py",
+   "exists": true
+  },
+  {
+   "path": "meta/scripts/trim_skill_for_probe.py",
+   "exists": true
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+meta/NARYAD_file-migration.md [удалён]
+meta/OZON_UE_INPUTS_MAP.md
+meta/PROTOCOL_file-migration.md
+meta/PROTOCOL_knowledge-synthesis.md
+meta/RESTRUCTURE_n8n-engineering-manual_2026-10-22.json [удалён]
+meta/RESTRUCTURE_second-brain-engineer_2026-10-22.json [удалён]
+meta/RETRO_skill-rework_2026-10-23.md
+meta/ROADMAP_post-retro_2026-10-23.md
+meta/SKILLS_MAP.md
+meta/TEST_skill-layers_2026-10-22.agent.md
+meta/TEST_skill-layers_2026-10-22.md
+meta/TEST_skill-layers_2026-10-22_report.md
+meta/scripts/accept_restructure.py
+meta/scripts/accept_restructure_gdd.py
+meta/scripts/accept_restructure_n8n.py
+meta/scripts/build_skill_edits_2026-10-23.py
+meta/scripts/extract_transcript.py
+meta/scripts/harvest_manifest.py
+meta/scripts/readers_inventory.py
+meta/scripts/reading_cost.py
+meta/scripts/restructure_gdd_2026-10-22.py
+meta/scripts/restructure_n8n_2026-10-22.py
+meta/scripts/restructure_sbe_2026-10-22.py
+meta/scripts/state_apply.py
+meta/scripts/state_split.py
+meta/scripts/trim_skill_for_probe.py

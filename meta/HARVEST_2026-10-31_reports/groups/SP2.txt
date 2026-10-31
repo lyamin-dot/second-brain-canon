@@ -1,0 +1,17 @@
+projects/knowledge-synthesis/STATE.md
+projects/kontext-reduktion/PLAN.md
+projects/kontext-reduktion/STATE.md
+projects/marketplace-rebuild/PLAN.md
+projects/marketplace-rebuild/STATE.md
+projects/n8n-map/PLAN.md
+projects/n8n-map/STATE.md
+projects/n8n/PLAN.md
+projects/n8n/STATE.md
+projects/obzor/PLAN.md
+projects/obzor/STATE.md
+projects/sku-cost/STATE.md
+projects/wb-logistics/STATE.md
+projects/wb-reviews/PLAN.md
+projects/wb-reviews/STATE.md
+projects/wb-ue/PLAN.md
+projects/wb-ue/STATE.md
