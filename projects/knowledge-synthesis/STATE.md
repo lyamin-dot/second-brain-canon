@@ -1,5 +1,13 @@
 projects/knowledge-synthesis/STATE.md
 
+<!-- obzor-блок: форма — projects/obzor/PLAN.md, «Устройство», пункт 2; правится тем же шагом, что разделы ниже -->
+> Состояние: в работе
+> Дата: 2026-10-26
+> Что это: Синтез собственных Skills
+> Следующий шаг: Второй проход синтеза n8n-engineering-manual (позиция AJ-38, срок 12.11)
+> Ждёт Андрея: Ответы по спискам отчётов синтеза google-drive-docs и apps-script-sheets
+> Срок: 2026-11-12 — AJ-38: второй проход синтеза n8n-engineering-manual
+
 # STATE_knowledge-synthesis — текущее состояние
 
 Здесь только то, что меняет действие следующей сессии. Цель, финиш, закон и порядок работ — `PLAN.md`; решения с датами — `LOG.md`; история до 2026-10-21 — `projects/knowledge-synthesis/HISTORY_2026-10-18_to_2026-10-21.md`.
