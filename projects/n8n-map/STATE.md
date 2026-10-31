@@ -8,8 +8,6 @@ projects/n8n-map/STATE.md
 
 ## Проверено 2026-10-26 по объекту
 
-- Снимок пишется без пропусков: 28 коммитов registry/n8n-map.md с 26.09 по 26.10 (git log клона); дни без коммита (20–21.10) — инстанс не менялся (instance_last_change 18.10 21:00 → 21.10 18:20). Ручной запуск тоже пишет: коммиты 1663788 и 30708cf (12:48 и 12:49, прогоны 87408 и 87413).
-- Читатель снимка — сессии Claude: ссылки на registry/n8n-map.md стоят в PLAN/STATE девяти проектов, лабораториях ozon-ue и sys, семи Skills, реестрах (grep клона, 170 файлов). Человек читает его только по `!status` в проекте N8N. Отдельного человеческого отчёта по замыслу нет (ИН-3).
 - Публичный API инстанса не отдаёт папку воркфлоу: ключи элемента списка `GET /api/v1/workflows` — active, activeVersion, activeVersionId, connections, createdAt, id, isArchived, meta, name, nodeGroups, nodes, pinData, settings, shared, staticData, tags, triggerCount, updatedAt, versionId (исполнение 87408, узел «Зонд полей API»); параметр `includeParentFolder=true` инстанс игнорирует — в ответе нет ключа `parentFolder` (исполнение 87413, узел «Зонд папок API»). В документации API параметр есть (docs.n8n.io/connect/n8n-api/workflow, прочитано 26.10; PR n8n-io/n8n #40981 влит 16.10.2026). Вывод: поле project строки W останется `?`, пока инстанс не обновлён до версии с этим параметром. Папок на инстансе 9 (WB, WB/Unit, WB/Logistic, WB/Support, Ozon, Ozon/Deklaration, Ozon/Unit-Economic, Ozon/Reviews_Support, «Kommunikation mit Claude» — search_folders 26.10), в корне 146 неархивных воркфлоу из 187.
 
 ## Фазы
@@ -36,7 +34,6 @@ projects/n8n-map/STATE.md
 
 ## Найдено попутно
 
-- Удалённые 26.10 разделы 1 и 9 PLAN.md — в коммите 2d482636.
 - registry/documents.md, строка wb_fbs_orders_tracking: ID 41 символ — повреждён; верный (44) — строка D воркфлоу S4rZMUkI21dVu3ML. Не чинилось: не в рамке контракта.
 - Паспорта Registry Sync и Telegram Router: блок СВЯЗИ называет архивные воркфлоу (с 26.09); паспорт Registry Sync отстаёт по составу (узлов десять с зондами). Правится при касании (стадия 4 Skill n8n-workflow-passport).
 
