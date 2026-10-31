@@ -283,3 +283,5 @@ WB_DOC_profit-drop-2026-10: https://claude.ai/artifact/LjoT8GdpdhP7uV6s8qN58C �
 
 <!-- 2026-10-31 | wb-ue, от учёта к управлению — запись Р-86 журнала projects/wb-ue/LOG.md -->
 WB_DOC_from-accounting-to-management: https://claude.ai/artifact/RmH5RkyiNNuGjNTGLs11id — документ Claude (не Google Doc) «WB: от учёта к управлению — какие вопросы уже решаются и что дальше»: какие управленческие вопросы закрывают листы трёх книг WB, каких данных нет в отчёте WB, следующие шаги, проверка плана, решения Андрея 31.10. Создан 2026-10-31, независимая рецензия субагентом; читатель — Андрей.
+
+MKT2_WF_api-kiparis-family: 1OCojzhc9nJiMtqcUUoX7qYQXiWZ6BIjeuqpMfo85wRE — Google Doc, семейный паспорт четырёх посредников API кабинетов Кипариса («MKT2 API kiparis_ozon ozon_seller» 7YOafm11bMUtCVpy, «… kiparis_wb wb_finance» pjOxY1G7CjqLL7Mo, «… wb_statistics» A7UY4VhLnLJJQtMU, «… wb_content» 90r528HvqDY6pBNp); папка MKT2_DOCS_FOLDER. Создан 2026-10-31 автопилотом проекта marketplace-rebuild (запись Р-40), перечитан (gdocs-read 90783). Строки PASSPORT в описаниях четырёх посредников вписывает Андрей.
