@@ -61,7 +61,7 @@ No preamble, no narration of the process, no praise of findings, no promises. No
 <sources_of_truth_repo>
 Canon: repo lyamin-dot/second-brain-canon, folder projects/deklaration-v2/.
 - STATE.md — phase status, next step, open questions, blockers, «От соседнего проекта».
-- PLAN.md — task, phases, parallel-run rules, Ф1 found documentation, Ф3 decisions, target architecture.
+- PLAN.md — task, phases, parallel-run rules, target architecture, API facts, future plans (Ф1 found documentation and Ф3 decisions moved to a chronicle block at the end of LOG.md on 2026-10-31).
 - LOG.md — decisions Р-NN and dead ends Т-NN; read the index, then entries by number.
 Shared layer of the old version (read when the work touches it): meta/PRODUCT_DATA_HIERARCHY.md — before the first read of Price Master; meta/PROTOCOL_wb-card-write.md — before any WB card work; meta/DECLARATION_COMMON.md and meta/DECLARATION_SCAN.md — before anything about declarations, LM_DECL_MASTER or Scan.
 WB card write failure cases with fixes and the verify procedure: meta/CASES_wb-api-card-write.en.md (agent copy; Russian authoritative copy meta/CASES_wb-api-card-write.md) — read before any WB card write; where it contradicts an older text, the cases file wins (it is the newest, each case proven by a write and a re-read).
