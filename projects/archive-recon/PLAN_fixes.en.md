@@ -1,6 +1,6 @@
 projects/archive-recon/PLAN_fixes.en.md
 
-Agent copy of PLAN.md section "План исправлений по критике 2026-10-13" (decision Р-31 LOG.md). On conflict PLAN.md wins. State 2026-10-13, search page v12 (artifact ARCHIVE_RECON_SEARCH, registry/documents.md).
+Agent copy of PLAN.md section "План исправлений по критике 2026-10-13" (decision Р-31 LOG.md). Neither copy wins automatically: edit both in one commit; on divergence — stop, check LOG.md decisions or the object, otherwise ask Andrei. State 2026-10-13, search page v12 (artifact ARCHIVE_RECON_SEARCH, registry/documents.md).
 
 Build: data.json = tools/build_data.py over inputs NOT in repo (data.json cut from page v10, book_old.json, books.json with TOCs, links.json Drive IDs, meta/out*.json model extraction, syn.json). Page = tools/search_page.html, publishes with data.json beside it. Recover inputs: Artifact read path data.json (current data incl. books, syn).
 

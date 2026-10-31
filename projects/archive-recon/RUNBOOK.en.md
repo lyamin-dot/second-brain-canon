@@ -1,6 +1,6 @@
 projects/archive-recon/RUNBOOK.en.md
 
-# ARCHIVE OCR + SEARCH — AGENT RUNBOOK (wins over RUNBOOK.md on conflict)
+# ARCHIVE OCR + SEARCH — AGENT RUNBOOK (agent copy of RUNBOOK.md; neither copy wins automatically: edit both in one commit; on divergence — stop, check LOG.md decisions or the object, otherwise ask Andrei)
 Decision: LOG.md Р-39 (2026-10-21). Design: SERVER_PLAN_ocr.en.md. Interface: tools/archive-worker/README.md. Public repo: never write server paths, n8n webhook paths, Telegram chat id, page texts, ToC texts (rule И-7 second-brain-git).
 
 ## SYSTEM

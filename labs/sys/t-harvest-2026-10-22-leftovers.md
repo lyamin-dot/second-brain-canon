@@ -20,7 +20,7 @@
 
 - `meta/CASES_ozon-api.md`: пробы Ozon 2026-10-22 (характеристики 22232, 23536; метод `attributes/update` меняет только переданное; Ozon сам сбрасывает «Нужен код маркировки»; срок ключа по `/v1/roles`; латиница→кириллица в номере декларации).
 - `meta/CASES_wb-api.md`: фактов card-content-sync нет; строки 23–24 и 58–59 про ОКПД 2 противоречат поправке 2026-10-21; постановление № 821 и требование GTIN.
-- `meta/CASES_wb-api-card-write.md`: кейсы 14, 15 только в английской копии; правило 3 про needKiz устарело; кейс 12 без риска снятия пакетным инструментом.
+- `meta/CASES_wb-api-card-write.md`: кейсы 14, 15 только в английской копии; правило 3 про needKiz устарело; кейс 12 без риска снятия пакетным инструментом; кейс 14 английской копии (`meta/CASES_wb-api-card-write.en.md`, «needKiz cannot be turned on via API from false», «Probe … NOT yet done») противоречит правилу 3 той же копии и кейсу 4 русской (`meta/CASES_wb-api-card-write.md`, проба 83520 опровергла) — харвест 2026-10-31, Н-117; позиция AJ-28.
 - `meta/PROTOCOL_wb-card-write.md`: строка 19 без исключения для needKiz/kizMarked.
 - `meta/DECLARATION_SCAN.md`: неполнота списка articles. `meta/PRODUCT_DATA_HIERARCHY.md`: колонка K читает O:S; ozon_sku = 0 формулой; бренд в AA из карточки WB.
 - `projects/deklaration-v2/STATE.md`: вопрос о штампе на копиях Lopal; задача «проверить GTIN к 2027-01-01» (осталась в закрытом проекте deklaration-wb).
