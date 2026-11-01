@@ -1,0 +1,516 @@
+id	file	line	class	quote
+U-001	SKILL.md	4	ПОРОГ	Редакция 2026-10-22.
+U-002	SKILL.md	7	ПОРОГ	| Что собираешься сделать | Что прочитать до этого | Пункты |
+U-003	SKILL.md	9	ПРАВИЛО	любую запись в repo: дозапись
+U-004	SKILL.md	9	ПРАВИЛО	правку
+U-005	SKILL.md	9	ПРАВИЛО	новый файл
+U-006	SKILL.md	9	ПРАВИЛО	удаление
+U-007	SKILL.md	9	ПРАВИЛО	составной save из нескольких записей
+U-008	SKILL.md	9	ПРАВИЛО	разбор файла по роли
+U-009	SKILL.md	9	АДРЕС	references/write.md
+U-010	SKILL.md	9	АДРЕС	2.1–2.5
+U-011	SKILL.md	9	АДРЕС	2.5 сдвиг адреса: перенумерация, перенос, снятие, переименование
+U-012	SKILL.md	9	АДРЕС	4.5 (правило происхождения текста)
+U-013	SKILL.md	9	АДРЕС	5.1
+U-014	SKILL.md	9	АДРЕС	5.5
+U-015	SKILL.md	9	АДРЕС	7.5
+U-016	SKILL.md	9	АДРЕС	8.1–8.3
+U-017	SKILL.md	9	АДРЕС	8.6
+U-018	SKILL.md	9	АДРЕС	8.7
+U-019	SKILL.md	9	АДРЕС	14
+U-020	SKILL.md	10	ПРАВИЛО	save по проекту в repo (куда ложится каждая запись)
+U-021	SKILL.md	10	ПРАВИЛО	новую позицию Очереди
+U-022	SKILL.md	10	ПРАВИЛО	смену её статуса
+U-023	SKILL.md	10	ПРАВИЛО	дополнительную роль файла проекта
+U-024	SKILL.md	10	ПРАВИЛО	аномалию, признанную нормой, в PLAN.md
+U-025	SKILL.md	10	ПРАВИЛО	факт соседнему проекту — вместе с references/write.md
+U-026	SKILL.md	10	АДРЕС	references/project-save.md
+U-027	SKILL.md	10	АДРЕС	4.6
+U-028	SKILL.md	10	АДРЕС	4.7
+U-029	SKILL.md	10	АДРЕС	10 (10.5 — словарь статуса позиции Очереди)
+U-030	SKILL.md	11	ПРАВИЛО	запись в LOG.md
+U-031	SKILL.md	11	ПРАВИЛО	LOG_ARCHIVE.md: решение
+U-032	SKILL.md	11	ПРАВИЛО	решение
+U-033	SKILL.md	11	ПРАВИЛО	тупик
+U-034	SKILL.md	11	ПРАВИЛО	отмена
+U-035	SKILL.md	11	ПРАВИЛО	частичная отмена записи
+U-036	SKILL.md	11	ПРАВИЛО	блок хроники
+U-037	SKILL.md	11	ПРАВИЛО	вместе с references/write.md
+U-038	SKILL.md	11	АДРЕС	references/log-form.md
+U-039	SKILL.md	11	АДРЕС	references/log-form.md | 11 |
+U-040	SKILL.md	12	ПРАВИЛО	приёмку правки Skill, которую внёс владелец
+U-041	SKILL.md	12	ПРАВИЛО	обновление зеркала skills/
+U-042	SKILL.md	12	ПРАВИЛО	поиск копий старой формулировки
+U-043	SKILL.md	12	ПРАВИЛО	сборку zip для заливки
+U-044	SKILL.md	12	АДРЕС	references/skill-edit.md
+U-045	SKILL.md	12	АДРЕС	skill-edit.md | 2.6 |
+U-046	SKILL.md	13	ПРАВИЛО	запись, если сервер отбил её по expectedSha
+U-047	SKILL.md	13	ПРАВИЛО	по таймауту правил репозитория
+U-048	SKILL.md	13	ПРАВИЛО	отказом «is at … but expected …»
+U-049	SKILL.md	13	ПРАВИЛО	работа двух сессий одновременно
+U-050	SKILL.md	13	ПРАВИЛО	удаление ветки claude/*
+U-051	SKILL.md	13	ПРАВИЛО	запись уже существующего текста
+U-052	SKILL.md	13	ПРАВИЛО	массовая механическая работа
+U-053	SKILL.md	13	ПРАВИЛО	вопрос, открыт ли push
+U-054	SKILL.md	13	АДРЕС	references/delivery.md
+U-055	SKILL.md	13	АДРЕС	8.4, 8.5, 8.8, 8.9, 8.10, 9
+U-056	SKILL.md	14	ПРАВИЛО	ротацию LOG.md
+U-057	SKILL.md	14	АДРЕС	references/rotation.md
+U-058	SKILL.md	14	АДРЕС	5.2–5.4
+U-059	SKILL.md	15	ПРАВИЛО	разрез
+U-060	SKILL.md	15	ПРАВИЛО	пересборку файла core/
+U-061	SKILL.md	15	АДРЕС	references/core-split.md
+U-062	SKILL.md	15	АДРЕС	core-split.md | 6 |
+U-063	SKILL.md	16	ПРАВИЛО	новый проект
+U-064	SKILL.md	16	ПРАВИЛО	перенос документа из Docs в repo
+U-065	SKILL.md	16	ПРАВИЛО	заморозку документа, журнала или другого носителя
+U-066	SKILL.md	16	АДРЕС	references/migration.md
+U-067	SKILL.md	16	АДРЕС	migration.md | 12,
+U-068	SKILL.md	16	АДРЕС	13 (13.5 — заморозка)
+U-069	SKILL.md	17	ПРАВИЛО	любую работу с лабораторией (папка labs/)
+U-070	SKILL.md	17	ПРАВИЛО	старт
+U-071	SKILL.md	17	ПРАВИЛО	заведение
+U-072	SKILL.md	17	ПРАВИЛО	закрытие задачи
+U-073	SKILL.md	17	ПРАВИЛО	пометка старения
+U-074	SKILL.md	17	АДРЕС	references/lab.md
+U-075	SKILL.md	17	АДРЕС	lab.md | 4б |
+U-076	SKILL.md	18	ПРАВИЛО	решение, опирающееся на цену транспорта
+U-077	SKILL.md	18	ПРАВИЛО	на бюджет старта в байтах
+U-078	SKILL.md	18	ПРАВИЛО	на цену чтения Skill
+U-079	SKILL.md	18	АДРЕС	references/costs.md
+U-080	SKILL.md	18	АДРЕС	снимки 4.5 и 4б
+U-081	SKILL.md	18	АДРЕС	цены 7.6 и 8.3
+U-082	SKILL.md	18	АДРЕС	цена чтения Skills
+U-083	SKILL.md	19	ПРАВИЛО	править этот Skill
+U-084	SKILL.md	19	ПРАВИЛО	спорить с правилом
+U-085	SKILL.md	19	ПРАВИЛО	найти адрес случая за ярлыком [основание: …]
+U-086	SKILL.md	19	ПРАВИЛО	синтез и харвест
+U-087	SKILL.md	19	АДРЕС	references/basis.md
+U-088	SKILL.md	19	АДРЕС	основания правил, устройство Skill
+U-089	SKILL.md	22	ПОРОГ	| Роль | Содержание | Бюджет чтения | Читатель и момент |
+U-090	SKILL.md	24	ПОРОГ	статус фаз, следующий шаг, открытые вопросы, блокеры
+U-091	SKILL.md	24	ПОРОГ	8 192 Б
+U-092	SKILL.md	24	ПРАВИЛО	старт каждой сессии проекта
+U-093	SKILL.md	25	ПОРОГ	цель, инварианты, архитектура, фазы, риски ЭТОГО проекта
+U-094	SKILL.md	25	ПОРОГ	10 240 Б
+U-095	SKILL.md	25	ПРАВИЛО	сессия, берущаяся за проект, целиком
+U-096	SKILL.md	26	ПОРОГ	решения, тупики, ошибки; только дописывается
+U-097	SKILL.md	26	ПОРОГ	16 384 Б на прочитанное, не на файл
+U-098	SKILL.md	26	ПРАВИЛО	та же сессия, рядом с PLAN: оглавление журнала одним вызовом по 7.6
+U-099	SKILL.md	26	АДРЕС	(строка «оглавление журнала»)
+U-100	SKILL.md	26	ПРАВИЛО	затем целиком только нужные записи
+U-101	SKILL.md	26	ПРАВИЛО	названные в STATE.md или PLAN.md либо выбранные по оглавлению
+U-102	SKILL.md	26	АДРЕС	(строка «запись журнала по номеру»)
+U-103	SKILL.md	26	ПРАВИЛО	Файл целиком не читается
+U-104	SKILL.md	26	СЛУЧАЙ	Р-10, Р-11 журнала projects/kontext-reduktion/LOG.md
+U-105	references/write.md	29	ПРАВИЛО	Правка, после которой прежний адрес ведёт не туда или никуда
+U-106	references/write.md	29	ПРАВИЛО	тем же действием пересчитывает все ссылки на прежний адрес
+U-107	references/write.md	29	ПРАВИЛО	в своём файле и во всех файлах, которые на него ссылаются
+U-108	references/write.md	29	ПОРОГ	включая STATE.md и PLAN.md проектов, файлы meta/ и registry/
+U-109	references/write.md	29	ПРАВИЛО	сдвиг номера пункта, раздела или записи (перенумерация)
+U-110	references/write.md	29	ПРАВИЛО	перенос раздела или правила в другой файл или другой Skill
+U-111	references/write.md	29	ПРАВИЛО	снятие файла, раздела или Skill
+U-112	references/write.md	29	ПРАВИЛО	переименование файла или папки
+U-113	references/write.md	30	ПРАВИЛО	Ссылки ищутся механически, не по памяти
+U-114	references/write.md	30	ПОРОГ	путь файла, «<файл>, <номер>», «пункт <номер>»
+U-115	references/write.md	30	ПРАВИЛО	а не голый номер вида «2.5»
+U-116	references/write.md	30	ПРИЧИНА	который даёт шум
+U-117	references/write.md	30	ПОРОГ	git fetch && grep -rnF '<прежний адрес>' <клон> /mnt/skills/plugins
+U-118	references/write.md	30	ИСКЛЮЧЕНИЕ	среда без клона — Git Read Lines с pattern по каждому известному файлу
+U-119	references/write.md	30	ПРАВИЛО	а то, что поиск по всему репозиторию не выполнен, называется в отчёте
+U-120	references/write.md	30	ИСКЛЮЧЕНИЕ	Записи журналов LOG.md, отчёты синтеза и харвеста
+U-121	references/write.md	30	ПОРОГ	(meta/SYNTHESIS_*, meta/HARVEST_*)
+U-122	references/write.md	30	ИСКЛЮЧЕНИЕ	прежний текст статусов Очереди не правятся
+U-123	references/write.md	30	ПРИЧИНА	они история
+U-124	references/write.md	30	АДРЕС	(11.1)
+U-125	references/write.md	30	ПРАВИЛО	находка в Skill — текстом «было → стало» владельцу и позицией Очереди (10.5)
+U-126	references/write.md	31	ПРИЧИНА	после сдвига старый номер обычно существует
+U-127	references/write.md	31	ПРИЧИНА	он теперь принадлежит другому пункту
+U-128	references/write.md	31	ПРИЧИНА	ссылка ведёт не туда, оставаясь целой
+U-129	references/write.md	31	ПРИЧИНА	после переноса, снятия или переименования ссылка ведёт в пустоту
+U-130	references/write.md	31	ПРИЧИНА	а сессия проекта, читающая свой PLAN.md, этого не видит
+U-131	references/write.md	32	ПРОВЕРКА	проверка битых ссылок ничего не находит, а ссылка приводит к пункту о другом
+U-132	references/write.md	32	ПРОВЕРКА	PLAN.md проекта отсылает к файлу или Skill, которых в живом Skill нет
+U-133	references/write.md	33	АДРЕС	[основание: GIT-46]
+U-134	references/write.md	34	АДРЕС	[основание: GIT-47]
+U-135	references/write.md	37	ИСКЛЮЧЕНИЕ	Исключение — вычёркивание из наличного текста.
+U-136	references/write.md	37	ИСКЛЮЧЕНИЕ	Существующий файл разрешено записать заново целиком
+U-137	references/write.md	37	ИСКЛЮЧЕНИЕ	когда выполнены три условия сразу
+U-138	references/write.md	38	ИСКЛЮЧЕНИЕ	полный текст файла пришёл в контекст этой сессии ответом чтения
+U-139	references/write.md	38	ПОРОГ	Канала или клона
+U-140	references/write.md	38	ИСКЛЮЧЕНИЕ	не восстанавливается по памяти, пересказу или прошлой сессии
+U-141	references/write.md	39	ИСКЛЮЧЕНИЕ	правка — удаление или вставка целых строк
+U-142	references/write.md	39	ИСКЛЮЧЕНИЕ	все остальные строки переносятся без изменения
+U-143	references/write.md	40	ИСКЛЮЧЕНИЕ	запись целиком нужна ради атомарности, которую правкой фрагмента не получить
+U-144	references/write.md	40	ИСКЛЮЧЕНИЕ	сейчас это ровно один случай — создание и закрытие задачи лаборатории (4б.5)
+U-145	references/write.md	40	ПОРОГ	файл задачи и INDEX.md обязаны уйти одним вызовом Git Commit Files
+U-146	references/write.md	41	ПРИЧИНА	класс Р-79 родился там, где сессия восстанавливала текст
+U-147	references/write.md	41	ПРИЧИНА	здесь строка вычёркивается из текста, который в контексте есть
+U-148	references/write.md	42	ПРАВИЛО	Приёмка — по объекту, не по ответу инструмента
+U-149	references/write.md	43	ПРОВЕРКА	в среде с клоном `git diff` против родителя коммита показывает ровно
+U-150	references/write.md	44	ПРОВЕРКА	в среде без клона сходится байтовая арифметика
+U-151	references/write.md	44	ПОРОГ	размер после = размер до − байты удалённых строк + байты вставленных
+U-152	references/write.md	44	ПОРОГ	каждая строка с переводом строки
+U-153	references/write.md	44	ПРОВЕРКА	один вызов Git Read Lines с pattern по удалённой строке возвращает count = 0
+U-154	references/write.md	44	ПРОВЕРКА	по вставленной — count = 1
+U-155	references/write.md	45	ИСКЛЮЧЕНИЕ	Исключение временное
+U-156	references/write.md	45	ИСКЛЮЧЕНИЕ	оно снимается, когда Git Commit Files научится заменять фрагмент
+U-157	references/write.md	45	ПРИЧИНА	тогда атомарность получается без перенабора
+U-158	references/write.md	46	АДРЕС	[основание: GIT-54]
+U-159	references/write.md	49	ПРАВИЛО	5.5. STATE.md, PLAN.md, meta/* — переливной клапан.
+U-160	references/write.md	49	ПРАВИЛО	Порядок обязателен
+U-161	references/write.md	50	ПРАВИЛО	Запись выполняется целиком по 8 вне зависимости от бюджета чтения
+U-162	references/write.md	50	ПРАВИЛО	Отказа в записи по бюджету не существует
+U-163	references/write.md	50	ПРИЧИНА	бюджет ограничивает читателя (4.5), не запись
+U-164	references/write.md	50	ПРИЧИНА	лишний килобайт на старте дешевле потерянной строки
+U-165	references/write.md	51	ПРАВИЛО	Той же сессией, тем же нарядом — разбор по 5.1
+U-166	references/write.md	51	ПРАВИЛО	закрытое с датой → блок хроники в LOG.md по форме 11.5 через Git Append File
+U-167	references/write.md	51	ПОРОГ	(запасной путь — Git Append)
+U-168	references/write.md	51	ПРАВИЛО	дубль → указатель
+U-169	references/write.md	51	ПРАВИЛО	снимок чисел → удаляется
+U-170	references/write.md	51	ПРАВИЛО	Это вторая запись по 8, не часть первой
+U-171	references/write.md	52	ПРАВИЛО	Файл после разбора над бюджетом — остаётся над бюджетом
+U-172	references/write.md	52	ПРАВИЛО	это не повод ни для правки, ни для позиции в Очереди
+U-173	references/write.md	52	ПРИЧИНА	превышение бюджета чтения само по себе проблемой не является
+U-174	references/write.md	52	ПРАВИЛО	Критерий для файлов, читаемых на старте сессии, — по содержанию
+U-175	references/write.md	52	ПРАВИЛО	каждая строка меняет действие следующей сессии
+U-176	references/write.md	52	ПРАВИЛО	строка, которая не меняет, уезжает в журнал разбором по 5.1
+U-177	references/write.md	53	ПРАВИЛО	Не путать: позиция в Очереди «с числом и датой смерти» при каждом превышении
+U-178	references/write.md	53	СЛУЧАЙ	прежнее требование этого пункта, отменённое 2026-10-01
+U-179	references/write.md	53	ПРИЧИНА	такие позиции никто не исполнял
+U-180	references/write.md	54	АДРЕС	[основание: GIT-57]
+U-181	references/write.md	57	ПРАВИЛО	Текст записи ОБЯЗАН существовать файлом до вызова записи
+U-182	references/write.md	57	ПОРОГ	файлом Drive в папке _git_staging (8.3, Git Append File)
+U-183	references/write.md	57	ПРАВИЛО	Набор в теле вызова по памяти или плейсхолдером ЗАПРЕЩЁН
+U-184	references/write.md	59	ПРАВИЛО	Кириллица набирается как есть
+U-185	references/write.md	59	ПРАВИЛО	последовательности \uXXXX модель в теле вызова не набирает
+U-186	references/write.md	59	ПРАВИЛО	ни вручную, ни копированием вывода json.dumps с настройкой по умолчанию
+U-187	references/write.md	60	ПРИЧИНА	Почему — цена, а не порча
+U-188	references/write.md	60	ПРИЧИНА	каждая кириллическая буква в виде \uXXXX — шесть символов вместо одного
+U-189	references/write.md	60	ПРИЧИНА	выход модели растёт в разы
+U-190	references/write.md	60	СЛУЧАЙ	Замер 2026-09-24 на одном и том же тексте 3 439 Б
+U-191	references/write.md	60	СЛУЧАЙ	6 165 токенов выхода
+U-192	references/write.md	60	СЛУЧАЙ	1 260 — набранный кириллицей в textContent файла Drive
+U-193	references/write.md	61	ПРОВЕРКА	содержимое файла от этого не портится, поэтому ошибку легко не заметить
+U-194	references/write.md	61	ПРОВЕРКА	видна она только в наборе параметров вызова
+U-195	references/write.md	62	ПРИЧИНА	Почему запрет текстом не держится
+U-196	references/write.md	62	ПРИЧИНА	тело параметра-объекта execute_workflow (inputs)
+U-197	references/write.md	62	ПРИЧИНА	как бы модель его ни набрала
+U-198	references/write.md	62	ПРИЧИНА	модель видит свои прошлые вызовы экранированными и начинает так же набирать
+U-199	references/write.md	62	ПРИЧИНА	Сессия подражает тому, что видит выше по разговору
+U-200	references/write.md	62	ПРИЧИНА	прочитанный раньше запрет с подражанием не конкурирует
+U-201	references/write.md	62	ПРИЧИНА	нарушение повторяет и сессия, прочитавшая этот пункт за минуты до вызова
+U-202	references/write.md	62	ПРИЧИНА	Удорожание контекста от экранирования харнессом самоконтролем не снимается
+U-203	references/write.md	62	ПРАВИЛО	перенос тела в файл Drive (Git Append File, 8.3)
+U-204	references/write.md	62	ПРАВИЛО	запись клоном в сессии, где прошёл `git push --dry-run` (9.1)
+U-205	references/write.md	62	ПРИЧИНА	тогда тело не идёт через вызов инструмента вовсе
+U-206	references/write.md	62	СЛУЧАЙ	решение Андрея 2026-10-20
+U-207	references/write.md	62	СЛУЧАЙ	путь проверен 2026-10-19
+U-208	references/write.md	62	АДРЕС	meta/SYNTHESIS_second-brain-git_2026-10-19.md, раздел «Случаи без адреса»
+U-209	references/write.md	62	ПРАВИЛО	Поэтому правило не опирается на самоконтроль там, где его можно заменить
+U-210	references/write.md	64	ПОРОГ	| Вид вызова | Чем снята причина |
+U-211	references/write.md	66	ПРАВИЛО	русский текст в них не набирается вообще
+U-212	references/write.md	66	ПРАВИЛО	шаблоны поиска по пункту 7.6 SKILL.md, без русских букв
+U-213	references/write.md	67	ПРАВИЛО	Git Append File берёт текст из файла Drive (8.3)
+U-214	references/write.md	67	ПОРОГ	набора \uXXXX он не допускает
+U-215	references/write.md	68	ПРАВИЛО	(в) правка фрагмента с русским текстом (Git Replace)
+U-216	references/write.md	68	ПОРОГ	вход из файлов Drive, из которых воркфлоу берёт oldStr и newStr
+U-217	references/write.md	68	СЛУЧАЙ	владелец решил его строить 2026-10-18
+U-218	references/write.md	68	АДРЕС	решение Б1 файла meta/HARVEST_2026-10-18_answers.md
+U-219	references/write.md	68	ПРАВИЛО	построение — нарядом на правку воркфлоу n8n с «да» владельца
+U-220	references/write.md	68	АДРЕС	Skill second-brain-engineer, раздел Р10
+U-221	references/write.md	68	АДРЕС	задача labs/sys/t-git-replace-escape.md
+U-222	references/write.md	68	ПРИЧИНА	для короткой замены лишние шаги create_file и trash_file дороже набора
+U-223	references/write.md	69	ПРАВИЛО	(г) пока устройства из (в) нет
+U-224	references/write.md	69	ПРАВИЛО	перед каждым пишущим вызовом Канала сессия ищет в наборе параметров
+U-225	references/write.md	69	ПРАВИЛО	при находке переписывает вызов русскими буквами как есть
+U-226	references/write.md	69	ПРИЧИНА	Это слабое звено, оно названо слабым
+U-227	references/write.md	69	ПРАВИЛО	положиться на него одного нельзя
+U-228	references/write.md	71	АДРЕС	[основание: GIT-59]
+U-229	references/write.md	74	ПОРОГ	| Что делаю | Инструмент | Почему так |
+U-230	references/write.md	76	ПРАВИЛО	дозапись одной записи в append-only файл
+U-231	references/write.md	76	ПОРОГ	(LOG.md, LOG_ARCHIVE.md, NOT_TAKEN.md, registry/maintenance-queue.md)
+U-232	references/write.md	76	ПРАВИЛО	**Git Append File, ОДИН вызов**
+U-233	references/write.md	76	ПРАВИЛО	текст — файлом в папку _git_staging
+U-234	references/write.md	76	АДРЕС	форма вызова — абзац «Форма вызова Git Append File» под таблицей
+U-235	references/write.md	76	ПОРОГ	запасной путь — Git Append {path, text}
+U-236	references/write.md	76	ПРИЧИНА	склейку и PUT с expectedSha делает воркфлоу
+U-237	references/write.md	76	ПРИЧИНА	старый текст через сессию не проходит
+U-238	references/write.md	76	ПРИЧИНА	тело в параметре-объекте execute_workflow хранится в контексте
+U-239	references/write.md	76	ПОРОГ	около 1,8 токена на байт
+U-240	references/write.md	76	ПОРОГ	в textContent файла Drive — около 0,45
+U-241	references/write.md	76	СЛУЧАЙ	Р-15…Р-17 журнала projects/kontext-reduktion/LOG.md
+U-242	references/write.md	77	ПРАВИЛО	правка фрагмента существующего файла, в том числе внутри append-only
+U-243	references/write.md	77	ПОРОГ	**Git Replace**
+U-244	references/write.md	77	ПРИЧИНА	через модель идёт только фрагмент; цена не зависит от размера файла
+U-245	references/write.md	78	ПРАВИЛО	новый файл или замена целиком
+U-246	references/write.md	78	ПОРОГ	Git Write
+U-247	references/write.md	78	ПРАВИЛО	новый файл — без expectedSha
+U-248	references/write.md	78	ПРАВИЛО	замена — expectedSha = blob sha из свежего чтения
+U-249	references/write.md	78	ПРАВИЛО	Замена целиком существующего файла допустима, только если его текст
+U-250	references/write.md	78	ИСКЛЮЧЕНИЕ	или подпадает под исключение 4.5
+U-251	references/project-save.md	81	ПРАВИЛО	Статус позиции Очереди начинается одним словом из закрытого словаря
+U-252	references/project-save.md	81	ПРАВИЛО	всё прочее — после точки с запятой
+U-253	references/project-save.md	83	ПОРОГ	| Слово | Когда | После слова |
+U-254	references/project-save.md	85	ПОРОГ	| ОТКРЫТА |
+U-255	references/project-save.md	85	ПРАВИЛО	позиция заведена, текст правки владельцу ещё не выдан
+U-256	references/project-save.md	85	ПОРОГ	владельцу ещё не выдан | — |
+U-257	references/project-save.md	86	ПОРОГ	| ЖДЁТ |
+U-258	references/project-save.md	86	ПРАВИЛО	текст выдан или работа сделана, ждёт действия владельца
+U-259	references/project-save.md	86	ПОРОГ	(заливки, решения, вставки в промпт) или харвеста
+U-260	references/project-save.md	86	ПОРОГ	| чего именно |
+U-261	references/project-save.md	87	ПОРОГ	| ВНЕСЕНО |
+U-262	references/project-save.md	87	ПРАВИЛО	правка стоит в целевом носителе и проверена по объекту
+U-263	references/project-save.md	87	ПОРОГ	| дата и адрес |
+U-264	references/project-save.md	88	ПОРОГ	| СНЯТА |
+U-265	references/project-save.md	88	ПРАВИЛО	| не вносится |
+U-266	references/project-save.md	88	ПОРОГ	| дата и причина |
+U-267	references/project-save.md	89	ПОРОГ	| ДУБЛЬ |
+U-268	references/project-save.md	89	ПРАВИЛО	содержание уже живёт в носителе, в другой открытой позиции или задаче
+U-269	references/project-save.md	89	ПОРОГ	лаборатории | адрес |
+U-270	references/project-save.md	91	ПОРОГ	«ВНЕСЕНО 2026-10-13 — <адрес>; отложено 2026-10-10
+U-271	references/project-save.md	91	ПРАВИЛО	При смене статуса новое слово с датой встаёт в начало
+U-272	references/project-save.md	91	ПРАВИЛО	прежний текст уходит после точки с запятой и не стирается
+U-273	references/project-save.md	91	ПРАВИЛО	Других первых слов нет
+U-274	references/project-save.md	91	ПОРОГ	«ждёт» строчными, «отложено», «частично», «ЗАКРЫТО», «ВЫПОЛНЕНО», «СНЯТ»
+U-275	references/project-save.md	92	ПРИЧИНА	открыта ли позиция, решает разбор по первому слову
+U-276	references/project-save.md	92	ПРИЧИНА	скрипт делает его без ошибок
+U-277	references/project-save.md	92	ПРИЧИНА	слово в середине истории («до внесения», «внесено в составе»)
+U-278	references/project-save.md	93	АДРЕС	[основание: GIT-61]
+U-279	references/project-save.md	95	ПРАВИЛО	держит своё содержание только пока та открыта или внесла его в носитель
+U-280	references/project-save.md	95	ПРАВИЛО	при снятии позиции те, что ссылаются на неё словом ДУБЛЬ
+U-281	references/project-save.md	95	ПРИЧИНА	содержание, переданное по ссылке позиции, которую потом сняли
+U-282	references/project-save.md	95	ПРИЧИНА	выпадает из Очереди молча
+U-283	references/project-save.md	95	ПРИЧИНА	первым словом статуса оно закрыто, а в носителе его нет
+U-284	references/project-save.md	95	ПРОВЕРКА	позиция со статусом ДУБЛЬ указывает на позицию со статусом СНЯТА
+U-285	references/project-save.md	95	АДРЕС	[основание: GIT-62]
+U-286	references/lab.md	98	ПРАВИЛО	Закрытие задачи — удаление её файла и её строки в INDEX.md
+U-287	references/lab.md	98	ПРАВИЛО	Архивного файла нет
+U-288	references/lab.md	98	ПРАВИЛО	снятое читается из истории по ref родителя коммита удаления
+U-289	references/lab.md	98	ПРИЧИНА	поэтому второй носитель для закрытых задач не нужен (И-1)
+U-290	references/lab.md	98	АДРЕС	(И-1)
+U-291	references/lab.md	99	ИСКЛЮЧЕНИЕ	Исключение — задача, чей текст стал адресом строк основания
+U-292	references/lab.md	99	ПОРОГ	(Skill, отчёт синтеза, файл кейсов)
+U-293	references/lab.md	99	ПРАВИЛО	Перед закрытием её текст переносится скриптом без изменений, кроме строки-пути
+U-294	references/lab.md	99	ПОРОГ	файл кейсов meta/CASES_<тема>.md или файл проекта
+U-295	references/lab.md	99	ПРИЧИНА	чтобы номера строк в адресах остались верны
+U-296	references/lab.md	99	ПРАВИЛО	ссылки на прежний путь переадресуются по 2.5 тем же коммитом, что закрытие
+U-297	references/lab.md	99	ПРИЧИНА	Это не второй носитель: задача удаляется, текст живёт в одном месте
+U-298	references/lab.md	99	ПРИЧИНА	строка основания называет путь, которого в рабочем дереве больше нет
+U-299	references/lab.md	99	ПРИЧИНА	нужен номер коммита, которого строка не называет
+U-300	references/lab.md	99	ПРИЧИНА	а поиск по клону и Канал по пути его не находят
+U-301	references/lab.md	99	ПРОВЕРКА	файл задачи назван в строке основания живого Skill или отчёта синтеза
+U-302	references/lab.md	99	АДРЕС	[основание: GIT-33]
+U-303	references/log-form.md	102	ПРАВИЛО	11.1. Статус впереди текста.
+U-304	references/log-form.md	102	ПРАВИЛО	решение не редактируется — отменяется новой записью со ссылкой
+U-305	references/log-form.md	102	ПРАВИЛО	Статус прежней записи меняется одной правкой Git Replace по её строке
+U-306	references/log-form.md	102	ПОРОГ	и форм две
+U-307	references/log-form.md	103	ПОРОГ	ОТМЕНЕНО Р-NN
+U-308	references/log-form.md	103	ПРАВИЛО	новая запись отменяет прежнюю целиком
+U-309	references/log-form.md	104	ПОРОГ	ЧАСТИЧНО ОТМЕНЕНО Р-NN (пункт X)
+U-310	references/log-form.md	104	ПРАВИЛО	новая запись заменяет один или несколько пунктов прежней
+U-311	references/log-form.md	104	ПРАВИЛО	остальные её пункты в силе
+U-312	references/log-form.md	104	ПРАВИЛО	пункты называются так, как пронумерованы в прежней записи
+U-313	references/log-form.md	105	ПРИЧИНА	без неё прежняя запись либо ложно помечается отменённой целиком
+U-314	references/log-form.md	105	ПРИЧИНА	либо её мёртвый пункт читается как живой
+U-315	references/log-form.md	106	АДРЕС	[основание: GIT-63]
+U-316	references/skill-edit.md	109	ПРАВИЛО	2.6. Правка Skill: канон, зеркало, копии старой формулировки.
+U-317	references/skill-edit.md	111	ПРАВИЛО	Канон Skills — живой Skill в аккаунте владельца (Customize → Skills)
+U-318	references/skill-edit.md	111	ПРАВИЛО	Правит его только владелец
+U-319	references/skill-edit.md	111	ПРАВИЛО	сессия видит его снимком в /mnt/skills/plugins/<имя>/ и только читает
+U-320	references/skill-edit.md	111	ПРАВИЛО	Зеркало skills/<имя>/ репозитория — резервная копия
+U-321	references/skill-edit.md	111	ПРИЧИНА	у Customize истории версий нет
+U-322	references/skill-edit.md	111	ПРИЧИНА	зеркало, не обновлённое после правки, — потерянная версия
+U-323	references/skill-edit.md	111	ПРОВЕРКА	Расхождение зеркала с живым Skill значит «зеркало отстало»
+U-324	references/skill-edit.md	112	ПРАВИЛО	Не путать: зеркало не канон и правка в нём ничего не меняет в живом Skill
+U-325	references/skill-edit.md	112	СЛУЧАЙ	до 2026-10-18 карта репозитория называла зеркало каноном
+U-326	references/skill-edit.md	112	СЛУЧАЙ	ни одна правка этим путём не прошла
+U-327	references/skill-edit.md	112	АДРЕС	meta/CASES_skills-mirror-drift.md — текст закрытой задачи
+U-328	references/skill-edit.md	112	АДРЕС	labs/sys/t-skills-mirror-drift.md
+U-329	references/skill-edit.md	112	АДРЕС	решение В12 файла meta/HARVEST_2026-10-18_answers.md
+U-330	references/skill-edit.md	113	АДРЕС	Skill second-brain-engineer, раздел Р13
+U-331	references/skill-edit.md	113	ПРАВИЛО	здесь — механика приёмки, зеркала и поиска копий
+U-332	references/skill-edit.md	115	ПРАВИЛО	закрывается четырьмя шагами одной сессии, по порядку
+U-333	references/skill-edit.md	115	ПРАВИЛО	Пропущенный шаг называется в отчёте, а не умалчивается
+U-334	references/skill-edit.md	117	ПРАВИЛО	Шаг 1. Приёмка по объекту.
+U-335	references/skill-edit.md	117	ПРАВИЛО	Правка принимается чтением снимка Skill, загруженного в сессию
+U-336	references/skill-edit.md	117	ПРАВИЛО	по якорям правки (новый текст на месте)
+U-337	references/skill-edit.md	117	ПРАВИЛО	на отсутствие старых формулировок
+U-338	references/skill-edit.md	117	ПРАВИЛО	а не словом «внёс»
+U-339	references/skill-edit.md	118	ПРИЧИНА	слово владельца — память о действии, а не объект
+U-340	references/skill-edit.md	118	ПРИЧИНА	приёмка по объекту ловит то, чего слово не видит
+U-341	references/skill-edit.md	119	АДРЕС	[основание: GIT-48]
+U-342	references/skill-edit.md	121	ПРАВИЛО	Шаг 2. Обновление зеркала.
+U-343	references/skill-edit.md	122	ПРАВИЛО	(а) Сначала сверка в обе стороны, по каждому файлу Skill
+U-344	references/skill-edit.md	122	ПОРОГ	`diff -rq skills/<имя> /mnt/skills/plugins/<имя>`
+U-345	references/skill-edit.md	122	ПРАВИЛО	Если в зеркале есть файл или текст, которого нет в живом Skill
+U-346	references/skill-edit.md	122	ПРАВИЛО	стоп и вопрос владельцу
+U-347	references/skill-edit.md	122	ПРИЧИНА	копия поверх стёрла бы незалитую правку
+U-348	references/skill-edit.md	123	ПРАВИЛО	(б) Затем файлы живого Skill проверяются на классы И-7
+U-349	references/skill-edit.md	123	ПОРОГ	`grep -rnE '@|/webhook/|Bearer|credential' /mnt/skills/plugins/<имя>`
+U-350	references/skill-edit.md	123	ПРАВИЛО	каждая находка читается глазами
+U-351	references/skill-edit.md	123	ПРИЧИНА	копия переносит в публичный репозиторий всё, что лежит в живом Skill
+U-352	references/skill-edit.md	123	ПРИЧИНА	адрес почты или номер ключа, записанный в Skill, в историю repo попадёт
+U-353	references/skill-edit.md	123	ПРАВИЛО	Находка класса И-7 — стоп
+U-354	references/skill-edit.md	123	ПРАВИЛО	владелец убирает значение из живого Skill, зеркало пишется после
+U-355	references/skill-edit.md	124	ПРАВИЛО	файлы живого Skill копируются в skills/<имя>/ командой (`cp`)
+U-356	references/skill-edit.md	124	ПРАВИЛО	не набираются моделью
+U-357	references/skill-edit.md	124	ПРИЧИНА	это уже существующий текст (4.5)
+U-358	references/skill-edit.md	124	АДРЕС	транспорт — маршрут 9.4(б) файла references/delivery.md
+U-359	references/skill-edit.md	124	ПРАВИЛО	в среде, где прошёл `git push --dry-run`
+U-360	references/skill-edit.md	125	ПРОВЕРКА	(г) Приёмка: после коммита и свежего fetch `diff -rq` этой папки пуст
+U-361	references/skill-edit.md	126	ПРАВИЛО	Среда без открытого push зеркало не пишет — ни Каналом, ни частями
+U-362	references/skill-edit.md	126	ПРАВИЛО	обновление называется в отчёте и ложится позицией в Очередь (10.5)
+U-363	references/skill-edit.md	126	ПРИЧИНА	иначе версия Skill пропадёт при следующей правке
+U-364	references/skill-edit.md	127	АДРЕС	[основание: GIT-49]
+U-365	references/skill-edit.md	129	ПРАВИЛО	Шаг 3. Поиск копий старой формулировки.
+U-366	references/skill-edit.md	129	ПРИЧИНА	Правило, изменённое в одном носителе, продолжает действовать в своих копиях
+U-367	references/skill-edit.md	129	ПОРОГ	в других Skills, в файлах meta/, STATE.md и PLAN.md проектов
+U-368	references/skill-edit.md	129	ПОРОГ	в текстах мастер-промптов meta/prompts/
+U-369	references/skill-edit.md	129	ПРАВИЛО	Поэтому копии ищутся механически, не по памяти
+U-370	references/skill-edit.md	130	ПРАВИЛО	из каждого заменённого фрагмента (БЫЛО) берётся одна характерная фраза
+U-371	references/skill-edit.md	130	ПОРОГ	из пяти–восьми слов в пределах одной строки
+U-372	references/skill-edit.md	131	ПРАВИЛО	фраза ищется командой по клону репозитория и по папке Skills разом
+U-373	references/skill-edit.md	131	ПОРОГ	`git fetch && grep -rnF '<фраза>' <клон> /mnt/skills/plugins`
+U-374	references/skill-edit.md	131	ПРИЧИНА	Ключ -F ищет фразу как есть, без шаблона
+U-375	references/skill-edit.md	131	ПРИЧИНА	поэтому русские буквы в ней работают и без настроенной локали
+U-376	references/skill-edit.md	131	СЛУЧАЙ	проверено 2026-10-18 при LC_ALL=C
+U-377	references/skill-edit.md	131	СЛУЧАЙ	фраза «правка здесь, затем zip» найдена в живом Skill и в зеркале
+U-378	references/skill-edit.md	132	ПРАВИЛО	(в) шаг идёт после шага 2
+U-379	references/skill-edit.md	132	ПРИЧИНА	тогда находка в skills/ — копия в другом Skill, а не прежняя версия этого
+U-380	references/skill-edit.md	133	ПРАВИЛО	каждая находка тем же действием либо правится
+U-381	references/skill-edit.md	133	ПРАВИЛО	файл repo — по правилам записи этого файла
+U-382	references/skill-edit.md	133	ПРАВИЛО	другой Skill или живой мастер-промпт — текстом «было → стало» владельцу
+U-383	references/skill-edit.md	133	ПРАВИЛО	позицией в Очереди по 10.5
+U-384	references/skill-edit.md	133	ПРАВИЛО	либо названа в отчёте с причиной, почему это не копия
+U-385	references/skill-edit.md	133	ИСКЛЮЧЕНИЕ	запись журнала append-only не правится — она история, 11.1
+U-386	references/skill-edit.md	134	ПРАВИЛО	в отчёте по каждой фразе — сама фраза, число находок и что сделано
+U-387	references/skill-edit.md	134	ПРАВИЛО	ноль находок пишется явно
+U-388	references/skill-edit.md	135	ПРИЧИНА	живой текст мастер-промптов поиску недоступен
+U-389	references/skill-edit.md	135	ПРАВИЛО	ищется его зеркало meta/prompts/
+U-390	references/skill-edit.md	135	ПРОВЕРКА	находка там означает, что и живой промпт, скорее всего, несёт ту же копию
+U-391	references/skill-edit.md	136	ИСКЛЮЧЕНИЕ	(ж) среда без клона этот шаг не исполняет
+U-392	references/skill-edit.md	136	ПРИЧИНА	(Канал каталог не перечисляет, 3.2)
+U-393	references/skill-edit.md	136	ПРАВИЛО	шаг называется в отчёте невыполненным и ложится позицией в Очередь
+U-394	references/skill-edit.md	137	ПРАВИЛО	(з) тот же механический поиск — по имени, ID и пути носителя
+U-395	references/skill-edit.md	137	ПРАВИЛО	обязателен при заморозке или переносе носителя
+U-396	references/skill-edit.md	137	АДРЕС	правило и порядок — references/migration.md, 13.5
+U-397	references/skill-edit.md	138	АДРЕС	Skill second-brain-engineer, файл references/design.md, пункт 11
+U-398	references/skill-edit.md	138	ПРАВИЛО	Правило «копии ищут и снимают тем же действием»
+U-399	references/skill-edit.md	138	ПРАВИЛО	здесь — его механическое исполнение
+U-400	references/skill-edit.md	138	ПРИЧИНА	Почему шагом процедуры, а не только правилом метода
+U-401	references/skill-edit.md	138	СЛУЧАЙ	стоя в методе проектирования, правило ни разу не исполнилось с 2026-10-09
+U-402	references/skill-edit.md	139	АДРЕС	[основание: GIT-50]
+U-403	references/skill-edit.md	141	ПРАВИЛО	Шаг 4. Сверка перед заливкой.
+U-404	references/skill-edit.md	141	ПРАВИЛО	зеркало сверяется с живым Skill в обе стороны, по каждому файлу
+U-405	references/skill-edit.md	141	ПРАВИЛО	Расхождение, найденное сверкой, переносится в отстающий носитель до заливки
+U-406	references/skill-edit.md	142	ПРАВИЛО	скрипт проверяет длину поля description во frontmatter SKILL.md
+U-407	references/skill-edit.md	142	ПОРОГ	не больше 1024 знаков
+U-408	references/skill-edit.md	142	ПРИЧИНА	иначе Customize отказывает в заливке ошибкой
+U-409	references/skill-edit.md	142	ПОРОГ	field 'description' in SKILL.md must be at most 1024 characters
+U-410	references/skill-edit.md	142	ПОРОГ	python3 -c "import sys,yaml;t=open(sys.argv[1],encoding='utf-8').read();
+U-411	references/skill-edit.md	142	ПРАВИЛО	разбор YAML, а не поиск строки
+U-412	references/skill-edit.md	142	ПРИЧИНА	поиском строки считается как один знак и проходит проверку ложно
+U-413	references/skill-edit.md	142	АДРЕС	[основание: GIT-51]
+U-414	references/skill-edit.md	143	ПРИЧИНА	правка могла лечь мимо зеркала прямо в Customize
+U-415	references/skill-edit.md	143	ПРИЧИНА	заливка без сверки стирает её из живого Skill
+U-416	references/skill-edit.md	144	ПРОВЕРКА	расхождение бывает в обе стороны сразу
+U-417	references/skill-edit.md	145	АДРЕС	[основание: GIT-52]
+U-418	references/basis.md	148	АДРЕС	GIT-33 (references/lab.md, 4б.6)
+U-419	references/basis.md	148	СЛУЧАЙ	Основание: 1 случай, 2026-10-21
+U-420	references/basis.md	148	СЛУЧАЙ	задача labs/sys/t-avtopilot-skill.md, адрес шести строк основания
+U-421	references/basis.md	148	СЛУЧАЙ	перенесена в meta/CASES_avtopilot.md
+U-422	references/basis.md	148	СЛУЧАЙ	запись Р-6 журнала projects/knowledge-synthesis/LOG.md
+U-423	references/basis.md	148	СЛУЧАЙ	подтверждено Андреем
+U-424	references/basis.md	148	СЛУЧАЙ	находка J2#3 файла meta/HARVEST_2026-10-22.md
+U-425	references/basis.md	148	СЛУЧАЙ	с ней слита M3b#7
+U-426	references/basis.md	149	АДРЕС	GIT-46 (references/write.md, 2.5)
+U-427	references/basis.md	149	СЛУЧАЙ	2 проекта, последний 2026-10-21
+U-428	references/basis.md	149	СЛУЧАЙ	deklaration-v2 ссылался на references/cards-and-declarations.md
+U-429	references/basis.md	149	СЛУЧАЙ	после того, как Skill стал маршрутизатором
+U-430	references/basis.md	149	СЛУЧАЙ	PLAN.md проекта sku-cost — на Skill clasp-apps-script, который не залит
+U-431	references/basis.md	149	СЛУЧАЙ	заменён мостом gas-bridge
+U-432	references/basis.md	149	СЛУЧАЙ	находка S1#11 файла meta/HARVEST_2026-10-22.md
+U-433	references/basis.md	149	СЛУЧАЙ	строки 312, 314, 316 файла projects/deklaration-v2/PLAN.md
+U-434	references/basis.md	149	СЛУЧАЙ	строки 5, 18, 19 файла projects/sku-cost/PLAN.md на коммите 685ccf0
+U-435	references/basis.md	150	АДРЕС	GIT-47 (references/write.md, 2.5)
+U-436	references/basis.md	150	СЛУЧАЙ	Основание перенумерации: 1 случай
+U-437	references/basis.md	150	СЛУЧАЙ	шесть ссылок контракта на 7.1 вместо 7.6 после промежуточной перестановки
+U-438	references/basis.md	150	СЛУЧАЙ	найдены приёмкой правки Skill 2026-09-18
+U-439	references/basis.md	150	СЛУЧАЙ	записи Р-89, Р-103 и тупик Т-71 журнала
+U-440	references/basis.md	150	СЛУЧАЙ	запись Р-122 журнала projects/git-migration/LOG.md
+U-441	references/basis.md	151	АДРЕС	GIT-48 (references/skill-edit.md, 2.6, Шаг 1)
+U-442	references/basis.md	151	СЛУЧАЙ	Основание: 1 случай
+U-443	references/basis.md	151	СЛУЧАЙ	приёмка по якорям нашла шесть ссылок, ведших не на тот пункт
+U-444	references/basis.md	151	СЛУЧАЙ	запись Р-103 журнала projects/git-migration/LOG_ARCHIVE.md
+U-445	references/basis.md	152	АДРЕС	GIT-49 (references/skill-edit.md, 2.6, Шаг 2)
+U-446	references/basis.md	152	СЛУЧАЙ	решение В12 файла meta/HARVEST_2026-10-18_answers.md
+U-447	references/basis.md	152	СЛУЧАЙ	синхронизации зеркала из живого Skill 2026-10-09
+U-448	references/basis.md	152	СЛУЧАЙ	и 2026-10-13
+U-449	references/basis.md	152	СЛУЧАЙ	meta/CASES_skills-mirror-drift.md (текст закрытой задачи
+U-450	references/basis.md	153	АДРЕС	GIT-50 (references/skill-edit.md, 2.6, Шаг 3)
+U-451	references/basis.md	153	СЛУЧАЙ	9 объектов, в которых копия прежнего правила продолжала действовать
+U-452	references/basis.md	153	СЛУЧАЙ	последний 2026-10-18
+U-453	references/basis.md	153	СЛУЧАЙ	meta/DECLARATION_SCAN.md требовал заново назначать ключи доступа
+U-454	references/basis.md	153	СЛУЧАЙ	вопреки корню R1b Skill n8n-engineering-manual
+U-455	references/basis.md	153	СЛУЧАЙ	исправлено коммитом ef7e0e0
+U-456	references/basis.md	153	СЛУЧАЙ	маршрут ядра, писавший уроки в замороженные журналы
+U-457	references/basis.md	153	СЛУЧАЙ	запись Р-129 журнала projects/git-migration/LOG.md
+U-458	references/basis.md	153	СЛУЧАЙ	мастер-промпт SYS, искавший блокеры в CORE Р.5
+U-459	references/basis.md	153	СЛУЧАЙ	labs/sys/t-prompt-blocker-registry.md
+U-460	references/basis.md	153	СЛУЧАЙ	полный перечень — находки А6 и Б15 файла meta/HARVEST_2026-10-18.md
+U-461	references/basis.md	154	АДРЕС	GIT-51 (references/skill-edit.md, 2.6, Шаг 4)
+U-462	references/basis.md	154	СЛУЧАЙ	Основание проверки длины: 1 случай, 2026-10-20
+U-463	references/basis.md	154	СЛУЧАЙ	zip синтеза n8n-engineering-manual с описанием в 1043 знака отказан
+U-464	references/basis.md	154	СЛУЧАЙ	исправлено до 1019
+U-465	references/basis.md	154	СЛУЧАЙ	отчёт meta/SYNTHESIS_n8n-engineering-manual_2026-10-20.md
+U-466	references/basis.md	154	СЛУЧАЙ	раздел «Решения Андрея»; позиция AJ-24 Очереди
+U-467	references/basis.md	155	АДРЕС	GIT-52 (references/skill-edit.md, 2.6, Шаг 4)
+U-468	references/basis.md	155	СЛУЧАЙ	Основание: 1 случай, 2026-10-01
+U-469	references/basis.md	155	СЛУЧАЙ	references/write.md был новее в зеркале, references/migration.md — в живом
+U-470	references/basis.md	155	СЛУЧАЙ	заливка без сверки стёрла бы пункт 13.6
+U-471	references/basis.md	155	СЛУЧАЙ	запись Р-32 журнала projects/kontext-reduktion/LOG.md
+U-472	references/basis.md	156	АДРЕС	GIT-53 (references/write.md, 4.5)
+U-473	references/basis.md	156	СЛУЧАЙ	Основание: 2 случая
+U-474	references/basis.md	156	СЛУЧАЙ	244 версии LOG_ARCHIVE.md за сутки и потеря 69 номеров
+U-475	references/basis.md	156	СЛУЧАЙ	запись Р-79 журнала projects/git-migration/LOG_ARCHIVE.md, 2026-09-16
+U-476	references/basis.md	156	СЛУЧАЙ	правка одной строки набором полного текста файла дала копию на 219 Б короче
+U-477	references/basis.md	156	СЛУЧАЙ	пойманную сверкой blob sha до записи
+U-478	references/basis.md	156	СЛУЧАЙ	тупик Т-01 журнала projects/anis-evidence/LOG.md, 2026-09-13
+U-479	references/basis.md	157	АДРЕС	GIT-54 (references/write.md, 4.5)
+U-480	references/basis.md	157	СЛУЧАЙ	Основание исключения: 1 случай, 2026-09-25
+U-481	references/basis.md	157	СЛУЧАЙ	закрытие задачи лаборатории перенабором INDEX.md целиком
+U-482	references/basis.md	157	СЛУЧАЙ	diff показал одну удалённую строку и ни одной добавленной
+U-483	references/basis.md	157	СЛУЧАЙ	запись Р-28 журнала projects/kontext-reduktion/LOG.md
+U-484	references/basis.md	158	АДРЕС	GIT-57 (references/write.md, 5.5)
+U-485	references/basis.md	158	СЛУЧАЙ	запись Р-125 журнала projects/git-migration/LOG.md (Андрей, 2026-10-01)
+U-486	references/basis.md	158	СЛУЧАЙ	позиция, висевшая без движения, — AH-18 очереди
+U-487	references/basis.md	158	СЛУЧАЙ	на Р-125 опирался перенос проекта n8n
+U-488	references/basis.md	158	СЛУЧАЙ	запись Р-3 журнала projects/n8n/LOG.md
+U-489	references/basis.md	159	АДРЕС	GIT-59 (references/write.md, 8.2)
+U-490	references/basis.md	159	СЛУЧАЙ	цена — записи Р-15 и Р-16 журнала projects/kontext-reduktion/LOG.md
+U-491	references/basis.md	159	СЛУЧАЙ	повторы после внесения правила — 4, последний 2026-10-13
+U-492	references/basis.md	159	СЛУЧАЙ	харвест 2026-10-08, шесть вызовов Git Replace
+U-493	references/basis.md	159	СЛУЧАЙ	meta/SYNTHESIS_second-brain-git_2026-10-19.md, раздел «Случаи без адреса»
+U-494	references/basis.md	159	СЛУЧАЙ	сессия Архивариуса 2026-10-11, четыре вызова Git Replace
+U-495	references/basis.md	159	СЛУЧАЙ	к projects/archivarius/STATE.md
+U-496	references/basis.md	159	СЛУЧАЙ	сессия SYS 2026-10-13 (обе — labs/sys/t-git-replace-escape.md)
+U-497	references/basis.md	159	СЛУЧАЙ	сессия 2026-10-12, повтор после прочтения пункта и обещания владельцу
+U-498	references/basis.md	159	СЛУЧАЙ	позиция AI-7 файла registry/maintenance-queue-archive.md
+U-499	references/basis.md	160	АДРЕС	GIT-61 (references/project-save.md, 10.5)
+U-500	references/basis.md	160	СЛУЧАЙ	Основание: 1 случай, 2026-10-18
+U-501	references/basis.md	160	СЛУЧАЙ	разбор Очереди харвестом по слову «внесено» в любом месте статуса
+U-502	references/basis.md	160	СЛУЧАЙ	ложно закрыл открытую позицию AI-23
+U-503	references/basis.md	160	СЛУЧАЙ	файл meta/HARVEST_2026-10-18.md, раздел 0.5 и находка Г5
+U-504	references/basis.md	161	АДРЕС	GIT-62 (references/project-save.md, 10.5)
+U-505	references/basis.md	161	СЛУЧАЙ	Основание: 1 случай, 2026-10-20…21
+U-506	references/basis.md	161	СЛУЧАЙ	после снятия AJ-2 позиции AI-6 и AI-23 остались её дублями
+U-507	references/basis.md	161	СЛУЧАЙ	исправление причины потери отметки маркировки у 29 карточек
+U-508	references/basis.md	161	СЛУЧАЙ	пока не завели AJ-27
+U-509	references/basis.md	161	СЛУЧАЙ	registry/maintenance-queue.md, позиция AJ-27
+U-510	references/basis.md	161	СЛУЧАЙ	находка M3b#66 файла meta/HARVEST_2026-10-22.md
+U-511	references/basis.md	162	АДРЕС	GIT-63 (references/log-form.md, 11.1)
+U-512	references/basis.md	162	СЛУЧАЙ	Основание: 1 случай, 2026-09-24
+U-513	references/basis.md	162	СЛУЧАЙ	запись Р-22 журнала projects/kontext-reduktion/LOG.md заменила пункт 2а
+U-514	references/basis.md	162	СЛУЧАЙ	записи Р-21 при действующих остальных
+U-515	references/basis.md	162	СЛУЧАЙ	позиция AG-12 очереди registry/maintenance-queue.md
