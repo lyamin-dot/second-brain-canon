@@ -23,7 +23,10 @@ PLAN_append.md (дописывается в конец PLAN.md). Приёмка:
 """
 import hashlib, json, os, re, sys
 
-def blob_sha(b): return hashlib.sha1(b"blob %d\0" % len(b) + b).hexdigest()
+def blob_sha(b):
+    # CRLF рабочей копии Windows (core.autocrlf=true) сводится к LF, как в git: sha совпадает с git rev-parse <ref>:<путь>
+    b = b.replace(b"\r\n", b"\n")
+    return hashlib.sha1(b"blob %d\0" % len(b) + b).hexdigest()
 
 def main():
     dec = json.load(open(sys.argv[1], encoding="utf-8")); out = sys.argv[2]
