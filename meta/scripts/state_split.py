@@ -13,7 +13,9 @@
            не считается сделанным.
 
 Запуск: python3 state_split.py check <STATE.md>
-        python3 state_split.py split <STATE.md> <папка вывода> [--expect-sha <blob sha>]
+        python3 state_split.py split <STATE.md> <папка вывода> --expect-sha <blob sha>
+        (в режиме split флаг обязателен: решения о раскладке, принятые по снимку,
+        применимы только к тому же снимку — харвест 2026-10-31, Н-38)
 
 Правило, которое исполняет скрипт, — meta/CONTRACT_state-content.md (что остаётся в STATE.md).
 Раздел определяется заголовком (строки # / ## / ###). Текст до первого заголовка
@@ -59,6 +61,8 @@ def main():
     mode, path = sys.argv[1], sys.argv[2]
     raw = open(path, "rb").read(); text = raw.decode("utf-8")
     sha = blob_sha(raw)
+    if mode == "split" and "--expect-sha" not in sys.argv:
+        sys.exit("СТОП: режим split требует --expect-sha <blob sha> — разбор без проверки снимка запрещён.")
     if "--expect-sha" in sys.argv:
         exp = sys.argv[sys.argv.index("--expect-sha") + 1]
         if not sha.startswith(exp):
