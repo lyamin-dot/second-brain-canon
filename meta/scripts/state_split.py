@@ -55,16 +55,23 @@ def sections(text):
     return out
 
 def blob_sha(data: bytes):
+    # CRLF рабочей копии Windows (core.autocrlf=true) сводится к LF, как в git: sha совпадает с git rev-parse <ref>:<путь>
+    data = data.replace(b"\r\n", b"\n")
     return hashlib.sha1(b"blob %d\0" % len(data) + data).hexdigest()
 
 def main():
-    mode, path = sys.argv[1], sys.argv[2]
+    args, exp = sys.argv[1:], None
+    if "--expect-sha" in args:
+        i = args.index("--expect-sha")
+        if i + 1 >= len(args) or args[i + 1].startswith("--"):
+            sys.exit("СТОП: после --expect-sha нужен blob sha.")
+        exp = args[i + 1]; del args[i:i + 2]
+    mode, path = args[0], args[1]
     raw = open(path, "rb").read(); text = raw.decode("utf-8")
     sha = blob_sha(raw)
-    if mode == "split" and "--expect-sha" not in sys.argv:
+    if mode == "split" and exp is None:
         sys.exit("СТОП: режим split требует --expect-sha <blob sha> — разбор без проверки снимка запрещён.")
-    if "--expect-sha" in sys.argv:
-        exp = sys.argv[sys.argv.index("--expect-sha") + 1]
+    if exp is not None:
         if not sha.startswith(exp):
             sys.exit(f"СТОП: файл изменился — blob sha {sha[:7]}, ожидался {exp[:7]}. Разбор по старому снимку запрещён.")
     secs = sections(text)
@@ -80,7 +87,7 @@ def main():
         print(f"  [{d:9}] {len(''.join(l).encode()):6} Б  {h or '(шапка файла)'}")
     if mode == "check":
         return
-    out = sys.argv[3]; os.makedirs(out, exist_ok=True)
+    out = args[2]; os.makedirs(out, exist_ok=True)
     buckets = {"STATE": [], "LOG": [], "PLAN": [], "UNDECIDED": []}
     for d, h, l in plan: buckets[d].extend(l)
     names = {"STATE": "STATE.new.md", "LOG": "to_LOG.md", "PLAN": "to_PLAN.md", "UNDECIDED": "UNDECIDED.md"}
