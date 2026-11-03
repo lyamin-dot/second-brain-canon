@@ -35,8 +35,8 @@ projects/kontext-reduktion/STATE.md
 ## Перенос Skills в короткую форму — пилот apps-script-sheets (2026-11-03, Р-39)
 
 Закон операции — `meta/CRITERIA_skill-transfer.md`; Skill выдаётся на заливку одним zip-архивом (шаг 6, Р-41). Ветка пилота влита в main (ff3e120).
-Сделано: шаги 1, 2, 4, 5, 7 пилота, пилот принят (Р-40). Архив — `skills/_v1/apps-script-sheets/`, разметка и итоги шагов — там же `TRANSFER.md`. Новый Skill — один файл `skills/apps-script-sheets/SKILL.md` (51 КБ; раздел книг маркетплейсов внесён в него коммитом 0cc78ec ради вставки в редактор); было 190 КБ.
-Состояние живого Skill (снимок 2026-11-03): SKILL.md новый, но рядом лежат четыре файла references/ старого Skill (book-traps, design, samples, signal) — вставка в редактор их не убрала. Ждёт Андрея: залить zip `apps-script-sheets` (выдан в чат 2026-11-03); критерий — `diff -rq` живого Skill с зеркалом пуст.
+Сделано: шаги 1, 2, 4, 5, 7 пилота, пилот принят (Р-40). Архив — `skills/_v1/apps-script-sheets/`, разметка и итоги шагов — там же `TRANSFER.md`. Новый Skill: `skills/apps-script-sheets/SKILL.md` (37 КБ) + `references/marketplace-books.md` (14 КБ); было 190 КБ. Вставка раздела в SKILL.md (0cc78ec) откачена — с zip-архивом она не нужна.
+Состояние живого Skill (снимок 2026-11-03): SKILL.md новый, но рядом лежат четыре файла references/ старого Skill (book-traps, design, samples, signal) — вставка в редактор их не убрала. Ждёт Андрея: залить zip `apps-script-sheets` с папкой references/ (выдан в чат 2026-11-03 вторым; первый, одним файлом, не заливать); критерий — `diff -rq` живого Skill с зеркалом пуст.
 Дальше: следующий Skill — в новом чате, по критериям, субагентами (шаги 2, 4, 5).
 
 ## Работа над размером и раскладкой Skill закрыта (2026-10-26, Р-38)
