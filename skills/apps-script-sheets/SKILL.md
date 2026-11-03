@@ -12,11 +12,11 @@ description: "ОБЯЗАТЕЛЬНО читай перед любой перед
 | Ситуация | Файл |
 |---|---|
 | книги маркетплейсов Ozon и WB (витрины юнит-экономики, книги по сырым данным, книги сверки, главные таблицы товарных данных и деклараций): их сигнал, оформление, раскладка, сверка, образцы для новой книги | `references/marketplace-books.md` |
-| чтение и запись Drive, `gsheets-read`, `gdocs-*`; контракт ответа `gsheets-read`, признак `truncated`; ложная ошибка «Document … is missing» | Skill `google-drive-docs`, references/sheets.md, раздел «Чтение Google Sheets — только gsheets-read» |
+| чтение и запись Drive, `gsheets-read`, `gdocs-*`; контракт ответа `gsheets-read`, признак `truncated`; ложная ошибка «Document … is missing» | Skill `google-drive-docs`, раздел «Чтение Google Sheets — только gsheets-read» в «Как делать»; ловушки — раздел «Google Sheets» в «Адреса и ловушки» |
 | первый вызов моста gas-bridge в сессии: форма вызова, поля ответа, отказы, сужение ответа | `projects/gas-bridge/PLAN.md`, раздел «Контракт вызова» |
 | найти идентификатор скрипта существующей книги | `projects/gas-bridge/PLAN.md`, раздел «Устройство» |
 | аварийный путь clasp: ловушки clasp | `skills/clasp-apps-script/SKILL.md` (зеркало, в Customize не заливается) |
-| новая книга: где ручной ввод, где вывод робота | Skill `google-drive-docs`, references/sheets.md, абзац «Лист — единица владения» |
+| новая книга: где ручной ввод, где вывод робота | Skill `google-drive-docs`, раздел «Лист — единица владения» |
 | колонку, куда пишет n8n, или лист, который n8n читает по заголовкам | Skill `n8n-engineering-manual`, разделы «Google Sheets» в «Стоп-правила» и в «Как делать» |
 | строится проверка, по которой принимается решение | Skill `second-brain-engineer`, references/design-acceptance.md, пункт «Проверка, которая не может соврать» |
 | воркфлоу n8n по расписанию — тот же закон «работает то, что видно по объекту» | Skill `n8n-engineering-manual`, пункт «Воркфлоу по расписанию считается работающим только по объекту» |
