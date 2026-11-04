@@ -22,6 +22,7 @@ Human version (RU, authoritative wording): meta/PROTOCOL_wb-card-write.md. Edit 
 - Keys: write «WB Kontent_ИП_Wr» OBHpKT8vPkAzVjH9; read WB_Контент_ИП_R.
 
 ## STEPS
+0. FIRST — subject and merge group (CASES case 22; Andrei's rule 2026-11-04, LOG R-59, R-61, R-62). Before any write and before analysing fields compare the card's current subject with the reference subject: no conflict with the card's codes (TN VED etc.) and needKiz; for a merge group (shared imtID) — the subject allowing codes of ALL members. If codes/fields dropped — check by logic that the subject matches the product name. Subject changes only in the cabinet and moves the whole group: check group members and all their codes against the new subject's directory first; a code missing from the subject directory is silently dropped (case 24).
 1. Compute targets from sheets (not memory).
 2. List disputes: no reference; expired reference; sources disagree (LM_DECL vs «Декларации».articles); other valid decl on card.
 3. mode='проверка', run, check 03_Build (found count, problems empty, report).
