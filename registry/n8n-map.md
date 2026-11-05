@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-11-04T09:50:05.127Z
+instance_last_change|2026-11-04T21:55:06.473Z
 W|030MvX2dzoZ8Nl0N|MKT2 Engine Backup Tool|inactive|never|manualTrigger|-|instance|?|-|-
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|WB/Logistic|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
@@ -31,6 +31,7 @@ W|4rtirtbCVFnlyQp7|TMP Ozon Logistics Diagnostic (read-only)|archived|never|manu
 W|529VWvqSTg8l4fUU|Card Content — Ozon Probe (temp)|inactive|never|manualTrigger|-|instance|?|-|-
 W|555GP7GWs1EL5FIO|Credential Rights Probe (temp)|inactive|never|formTrigger|-|instance|?|-|-
 W|56cGbN0MRyggaGq8|Deklaration_MotorOel_V.5|inactive|never|scheduleTrigger|field=months,monthsInterval=1000,triggerAtHour=5|instance|Ozon/Deklaration|-|-
+W|5GJQBPEFEBylYw6S|OZON spp-guard Min Price Control|inactive|never|formTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|5Iyr82zmzCeievFv|KB AC — Annotation Preprocessor|active|same|manualTrigger,scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
 W|5MDOGVCTxwDjHqy3|OZON_UE Backfill 2026-09-08 -> yesterday|inactive|never|manualTrigger|-|instance|?|-|-
 W|5Rs6pNDSm4weWDVj|SYS Maintenance Gap Monitor|inactive|never|scheduleTrigger|expression=0 9 * * 1,field=cronExpression|instance|?|-|-
@@ -148,11 +149,13 @@ W|S4rZMUkI21dVu3ML|WB FBS Decision Engine|active|same|scheduleTrigger|expression
 W|S61kFx4naWzPzqRc|TMP Ozon Adapter Re-run (no RAW sync)|archived|never|manualTrigger|-|instance|?|-|-
 W|SElTcMg3BpY6pmdo|OZON RAW Konversion Sync|inactive|never|scheduleTrigger|triggerAtHour=6,triggerAtMinute=30|Europe/Berlin|Ozon/Unit-Economic|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|SoreXOUG4nhaWfQr|TMP Ozon Cleanup — delete poisoned 20.08 rows|inactive|never|manualTrigger|-|instance|?|-|-
+W|SqmdCgXwWBlRR7mP|MKT2 Ref Supplier Price|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=6,triggerAtMinute=45|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|TCbW7KGTccSJDgzW|MKT2 Collect /api/v1/supplier/sales|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=5,triggerAtMinute=0|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|TXNstdVL8xlIygBp|SYS Lint|inactive|never|scheduleTrigger|triggerAtHour=6|instance|?|-|-
 W|Ta4fU7QI1QRb32tB|Archive Read Status Page|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|TnGkQWGfdhKrjWGI|DEKL 2.0 — Щит WB (оба кабинета, только чтение)|inactive|never|manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|U0P4iPkSmlKtvdD4|MKT2 Collect /v4/product/info/stocks|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=7,triggerAtMinute=0|Europe/Moscow|?|M5BLqclKBjGTpz33|-
+W|U7E56lE1MF3EWAWo|MKT2 Ref Article Build|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=6,triggerAtMinute=55|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|UOxe3lay5R7cFed7|WB KIZ Probe (temp)|inactive|never|formTrigger|-|instance|?|-|-
 W|UqIBtsrbiUp52MbI|MKT2 Collect /v4/product/info/attributes|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=6,triggerAtMinute=25|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|UvWU13d9oV1eNYDE|MKT2 Collect /api/finance/v1/sales-reports/detailed|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=5,triggerAtMinute=30|Europe/Moscow|?|M5BLqclKBjGTpz33|-
@@ -206,13 +209,14 @@ W|e9ScqWtLPgSsHf0A|Claude → Google Apps Script Read|inactive|never|webhook|-|i
 W|eCNJfCuwFxOI26H1|WB Cards Error List ИП (инструмент)|inactive|never|manualTrigger|-|instance|?|-|-
 W|eLBcH8MeE38NbMZq|Ozon Card Fields Fix (ИП)|inactive|never|manualTrigger|-|instance|?|-|-
 W|ecLCKdm5Vb39OGUo|ONE-OFF Cleanup: delete stray row 476 in Price Master Artikel|archived|never|manualTrigger|-|instance|?|-|-
+W|eeseE2KiHSvuYsR6|MKT2 Collect Engine BACKUP 2026-11-04|inactive|never|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|f4yb9twJIezGJEvz|Daily Briefing Generator|archived|never|scheduleTrigger|triggerAtHour=5|Europe/Berlin|Kommunikation mit Claude|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|f7kdTpDADk7q0v2t|SYS Index Size + Zone Sync Monitor|inactive|never|scheduleTrigger|expression=0 9 * * 1 ,field=cronExpression|instance|?|-|-
 W|fGHfVrI58Ws1wfTw|WB Cards → Price Master (WB_Cards_Staging)|active|same|manualTrigger,scheduleTrigger|triggerAtHour=4,triggerAtMinute=10|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|fdiWemSCln1WA8gt|***|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|ft4D2JGquVUzhtO0|Card Description Sync|inactive|never|formTrigger|-|instance|?|-|-
 W|fucfCvCqeXSQlBbe|LM_DECL — очистка листа (temp)|archived|never|manualTrigger|-|instance|?|-|-
-W|gFFiBPm1OomOzJOj|N8N Registry Sync|active|unpublished|manualTrigger,scheduleTrigger|triggerAtHour=5,triggerAtMinute=30|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|gFFiBPm1OomOzJOj|N8N Registry Sync|active|same|manualTrigger,scheduleTrigger|triggerAtHour=5,triggerAtMinute=30|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|gJv4sGN4QjzohlLE|MKT2 Collect /v1/finance/accrual/by-day|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=6,triggerAtMinute=50|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|gb4og08Wk2lVoAnH|LM_DECL — FSA Probe (temp)|archived|never|scheduleTrigger|expression=0 3 1 1 *,field=cronExpression|instance|?|-|-
 W|gglEq5U90Gt3sI7h|Получение nmID WB|active|same|manualTrigger,scheduleTrigger|field=months,monthsInterval=100|instance|?|M5BLqclKBjGTpz33|-
@@ -602,6 +606,7 @@ X|U0P4iPkSmlKtvdD4|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
 X|UqIBtsrbiUp52MbI|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
 X|UvWU13d9oV1eNYDE|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
 X|YQBfmS0fC7IPcsbz|q78KdtgIWGTySlFN|06B_Call_Supply_Sync|nowait
+X|eeseE2KiHSvuYsR6|dynamic|05_Call_Proxy|wait
 X|gJv4sGN4QjzohlLE|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
 X|pd2K2KtImWlFfueW|dynamic|05_Call_Proxy|wait
 X|sGVOfYuvtgATzpeq|pd2K2KtImWlFfueW|02_Run_Collector_Engine|wait
@@ -670,6 +675,8 @@ C|555GP7GWs1EL5FIO|httpCustomAuth|1
 C|555GP7GWs1EL5FIO|httpHeaderAuth|5
 C|56cGbN0MRyggaGq8|googleSheetsOAuth2Api|3
 C|56cGbN0MRyggaGq8|httpHeaderAuth|1
+C|5GJQBPEFEBylYw6S|formTrigger:n8nUserAuth|1
+C|5GJQBPEFEBylYw6S|httpCustomAuth|4
 C|5Iyr82zmzCeievFv|googleApi|2
 C|5Iyr82zmzCeievFv|httpHeaderAuth|1
 C|5Rs6pNDSm4weWDVj|googleApi|3
@@ -812,11 +819,15 @@ C|SElTcMg3BpY6pmdo|googleApi|1
 C|SElTcMg3BpY6pmdo|httpCustomAuth|1
 C|SElTcMg3BpY6pmdo|httpHeaderAuth|1
 C|SoreXOUG4nhaWfQr|googleApi|4
+C|SqmdCgXwWBlRR7mP|googleApi|5
+C|SqmdCgXwWBlRR7mP|postgres|1
 C|TXNstdVL8xlIygBp|googleApi|9
 C|TXNstdVL8xlIygBp|httpHeaderAuth|7
 C|Ta4fU7QI1QRb32tB|httpHeaderAuth|1
 C|TnGkQWGfdhKrjWGI|googleApi|3
 C|TnGkQWGfdhKrjWGI|httpHeaderAuth|4
+C|U7E56lE1MF3EWAWo|googleApi|2
+C|U7E56lE1MF3EWAWo|postgres|1
 C|UOxe3lay5R7cFed7|httpHeaderAuth|2
 C|V146OQ5rqG2UIjRB|googleApi|3
 C|V43JMSOFHyf7wbiH|googleApi|3
@@ -866,6 +877,7 @@ C|e9ScqWtLPgSsHf0A|httpHeaderAuth|1
 C|eCNJfCuwFxOI26H1|httpHeaderAuth|1
 C|eLBcH8MeE38NbMZq|googleApi|1
 C|eLBcH8MeE38NbMZq|httpCustomAuth|6
+C|eeseE2KiHSvuYsR6|postgres|4
 C|f7kdTpDADk7q0v2t|googleApi|3
 C|f7kdTpDADk7q0v2t|httpHeaderAuth|2
 C|f7kdTpDADk7q0v2t|telegramApi|1
@@ -996,6 +1008,8 @@ R|dbwaFVp0jWqNnMdI|7YOafm11bMUtCVpy|02_Connect_Kiparis
 R|dbwaFVp0jWqNnMdI|90r528HvqDY6pBNp|02_Connect_Kiparis
 R|dbwaFVp0jWqNnMdI|A7UY4VhLnLJJQtMU|02_Connect_Kiparis
 R|dbwaFVp0jWqNnMdI|pjOxY1G7CjqLL7Mo|02_Connect_Kiparis
+R|eeseE2KiHSvuYsR6|IvgysDKrq3UISYEY|06_Parse_Page
+R|eeseE2KiHSvuYsR6|aVpgEnYBAgIIss4k|06_Parse_Page
 R|ft4D2JGquVUzhtO0|J0v5swjXLfiANJa2|Sticky Note 03689492
 R|ft4D2JGquVUzhtO0|QCQI6utFFH3dvTJT|Sticky Note 03689492
 R|m31GGno1ZOQ0a2Xf|nIRKnhKyI5LibFW3|03_Build
