@@ -96,7 +96,7 @@ projects/marketplace-rebuild/DATA_MODEL.md
 | cabinet_code | text | ссылка на ref.cabinet |
 | source_method | text | метод API, как в документации |
 | payload | jsonb | один элемент ответа целиком |
-| payload_hash | text | отпечаток payload (md5 текста jsonb); для raw.wb_card и raw.ozon_product_attr — md5 копии payload, в которой элементы массивов characteristics (WB) и complex_attributes (Ozon) упорядочены; сам payload пишется как пришёл (с 2026-10-31, запись Р-38; перечень массивов — поле hash_sort в узле 02_Config движка) |
+| payload_hash | text | отпечаток payload (md5 текста jsonb); для raw.wb_card и raw.ozon_product_attr — md5 копии payload, в которой элементы массивов characteristics (WB) и complex_attributes (Ozon) упорядочены; сам payload пишется как пришёл (с 2026-10-31, запись Р-38; перечень массивов — поле hash_sort в узле 02_Config движка); для raw.ozon_product (с 2026-11-05, запись Р-47) — md5 копии без полей price, commissions, price_indexes, stocks, visibility_details, с упорядоченными errors и их texts.params и только с включёнными promotions (поля hash_drop и hash_sort_errors узла 02_Config): поэтому цена, остатки, комиссии и индексы в payload версии raw.ozon_product — на момент первой загрузки версии, текущие читать из raw.ozon_price и raw.ozon_stock_product |
 | load_run_id | bigint | прогон, впервые принёсший версию |
 | first_loaded_at | timestamptz | когда версия впервые легла (UTC) — колонка даты загрузки |
 | last_loaded_at | timestamptz | когда последний раз пришла снова |
