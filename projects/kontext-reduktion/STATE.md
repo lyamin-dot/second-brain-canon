@@ -19,7 +19,7 @@ projects/kontext-reduktion/STATE.md
 ## Следующий шаг
 
 Эстафета второй волны переноса Skills (Р-48, Р-49): все правки внесены, всё в main.
-1. Ждёт Андрея: залить разом одиннадцать zip — выданы 2026-11-06: шесть в сессии Р-48 (naryad, avtopilot, denken, context-handoff, n8n-workflow-passport, n8n-workflow-registry; zip avtopilot заменяет незалитый архив Р-44 от 2026-11-03 — тот не заливать) и пять в сессии Р-49 (second-brain-engineer, second-brain-git, n8n-engineering-manual, apps-script-sheets, google-drive-docs; прежние архивы последних трёх — не заливать).
+1. Залиты Андреем и приняты 2026-11-06 (одиннадцать zip) — выданы 2026-11-06: шесть в сессии Р-48 (naryad, avtopilot, denken, context-handoff, n8n-workflow-passport, n8n-workflow-registry; zip avtopilot заменяет незалитый архив Р-44 от 2026-11-03 — тот не заливать) и пять в сессии Р-49 (second-brain-engineer, second-brain-git, n8n-engineering-manual, apps-script-sheets, google-drive-docs; прежние архивы последних трёх — не заливать).
 2. После заливки — приёмка по снимку свежей сессии (`diff -rq` живого Skill с зеркалом пуст) для всех одиннадцати; закрыть AJ-61 и AJ-81.
 Списки «?» (не красные) по каждому Skill — в его `skills/_v1/<имя>/TRANSFER.md`, ждут слова Андрея (шаг 7 критериев).
 
