@@ -1,0 +1,255 @@
+{
+ "art": "1709",
+ "title": "Защитный спрей от грызунов Liqui Moly (Marder-Spray), 200 мл",
+ "photo": "1709_1_wb391706057-1.webp",
+ "cut_thr": 244,
+ "s7": "timeline",
+ "decor": "harness",
+ "photo_side": true,
+ "slides": [
+  {
+   "n": 1,
+   "name": "Обложка",
+   "theme": "light",
+   "type": "cover",
+   "elements": [
+    {
+     "kind": "H1",
+     "text": "Защитный спрей от грызунов",
+     "icon": null
+    },
+    {
+     "kind": "подзаголовок",
+     "text": "Liqui Moly Marder-Spray · 200 мл",
+     "icon": null
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "name": "Главное назначение",
+   "theme": "dark",
+   "type": "promise",
+   "elements": [
+    {
+     "kind": "H1",
+     "text": "Защита проводов и шлангов от грызунов",
+     "icon": null
+    },
+    {
+     "kind": "подзаголовок",
+     "text": "Для обработки деталей под капотом",
+     "icon": null
+    },
+    {
+     "kind": "блок 1",
+     "text": "Провода",
+     "icon": "cable"
+    },
+    {
+     "kind": "блок 2",
+     "text": "Шланги",
+     "icon": "waves"
+    },
+    {
+     "kind": "блок 3",
+     "text": "Мыши, крысы, куницы",
+     "icon": "rat"
+    },
+    {
+     "kind": "бейдж",
+     "text": "Официальный продавец · Гарантия подлинности",
+     "icon": "badge-check"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "name": "Где применять",
+   "theme": "light",
+   "type": "audience",
+   "elements": [
+    {
+     "kind": "H1",
+     "text": "Где применять спрей",
+     "icon": null
+    },
+    {
+     "kind": "подзаголовок",
+     "text": "При хранении и парковке рядом с грызунами",
+     "icon": null
+    },
+    {
+     "kind": "блок 1",
+     "text": "Под капотом автомобиля",
+     "icon": "car-front"
+    },
+    {
+     "kind": "блок 2",
+     "text": "В гараже",
+     "icon": "warehouse"
+    },
+    {
+     "kind": "блок 3",
+     "text": "Дома — для защиты утвари",
+     "icon": "house"
+    },
+    {
+     "kind": "бейдж",
+     "text": "Официальный продавец · Гарантия подлинности",
+     "icon": "badge-check"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "name": "Что обрабатывать",
+   "theme": "dark",
+   "type": "benefits",
+   "elements": [
+    {
+     "kind": "H1",
+     "text": "Что обрабатывать спреем",
+     "icon": null
+    },
+    {
+     "kind": "блок 1",
+     "text": "Высоковольтные и обычные провода",
+     "icon": "cable"
+    },
+    {
+     "kind": "блок 2",
+     "text": "Шланги",
+     "icon": "waves"
+    },
+    {
+     "kind": "блок 3",
+     "text": "Пластик",
+     "icon": "layers"
+    },
+    {
+     "kind": "блок 4",
+     "text": "Резина",
+     "icon": "circle-check"
+    },
+    {
+     "kind": "бейдж",
+     "text": "Официальный продавец · Гарантия подлинности",
+     "icon": "badge-check"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "name": "Назначение и применение",
+   "theme": "light",
+   "type": "specs",
+   "elements": [
+    {
+     "kind": "H1",
+     "text": "Спрей от грызунов",
+     "icon": null
+    },
+    {
+     "kind": "блок 1",
+     "text": "Формат: аэрозоль",
+     "icon": "spray-can"
+    },
+    {
+     "kind": "блок 2",
+     "text": "Объём: 200 мл",
+     "icon": "beaker"
+    },
+    {
+     "kind": "блок 3",
+     "text": "Повторная обработка — каждые 14 дней",
+     "icon": "calendar-clock"
+    },
+    {
+     "kind": "бейдж",
+     "text": "Официальный продавец · Гарантия подлинности",
+     "icon": "badge-check"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "name": "Как применять",
+   "theme": "light",
+   "type": "steps",
+   "elements": [
+    {
+     "kind": "H1",
+     "text": "Применение за три шага",
+     "icon": null
+    },
+    {
+     "kind": "шаг 1",
+     "text": "Распылите на детали под капотом",
+     "icon": "spray-can"
+    },
+    {
+     "kind": "шаг 2",
+     "text": "Или в местах, где появляются грызуны",
+     "icon": "house"
+    },
+    {
+     "kind": "шаг 3",
+     "text": "Повторяйте каждые 14 дней",
+     "icon": "repeat"
+    },
+    {
+     "kind": "бейдж",
+     "text": "Официальный продавец · Гарантия подлинности",
+     "icon": "badge-check"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "name": "Ритм обработки",
+   "theme": "dark",
+   "type": "s7",
+   "elements": [
+    {
+     "kind": "H1",
+     "text": "Обработка раз в 14 дней",
+     "icon": null
+    },
+    {
+     "kind": "этап 1",
+     "text": "День 1 — обработка",
+     "icon": "spray-can"
+    },
+    {
+     "kind": "этап 2",
+     "text": "День 14 — повторить",
+     "icon": "calendar-clock"
+    },
+    {
+     "kind": "подпись",
+     "text": "Для долгой защиты — повторять обработку",
+     "icon": "repeat"
+    },
+    {
+     "kind": "бейдж",
+     "text": "Официальный продавец · Гарантия подлинности",
+     "icon": "badge-check"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "name": "Белый фон",
+   "theme": "white",
+   "type": "white",
+   "elements": [
+    {
+     "kind": "бейдж",
+     "text": "Официальный продавец · Гарантия подлинности",
+     "icon": "badge-check"
+    }
+   ]
+  }
+ ]
+}

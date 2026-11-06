@@ -1,0 +1,40 @@
+{
+  "_doc": "Параметры рендера С3 по артикулу: фото из архива CONTENT_PHOTOS_ZIP (registry/documents.md), порог вырезки, вариант слайда 7, декор фона по ТЗ etalon/<арт>.md. photo_side — баллон ставится сбоку на слайдах 2 и 7 (ТЗ etalon/1709.md).",
+  "skus": {
+    "1340": {
+      "photo": "1340_1_wb257044108-2.webp",
+      "cut_thr": 252,
+      "s7": "mech_h",
+      "decor": "channels"
+    },
+    "1342": {
+      "photo": "1342_1_wb258487785-1.webp",
+      "cut_thr": 244,
+      "s7": "mech_v",
+      "decor": "flow"
+    },
+    "1750": {
+      "photo": "1750_1_wb563129033-1.webp",
+      "cut_thr": 244,
+      "s7": "glass",
+      "decor": "drops"
+    },
+    "1709": {
+      "photo": "1709_1_wb391706057-1.webp",
+      "cut_thr": 244,
+      "s7": "timeline",
+      "decor": "harness",
+      "photo_side": true
+    }
+  },
+  "slide_types": [
+    "cover",
+    "promise",
+    "audience",
+    "benefits",
+    "specs",
+    "steps",
+    "s7",
+    "white"
+  ]
+}
