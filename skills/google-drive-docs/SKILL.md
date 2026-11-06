@@ -1,6 +1,6 @@
 ---
 name: google-drive-docs
-description: "ОБЯЗАТЕЛЬНО читай перед любой операцией с Google Drive, Google Docs, Google Sheets, даже если задача кажется простой: create_file, gdocs-append, gdocs-replace, gdocs-overwrite, gdocs-apply-from-file, gdocs-read, чтение диапазона строк документа, создание таблицы, работа с папками, перенос файлов, поиск в Drive, бэкап через rclone. Не читать для create_file в папку _git_staging по Skill second-brain-git (Git Append File)."
+description: "ОБЯЗАТЕЛЬНО читай перед любой операцией с Google Drive, Google Docs, Google Sheets, даже если задача кажется простой: create_file, gdocs-append, gdocs-replace, gdocs-overwrite, gdocs-apply-from-file, gdocs-read, чтение диапазона строк документа, создание таблицы, работа с папками, перенос файлов, поиск в Drive, бэкап через rclone. Загружать сразу, до первого вызова инструмента, и тогда, когда задача — только план, разбор или вопрос без правки: пункт плана «загрузить Skill» загрузку не заменяет. Не читать для create_file в папку _git_staging по Skill second-brain-git (Git Append File)."
 ---
 
 # google-drive-docs
