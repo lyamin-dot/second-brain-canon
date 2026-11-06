@@ -3,7 +3,8 @@
 
 Два режима:
   check  — только отчёт: размер, превышение бюджета чтения (8 192 Б), какие разделы
-           остаются, какие уедут и куда. Ничего не пишет. Для вызова на !save,
+           остаются, какие уедут и куда; строки «От соседнего проекта» старше 7 дней
+           и длиннее 500 Б — к решению сессии (с 2026-11-06). Ничего не пишет. Для вызова на !save,
            из контракта автопилота и из скриптов переноса.
   split  — раскладывает файл в папку вывода: STATE.new.md (остаётся),
            to_LOG.md (история — блок хроники для LOG.md), to_PLAN.md (правила),
@@ -21,7 +22,7 @@
 Раздел определяется заголовком (строки # / ## / ###). Текст до первого заголовка
 (шапка файла) остаётся. Заголовок сравнивается без учёта регистра.
 """
-import hashlib, os, re, sys
+import datetime, hashlib, os, re, sys
 
 BUDGET = 8192
 
@@ -54,6 +55,56 @@ def sections(text):
     out.append((cur_h, cur))
     return out
 
+# Строки раздела «От соседнего проекта»: сосед, приняв факт, переносит его в свой журнал или открытый вопрос
+# и вычёркивает строку (meta/CONTRACT_state-content.md; Skill second-brain-git, «Факт соседнему проекту»).
+# Скрипт не решает за сессию, а называет кандидатов: строку старше NEIGHBOUR_AGE_DAYS дней (по первой дате
+# ГГГГ-ММ-ДД в строке) и строку длиннее NEIGHBOUR_MAX_BYTES (форма — «одна строка»). Только отчёт, код возврата не меняется.
+NEIGHBOUR_HEADING = "от соседнего проекта"
+NEIGHBOUR_AGE_DAYS = 7
+NEIGHBOUR_MAX_BYTES = 500
+
+def neighbour_items(text):
+    """[(номер первой строки, текст пункта)] — пункты «- …» в разделах «От соседнего проекта»;
+    строки-продолжения без «- » (не заголовок, не пустые) приклеиваются к пункту."""
+    items, inside, cur = [], False, None
+    for n, line in enumerate(text.splitlines(), 1):
+        if re.match(r"^#{1,3} ", line):
+            inside = NEIGHBOUR_HEADING in line.lower(); cur = None; continue
+        if not inside: continue
+        if line.startswith("- "):
+            cur = [n, line]; items.append(cur)
+        elif line.strip() and cur is not None:
+            cur[1] += "\n" + line
+        elif not line.strip():
+            cur = None
+    return items
+
+def report_neighbours(text, today):
+    items = neighbour_items(text)
+    if not items:
+        return
+    flagged = []
+    for n, body in items:
+        marks = []
+        m = re.search(r"\d{4}-\d{2}-\d{2}", body)
+        try:
+            d = datetime.date.fromisoformat(m.group(0)) if m else None
+        except ValueError:
+            d = None
+        if d is None:
+            marks.append("дата не найдена")
+        elif (today - d).days > NEIGHBOUR_AGE_DAYS:
+            marks.append(f"старше {NEIGHBOUR_AGE_DAYS} дн. ({d}, {(today - d).days} дн.)")
+        size = len(body.encode())
+        if size > NEIGHBOUR_MAX_BYTES:
+            marks.append(f"длиннее {NEIGHBOUR_MAX_BYTES} Б ({size} Б)")
+        if marks:
+            flagged.append((n, marks, body.splitlines()[0][:70]))
+    total = sum(len(b.encode()) for _, b in items)
+    print(f"строки соседей: {len(items)} пунктов, {total} Б; к решению сессии (принять в журнал или открытый вопрос, строку вычеркнуть): {len(flagged)}")
+    for n, marks, head in flagged:
+        print(f"  стр. {n}: {'; '.join(marks)} — {head}")
+
 def blob_sha(data: bytes):
     # CRLF рабочей копии Windows (core.autocrlf=true) сводится к LF, как в git: sha совпадает с git rev-parse <ref>:<путь>
     data = data.replace(b"\r\n", b"\n")
@@ -66,6 +117,10 @@ def main():
         if i + 1 >= len(args) or args[i + 1].startswith("--"):
             sys.exit("СТОП: после --expect-sha нужен blob sha.")
         exp = args[i + 1]; del args[i:i + 2]
+    today = datetime.date.today()
+    if "--today" in args:   # для проверки скрипта на подложенном файле
+        i = args.index("--today")
+        today = datetime.date.fromisoformat(args[i + 1]); del args[i:i + 2]
     mode, path = args[0], args[1]
     raw = open(path, "rb").read(); text = raw.decode("utf-8")
     sha = blob_sha(raw)
@@ -85,6 +140,7 @@ def main():
     print(f"остаётся в STATE.md: {keep_bytes} Б  {'— и после разбора больше бюджета' if keep_bytes > BUDGET else ''}")
     for d, h, l in plan:
         print(f"  [{d:9}] {len(''.join(l).encode()):6} Б  {h or '(шапка файла)'}")
+    report_neighbours(text, today)
     if mode == "check":
         return
     out = args[2]; os.makedirs(out, exist_ok=True)
