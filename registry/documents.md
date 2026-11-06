@@ -42,6 +42,7 @@ CONTENT_INDEX:      12YmBvtmAGImFm2fMPz2FglsrCibG3v7acj3NY5LG7m0 — ЗАМОР�
 CONTENT_PROJECT_FOLDER: 17nu-PtP92LAP05UFf9vFhUsPCfldkVMQ — папка Drive «112Oil — Карточки маркетплейсов». В замороженных INDEX и Master Plan записан неверный ID «17nKu6Elis5IYJGaGhXTVCtqBr9XLjSaB» (поиск по нему пуст, 2026-11-06).
 CONTENT_PHOTOS_FOLDER: 1oceYd1A5zj0x6as_abR82pOOlFXpLOs2 — папка «фото-товаров» внутри CONTENT_PROJECT_FOLDER: фото товаров и логотип для рендера, имя файла начинается с артикула (1340_1.png) или logo_. Создана 2026-11-06 воркфлоу Create Folder (право редактора сервисному аккаунту выдано им же).
 CONTENT_ETALON_FOLDER: 1NhrarhUPP7B9oceAxqKVYeslii0E1qjG — папка «эталон-2026-11» внутри CONTENT_PROJECT_FOLDER: документы эталона для Андрея. Создана 2026-11-06 тем же способом.
+CONTENT_PHOTOS_ZIP: 1NSD_B1hWD5yg4xe-xClO9vOJYdXgSNgd — «etalon4_wb_photos.zip» в CONTENT_PHOTOS_FOLDER: пять первых фото карточек WB основного кабинета (1340 ×2, 1342, 1709, 1750), 900×1200 webp; путь в песочницу Claude Code — download_file_content целиком (156 096 Б, лёг файлом, размеры членов архива совпали с одиночными файлами, 2026-11-06). Создан воркфлоу p3BqS9oFs4eHw3PN, прогон 95608.
 CONTENT_MASTER_PLAN: 1LLTtyb3MfjjzIMlQYav2PkkykHIS3sn9U48YsD_D5MM — «112Oil — MASTER PLAN», Google Doc. ЗАМОРОЖЕН 2026-11-06, заменён projects/content/PLAN.md.
 CONTENT_RESEARCH_LOG: 1ATP0RXIhe3M7lUIw7Qmte0p_8_ntJ37Fn6i2PN5xTIU — «112Oil — Research Log», Google Doc: пересказы требований площадок, июнь 2026; первоисточником не считается.
 
