@@ -38,7 +38,12 @@ RENO_INDEX:         1r3hSt4pccSHbya31KLNYtyr5xJtbTl1VcX-OCprBjcM
 TRADING_INDEX:      1GhOuwVL41hzyWYF4X8Su0bSuraVw6X4pGxc0G3hkT2Y
 SYS_INDEX:          12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8 — ЗАМОРОЖЕН 2026-09-30 (решение 2026-09-23, Р-109 журнала projects/git-migration/LOG.md); рабочий носитель — labs/sys/INDEX.md; не читать и не писать
 
-CONTENT_INDEX:      12YmBvtmAGImFm2fMPz2FglsrCibG3v7acj3NY5LG7m0
+CONTENT_INDEX:      12YmBvtmAGImFm2fMPz2FglsrCibG3v7acj3NY5LG7m0 — ЗАМОРОЖЕН 2026-11-06, канон → projects/content/ (Р-1 журнала projects/content/LOG.md)
+CONTENT_PROJECT_FOLDER: 17nu-PtP92LAP05UFf9vFhUsPCfldkVMQ — папка Drive «112Oil — Карточки маркетплейсов». В замороженных INDEX и Master Plan записан неверный ID «17nKu6Elis5IYJGaGhXTVCtqBr9XLjSaB» (поиск по нему пуст, 2026-11-06).
+CONTENT_PHOTOS_FOLDER: 1oceYd1A5zj0x6as_abR82pOOlFXpLOs2 — папка «фото-товаров» внутри CONTENT_PROJECT_FOLDER: фото товаров и логотип для рендера, имя файла начинается с артикула (1340_1.png) или logo_. Создана 2026-11-06 воркфлоу Create Folder (право редактора сервисному аккаунту выдано им же).
+CONTENT_ETALON_FOLDER: 1NhrarhUPP7B9oceAxqKVYeslii0E1qjG — папка «эталон-2026-11» внутри CONTENT_PROJECT_FOLDER: документы эталона для Андрея. Создана 2026-11-06 тем же способом.
+CONTENT_MASTER_PLAN: 1LLTtyb3MfjjzIMlQYav2PkkykHIS3sn9U48YsD_D5MM — «112Oil — MASTER PLAN», Google Doc. ЗАМОРОЖЕН 2026-11-06, заменён projects/content/PLAN.md.
+CONTENT_RESEARCH_LOG: 1ATP0RXIhe3M7lUIw7Qmte0p_8_ntJ37Fn6i2PN5xTIU — «112Oil — Research Log», Google Doc: пересказы требований площадок, июнь 2026; первоисточником не считается.
 
 AUTOCHEM_BUNDLES_INDEX: 1Lnod5P2LTn5ECDHWEzfP34LCvXvgfBC6-gdZDq6ywDs
 

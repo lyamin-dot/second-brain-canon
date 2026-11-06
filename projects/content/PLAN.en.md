@@ -1,0 +1,37 @@
+projects/content/PLAN.en.md
+
+Agent copy of the autopilot contract in `projects/content/PLAN.md` (pair file: edit both in one commit). Human version (Russian) is authoritative on conflict -> stop and ask Andrei. Always reply/write user-facing text in Russian.
+
+# CONTENT autopilot — run brief
+
+GOAL: approvable reference set: 4 SKUs x 8 slides PNG 1200x1600 + copy + bg prompts, no Andrei involvement.
+SKUs: 1340 (cooling-system sealant), 1342 (Engine Flush), 1750 (windshield cleaner Cherry), 1709 (marten/rodent spray). Demand list of 23: see PLAN.md item 7.
+Brand DNA, grid, slide structure: PLAN.md sections "Что сохранено" and "Структура 8 слайдов" — read them, do not restate from memory.
+
+## Every package starts with
+1. Load Skills (Skill tool) whose description fits: second-brain-git, second-brain-engineer, avtopilot; plus google-drive-docs if touching Drive/Docs/Sheets.
+2. `git clone` lyamin-dot/second-brain-canon (public, anonymous); read `meta/PENDING_RULES.md`, `projects/content/STATE.md`, `projects/content/PLAN.md`, this file.
+3. GATE: STATE.md must show `С<N-1>: ГОТОВО` (С1 has no gate). Missing -> write to STATE.md `С<N>: ЗАБЛОКИРОВАНО — <reason>` and stop.
+4. Writing to repo: if `git push --dry-run` passes -> commit to main directly (fetch+rebase first); else Канал (n8n Git Write / Git Append File / Git Commit Files, IDs in registry/tools.md); else stop as blocked. Prove every write by re-read (blob sha).
+5. Never: write to WB/Ozon cabinets, change any n8n workflow, delete anything, draw the Liqui Moly logo (use neutral "ЛОГО" box), spawn subagents, put PNGs or personal data into the repo. Any product claim needs a source address.
+
+## С1 Facts (output `projects/content/FACTS.md`, then STATE `С1: ГОТОВО <date> <sha7 of FACTS.md>`)
+- gsheets-read (workflow ID: registry/n8n-map.md, name "Claude → Google Sheets Read", trigger 01_Webhook) book 1sPD5SAFCTygzUaEPg8RKRPHQyc0HCMIK-aMpnXqYu3k, sheet `kb_auto_chemistry`: header row + rows for the 4 SKUs (full) and the 23 demand SKUs (article, name, type, volume, purpose, application_area). Record sheet+row address for every value.
+- Verify hypotheses Г1–Г4 (PLAN.md) by PRIMARY sources only (WB seller help/rules on media & infographics; Ozon seller docs on images; Честный знак official site / government decree for automotive chemicals & cosmetics marking timeline; image size requirements). WebSearch "standard", escalate "extended" if thin. Each verdict: confirmed / refuted / unclear + URL + read date. Secondary articles = hypothesis only.
+- FACTS.md sections: Data (per SKU), Platform rules (Г1–Г4 verdicts), Implications for slides (one line each).
+
+## С2 Copy (output `projects/content/etalon/<art>.md` x4 + one Google Doc; STATE `С2: ГОТОВО`)
+- Per SKU (format of the Project master prompt): Product Insight; 8 slides — goal, H1 (3–7 words), subline (<=2 lines), body blocks (1 idea = 1 block), icons, badge flags; every factual claim tagged `[src: kb_auto_chemistry!row N col X]` or `[src: URL, date]`; untraceable claim -> drop it. Designer brief; 3 background prompts (scene+product+angle+light+materials+style+palette+quality+limits; product packaging kept unchanged).
+- Respect FACTS.md platform verdicts (no forbidden wording).
+- Human Doc: create_file text/html into Drive folder "эталон-2026-11" (ID registry/documents.md, row CONTENT_ETALON_FOLDER); register in registry/documents.md; verify by gdocs-read (no raw tags).
+
+## С3 Template + render (code in `projects/content/render/`; STATE `С3: ГОТОВО`)
+- npm: @fontsource/montserrat (cyrillic 400/600/800, also latin), lucide-static. Python playwright, executable_path /usr/bin/google-chrome, args --no-sandbox, viewport 1200x1600.
+- One parametric template set (8 slide types) fed from a JSON per SKU built from etalon/<art>.md. Backgrounds in CSS only (gradients/geometry/light), palette per PLAN.md.
+- Photos: search Drive folder "фото-товаров" (ID registry/documents.md row CONTENT_PHOTOS_FOLDER) for files starting with the article; download via download_file_content (large output lands in a file; decode base64, check size == Drive fileSize). None -> grey canister silhouette labelled "фото товара".
+- Render 32 PNG. Check script per slide: exact size; min computed font-size of visible text >= 28px; nothing inside 48px margins except backgrounds; palette colors used <= 3 (ignore photo). Then LOOK at every PNG (Read tool) and fix overflow/clipping/contrast; record a per-slide verdict table in `render/REPORT.md`.
+- Publish gallery: Artifact publish_files (index.html + PNGs from disk), private. No artifact tool -> SendUserFile the PNGs and note it in STATE.
+- STATE: gallery URL/slug, report sha7.
+
+## Close each package
+STATE.md: only next step / blockers / open questions (contract meta/CONTRACT_state-content.md). LOG.md: one Р-entry per real decision (form: second-brain-git "Форма записи в журнал"). Run `python3 meta/scripts/state_split.py check projects/content/STATE.md`.
