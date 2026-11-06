@@ -4,8 +4,8 @@ projects/kontext-reduktion/STATE.md
 > Состояние: пауза
 > Дата: 2026-11-06
 > Что это: Удешевление старта сессий
-> Следующий шаг: Эстафета переноса Skills — AJ-81 и разморозка n8n-engineering-manual, apps-script-sheets (раздел «Следующий шаг»)
-> Ждёт Андрея: Подтвердить финиш, пункты 1 и 3; два «да» на замки 4б и 4в
+> Следующий шаг: После заливки Андреем одиннадцати Skills — приёмка по снимку свежей сессии, закрыть AJ-61 и AJ-81
+> Ждёт Андрея: Залить одиннадцать zip Skills (раздел «Следующий шаг»); подтвердить финиш, пункты 1 и 3; два «да» на замки 4б и 4в
 
 # STATE_kontext-reduktion — текущее состояние
 
@@ -18,10 +18,9 @@ projects/kontext-reduktion/STATE.md
 
 ## Следующий шаг
 
-Эстафета второй волны переноса Skills (Р-48; восемь Skills перенесены, шаг 6 пройден, всё в main). Новая сессия Claude Code с открытым push:
-1. AJ-81 (`registry/maintenance-queue.md`), правки (1)–(5) — внести в новые `skills/second-brain-engineer/SKILL.md` и `skills/second-brain-git/SKILL.md` по форме короткого Skill (заголовками, без номеров пунктов); затем zip этих двух Skills по `second-brain-git`, «Сборка и сверка перед заливкой». Zip шести других (naryad, avtopilot, denken, context-handoff, n8n-workflow-passport, n8n-workflow-registry) выданы Андрею 2026-11-06; zip avtopilot заменяет незалитый архив Р-44 (выдан 2026-11-03) — тот не заливать; заливать все восемь лучше разом, после этих двух.
-2. Разморозка по слову Андрея 2026-11-06: в `skills/n8n-engineering-manual/SKILL.md` внести правила, которых там нет, — из `skills/n8n-workflow-passport/SKILL.md`: две ловушки записи описания воркфлоу (setWorkflowMetadata заменяет описание целиком; create_workflow_from_code обрезает до 255 знаков), «причина снятия с публикации обязательна», «архивацию по умолчанию не предлагать», «не ставить alwaysOutputData ради „чтобы не обрывалось“»; из `skills/avtopilot/SKILL.md`: перед правкой воркфлоу сверить updatedAt (n8n перезаписывает граф без проверки версии); там же две ссылки на старые файлы google-drive-docs (строки «Drive MCP create_file падает…», «файл, куда пишет сервисный аккаунт») переписать на заголовки нового `skills/google-drive-docs/SKILL.md`. В `skills/apps-script-sheets/SKILL.md` путь `skills/clasp-apps-script/SKILL.md` → `skills/_v1/clasp-apps-script/SKILL.md`. Копии в passport и avtopilot можно заменить строкой ссылки после этого. Zip обоих Skills.
-3. После заливки Андреем — приёмка по снимку свежей сессии (`diff -rq` живого Skill с зеркалом) для всех десяти; закрыть AJ-61 и AJ-81.
+Эстафета второй волны переноса Skills (Р-48, Р-49): все правки внесены, всё в main.
+1. Ждёт Андрея: залить разом одиннадцать zip — выданы 2026-11-06: шесть в сессии Р-48 (naryad, avtopilot, denken, context-handoff, n8n-workflow-passport, n8n-workflow-registry; zip avtopilot заменяет незалитый архив Р-44 от 2026-11-03 — тот не заливать) и пять в сессии Р-49 (second-brain-engineer, second-brain-git, n8n-engineering-manual, apps-script-sheets, google-drive-docs; прежние архивы последних трёх — не заливать).
+2. После заливки — приёмка по снимку свежей сессии (`diff -rq` живого Skill с зеркалом пуст) для всех одиннадцати; закрыть AJ-61 и AJ-81.
 Списки «?» (не красные) по каждому Skill — в его `skills/_v1/<имя>/TRANSFER.md`, ждут слова Андрея (шаг 7 критериев).
 
 0. Дорожная карта после ретроспективы — `meta/ROADMAP_post-retro_2026-10-23.md`, раздел 3 (состояние шагов) и раздел 4 (действия Андрея: два «да» на замки 4б и 4в; одно слово по AJ-38; три правки Skill внесены — строки 4а, 6, 7 раздела 3 карты ВНЕСЕНО; проба проведена на четырёх чатах — Р-38; сверка харвеста 2026-10-31). Сессия, которая берётся за любой шаг, читает карту первой.
@@ -41,11 +40,7 @@ projects/kontext-reduktion/STATE.md
 ## Перенос Skills в короткую форму — пилот apps-script-sheets (2026-11-03, Р-39)
 
 Закон операции — `meta/CRITERIA_skill-transfer.md`; Skill выдаётся на заливку одним zip-архивом (шаг 6, Р-41). Ветка пилота влита в main (ff3e120).
-Состояние живого Skill (снимок 2026-11-03, 17:18): залит первый архив — одним файлом SKILL.md (51 454 Б), старые references/ ушли. Зеркало впереди: SKILL.md + `references/marketplace-books.md` и три ссылки на `n8n-engineering-manual` переписаны на заголовки его нового SKILL.md. Андрей сообщил 2026-11-03, что третий архив залит (ВСПОМНЕНО, снимком этой сессии не проверено). После него в зеркале переписаны две ссылки на старые файлы `google-drive-docs` (Р-43, дополнение). Четвёртый архив выдан 2026-11-03; Андрей сообщил о заливке (ВСПОМНЕНО). Ждёт: приёмка по снимку свежей сессии — `diff -rq` живого Skill с зеркалом пуст.
-Открыто: 11 ссылок в четырёх Skills (n8n-workflow-passport, second-brain-engineer, second-brain-git, naryad; ссылки google-drive-docs переписаны 2026-11-03, Р-43) ведут на файлы references/ старого `n8n-engineering-manual`, которых в живом Skill больше нет; найти — `grep -rn "n8n-engineering-manual.\{0,40\}references/" skills --include=*.md`. Правятся при переносе каждого из этих Skills. Три ссылки `apps-script-sheets` переписаны 2026-11-03 (ждут заливки).
-Третий Skill — `google-drive-docs` (Р-43): шаги 1, 2, 4, 5 и приёмка сделаны; новый Skill — SKILL.md 94 КБ + `references/sys-canary.md` вместо 225 КБ; «?» 5, красный №4 — удалить (слово Андрея 2026-11-03). Ссылки на старые файлы `n8n-engineering-manual` в нём переписаны (grep пуст). Андрей сообщил о заливке 2026-11-03 (ВСПОМНЕНО). Ждёт: приёмка по снимку свежей сессии — `diff -rq` живого Skill с зеркалом пуст.
-Входящие ссылки на старые адреса `google-drive-docs` (references/*.md, §, E-коды) после заливки разрешаются только по архиву: `n8n-engineering-manual` (2), `n8n-workflow-passport`, `context-handoff`, `naryad`, `second-brain-git`, `second-brain-engineer`; список и целевые заголовки — `skills/_v1/google-drive-docs/TRANSFER.md`, раздел «Числа».
-Ждёт Андрея: заливка zip `avtopilot` (Р-44, выдан 2026-11-03; закрывает и AJ-61).
+Приёмка 2026-11-06 (Р-49): живые apps-script-sheets, google-drive-docs, n8n-engineering-manual совпадают с зеркалом main 880ba57 (`diff -rq` пуст); после того в зеркале — правки Р-49, ждут заливки. Ссылок на старые файлы references/ n8n-engineering-manual, second-brain-engineer, second-brain-git в Skills не осталось (кроме ссылок на архив `skills/_v1/`).
 Тест «несколько Skills в одной сессии» закрыт без прогонов (Р-47). Старые версии Skills не заливать. При переносе следующего Skill — в его описание та же фраза о загрузке, что у трёх перенесённых (Р-46).
 Дальше: следующий Skill — в новом чате, по критериям, субагентами (шаги 2, 4, 5); порядок — Р-39.
 
