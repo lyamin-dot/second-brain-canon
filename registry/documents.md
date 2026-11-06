@@ -324,6 +324,7 @@ MKT2_WF_export-purchase: 1QNyLUG4fMR-9FiAfotq3YtGbUDdrYt3XYoB1MgmIY9s — пас
 MKT2_WF_purchase-price-seed: 1DRiypdNFGKESjZI6gJH_vee0TTSdvhvPnogVgJE1o7c — паспорт `MKT2 Purchase Price Seed` vCE6NkiPmEc4JkI9 (Н-06.11-05)
 MKT2_WF_ddl: 1B7TnFD1YiDGE85b5m2MMVeNbgq_VUXG9A52Pyn4jFE0 — паспорт `MKT2 DDL` jqlRF24Ycl9HCoXW (Н-06.11-05)
 MKT2_WF_lm-ref-cell-fix-e125-e126: 1Wmo2RkTDhu_Sf9_bgHFhezvcRPiImA_99rX88hcEJY8 — паспорт `MKT2 LM Ref Cell Fix E125 E126` hnfeDicyMYgrs1Su, создан create_file 2026-11-06 (gdocs-read 95559: byteLength 4 284, checkSum 95481c10; Р-63)
+MKT2_RECON_WB_PRICE_30_2026-11-06: 16nhiaGnyA2BVYPWRNv4xrhpBoXMPVoA_s1TNkoHt8HM — Google Doc (text/plain) в MKT2_DOCS_FOLDER, отчёт сверки «WB · Цены» kiparis_wb с окном 30 (пакет В; gdocs-read 95631: byteLength 3 493, checkSum 2d5080e2; Р-65)
 OZ_MONEY_book: 1lBySm-BuN9h3S6RGHBrrBkJJtQpgdNmBEKrnjjqbvWQ — Google Sheets «Geld Ozon», книга «Деньги» Ozon Кипариса, папка 17xJlTNw48RmIB25UbFsOKpiseRGyAE7G (get_file_metadata 2026-11-06; Р-59)
 OZ_GOODS_book: 1KN62zamEcLYzm3OrYtoloCzHnhpLA7g2oWr-YRfiTSM — Google Sheets «Товары Oz» (проект скрипта «WarenOz»), книга «Товары» Ozon Кипариса, папка 17xJlTNw48RmIB25UbFsOKpiseRGyAE7G (get_file_metadata 2026-11-06; Р-59)
 OZ_PRICE_book: 1j_qIlvowDIWMJfxq8Ydag3WTLsstoyeA-eEFgGQoycg — Google Sheets «Preis_kalkulator Ozon», книга «Цена» Ozon Кипариса, папка 1dHvjNVvt8MQ9VWdbug2COjCjt47TzvOz (get_file_metadata 2026-11-06; Р-59)
