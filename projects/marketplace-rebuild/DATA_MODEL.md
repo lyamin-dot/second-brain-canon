@@ -27,7 +27,7 @@ projects/marketplace-rebuild/DATA_MODEL.md
 | note | text | заметка |
 | tax_regime | text | система налогообложения: `ОСНО` (kiparis), `УСН доходы минус расходы` (ip) — с 2026-11-06, запись Р-67 журнала |
 | vat_rate | numeric | ставка НДС, доля: 0.22 у обоих |
-| vat_input_deductible | boolean | входной НДС к вычету: true у обоих (у ip — допущение сессии, Р-67) |
+| vat_input_deductible | boolean | входной НДС к вычету: true у обоих (у ip — слово Андрея, Р-69) |
 | income_tax_kind | text | налог с результата: «налог на прибыль» или «УСН доходы минус расходы» |
 | income_tax_rate | numeric | ставка налога с результата: 0.25 (kiparis), 0.15 (ip); база — прибыль без НДС |
 | tax_source | text | чьё слово, дата, запись журнала |
