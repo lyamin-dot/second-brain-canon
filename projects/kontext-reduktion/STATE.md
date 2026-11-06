@@ -2,9 +2,9 @@ projects/kontext-reduktion/STATE.md
 
 <!-- obzor-блок: форма — projects/obzor/PLAN.md, «Устройство», пункт 2; правится тем же шагом, что разделы ниже -->
 > Состояние: пауза
-> Дата: 2026-10-26
+> Дата: 2026-11-06
 > Что это: Удешевление старта сессий
-> Следующий шаг: Шаги дорожной карты после ретроспективы (meta/ROADMAP_post-retro_2026-10-23.md)
+> Следующий шаг: Эстафета переноса Skills — AJ-81 и разморозка n8n-engineering-manual, apps-script-sheets (раздел «Следующий шаг»)
 > Ждёт Андрея: Подтвердить финиш, пункты 1 и 3; два «да» на замки 4б и 4в
 
 # STATE_kontext-reduktion — текущее состояние
@@ -18,7 +18,11 @@ projects/kontext-reduktion/STATE.md
 
 ## Следующий шаг
 
-Перенос оставшихся восьми Skills в короткую форму, вторая волна, параллельно агентами Claude Code — задание `meta/TASK_skill-transfer-wave2_2026-11-06.md` (копия для агента `.en.md`), выдано 2026-11-06. Следующий шаг: новая сессия Claude Code с открытым push читает задание и CRITERIA, сверяет зеркало с живыми Skills и запускает первую волну (second-brain-engineer, second-brain-git, naryad).
+Эстафета второй волны переноса Skills (Р-48; восемь Skills перенесены, шаг 6 пройден, всё в main). Новая сессия Claude Code с открытым push:
+1. AJ-81 (`registry/maintenance-queue.md`), правки (1)–(5) — внести в новые `skills/second-brain-engineer/SKILL.md` и `skills/second-brain-git/SKILL.md` по форме короткого Skill (заголовками, без номеров пунктов); затем zip этих двух Skills по `second-brain-git`, «Сборка и сверка перед заливкой». Zip шести других (naryad, avtopilot, denken, context-handoff, n8n-workflow-passport, n8n-workflow-registry) выданы Андрею 2026-11-06; zip avtopilot заменяет незалитый архив Р-44 (выдан 2026-11-03) — тот не заливать; заливать все восемь лучше разом, после этих двух.
+2. Разморозка по слову Андрея 2026-11-06: в `skills/n8n-engineering-manual/SKILL.md` внести правила, которых там нет, — из `skills/n8n-workflow-passport/SKILL.md`: две ловушки записи описания воркфлоу (setWorkflowMetadata заменяет описание целиком; create_workflow_from_code обрезает до 255 знаков), «причина снятия с публикации обязательна», «архивацию по умолчанию не предлагать», «не ставить alwaysOutputData ради „чтобы не обрывалось“»; из `skills/avtopilot/SKILL.md`: перед правкой воркфлоу сверить updatedAt (n8n перезаписывает граф без проверки версии); там же две ссылки на старые файлы google-drive-docs (строки «Drive MCP create_file падает…», «файл, куда пишет сервисный аккаунт») переписать на заголовки нового `skills/google-drive-docs/SKILL.md`. В `skills/apps-script-sheets/SKILL.md` путь `skills/clasp-apps-script/SKILL.md` → `skills/_v1/clasp-apps-script/SKILL.md`. Копии в passport и avtopilot можно заменить строкой ссылки после этого. Zip обоих Skills.
+3. После заливки Андреем — приёмка по снимку свежей сессии (`diff -rq` живого Skill с зеркалом) для всех десяти; закрыть AJ-61 и AJ-81.
+Списки «?» (не красные) по каждому Skill — в его `skills/_v1/<имя>/TRANSFER.md`, ждут слова Андрея (шаг 7 критериев).
 
 0. Дорожная карта после ретроспективы — `meta/ROADMAP_post-retro_2026-10-23.md`, раздел 3 (состояние шагов) и раздел 4 (действия Андрея: два «да» на замки 4б и 4в; одно слово по AJ-38; три правки Skill внесены — строки 4а, 6, 7 раздела 3 карты ВНЕСЕНО; проба проведена на четырёх чатах — Р-38; сверка харвеста 2026-10-31). Сессия, которая берётся за любой шаг, читает карту первой.
 
