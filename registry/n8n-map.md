@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-11-04T21:55:06.473Z
+instance_last_change|2026-11-05T21:28:24.373Z
 W|030MvX2dzoZ8Nl0N|MKT2 Engine Backup Tool|inactive|never|manualTrigger|-|instance|?|-|-
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|WB/Logistic|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
@@ -142,7 +142,7 @@ W|Q7TOQLqCo7pvDln3|MKT2 Mark Run 144 Error|inactive|never|manualTrigger|-|instan
 W|QCQI6utFFH3dvTJT|LM_DECL — WB Sync|active|same|formTrigger|-|instance|?|M5BLqclKBjGTpz33|-
 W|QL2OCGZa5kzRRsg2|MKT2 Collect /v1/analytics/stocks|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=7,triggerAtMinute=10|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|QmPIz9uhfU48FcWX|LM_DECL — Seed РОСС (заполнение РОСС деклараций)|inactive|never|manualTrigger,scheduleTrigger|expression=0 3 1 1 *,field=cronExpression|instance|Ozon/Deklaration|-|-
-W|R5a2wT4emV9sUBT4|MKT2 Mirror ref.article|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=6,triggerAtMinute=20|Europe/Moscow|?|M5BLqclKBjGTpz33|-
+W|R5a2wT4emV9sUBT4|MKT2 Mirror ref.article|inactive|never|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=6,triggerAtMinute=20|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|R8w94X0mT0Fa2Oil|OZON QA Response|inactive|never|scheduleTrigger|field=minutes,minutesInterval=30|instance|Ozon/Reviews_Support|-|-
 W|RJ9qlEVyBaaJkaGH|LM_DECL — WB Probe (temp)|inactive|never|manualTrigger|-|instance|?|-|-
 W|S4rZMUkI21dVu3ML|WB FBS Decision Engine|active|same|scheduleTrigger|expression=0 12,14,16 * * *,field=cronExpression;expression=15 16 * * *,field=cronExpression|Europe/Moscow|WB/Logistic|M5BLqclKBjGTpz33|workflowsFromSameOwner
