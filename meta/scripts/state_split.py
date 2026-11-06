@@ -58,7 +58,9 @@ def sections(text):
 # Строки раздела «От соседнего проекта»: сосед, приняв факт, переносит его в свой журнал или открытый вопрос
 # и вычёркивает строку (meta/CONTRACT_state-content.md; Skill second-brain-git, «Факт соседнему проекту»).
 # Скрипт не решает за сессию, а называет кандидатов: строку старше NEIGHBOUR_AGE_DAYS дней (по первой дате
-# ГГГГ-ММ-ДД в строке) и строку длиннее NEIGHBOUR_MAX_BYTES (форма — «одна строка»). Только отчёт, код возврата не меняется.
+# ГГГГ-ММ-ДД в строке), строку без даты (форма — «с датой») и строку длиннее NEIGHBOUR_MAX_BYTES (форма — «одна строка»).
+# Пункт — строка с «- », «* » или «1.». Только отчёт режима check; код возврата и режим split не меняются.
+# Граница метода: подзаголовок внутри раздела заканчивает раздел (так же, как разделы режется весь файл).
 NEIGHBOUR_HEADING = "от соседнего проекта"
 NEIGHBOUR_AGE_DAYS = 7
 NEIGHBOUR_MAX_BYTES = 500
@@ -71,7 +73,7 @@ def neighbour_items(text):
         if re.match(r"^#{1,3} ", line):
             inside = NEIGHBOUR_HEADING in line.lower(); cur = None; continue
         if not inside: continue
-        if line.startswith("- "):
+        if re.match(r"^(- |\* |\d+[.)] )", line):
             cur = [n, line]; items.append(cur)
         elif line.strip() and cur is not None:
             cur[1] += "\n" + line
@@ -86,11 +88,12 @@ def report_neighbours(text, today):
     flagged = []
     for n, body in items:
         marks = []
-        m = re.search(r"\d{4}-\d{2}-\d{2}", body)
-        try:
-            d = datetime.date.fromisoformat(m.group(0)) if m else None
-        except ValueError:
-            d = None
+        d = None
+        for m in re.finditer(r"\d{4}-\d{2}-\d{2}", body):   # первая правильная дата; «2026-13-45» пропускается
+            try:
+                d = datetime.date.fromisoformat(m.group(0)); break
+            except ValueError:
+                continue
         if d is None:
             marks.append("дата не найдена")
         elif (today - d).days > NEIGHBOUR_AGE_DAYS:
@@ -120,7 +123,11 @@ def main():
     today = datetime.date.today()
     if "--today" in args:   # для проверки скрипта на подложенном файле
         i = args.index("--today")
-        today = datetime.date.fromisoformat(args[i + 1]); del args[i:i + 2]
+        try:
+            today = datetime.date.fromisoformat(args[i + 1])
+        except (IndexError, ValueError):
+            sys.exit("СТОП: после --today нужна дата ГГГГ-ММ-ДД.")
+        del args[i:i + 2]
     mode, path = args[0], args[1]
     raw = open(path, "rb").read(); text = raw.decode("utf-8")
     sha = blob_sha(raw)
@@ -140,8 +147,8 @@ def main():
     print(f"остаётся в STATE.md: {keep_bytes} Б  {'— и после разбора больше бюджета' if keep_bytes > BUDGET else ''}")
     for d, h, l in plan:
         print(f"  [{d:9}] {len(''.join(l).encode()):6} Б  {h or '(шапка файла)'}")
-    report_neighbours(text, today)
     if mode == "check":
+        report_neighbours(text, today)
         return
     out = args[2]; os.makedirs(out, exist_ok=True)
     buckets = {"STATE": [], "LOG": [], "PLAN": [], "UNDECIDED": []}
