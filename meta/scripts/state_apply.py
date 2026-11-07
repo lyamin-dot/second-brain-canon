@@ -25,6 +25,7 @@
   дата равна "date", слова начинают ровно одну строку журнала (старый LOG + новый блок), и это уехавшая строка N.
   Закрытие дела — без вставки: обычное действие "lines" (строка уезжает в LOG, на месте ничего).
   Путь with_file ищется как задан, затем рядом с файлом решений.
+  Необязательный ключ "origin" — путь, который печатается в шапке блока хроники вместо "state" (чтобы повторный прогон по копии давал тот же блок).
   Приёмка (ДО записи и по записанным файлам): мультимножество непустых строк источника ==
   (STATE.new минус вставленные строки) + LOG_append + PLAN_append минус служебные строки; иначе выход с ошибкой, ничего не записано.
   Решения без "replace" работают побайтово как до этого дополнения.
@@ -86,7 +87,7 @@ def main():
         if dest[i] == "REPL": bucket["LOG"].append(l); bucket["STATE"].append(inserted[i])
         else: bucket[dest[i]].append(l)
     text = "".join(lines)
-    log_head = f"\nХроника | {dec['date']} | перенесено из {dec['state']} разбором по 5.1 — не свидетельство этой сессии\n"
+    log_head = f"\nХроника | {dec['date']} | перенесено из {dec.get('origin', dec['state'])} разбором по 5.1 — не свидетельство этой сессии\n"
     plan_head = "\n" + dec.get("plan_heading", f"## Перенесено из STATE.md разбором {dec['date']}") + "\n\n"
     notes = [d["note"] for d in dec["decisions"] if "note" in d]
     # приёмка ДО записи на диск: собрать тексты выходных файлов в памяти, перечитать их как строки
@@ -107,6 +108,7 @@ def main():
         if dec.get("log"):
             logp = dec["log"]
             if not os.path.exists(logp): logp = os.path.join(os.path.dirname(os.path.abspath(sys.argv[1])), os.path.basename(logp))
+            if not os.path.exists(logp): print("ПРЕДУПРЕЖДЕНИЕ: журнал не найден, проверка указателей по журналу пропущена"); logp = os.devnull
             all_log = [x.strip() for x in open(logp, encoding="utf-8").read().splitlines()] + \
                       [x.strip() for x in out_texts["LOG_append.md"].splitlines()]
             for i, t in inserted.items():

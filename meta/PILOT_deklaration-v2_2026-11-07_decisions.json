@@ -3,6 +3,7 @@
  "expect_sha": "20a526e45fab43c4d551edd37e2a216aa629cc75",
  "date": "2026-11-07",
  "log": "projects/deklaration-v2/LOG.md",
+ "origin": "projects/deklaration-v2/STATE.md",
  "decisions": [
   {
    "replace": [
