@@ -1,0 +1,18 @@
+{
+ "state": "projects/deklaration-v2/STATE.md",
+ "expect_sha": "b537d4ef92b78f4760df78ae038ebb1cc6ca4258",
+ "date": "2026-11-07",
+ "origin": "projects/deklaration-v2/STATE.md",
+ "log": "projects/deklaration-v2/LOG.md",
+ "decisions": [
+  {
+   "split": [
+    20,
+    22,
+    24
+   ],
+   "with_file": "meta/PILOT_deklaration-v2_2026-11-07_short-lines.md",
+   "note": "разрезание трёх эстафет по делам (решение Андрея после вердикта пилота): длинная строка уезжает в хронику без изменений, вместо неё по короткой строке на дело, у каждой указатель на ту же строку"
+  }
+ ]
+}

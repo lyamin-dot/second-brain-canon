@@ -16,6 +16,9 @@
 из любого раздела; остаток раздела остаётся. Сверх источника добавляются только две служебные строки: строка происхождения блока хроники
 (форма second-brain-git 11.5) и заголовок блока в PLAN.md; «note» печатается в отчёт и в файлы не пишется.
 
+Действие «разрезать строку по делам» (по решению Андрея после вердикта пилота): {"split": [N, ...], "with_file": ...} —
+  то же, но в файле коротких строк у строки N несколько строк с ключами [N.1], [N.2], …; все встают на её место по порядку,
+  у каждой свой указатель на ту же строку хроники. Действие «replace» с ключом [N] работает как раньше.
 Действие «заменить строку текстом из файла» (пилот 2026-11-07, только projects/deklaration-v2/):
     {"replace": [N, ...], "with_file": "<файл коротких строк>", "note": "<почему>"}
   Строка N источника (с 1) уезжает без изменений в блок хроники LOG, на её место в STATE встаёт строка из файла
@@ -65,26 +68,27 @@ def main():
     # действие «replace»: длинная строка → LOG, на её место — короткая строка из файла
     inserted = {}  # индекс строки → вставленный текст (с концом строки)
     for d in dec["decisions"]:
-        if "replace" in d:
+        if "replace" in d or "split" in d:
             path = d["with_file"]
             if not os.path.exists(path): path = os.path.join(os.path.dirname(os.path.abspath(sys.argv[1])), os.path.basename(path))
             short = {}
             for fl in open(path, encoding="utf-8").read().splitlines():
-                m = re.match(r"^\[(\d+)\] (.+)$", fl)
+                m = re.match(r"^\[(\d+(?:\.\d+)?)\] (.+)$", fl)
                 if m:
                     if m.group(1) in short: sys.exit(f"СТОП: в {path} два раза ключ [{m.group(1)}]")
                     short[m.group(1)] = m.group(2).strip()
-            for n in d["replace"]:
+            for n in d.get("replace", d.get("split")):
                 if not 1 <= n <= len(lines) or dest[n - 1] != "STATE" or not lines[n - 1].strip():
                     sys.exit(f"СТОП: строка {n} не годится для замены (нет, пустая или уже в другом решении)")
-                if str(n) not in short: sys.exit(f"СТОП: в {path} нет короткой строки [{n}]")
-                t = short[str(n)]
-                if len(t.encode("utf-8")) > 500: sys.exit(f"СТОП: короткая строка [{n}] длиннее 500 байт")
+                keys = [str(n)] if str(n) in short else sorted((k for k in short if k.startswith(f"{n}.")), key=lambda k: int(k.split(".")[1]))
+                if not keys: sys.exit(f"СТОП: в {path} нет короткой строки [{n}]")
+                for k in keys:
+                    if len(short[k].encode("utf-8")) > 500: sys.exit(f"СТОП: короткая строка [{k}] длиннее 500 байт")
                 dest[n - 1] = "REPL"
-                inserted[n - 1] = t + ("\n" if lines[n - 1].endswith("\n") else "")
+                inserted[n - 1] = [short[k] + ("\n" if lines[n - 1].endswith("\n") else "") for k in keys]
     bucket = {"STATE": [], "LOG": [], "PLAN": []}
     for i, l in enumerate(lines):
-        if dest[i] == "REPL": bucket["LOG"].append(l); bucket["STATE"].append(inserted[i])
+        if dest[i] == "REPL": bucket["LOG"].append(l); bucket["STATE"].extend(inserted[i])
         else: bucket[dest[i]].append(l)
     text = "".join(lines)
     log_head = f"\nХроника | {dec['date']} | перенесено из {dec.get('origin', dec['state'])} разбором по 5.1 — не свидетельство этой сессии\n"
@@ -101,7 +105,7 @@ def main():
     if inserted:
         # вставленные строки вычитаются из РЕЗУЛЬТАТА (а не из источника): потеря строки источника остаётся потерей
         rest = list(got)
-        for t in inserted.values():
+        for t in [t for ts in inserted.values() for t in ts]:
             if t.strip() not in rest: sys.exit("ПРИЁМКА НЕ ПРОЙДЕНА, ничего не записано: вставленной строки нет в результате")
             rest.remove(t.strip())
         got = sorted(rest)
@@ -111,7 +115,7 @@ def main():
             if not os.path.exists(logp): print("ПРЕДУПРЕЖДЕНИЕ: журнал не найден, проверка указателей по журналу пропущена"); logp = os.devnull
             all_log = [x.strip() for x in open(logp, encoding="utf-8").read().splitlines()] + \
                       [x.strip() for x in out_texts["LOG_append.md"].splitlines()]
-            for i, t in inserted.items():
+            for i, t in [(i, t) for i, ts in inserted.items() for t in ts]:
                 m = re.search(r"хроника (\d{4}-\d{2}-\d{2}), строка, начинающаяся словами «([^»]+)»", t)
                 if not m: sys.exit(f"ПРИЁМКА НЕ ПРОЙДЕНА, ничего не записано: у вставленной строки нет указателя: {t[:50]}")
                 if m.group(1) != dec["date"]: sys.exit(f"ПРИЁМКА НЕ ПРОЙДЕНА, ничего не записано: дата указателя {m.group(1)} != {dec['date']}")
@@ -127,7 +131,7 @@ def main():
     # повторная приёмка по записанным файлам (перечитывание с диска)
     got2 = sorted(l.strip() for name in out_texts for l in open(os.path.join(out, name), encoding="utf-8").read().splitlines() if l.strip() and l.strip() not in service)
     if inserted:
-        for t in inserted.values():
+        for t in [t for ts in inserted.values() for t in ts]:
             if t.strip() not in got2: sys.exit("ПРИЁМКА НЕ ПРОЙДЕНА при перечитывании записанных файлов: вставленной строки нет")
             got2.remove(t.strip())
     if src != got2: sys.exit("ПРИЁМКА НЕ ПРОЙДЕНА при перечитывании записанных файлов")
