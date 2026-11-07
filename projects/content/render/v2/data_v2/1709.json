@@ -1,0 +1,189 @@
+{
+ "art": "1709",
+ "title": "Защитный спрей от грызунов Liqui Moly (Marder-Spray), 200 мл",
+ "photo": "1709_1_wb391706057-1.webp",
+ "cut_thr": 244,
+ "s7": "timeline",
+ "decor": "harness",
+ "photo_side": true,
+ "slides": [
+  {
+   "n": 1,
+   "name": "Обложка",
+   "theme": "light",
+   "type": "cover",
+   "elements": [
+    {
+     "kind": "H1",
+     "text": "Marderspray — спрей от грызунов",
+     "icon": null
+    },
+    {
+     "kind": "подзаголовок",
+     "text": "Liqui Moly Marder-Spray · 200 мл",
+     "icon": null
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "name": "Что делает и как",
+   "theme": "dark",
+   "type": "benefits",
+   "elements": [
+    {
+     "kind": "H1",
+     "text": "Для обработки проводов, пластика и резины",
+     "icon": null
+    },
+    {
+     "kind": "блок 1",
+     "text": "Высоковольтные и обычные провода",
+     "icon": "cable"
+    },
+    {
+     "kind": "блок 2",
+     "text": "Шланги",
+     "icon": "waves"
+    },
+    {
+     "kind": "блок 3",
+     "text": "Пластик",
+     "icon": "layers"
+    },
+    {
+     "kind": "блок 4",
+     "text": "Резина",
+     "icon": "circle-check"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "name": "Кому и где",
+   "theme": "light",
+   "type": "audspec",
+   "elements": [
+    {
+     "kind": "H1",
+     "text": "Где применять спрей",
+     "icon": null
+    },
+    {
+     "kind": "подзаголовок",
+     "text": "При хранении и парковке рядом с грызунами",
+     "icon": null
+    },
+    {
+     "kind": "блок 1",
+     "text": "Под капотом автомобиля",
+     "icon": "car-front"
+    },
+    {
+     "kind": "блок 2",
+     "text": "В гараже",
+     "icon": "warehouse"
+    },
+    {
+     "kind": "блок 3",
+     "text": "Подходит и для домашней утвари",
+     "icon": "house"
+    },
+    {
+     "kind": "спец блок 1",
+     "text": "Формат: аэрозоль",
+     "icon": "spray-can"
+    },
+    {
+     "kind": "спец блок 2",
+     "text": "Объём: 200 мл",
+     "icon": "beaker"
+    },
+    {
+     "kind": "спец блок 3",
+     "text": "Повторная обработка — каждые 14 дней",
+     "icon": "calendar-clock"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "name": "Ритм обработки",
+   "theme": "dark",
+   "type": "s7",
+   "elements": [
+    {
+     "kind": "H1",
+     "text": "Обработка раз в 14 дней",
+     "icon": null
+    },
+    {
+     "kind": "этап 1",
+     "text": "День 1 — обработка",
+     "icon": "spray-can"
+    },
+    {
+     "kind": "этап 2",
+     "text": "День 14 — повторить",
+     "icon": "calendar-clock"
+    },
+    {
+     "kind": "подпись",
+     "text": "При необходимости — повторить обработку",
+     "icon": "repeat"
+    },
+    {
+     "kind": "бейдж",
+     "text": "Официальный продавец",
+     "icon": "badge-check"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "name": "Как применять",
+   "theme": "light",
+   "type": "steps",
+   "elements": [
+    {
+     "kind": "H1",
+     "text": "Применение за три шага",
+     "icon": null
+    },
+    {
+     "kind": "шаг 1",
+     "text": "Распылите на детали под капотом",
+     "icon": "spray-can"
+    },
+    {
+     "kind": "шаг 2",
+     "text": "Или в местах, где появляются грызуны",
+     "icon": "house"
+    },
+    {
+     "kind": "шаг 3",
+     "text": "Повторяйте каждые 14 дней",
+     "icon": "repeat"
+    },
+    {
+     "kind": "бейдж",
+     "text": "Официальный продавец",
+     "icon": "badge-check"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "name": "Белый фон",
+   "theme": "white",
+   "type": "white",
+   "elements": [
+    {
+     "kind": "бейдж",
+     "text": "Официальный продавец",
+     "icon": "badge-check"
+    }
+   ]
+  }
+ ]
+}
