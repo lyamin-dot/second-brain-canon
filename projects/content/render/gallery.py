@@ -67,6 +67,7 @@ figcaption{{display:flex;align-items:center;gap:8px;font-size:13px;min-width:0}}
 .chk.ok{{color:var(--ok)}} .chk.bad{{color:var(--accent)}}
 .lb{{position:fixed;inset:0;background:rgba(10,10,10,.88);display:flex;align-items:center;justify-content:center;
   padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));z-index:20;cursor:zoom-out}}
+.lb[hidden]{{display:none}}
 .lb img{{max-height:100%;max-width:100%;width:auto;height:auto;border-radius:8px}}
 .note{{font-size:13px;color:var(--muted);max-width:80ch}}
 </style>
