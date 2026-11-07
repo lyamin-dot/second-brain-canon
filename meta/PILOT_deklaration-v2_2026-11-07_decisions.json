@@ -1,0 +1,68 @@
+{
+ "state": "projects/deklaration-v2/STATE.md",
+ "expect_sha": "20a526e45fab43c4d551edd37e2a216aa629cc75",
+ "date": "2026-11-07",
+ "log": "projects/deklaration-v2/LOG.md",
+ "decisions": [
+  {
+   "replace": [
+    7,
+    8,
+    15,
+    43,
+    44,
+    46,
+    55,
+    59,
+    64,
+    65,
+    72,
+    80,
+    85,
+    89,
+    90,
+    92,
+    93,
+    94,
+    99,
+    101,
+    102,
+    104
+   ],
+   "with_file": "meta/PILOT_deklaration-v2_2026-11-07_short-lines.md",
+   "note": "длинная строка уезжает в хронику без изменений, вместо неё короткая строка с указателем"
+  },
+  {
+   "lines": [
+    83,
+    83
+   ],
+   "to": "LOG",
+   "note": "принято записью Р-63 (п.2): факт соседа marketplace-rebuild Р-52, действия нет"
+  },
+  {
+   "lines": [
+    84,
+    84
+   ],
+   "to": "LOG",
+   "note": "принято записью Р-63 (п.3): marketplace-rebuild Р-47, действия нет"
+  },
+  {
+   "lines": [
+    87,
+    87
+   ],
+   "to": "LOG",
+   "note": "принято записью Р-63 (п.4): задача labs/ozon-ue, действия нет"
+  },
+  {
+   "lines": [
+    88,
+    88
+   ],
+   "to": "LOG",
+   "note": "принято записью Р-63 (п.5): deklaration-ozon Р-48, действия нет"
+  }
+ ]
+}
