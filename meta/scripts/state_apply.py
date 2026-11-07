@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """meta/scripts/state_apply.py — применение решений разбора STATE.md: перенос строк без набора моделью.
 
+ПРИОСТАНОВЛЕНО по итогам пилота (решение Андрея 2026-11-07): действия «replace» и «split» не применяются —
+скрипт останавливается, если в решениях они есть. Повторить прогон пилота для проверки можно с переменной
+окружения STATE_APPLY_ALLOW_SUSPENDED=1 (только на копиях, не для записи в канон). Остальные действия — как раньше.
+
 Вход — JSON-файл решений:
 {
   "state": "projects/<имя>/STATE.md",
@@ -47,6 +51,8 @@ def blob_sha(b):
 
 def main():
     dec = json.load(open(sys.argv[1], encoding="utf-8")); out = sys.argv[2]
+    if any(("replace" in d or "split" in d) for d in dec["decisions"]) and os.environ.get("STATE_APPLY_ALLOW_SUSPENDED") != "1":
+        sys.exit("СТОП: действия replace и split приостановлены по итогам пилота 2026-11-07 (meta/CONTRACT_state-content.md, раздел «Пилот 2026-11-07»)")
     raw = open(dec["state"], "rb").read(); sha = blob_sha(raw)
     if not sha.startswith(dec["expect_sha"]):
         sys.exit(f"СТОП: {dec['state']} изменился — {sha[:7]}, ожидался {dec['expect_sha'][:7]}")
