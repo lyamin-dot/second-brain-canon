@@ -117,7 +117,13 @@ def main():
         row, du = lab(name)
         row["w"] = w.get(name)
         projects.append(row); dues += du
-    docs = [p for p in old["projects"] if p.get("src") == "docs"]
+    # Строка Docs-проекта, который уже переехал в летопись (папка projects/<имя> с тем же именем
+    # в нижнем регистре через дефис), не переносится: иначе страница показывает проект дважды,
+    # и старая строка из Docs врёт о его состоянии (CONTENT → content, перенос 2026-11-06).
+    repo = {p["id"] for p in projects}
+    moved = [p["id"] for p in old["projects"] if p.get("src") == "docs" and p["id"].lower().replace("_", "-") in repo]
+    for x in moved: print(f"снята строка Docs {x}: проект переехал в летопись projects/{x.lower().replace('_', '-')}")
+    docs = [p for p in old["projects"] if p.get("src") == "docs" and p["id"] not in moved]
     ids = {p["id"] for p in docs}
     projects += docs
     dues += [x for x in old["dues"] if x[2] in ids]
