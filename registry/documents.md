@@ -344,3 +344,13 @@ MKT2_REPORT_N-07.11-02_en: 16Z7OEtEcfa4Xwsw58a0p7ZID92LqnGAt8o_azM_tSBQ — от
 MKT2_WB_MONEY_MASTER_SPEC_en: 1rtnDW48OPmM4OVNemD6-JpiTqj9haJNxQZddsxccvf8 — Google Doc в MKT2_DOCS_FOLDER: спецификация листа «Фин.результат по неделям» книги «WB · Деньги» (Н-07.11-03; Р-82)
 MKT2_WB_MONEY_MASTER_DDL_sql: 1CUfo-Q7NWSgF_P2EkjmxrkH6K9mNP6Rn — файл wb_money_master_ddl.sql (43 336 байт) в MKT2_DOCS_FOLDER: ue.wb_money_master и помощники, таблица ue.wb_money_volume_src; применён `MKT2 WB Money Master DDL` ksJYWKLXMAUtVSY7, исполнение 96530 (Н-07.11-03; Р-82)
 MKT2_REPORT_N-07.11-03_en: 1dBpEPCa5gS3lPbB-r49a6hnrLNIhXQ9uk0XeuUCQf0I — отчёт наряда Н-07.11-03: сверка «Фин.результата по неделям» с базой, необъяснённых 0 из 273 (Р-82)
+
+MKT2_WB_MONEY_BOOK: 1oXANuAiCzbs7U-EGNZbpjXr12IQOpASNfla1w6UyXv8 — Google Sheets «MKT2 WB · Деньги», книга показа «Денег» WB Кипариса (новая, не копия); заполняет `MKT2 WB Money Book Fill` gktUklgBfgeQXFc6; код показа ещё не вставлен (Н-08.11-04; marketplace-rebuild Р-87)
+MKT2_WF_wb-money-book-fill: 1KYfSqD3Dw6HYfTqblYor47erjH_TRAGMIRmxgyMDV4Y — паспорт `MKT2 WB Money Book Fill` gktUklgBfgeQXFc6 (Н-08.11-04; Р-87)
+MKT2_wb_money_show.gs: 1PDxeI5J7NXOniKMVEz3ou7r_6KCIovIK — файл в MKT2_DOCS_FOLDER, код показа книги MKT2_WB_MONEY_BOOK, вставляет Андрей (Н-08.11-04; Р-87)
+MKT2_WB_MONEY_ONE_BODY_DDL_sql: 1GfB8dTuy2niUgpShhOn0PPJTuEb_dtfD — файл wb_money_one_body_ddl.sql в MKT2_DOCS_FOLDER: одно тело дневной модели (ue.wb_money_days и ue.wb_money_master_money вызывают ue.wb_money_days_raw), `MKT2 DDL` v13 (Н-08.11-01; Р-87). ЗАМЕЩАЕТ MKT2_WB_MONEY_DDL_sql и MKT2_WB_MONEY_MASTER_DDL_sql (и инструмент `MKT2 WB Money Master DDL` ksJYWKLXMAUtVSY7): их повторный запуск вернёт три копии дневной модели — не запускать
+MKT2_REPORT_N-08.11-01_en: 1wiyKp1lH0RDeQlfLS6MqYfCTpUk5GNoEGZb9ac-LMd4 — отчёт наряда Н-08.11-01 (одно тело дневной модели; Р-87)
+MKT2_REPORT_N-08.11-02_en: 1RHUpXwyd0g45lQ9MtPVM7nMz9QPm9oItF-EEGwB1mzU — отчёт наряда Н-08.11-02 (отказы сбора остатков Ozon Кипариса, отказ по мандату; Р-87, Р-88)
+MKT2_REPORT_N-08.11-03_en: 1NXLiwLh-PVylXp7BH2HgphFjad_RMBWU5vO-Ws3cs9o — отчёт наряда Н-08.11-03 (три гипотезы движка сборщиков на копии; правки «было → стало»; Р-88)
+MKT2_REPORT_N-08.11-04_en: 16nubajvuFueubqKCaY89zvmfrncZqKLi5QuL2o4uYl4 — отчёт наряда Н-08.11-04 (книга показа «MKT2 WB · Деньги»; Р-87)
+MKT2_REPORT_N-08.11-05_en: 1WO9Dk-0Ej9nvPQN5_KSrkAMchOtwt3gEts4VcN5f0bc — отчёт наряда Н-08.11-05 (7 паспортов воркфлоу MKT2; ID паспортов — в отчёте, построчно в реестр не внесены; Р-87)
