@@ -354,3 +354,9 @@ MKT2_REPORT_N-08.11-02_en: 1RHUpXwyd0g45lQ9MtPVM7nMz9QPm9oItF-EEGwB1mzU — от
 MKT2_REPORT_N-08.11-03_en: 1NXLiwLh-PVylXp7BH2HgphFjad_RMBWU5vO-Ws3cs9o — отчёт наряда Н-08.11-03 (три гипотезы движка сборщиков на копии; правки «было → стало»; Р-88)
 MKT2_REPORT_N-08.11-04_en: 16nubajvuFueubqKCaY89zvmfrncZqKLi5QuL2o4uYl4 — отчёт наряда Н-08.11-04 (книга показа «MKT2 WB · Деньги»; Р-87)
 MKT2_REPORT_N-08.11-05_en: 1WO9Dk-0Ej9nvPQN5_KSrkAMchOtwt3gEts4VcN5f0bc — отчёт наряда Н-08.11-05 (7 паспортов воркфлоу MKT2; ID паспортов — в отчёте, построчно в реестр не внесены; Р-87)
+
+MKT2_REPORT_N-08.11-06_en: 1wDuDiGLXWuQnJiSVgZ5tx7LfIdFrHNnUwxOtmuzdsO4 — отчёт наряда Н-08.11-06: независимая сверка ue.wb_money_weeks, ue.wb_money_months, ue.wb_money_master со старой книгой «WB · Деньги», необъяснённых 0 (get_file_metadata 2026-11-08; marketplace-rebuild Р-92)
+MKT2_N-08.11-06_verify_wb_money_py: 1q71vfZriZ8kitOAisVzNNHb_EafkPzIl — скрипт сверки наряда Н-08.11-06 в MKT2_DOCS_FOLDER, 16 982 байта (Р-92)
+MKT2_REPORT_N-08.11-07_en: 1Qyre72zJy12gg_QH7VD4AKBgJb6Y_d20hvW9ACosW-Y — отчёт наряда Н-08.11-07: исправление движка сборщиков черновиком 4817b82c, пробы на копии, читатели статуса raw.load_run (Р-92)
+MKT2_N-08.11-07_load_run_status_empty_sql: 13MDHVeqF04RqkppXoBh9oi_nnQkJtOoF — файл SQL в MKT2_DOCS_FOLDER: ограничение raw.load_run.status расширено значением 'empty', применён MKT2 DDL 97196 (Р-92)
+MKT2_WORKFLOW_TEXT_SEARCH_TOOL: воркфлоу mO39gVurSVDhh4wS — инструмент поиска по тексту узлов всех воркфлоу через API n8n, только чтение, не опубликован; не удалять (по отчёту субагента интегратора 2026-11-08; Р-92)
