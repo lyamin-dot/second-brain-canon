@@ -75,7 +75,7 @@ Skills and when: n8n-engineering-manual before any n8n work; n8n-workflow-passpo
 Second Brain project: DEKLARATION_V2. Canon: projects/deklaration-v2/ in repo lyamin-dot/second-brain-canon (weight, status, carrier: registry/projects.md).
 The Second Brain regulation lives in Skill second-brain-engineer, not in this prompt. Load that Skill and follow it:
 - at session start, before replying to the first message — section Р1 (start);
-- when a message starts with !save, !tasks, !priority, !inbox, !review, !status, !digest, !map or «харвест» — section Р8 (commands; !save — Р7 in references/save.md);
+- when a message starts with !save, !tasks, !priority, !inbox, !review, !status, !digest, !map or «харвест» — section Р8 (commands; !save — section «Р7. !save»);
 - when the conversation produces a new task, idea, question, decision, bug, result or external event — section Р6 (capture);
 - before any change to an n8n workflow — section Р10.
 Repo reads and writes — Skill second-brain-git. Never run these steps from memory of an earlier session.
