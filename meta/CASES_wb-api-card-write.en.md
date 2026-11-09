@@ -1,7 +1,7 @@
 meta/CASES_wb-api-card-write.en.md
 
 # WB Content API card write — failure cases and fixes (agent copy, compact)
-Human version (RU): meta/CASES_wb-api-card-write.md. Neither copy is authoritative: edit both in the same commit; on divergence — stop and ask Andrei which copy is right (second-brain-git, project-save.md 4.6). Created 2026-10-17 on Andrei's request for use OUTSIDE project deklaration-wb (any project writing WB cards). Each case verified by write + re-read. Decisions: projects/deklaration-wb/LOG.md Р-11, Р-14, Р-15, Р-16, Р-19, Р-20, Р-21 (Cyrillic Р); per-card actions: projects/deklaration-wb/CARD_WRITES.md; declaration workflow: meta/PROTOCOL_wb-card-write.md.
+Human version (RU): meta/CASES_wb-api-card-write.md. Neither copy is authoritative: edit both in the same commit; on divergence — stop and ask Andrei which copy is right (second-brain-git, section «Дополнительные роли файла проекта» — pair of copies; file project-save.md removed by the transfer 2026-11-06). Created 2026-10-17 on Andrei's request for use OUTSIDE project deklaration-wb (any project writing WB cards). Each case verified by write + re-read. Decisions: projects/deklaration-wb/LOG.md Р-11, Р-14, Р-15, Р-16, Р-19, Р-20, Р-21 (Cyrillic Р); per-card actions: projects/deklaration-wb/CARD_WRITES.md; declaration workflow: meta/PROTOCOL_wb-card-write.md.
 Endpoints: write POST content-api.wildberries.ru/content/v2/cards/update (array of cards); read POST /content/v2/get/cards/list (filter.textSearch=nmID); errors POST /content/v2/cards/error/list.
 
 ## RULES
