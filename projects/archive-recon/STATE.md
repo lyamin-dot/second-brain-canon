@@ -45,4 +45,4 @@ projects/archive-recon/STATE.md
 
 ## От соседнего проекта
 
-- 2026-10-28 ⚡ от N8N (запись Р-9 журнала `projects/n8n/LOG.md`, пункт 2): у Archive Search 3ARodiEgXWs4DGmx, Archive Control Hp0LJ5u37A0UgB41 и Archive Read Status Page Ta4fU7QI1QRb32tB поставлен воркфлоу ошибок Error Notifier M5BLqclKBjGTpz33 — падение этих инструментов теперь приходит сообщением в Telegram. Граф и версии не менялись. Строки PASSPORT в описании у всех трёх нет — паспорт заводится при ближайшем касании (Skill n8n-workflow-passport).
+- 2026-10-28 ⚡ от N8N (запись Р-9 журнала `projects/n8n/LOG.md`, пункт 2): у Archive Search 3ARodiEgXWs4DGmx, Archive Control Hp0LJ5u37A0UgB41 и Archive Read Status Page Ta4fU7QI1QRb32tB поставлен воркфлоу ошибок Error Notifier M5BLqclKBjGTpz33 — падение этих инструментов теперь приходит сообщением в Telegram. Граф и версии не менялись. Строки PASSPORT в описании вписана у всех трёх 2026-11-04 (общий паспорт SERVER_WF_archive-tools, коммит 368b1a0d; видно в описаниях воркфлоу, харвест 2026-11-09).
