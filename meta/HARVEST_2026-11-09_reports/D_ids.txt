@@ -1,0 +1,22 @@
+meta/HARVEST_2026-11-09_reports/D_ids.txt
+
+projects/file-catalog/LOG.md Р-51
+projects/kontext-reduktion/LOG.md Р-50
+projects/content/LOG.md Р-3
+projects/marketplace-rebuild/LOG.md Р-62
+projects/file-catalog/LOG.md Р-39
+projects/obzor/LOG.md Р-1
+projects/marketplace-rebuild/LOG.md Р-83
+projects/file-catalog/LOG.md Р-50
+projects/kontext-reduktion/LOG.md Р-40
+projects/wb-spp-guard/LOG.md Р-6
+projects/deklaration-v2/LOG.md Р-62
+projects/marketplace-rebuild/LOG.md Р-40
+projects/content/LOG.md Р-4
+projects/marketplace-rebuild/LOG.md Р-42
+projects/file-catalog/LOG.md Р-45
+projects/marketplace-rebuild/LOG.md Р-69
+projects/marketplace-rebuild/LOG.md Р-65
+projects/marketplace-rebuild/LOG.md Р-82
+projects/marketplace-rebuild/LOG.md Р-90
+projects/marketplace-rebuild/LOG.md Р-43
