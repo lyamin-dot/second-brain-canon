@@ -1,3 +1,4 @@
+labs/sys/INDEX.md
 
 # INDEX_sys — список живых задач лаборатории SYS
 
