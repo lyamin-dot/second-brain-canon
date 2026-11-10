@@ -1,4 +1,4 @@
-projects/content/photo-pilot/pilot_list.md
+projects/ozon-main-photo/photo-pilot/pilot_list.md
 
 # Н-10.11-05 К1 — отбор карточек пилота по правилу «фото WB лучше»
 

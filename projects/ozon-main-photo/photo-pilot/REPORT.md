@@ -1,4 +1,4 @@
-projects/content/photo-pilot/REPORT.md
+projects/ozon-main-photo/photo-pilot/REPORT.md
 
 # Н-10.11-05 — пилот замены главного фото Ozon на первое фото WB (5 карточек)
 

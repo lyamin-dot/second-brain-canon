@@ -38,20 +38,6 @@ Brand DNA, grid, slide structure: PLAN.md sections "Что сохранено" a
 ## Close each package
 STATE.md: only next step / blockers / open questions (contract meta/CONTRACT_state-content.md). LOG.md: one Р-entry per real decision (form: second-brain-git "Форма записи в журнал"). Run `python3 meta/scripts/state_split.py check projects/content/STATE.md`.
 
-## Н-10.11-04 Ozon main-photo audit (READ-ONLY; Russian section «Контракт автопилота Н-10.11-04» in PLAN.md is authoritative)
-- Run in Claude Code on Andrei's computer (Ozon CDN is blocked from cloud sessions).
-- К1: MKT2 SQL Read (same call as С2 above). raw.ozon_product, cabinet_code in (ip_ozon, kiparis_ozon), current version per product_id (max last_loaded_at). Extract offer_id, sku, product_id, payload primary_image, images, first-version date, archived/visible flags. Join first WB photo of the same article: raw.wb_card current version, payload photos[0] (big size URL), via ref.v_article_item. Check: row count == SQL count(distinct product_id) per cabinet; sku 5895406668 present. One cabinet missing -> STOP, report, no Ozon API workaround.
-- К2: Python + Pillow, download each image into memory only (never save images to repo), record width, height, ratio w/h, white-border flag (10 px strip, all channels >= 235). Positive control: sku 5895406668 main photo == 535x1600. measured + failed == К1 rows; failed > 10% -> STOP. Output projects/content/photo-audit/photo_audit.csv (one row per Ozon card).
-- К3: classes: norm = 0.70 <= w/h <= 0.80 and min side >= 900; off_with_wb = off-norm and WB photo in norm; off_human = otherwise. Harm: if mkt2 has Ozon search funnel per card (impressions -> card visits) for 2026-10-01..2026-11-09, compare median visit share off vs norm within each cabinet; else "не измерено" + where searched. Origin: off-norm grouped by cabinet and first-version date (hypothesis, unverified: came with the 2026-11-05 card copy into Ozon ИП). Output projects/content/photo-audit/REPORT.md in Russian, incl. section «Находки вне рамки». Independent acceptor refutes the report against CSV and DB.
-- К4: one Р-entry in projects/content/LOG.md. К5: one line in projects/content/STATE.md + state_split.py check.
-- Forbidden: writes to Ozon/WB cabinets, any n8n workflow edit/publish, paths outside projects/content/.
 
-## Н-10.11-05 Ozon main-photo pilot, 5 cards (WRITES to Ozon; Russian section «Контракт автопилота Н-10.11-05» in PLAN.md is authoritative)
-- Cards: kiparis_ozon 2103 sku 5895406668, 1816 sku 5895368731, 1791 sku 5911362599, 1459 sku 5871375935; ip_ozon 2100 sku 6254988568. Probe write first: ip_ozon 2100. Source rows: photo-audit/photo_audit.csv (wb_url column).
-- "WB better" = all of: ratio 0.70..0.80 and min side >= 900; same product AND same pack size as Ozon card name (look at the image); clean packshot on plain light background, no infographic/text overlay; label not worse (not foreign where Ozon shows Russian). Dispatcher looks, independent acceptor re-looks. Fail -> card untouched, REPORT says "WB не лучше" + reason.
-- New image set = [WB photo] + old Ozon images in old order minus old main; copy color_image / images360 from snapshot unchanged.
-- Tools: 2 new n8n workflows, one per cabinet, own write key each (never a cabinet switch inside one workflow); NOT published; input mode=check (default)|live|status, product_id, images[]. check = read card + show planned payload; live = POST /v2/product/pictures/import then read card back; status = read card + picture processing status. Verify the v2 request body/semantics (does it replace the whole set?) on the check run before any live call. Passports CONTENT_WF_ozon-pictures-import-ip / -kiparis in DOCS folder (PLAN.md, «Инструменты»); PASSPORT line in description (session may write it for workflows it created).
-- Snapshot before any write: projects/content/photo-pilot/snapshot.json (all image URLs + order per card). Rollback = live mode with snapshot list.
-- STOP: no write-right key -> ask Andrei to create one; Ozon rejects WB CDN URL or 200 without change on probe -> stop, no other hosting; card unlisted/rejected after write -> roll back that card, stop.
-- Live mode only after Andrei's explicit "да" on the check-mode list (stop and wait in the session).
-- Output projects/content/photo-pilot/REPORT.md (Russian): per card before/after URL+size, verdict, card status after write, storefront link; conclusion for the mass decision.
+## Ozon main photo
+Orders Н-10.11-04 / Н-10.11-05 and all further work moved 2026-11-10 to projects/ozon-main-photo/ (LOG Р-1 there).

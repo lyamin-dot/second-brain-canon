@@ -25,6 +25,7 @@ registry/projects.md
 | obzor | projects/obzor/ | repo | закрыт 2026-11-08 — финиш выполнен (запись Р-6 журнала `projects/obzor/LOG.md`), страница работает как инструмент; заведён 2026-10-31 (Летопись без Claude Project; Андрей, чат SYS 2026-10-31; запись Р-1 журнала `projects/obzor/LOG.md`): страница «что у меня в разработке», собираемая из канона без ручного ввода; работа в Claude Code; вес не назначен | |
 | wb-spp-guard | projects/wb-spp-guard/ | repo | активен — заведён 2026-11-03 (Летопись без Claude Project; Андрей, чат Claude Code 2026-11-03; запись Р-1 журнала `projects/wb-spp-guard/LOG.md`): нижняя граница цены в репрайсере WB, чтобы срез СПП не оплачивался из нашего кармана; вынесен из wb-ue; вес не назначен | |
 | content | projects/content/ | repo | активен — перенос 2026-11-06 из CONTENT_INDEX (Google Doc `12YmBvtmAGImFm2fMPz2FglsrCibG3v7acj3NY5LG7m0`, заморожен), слово Андрея в чате Claude Project «Создание контента» 2026-11-06 (запись Р-1 журнала `projects/content/LOG.md`); перенос без Контролёра — допущение записано там же | |
+| ozon-main-photo | projects/ozon-main-photo/ | repo | активен — выделен 2026-11-10 из проекта content (записи Р-12…Р-15 журнала `projects/content/LOG.md`) по слову Андрея в чате Claude Code 2026-11-10 (запись Р-1 журнала `projects/ozon-main-photo/LOG.md`); замена вытянутых главных фото карточек Ozon на фото WB; вес не назначен — вопрос Андрею | |
 
 ## Лаборатории
 
