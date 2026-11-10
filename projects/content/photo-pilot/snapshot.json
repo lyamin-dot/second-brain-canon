@@ -1,0 +1,120 @@
+{
+  "about": "Н-10.11-05: снимок фото 5 карточек Ozon до записи. Источник — свежее чтение /v3/product/info/list воркфлоу-инструментами (режим «проверка»), исполнения n8n указаны у каждой карточки. Откат — боевой режим того же инструмента со списком rollback_images (первый адрес — главное фото).",
+  "taken_at": "2026-11-10T18:04Z",
+  "tools": {
+    "ip_ozon": "v7XsvJWqIO1BfTsx",
+    "kiparis_ozon": "5z1JwwNSQtRLSjYe"
+  },
+  "cards": [
+    {
+      "article": "2100",
+      "cabinet": "ip_ozon",
+      "product_id": "6872935997",
+      "sku": "6254988568",
+      "offer_id": "2100 21780 LM Bike Kettenoil Dry Lube 0,1л",
+      "execution": "98897",
+      "status_before": {"status_name": "Не продается", "status_description": "Убран из продажи", "moderate_status": "approved", "availability": "HIDDEN: Не подтверждены документы качества", "has_stock": false},
+      "primary_image": ["https://ir-20.ozone.ru/s3/multimedia-1-6/12464152674.jpg"],
+      "images": [
+        "https://ir-20.ozone.ru/s3/multimedia-1-0/12464166636.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-8/13588364600.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-b/wc2500/9120371447.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-k/7516756460.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-n/6905505299.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-k/7590588284.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-f/7590588099.jpg"
+      ],
+      "color_image": [],
+      "images360": [],
+      "wb_main": "https://basket-41.wbbasket.ru/vol10062/part1006224/1006224886/images/big/1.webp"
+    },
+    {
+      "article": "2103",
+      "cabinet": "kiparis_ozon",
+      "product_id": "6452842922",
+      "sku": "5895406668",
+      "offer_id": "2103 21777 LM Bike Bremsen- und Kettenreiniger 0,4",
+      "execution": "98901",
+      "status_before": {"status_name": "Продается", "moderate_status": "approved", "availability": "AVAILABLE", "has_stock": true},
+      "primary_image": ["https://ir-20.ozone.ru/s3/multimedia-1-f/11322460167.jpg"],
+      "images": [
+        "https://ir-20.ozone.ru/s3/multimedia-1-t/15375377189.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-w/11883291512.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-r/11883291039.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-f/7639858455.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-8/13588364600.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-w/9758598872.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-f/7590588099.jpg"
+      ],
+      "color_image": [],
+      "images360": [],
+      "wb_main": "https://basket-43.wbbasket.ru/vol11387/part1138771/1138771525/images/big/1.webp"
+    },
+    {
+      "article": "1816",
+      "cabinet": "kiparis_ozon",
+      "product_id": "6452797004",
+      "sku": "5895368731",
+      "offer_id": "1816 1127 LM Zentralhydraulik-Oilм1,0 л",
+      "execution": "98902",
+      "status_before": {"status_name": "Продается", "moderate_status": "approved", "availability": "AVAILABLE", "has_stock": true},
+      "primary_image": ["https://ir-20.ozone.ru/s3/multimedia-1-j/15375268639.jpg"],
+      "images": [
+        "https://ir-20.ozone.ru/s3/multimedia-1-e/15375268742.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-w/11883291512.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-r/11883291039.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-f/7639858455.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-8/13588364600.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-w/9758598872.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-f/7590588099.jpg"
+      ],
+      "color_image": [],
+      "images360": [],
+      "wb_main": "https://basket-41.wbbasket.ru/vol9671/part967115/967115640/images/big/1.webp"
+    },
+    {
+      "article": "1791",
+      "cabinet": "kiparis_ozon",
+      "product_id": "6471807415",
+      "sku": "5911362599",
+      "offer_id": "1791 3801 LM Schrauben-Sicherung mittelfest 0,01 л",
+      "execution": "98903",
+      "status_before": {"status_name": "Продается", "moderate_status": "approved", "availability": "AVAILABLE", "has_stock": true},
+      "primary_image": ["https://ir-20.ozone.ru/s3/multimedia-1-g/11306161312.jpg"],
+      "images": [
+        "https://ir-20.ozone.ru/s3/multimedia-1-b/15428789327.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-w/11883291512.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-r/11883291039.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-f/7639858455.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-8/13588364600.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-w/9758598872.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-f/7590588099.jpg"
+      ],
+      "color_image": [],
+      "images360": [],
+      "wb_main": "https://basket-38.wbbasket.ru/vol8375/part837598/837598732/images/big/1.webp"
+    },
+    {
+      "article": "1459",
+      "cabinet": "kiparis_ozon",
+      "product_id": "6424817389",
+      "sku": "5871375935",
+      "offer_id": "1459 20694 LM Special Tec AA 5W-30 4л_7516 / 7616",
+      "execution": "98904",
+      "status_before": {"status_name": "Продается", "moderate_status": "approved", "availability": "AVAILABLE", "has_stock": true},
+      "primary_image": ["https://ir-20.ozone.ru/s3/multimedia-1-7/15298558603.jpg"],
+      "images": [
+        "https://ir-20.ozone.ru/s3/multimedia-1-n/15298546415.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-w/11883291512.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-r/11883291039.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-f/7639858455.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-8/13588364600.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-w/9758598872.jpg",
+        "https://ir-20.ozone.ru/s3/multimedia-1-f/7590588099.jpg"
+      ],
+      "color_image": [],
+      "images360": [],
+      "wb_main": "https://basket-46.wbbasket.ru/vol13812/part1381228/1381228416/images/big/1.webp"
+    }
+  ]
+}
