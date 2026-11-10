@@ -37,3 +37,11 @@ Brand DNA, grid, slide structure: PLAN.md sections "Что сохранено" a
 
 ## Close each package
 STATE.md: only next step / blockers / open questions (contract meta/CONTRACT_state-content.md). LOG.md: one Р-entry per real decision (form: second-brain-git "Форма записи в журнал"). Run `python3 meta/scripts/state_split.py check projects/content/STATE.md`.
+
+## Н-10.11-04 Ozon main-photo audit (READ-ONLY; Russian section «Контракт автопилота Н-10.11-04» in PLAN.md is authoritative)
+- Run in Claude Code on Andrei's computer (Ozon CDN is blocked from cloud sessions).
+- К1: MKT2 SQL Read (same call as С2 above). raw.ozon_product, cabinet_code in (ip_ozon, kiparis_ozon), current version per product_id (max last_loaded_at). Extract offer_id, sku, product_id, payload primary_image, images, first-version date, archived/visible flags. Join first WB photo of the same article: raw.wb_card current version, payload photos[0] (big size URL), via ref.v_article_item. Check: row count == SQL count(distinct product_id) per cabinet; sku 5895406668 present. One cabinet missing -> STOP, report, no Ozon API workaround.
+- К2: Python + Pillow, download each image into memory only (never save images to repo), record width, height, ratio w/h, white-border flag (10 px strip, all channels >= 235). Positive control: sku 5895406668 main photo == 535x1600. measured + failed == К1 rows; failed > 10% -> STOP. Output projects/content/photo-audit/photo_audit.csv (one row per Ozon card).
+- К3: classes: norm = 0.70 <= w/h <= 0.80 and min side >= 900; off_with_wb = off-norm and WB photo in norm; off_human = otherwise. Harm: if mkt2 has Ozon search funnel per card (impressions -> card visits) for 2026-10-01..2026-11-09, compare median visit share off vs norm within each cabinet; else "не измерено" + where searched. Origin: off-norm grouped by cabinet and first-version date (hypothesis, unverified: came with the 2026-11-05 card copy into Ozon ИП). Output projects/content/photo-audit/REPORT.md in Russian, incl. section «Находки вне рамки». Independent acceptor refutes the report against CSV and DB.
+- К4: one Р-entry in projects/content/LOG.md. К5: one line in projects/content/STATE.md + state_split.py check.
+- Forbidden: writes to Ozon/WB cabinets, any n8n workflow edit/publish, paths outside projects/content/.
