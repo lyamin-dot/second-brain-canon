@@ -35,7 +35,7 @@ WB_LOGISTICS_INDEX: 1mxYgiK9X4qOId2vNF7xnne-cQszTqPpJZHux_AuDZjQ
 Claude Project WB_LOGISTICS: https://claude.ai/project/019ea86d-05da-7731-b99f-f0f163be8182
 wb_fbs_orders_tracking (Sheets, includes performance_log + monitor_params, подтверждено кодом 7 воркфлоу SYSTEM-MAP 18.07): 1qdefReY1qHfWdwroorbxz2Bi20_3dsGHuDBiYy2W_XQ (исправлено 2026-10-09: прежняя ручная копия была без «uDB», 41 знак; верное значение — 19 вхождений в снимке `registry/n8n-map.md`, снятом с инстанса, зонд Z-10 `projects/n8n-map/PLAN.md`)
 RENO_INDEX:         1r3hSt4pccSHbya31KLNYtyr5xJtbTl1VcX-OCprBjcM
-TRADING_INDEX:      1GhOuwVL41hzyWYF4X8Su0bSuraVw6X4pGxc0G3hkT2Y
+TRADING_INDEX:      1GhOuwVL41hzyWYF4X8Su0bSuraVw6X4pGxc0G3hkT2Y — ЗАМОРОЖЕН 2026-11-11 (пустой шаблон без записей; проект TRADE переименован в лабораторию INVEST, labs/invest/); не читать и не писать
 SYS_INDEX:          12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8 — ЗАМОРОЖЕН 2026-09-30 (решение 2026-09-23, Р-109 журнала projects/git-migration/LOG.md); рабочий носитель — labs/sys/INDEX.md; не читать и не писать
 
 CONTENT_INDEX:      12YmBvtmAGImFm2fMPz2FglsrCibG3v7acj3NY5LG7m0 — ЗАМОРОЖЕН 2026-11-06, канон → projects/content/ (Р-1 журнала projects/content/LOG.md)
@@ -411,3 +411,8 @@ MKT2_n101104_ROLLBACK.sql: 1yST6NGBzJoj9CPC80sNkBNMn7flgW0Du — файл SQL в
 
 MKT2_n101111_rows_donor_default.sql: 1fcO_ZDpw5w1pLaDiqvQMj2rzVhoripGI — файл SQL в MKT2_DOCS_FOLDER, 1 462 байта: ue.wb_price_rows = ue.wb_price_core(…, true), пул донора по умолчанию; применён MKT2 DDL v24, исполнение 99267 (marketplace-rebuild Р-116)
 MKT2_n101111_rows_donor_default_ROLLBACK.sql: 1wKE51BqZ-eWOwXCATqWfoFYpN6UV5gOh — файл SQL в MKT2_DOCS_FOLDER, 1 447 байт: откат — ue.wb_price_rows = ue.wb_price_core(…, false) (marketplace-rebuild Р-116)
+
+<!-- 2026-11-11 | лаборатория INVEST, онбординг в чате SYS; зарегистрировано при создании (Р6) -->
+INVEST_FOLDER: 1ArAEFVAxTIkxL9YUzSlu-cUQhKC7alFg — папка Google Диска «INVEST» в той же родительской папке, что FINANZEN_FOLDER; создана воркфлоу Create Folder (исполнение 99299), сервисному аккаунту выдано право редактора тем же прогоном. Место личных финансовых данных лаборатории INVEST.
+INVEST_IPS: 122nt9C4PZuQ6M9bME2nBLIgNESWzliZZ_BTTzSGnwqc — Google Doc (обычный, text/plain) в INVEST_FOLDER: письменная инвестиционная стратегия и журнал решений. Создан 2026-11-11 create_file, перечитан gdocs-read (исполнение 99300, byteLength 1598, checkSum e6570003). Не утверждён — разделы пусты.
+INVEST_PORTFOLIO: 19x0xs5oW99LuRYAuxQ0_VgI_Aw-OfAjsveAKx737jpY — Google Sheets в INVEST_FOLDER: снимки портфеля; лист «Лист1», шапка из 9 колонок записана gsheets-append (исполнение 99302) и прочитана gsheets-read (исполнение 99304); строк данных нет.
