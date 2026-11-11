@@ -200,7 +200,7 @@ Manual (Andrei): strike K2 if he disagrees; paste new show code + setupAll if K3
 Stops: MKT2 DDL updatedAt changed; fingerprint of an untouched function changed (rollback); evidence that the 28 Ozon rows are cancellations.
 Weak link: cost field empty on part of Ozon return rows (SQL Read 98505) — K1 takes price from ref.purchase_price as «Товары Oz» does.
 
-## 26 Autopilot contract 2026-11-10 — order Н-10.11-04: WB money-row rule in price calc and volume taken from ue.wb_tx_rule; one price-calc body (LOG Р-114; RU master = PLAN.md §26)
+## 26 Autopilot contract 2026-11-10 — order Н-10.11-04а (letter «а»: LOG Р-116): WB money-row rule in price calc and volume taken from ue.wb_tx_rule; one price-calc body (LOG Р-114; RU master = PLAN.md §26)
 Status: written by integrator before run; consent = Andrei pastes order into Claude Code; dispatcher is sole canon writer while running.
 Goal: one home for the WB row rule (rev, for_pay, units, returns, logistics, other) = ue.wb_tx_rule. ue.wb_price_rows, ue.wb_price_rows_donor, ue.wb_money_master_vol read these from it; price calc has one body. Output of all functions and readers unchanged.
 Basis: SQL Read 98765/98767/98768: rows and donor = two bodies (9 891 / 10 342 chars), differ only by donor pool fallback (ue.wb_pool_donor ip_wb→kiparis_wb); each has own CASE on category matching wb_tx_rule signs; master_vol own sale/return CASE, no dropped_zero_reimburse filter (0 such sale/return rows). Readers in DB: wb_price_rows_tax, v_wb_price_calc, v_wb_price_calc_tax, wb_money_master. Harm mechanism: Р-110 fixed wb_tx_rule, copies stayed. Correction to Р-110 assumption: these three compute no per-row purchase cost (price = current cost on net units; volume has no money) — no money defect, only rule copies.
