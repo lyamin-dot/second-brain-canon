@@ -130,7 +130,7 @@ FINANZEN вес 6   — налоговый и финансовый аналит�
 [INVEST]  Инвестиции: предостережения и пассивная стратегия | вес 6 | АКТИВЕН
           Канон: labs/invest/ (репозиторий); личные финансовые данные — папка INVEST_FOLDER на Google Drive (registry/documents.md)
           Прежде [TRADE] «Инвестиции и трейдинг»: файл индекса TRADING_INDEX (пустой шаблон) заморожен 2026-11-11
-          Claude Project: адрес пришлёт Андрей
+          Claude Project: https://claude.ai/project/01a1d1a5-200a-751a-b488-673d6956ac03 (адрес — Андрей, чат SYS 2026-11-12)
 
 [SYS]     Система «Второй мозг»
           Файл индекса: labs/sys/INDEX.md (репозиторий); документ Docs 12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8 заморожен 2026-09-30 (Р-123 журнала projects/git-migration/LOG.md)
