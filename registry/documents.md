@@ -16,7 +16,7 @@ registry/documents.md
 <!-- T-006 | CORE байт 5839-6266 | Р.2 базовые системные ID (CORE, INBOX, USER_PROFILE, REFERENCE_DOC, ТЗ, ЧЕК-ЛИСТ) -->
 
 CORE (этот файл):   1fnWdPUE695BYXhwkMe8Pkzncsi8jYBecH_66ELCcjo4
-INBOX:              1iciFTKXYOrN-l7avFySJv2Q__mFEOffps_xsFQwtZDk
+INBOX:              1iciFTKXYOrN-l7avFySJv2Q__mFEOffps_xsFQwtZDk — ЗАМОРОЖЕН 2026-11-12: команда !inbox снята решением Андрея, новых записей нет; старые записи Андрей просматривает сам
 USER_PROFILE:       1Kssh75BZWhA9nbudW7A2nbGUQjUd2ZQFjIFOfuu5SBo
 REFERENCE_DOC:      1wLXGvxc5HQ9KXgsZzqAGTN0-1nmhbf_L9fAjYVAJh_k
 ТЗ:                 1cFBggiGQWtzt_cITae7RUCh8oPhI1aVsybSElDOhfGI
@@ -69,7 +69,7 @@ READER_R2_passport: 1rBU7c-xSL8D4kd5bXiAhk5UbVPOvAAhEWjiQIt3NByI — паспо�
 N8N_JOURNAL_2026:   19U4cDQ-JnxhZStBUKyJARL6NQHpCVxZZsEereITJ1Wo — ЗАМОРОЖЕН 2026-10-13 (последнее изменение документа 2026-08-26; прочитан целиком — Архивариус, запись Р-8 журнала projects/archivarius/LOG.md; пишущих в него воркфлоу, промптов и Skills нет — проверка 2026-10-13, Р-41 того же журнала). Прежнее описание: журнальный корпус N8N (зарегистрирован наряд 14 Ф8, 2026-08-05)
 
 <!-- T-012 | CORE байт 10997-11361 | Р.2 SYS_PROTOCOL_REGISTRY -->
-SYS_PROTOCOL_REGISTRY: 1ftGIevprVglEytkI_qTobmMyL8ufP5c5pY__b2pbqHE — реестр протоколов (Протокол | Дата рождения | Число применений | Дата последнего применения | Статус | ТРИГГЕР), вынесен из SYS_INDEX нарядом Н-14.08-01.8, 2026-08-13, папка _SYSTEM
+SYS_PROTOCOL_REGISTRY: 1ftGIevprVglEytkI_qTobmMyL8ufP5c5pY__b2pbqHE — реестр протоколов (Протокол | Дата рождения | Число применений | Дата последнего применения | Статус | ТРИГГЕР), вынесен из SYS_INDEX нарядом Н-14.08-01.8, 2026-08-13, папка _SYSTEM — ЗАМОРОЖЕН 2026-11-12: содержимое перенесено в `registry/protocols.md`, раздел «Реестр применения протоколов»; дальше реестр ведётся только там
 
 <!-- T-016 | CORE байт 12429-13377 | Р.2 документы и папки (SECOND_BRAIN_TZ, SKILL_SBE, USER_MANUAL, TECH_INDEX, N8N_TEMPLATES, N8N_INCIDENT_LOG, _SYSTEM, INDEX_FOLDER) -->
 SECOND_BRAIN_TZ:    1j9sqL43m3PvUjpqAvfj71gFDsWVjajz_sZKQCRxVdnc
