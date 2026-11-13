@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-11-11T20:18:04.027Z
+instance_last_change|2026-11-12T23:32:59.745Z
 W|030MvX2dzoZ8Nl0N|MKT2 Engine Backup Tool|inactive|never|manualTrigger|-|instance|?|-|-
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|WB/Logistic|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
@@ -49,7 +49,7 @@ W|72DWYjGbeAxEgYwj|Git Read|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|7KVl4QpSnA2pATdV|00X|archived|never|-|-|instance|?|-|-
 W|7OQh206m8xrZAzPF|Git Commit Files|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|7QIb83QknGoozrH4|DOSSIER INBOX Accept To Archive|archived|never|scheduleTrigger|field=months,monthsInterval=100,triggerAtHour=3|instance|?|-|-
-W|7YOafm11bMUtCVpy|MKT2 API kiparis_ozon ozon_seller|active|unpublished|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|7YOafm11bMUtCVpy|MKT2 API kiparis_ozon ozon_seller|active|same|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|7rWoMfOIRLrXZZJV|MKT2 WB Price Book Fill|active|same|scheduleTrigger|daysInterval=1,field=days,triggerAtHour=7,triggerAtMinute=40|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|7tRHchfPleOrPXSH|DEKL 2.0 — Предметы кабинетов (инструмент)|inactive|never|manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|7u3QNQzZZ20ZapUz|WB FBS Morning Forecast|archived|never|scheduleTrigger|expression=45 9 * * *,field=cronExpression|instance|?|-|-
@@ -58,16 +58,16 @@ W|8ImKyDrw1Q2JIfHw|ArchiveRecon OCR Scans Run|inactive|never|manualTrigger|-|ins
 W|8K462eWUdeCTq6RQ|N8N Probe — Error Notifier format|inactive|never|webhook|-|Europe/Berlin|?|M5BLqclKBjGTpz33|-
 W|8oQBdEdlnl6CbeeP|TaeglichesVerkauf|archived|never|scheduleTrigger|triggerAtHour=2|instance|?|-|-
 W|8zHzPxv2lE9BpZ1e|99_Compare_RAW_Sources|archived|never|manualTrigger|-|instance|?|-|-
-W|90r528HvqDY6pBNp|MKT2 API kiparis_wb wb_content|active|unpublished|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|90r528HvqDY6pBNp|MKT2 API kiparis_wb wb_content|active|same|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|92MulfAlJjHZXoxw|TEST WB Week34 RAW vs TX Audit|archived|never|manualTrigger|-|instance|?|-|-
-W|95w8XpN3OHNl2NsE|MKT2 API ip_ozon ozon_seller|active|unpublished|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|95w8XpN3OHNl2NsE|MKT2 API ip_ozon ozon_seller|active|same|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|9Bsr5pqvXupvB238|MKT2 Collect /content/v2/get/cards/list|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=6,triggerAtMinute=10|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|9Qhnkz9E6mjidqs5|LM_DECL — WB Sync ИП|active|same|formTrigger|-|instance|?|M5BLqclKBjGTpz33|-
 W|9TD9CiGKuo3oiwc1|Ozon Card Fields Fix (основной)|inactive|never|manualTrigger|-|instance|?|-|-
 W|9YLOAuMpDRKgqjef|TEST WB reportDetailByPeriod week34|archived|never|manualTrigger|-|instance|?|-|-
 W|9flRXoFNEQzHgznB|WB API Structure Test|archived|never|manualTrigger|-|instance|?|-|-
 W|9iqYMmVVmiiaYXCk|MKT2 Collect /v3/product/info/list|active|same|manualTrigger,scheduleTrigger|daysInterval=1,field=days,triggerAtHour=6,triggerAtMinute=15|Europe/Moscow|?|M5BLqclKBjGTpz33|-
-W|A7UY4VhLnLJJQtMU|MKT2 API kiparis_wb wb_statistics|active|unpublished|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|A7UY4VhLnLJJQtMU|MKT2 API kiparis_wb wb_statistics|active|same|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|AVoemWtBLO8L0Kdm|Price Master — запись колонок по ключу (инструмент)|inactive|never|manualTrigger|-|instance|?|-|-
 W|B5jkqW0bUScxmTi7|SYS Canary — ***|active|same|scheduleTrigger|triggerAtHour=6|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|B5tok1gRWl3gp7X6|KB Sync — Motor Oil Specs|active|same|manualTrigger,scheduleTrigger|field=months,monthsInterval=1000|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -122,7 +122,7 @@ W|IvgysDKrq3UISYEY|WB RAW Finance Sync V.3|active|same|scheduleTrigger|field=wee
 W|J0v5swjXLfiANJa2|Получение SKU Ozon|active|same|scheduleTrigger|daysInterval=1,field=days,triggerAtHour=3|instance|Ozon|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|J8tubuqNsN471jEl|***-COPY-guard-05082026|archived|never|webhook|-|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|JaSDlwWAmjpYmEaD|WB TMP DB Probe Motor Oil|inactive|never|manualTrigger|-|instance|?|-|-
-W|JzoU49Wy2soTzZ44|MKT2 API ip_wb wb_content|active|unpublished|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|JzoU49Wy2soTzZ44|MKT2 API ip_wb wb_content|active|same|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|KAbY29qYs2BWxyAj|MKT2 Probe Code Builtins|inactive|never|manualTrigger|-|instance|?|-|-
 W|KEucSnA2duWI3eRA|DOSSIER INBOX Move Processed Files|active|same|scheduleTrigger|field=months,monthsInterval=100,triggerAtHour=3|instance|?|M5BLqclKBjGTpz33|-
 W|KQqajdrYKxle9JRe|Ozon_Hashtag_Generator|active|same|scheduleTrigger|field=months,monthsInterval=99|instance|Ozon|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -207,7 +207,7 @@ W|Z68QJF5mYs3W8Uw8|TEST Ozon QA API Check|archived|never|manualTrigger|-|instanc
 W|ZIvTVFHNw9m2gns3|OZON Reviews Response|archived|never|scheduleTrigger|field=minutes,minutesInterval=30|instance|Ozon/Reviews_Support|-|-
 W|ZXTQwjUkd81wyRoI|Git Log|active|same|webhook|-|instance|?|M5BLqclKBjGTpz33|-
 W|Zh7hLysw3MPg1i1q|TEST Zone Sync ПРАВКА B — канарейка 2026-08-04|archived|never|manualTrigger|-|instance|?|-|-
-W|ZhpjwjErqHEpoFCA|MKT2 API ip_wb wb_statistics+finance+analytics+prices|active|unpublished|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|ZhpjwjErqHEpoFCA|MKT2 API ip_wb wb_statistics+finance+analytics+prices|active|same|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|ZyaOSSDvGsf0eq7L|LM_DECL — Worker (ядро парсинга)|active|same|executeWorkflowTrigger|-|instance|Ozon/Deklaration|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|a32oIHdg5dRU1gV1|DEKL 2.0 — Полнота (только чтение источников)|inactive|never|manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|aVpgEnYBAgIIss4k|Ozon RAW Accrual Sync|active|same|executeWorkflowTrigger,manualTrigger,scheduleTrigger|triggerAtHour=2|instance|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -293,7 +293,7 @@ W|oJrg4XY0HZwPCq59|Контроль FBS Ozon|inactive|never|scheduleTrigger|fiel
 W|p3BqS9oFs4eHw3PN|CONTENT Фото WB → Drive (инструмент)|inactive|never|lc.chatTrigger|-|Europe/Berlin|?|M5BLqclKBjGTpz33|-
 W|p3TOyeR4GnUmP695|SYS_INDEX Copy Staging to Target|archived|never|webhook|-|instance|?|-|-
 W|pd2K2KtImWlFfueW|MKT2 Collect Engine|active|same|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
-W|pjOxY1G7CjqLL7Mo|MKT2 API kiparis_wb wb_finance|active|unpublished|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
+W|pjOxY1G7CjqLL7Mo|MKT2 API kiparis_wb wb_finance|active|same|executeWorkflowTrigger,manualTrigger|-|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|q78KdtgIWGTySlFN|WB FBS Supply→Tracking Sync|active|same|executeWorkflowTrigger,scheduleTrigger|field=minutes,minutesInterval=15|Europe/Moscow|?|M5BLqclKBjGTpz33|-
 W|qIUgsRpTqHpyYyxr|Ozon RAW Accrual Backfill Day|archived|never|executeWorkflowTrigger,manualTrigger|-|instance|?|-|-
 W|qKgc8hhOLwehejYp|LM_DECL Intake (новые номера Liqui Moly → LM_DECL)|active|same|manualTrigger,scheduleTrigger|expression=30 5 * * *,field=cronExpression|Europe/Moscow|?|M5BLqclKBjGTpz33|workflowsFromSameOwner
@@ -381,6 +381,7 @@ D|1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ|qolCVtDpTo2YlnGb|Дописать
 D|1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ|qolCVtDpTo2YlnGb|Записать лист Авто|googleSheets|append|Авто
 D|1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ|qolCVtDpTo2YlnGb|Очистить лист Авто|googleSheets|clear|Авто
 D|1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ|qolCVtDpTo2YlnGb|Прочитать лист Ключи|googleSheets|read|Ключи
+D|1GAX60bh0nRVlinyct_s8M7MepZc6_W-w|jqlRF24Ycl9HCoXW|02a_Read_SQL_File|googleDrive|download|-
 D|1GktMsgl1UOIzuWj02gqDirMSYlSjiuLuDVDd9vevB5Q|TXNstdVL8xlIygBp|04_Get_N8N_INDEX_Meta|httpRequest|default|-
 D|1GktMsgl1UOIzuWj02gqDirMSYlSjiuLuDVDd9vevB5Q|TXNstdVL8xlIygBp|07_Get_N8N_INDEX_Text|httpRequest|default|-
 D|1Hq1nxFaKM7knfZyY3nhy4SqYW5jZQWvt|NDY1YGwLIt4w3HQB|05_Upload_Joined|googleDrive|upload|-
@@ -458,7 +459,6 @@ D|1PRgyyTY1h4DK6O0ECY8bmcb3zxQlNpRO|KEucSnA2duWI3eRA|01_List_INBOX|googleDrive|d
 D|1QZeNHNtYy6JmMj80_CBUihJ6B8yF3u3u|W3KjaXVqWD2c02IK|01_List_CORPUS_Files|googleDrive|default|-
 D|1QZeNHNtYy6JmMj80_CBUihJ6B8yF3u3u|W3KjaXVqWD2c02IK|10_Write_CORPUS_File|googleDrive|createFromText|-
 D|1VXq7zJJOnktxmRK1HvnwqBVPaPDlUDV0|8ImKyDrw1Q2JIfHw|02_Get_Files_CSV|googleDrive|download|-
-D|1XLlokAtStO2--Chfb9aUsm6CWauoQFh7|jqlRF24Ycl9HCoXW|02a_Read_SQL_File|googleDrive|download|-
 D|1XMy8XsF4tIyiPIhiW2dAt8Sihbsy4xQOXWQhjCJEHyE|B5tok1gRWl3gp7X6|01_Read_Shablon|googleSheets|default|Шаблон
 D|1XMy8XsF4tIyiPIhiW2dAt8Sihbsy4xQOXWQhjCJEHyE|B5tok1gRWl3gp7X6|02_Read_KB_Motor_Oil|googleSheets|default|kb_motor_oil
 D|1XMy8XsF4tIyiPIhiW2dAt8Sihbsy4xQOXWQhjCJEHyE|B5tok1gRWl3gp7X6|08_Write_KB_Motor_Oil|googleSheets|appendOrUpdate|kb_motor_oil
