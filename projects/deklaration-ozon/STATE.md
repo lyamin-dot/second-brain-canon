@@ -55,7 +55,6 @@ Ozon, отклонённые товары (`LOG.md` Р-31): 1798 перепри�
 
 ## Руками Андрею
 
-- 2026-10-22: в конец описания трёх воркфлоу дописать строку паспорта (в редакторе, настройки воркфлоу): «Ozon Fields Probe (ИП)» — `PASSPORT: 1xSjFFUBysmVmYsMYxbPd9Xkxkyiqgl5V58uwsQ9bSKg`; «LM_DECL — Ozon Upload ИП» — `PASSPORT: 1HHHdpSxaiXV2DZwTXUigJkDnr_FscisEPDhrS2m4aqw`; «Ozon Card Fields Fix (ИП)» — `PASSPORT: 1gtMouRk57m288qAxe0-82xDpfn4svGgDN5FAIq9c1D0`.
 
 
 
