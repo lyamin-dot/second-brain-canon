@@ -1,7 +1,7 @@
 registry/n8n-map.md
 Руками не править. Файл целиком строит воркфлоу N8N Registry Sync gFFiBPm1OomOzJOj (ежедневно 05:30); ручная правка будет затёрта следующим прогоном.
 Формат строк: projects/n8n-map/PLAN.md раздел 4. Пути вебхуков, признак их аутентификации и имена credential в этот файл не идут — они в закрытой части, Google Doc N8N_REGISTRY.
-instance_last_change|2026-11-12T23:32:59.745Z
+instance_last_change|2026-11-13T17:13:04.031Z
 W|030MvX2dzoZ8Nl0N|MKT2 Engine Backup Tool|inactive|never|manualTrigger|-|instance|?|-|-
 W|0fesM63M92naAnOl|WB FBS Evening Report|active|same|scheduleTrigger|expression=0 18 * * *,field=cronExpression|Europe/Moscow|WB/Logistic|M5BLqclKBjGTpz33|workflowsFromSameOwner
 W|0jJSryMqJJqodL4K|DEKL 2.0 — Эталон|inactive|never|formTrigger|-|instance|?|-|-
@@ -381,7 +381,6 @@ D|1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ|qolCVtDpTo2YlnGb|Дописать
 D|1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ|qolCVtDpTo2YlnGb|Записать лист Авто|googleSheets|append|Авто
 D|1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ|qolCVtDpTo2YlnGb|Очистить лист Авто|googleSheets|clear|Авто
 D|1Ez-JSrgO6vO1oTSn11ry2mBb3vDrvNT5eM-8bTMcTvQ|qolCVtDpTo2YlnGb|Прочитать лист Ключи|googleSheets|read|Ключи
-D|1GAX60bh0nRVlinyct_s8M7MepZc6_W-w|jqlRF24Ycl9HCoXW|02a_Read_SQL_File|googleDrive|download|-
 D|1GktMsgl1UOIzuWj02gqDirMSYlSjiuLuDVDd9vevB5Q|TXNstdVL8xlIygBp|04_Get_N8N_INDEX_Meta|httpRequest|default|-
 D|1GktMsgl1UOIzuWj02gqDirMSYlSjiuLuDVDd9vevB5Q|TXNstdVL8xlIygBp|07_Get_N8N_INDEX_Text|httpRequest|default|-
 D|1Hq1nxFaKM7knfZyY3nhy4SqYW5jZQWvt|NDY1YGwLIt4w3HQB|05_Upload_Joined|googleDrive|upload|-
@@ -561,6 +560,7 @@ D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|xRAIcTOz8TdZAOYm|03_Update_Props|
 D|1mntwAaplJSn3bHczqGDrzmBjotrsHe3MZ78ChViCDVk|zuhOhRc6PchTJERw|02_Create_Tab|googleSheets|create|-
 D|1n-xw5mdR4JhiAJgEVpkkqQT_GktBR2Dzw3A0BRWAJNA|DWyvoJYkCodJxMg1|01_Sheets_Read_URL_List|googleSheets|default|-
 D|1n-xw5mdR4JhiAJgEVpkkqQT_GktBR2Dzw3A0BRWAJNA|DWyvoJYkCodJxMg1|08_Update_Google_Sheets|googleSheets|update|-
+D|1nLWdtNvu9z4RZDTGT7vlzjcAmSxveh1q|jqlRF24Ycl9HCoXW|02a_Read_SQL_File|googleDrive|download|-
 D|1oceYd1A5zj0x6as_abR82pOOlFXpLOs2|p3BqS9oFs4eHw3PN|08_Upload_Zip|googleDrive|upload|-
 D|1qdefReY1qHfWdwroorbxz2Bi20_3dsGHuDBiYy2W_XQ|0fesM63M92naAnOl|03c_Read_Tracking|googleSheets|default|-
 D|1qdefReY1qHfWdwroorbxz2Bi20_3dsGHuDBiYy2W_XQ|0fesM63M92naAnOl|03d_Read_Speed_Params|googleSheets|default|-
