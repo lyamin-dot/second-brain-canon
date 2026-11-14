@@ -32,7 +32,6 @@ projects/n8n-map/STATE.md
 
 ## Найдено попутно
 
-- registry/documents.md, строка wb_fbs_orders_tracking: ID 41 символ — повреждён; верный (44) — строка D воркфлоу S4rZMUkI21dVu3ML. Не чинилось: не в рамке контракта.
 - Паспорта Registry Sync и Telegram Router: блок СВЯЗИ называет архивные воркфлоу (с 26.09); паспорт Registry Sync отстаёт по составу (узлов десять с зондами). Правится при касании (стадия 4 Skill n8n-workflow-passport).
 
 ## От соседнего проекта
