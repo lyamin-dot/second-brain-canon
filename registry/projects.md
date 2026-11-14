@@ -34,6 +34,7 @@ registry/projects.md
 | sys | labs/sys/ | repo — Зона А SYS_INDEX (перенос 2026-09-14, ф4 git-migration); Зона Б осталась в Docs 12k2l2oT92m33PFcnlYDr1MdtkGOj7Gy5Vf7ksSw4nm8, документ заморожен 2026-09-30 (строка «Файл индекса» ниже) | активна |
 | ozon-ue | labs/ozon-ue/ | repo — Зона А OZON_UE_INDEX и незакрытые дефекты Зоны Б (перенос 2026-09-30, git-migration; Контролёр: 4 круга, круг 4 без дефектов; доставлено в main f8c580e, INDEX.md прочитан Каналом, blob ef1d5a33a6f09794ec8f876b5170650e609ac559, исполнение 72247); Зона Б осталась в Docs 13gg5K9lGx_ypJZdnt-Fe8xFtShWYYFI9uEtClPNsjhQ | активна — перенос принят Контролёром 2026-09-30; мастер-промпт проекта ещё читает Docs (AH-11), Зона А в Docs не заморожена |
 | invest | labs/invest/ | repo — задачи и методология; личные финансовые данные — Google Drive, папка INVEST_FOLDER (registry/documents.md) | активна — заведена 2026-11-11 переосмыслением проекта TRADE (Андрей, чат SYS 2026-11-11) |
+| ip-support | labs/ip-support/ | repo — задачи и ход работы; личные данные (номера, счета, реквизиты, суммы) — Google Диск, строки IP_* в registry/documents.md | активна — заведена 2026-11-14 по решениям Андрея 2026-11-11…2026-11-13 (чат SYS; задача labs/sys/t-ip-support.md) |
 
 ## Проекты с INDEX в Google Docs
 
