@@ -28,11 +28,14 @@ frozen_read_line = m.group(0) if m else ""
 
 # --- step 1: experience documents in Google Docs ---
 docs = []
+docs_unparsed = []  # строки реестра с INDEX/JOURNAL/LOG, которые разбор ниже не узнал: сессия решает по каждой
 for ln in read("registry/documents.md").splitlines():
     # The parenthesis before the colon may itself contain parentheses (PROJECT_LOG_SYS),
     # so it is matched greedily up to the last ")" that is followed by ": <id>".
     mm = re.match(r"^([A-Za-z0-9_]+)(\s*\(.*\))?\s*:\s*(\S+)(.*)$", ln)
     if not mm:
+        if re.search(r"INDEX|JOURNAL|LOG", ln) and re.search(r"[A-Za-z0-9_-]{25,}", ln):
+            docs_unparsed.append(ln.strip()[:200])
         continue
     name, did, rest = mm.group(1), mm.group(3).rstrip(",;."), (mm.group(2) or "") + mm.group(4)
     if not re.search(r"INDEX|JOURNAL|LOG", name):
@@ -119,6 +122,7 @@ out = {
     "since": since,
     "protocol_last_harvest": proto_last,
     "docs_candidates": docs,
+    "docs_unparsed_lines": docs_unparsed,
     "repo_projects": projects,
     "repo_labs": labs,
     "journal_records": journal,
