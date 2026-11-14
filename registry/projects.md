@@ -144,3 +144,7 @@ IP_SUPPORT вес 5   — секретарь сроков, книга учёта
 [FINANZEN] Налоговый и финансовый аналитик | вес 6 | АКТИВЕН
           Файл индекса: FINANZEN_INDEX (ID — registry/documents.md); папка FINANZEN_FOLDER
           Claude Project «Finanz»: https://claude.ai/project/01a169c1-038e-77bb-b355-431321ac3452 (адрес — Андрей, чат SYS 2026-10-24; мастер-промпт редакции 2 вставлен по словам Андрея, копии — registry/documents.md, строки FINANZEN_PROMPT_EN_red2 и FINANZEN_PROMPT_RU_red2)
+
+[IP_SUPPORT] Поддержка индивидуальных предпринимателей | вес 5 | АКТИВЕН
+          Канон: labs/ip-support/ (репозиторий); личные данные — Google Диск (строки IP_* в registry/documents.md, когда заведены)
+          Claude Project: https://claude.ai/project/01a1d94f-318a-738c-b7a7-9b5cfc770187 (адрес — Андрей, чат SYS 2026-11-14); мастер-промпт редакции 1 — meta/prompts/ip-support.md
